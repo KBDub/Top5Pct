@@ -1289,13 +1289,142 @@ Decorative accent; use sparingly for promotional or seasonal highlights
 
 ### Navigation Bar Requirements (MANDATORY)
 
-**Navigation bar uses Charcoal (#2C2C2C) background with white text.**
+**Navigation bar uses Soft Linen (`bg-linen`) background with Charcoal text.**
 
-- **Navigation Background:** Charcoal `#2C2C2C`
-- **Navigation Text:** White `#FFFFFF`
-- **Navigation Active/Selected Link:** Azure Blue `#3273DC`
-- **Navigation Hover:** Sunburst Gold `#FFC20E`
-- **Navigation Separators:** Wrapped with dual-line thin banners (sunburst + charcoal)
+- **Navigation Background:** Soft Linen `#F2F0E6` (`bg-linen`)
+- **Navigation Text (inactive):** Charcoal `#2C2C2C` (`text-charcoal`)
+- **Navigation Hover:** Sunburst Gold `#FFC20E` (`hover:text-sunburst`)
+- **Navigation Active/Selected Link:** Azure Blue `#3273DC` (`text-azure`)
+- **Navigation Shadow:** `shadow-sm`
+- **Navigation Separators:** Wrapped above and below with `x-ui.banner-thin-sunburst` + `x-ui.banner-thin-charcoal`
+
+#### Navigation Bar Heights
+
+| State | Mobile | Desktop |
+|---|---|---|
+| Resting (top of page) | `h-14` (56px) | `lg:h-20` (80px) |
+| Scrolled (past 50px) | `h-12` (48px) | `lg:h-14` (56px) |
+
+Logo heights shrink with the bar: `h-10` / `lg:h-16` at rest, `h-8` / `lg:h-10` scrolled. Transition controlled by Alpine `scrolled` state (triggered at `window.scrollY > 50`).
+
+#### Responsive Breakpoints (MANDATORY)
+
+| Viewport | Hamburger | Desktop mega-menu | Social icons location |
+|---|---|---|---|
+| ≤ 768px (`md` and below) | Visible (`md:hidden` on button) | Hidden | Centered in nav bar row between logo and hamburger |
+| 769–1023px (above `md`, below `lg`) | Hidden | Visible (`hidden md:flex`) | Hidden everywhere |
+| ≥ 1024px (`lg` and above) | Hidden | Visible | Top notification bar (`hidden lg:flex`) |
+
+**Tailwind classes used:**
+- Hamburger: `md:hidden`
+- Desktop nav wrapper: `hidden md:flex flex-1 self-stretch items-stretch justify-between relative z-50`
+- Nav bar SM icons: `flex-1 flex md:hidden justify-center items-center gap-2`
+- Mobile menu drawer: `md:hidden border-t border-linen-dark max-h-[calc(100vh-6.5rem)] overflow-y-auto`
+- Notification bar SM icons: `hidden lg:flex`
+
+#### Desktop Nav Link Spec (MANDATORY)
+
+All top-level desktop menu items must use this exact class set. Do not add `whitespace-nowrap`.
+
+```html
+<a href="..." class="px-2 h-full text-lg font-semibold leading-tight text-center inline-flex items-center text-charcoal hover:text-sunburst transition-colors">
+    Menu Item
+</a>
+```
+
+| Property | Value |
+|---|---|
+| Font size | `text-lg` = **18px** (Titillium Web) |
+| Font weight | `font-semibold` (600) |
+| Line height | `leading-tight` |
+| Text alignment | `text-center` |
+| Display | `inline-flex items-center` |
+| Horizontal padding | `px-2` (8px each side) |
+| Height | `h-full` (fills full nav bar height) |
+| Inactive color | `text-charcoal hover:text-sunburst` |
+| Active color | `text-azure` |
+| Transition | `transition-colors` |
+| Whitespace | none (multi-word labels wrap to 2 lines by design) |
+
+Add `gap-0.5` and a chevron SVG only on items with a dropdown panel. Multi-word labels ("Custom Apparel", "Select a Sign", "Top 5% Merchandise", etc.) are intentionally allowed to stack to 2 lines — this saves ~330px of horizontal space at the 769–1023px range. Never re-add `whitespace-nowrap` to these links.
+
+#### Mobile Menu Link Spec
+
+```html
+<a href="..." class="block px-3 py-2.5 text-sm font-semibold text-charcoal hover:text-sunburst hover:bg-linen rounded transition-colors">
+    Menu Item
+</a>
+```
+
+---
+
+### Top Notification Bar Requirements (MANDATORY)
+
+File: `resources/views/components/layout/top-notification-bar.blade.php`
+
+- **Background:** Sunburst Gold `bg-sunburst`
+- **Text color:** Charcoal `text-charcoal`
+- **Font weight:** `font-semibold`
+- **Font size:** `text-xs` (12px)
+- **Vertical padding:** `py-0.5` resting, `py-0` scrolled (collapses on scroll)
+- **Container:** `max-w-7xl mx-auto px-4 flex items-center gap-4`
+
+#### Responsive content swap at 768px
+
+| Element | Desktop (≥ 769px) | Mobile (≤ 768px) |
+|---|---|---|
+| Free Shipping link | `hidden md:block` — visible | hidden |
+| Reviews link | `hidden md:flex` — visible | hidden |
+| Service Areas link | `hidden md:flex` — visible | hidden |
+| Social media icons | `hidden lg:flex` — visible at ≥ 1024px | hidden |
+| "Get a Free Quote" link | hidden | `md:hidden` — visible, centered |
+
+The "Get a Free Quote" link sits in the **center slot** (same position as Free Shipping), naturally centered because both sides of the bar are `flex-1`. It uses `class="md:hidden link-notification whitespace-nowrap shrink-0"` and triggers the contact modal:
+
+```html
+<a href="#"
+   onclick="window.dispatchEvent(new CustomEvent('open-contact-modal'))"
+   class="md:hidden link-notification whitespace-nowrap shrink-0">
+    Get a Free Quote
+</a>
+```
+
+---
+
+### Contact Modal & FAB Entry Points (MANDATORY)
+
+The `x-ui.contact-modal` component provides the global floating action button ("Contact Us Now") and the "Get a Free Quote" picker modal. It listens for the `open-contact-modal` window CustomEvent on its root Alpine element.
+
+**How to open the contact modal from any element:**
+
+```html
+{{-- onclick (plain HTML buttons, links, any tag) --}}
+onclick="window.dispatchEvent(new CustomEvent('open-contact-modal'))"
+
+{{-- Alpine @click --}}
+@click="window.dispatchEvent(new CustomEvent('open-contact-modal'))"
+```
+
+**Event detail contract:**
+
+| Detail | Behavior |
+|---|---|
+| `{}` (empty) | Opens the picker modal (Custom Apparel Request, DTF Transfers, Send a Message) |
+| `{ dtf: true, fileName: 'name.png' }` | Bypasses picker, launches DTF wizard directly |
+| `{ artwork: true, fileName: 'name.png' }` | Bypasses picker, launches Custom Request wizard in artwork mode |
+
+**Known entry points:**
+
+| Location | Element | Visible at |
+|---|---|---|
+| Every page, bottom-right | FAB "Contact Us Now" | Always |
+| Top notification bar | "Get a Free Quote" link | ≤ 768px only (`md:hidden`) |
+| Home page hero | "Get a Free Quote" button | Always |
+| Same Day Service section | "Schedule Same Day Service" button | Always |
+| Category hero sections | "Get a Free Quote" CTA | Always |
+| Video banner sections | "Get a Free Quote" overlay button | Always |
+
+**Never roll a custom Alpine overlay** for quote/contact flows — always use `open-contact-modal`.
 
 ### Footer Requirements (MANDATORY)
 
@@ -1838,10 +1967,14 @@ These variables are defined in `resources/css/app.css` and match the Tailwind co
   --card-shadow: var(--shadow-md);
   
   /* Navigation */
-  --nav-height: 80px;
-  --nav-height-mobile: 64px;
-  --nav-background: var(--color-charcoal);
-  --nav-text-color: #FFFFFF;
+  --nav-height: 80px;           /* lg:h-20 desktop resting */
+  --nav-height-scrolled: 56px;  /* lg:h-14 desktop scrolled */
+  --nav-height-mobile: 56px;    /* h-14 mobile resting */
+  --nav-height-mobile-scrolled: 48px; /* h-12 mobile scrolled */
+  --nav-background: var(--color-linen);   /* bg-linen (#F2F0E6) — NOT charcoal */
+  --nav-text-color: var(--color-charcoal); /* text-charcoal (#2C2C2C) */
+  --nav-text-hover: var(--color-sunburst); /* hover:text-sunburst */
+  --nav-text-active: var(--color-azure);   /* active link text-azure */
   
   /* Footer */
   --footer-background: var(--color-linen);
