@@ -47,7 +47,7 @@
         primaryButtonHref="#all-products"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/dtf-transfers/toptpct-banner-dtf-transfers-joliet.jpg"
+        image="/images/dtf-transfers/top5pct-dtf-t-shirt-printing.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />
@@ -56,8 +56,8 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/dtf-transfers/top5pct-custom-sweatshirts.jpg',                                    'alt' => 'Custom DTF direct-to-film transfers printed in Joliet Illinois'],
-            ['src' => '/images/dtf-transfers/top5pct-custom-shirt-with-picture.jpg', 'alt' => 'Custom DTF transfers applied to shirts and apparel in Joliet Illinois'],
+            ['src' => '/images/dtf-transfers/top5pct-dtf-tees.jpg',                                             'alt' => 'Custom DTF direct-to-film transfers printed in Joliet Illinois'],
+            ['src' => '/images/dtf-transfers/top5pct-dtf-t-shirt-maker.jpg',                                    'alt' => 'Custom DTF transfers applied to shirts and apparel in Joliet Illinois'],
             ['src' => '/images/dtf-transfers/top5pct-custom-t-shirts-dtf.jpg',                                           'alt' => 'Full color DTF printed shirts in Joliet, Will and DuPage County Illinois'],
             ['src' => '/images/dtf-transfers/top5pct-dtf-hoodies-joliet.jpg',                                     'alt' => 'Custom DTF transfer shirts and apparel made in Joliet Illinois'],
         ]"
@@ -83,8 +83,8 @@
     </x-sections.card-image-with-text>
 
     <x-sections.card-image-with-text
-        image="/images/dtf-transfers/top5pct-custom-baby-clothing-joliet.jpg"
-        alt="Custom baby clothing with DTF printing in Joliet Illinois"
+        image="/images/dtf-transfers/top5pct-custom-dtf-shirts.jpg"
+        alt="Custom DTF shirts printed in Joliet Illinois"
         title="The Right Solution for Small Runs and Samples"
         imagePosition="right"
     >

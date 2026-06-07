@@ -42,7 +42,7 @@ Move all files from `public/new-images/` into the matching `public/images/` dire
 | `custom-apparel/group-shirts/reunion-shirts/` | `reunion-shirts/` | no |
 | `custom-apparel/group-shirts/spirit-wear-shirts/` | `spirit-wear/` | no |
 | `custom-apparel/printing-options/digital-vinyl/` | `custom-shirts/` | no |
-| `custom-apparel/printing-options/dtf-printing/` | `dtf-transfers/` | no |
+| `custom-apparel/printing-options/dtf-printing/` | `dtf-transfers/` | **yes** |
 | `custom-apparel/printing-options/embroidery/` | `embroidery/` | **yes** |
 | `custom-apparel/printing-options/rhinestones/` | `custom-shirts/` | no |
 | `custom-apparel/printing-options/screenprint/` | `custom-shirts/` | no |
@@ -447,20 +447,20 @@ These are product photos of vinyl banners. Existing `top5pct-banner-*` files in 
 
 ### `pages/custom-apparel/dtf-transfers.blade.php`
 
-*New images available: 5 (dtf-printing/) — 7 eligible slots — 5 Pending (carousel 1–4, card-image-left)*
+*All 10 slots complete. 4-slot swap applied: R2 excess images fill hero (Rule 1) and fix 3 Rule 2 violations. R2 slots 7–8 were already in blade before this docs pass. No file moves needed.*
 
 | # | Component | Size | Current Image | Replaced? |
 |---|---|---|---|---|
-| 1 | `category-hero` | full-width × 576px | `dtf-transfers/toptpct-banner-dtf-transfers-joliet.jpg` | Keep |
-| 2 | `carousel` slot 1 | 600×450px | `dtf-transfers/top5pct-custom-sweatshirts.jpg` | Done |
-| 3 | `carousel` slot 2 | 600×450px | `dtf-transfers/top5pct-custom-shirt-with-picture.jpg` | Done |
-| 4 | `carousel` slot 3 | 600×450px | `dtf-transfers/top5pct-custom-t-shirts-dtf.jpg` | Done |
-| 5 | `carousel` slot 4 | 600×450px | `dtf-transfers/top5pct-dtf-hoodies-joliet.jpg` | Done |
-| 6 | `card-image-with-text` (left) | 600×450px | `dtf-transfers/top5pct-dtf-zip-up-hoodies.jpg` | Done |
-| 7 | `card-image-with-text` (right) | 600×450px | `custom-shirts/top5pct-banner-custom-apparel-custom-shirts-custom-hoodies-custom-caps.jpg` | Keep |
-| 8 | `card-detailed-info` image1 | 400×300px | `dtf-transfers/toptpct-banner-dtf-transfers-joliet.jpg` | Keep |
-| 9 | `card-banner-slide-in` (right→left) | full-width 16:7 | `dtf-transfers/toptpct-banner-dtf-transfers-joliet.jpg` | Keep |
-| 10 | `card-banner-slide-in` (left→right) | full-width 16:7 | `custom-shirts/top5pct-custom-embroidery-shops-near-me-joliet.jpg` | Keep |
+| 1 | `category-hero` | full-width × 576px | `dtf-transfers/top5pct-dtf-t-shirt-printing.jpg` | Done — R2 excess to hero (Rule 1 fix) |
+| 2 | `carousel` slot 1 | 600×450px | `dtf-transfers/top5pct-dtf-tees.jpg` | Done — R2 excess (Rule 2 fix; displaces R1 `custom-sweatshirts`) |
+| 3 | `carousel` slot 2 | 600×450px | `dtf-transfers/top5pct-dtf-t-shirt-maker.jpg` | Done — R2 excess (Rule 2 fix; displaces R1 `custom-shirt-with-picture`) |
+| 4 | `carousel` slot 3 | 600×450px | `dtf-transfers/top5pct-custom-t-shirts-dtf.jpg` | Done (R1) |
+| 5 | `carousel` slot 4 | 600×450px | `dtf-transfers/top5pct-dtf-hoodies-joliet.jpg` | Done (R1) |
+| 6 | `card-image-with-text` (left) | 600×450px | `dtf-transfers/top5pct-dtf-zip-up-hoodies.jpg` | Done (R1) |
+| 7 | `card-image-with-text` (right) | 600×450px | `dtf-transfers/top5pct-custom-dtf-shirts.jpg` | Done — R2 excess (Rule 2 fix; displaces R2 `custom-baby-clothing`) |
+| 8 | `card-detailed-info` image1 | 400×300px | `dtf-transfers/top5pct-custom-bowling-shirts-dtf.jpg` | Done (R2, already in blade) |
+| 9 | `card-banner-slide-in` (right→left) | full-width 16:7 | `dtf-transfers/toptpct-banner-dtf-transfers-joliet.jpg` | Keep — pre-migration banner, "dtf"+"transfers" ✓ |
+| 10 | `card-banner-slide-in` (left→right) | full-width 16:7 | `custom-shirts/top5pct-custom-embroidery-shops-near-me-joliet.jpg` | Keep — intentional cross-promo to embroidery |
 
 ---
 
@@ -1047,7 +1047,7 @@ Move all files from `public/new-images/` (Round 2 batch) into the matching `publ
 | `Custom Shirts/Group Shirts/Corporate Wear/` | `corporate-wear/` | no |
 | `Custom Shirts/Group Shirts/Spirit Wear/` | `spirit-wear/` | no |
 | `Custom Shirts/Printing Options/Digital Vinyl/` | `custom-shirts/` | no |
-| `Custom Shirts/Printing Options/DTF/` | `dtf-transfers/` | no |
+| `Custom Shirts/Printing Options/DTF/` | `dtf-transfers/` | **yes** |
 | `Custom Shirts/Printing Options/Embroidery/` | `embroidery/` | **yes** |
 | `Custom Shirts/Printing Options/Rhinestones/` | `custom-shirts/` | no |
 | `Custom Shirts/Printing Options/Sublimation/` | `sublimation/` | **yes** |
@@ -1522,22 +1522,20 @@ Create `public/images/outdoor-signs/` before copying.
 
 ### `pages/custom-apparel/dtf-transfers.blade.php`
 
-*R1 used 5 slots (all Done). R2 new images: 6 — fills remaining 2 eligible slots.*
+*All 10 slots complete. 4-slot swap applied: R2 excess images fill hero (Rule 1) and fix 3 Rule 2 violations. R2 slots 7–8 were already in blade before this docs pass. No file moves needed.*
 
 | # | Component | Size | Current Image | Replaced? |
 |---|---|---|---|---|
-| 1 | `category-hero` | full-width × 576px | `dtf-transfers/toptpct-banner-dtf-transfers-joliet.jpg` | Keep |
-| 2 | `carousel` slot 1 | 600×450px | `dtf-transfers/top5pct-custom-sweatshirts.jpg` | Done (R1) |
-| 3 | `carousel` slot 2 | 600×450px | `dtf-transfers/top5pct-custom-shirt-with-picture.jpg` | Done (R1) |
+| 1 | `category-hero` | full-width × 576px | `dtf-transfers/top5pct-dtf-t-shirt-printing.jpg` | Done — R2 excess to hero (Rule 1 fix) |
+| 2 | `carousel` slot 1 | 600×450px | `dtf-transfers/top5pct-dtf-tees.jpg` | Done — R2 excess (Rule 2 fix; displaces R1 `custom-sweatshirts`) |
+| 3 | `carousel` slot 2 | 600×450px | `dtf-transfers/top5pct-dtf-t-shirt-maker.jpg` | Done — R2 excess (Rule 2 fix; displaces R1 `custom-shirt-with-picture`) |
 | 4 | `carousel` slot 3 | 600×450px | `dtf-transfers/top5pct-custom-t-shirts-dtf.jpg` | Done (R1) |
 | 5 | `carousel` slot 4 | 600×450px | `dtf-transfers/top5pct-dtf-hoodies-joliet.jpg` | Done (R1) |
 | 6 | `card-image-with-text` (left) | 600×450px | `dtf-transfers/top5pct-dtf-zip-up-hoodies.jpg` | Done (R1) |
-| 7 | `card-image-with-text` (right) | 600×450px | `dtf-transfers/top5pct-custom-baby-clothing-joliet.jpg` | Pending |
-| 8 | `card-detailed-info` image1 | 400×300px | `dtf-transfers/top5pct-custom-bowling-shirts-dtf.jpg` | Pending |
-| 9 | `card-banner-slide-in` (right→left) | full-width 16:7 | `dtf-transfers/toptpct-banner-dtf-transfers-joliet.jpg` | Keep |
-| 10 | `card-banner-slide-in` (left→right) | full-width 16:7 | `custom-shirts/top5pct-custom-embroidery-shops-near-me-joliet.jpg` | Keep |
-
-> R2 excess (copied to `dtf-transfers/`, no slot assignment): `top5pct-custom-dtf-shirts.jpg`, `top5pct-dtf-tees.jpg`, `top5pct-dtf-t-shirt-maker.jpg`, `top5pct-dtf-t-shirt-printing.jpg`.
+| 7 | `card-image-with-text` (right) | 600×450px | `dtf-transfers/top5pct-custom-dtf-shirts.jpg` | Done — R2 excess (Rule 2 fix; displaces R2 `custom-baby-clothing`) |
+| 8 | `card-detailed-info` image1 | 400×300px | `dtf-transfers/top5pct-custom-bowling-shirts-dtf.jpg` | Done (R2, already in blade) |
+| 9 | `card-banner-slide-in` (right→left) | full-width 16:7 | `dtf-transfers/toptpct-banner-dtf-transfers-joliet.jpg` | Keep — pre-migration banner, "dtf"+"transfers" ✓ |
+| 10 | `card-banner-slide-in` (left→right) | full-width 16:7 | `custom-shirts/top5pct-custom-embroidery-shops-near-me-joliet.jpg` | Keep — intentional cross-promo to embroidery |
 
 ---
 
