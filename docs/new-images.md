@@ -44,7 +44,7 @@ Move all files from `public/new-images/` into the matching `public/images/` dire
 | `custom-apparel/printing-options/digital-vinyl/` | `custom-shirts/` | no |
 | `custom-apparel/printing-options/dtf-printing/` | `dtf-transfers/` | **yes** |
 | `custom-apparel/printing-options/embroidery/` | `embroidery/` | **yes** |
-| `custom-apparel/printing-options/rhinestones/` | `custom-shirts/` | no |
+| `custom-apparel/printing-options/rhinestones/` | `custom-shirts/` | **yes** |
 | `custom-apparel/printing-options/screenprint/` | `custom-shirts/` | no |
 | `custom-apparel/printing-options/sublimation/` | `sublimation/` | **yes** |
 | `custom-apparel/specialty-material/brick/` | `custom-shirts/` | no |
@@ -483,22 +483,22 @@ These are product photos of vinyl banners. Existing `top5pct-banner-*` files in 
 
 ---
 
-### `pages/custom-apparel/rhinestone-shirts.blade.php`
+### `pages/custom-apparel/printing-options/rhinestone-apparel.blade.php`
 
-*New images available: 1 (rhinestones/) — 7 eligible slots — 1 Pending (carousel slot 1 only)*
+*All 10 slots complete. Directory: `custom-shirts/` (shared by design — no own dir). R1 had 1 image: `rhinestone-hoodies-joliet.jpg` — superseded at carousel 1 by R2; becomes unassigned R1 excess used directly for hero (Rule 1 fix, no 2-slot swap needed). All 7 R2 rhinestone images were already pre-applied to blade. No file moves needed. R1 doc previously tracked stale blade path (`rhinestone-shirts.blade.php`) — corrected here.*
 
 | # | Component | Size | Current Image | Replaced? |
 |---|---|---|---|---|
-| 1 | `category-hero` | full-width × 576px | `custom-shirts/top5pct-custom-rhinestone-shirt-cap-hoodie-joliet.jpg` | Keep |
-| 2 | `carousel` slot 1 | 600×450px | `custom-shirts/top5pct-rhinestone-hoodies-joliet.jpg` | Done |
-| 3 | `carousel` slot 2 | 600×450px | `custom-shirts/top5pct-banner-custom-apparel-custom-shirts-custom-hoodies-custom-caps.jpg` | Keep |
-| 4 | `carousel` slot 3 | 600×450px | `custom-shirts/top5pct-custom-glitter-shirt-cap-hoodie-joliet.jpg` | Keep |
-| 5 | `carousel` slot 4 | 600×450px | `custom-shirts/top5pct-t-shirt-maker-article-pic2.jpg` | Keep |
-| 6 | `card-image-with-text` (left) | 600×450px | `custom-shirts/top5pct-custom-rhinestone-shirt-cap-hoodie-joliet.jpg` | Keep |
-| 7 | `card-image-with-text` (right) | 600×450px | `custom-shirts/top5pct-custom-glitter-shirt-cap-hoodie-joliet.jpg` | Keep |
-| 8 | `card-detailed-info` image1 | 400×300px | `custom-shirts/top5pct-custom-rhinestone-shirt-cap-hoodie-joliet.jpg` | Keep |
-| 9 | `card-banner-slide-in` (right→left) | full-width 16:7 | `custom-shirts/top5pct-custom-rhinestone-shirt-cap-hoodie-joliet.jpg` | Keep |
-| 10 | `card-banner-slide-in` (left→right) | full-width 16:7 | `custom-shirts/top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg` | Keep |
+| 1 | `category-hero` | full-width × 576px | `custom-shirts/top5pct-rhinestone-hoodies-joliet.jpg` | Done — R1 excess assigned directly to hero (Rule 1 fix) |
+| 2 | `carousel` slot 1 | 600×450px | `custom-shirts/top5pct-rhinestone-apparel-keith-elementary.jpg` | Done (R2, already in blade) |
+| 3 | `carousel` slot 2 | 600×450px | `custom-shirts/top5pct-rhinestone-bling-joliet.jpg` | Done (R2, already in blade) |
+| 4 | `carousel` slot 3 | 600×450px | `custom-shirts/top5pct-rhinestone-hoodie-joliet-west.jpg` | Done (R2, already in blade) |
+| 5 | `carousel` slot 4 | 600×450px | `custom-shirts/top5pct-rhinestone-ladies-shirt.jpg` | Done (R2, already in blade) |
+| 6 | `card-image-with-text` (left) "Crystal Bling…" | 600×450px | `custom-shirts/top5pct-rhinestone-t-shirts-joliet.jpg` | Done (R2, already in blade) |
+| 7 | `card-image-with-text` (right) "Custom Designs…" | 600×450px | `custom-shirts/top5pct-custom-rhinestone-shirts.jpg` | Done (R2, already in blade) |
+| 8 | `card-detailed-info` image1 | 400×300px | `custom-shirts/top5pct-rhinetsone-t-shirts.jpg` | Done (R2, already in blade; typo "rhinetsone" in filename preserved as-is) |
+| 9 | `card-banner-slide-in` (direction="right") | full-width 16:7 | `custom-shirts/top5pct-custom-rhinestone-shirt-cap-hoodie-joliet.jpg` | Keep — "rhinestone" ✓ Rule 2 |
+| 10 | `card-banner-slide-in` (direction="left") | full-width 16:7 | `custom-shirts/top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg` | Keep — intentional cross-promo ("Rhinestone, Holographic, Foil…") |
 
 ---
 
@@ -1049,7 +1049,7 @@ Move all files from `public/new-images/` (Round 2 batch) into the matching `publ
 | `Custom Shirts/Printing Options/Digital Vinyl/` | `custom-shirts/` | no |
 | `Custom Shirts/Printing Options/DTF/` | `dtf-transfers/` | **yes** |
 | `Custom Shirts/Printing Options/Embroidery/` | `embroidery/` | **yes** |
-| `Custom Shirts/Printing Options/Rhinestones/` | `custom-shirts/` | no |
+| `Custom Shirts/Printing Options/Rhinestones/` | `custom-shirts/` | **yes** |
 | `Custom Shirts/Printing Options/Sublimation/` | `sublimation/` | **yes** |
 | `Custom Shirts/Specialty Material/Brick/` | `custom-shirts/` | no |
 | `Custom Shirts/Specialty Material/Chameleon/` | `custom-shirts/` | no |
@@ -1060,7 +1060,7 @@ Move all files from `public/new-images/` (Round 2 batch) into the matching `publ
 | `Custom Shirts/Specialty Material/Holographic/` | `custom-shirts/` | no |
 | `Custom Shirts/Specialty Material/Puff/` | `custom-shirts/` | **yes** |
 | `Custom Shirts/Specialty Material/Reflective/` | `custom-shirts/` | no |
-| `Custom Shirts/Specialty Material/Rhinestones/` | `custom-shirts/` | no |
+| `Custom Shirts/Specialty Material/Rhinestones/` | `custom-shirts/` | **yes** |
 | `Ground Signs/A-Frames/` | `sidewalk-signs/` | no |
 | `Koozies/` | `promo-items/koozies/` | no |
 | `Mugs/` | `promo-items/mugs/` | no |
@@ -1560,20 +1560,20 @@ Create `public/images/outdoor-signs/` before copying.
 
 ### `pages/custom-apparel/printing-options/rhinestone-apparel.blade.php`
 
-*Not in R1 inventory — all slots were Keep. R2 new images: 7 (5 from Printing Options + 2 from Specialty Material/Rhinestones) — fills all 7 eligible slots.*
+*All 10 slots complete. Directory: `custom-shirts/` (shared by design — no own dir). R2 new images: 7 (5 from Printing Options + 2 from Specialty Material/Rhinestones) — all 7 were pre-applied to blade before this pass. Hero updated via direct R1 excess assignment: `rhinestone-hoodies-joliet.jpg` (R1 excess, superseded at carousel 1 by R2) promoted to hero (Rule 1 fix). No 2-slot swap needed. No file moves needed. All 3 rules fully resolved.*
 
 | # | Component | Size | Current Image | Replaced? |
 |---|---|---|---|---|
-| 1 | `category-hero` | full-width × 576px | `custom-shirts/top5pct-custom-rhinestone-shirt-cap-hoodie-joliet.jpg` | Keep |
-| 2 | `carousel` slot 1 | 600×450px | `custom-shirts/top5pct-rhinestone-apparel-keith-elementary.jpg` | Pending |
-| 3 | `carousel` slot 2 | 600×450px | `custom-shirts/top5pct-rhinestone-bling-joliet.jpg` | Pending |
-| 4 | `carousel` slot 3 | 600×450px | `custom-shirts/top5pct-rhinestone-hoodie-joliet-west.jpg` | Pending |
-| 5 | `carousel` slot 4 | 600×450px | `custom-shirts/top5pct-rhinestone-ladies-shirt.jpg` | Pending |
-| 6 | `card-image-with-text` (left) | 600×450px | `custom-shirts/top5pct-rhinestone-t-shirts-joliet.jpg` | Pending |
-| 7 | `card-image-with-text` (right) | 600×450px | `custom-shirts/top5pct-custom-rhinestone-shirts.jpg` | Pending |
-| 8 | `card-detailed-info` image1 | 400×300px | `custom-shirts/top5pct-rhinetsone-t-shirts.jpg` | Pending |
-| 9 | `card-banner-slide-in` (right→left) | full-width 16:7 | `custom-shirts/top5pct-custom-rhinestone-shirt-cap-hoodie-joliet.jpg` | Keep |
-| 10 | `card-banner-slide-in` (left→right) | full-width 16:7 | `custom-shirts/top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg` | Keep |
+| 1 | `category-hero` | full-width × 576px | `custom-shirts/top5pct-rhinestone-hoodies-joliet.jpg` | Done — R1 excess assigned directly to hero (Rule 1 fix) |
+| 2 | `carousel` slot 1 | 600×450px | `custom-shirts/top5pct-rhinestone-apparel-keith-elementary.jpg` | Done (R2, already in blade) |
+| 3 | `carousel` slot 2 | 600×450px | `custom-shirts/top5pct-rhinestone-bling-joliet.jpg` | Done (R2, already in blade) |
+| 4 | `carousel` slot 3 | 600×450px | `custom-shirts/top5pct-rhinestone-hoodie-joliet-west.jpg` | Done (R2, already in blade) |
+| 5 | `carousel` slot 4 | 600×450px | `custom-shirts/top5pct-rhinestone-ladies-shirt.jpg` | Done (R2, already in blade) |
+| 6 | `card-image-with-text` (left) "Crystal Bling…" | 600×450px | `custom-shirts/top5pct-rhinestone-t-shirts-joliet.jpg` | Done (R2, already in blade) |
+| 7 | `card-image-with-text` (right) "Custom Designs…" | 600×450px | `custom-shirts/top5pct-custom-rhinestone-shirts.jpg` | Done (R2, already in blade) |
+| 8 | `card-detailed-info` image1 | 400×300px | `custom-shirts/top5pct-rhinetsone-t-shirts.jpg` | Done (R2, already in blade; typo "rhinetsone" in filename preserved as-is) |
+| 9 | `card-banner-slide-in` (direction="right") | full-width 16:7 | `custom-shirts/top5pct-custom-rhinestone-shirt-cap-hoodie-joliet.jpg` | Keep — "rhinestone" ✓ Rule 2 |
+| 10 | `card-banner-slide-in` (direction="left") | full-width 16:7 | `custom-shirts/top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg` | Keep — intentional cross-promo ("Rhinestone, Holographic, Foil…") |
 
 ---
 
