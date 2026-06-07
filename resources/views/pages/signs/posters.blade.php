@@ -47,7 +47,7 @@
         primaryButtonHref="#all-products"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/posters/top5pct-banner-poster-maker-joliet-romeoville-shorewood.jpg"
+        image="/images/posters/top5pct-posters-printed-joliet.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />
@@ -56,10 +56,10 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/posters/top5pct-big-posters-joliet.jpg',                             'alt' => 'Custom large posters in Joliet Illinois'],
-            ['src' => '/images/posters/top5pct-custom-posters.jpg',                                 'alt' => 'Custom posters in Joliet Illinois'],
-            ['src' => '/images/posters/top5pct-poster-board-joliet.jpg',                            'alt' => 'Custom poster board in Joliet Illinois'],
-            ['src' => '/images/posters/top5pct-posters-printed-joliet.jpg',                         'alt' => 'Custom posters printed in Joliet Illinois'],
+            ['src' => '/images/posters/top5pct-big-posters-joliet.jpg',                                       'alt' => 'Custom large posters in Joliet Illinois'],
+            ['src' => '/images/posters/top5pct-custom-posters.jpg',                                           'alt' => 'Custom posters in Joliet Illinois'],
+            ['src' => '/images/posters/top5pct-poster-board-joliet.jpg',                                      'alt' => 'Custom poster board in Joliet Illinois'],
+            ['src' => '/images/posters/top5pct-banner-poster-maker-joliet-romeoville-shorewood.jpg',           'alt' => 'Custom poster maker in Joliet, Romeoville, and Shorewood Illinois'],
         ]"
         visible=2
     />

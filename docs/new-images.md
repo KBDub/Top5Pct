@@ -1041,7 +1041,7 @@ Move all files from `public/new-images/` (Round 2 batch) into the matching `publ
 | `Business Signs/Banners/` | `banners/` | **yes** |
 | `Business Signs/Door Signs/` | `window-wall-floor-decals/` | **yes** |
 | `Business Signs/Outdoor Signs/` | `outdoor-signs/` | **yes** |
-| `Business Signs/Posters/` | `posters/` | no |
+| `Business Signs/Posters/` | `posters/` | **yes** |
 | `Business Signs/Wall Signs/` | `window-wall-floor-decals/` | no |
 | `Business Signs/Window Signs/` | `window-wall-floor-decals/` | **yes** |
 | `Custom Shirts/Group Shirts/Corporate Wear/` | `corporate-wear/` | no |
@@ -1857,22 +1857,23 @@ Create `public/images/outdoor-signs/` before copying.
 
 ### `pages/signs/posters.blade.php`
 
-*Not in R1 inventory — all slots were Keep. R2 new images: 4 — fills first 4 eligible slots.*
+*All 13 slots complete. Directory: `posters/` (own category dir). Not in R1 inventory. Hero updated via 2-slot swap: R2 `top5pct-posters-printed-joliet.jpg` promoted from carousel 4 to hero (Rule 1 fix), pre-existing hero displaced to carousel 4. All 4 R2 carousel images were already in blade. No file moves needed. R2 doc corrected: had 12 slots (missed card-detailed at slot 11, duplicate at slot 10).*
 
 | # | Component | Size | Current Image | Replaced? |
 |---|---|---|---|---|
-| 1 | `category-hero` | full-width × 576px | `posters/top5pct-banner-poster-maker-joliet-romeoville-shorewood.jpg` | Keep |
-| 2 | `carousel` slot 1 | 600×450px | `posters/top5pct-big-posters-joliet.jpg` | Pending |
-| 3 | `carousel` slot 2 | 600×450px | `posters/top5pct-custom-posters.jpg` | Pending |
-| 4 | `carousel` slot 3 | 600×450px | `posters/top5pct-poster-board-joliet.jpg` | Pending |
-| 5 | `carousel` slot 4 | 600×450px | `posters/top5pct-posters-printed-joliet.jpg` | Pending |
-| 6 | `card-image-with-text` (left) | 600×450px | `posters/top5pct-poster-printing-joliet-shorewood-romeoville.jpg` | Keep |
-| 7 | `card-image-with-text` (right) | 600×450px | `posters/top5pct-poster-maker-joliet-shorewood-plainfield.jpg` | Keep |
+| 1 | `category-hero` | full-width × 576px | `posters/top5pct-posters-printed-joliet.jpg` | Done — R2 to hero (Rule 1 fix) |
+| 2 | `carousel` slot 1 | 600×450px | `posters/top5pct-big-posters-joliet.jpg` | Done (R2, already in blade) |
+| 3 | `carousel` slot 2 | 600×450px | `posters/top5pct-custom-posters.jpg` | Done (R2, already in blade) |
+| 4 | `carousel` slot 3 | 600×450px | `posters/top5pct-poster-board-joliet.jpg` | Done (R2, already in blade) |
+| 5 | `carousel` slot 4 | 600×450px | `posters/top5pct-banner-poster-maker-joliet-romeoville-shorewood.jpg` | Pre-existing hero displaced here (2-slot swap) |
+| 6 | `card-image-with-text` (left) "Poster Printing in Joliet" | 600×450px | `posters/top5pct-poster-printing-joliet-shorewood-romeoville.jpg` | Keep |
+| 7 | `card-image-with-text` (right) "Large Format" | 600×450px | `posters/top5pct-poster-maker-joliet-shorewood-plainfield.jpg` | Keep |
 | 8 | `card-2image-with-text` image1 | fluid 4:3, ~50% | `posters/top5pct-poster-board-joliet-shorewood-romeoville.jpg` | Keep |
 | 9 | `card-2image-with-text` image2 | fluid 4:3, ~50% | `posters/top5pct-postermywall-joliet-shorewood-crest-hill.jpg` | Keep |
-| 10 | `card-image-with-text` (left) | 600×450px | `posters/top5pct-poster-printing-joliet-shorewood-romeoville.jpg` | Keep |
-| 11 | `card-banner-slide-in` (right→left) | full-width 16:7 | `posters/top5pct-poster-printing-joliet-shorewood-romeoville.jpg` | Keep |
-| 12 | `card-banner-slide-in` (left→right) | full-width 16:7 | `banners/top5pct-banners-business-joliet-shorewood-crest-hill.jpg` | Keep |
+| 10 | `card-image-with-text` (left) "Design and Paper Options" | 600×450px | `posters/top5pct-poster-store-joliet-shorewood-plainfield.jpg` | Keep |
+| 11 | `card-detailed-info` image1 | 400×300px | `posters/top5pct-article-posters-joliet-pic1.jpg` | Keep |
+| 12 | `card-banner-slide-in` (direction="right") | full-width 16:7 | `posters/top5pct-poster-printing-joliet-shorewood-romeoville.jpg` | Keep |
+| 13 | `card-banner-slide-in` (direction="left") | full-width 16:7 | `banners/top5pct-banners-business-joliet-shorewood-crest-hill.jpg` | Keep — intentional cross-promo to banners |
 
 ---
 
