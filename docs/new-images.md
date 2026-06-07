@@ -1,5 +1,17 @@
 # New Images Migration Plan
 
+## General Rules
+
+These rules apply to all rounds of migration and all page slot assignments.
+
+| # | Rule |
+|---|---|
+| 1 | **Hero images must be a new R1 or R2 image.** Never reuse a pre-migration image in a `category-hero` slot. |
+| 2 | **All images must contain their category name (or a derivative) in the filename.** Example: embroidery images must include "embroid" or "stitched" in the name. |
+| 3 | **Create a `public/images/<category>/` directory for each distinct category** instead of grouping unrelated categories under `custom-shirts/`. |
+
+---
+
 ## Overview
 
 Move all files from `public/new-images/` into the matching `public/images/` directories, applying a `top5pct-` prefix to every incoming filename. If an existing file's basename would collide with a renamed incoming file, rename the old file to `<basename>-old.jpg` first. Banner hero images (page-header banners) that have no new-images counterparts are left untouched.
@@ -31,7 +43,7 @@ Move all files from `public/new-images/` into the matching `public/images/` dire
 | `custom-apparel/group-shirts/spirit-wear-shirts/` | `spirit-wear/` | no |
 | `custom-apparel/printing-options/digital-vinyl/` | `custom-shirts/` | no |
 | `custom-apparel/printing-options/dtf-printing/` | `dtf-transfers/` | no |
-| `custom-apparel/printing-options/embroidery/` | `custom-shirts/` | no |
+| `custom-apparel/printing-options/embroidery/` | `embroidery/` | **yes** |
 | `custom-apparel/printing-options/rhinestones/` | `custom-shirts/` | no |
 | `custom-apparel/printing-options/screenprint/` | `custom-shirts/` | no |
 | `custom-apparel/printing-options/sublimation/` | `custom-shirts/` | no |
@@ -454,20 +466,20 @@ These are product photos of vinyl banners. Existing `top5pct-banner-*` files in 
 
 ### `pages/custom-apparel/embroidery.blade.php`
 
-*New images available: 4 (embroidery/) — 7 eligible slots — 4 Pending (carousel 1–4)*
+*New images available: 4 (embroidery/) — 4 Done (carousel 1–4). Remaining slots addressed in R2. Directory: `embroidery/`.*
 
 | # | Component | Size | Current Image | Replaced? |
 |---|---|---|---|---|
-| 1 | `category-hero` | full-width × 576px | `custom-shirts/top5pct-custom-embroidery-shops-near-me-joliet.jpg` | Keep |
-| 2 | `carousel` slot 1 | 600×450px | `custom-shirts/top5pct-embroidered-aprons.jpg` | Done |
-| 3 | `carousel` slot 2 | 600×450px | `custom-shirts/top5pct-embroidered-caps.jpg` | Done |
-| 4 | `carousel` slot 3 | 600×450px | `custom-shirts/top5pct-embroidery-in-joliet.jpg` | Done |
-| 5 | `carousel` slot 4 | 600×450px | `custom-shirts/top5pct-stitched-caps.jpg` | Done |
-| 6 | `card-image-with-text` (left) | 600×450px | `custom-shirts/top5pct-custom-embroidery-shops-near-me-joliet.jpg` | Keep |
-| 7 | `card-image-with-text` (right) | 600×450px | `custom-shirts/top5pct-banner-custom-apparel-custom-shirts-custom-hoodies-custom-caps.jpg` | Keep |
-| 8 | `card-detailed-info` image1 | 400×300px | `custom-shirts/top5pct-custom-embroidery-shops-near-me-joliet.jpg` | Keep |
-| 9 | `card-banner-slide-in` (right→left) | full-width 16:7 | `custom-shirts/top5pct-custom-embroidery-shops-near-me-joliet.jpg` | Keep |
-| 10 | `card-banner-slide-in` (left→right) | full-width 16:7 | `custom-shirts/top5pct-custom-vinyl-shirts-caps-hoodies.jpg` | Keep |
+| 1 | `category-hero` | full-width × 576px | `embroidery/top5pct-custom-embroidery-shops-near-me-joliet.jpg` | Keep |
+| 2 | `carousel` slot 1 | 600×450px | `embroidery/top5pct-embroidered-aprons.jpg` | Done |
+| 3 | `carousel` slot 2 | 600×450px | `embroidery/top5pct-embroidered-caps.jpg` | Done |
+| 4 | `carousel` slot 3 | 600×450px | `embroidery/top5pct-embroidery-in-joliet.jpg` | Done |
+| 5 | `carousel` slot 4 | 600×450px | `embroidery/top5pct-embroidered-stitched-caps.jpg` | Done — renamed from `stitched-caps.jpg` |
+| 6 | `card-image-with-text` (left) | 600×450px | `embroidery/top5pct-custom-embroidery-shops-near-me-joliet.jpg` | Keep |
+| 7 | `card-image-with-text` (right) | 600×450px | `embroidery/top5pct-banner-custom-apparel-custom-shirts-custom-hoodies-custom-caps.jpg` | Keep |
+| 8 | `card-detailed-info` image1 | 400×300px | `embroidery/top5pct-custom-embroidery-shops-near-me-joliet.jpg` | Keep |
+| 9 | `card-banner-slide-in` (right→left) | full-width 16:7 | `embroidery/top5pct-custom-embroidery-shops-near-me-joliet.jpg` | Keep |
+| 10 | `card-banner-slide-in` (left→right) | full-width 16:7 | `embroidery/top5pct-custom-vinyl-shirts-caps-hoodies.jpg` | Keep |
 
 ---
 
@@ -1036,7 +1048,7 @@ Move all files from `public/new-images/` (Round 2 batch) into the matching `publ
 | `Custom Shirts/Group Shirts/Spirit Wear/` | `spirit-wear/` | no |
 | `Custom Shirts/Printing Options/Digital Vinyl/` | `custom-shirts/` | no |
 | `Custom Shirts/Printing Options/DTF/` | `dtf-transfers/` | no |
-| `Custom Shirts/Printing Options/Embroidery/` | `custom-shirts/` | no |
+| `Custom Shirts/Printing Options/Embroidery/` | `embroidery/` | **yes** |
 | `Custom Shirts/Printing Options/Rhinestones/` | `custom-shirts/` | no |
 | `Custom Shirts/Printing Options/Sublimation/` | `custom-shirts/` | no |
 | `Custom Shirts/Specialty Material/Brick/` | `custom-shirts/` | no |
@@ -1531,22 +1543,20 @@ Create `public/images/outdoor-signs/` before copying.
 
 ### `pages/custom-apparel/printing-options/embroidery.blade.php`
 
-*R1 used 4 slots (carousel 1–4 Done). R2 new images: 5 — fills remaining 3 eligible slots.*
+*Revised plan — all 10 slots assigned. R1 Done: carousel 1–4. R2 Pending: hero, card-left, card-right, card-detailed, both slide-ins. Directory: `embroidery/`. Rename: `stitched-caps.jpg` → `embroidered-stitched-caps.jpg` on disk and in blade.*
 
 | # | Component | Size | Current Image | Replaced? |
 |---|---|---|---|---|
-| 1 | `category-hero` | full-width × 576px | `custom-shirts/top5pct-custom-embroidery-shops-near-me-joliet.jpg` | Keep |
-| 2 | `carousel` slot 1 | 600×450px | `custom-shirts/top5pct-embroidered-aprons.jpg` | Done (R1) |
-| 3 | `carousel` slot 2 | 600×450px | `custom-shirts/top5pct-embroidered-caps.jpg` | Done (R1) — R2 replaces file transparently via collision rename |
-| 4 | `carousel` slot 3 | 600×450px | `custom-shirts/top5pct-embroidery-in-joliet.jpg` | Done (R1) |
-| 5 | `carousel` slot 4 | 600×450px | `custom-shirts/top5pct-stitched-caps.jpg` | Done (R1) |
-| 6 | `card-image-with-text` (left) | 600×450px | `custom-shirts/top5pct-embroidered-bag.jpg` | Pending |
-| 7 | `card-image-with-text` (right) | 600×450px | `custom-shirts/top5pct-embroidered-smocks.jpg` | Pending |
-| 8 | `card-detailed-info` image1 | 400×300px | `custom-shirts/top5pct-embroidery-beanies.jpg` | Pending |
-| 9 | `card-banner-slide-in` (right→left) | full-width 16:7 | `custom-shirts/top5pct-custom-embroidery-shops-near-me-joliet.jpg` | Keep |
-| 10 | `card-banner-slide-in` (left→right) | full-width 16:7 | `custom-shirts/top5pct-custom-vinyl-shirts-caps-hoodies.jpg` | Keep |
-
-> R2 excess (copied to `custom-shirts/`, no slot assignment): `top5pct-stitched-embroidered-shirts.jpg`.
+| 1 | `category-hero` | full-width × 576px | `embroidery/top5pct-stitched-embroidered-shirts.jpg` | Pending — new R2 image (hero rule) |
+| 2 | `carousel` slot 1 | 600×450px | `embroidery/top5pct-embroidered-aprons.jpg` | Done (R1) |
+| 3 | `carousel` slot 2 | 600×450px | `embroidery/top5pct-embroidered-caps.jpg` | Done (R1) — R2 file replaced via collision rename |
+| 4 | `carousel` slot 3 | 600×450px | `embroidery/top5pct-embroidery-in-joliet.jpg` | Done (R1) |
+| 5 | `carousel` slot 4 | 600×450px | `embroidery/top5pct-embroidered-stitched-caps.jpg` | Done (R1) — renamed from `stitched-caps.jpg` |
+| 6 | `card-image-with-text` (left) | 600×450px | `embroidery/top5pct-embroidered-bag.jpg` | Pending |
+| 7 | `card-image-with-text` (right) | 600×450px | `embroidery/top5pct-embroidered-smocks.jpg` | Pending |
+| 8 | `card-detailed-info` image1 | 400×300px | `embroidery/top5pct-embroidery-beanies.jpg` | Pending |
+| 9 | `card-banner-slide-in` (right→left) | full-width 16:7 | `embroidery/top5pct-custom-embroidery-shops-near-me-joliet.jpg` | Pending — displaced from hero |
+| 10 | `card-banner-slide-in` (left→right) | full-width 16:7 | `embroidery/top5pct-embroidered-caps-old.jpg` | Pending — collision old file, 10th slot |
 
 ---
 
