@@ -52,7 +52,7 @@ Move all files from `public/new-images/` into the matching `public/images/` dire
 | `custom-apparel/specialty-material/reflective/` | `custom-shirts/` | no |
 | `promo-items/koozies/` | `promo-items/koozies/` | **yes** |
 | `promo-items/mugs/` | `promo-items/mugs/` | **yes** |
-| `signs/business-signs/banners/` | `banners/` | no |
+| `signs/business-signs/banners/` | `banners/` | **yes** |
 | `signs/business-signs/door-signs/` | `window-wall-floor-decals/` | no |
 | `signs/business-signs/wall-signs/` | `window-wall-floor-decals/` | no |
 | `signs/business-signs/window-signs/` | `window-wall-floor-decals/` | no |
@@ -651,22 +651,22 @@ These are product photos of vinyl banners. Existing `top5pct-banner-*` files in 
 
 ### `pages/signs/banners.blade.php`
 
-*New images available: 7 (banners/) — 11 eligible slots — 7 Pending (carousel 1–4, card-left, card-right, card-2image image1)*
+*All 14 slots complete. Directory: `banners/` (was already dedicated). Hero updated to R2 excess image (Rule 1 fix). Slots 9–12 were already in blade before docs update. No file moves needed.*
 
 | # | Component | Size | Current Image | Replaced? |
 |---|---|---|---|---|
-| 1 | `category-hero` | full-width × 576px | `banners/top5pct-banner-business-banners-joliet-shorewood-crest-hill.jpg` | Keep |
-| 2 | `carousel` slot 1 | 600×450px | `banners/top5pct-banners-and-signs.jpg` | Done |
-| 3 | `carousel` slot 2 | 600×450px | `banners/top5pct-banners-near-me.jpg` | Done |
-| 4 | `carousel` slot 3 | 600×450px | `banners/top5pct-big-banners.jpg` | Done |
-| 5 | `carousel` slot 4 | 600×450px | `banners/top5pct-custom-retractable-banners-joliet.jpg` | Done |
-| 6 | `card-image-with-text` (left) | 600×450px | `banners/top5pct-custom-vinyl-banners.jpg` | Done |
-| 7 | `card-image-with-text` (right) | 600×450px | `banners/top5pct-graduation-banners.jpg` | Done |
-| 8 | `card-2image-with-text` image1 | fluid 4:3, ~50% | `banners/top5pct-retractable-banner.jpg` | Done |
-| 9 | `card-2image-with-text` image2 | fluid 4:3, ~50% | `banners/top5pct-birthday-banners-joliet-shorewood-crest-hill.jpg` | Keep |
-| 10 | `card-2image-with-text` image1 | fluid 4:3, ~50% | `banners/top5pct-family-reunion-banners-joliet-crest-hill.jpg` | Keep |
-| 11 | `card-2image-with-text` image2 | fluid 4:3, ~50% | `banners/top5pct-team-banners-joliet-shorewood-crest-hill.jpg` | Keep |
-| 12 | `card-detailed-info` image1 | 400×300px | `banners/top5pct-article-vinyl-banners-pic1.jpg` | Keep |
+| 1 | `category-hero` | full-width × 576px | `banners/top5pct-sports-banners.jpg` | Done — R2 excess, replaced pre-migration hero (Rule 1 fix) |
+| 2 | `carousel` slot 1 | 600×450px | `banners/top5pct-banners-and-signs.jpg` | Done (R1) |
+| 3 | `carousel` slot 2 | 600×450px | `banners/top5pct-banners-near-me.jpg` | Done (R1) |
+| 4 | `carousel` slot 3 | 600×450px | `banners/top5pct-big-banners.jpg` | Done (R1) |
+| 5 | `carousel` slot 4 | 600×450px | `banners/top5pct-custom-retractable-banners-joliet.jpg` | Done (R1) |
+| 6 | `card-image-with-text` (left) | 600×450px | `banners/top5pct-custom-vinyl-banners.jpg` | Done (R1) |
+| 7 | `card-image-with-text` (right) | 600×450px | `banners/top5pct-graduation-banners.jpg` | Done (R1) |
+| 8 | `card-2image-with-text` image1 | fluid 4:3, ~50% | `banners/top5pct-retractable-banner.jpg` | Done (R1) |
+| 9 | `card-2image-with-text` image2 | fluid 4:3, ~50% | `banners/top5pct-banners-for-trade-shows.jpg` | Done (R2) |
+| 10 | `card-2image-with-text` image1 (2nd) | fluid 4:3, ~50% | `banners/top5pct-mesh-construction-banner.jpg` | Done (R2) |
+| 11 | `card-2image-with-text` image2 (2nd) | fluid 4:3, ~50% | `banners/top5pct-portable-banners.jpg` | Done (R2) |
+| 12 | `card-detailed-info` image1 | 400×300px | `banners/top5pct-retractable-banners-plainfield.jpg` | Done (R2) |
 | 13 | `card-banner-slide-in` (right→left) | full-width 16:7 | `banners/top5pct-banners-business-joliet-shorewood-crest-hill.jpg` | Keep |
 | 14 | `card-banner-slide-in` (left→right) | full-width 16:7 | `banners/top5pct-banner-business-banners-joliet-shorewood-crest-hill.jpg` | Keep |
 
@@ -1038,7 +1038,7 @@ Move all files from `public/new-images/` (Round 2 batch) into the matching `publ
 | `public/new-images/` source | `public/images/` destination | New dir? |
 |---|---|---|
 | `Business Signs/Backlit Signs/` | `backlit-signs/` | **yes** |
-| `Business Signs/Banners/` | `banners/` | no |
+| `Business Signs/Banners/` | `banners/` | **yes** |
 | `Business Signs/Door Signs/` | `window-wall-floor-decals/` | no |
 | `Business Signs/Outdoor Signs/` | `outdoor-signs/` | **yes** |
 | `Business Signs/Posters/` | `posters/` | no |
@@ -1777,20 +1777,24 @@ Create `public/images/outdoor-signs/` before copying.
 
 ### `pages/signs/banners.blade.php`
 
-*R1 used 7 slots (all Done). R2 new images: 5 — fills next 4 eligible slots (only 4 remain).*
+*All 14 slots complete. Directory: `banners/` (was already dedicated). Hero updated to R2 excess image (Rule 1 fix). Slots 9–12 were already in blade before docs update. No file moves needed.*
 
 | # | Component | Size | Current Image | Replaced? |
 |---|---|---|---|---|
-| 1 | `category-hero` | full-width × 576px | `banners/top5pct-banner-business-banners-joliet-shorewood-crest-hill.jpg` | Keep |
-| 2–8 | *(carousel 1–4, card-left, card-right, card-2image image1)* | — | *(Done R1)* | Done (R1) |
-| 9 | `card-2image-with-text` image2 | fluid 4:3, ~50% | `banners/top5pct-banners-for-trade-shows.jpg` | Pending |
-| 10 | `card-2image-with-text` image1 (2nd) | fluid 4:3, ~50% | `banners/top5pct-mesh-construction-banner.jpg` | Pending |
-| 11 | `card-2image-with-text` image2 (2nd) | fluid 4:3, ~50% | `banners/top5pct-portable-banners.jpg` | Pending |
-| 12 | `card-detailed-info` image1 | 400×300px | `banners/top5pct-retractable-banners-plainfield.jpg` | Pending |
+| 1 | `category-hero` | full-width × 576px | `banners/top5pct-sports-banners.jpg` | Done — R2 excess, replaced pre-migration hero (Rule 1 fix) |
+| 2 | `carousel` slot 1 | 600×450px | `banners/top5pct-banners-and-signs.jpg` | Done (R1) |
+| 3 | `carousel` slot 2 | 600×450px | `banners/top5pct-banners-near-me.jpg` | Done (R1) |
+| 4 | `carousel` slot 3 | 600×450px | `banners/top5pct-big-banners.jpg` | Done (R1) |
+| 5 | `carousel` slot 4 | 600×450px | `banners/top5pct-custom-retractable-banners-joliet.jpg` | Done (R1) |
+| 6 | `card-image-with-text` (left) | 600×450px | `banners/top5pct-custom-vinyl-banners.jpg` | Done (R1) |
+| 7 | `card-image-with-text` (right) | 600×450px | `banners/top5pct-graduation-banners.jpg` | Done (R1) |
+| 8 | `card-2image-with-text` image1 | fluid 4:3, ~50% | `banners/top5pct-retractable-banner.jpg` | Done (R1) |
+| 9 | `card-2image-with-text` image2 | fluid 4:3, ~50% | `banners/top5pct-banners-for-trade-shows.jpg` | Done (R2) |
+| 10 | `card-2image-with-text` image1 (2nd) | fluid 4:3, ~50% | `banners/top5pct-mesh-construction-banner.jpg` | Done (R2) |
+| 11 | `card-2image-with-text` image2 (2nd) | fluid 4:3, ~50% | `banners/top5pct-portable-banners.jpg` | Done (R2) |
+| 12 | `card-detailed-info` image1 | 400×300px | `banners/top5pct-retractable-banners-plainfield.jpg` | Done (R2) |
 | 13 | `card-banner-slide-in` (right→left) | full-width 16:7 | `banners/top5pct-banners-business-joliet-shorewood-crest-hill.jpg` | Keep |
 | 14 | `card-banner-slide-in` (left→right) | full-width 16:7 | `banners/top5pct-banner-business-banners-joliet-shorewood-crest-hill.jpg` | Keep |
-
-> R2 excess (copied to `banners/`, no slot assignment): `top5pct-sports-banners.jpg`.
 
 ---
 
