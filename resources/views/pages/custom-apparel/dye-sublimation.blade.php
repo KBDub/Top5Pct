@@ -47,7 +47,7 @@
         primaryButtonHref="/contact"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/custom-shirts/top5pct-banner-custom-apparel-custom-shirts-custom-hoodies-custom-caps.jpg"
+        image="/images/sublimation/top5pct-dye-sublimation-custom-shirt-joliet.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />
@@ -56,10 +56,10 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/custom-shirts/top5pct-custom-dog-bandanas.jpg', 'alt' => 'Custom dye sublimation apparel and all over print shirts in Joliet Illinois'],
-            ['src' => '/images/custom-shirts/top5pct-custom-face-mask-sublimated.jpg',                         'alt' => 'Custom all over print sublimation shirts in Joliet Illinois'],
-            ['src' => '/images/custom-shirts/top5pct-custom-sublimated-towels.jpg',                     'alt' => 'Custom sublimation jerseys and performance wear printed in Joliet Illinois'],
-            ['src' => '/images/custom-shirts/top5pct-dye-sublimated-longsleeve-shirt-joliet.jpg',                                     'alt' => 'Custom apparel and shirts made in Joliet Illinois'],
+            ['src' => '/images/sublimation/top5pct-sublimation-shirts.jpg',                    'alt' => 'Custom dye sublimation apparel and all over print shirts in Joliet Illinois'],
+            ['src' => '/images/sublimation/top5pct-custom-face-mask-sublimated.jpg',         'alt' => 'Custom all over print sublimation shirts in Joliet Illinois'],
+            ['src' => '/images/sublimation/top5pct-custom-sublimated-towels.jpg',            'alt' => 'Custom sublimation jerseys and performance wear printed in Joliet Illinois'],
+            ['src' => '/images/sublimation/top5pct-dye-sublimated-longsleeve-shirt-joliet.jpg', 'alt' => 'Custom dye sublimated long sleeve shirts made in Joliet Illinois'],
         ]"
         visible=2
     />
@@ -70,7 +70,7 @@
     />
 
     <x-sections.card-image-with-text
-        image="/images/custom-shirts/top5pct-dye-sublimation-shirts.jpg"
+        image="/images/sublimation/top5pct-dye-sublimation-shirts.jpg"
         alt="Dye sublimation all over print custom shirts in Joliet Illinois"
         title="Full-Color, All-Over Printing"
     >
@@ -80,7 +80,7 @@
     </x-sections.card-image-with-text>
 
     <x-sections.card-image-with-text
-        image="/images/custom-shirts/top5pct-sublimation-shirt-printer.jpg"
+        image="/images/sublimation/top5pct-sublimation-shirt-printer.jpg"
         alt="Custom sublimation jersey and performance wear printed in Joliet Illinois"
         title="Jerseys, Performance Wear, and More"
         imagePosition="right"
@@ -97,7 +97,7 @@
 
     <x-sections.card-detailed-info
         heading="Why Dye Sublimation Is the Best Choice for Full Color Custom Apparel"
-        image1="/images/custom-shirts/top5pct-sublimation-shirt.jpg"
+        image1="/images/sublimation/top5pct-sublimation-shirt.jpg"
         alt1="Custom dye sublimation all over print shirts and apparel in Joliet Illinois"
     >
         <x-slot name="intro">
@@ -126,15 +126,15 @@
         name="Gerardo Munoz Jr"
     />
     <x-ui.card-banner-slide-in
-        image="/images/custom-shirts/top5pct-custom-glitter-shirt-cap-hoodie-joliet.jpg"
-        alt="Custom dye sublimation all over print apparel printed by Top 5 Percent in Joliet Illinois"
+        image="/images/sublimation/top5pct-custom-sublimation-shirts.jpg"
+        alt="Custom dye sublimation shirts and all over print apparel in Joliet Illinois"
         title="All Over Print Apparel With No Minimums"
         href="/contact"
         direction="left"
     />
     <x-ui.card-banner-slide-in
-        image="/images/custom-shirts/top5pct-custom-flock-shirt-hoodie-cap-joliet.jpg"
-        alt="Custom flock and specialty print shirts from Top 5 Percent in Joliet Illinois"
+        image="/images/sublimation/top5pct-sublmation-team-shirts.jpg"
+        alt="Custom dye sublimation team shirts and jerseys in Joliet Illinois"
         title="Combine Dye Sub With Flock, Glitter, or Embroidery"
         href="/contact"
         direction="right"

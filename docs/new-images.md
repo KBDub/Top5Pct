@@ -46,7 +46,7 @@ Move all files from `public/new-images/` into the matching `public/images/` dire
 | `custom-apparel/printing-options/embroidery/` | `embroidery/` | **yes** |
 | `custom-apparel/printing-options/rhinestones/` | `custom-shirts/` | no |
 | `custom-apparel/printing-options/screenprint/` | `custom-shirts/` | no |
-| `custom-apparel/printing-options/sublimation/` | `custom-shirts/` | no |
+| `custom-apparel/printing-options/sublimation/` | `sublimation/` | **yes** |
 | `custom-apparel/specialty-material/brick/` | `custom-shirts/` | no |
 | `custom-apparel/specialty-material/glitter/` | `custom-shirts/` | no |
 | `custom-apparel/specialty-material/reflective/` | `custom-shirts/` | no |
@@ -504,20 +504,20 @@ These are product photos of vinyl banners. Existing `top5pct-banner-*` files in 
 
 ### `pages/custom-apparel/dye-sublimation.blade.php`
 
-*New images available: 8 (sublimation/) — 7 eligible slots — all 7 Pending*
+*All 10 slots complete. Directory: `sublimation/`. Files moved from `custom-shirts/`. Hero updated to new R2 image. Carousel 1 replaced dog-bandanas (Rule 2 fix). Both slide-ins replaced glitter/flock (Rule 2 fix).*
 
 | # | Component | Size | Current Image | Replaced? |
 |---|---|---|---|---|
-| 1 | `category-hero` | full-width × 576px | `custom-shirts/top5pct-banner-custom-apparel-custom-shirts-custom-hoodies-custom-caps.jpg` | Keep |
-| 2 | `carousel` slot 1 | 600×450px | `custom-shirts/top5pct-custom-dog-bandanas.jpg` | Done |
-| 3 | `carousel` slot 2 | 600×450px | `custom-shirts/top5pct-custom-face-mask-sublimated.jpg` | Done |
-| 4 | `carousel` slot 3 | 600×450px | `custom-shirts/top5pct-custom-sublimated-towels.jpg` | Done |
-| 5 | `carousel` slot 4 | 600×450px | `custom-shirts/top5pct-dye-sublimated-longsleeve-shirt-joliet.jpg` | Done |
-| 6 | `card-image-with-text` (left) | 600×450px | `custom-shirts/top5pct-dye-sublimation-shirts.jpg` | Done |
-| 7 | `card-image-with-text` (right) | 600×450px | `custom-shirts/top5pct-sublimation-shirt-printer.jpg` | Done |
-| 8 | `card-detailed-info` image1 | 400×300px | `custom-shirts/top5pct-sublimation-shirt.jpg` | Done |
-| 9 | `card-banner-slide-in` (right→left) | full-width 16:7 | `custom-shirts/top5pct-custom-glitter-shirt-cap-hoodie-joliet.jpg` | Keep |
-| 10 | `card-banner-slide-in` (left→right) | full-width 16:7 | `custom-shirts/top5pct-custom-flock-shirt-hoodie-cap-joliet.jpg` | Keep |
+| 1 | `category-hero` | full-width × 576px | `sublimation/top5pct-dye-sublimation-custom-shirt-joliet.jpg` | Done — new R2 image (hero rule) |
+| 2 | `carousel` slot 1 | 600×450px | `sublimation/top5pct-sublimation-shirts.jpg` | Done — R1 excess, replaced `custom-dog-bandanas.jpg` (Rule 2 fix) |
+| 3 | `carousel` slot 2 | 600×450px | `sublimation/top5pct-custom-face-mask-sublimated.jpg` | Done (R1) |
+| 4 | `carousel` slot 3 | 600×450px | `sublimation/top5pct-custom-sublimated-towels.jpg` | Done (R1) |
+| 5 | `carousel` slot 4 | 600×450px | `sublimation/top5pct-dye-sublimated-longsleeve-shirt-joliet.jpg` | Done (R1) |
+| 6 | `card-image-with-text` (left) | 600×450px | `sublimation/top5pct-dye-sublimation-shirts.jpg` | Done (R1) |
+| 7 | `card-image-with-text` (right) | 600×450px | `sublimation/top5pct-sublimation-shirt-printer.jpg` | Done (R1) |
+| 8 | `card-detailed-info` image1 | 400×300px | `sublimation/top5pct-sublimation-shirt.jpg` | Done (R1) |
+| 9 | `card-banner-slide-in` (right→left) | full-width 16:7 | `sublimation/top5pct-custom-sublimation-shirts.jpg` | Done — R2, replaced glitter (Rule 2 fix) |
+| 10 | `card-banner-slide-in` (left→right) | full-width 16:7 | `sublimation/top5pct-sublmation-team-shirts.jpg` | Done — R2 typo preserved, replaced flock (Rule 2 fix) |
 
 ---
 
@@ -1050,7 +1050,7 @@ Move all files from `public/new-images/` (Round 2 batch) into the matching `publ
 | `Custom Shirts/Printing Options/DTF/` | `dtf-transfers/` | no |
 | `Custom Shirts/Printing Options/Embroidery/` | `embroidery/` | **yes** |
 | `Custom Shirts/Printing Options/Rhinestones/` | `custom-shirts/` | no |
-| `Custom Shirts/Printing Options/Sublimation/` | `custom-shirts/` | no |
+| `Custom Shirts/Printing Options/Sublimation/` | `sublimation/` | **yes** |
 | `Custom Shirts/Specialty Material/Brick/` | `custom-shirts/` | no |
 | `Custom Shirts/Specialty Material/Chameleon/` | `custom-shirts/` | no |
 | `Custom Shirts/Specialty Material/Flock/` | `custom-shirts/` | no |
@@ -1581,19 +1581,22 @@ Create `public/images/outdoor-signs/` before copying.
 
 ### `pages/custom-apparel/dye-sublimation.blade.php`
 
-*R1 used all 7 eligible slots (all Done). R2 new images: 4 — no blade slots remain; all copied to `custom-shirts/` for future use.*
+*All 10 slots complete. Directory: `sublimation/`. Files moved from `custom-shirts/`. Hero updated to new R2 image. Carousel 1 replaced dog-bandanas (Rule 2 fix). Both slide-ins replaced glitter/flock (Rule 2 fix).*
 
 | # | Component | Size | Current Image | Replaced? |
 |---|---|---|---|---|
-| 1 | `category-hero` | full-width × 576px | `custom-shirts/top5pct-banner-custom-apparel-custom-shirts-custom-hoodies-custom-caps.jpg` | Keep |
-| 2–5 | `carousel` slots 1–4 | 600×450px | *(Done R1)* | Done (R1) |
-| 6 | `card-image-with-text` (left) | 600×450px | `custom-shirts/top5pct-dye-sublimation-shirts.jpg` | Done (R1) |
-| 7 | `card-image-with-text` (right) | 600×450px | `custom-shirts/top5pct-sublimation-shirt-printer.jpg` | Done (R1) |
-| 8 | `card-detailed-info` image1 | 400×300px | `custom-shirts/top5pct-sublimation-shirt.jpg` | Done (R1) |
-| 9 | `card-banner-slide-in` (right→left) | full-width 16:7 | `custom-shirts/top5pct-custom-glitter-shirt-cap-hoodie-joliet.jpg` | Keep |
-| 10 | `card-banner-slide-in` (left→right) | full-width 16:7 | `custom-shirts/top5pct-custom-flock-shirt-hoodie-cap-joliet.jpg` | Keep |
+| 1 | `category-hero` | full-width × 576px | `sublimation/top5pct-dye-sublimation-custom-shirt-joliet.jpg` | Done — new R2 image (hero rule) |
+| 2 | `carousel` slot 1 | 600×450px | `sublimation/top5pct-sublimation-shirts.jpg` | Done — R1 excess, replaced `custom-dog-bandanas.jpg` (Rule 2 fix) |
+| 3 | `carousel` slot 2 | 600×450px | `sublimation/top5pct-custom-face-mask-sublimated.jpg` | Done (R1) |
+| 4 | `carousel` slot 3 | 600×450px | `sublimation/top5pct-custom-sublimated-towels.jpg` | Done (R1) |
+| 5 | `carousel` slot 4 | 600×450px | `sublimation/top5pct-dye-sublimated-longsleeve-shirt-joliet.jpg` | Done (R1) |
+| 6 | `card-image-with-text` (left) | 600×450px | `sublimation/top5pct-dye-sublimation-shirts.jpg` | Done (R1) |
+| 7 | `card-image-with-text` (right) | 600×450px | `sublimation/top5pct-sublimation-shirt-printer.jpg` | Done (R1) |
+| 8 | `card-detailed-info` image1 | 400×300px | `sublimation/top5pct-sublimation-shirt.jpg` | Done (R1) |
+| 9 | `card-banner-slide-in` (right→left) | full-width 16:7 | `sublimation/top5pct-custom-sublimation-shirts.jpg` | Done — R2, replaced glitter (Rule 2 fix) |
+| 10 | `card-banner-slide-in` (left→right) | full-width 16:7 | `sublimation/top5pct-sublmation-team-shirts.jpg` | Done — R2 typo preserved, replaced flock (Rule 2 fix) |
 
-> R2 excess (copied to `custom-shirts/`, no slot assignment): `top5pct-custom-sublimation-shirts.jpg`, `top5pct-dye-sublimation-custom-shirt-joliet.jpg`, `top5pct-long-lasting-graphic-shirts.jpg`, `top5pct-sublmation-team-shirts.jpg`.
+> Excluded (Rule 2 violation — no sublimation derivative in name): `top5pct-long-lasting-graphic-shirts.jpg` remains in `custom-shirts/` unassigned.
 
 ---
 
