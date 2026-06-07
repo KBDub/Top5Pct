@@ -79,8 +79,8 @@
     </x-sections.card-image-with-text>
 
     <x-sections.card-image-with-text
-        image="/images/custom-shirts/top5pct-custom-pattern-shirts-caps-hoodies-joliet.jpg"
-        alt="Custom branded koozie designs and event giveaway printing in Joliet Illinois"
+        image="/images/promo-items/koozies/top5pct-custom-can-koozies.jpg"
+        alt="Custom can koozies in foam and neoprene for events in Joliet Illinois"
         title="Foam, Neoprene, and Custom Colors"
         imagePosition="right"
     >
@@ -95,7 +95,7 @@
 
     <x-sections.card-detailed-info
         heading="Why Custom Can Koozies Are the Perfect Promotional Giveaway for Any Event"
-        image1="/images/custom-shirts/top5pct-banner-custom-apparel-custom-shirts-custom-hoodies-custom-caps.jpg"
+        image1="/images/promo-items/koozies/top5pct-koozies-joliet.jpg"
         alt1="Custom branded can koozies and drink holders for events in Joliet, Will and DuPage County Illinois"
     >
         <x-slot name="intro">
@@ -124,7 +124,7 @@
         name="Chewy Orkwiszewski"
     />
     <x-ui.card-banner-slide-in
-        image="/images/custom-shirts/top5pct-custom-pattern-shirts-caps-hoodies-joliet.jpg"
+        image="/images/promo-items/koozies/top5pct-can-koozies.jpg"
         alt="Custom branded can koozies and drink holders from Top 5 Percent in Joliet Illinois"
         title="Custom Koozies for Your Next Event, No Minimums"
         href="/contact"

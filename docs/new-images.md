@@ -1062,7 +1062,7 @@ Move all files from `public/new-images/` (Round 2 batch) into the matching `publ
 | `Custom Shirts/Specialty Material/Reflective/` | `custom-shirts/` | no |
 | `Custom Shirts/Specialty Material/Rhinestones/` | `custom-shirts/` | **yes** |
 | `Ground Signs/A-Frames/` | `sidewalk-signs/` | **yes** |
-| `Koozies/` | `promo-items/koozies/` | no |
+| `Koozies/` | `promo-items/koozies/` | **yes** |
 | `Mugs/` | `promo-items/mugs/` | **yes** |
 | `Stickers/Custom Shaped Stickers/` | `stickers-decals/` | **yes** |
 | `Stickers/Regular Stickers/` | `stickers-decals/` | no |
@@ -2062,19 +2062,19 @@ Create `public/images/outdoor-signs/` before copying.
 
 ### `pages/promotional-items/can-koozies.blade.php`
 
-*R1 used 2 slots (carousel 1–2 Done). R2 new images: 3 — fills next 3 eligible slots.*
+*All 9 slots complete. Directory: `promo-items/koozies/` (own dir ✓). No hero image on this page — Rule 1 N/A. R1 filled slots 1–2 (pre-applied). All 3 R2 images (slots 3–5) were already pre-applied to blade before this pass — doc Pending entries corrected. Slots 6–8 were custom-shirts placeholders — replaced with reused koozie images from own dir (Rules 2+3 fix; all 5 koozie images fully placed, image reuse across UI components is acceptable). Slot 9 is intentional cross-promo, excluded. No file moves needed.*
 
 | # | Component | Size | Current Image | Replaced? |
 |---|---|---|---|---|
 | 1 | `carousel` slot 1 | 600×450px | `promo-items/koozies/top5pct-can-koozies.jpg` | Done (R1) |
 | 2 | `carousel` slot 2 | 600×450px | `promo-items/koozies/top5pct-custom-koozies.jpg` | Done (R1) |
-| 3 | `carousel` slot 3 | 600×450px | `promo-items/koozies/top5pct-custom-can-koozies.jpg` | Pending |
-| 4 | `carousel` slot 4 | 600×450px | `promo-items/koozies/top5pct-koozies-joliet.jpg` | Pending |
-| 5 | `card-image-with-text` (left) | 600×450px | `promo-items/koozies/top5pct-personalized-koozies-joliet.jpg` | Pending |
-| 6 | `card-image-with-text` (right) | 600×450px | `custom-shirts/top5pct-custom-pattern-shirts-caps-hoodies-joliet.jpg` | Keep |
-| 7 | `card-detailed-info` image1 | 400×300px | `custom-shirts/top5pct-banner-custom-apparel-custom-shirts-custom-hoodies-custom-caps.jpg` | Keep |
-| 8 | `card-banner-slide-in` (right→left) | full-width 16:7 | `custom-shirts/top5pct-custom-pattern-shirts-caps-hoodies-joliet.jpg` | Keep |
-| 9 | `card-banner-slide-in` (left→right) | full-width 16:7 | `custom-shirts/top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg` | Keep |
+| 3 | `carousel` slot 3 | 600×450px | `promo-items/koozies/top5pct-custom-can-koozies.jpg` | Done (R2, already in blade) |
+| 4 | `carousel` slot 4 | 600×450px | `promo-items/koozies/top5pct-koozies-joliet.jpg` | Done (R2, already in blade) |
+| 5 | `card-image-with-text` (left) "The Perfect Event Giveaway" | 600×450px | `promo-items/koozies/top5pct-personalized-koozies-joliet.jpg` | Done (R2, already in blade) |
+| 6 | `card-image-with-text` (right) "Foam, Neoprene, and Custom Colors" | 600×450px | `promo-items/koozies/top5pct-custom-can-koozies.jpg` | Done — R2 reused, "koozie" ✓ (Rules 2+3 fix; was custom-shirts placeholder) |
+| 7 | `card-detailed-info` image1 | 400×300px | `promo-items/koozies/top5pct-koozies-joliet.jpg` | Done — R2 reused, "koozie" ✓ (Rules 2+3 fix; was custom-shirts placeholder) |
+| 8 | `card-banner-slide-in` (direction="right") "Custom Koozies for Your Next Event…" | full-width 16:7 | `promo-items/koozies/top5pct-can-koozies.jpg` | Done — R1 reused, "koozie" ✓ (Rules 2+3 fix; was custom-shirts placeholder) |
+| 9 | `card-banner-slide-in` (direction="left") "Add Custom Shirts to Your Koozie Order…" | full-width 16:7 | `custom-shirts/top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg` | Keep — intentional cross-promo |
 
 ---
 
