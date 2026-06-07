@@ -48,7 +48,7 @@ Move all files from `public/new-images/` into the matching `public/images/` dire
 | `custom-apparel/printing-options/screenprint/` | `custom-shirts/` | no |
 | `custom-apparel/printing-options/sublimation/` | `sublimation/` | **yes** |
 | `custom-apparel/specialty-material/brick/` | `custom-shirts/` | no |
-| `custom-apparel/specialty-material/glitter/` | `custom-shirts/` | no |
+| `custom-apparel/specialty-material/glitter/` | `glitter-shirts/` | **yes** |
 | `custom-apparel/specialty-material/reflective/` | `custom-shirts/` | no |
 | `promo-items/koozies/` | `promo-items/koozies/` | **yes** |
 | `promo-items/mugs/` | `promo-items/mugs/` | **yes** |
@@ -523,20 +523,20 @@ These are product photos of vinyl banners. Existing `top5pct-banner-*` files in 
 
 ### `pages/custom-apparel/glitter-shirts.blade.php`
 
-*New images available: 2 (glitter/) — 7 eligible slots — 2 Pending (carousel 1–2)*
+*All 10 slots complete. Directory created: `glitter-shirts/`. All 9 glitter images moved from `custom-shirts/`. Hero updated via 2-slot swap: R2 promoted to hero, pre-existing cap-hoodie image takes card-detailed. R2 slots 4–8 were already in blade before this docs pass.*
 
 | # | Component | Size | Current Image | Replaced? |
 |---|---|---|---|---|
-| 1 | `category-hero` | full-width × 576px | `custom-shirts/top5pct-custom-glitter-shirt-cap-hoodie-joliet.jpg` | Keep |
-| 2 | `carousel` slot 1 | 600×450px | `custom-shirts/top5pct-custom-glitter-clothing.jpg` | Done |
-| 3 | `carousel` slot 2 | 600×450px | `custom-shirts/top5pct-custom-glitter-sweatshirts.jpg` | Done |
-| 4 | `carousel` slot 3 | 600×450px | `custom-shirts/top5pct-custom-rhinestone-shirt-cap-hoodie-joliet.jpg` | Keep |
-| 5 | `carousel` slot 4 | 600×450px | `custom-shirts/top5pct-t-shirt-maker-article-pic2.jpg` | Keep |
-| 6 | `card-image-with-text` (left) | 600×450px | `custom-shirts/top5pct-custom-glitter-shirt-cap-hoodie-joliet.jpg` | Keep |
-| 7 | `card-image-with-text` (right) | 600×450px | `custom-shirts/top5pct-custom-rhinestone-shirt-cap-hoodie-joliet.jpg` | Keep |
-| 8 | `card-detailed-info` image1 | 400×300px | `custom-shirts/top5pct-custom-glitter-shirt-cap-hoodie-joliet.jpg` | Keep |
-| 9 | `card-banner-slide-in` (right→left) | full-width 16:7 | `custom-shirts/top5pct-custom-glitter-shirt-cap-hoodie-joliet.jpg` | Keep |
-| 10 | `card-banner-slide-in` (left→right) | full-width 16:7 | `custom-shirts/top5pct-custom-rhinestone-shirt-cap-hoodie-joliet.jpg` | Keep |
+| 1 | `category-hero` | full-width × 576px | `glitter-shirts/top5pct-glitter-t-shirts.jpg` | Done — R2 promoted to hero (Rule 1 fix) |
+| 2 | `carousel` slot 1 | 600×450px | `glitter-shirts/top5pct-custom-glitter-clothing.jpg` | Done (R1), moved |
+| 3 | `carousel` slot 2 | 600×450px | `glitter-shirts/top5pct-custom-glitter-sweatshirts.jpg` | Done (R1), moved |
+| 4 | `carousel` slot 3 | 600×450px | `glitter-shirts/top5pct-custom-wedding-glitter-shirts.jpg` | Done (R2, already in blade), moved |
+| 5 | `carousel` slot 4 | 600×450px | `glitter-shirts/top5pct-glitter-blue-jean-jacket.jpg` | Done (R2, already in blade), moved |
+| 6 | `card-image-with-text` (left) | 600×450px | `glitter-shirts/top5pct-glitter-lips-custom-t-shirt.jpg` | Done (R2, already in blade), moved |
+| 7 | `card-image-with-text` (right) | 600×450px | `glitter-shirts/top5pct-glitter-t-shirts-cresthill.jpg` | Done (R2, already in blade), moved |
+| 8 | `card-detailed-info` image1 | 400×300px | `glitter-shirts/top5pct-custom-glitter-shirt-cap-hoodie-joliet.jpg` | Pre-existing, moved — R2 promoted to hero |
+| 9 | `card-banner-slide-in` (direction="left") | full-width 16:7 | `glitter-shirts/top5pct-custom-glitter-shirt-cap-hoodie-joliet.jpg` | Keep, moved |
+| 10 | `card-banner-slide-in` (direction="right") | full-width 16:7 | `custom-shirts/top5pct-custom-rhinestone-shirt-cap-hoodie-joliet.jpg` | Keep — intentional cross-promo to rhinestone, stays in `custom-shirts/` |
 
 ---
 
@@ -1055,7 +1055,7 @@ Move all files from `public/new-images/` (Round 2 batch) into the matching `publ
 | `Custom Shirts/Specialty Material/Chameleon/` | `custom-shirts/` | no |
 | `Custom Shirts/Specialty Material/Flock/` | `custom-shirts/` | no |
 | `Custom Shirts/Specialty Material/Foil/` | `custom-shirts/` | no ⚠ |
-| `Custom Shirts/Specialty Material/Glitter/` | `custom-shirts/` | no |
+| `Custom Shirts/Specialty Material/Glitter/` | `glitter-shirts/` | **yes** |
 | `Custom Shirts/Specialty Material/Glow/` | `custom-shirts/` | no |
 | `Custom Shirts/Specialty Material/Holographic/` | `custom-shirts/` | no |
 | `Custom Shirts/Specialty Material/Puff/` | `custom-shirts/` | no |
@@ -1638,22 +1638,22 @@ Create `public/images/outdoor-signs/` before copying.
 
 ### `pages/custom-apparel/glitter-shirts.blade.php`
 
-*R1 used 2 slots (carousel 1–2 Done). R2 new images: 8 — fills remaining 5 eligible slots.*
+*All 10 slots complete. Directory created: `glitter-shirts/`. All 9 glitter images moved from `custom-shirts/`. Hero updated via 2-slot swap: R2 promoted to hero, pre-existing cap-hoodie image takes card-detailed. R2 slots 4–8 were already in blade before this docs pass.*
 
 | # | Component | Size | Current Image | Replaced? |
 |---|---|---|---|---|
-| 1 | `category-hero` | full-width × 576px | `custom-shirts/top5pct-custom-glitter-shirt-cap-hoodie-joliet.jpg` | Keep |
-| 2 | `carousel` slot 1 | 600×450px | `custom-shirts/top5pct-custom-glitter-clothing.jpg` | Done (R1) |
-| 3 | `carousel` slot 2 | 600×450px | `custom-shirts/top5pct-custom-glitter-sweatshirts.jpg` | Done (R1) — R2 replaces file transparently via collision rename |
-| 4 | `carousel` slot 3 | 600×450px | `custom-shirts/top5pct-custom-wedding-glitter-shirts.jpg` | Pending |
-| 5 | `carousel` slot 4 | 600×450px | `custom-shirts/top5pct-glitter-blue-jean-jacket.jpg` | Pending |
-| 6 | `card-image-with-text` (left) | 600×450px | `custom-shirts/top5pct-glitter-lips-custom-t-shirt.jpg` | Pending |
-| 7 | `card-image-with-text` (right) | 600×450px | `custom-shirts/top5pct-glitter-t-shirts-cresthill.jpg` | Pending |
-| 8 | `card-detailed-info` image1 | 400×300px | `custom-shirts/top5pct-glitter-t-shirts.jpg` | Pending |
-| 9 | `card-banner-slide-in` (right→left) | full-width 16:7 | `custom-shirts/top5pct-custom-glitter-shirt-cap-hoodie-joliet.jpg` | Keep |
-| 10 | `card-banner-slide-in` (left→right) | full-width 16:7 | `custom-shirts/top5pct-custom-rhinestone-shirt-cap-hoodie-joliet.jpg` | Keep |
+| 1 | `category-hero` | full-width × 576px | `glitter-shirts/top5pct-glitter-t-shirts.jpg` | Done — R2 promoted to hero (Rule 1 fix) |
+| 2 | `carousel` slot 1 | 600×450px | `glitter-shirts/top5pct-custom-glitter-clothing.jpg` | Done (R1), moved |
+| 3 | `carousel` slot 2 | 600×450px | `glitter-shirts/top5pct-custom-glitter-sweatshirts.jpg` | Done (R1), moved |
+| 4 | `carousel` slot 3 | 600×450px | `glitter-shirts/top5pct-custom-wedding-glitter-shirts.jpg` | Done (R2, already in blade), moved |
+| 5 | `carousel` slot 4 | 600×450px | `glitter-shirts/top5pct-glitter-blue-jean-jacket.jpg` | Done (R2, already in blade), moved |
+| 6 | `card-image-with-text` (left) | 600×450px | `glitter-shirts/top5pct-glitter-lips-custom-t-shirt.jpg` | Done (R2, already in blade), moved |
+| 7 | `card-image-with-text` (right) | 600×450px | `glitter-shirts/top5pct-glitter-t-shirts-cresthill.jpg` | Done (R2, already in blade), moved |
+| 8 | `card-detailed-info` image1 | 400×300px | `glitter-shirts/top5pct-custom-glitter-shirt-cap-hoodie-joliet.jpg` | Pre-existing, moved — R2 promoted to hero |
+| 9 | `card-banner-slide-in` (direction="left") | full-width 16:7 | `glitter-shirts/top5pct-custom-glitter-shirt-cap-hoodie-joliet.jpg` | Keep, moved |
+| 10 | `card-banner-slide-in` (direction="right") | full-width 16:7 | `custom-shirts/top5pct-custom-rhinestone-shirt-cap-hoodie-joliet.jpg` | Keep — intentional cross-promo to rhinestone, stays in `custom-shirts/` |
 
-> R2 excess (copied to `custom-shirts/`, no slot assignment): `top5pct-gitter-birthday-shirt.jpg`.
+> R2 excess (moved to `glitter-shirts/`): `top5pct-gitter-birthday-shirt.jpg` — source typo "gitter" preserved, no slot assignment.
 
 ---
 

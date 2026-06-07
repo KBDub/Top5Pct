@@ -47,7 +47,7 @@
         primaryButtonHref="/contact"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/custom-shirts/top5pct-custom-glitter-shirt-cap-hoodie-joliet.jpg"
+        image="/images/glitter-shirts/top5pct-glitter-t-shirts.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />
@@ -56,10 +56,10 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/custom-shirts/top5pct-custom-glitter-clothing.jpg',                         'alt' => 'Custom glitter shirts and sparkle apparel in Joliet Illinois'],
-            ['src' => '/images/custom-shirts/top5pct-custom-glitter-sweatshirts.jpg', 'alt' => 'Custom celebration shirts and glitter apparel in Joliet Illinois'],
-            ['src' => '/images/custom-shirts/top5pct-custom-wedding-glitter-shirts.jpg',                    'alt' => 'Custom wedding glitter shirts in Joliet Illinois'],
-            ['src' => '/images/custom-shirts/top5pct-glitter-blue-jean-jacket.jpg',                         'alt' => 'Custom glitter blue jean jacket in Joliet Illinois'],
+            ['src' => '/images/glitter-shirts/top5pct-custom-glitter-clothing.jpg',                         'alt' => 'Custom glitter shirts and sparkle apparel in Joliet Illinois'],
+            ['src' => '/images/glitter-shirts/top5pct-custom-glitter-sweatshirts.jpg', 'alt' => 'Custom celebration shirts and glitter apparel in Joliet Illinois'],
+            ['src' => '/images/glitter-shirts/top5pct-custom-wedding-glitter-shirts.jpg',                   'alt' => 'Custom wedding glitter shirts in Joliet Illinois'],
+            ['src' => '/images/glitter-shirts/top5pct-glitter-blue-jean-jacket.jpg',                        'alt' => 'Custom glitter blue jean jacket in Joliet Illinois'],
         ]"
         visible=2
     />
@@ -70,7 +70,7 @@
     />
 
     <x-sections.card-image-with-text
-        image="/images/custom-shirts/top5pct-glitter-lips-custom-t-shirt.jpg"
+        image="/images/glitter-shirts/top5pct-glitter-lips-custom-t-shirt.jpg"
         alt="Custom glitter lips design on a t-shirt in Joliet Illinois"
         title="Shirts That Catch Every Light in the Room"
     >
@@ -80,7 +80,7 @@
     </x-sections.card-image-with-text>
 
     <x-sections.card-image-with-text
-        image="/images/custom-shirts/top5pct-glitter-t-shirts-cresthill.jpg"
+        image="/images/glitter-shirts/top5pct-glitter-t-shirts-cresthill.jpg"
         alt="Custom glitter shirts in Cresthill Illinois"
         title="Perfect for Celebrations of Every Kind"
         imagePosition="right"
@@ -97,8 +97,8 @@
 
     <x-sections.card-detailed-info
         heading="Why Glitter Shirts Are the Signature Look for Celebrations in Joliet, Will and DuPage County"
-        image1="/images/custom-shirts/top5pct-glitter-t-shirts.jpg"
-        alt1="Custom glitter t-shirts in Joliet Illinois"
+        image1="/images/glitter-shirts/top5pct-custom-glitter-shirt-cap-hoodie-joliet.jpg"
+        alt1="Custom glitter shirts caps and hoodies in Joliet Illinois"
     >
         <x-slot name="intro">
             <p class="mb-4">Some events demand more than a standard custom shirt. When the occasion is a milestone birthday, a bachelorette weekend, a <a href="/custom-apparel/group-wear/reunion-shirts" class="link-notification">family reunion</a> with fifty years of history behind it, or a celebration that the participants have been planning for months, the apparel should match the energy and significance of the moment. Glitter shirts deliver that energy, they sparkle under every light, photograph beautifully, and give a group the visual identity that makes them feel like they are celebrating together rather than just wearing matching clothes.</p>
@@ -126,7 +126,7 @@
         name="Arleen Van Hook"
     />
     <x-ui.card-banner-slide-in
-        image="/images/custom-shirts/top5pct-custom-glitter-shirt-cap-hoodie-joliet.jpg"
+        image="/images/glitter-shirts/top5pct-custom-glitter-shirt-cap-hoodie-joliet.jpg"
         alt="Custom glitter shirts and sparkle apparel by Top 5 Percent in Joliet Illinois"
         title="Glitter Shirts for Your Next Celebration"
         href="/contact"
