@@ -47,7 +47,7 @@ Move all files from `public/new-images/` into the matching `public/images/` dire
 | `custom-apparel/printing-options/rhinestones/` | `custom-shirts/` | **yes** |
 | `custom-apparel/printing-options/screenprint/` | `custom-shirts/` | no |
 | `custom-apparel/printing-options/sublimation/` | `sublimation/` | **yes** |
-| `custom-apparel/specialty-material/brick/` | `custom-shirts/` | no |
+| `custom-apparel/specialty-material/brick/` | `custom-shirts/` | **yes** |
 | `custom-apparel/specialty-material/glitter/` | `glitter-shirts/` | **yes** |
 | `custom-apparel/specialty-material/reflective/` | `custom-shirts/` | no |
 | `promo-items/koozies/` | `promo-items/koozies/` | **yes** |
@@ -1051,7 +1051,7 @@ Move all files from `public/new-images/` (Round 2 batch) into the matching `publ
 | `Custom Shirts/Printing Options/Embroidery/` | `embroidery/` | **yes** |
 | `Custom Shirts/Printing Options/Rhinestones/` | `custom-shirts/` | **yes** |
 | `Custom Shirts/Printing Options/Sublimation/` | `sublimation/` | **yes** |
-| `Custom Shirts/Specialty Material/Brick/` | `custom-shirts/` | no |
+| `Custom Shirts/Specialty Material/Brick/` | `custom-shirts/` | **yes** |
 | `Custom Shirts/Specialty Material/Chameleon/` | `custom-shirts/` | no |
 | `Custom Shirts/Specialty Material/Flock/` | `custom-shirts/` | no |
 | `Custom Shirts/Specialty Material/Foil/` | `custom-shirts/` | **yes** |
@@ -1600,20 +1600,20 @@ Create `public/images/outdoor-signs/` before copying.
 
 ### `pages/custom-apparel/brick-shirts.blade.php`
 
-*Not in R1 inventory — all slots were Keep. R2 new images: 4 — fills first 4 eligible slots.*
+*All 10 slots complete. Directory: `custom-shirts/` (shared by design — no own dir). Page was not inventoried in R1 (no R1 slot table) but the R1 brick/ source directory was harvested — 1 file (`brick-vinyl-hoodies.jpg`) staged into `custom-shirts/` and sat unassigned. Promoted directly to hero (Rule 1 fix, no 2-slot swap). All 4 R2 images were pre-applied to blade. No file moves needed. Rule 2 unfixable at slot 7 (no brick-named alt; all brick images fully placed; shared dir limitation). Slot 10 cross-promo excluded.*
 
 | # | Component | Size | Current Image | Replaced? |
 |---|---|---|---|---|
-| 1 | `category-hero` | full-width × 576px | `custom-shirts/top5pct-custom-brick-shirts-hoodies-cap-joliet.jpg` | Keep |
-| 2 | `carousel` slot 1 | 600×450px | `custom-shirts/top5pct-brick-vinyl-cresthill.jpg` | Pending |
-| 3 | `carousel` slot 2 | 600×450px | `custom-shirts/top5pct-brick-vinyl-custom-t-shirt.jpg` | Pending |
-| 4 | `carousel` slot 3 | 600×450px | `custom-shirts/top5pct-brick-vinyl-jackets-joliet.jpg` | Pending |
-| 5 | `carousel` slot 4 | 600×450px | `custom-shirts/top5pct-customized-brick-vinyl-shirts.jpg` | Pending |
-| 6 | `card-image-with-text` (left) | 600×450px | `custom-shirts/top5pct-custom-brick-shirts-hoodies-cap-joliet.jpg` | Keep |
-| 7 | `card-image-with-text` (right) | 600×450px | `custom-shirts/top5pct-custom-pattern-shirts-caps-hoodies-joliet.jpg` | Keep |
-| 8 | `card-detailed-info` image1 | 400×300px | `custom-shirts/top5pct-custom-brick-shirts-hoodies-cap-joliet.jpg` | Keep |
-| 9 | `card-banner-slide-in` (right→left) | full-width 16:7 | `custom-shirts/top5pct-custom-brick-shirts-hoodies-cap-joliet.jpg` | Keep |
-| 10 | `card-banner-slide-in` (left→right) | full-width 16:7 | `custom-shirts/top5pct-custom-flock-shirt-hoodie-cap-joliet.jpg` | Keep |
+| 1 | `category-hero` | full-width × 576px | `custom-shirts/top5pct-brick-vinyl-hoodies.jpg` | Done — R1 excess assigned directly to hero (Rule 1 fix) |
+| 2 | `carousel` slot 1 | 600×450px | `custom-shirts/top5pct-brick-vinyl-cresthill.jpg` | Done (R2, already in blade) |
+| 3 | `carousel` slot 2 | 600×450px | `custom-shirts/top5pct-brick-vinyl-custom-t-shirt.jpg` | Done (R2, already in blade) |
+| 4 | `carousel` slot 3 | 600×450px | `custom-shirts/top5pct-brick-vinyl-jackets-joliet.jpg` | Done (R2, already in blade) |
+| 5 | `carousel` slot 4 | 600×450px | `custom-shirts/top5pct-customized-brick-vinyl-shirts.jpg` | Done (R2, already in blade) |
+| 6 | `card-image-with-text` (left) "Shirts That Stand Out…" | 600×450px | `custom-shirts/top5pct-custom-brick-shirts-hoodies-cap-joliet.jpg` | Keep — "brick" ✓ Rule 2 |
+| 7 | `card-image-with-text` (right) "Bold Designs Made…" | 600×450px | `custom-shirts/top5pct-custom-pattern-shirts-caps-hoodies-joliet.jpg` | Keep — Rule 2 unfixable; no brick-named alt available, all brick images placed; shared dir limitation |
+| 8 | `card-detailed-info` image1 | 400×300px | `custom-shirts/top5pct-custom-brick-shirts-hoodies-cap-joliet.jpg` | Keep — "brick" ✓ Rule 2 |
+| 9 | `card-banner-slide-in` (direction="left") | full-width 16:7 | `custom-shirts/top5pct-custom-brick-shirts-hoodies-cap-joliet.jpg` | Keep — "brick" ✓ Rule 2 |
+| 10 | `card-banner-slide-in` (direction="right") | full-width 16:7 | `custom-shirts/top5pct-custom-flock-shirt-hoodie-cap-joliet.jpg` | Keep — intentional cross-promo ("Add Flock, Puff, or Glitter…") |
 
 ---
 
