@@ -47,7 +47,7 @@
         primaryButtonHref="#all-products"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/window-wall-floor-decals/top5pct-door-signs-joliet-shorewood-crest-hill.jpg"
+        image="/images/window-wall-floor-decals/top5pct-door-signage.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />
@@ -56,7 +56,7 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/window-wall-floor-decals/top5pct-door-signage.jpg', 'alt' => 'Custom door signs and door graphics for businesses in Joliet, Shorewood, and Crest Hill Illinois'],
+            ['src' => '/images/window-wall-floor-decals/top5pct-door-signs-joliet-shorewood-crest-hill.jpg', 'alt' => 'Custom door signs and door graphics for businesses in Joliet, Shorewood, and Crest Hill Illinois'],
             ['src' => '/images/window-wall-floor-decals/top5pct-business-door-signs.jpg',                   'alt' => 'Custom business door signs in Joliet Illinois'],
             ['src' => '/images/window-wall-floor-decals/top5pct-door-sign-installers.jpg',                  'alt' => 'Custom door sign installation in Joliet Illinois'],
             ['src' => '/images/window-wall-floor-decals/top5pct-door-wraps-joliet.jpg',                     'alt' => 'Custom door wraps in Joliet Illinois'],
