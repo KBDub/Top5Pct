@@ -61,7 +61,7 @@ Move all files from `public/new-images/` into the matching `public/images/` dire
 | `signs/table-signs/table-cloths/` | `table-runners/` | no |
 | `signs/table-signs/table-runners/` | `table-runners/` | no |
 | `stickers/custom-shaped/` | `stickers-decals/` | no |
-| `vehicle-decals/automobile-graphics/` | `automobile-graphics/` | no |
+| `vehicle-decals/automobile-graphics/` | `automobile-graphics/` | **yes** |
 | `vehicle-decals/dot-decals/` | `dot-decals/` | no |
 | `vehicle-decals/vehicle-magnets/` | `vehicle-magnets/` | no |
 
@@ -849,23 +849,23 @@ These are product photos of vinyl banners. Existing `top5pct-banner-*` files in 
 
 ### `pages/vehicle-graphics/automobile-graphics.blade.php`
 
-*New images available: 9 (automobile-graphics/) — 10 eligible slots — 9 Pending (all except card-detailed-info)*
+*All 12 slots complete (slot 13 slide-in intentional cross-promo from vehicle-magnets/). Hero updated via 2-slot swap: R2 image promoted to hero, pre-existing article image returns to card-detailed. No file moves needed.*
 
 | # | Component | Size | Current Image | Replaced? |
 |---|---|---|---|---|
-| 1 | `category-hero` | full-width × 576px | `automobile-graphics/top5pct-banner-vinyl-lettering-car-wraps-joliet.jpg` | Keep |
-| 2 | `carousel` slot 1 | 600×450px | `automobile-graphics/top5pct-car-wraps.jpg` | Done |
-| 3 | `carousel` slot 2 | 600×450px | `automobile-graphics/top5pct-pickup-truck-graphics.jpg` | Done |
-| 4 | `carousel` slot 3 | 600×450px | `automobile-graphics/top5pct-trailer-decal-graphics.jpg` | Done |
-| 5 | `carousel` slot 4 | 600×450px | `automobile-graphics/top5pct-trailer-decals.jpg` | Done |
-| 6 | `card-image-with-text` (left) | 600×450px | `automobile-graphics/top5pct-van-graphics-decals.jpg` | Done |
-| 7 | `card-image-with-text` (right) | 600×450px | `automobile-graphics/top5pct-vecal-decals.jpg` | Done |
-| 8 | `card-2image-with-text` image1 | fluid 4:3, ~50% | `automobile-graphics/top5pct-vehicle-graphics.jpg` | Done |
-| 9 | `card-2image-with-text` image2 | fluid 4:3, ~50% | `automobile-graphics/top5pct-vehicle-window-graphics-in-joliet.jpg` | Done |
-| 10 | `card-image-with-text` (left) | 600×450px | `automobile-graphics/top5pct-vehicle-window-graphics-joliet.jpg` | Done |
-| 11 | `card-detailed-info` image1 | 400×300px | `automobile-graphics/top5pct-article-car-wraps-vinyl-lettering.jpg` | Keep |
+| 1 | `category-hero` | full-width × 576px | `automobile-graphics/top5pct-auto-window-wraps.jpg` | Done — R2 promoted to hero (Rule 1 fix) |
+| 2 | `carousel` slot 1 | 600×450px | `automobile-graphics/top5pct-car-wraps.jpg` | Done (R1) |
+| 3 | `carousel` slot 2 | 600×450px | `automobile-graphics/top5pct-pickup-truck-graphics.jpg` | Done (R1) |
+| 4 | `carousel` slot 3 | 600×450px | `automobile-graphics/top5pct-trailer-decal-graphics.jpg` | Done (R1) |
+| 5 | `carousel` slot 4 | 600×450px | `automobile-graphics/top5pct-trailer-decals.jpg` | Done (R1) |
+| 6 | `card-image-with-text` (left) | 600×450px | `automobile-graphics/top5pct-van-graphics-decals.jpg` | Done (R1) |
+| 7 | `card-image-with-text` (right) | 600×450px | `automobile-graphics/top5pct-vecal-decals.jpg` | Done (R1) |
+| 8 | `card-2image-with-text` image1 | fluid 4:3, ~50% | `automobile-graphics/top5pct-vehicle-graphics.jpg` | Done (R1) |
+| 9 | `card-2image-with-text` image2 | fluid 4:3, ~50% | `automobile-graphics/top5pct-vehicle-window-graphics-in-joliet.jpg` | Done (R1) |
+| 10 | `card-image-with-text` (left) | 600×450px | `automobile-graphics/top5pct-vehicle-window-graphics-joliet.jpg` | Done (R1) |
+| 11 | `card-detailed-info` image1 | 400×300px | `automobile-graphics/top5pct-article-car-wraps-vinyl-lettering.jpg` | Pre-existing article image — R2 image promoted to hero instead |
 | 12 | `card-banner-slide-in` (left→right) | full-width 16:7 | `automobile-graphics/top5pct-vinyl-lettering-car-graphics-joliet-crest-hill.jpg` | Keep |
-| 13 | `card-banner-slide-in` (right→left) | full-width 16:7 | `vehicle-magnets/top5pct-car-magnets-vehicle-magnets-joliet.jpg` | Keep |
+| 13 | `card-banner-slide-in` (right→left) | full-width 16:7 | `vehicle-magnets/top5pct-car-magnets-vehicle-magnets-joliet.jpg` | Keep — intentional cross-promo |
 
 ---
 
@@ -1068,7 +1068,7 @@ Move all files from `public/new-images/` (Round 2 batch) into the matching `publ
 | `Stickers/Regular Stickers/` | `stickers-decals/` | no |
 | `Table Signs/Table Cloths/` | `table-runners/` | no |
 | `Table Signs/Table Runner/` | `table-runners/` | no |
-| `Vehicle Decals/Automobile Graphics/` | `automobile-graphics/` | no |
+| `Vehicle Decals/Automobile Graphics/` | `automobile-graphics/` | **yes** |
 | `Vehicle Decals/DOT Decals/` | `dot-decals/` | no |
 | `Vehicle Decals/Vehicle Magnets/` | `vehicle-magnets/` | no |
 
@@ -1969,15 +1969,23 @@ Create `public/images/outdoor-signs/` before copying.
 
 ### `pages/vehicle-graphics/automobile-graphics.blade.php`
 
-*R1 used 9 slots (all Done). R2 new images: 1 — fills next eligible slot.*
+*All 12 slots complete (slot 13 slide-in intentional cross-promo from vehicle-magnets/). Hero updated via 2-slot swap: R2 image promoted to hero, pre-existing article image returns to card-detailed. No file moves needed.*
 
 | # | Component | Size | Current Image | Replaced? |
 |---|---|---|---|---|
-| 1 | `category-hero` | full-width × 576px | `automobile-graphics/top5pct-banner-vinyl-lettering-car-wraps-joliet.jpg` | Keep |
-| 2–10 | *(carousel 1–4, card-left, card-right, card-2image ×2, card-image-left)* | — | *(Done R1)* | Done (R1) |
-| 11 | `card-detailed-info` image1 | 400×300px | `automobile-graphics/top5pct-auto-window-wraps.jpg` | Pending |
+| 1 | `category-hero` | full-width × 576px | `automobile-graphics/top5pct-auto-window-wraps.jpg` | Done — R2 promoted to hero (Rule 1 fix) |
+| 2 | `carousel` slot 1 | 600×450px | `automobile-graphics/top5pct-car-wraps.jpg` | Done (R1) |
+| 3 | `carousel` slot 2 | 600×450px | `automobile-graphics/top5pct-pickup-truck-graphics.jpg` | Done (R1) |
+| 4 | `carousel` slot 3 | 600×450px | `automobile-graphics/top5pct-trailer-decal-graphics.jpg` | Done (R1) |
+| 5 | `carousel` slot 4 | 600×450px | `automobile-graphics/top5pct-trailer-decals.jpg` | Done (R1) |
+| 6 | `card-image-with-text` (left) | 600×450px | `automobile-graphics/top5pct-van-graphics-decals.jpg` | Done (R1) |
+| 7 | `card-image-with-text` (right) | 600×450px | `automobile-graphics/top5pct-vecal-decals.jpg` | Done (R1) |
+| 8 | `card-2image-with-text` image1 | fluid 4:3, ~50% | `automobile-graphics/top5pct-vehicle-graphics.jpg` | Done (R1) |
+| 9 | `card-2image-with-text` image2 | fluid 4:3, ~50% | `automobile-graphics/top5pct-vehicle-window-graphics-in-joliet.jpg` | Done (R1) |
+| 10 | `card-image-with-text` (left) | 600×450px | `automobile-graphics/top5pct-vehicle-window-graphics-joliet.jpg` | Done (R1) |
+| 11 | `card-detailed-info` image1 | 400×300px | `automobile-graphics/top5pct-article-car-wraps-vinyl-lettering.jpg` | Pre-existing article image — R2 image promoted to hero instead |
 | 12 | `card-banner-slide-in` (left→right) | full-width 16:7 | `automobile-graphics/top5pct-vinyl-lettering-car-graphics-joliet-crest-hill.jpg` | Keep |
-| 13 | `card-banner-slide-in` (right→left) | full-width 16:7 | `vehicle-magnets/top5pct-car-magnets-vehicle-magnets-joliet.jpg` | Keep |
+| 13 | `card-banner-slide-in` (right→left) | full-width 16:7 | `vehicle-magnets/top5pct-car-magnets-vehicle-magnets-joliet.jpg` | Keep — intentional cross-promo |
 
 ---
 
