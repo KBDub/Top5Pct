@@ -47,7 +47,7 @@
         primaryButtonHref="#all-products"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/stickers-decals/top5pct-stickers-decals-joliet-ocean-viewz.jpg"
+        image="/images/stickers-decals/top5pct-die-cut-stickers-joliet.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />

@@ -60,7 +60,7 @@ Move all files from `public/new-images/` into the matching `public/images/` dire
 | `signs/ground-signs/yard-signs/` | `yard-signs/` | no |
 | `signs/table-signs/table-cloths/` | `table-runners/` | no |
 | `signs/table-signs/table-runners/` | `table-runners/` | no |
-| `stickers/custom-shaped/` | `stickers-decals/` | no |
+| `stickers/custom-shaped/` | `stickers-decals/` | **yes** |
 | `vehicle-decals/automobile-graphics/` | `automobile-graphics/` | **yes** |
 | `vehicle-decals/dot-decals/` | `dot-decals/` | **yes** |
 | `vehicle-decals/vehicle-magnets/` | `vehicle-magnets/` | no |
@@ -830,20 +830,20 @@ These are product photos of vinyl banners. Existing `top5pct-banner-*` files in 
 
 ### `pages/stickers/custom-shaped-stickers.blade.php`
 
-*New images available: 6 (custom-shaped/) — 7 eligible slots — 6 Pending (carousel 1–4, card-left, card-right)*
+*All 10 slots complete. Directory: `stickers-decals/` (shared with standard-stickers by design — no per-page split needed). Hero updated via R2 excess: `top5pct-die-cut-stickers-joliet.jpg` promoted to hero (Rule 1 fix). No file moves needed.*
 
 | # | Component | Size | Current Image | Replaced? |
 |---|---|---|---|---|
-| 1 | `category-hero` | full-width × 576px | `stickers-decals/top5pct-stickers-decals-joliet-ocean-viewz.jpg` | Keep |
-| 2 | `carousel` slot 1 | 600×450px | `stickers-decals/top5pct-custom-stickers.jpg` | Done |
-| 3 | `carousel` slot 2 | 600×450px | `stickers-decals/top5pct-custom-glossy-stickers-in-joliet.jpg` | Done |
-| 4 | `carousel` slot 3 | 600×450px | `stickers-decals/top5pct-custom-label-stickers.jpg` | Done |
-| 5 | `carousel` slot 4 | 600×450px | `stickers-decals/top5pct-custom-shaped-stickers.jpg` | Done |
-| 6 | `card-image-with-text` (left) | 600×450px | `stickers-decals/top5pct-diecut-stickers.jpg` | Done |
-| 7 | `card-image-with-text` (right) | 600×450px | `stickers-decals/top5pct-stickers-in-joliet.jpg` | Done |
-| 8 | `card-detailed-info` image1 | 400×300px | `stickers-decals/top5pct-article-buy-stickers-decals-joliet.jpg` | Keep |
-| 9 | `card-banner-slide-in` (right→left) | full-width 16:7 | `stickers-decals/top5pct-stickers-decals-joliet-boxing-sports.jpg` | Keep |
-| 10 | `card-banner-slide-in` (left→right) | full-width 16:7 | `stickers-decals/top5pct-stickers-decals-joliet-stoner-rock-bbq.jpg` | Keep |
+| 1 | `category-hero` | full-width × 576px | `stickers-decals/top5pct-die-cut-stickers-joliet.jpg` | Done — R2 excess to hero (Rule 1 fix) |
+| 2 | `carousel` slot 1 | 600×450px | `stickers-decals/top5pct-custom-stickers.jpg` | Done (R1) |
+| 3 | `carousel` slot 2 | 600×450px | `stickers-decals/top5pct-custom-glossy-stickers-in-joliet.jpg` | Done (R1) |
+| 4 | `carousel` slot 3 | 600×450px | `stickers-decals/top5pct-custom-label-stickers.jpg` | Done (R1) |
+| 5 | `carousel` slot 4 | 600×450px | `stickers-decals/top5pct-custom-shaped-stickers.jpg` | Done (R1) |
+| 6 | `card-image-with-text` (left) | 600×450px | `stickers-decals/top5pct-diecut-stickers.jpg` | Done (R1) |
+| 7 | `card-image-with-text` (right) | 600×450px | `stickers-decals/top5pct-stickers-in-joliet.jpg` | Done (R1) |
+| 8 | `card-detailed-info` image1 | 400×300px | `stickers-decals/top5pct-custom-shaped-stickers-cresthill.jpg` | Done (R2, already in blade) |
+| 9 | `card-banner-slide-in` (direction="right") | full-width 16:7 | `stickers-decals/top5pct-stickers-decals-joliet-boxing-sports.jpg` | Keep |
+| 10 | `card-banner-slide-in` (direction="left") | full-width 16:7 | `stickers-decals/top5pct-stickers-decals-joliet-stoner-rock-bbq.jpg` | Keep |
 
 ---
 
@@ -1064,7 +1064,7 @@ Move all files from `public/new-images/` (Round 2 batch) into the matching `publ
 | `Ground Signs/A-Frames/` | `sidewalk-signs/` | no |
 | `Koozies/` | `promo-items/koozies/` | no |
 | `Mugs/` | `promo-items/mugs/` | no |
-| `Stickers/Custom Shaped Stickers/` | `stickers-decals/` | no |
+| `Stickers/Custom Shaped Stickers/` | `stickers-decals/` | **yes** |
 | `Stickers/Regular Stickers/` | `stickers-decals/` | no |
 | `Table Signs/Table Cloths/` | `table-runners/` | no |
 | `Table Signs/Table Runner/` | `table-runners/` | no |
@@ -1938,17 +1938,22 @@ Create `public/images/outdoor-signs/` before copying.
 
 ### `pages/stickers/custom-shaped-stickers.blade.php`
 
-*R1 used 6 slots (all Done). R2 new images: 3 — fills next eligible slot (only 1 remains).*
+*All 10 slots complete. Directory: `stickers-decals/` (shared with standard-stickers by design — no per-page split needed). Hero updated via R2 excess: `top5pct-die-cut-stickers-joliet.jpg` promoted to hero (Rule 1 fix). No file moves needed.*
 
 | # | Component | Size | Current Image | Replaced? |
 |---|---|---|---|---|
-| 1 | `category-hero` | full-width × 576px | `stickers-decals/top5pct-stickers-decals-joliet-ocean-viewz.jpg` | Keep |
-| 2–7 | *(carousel 1–4, card-left, card-right)* | — | *(Done R1)* | Done (R1) |
-| 8 | `card-detailed-info` image1 | 400×300px | `stickers-decals/top5pct-custom-shaped-stickers-cresthill.jpg` | Pending |
-| 9 | `card-banner-slide-in` (right→left) | full-width 16:7 | `stickers-decals/top5pct-stickers-decals-joliet-boxing-sports.jpg` | Keep |
-| 10 | `card-banner-slide-in` (left→right) | full-width 16:7 | `stickers-decals/top5pct-stickers-decals-joliet-stoner-rock-bbq.jpg` | Keep |
+| 1 | `category-hero` | full-width × 576px | `stickers-decals/top5pct-die-cut-stickers-joliet.jpg` | Done — R2 excess to hero (Rule 1 fix) |
+| 2 | `carousel` slot 1 | 600×450px | `stickers-decals/top5pct-custom-stickers.jpg` | Done (R1) |
+| 3 | `carousel` slot 2 | 600×450px | `stickers-decals/top5pct-custom-glossy-stickers-in-joliet.jpg` | Done (R1) |
+| 4 | `carousel` slot 3 | 600×450px | `stickers-decals/top5pct-custom-label-stickers.jpg` | Done (R1) |
+| 5 | `carousel` slot 4 | 600×450px | `stickers-decals/top5pct-custom-shaped-stickers.jpg` | Done (R1) |
+| 6 | `card-image-with-text` (left) | 600×450px | `stickers-decals/top5pct-diecut-stickers.jpg` | Done (R1) |
+| 7 | `card-image-with-text` (right) | 600×450px | `stickers-decals/top5pct-stickers-in-joliet.jpg` | Done (R1) |
+| 8 | `card-detailed-info` image1 | 400×300px | `stickers-decals/top5pct-custom-shaped-stickers-cresthill.jpg` | Done (R2, already in blade) |
+| 9 | `card-banner-slide-in` (direction="right") | full-width 16:7 | `stickers-decals/top5pct-stickers-decals-joliet-boxing-sports.jpg` | Keep |
+| 10 | `card-banner-slide-in` (direction="left") | full-width 16:7 | `stickers-decals/top5pct-stickers-decals-joliet-stoner-rock-bbq.jpg` | Keep |
 
-> R2 excess (copied to `stickers-decals/`, no slot assignment): `top5pct-die-cut-stickers-joliet.jpg`, `top5pct-die-cut-stickers-shorewood.jpg`.
+> R2 excess (in `stickers-decals/`, no slot assignment): `top5pct-die-cut-stickers-shorewood.jpg`. Hero displaced `top5pct-stickers-decals-joliet-ocean-viewz.jpg` to unassigned.
 
 ---
 
