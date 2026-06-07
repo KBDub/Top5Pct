@@ -1063,7 +1063,7 @@ Move all files from `public/new-images/` (Round 2 batch) into the matching `publ
 | `Custom Shirts/Specialty Material/Rhinestones/` | `custom-shirts/` | **yes** |
 | `Ground Signs/A-Frames/` | `sidewalk-signs/` | **yes** |
 | `Koozies/` | `promo-items/koozies/` | no |
-| `Mugs/` | `promo-items/mugs/` | no |
+| `Mugs/` | `promo-items/mugs/` | **yes** |
 | `Stickers/Custom Shaped Stickers/` | `stickers-decals/` | **yes** |
 | `Stickers/Regular Stickers/` | `stickers-decals/` | no |
 | `Table Signs/Table Cloths/` | `table-runners/` | no |
@@ -2080,15 +2080,19 @@ Create `public/images/outdoor-signs/` before copying.
 
 ### `pages/promotional-items/mugs.blade.php`
 
-*R1 used all 7 eligible slots (all Done). R2 new images: 1 — no eligible slots remain; file copied only.*
+*All 9 slots complete. Directory: `promo-items/mugs/` (own dir ✓). No hero image on this page — Rule 1 N/A. R1 filled slots 1–7 (all pre-applied). R2 `printed-mugs.jpg` replaced R1 original via collision rename — transparent, no blade change needed. Slide-in left (slot 8) was a leftover placeholder (`custom-shirts/custom-embroidery-shops`) — replaced with R1 original `printed-mugs-old.jpg` (Rule 2+3 fix). Slide-in right (slot 9) is intentional cross-promo, excluded. No file moves needed.*
 
 | # | Component | Size | Current Image | Replaced? |
 |---|---|---|---|---|
-| 1–7 | *(carousel 1–4, card-left, card-right, card-detailed-info)* | — | *(Done R1)* | Done (R1) |
-| 8 | `card-banner-slide-in` (right→left) | full-width 16:7 | `custom-shirts/top5pct-custom-embroidery-shops-near-me-joliet.jpg` | Keep |
-| 9 | `card-banner-slide-in` (left→right) | full-width 16:7 | `custom-shirts/top5pct-custom-glitter-shirt-cap-hoodie-joliet.jpg` | Keep |
-
-> R2: `top5pct-printed-mugs.jpg` copied to `promo-items/mugs/` via collision rename. No blade attribute change needed — existing `image=` continues pointing to `top5pct-printed-mugs.jpg`, which now resolves to the new R2 image transparently.
+| 1 | `carousel` slot 1 | 600×450px | `promo-items/mugs/top5pct-custom-coffee-mugs-in-joliet.jpg` | Done (R1) |
+| 2 | `carousel` slot 2 | 600×450px | `promo-items/mugs/top5pct-custom-coffee-mugs.jpg` | Done (R1) |
+| 3 | `carousel` slot 3 | 600×450px | `promo-items/mugs/top5pct-custom-mugs-near-me.jpg` | Done (R1) |
+| 4 | `carousel` slot 4 | 600×450px | `promo-items/mugs/top5pct-custom-mugs.jpg` | Done (R1) |
+| 5 | `card-image-with-text` (left) "Coffee Mugs That Work…" | 600×450px | `promo-items/mugs/top5pct-custom-printed-mugs.jpg` | Done (R1) |
+| 6 | `card-image-with-text` (right) "Easy Ordering…" | 600×450px | `promo-items/mugs/top5pct-picture-on-mugs.jpg` | Done (R1) |
+| 7 | `card-detailed-info` image1 | 400×300px | `promo-items/mugs/top5pct-printed-mugs.jpg` | Done (R2 collision — new image replaces R1 transparently) |
+| 8 | `card-banner-slide-in` (direction="left") "Custom Mugs With Your Logo…" | full-width 16:7 | `promo-items/mugs/top5pct-printed-mugs-old.jpg` | Done — R1 original (renamed), "mug" ✓ (Rules 2+3 fix; was placeholder embroidery image) |
+| 9 | `card-banner-slide-in` (direction="right") "Bundle Mugs With Custom Apparel…" | full-width 16:7 | `custom-shirts/top5pct-custom-glitter-shirt-cap-hoodie-joliet.jpg` | Keep — intentional cross-promo |
 
 ---
 

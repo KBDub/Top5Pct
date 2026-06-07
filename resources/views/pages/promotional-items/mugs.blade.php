@@ -126,7 +126,7 @@
         name="Chewy Orkwiszewski"
     />
     <x-ui.card-banner-slide-in
-        image="/images/custom-shirts/top5pct-custom-embroidery-shops-near-me-joliet.jpg"
+        image="/images/promo-items/mugs/top5pct-printed-mugs-old.jpg"
         alt="Custom branded mugs and promotional drinkware from Top 5 Percent in Joliet Illinois"
         title="Custom Mugs With Your Logo, No Minimums"
         href="/contact"
