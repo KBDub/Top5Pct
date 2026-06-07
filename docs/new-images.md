@@ -1543,20 +1543,20 @@ Create `public/images/outdoor-signs/` before copying.
 
 ### `pages/custom-apparel/printing-options/embroidery.blade.php`
 
-*Revised plan — all 10 slots assigned. R1 Done: carousel 1–4. R2 Pending: hero, card-left, card-right, card-detailed, both slide-ins. Directory: `embroidery/`. Rename: `stitched-caps.jpg` → `embroidered-stitched-caps.jpg` on disk and in blade.*
+*All 10 slots complete. Directory: `embroidery/`. Files moved from `custom-shirts/`. Rename: `stitched-caps.jpg` → `embroidered-stitched-caps.jpg` applied on disk and in blade.*
 
 | # | Component | Size | Current Image | Replaced? |
 |---|---|---|---|---|
-| 1 | `category-hero` | full-width × 576px | `embroidery/top5pct-stitched-embroidered-shirts.jpg` | Pending — new R2 image (hero rule) |
+| 1 | `category-hero` | full-width × 576px | `embroidery/top5pct-stitched-embroidered-shirts.jpg` | Done — new R2 image (hero rule) |
 | 2 | `carousel` slot 1 | 600×450px | `embroidery/top5pct-embroidered-aprons.jpg` | Done (R1) |
 | 3 | `carousel` slot 2 | 600×450px | `embroidery/top5pct-embroidered-caps.jpg` | Done (R1) — R2 file replaced via collision rename |
 | 4 | `carousel` slot 3 | 600×450px | `embroidery/top5pct-embroidery-in-joliet.jpg` | Done (R1) |
 | 5 | `carousel` slot 4 | 600×450px | `embroidery/top5pct-embroidered-stitched-caps.jpg` | Done (R1) — renamed from `stitched-caps.jpg` |
-| 6 | `card-image-with-text` (left) | 600×450px | `embroidery/top5pct-embroidered-bag.jpg` | Pending |
-| 7 | `card-image-with-text` (right) | 600×450px | `embroidery/top5pct-embroidered-smocks.jpg` | Pending |
-| 8 | `card-detailed-info` image1 | 400×300px | `embroidery/top5pct-embroidery-beanies.jpg` | Pending |
-| 9 | `card-banner-slide-in` (right→left) | full-width 16:7 | `embroidery/top5pct-custom-embroidery-shops-near-me-joliet.jpg` | Pending — displaced from hero |
-| 10 | `card-banner-slide-in` (left→right) | full-width 16:7 | `embroidery/top5pct-embroidered-caps-old.jpg` | Pending — collision old file, 10th slot |
+| 6 | `card-image-with-text` (left) | 600×450px | `embroidery/top5pct-embroidered-bag.jpg` | Done |
+| 7 | `card-image-with-text` (right) | 600×450px | `embroidery/top5pct-embroidered-smocks.jpg` | Done |
+| 8 | `card-detailed-info` image1 | 400×300px | `embroidery/top5pct-embroidery-beanies.jpg` | Done |
+| 9 | `card-banner-slide-in` (right→left) | full-width 16:7 | `embroidery/top5pct-custom-embroidery-shops-near-me-joliet.jpg` | Done — displaced from hero |
+| 10 | `card-banner-slide-in` (left→right) | full-width 16:7 | `embroidery/top5pct-embroidered-caps-old.jpg` | Done — collision old file, 10th slot |
 
 ---
 

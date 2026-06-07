@@ -47,7 +47,7 @@
         primaryButtonHref="/contact"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/custom-shirts/top5pct-custom-embroidery-shops-near-me-joliet.jpg"
+        image="/images/embroidery/top5pct-stitched-embroidered-shirts.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />
@@ -56,10 +56,10 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/custom-shirts/top5pct-embroidered-aprons.jpg',                         'alt' => 'Custom embroidery shirts and embroidered apparel in Joliet Illinois'],
-            ['src' => '/images/custom-shirts/top5pct-embroidered-caps.jpg', 'alt' => 'Custom embroidered corporate shirts and polos in Joliet Illinois'],
-            ['src' => '/images/custom-shirts/top5pct-embroidery-in-joliet.jpg',                                           'alt' => 'Custom embroidered uniforms and branded apparel in Joliet Illinois'],
-            ['src' => '/images/custom-shirts/top5pct-stitched-caps.jpg',                                     'alt' => 'Custom embroidery for businesses and organizations in Joliet, Will and DuPage County Illinois'],
+            ['src' => '/images/embroidery/top5pct-embroidered-aprons.jpg',           'alt' => 'Custom embroidery shirts and embroidered apparel in Joliet Illinois'],
+            ['src' => '/images/embroidery/top5pct-embroidered-caps.jpg',            'alt' => 'Custom embroidered corporate shirts and polos in Joliet Illinois'],
+            ['src' => '/images/embroidery/top5pct-embroidery-in-joliet.jpg',        'alt' => 'Custom embroidered uniforms and branded apparel in Joliet Illinois'],
+            ['src' => '/images/embroidery/top5pct-embroidered-stitched-caps.jpg',   'alt' => 'Custom embroidery for businesses and organizations in Joliet, Will and DuPage County Illinois'],
         ]"
         visible=2
     />
@@ -70,7 +70,7 @@
     />
 
     <x-sections.card-image-with-text
-        image="/images/custom-shirts/top5pct-embroidered-bag.jpg"
+        image="/images/embroidery/top5pct-embroidered-bag.jpg"
         alt="Custom embroidered bag with machine embroidery in Joliet Illinois"
         title="The Most Professional Look in Custom Apparel"
     >
@@ -80,7 +80,7 @@
     </x-sections.card-image-with-text>
 
     <x-sections.card-image-with-text
-        image="/images/custom-shirts/top5pct-embroidered-smocks.jpg"
+        image="/images/embroidery/top5pct-embroidered-smocks.jpg"
         alt="Custom embroidered smocks and work apparel in Joliet Illinois"
         title="Corporate Uniforms, Caps, and Accessories"
         imagePosition="right"
@@ -97,7 +97,7 @@
 
     <x-sections.card-detailed-info
         heading="Why Embroidery Is the Right Choice for Professional and Corporate Apparel"
-        image1="/images/custom-shirts/top5pct-embroidery-beanies.jpg"
+        image1="/images/embroidery/top5pct-embroidery-beanies.jpg"
         alt1="Custom embroidered beanies and hats in Joliet Illinois"
     >
         <x-slot name="intro">
@@ -126,15 +126,15 @@
         name="Ania Jarosz"
     />
     <x-ui.card-banner-slide-in
-        image="/images/custom-shirts/top5pct-custom-embroidery-shops-near-me-joliet.jpg"
+        image="/images/embroidery/top5pct-custom-embroidery-shops-near-me-joliet.jpg"
         alt="Custom embroidery shirts and embroidered apparel by Top 5 Percent in Joliet Illinois"
         title="Custom Embroidery, The Professional Standard"
         href="/contact"
         direction="left"
     />
     <x-ui.card-banner-slide-in
-        image="/images/custom-shirts/top5pct-custom-vinyl-shirts-caps-hoodies.jpg"
-        alt="Custom vinyl heat press shirts and apparel from Top 5 Percent in Joliet Illinois"
+        image="/images/embroidery/top5pct-embroidered-caps-old.jpg"
+        alt="Custom embroidered caps and hats in Joliet Illinois"
         title="Combine Embroidery With Vinyl or Screen Print"
         href="/contact"
         direction="right"
