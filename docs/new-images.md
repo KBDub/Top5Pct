@@ -1054,7 +1054,7 @@ Move all files from `public/new-images/` (Round 2 batch) into the matching `publ
 | `Custom Shirts/Specialty Material/Brick/` | `custom-shirts/` | no |
 | `Custom Shirts/Specialty Material/Chameleon/` | `custom-shirts/` | no |
 | `Custom Shirts/Specialty Material/Flock/` | `custom-shirts/` | no |
-| `Custom Shirts/Specialty Material/Foil/` | `custom-shirts/` | no ⚠ |
+| `Custom Shirts/Specialty Material/Foil/` | `custom-shirts/` | **yes** |
 | `Custom Shirts/Specialty Material/Glitter/` | `glitter-shirts/` | **yes** |
 | `Custom Shirts/Specialty Material/Glow/` | `custom-shirts/` | no |
 | `Custom Shirts/Specialty Material/Holographic/` | `custom-shirts/` | no |
@@ -1480,9 +1480,9 @@ Create `public/images/outdoor-signs/` before copying.
 
 `Custom Shirts/Specialty Material/Chameleon/chameleon-custom-shirt.mov` — video file, not a web image. Skipped.
 
-#### Foil shirts — no URL path
+#### Foil shirts — slots assigned
 
-`foil-shirts.blade.php` exists but a foil URL is absent from `url.paths.txt`. Images copied but no slot assignments until a URL is registered.
+`foil-shirts.blade.php` slots fully assigned in Round 2 pass. All 5 R2 foil images placed; all 3 rules resolved. See R2 slot table under `pages/custom-apparel/foil-shirts.blade.php`.
 
 #### Missing blade pages — slots TBD
 
@@ -1692,6 +1692,25 @@ Create `public/images/outdoor-signs/` before copying.
 | 8 | `card-detailed-info` image1 | 400×300px | `custom-shirts/top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg` | Keep |
 | 9 | `card-banner-slide-in` (right→left) | full-width 16:7 | `custom-shirts/top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg` | Keep |
 | 10 | `card-banner-slide-in` (left→right) | full-width 16:7 | `custom-shirts/top5pct-custom-foil-shirts-hoodies-caps-joliet.jpg` | Keep |
+
+---
+
+### `pages/custom-apparel/foil-shirts.blade.php`
+
+*All 10 slots complete. Directory: `custom-shirts/` (shared by design — no own dir, R2 flagged ⚠). Not in R1 inventory. Page was deferred in R2 (no URL path at time of R2 run). All 5 R2 foil images assigned for the first time in this pass. Hero, carousel 2–4, and card-right all updated. All 3 rules fully resolved — no residual violations. No file moves needed.*
+
+| # | Component | Size | Current Image | Replaced? |
+|---|---|---|---|---|
+| 1 | `category-hero` | full-width × 576px | `custom-shirts/top5pct-foil-gold-t-shirt.jpg` | Done — R2 first-time assignment (Rule 1 fix) |
+| 2 | `carousel` slot 1 | 600×450px | `custom-shirts/top5pct-custom-foil-shirts-hoodies-caps-joliet.jpg` | Keep — "foil" ✓ Rule 2 |
+| 3 | `carousel` slot 2 | 600×450px | `custom-shirts/top5pct-gold-foil-printed-shirts.jpg` | Done — R2 replaces banner-custom-apparel (Rule 2 fix) |
+| 4 | `carousel` slot 3 | 600×450px | `custom-shirts/top5pct-foil-custom-t-shirts.jpg` | Done — R2 replaces custom-holographic (Rule 2 fix) |
+| 5 | `carousel` slot 4 | 600×450px | `custom-shirts/top5pct-custom-foil-polo.jpg` | Done — R2 replaces t-shirt-maker-article-pic2 (Rule 2 fix) |
+| 6 | `card-image-with-text` (left) "Mirror-Finish Metallic…" | 600×450px | `custom-shirts/top5pct-custom-foil-shirts-hoodies-caps-joliet.jpg` | Keep — "foil" ✓ Rule 2 |
+| 7 | `card-image-with-text` (right) "Gold, Silver, and Color Foil Options" | 600×450px | `custom-shirts/top5pct-custom-wedding-foil-shirts.jpg` | Done — R2 replaces custom-holographic (Rule 2 fix) |
+| 8 | `card-detailed-info` image1 | 400×300px | `custom-shirts/top5pct-custom-foil-shirts-hoodies-caps-joliet.jpg` | Keep — "foil" ✓ Rule 2 |
+| 9 | `card-banner-slide-in` (direction="right") | full-width 16:7 | `custom-shirts/top5pct-custom-foil-shirts-hoodies-caps-joliet.jpg` | Keep — "foil" ✓ Rule 2 |
+| 10 | `card-banner-slide-in` (direction="left") | full-width 16:7 | `custom-shirts/top5pct-custom-glitter-shirt-cap-hoodie-joliet.jpg` | Keep — intentional cross-promo to glitter |
 
 ---
 
@@ -2083,7 +2102,7 @@ Create `public/images/outdoor-signs/` before copying.
 - [ ] Verify all files present at destination with `top5pct-` prefix
 - [ ] Update blade `src`/`image=` attributes for all **Pending** slots above
 - [ ] Mark each Pending slot **Done** in this document
-- [ ] Add foil URL to `url.paths.txt` and assign blade slots for `foil-shirts.blade.php`
+- [x] Foil shirts blade slots assigned — all 5 R2 foil images placed, all rules resolved.
 - [ ] Create `signs/backlit-signs.blade.php` and build slot inventory
 - [ ] Create `signs/outdoor-signs.blade.php` and build slot inventory
 - [ ] Create chameleon blade page and build slot inventory

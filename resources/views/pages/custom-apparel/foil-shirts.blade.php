@@ -47,7 +47,7 @@
         primaryButtonHref="/contact"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/custom-shirts/top5pct-custom-foil-shirts-hoodies-caps-joliet.jpg"
+        image="/images/custom-shirts/top5pct-foil-gold-t-shirt.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />
@@ -56,10 +56,10 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/custom-shirts/top5pct-custom-foil-shirts-hoodies-caps-joliet.jpg',                         'alt' => 'Custom foil shirts with metallic high-shine prints in Joliet Illinois'],
-            ['src' => '/images/custom-shirts/top5pct-banner-custom-apparel-custom-shirts-custom-hoodies-custom-caps.jpg', 'alt' => 'Custom premium apparel and foil shirts in Joliet Illinois'],
-            ['src' => '/images/custom-shirts/top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg',                     'alt' => 'Custom metallic and specialty shirts in Joliet Illinois'],
-            ['src' => '/images/custom-shirts/top5pct-t-shirt-maker-article-pic2.jpg',                                     'alt' => 'Custom foil metallic shirts made in Joliet, Will and DuPage County Illinois'],
+            ['src' => '/images/custom-shirts/top5pct-custom-foil-shirts-hoodies-caps-joliet.jpg', 'alt' => 'Custom foil shirts with metallic high-shine prints in Joliet Illinois'],
+            ['src' => '/images/custom-shirts/top5pct-gold-foil-printed-shirts.jpg',             'alt' => 'Custom gold foil printed shirts in Joliet Illinois'],
+            ['src' => '/images/custom-shirts/top5pct-foil-custom-t-shirts.jpg',                 'alt' => 'Custom foil t-shirts with metallic finish in Joliet Illinois'],
+            ['src' => '/images/custom-shirts/top5pct-custom-foil-polo.jpg',                     'alt' => 'Custom foil polo shirts in Joliet Illinois'],
         ]"
         visible=2
     />
@@ -80,8 +80,8 @@
     </x-sections.card-image-with-text>
 
     <x-sections.card-image-with-text
-        image="/images/custom-shirts/top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg"
-        alt="Custom metallic foil shirts and premium apparel for events in Joliet Illinois"
+        image="/images/custom-shirts/top5pct-custom-wedding-foil-shirts.jpg"
+        alt="Custom wedding foil shirts and metallic apparel for events in Joliet Illinois"
         title="Gold, Silver, and Color Foil Options"
         imagePosition="right"
     >
