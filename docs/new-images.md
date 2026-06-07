@@ -62,7 +62,7 @@ Move all files from `public/new-images/` into the matching `public/images/` dire
 | `signs/table-signs/table-runners/` | `table-runners/` | no |
 | `stickers/custom-shaped/` | `stickers-decals/` | no |
 | `vehicle-decals/automobile-graphics/` | `automobile-graphics/` | **yes** |
-| `vehicle-decals/dot-decals/` | `dot-decals/` | no |
+| `vehicle-decals/dot-decals/` | `dot-decals/` | **yes** |
 | `vehicle-decals/vehicle-magnets/` | `vehicle-magnets/` | no |
 
 ---
@@ -871,23 +871,23 @@ These are product photos of vinyl banners. Existing `top5pct-banner-*` files in 
 
 ### `pages/vehicle-graphics/dot-decals.blade.php`
 
-*New images available: 3 (dot-decals/) — 11 eligible slots — 3 Pending (carousel 1–3)*
+*All 13 slots complete. Hero updated via 2-slot swap: R2 slide-in image promoted to hero, pre-existing DOT-stickers image takes slide-in. R2 slots 5–10 and 12 were already in blade before this docs pass. No file moves needed.*
 
 | # | Component | Size | Current Image | Replaced? |
 |---|---|---|---|---|
-| 1 | `category-hero` | full-width × 576px | `dot-decals/top5pct-banner-DOT-stickers-joliet-shorewood-channahon.jpg` | Keep |
-| 2 | `carousel` slot 1 | 600×450px | `dot-decals/top5pct-dot-decals-joliet.jpg` | Done |
-| 3 | `carousel` slot 2 | 600×450px | `dot-decals/top5pct-dot-semi-truck-decals.jpg` | Done |
-| 4 | `carousel` slot 3 | 600×450px | `dot-decals/top5pct-dot-truck-decals-joliet.jpg` | Done |
-| 5 | `carousel` slot 4 | 600×450px | `dot-decals/top5pct-trucking-logo-joliet-shorewood-crest-hill.jpg` | Keep |
-| 6 | `card-image-with-text` (left) | 600×450px | `dot-decals/top5pct-DOT-stickers-joliet-shorewood-rockdale.jpg` | Keep |
-| 7 | `card-image-with-text` (right) | 600×450px | `dot-decals/top5pct-dot-decals-joliet-shorewood-rockdale.jpg` | Keep |
-| 8 | `card-2image-with-text` image1 | fluid 4:3, ~50% | `dot-decals/top5pct-trucking-logo-joliet-shorewood-crest-hill.jpg` | Keep |
-| 9 | `card-2image-with-text` image2 | fluid 4:3, ~50% | `dot-decals/top5pct-trucking-logo-joliet-shorewood-rockdale.jpg` | Keep |
-| 10 | `card-image-with-text` (left) | 600×450px | `dot-decals/top5pct-truck-lettering-joliet-shorewood-rockdale.jpg` | Keep |
+| 1 | `category-hero` | full-width × 576px | `dot-decals/top5pct-truck-lettering-joliet-shorewood-rockdale.jpg` | Done — R2 promoted to hero (Rule 1 fix) |
+| 2 | `carousel` slot 1 | 600×450px | `dot-decals/top5pct-dot-decals-joliet.jpg` | Done (R1) |
+| 3 | `carousel` slot 2 | 600×450px | `dot-decals/top5pct-dot-semi-truck-decals.jpg` | Done (R1) |
+| 4 | `carousel` slot 3 | 600×450px | `dot-decals/top5pct-dot-truck-decals-joliet.jpg` | Done (R1) |
+| 5 | `carousel` slot 4 | 600×450px | `dot-decals/top5pct-custom-dot-decals-for-trucks-in-joliet.jpg` | Done (R2, already in blade) |
+| 6 | `card-image-with-text` (left) | 600×450px | `dot-decals/top5pct-custom-dot-truck-signs-illinois.jpg` | Done (R2, already in blade) |
+| 7 | `card-image-with-text` (right) | 600×450px | `dot-decals/top5pct-dot-decals-semi-truck.jpg` | Done (R2, already in blade) |
+| 8 | `card-2image-with-text` image1 | fluid 4:3, ~50% | `dot-decals/top5pct-dot-lettering-joliet.jpg` | Done (R2, already in blade) |
+| 9 | `card-2image-with-text` image2 | fluid 4:3, ~50% | `dot-decals/top5pct-dot-magnets.jpg` | Done (R2, already in blade) |
+| 10 | `card-image-with-text` (left) | 600×450px | `dot-decals/top5pct-trucking-dot-decals-in-joliet.jpg` | Done (R2, already in blade) |
 | 11 | `card-detailed-info` image1 | 400×300px | `dot-decals/top5pct-article-DOT-decals-vinyl-lettering.jpg` | Keep |
-| 12 | `card-banner-slide-in` (right→left) | full-width 16:7 | `dot-decals/top5pct-truck-lettering-joliet-shorewood-rockdale.jpg` | Keep |
-| 13 | `card-banner-slide-in` (left→right) | full-width 16:7 | `vehicle-magnets/top5pct-car-magnets-vehicle-magnets-joliet.jpg` | Keep |
+| 12 | `card-banner-slide-in` (right→left) | full-width 16:7 | `dot-decals/top5pct-DOT-stickers-joliet-shorewood-rockdale.jpg` | Pre-existing — R2 promoted to hero |
+| 13 | `card-banner-slide-in` (left→right) | full-width 16:7 | `vehicle-magnets/top5pct-car-magnets-vehicle-magnets-joliet.jpg` | Keep — intentional cross-promo |
 
 ---
 
@@ -1069,7 +1069,7 @@ Move all files from `public/new-images/` (Round 2 batch) into the matching `publ
 | `Table Signs/Table Cloths/` | `table-runners/` | no |
 | `Table Signs/Table Runner/` | `table-runners/` | no |
 | `Vehicle Decals/Automobile Graphics/` | `automobile-graphics/` | **yes** |
-| `Vehicle Decals/DOT Decals/` | `dot-decals/` | no |
+| `Vehicle Decals/DOT Decals/` | `dot-decals/` | **yes** |
 | `Vehicle Decals/Vehicle Magnets/` | `vehicle-magnets/` | no |
 
 ---
@@ -1991,23 +1991,23 @@ Create `public/images/outdoor-signs/` before copying.
 
 ### `pages/vehicle-graphics/dot-decals.blade.php`
 
-*R1 used 3 slots (carousel 1–3 Done). R2 new images: 7 — fills remaining 7 eligible slots (out of 8 remaining).*
+*All 13 slots complete. Hero updated via 2-slot swap: R2 slide-in image promoted to hero, pre-existing DOT-stickers image takes slide-in. R2 slots 5–10 and 12 were already in blade before this docs pass. No file moves needed.*
 
 | # | Component | Size | Current Image | Replaced? |
 |---|---|---|---|---|
-| 1 | `category-hero` | full-width × 576px | `dot-decals/top5pct-banner-DOT-stickers-joliet-shorewood-channahon.jpg` | Keep |
+| 1 | `category-hero` | full-width × 576px | `dot-decals/top5pct-truck-lettering-joliet-shorewood-rockdale.jpg` | Done — R2 promoted to hero (Rule 1 fix) |
 | 2 | `carousel` slot 1 | 600×450px | `dot-decals/top5pct-dot-decals-joliet.jpg` | Done (R1) |
 | 3 | `carousel` slot 2 | 600×450px | `dot-decals/top5pct-dot-semi-truck-decals.jpg` | Done (R1) |
 | 4 | `carousel` slot 3 | 600×450px | `dot-decals/top5pct-dot-truck-decals-joliet.jpg` | Done (R1) |
-| 5 | `carousel` slot 4 | 600×450px | `dot-decals/top5pct-custom-dot-decals-for-trucks-in-joliet.jpg` | Pending |
-| 6 | `card-image-with-text` (left) | 600×450px | `dot-decals/top5pct-custom-dot-truck-signs-illinois.jpg` | Pending |
-| 7 | `card-image-with-text` (right) | 600×450px | `dot-decals/top5pct-dot-decals-semi-truck.jpg` | Pending |
-| 8 | `card-2image-with-text` image1 | fluid 4:3, ~50% | `dot-decals/top5pct-dot-lettering-joliet.jpg` | Pending |
-| 9 | `card-2image-with-text` image2 | fluid 4:3, ~50% | `dot-decals/top5pct-dot-magnets.jpg` | Pending |
-| 10 | `card-image-with-text` (left) | 600×450px | `dot-decals/top5pct-trucking-dot-decals-in-joliet.jpg` | Pending |
+| 5 | `carousel` slot 4 | 600×450px | `dot-decals/top5pct-custom-dot-decals-for-trucks-in-joliet.jpg` | Done (R2, already in blade) |
+| 6 | `card-image-with-text` (left) | 600×450px | `dot-decals/top5pct-custom-dot-truck-signs-illinois.jpg` | Done (R2, already in blade) |
+| 7 | `card-image-with-text` (right) | 600×450px | `dot-decals/top5pct-dot-decals-semi-truck.jpg` | Done (R2, already in blade) |
+| 8 | `card-2image-with-text` image1 | fluid 4:3, ~50% | `dot-decals/top5pct-dot-lettering-joliet.jpg` | Done (R2, already in blade) |
+| 9 | `card-2image-with-text` image2 | fluid 4:3, ~50% | `dot-decals/top5pct-dot-magnets.jpg` | Done (R2, already in blade) |
+| 10 | `card-image-with-text` (left) | 600×450px | `dot-decals/top5pct-trucking-dot-decals-in-joliet.jpg` | Done (R2, already in blade) |
 | 11 | `card-detailed-info` image1 | 400×300px | `dot-decals/top5pct-article-DOT-decals-vinyl-lettering.jpg` | Keep |
-| 12 | `card-banner-slide-in` (right→left) | full-width 16:7 | `dot-decals/top5pct-truck-lettering-joliet-shorewood-rockdale.jpg` | Keep |
-| 13 | `card-banner-slide-in` (left→right) | full-width 16:7 | `vehicle-magnets/top5pct-car-magnets-vehicle-magnets-joliet.jpg` | Keep |
+| 12 | `card-banner-slide-in` (right→left) | full-width 16:7 | `dot-decals/top5pct-DOT-stickers-joliet-shorewood-rockdale.jpg` | Pre-existing — R2 promoted to hero |
+| 13 | `card-banner-slide-in` (left→right) | full-width 16:7 | `vehicle-magnets/top5pct-car-magnets-vehicle-magnets-joliet.jpg` | Keep — intentional cross-promo |
 
 ---
 

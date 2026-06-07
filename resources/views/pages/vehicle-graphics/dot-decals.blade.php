@@ -47,7 +47,7 @@
         primaryButtonHref="#all-products"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/dot-decals/top5pct-banner-DOT-stickers-joliet-shorewood-channahon.jpg"
+        image="/images/dot-decals/top5pct-truck-lettering-joliet-shorewood-rockdale.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />
@@ -150,8 +150,8 @@
         name="John Kiesow"
     />
     <x-ui.card-banner-slide-in
-        image="/images/dot-decals/top5pct-truck-lettering-joliet-shorewood-rockdale.jpg"
-        alt="Commercial truck lettering and DOT compliance decals installed by Top 5 Percent in Joliet, Shorewood, and Rockdale Illinois"
+        image="/images/dot-decals/top5pct-DOT-stickers-joliet-shorewood-rockdale.jpg"
+        alt="DOT compliance stickers and truck lettering installed by Top 5 Percent in Joliet, Shorewood, and Rockdale Illinois"
         title="Same-Day DOT Decals and Truck Lettering"
         href="/contact"
         direction="left"
