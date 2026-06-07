@@ -55,7 +55,7 @@ Move all files from `public/new-images/` into the matching `public/images/` dire
 | `signs/business-signs/banners/` | `banners/` | **yes** |
 | `signs/business-signs/door-signs/` | `window-wall-floor-decals/` | no |
 | `signs/business-signs/wall-signs/` | `window-wall-floor-decals/` | no |
-| `signs/business-signs/window-signs/` | `window-wall-floor-decals/` | no |
+| `signs/business-signs/window-signs/` | `window-wall-floor-decals/` | **yes** |
 | `signs/ground-signs/a-frame-signs/` | `sidewalk-signs/` | no |
 | `signs/ground-signs/yard-signs/` | `yard-signs/` | no |
 | `signs/table-signs/table-cloths/` | `table-runners/` | no |
@@ -773,20 +773,20 @@ These are product photos of vinyl banners. Existing `top5pct-banner-*` files in 
 
 ### `pages/signs/window-signs.blade.php`
 
-*New images available: 5 (window-signs/) — 7 eligible slots — 5 Pending (carousel 1–4, card-left)*
+*All 10 slots complete. Directory: `window-wall-floor-decals/` (shared across door/wall/window pages by design). Hero updated via 2-slot swap: R2 `top5pct-window-signage.jpg` promoted from card-detailed to hero (Rule 1 + Rule 2 fix), pre-existing hero displaced to card-detailed. Slots 7 and 8 were already in blade before this docs pass. No file moves needed.*
 
 | # | Component | Size | Current Image | Replaced? |
 |---|---|---|---|---|
-| 1 | `category-hero` | full-width × 576px | `window-wall-floor-decals/top5pct-banner-wall-decal-door-signs-joliet.jpg` | Keep |
-| 2 | `carousel` slot 1 | 600×450px | `window-wall-floor-decals/top5pct-business-window-signs.jpg` | Done |
-| 3 | `carousel` slot 2 | 600×450px | `window-wall-floor-decals/top5pct-custom-window-signs.jpg` | Done |
-| 4 | `carousel` slot 3 | 600×450px | `window-wall-floor-decals/top5pct-window-door-signs.jpg` | Done |
-| 5 | `carousel` slot 4 | 600×450px | `window-wall-floor-decals/top5pct-window-signs-joliet-slammers.jpg` | Done |
-| 6 | `card-image-with-text` (left) | 600×450px | `window-wall-floor-decals/top5pct-window-signs-joliet.jpg` | Done |
-| 7 | `card-image-with-text` (right) | 600×450px | `window-wall-floor-decals/top5pct-window-cling-decal-joliet-shorewood.jpg` | Keep |
-| 8 | `card-detailed-info` image1 | 400×300px | `window-wall-floor-decals/top5pct-window-decals-joliet-shorewood-crest-hill.jpg` | Keep |
-| 9 | `card-banner-slide-in` (right→left) | full-width 16:7 | `window-wall-floor-decals/top5pct-window-decals-joliet-shorewood-crest-hill.jpg` | Keep |
-| 10 | `card-banner-slide-in` (left→right) | full-width 16:7 | `window-wall-floor-decals/top5pct-wall-decals-joliet.jpg` | Keep |
+| 1 | `category-hero` | full-width × 576px | `window-wall-floor-decals/top5pct-window-signage.jpg` | Done — R2 to hero (Rule 1 + Rule 2 fix) |
+| 2 | `carousel` slot 1 | 600×450px | `window-wall-floor-decals/top5pct-business-window-signs.jpg` | Done (R1) |
+| 3 | `carousel` slot 2 | 600×450px | `window-wall-floor-decals/top5pct-custom-window-signs.jpg` | Done (R1) |
+| 4 | `carousel` slot 3 | 600×450px | `window-wall-floor-decals/top5pct-window-door-signs.jpg` | Done (R1) |
+| 5 | `carousel` slot 4 | 600×450px | `window-wall-floor-decals/top5pct-window-signs-joliet-slammers.jpg` | Done (R1) |
+| 6 | `card-image-with-text` (left) | 600×450px | `window-wall-floor-decals/top5pct-window-signs-joliet.jpg` | Done (R1) |
+| 7 | `card-image-with-text` (right) | 600×450px | `window-wall-floor-decals/top5pct-joliet-slammers-window-signs-joliet.jpg` | Done (R2, already in blade) |
+| 8 | `card-detailed-info` image1 | 400×300px | `window-wall-floor-decals/top5pct-banner-wall-decal-door-signs-joliet.jpg` | Pre-existing hero displaced here (2-slot swap) |
+| 9 | `card-banner-slide-in` (direction="left") | full-width 16:7 | `window-wall-floor-decals/top5pct-window-decals-joliet-shorewood-crest-hill.jpg` | Keep |
+| 10 | `card-banner-slide-in` (direction="right") | full-width 16:7 | `window-wall-floor-decals/top5pct-wall-decals-joliet.jpg` | Keep — intentional cross-promo to wall/floor signs |
 
 ---
 
@@ -1043,7 +1043,7 @@ Move all files from `public/new-images/` (Round 2 batch) into the matching `publ
 | `Business Signs/Outdoor Signs/` | `outdoor-signs/` | **yes** |
 | `Business Signs/Posters/` | `posters/` | no |
 | `Business Signs/Wall Signs/` | `window-wall-floor-decals/` | no |
-| `Business Signs/Window Signs/` | `window-wall-floor-decals/` | no |
+| `Business Signs/Window Signs/` | `window-wall-floor-decals/` | **yes** |
 | `Custom Shirts/Group Shirts/Corporate Wear/` | `corporate-wear/` | no |
 | `Custom Shirts/Group Shirts/Spirit Wear/` | `spirit-wear/` | no |
 | `Custom Shirts/Printing Options/Digital Vinyl/` | `custom-shirts/` | no |
@@ -1836,18 +1836,22 @@ Create `public/images/outdoor-signs/` before copying.
 
 ### `pages/signs/window-signs.blade.php`
 
-*R1 used 5 slots (all Done). R2 new images: 3 — fills next 2 eligible slots.*
+*All 10 slots complete. Directory: `window-wall-floor-decals/` (shared across door/wall/window pages by design). Hero updated via 2-slot swap: R2 `top5pct-window-signage.jpg` promoted from card-detailed to hero (Rule 1 + Rule 2 fix), pre-existing hero displaced to card-detailed. Slots 7 and 8 were already in blade before this docs pass. No file moves needed.*
 
 | # | Component | Size | Current Image | Replaced? |
 |---|---|---|---|---|
-| 1 | `category-hero` | full-width × 576px | `window-wall-floor-decals/top5pct-banner-wall-decal-door-signs-joliet.jpg` | Keep |
-| 2–6 | *(carousel 1–4, card-left)* | — | *(Done R1)* | Done (R1) |
-| 7 | `card-image-with-text` (right) | 600×450px | `window-wall-floor-decals/top5pct-joliet-slammers-window-signs-joliet.jpg` | Pending |
-| 8 | `card-detailed-info` image1 | 400×300px | `window-wall-floor-decals/top5pct-window-signage.jpg` | Pending |
-| 9 | `card-banner-slide-in` (right→left) | full-width 16:7 | `window-wall-floor-decals/top5pct-window-decals-joliet-shorewood-crest-hill.jpg` | Keep |
-| 10 | `card-banner-slide-in` (left→right) | full-width 16:7 | `window-wall-floor-decals/top5pct-wall-decals-joliet.jpg` | Keep |
+| 1 | `category-hero` | full-width × 576px | `window-wall-floor-decals/top5pct-window-signage.jpg` | Done — R2 to hero (Rule 1 + Rule 2 fix) |
+| 2 | `carousel` slot 1 | 600×450px | `window-wall-floor-decals/top5pct-business-window-signs.jpg` | Done (R1) |
+| 3 | `carousel` slot 2 | 600×450px | `window-wall-floor-decals/top5pct-custom-window-signs.jpg` | Done (R1) |
+| 4 | `carousel` slot 3 | 600×450px | `window-wall-floor-decals/top5pct-window-door-signs.jpg` | Done (R1) |
+| 5 | `carousel` slot 4 | 600×450px | `window-wall-floor-decals/top5pct-window-signs-joliet-slammers.jpg` | Done (R1) |
+| 6 | `card-image-with-text` (left) | 600×450px | `window-wall-floor-decals/top5pct-window-signs-joliet.jpg` | Done (R1) |
+| 7 | `card-image-with-text` (right) | 600×450px | `window-wall-floor-decals/top5pct-joliet-slammers-window-signs-joliet.jpg` | Done (R2, already in blade) |
+| 8 | `card-detailed-info` image1 | 400×300px | `window-wall-floor-decals/top5pct-banner-wall-decal-door-signs-joliet.jpg` | Pre-existing hero displaced here (2-slot swap) |
+| 9 | `card-banner-slide-in` (direction="left") | full-width 16:7 | `window-wall-floor-decals/top5pct-window-decals-joliet-shorewood-crest-hill.jpg` | Keep |
+| 10 | `card-banner-slide-in` (direction="right") | full-width 16:7 | `window-wall-floor-decals/top5pct-wall-decals-joliet.jpg` | Keep — intentional cross-promo to wall/floor signs |
 
-> R2 excess (copied to `window-wall-floor-decals/`, no slot assignment): `top5pct-window-signs-joliet.jpg` — collision rename replaces R1 file transparently.
+> R2 excess: `top5pct-window-signs-joliet.jpg` — collision rename, same file as R1 slot 6. No additional unassigned images.
 
 ---
 

@@ -47,7 +47,7 @@
         primaryButtonHref="#all-products"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/window-wall-floor-decals/top5pct-banner-wall-decal-door-signs-joliet.jpg"
+        image="/images/window-wall-floor-decals/top5pct-window-signage.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />
@@ -96,8 +96,8 @@
 
     <x-sections.card-detailed-info
         heading="How Window Graphics Give Your Business a Professional, Polished Storefront"
-        image1="/images/window-wall-floor-decals/top5pct-window-signage.jpg"
-        alt1="Custom window signage for businesses in Joliet Illinois"
+        image1="/images/window-wall-floor-decals/top5pct-banner-wall-decal-door-signs-joliet.jpg"
+        alt1="Custom window and door signs for businesses in Joliet Illinois"
     >
         <x-slot name="intro">
             <p class="mb-4">Your storefront windows are one of the most powerful and underutilized marketing surfaces your business has. Every person who walks or drives past your location sees your windows, which means window graphics are a constant, passive advertisement for your business that never stops working, much like the <a href="/signs/business-signs/banners" class="link-notification">outdoor banners</a> we print for storefronts throughout Will and DuPage County. A well-executed window display communicates your brand identity, your product offerings, your business hours, and your personality to everyone in your immediate area, all without spending anything beyond the initial installation cost.</p>
