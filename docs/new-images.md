@@ -1058,7 +1058,7 @@ Move all files from `public/new-images/` (Round 2 batch) into the matching `publ
 | `Custom Shirts/Specialty Material/Glitter/` | `glitter-shirts/` | **yes** |
 | `Custom Shirts/Specialty Material/Glow/` | `custom-shirts/` | no |
 | `Custom Shirts/Specialty Material/Holographic/` | `custom-shirts/` | no |
-| `Custom Shirts/Specialty Material/Puff/` | `custom-shirts/` | no |
+| `Custom Shirts/Specialty Material/Puff/` | `custom-shirts/` | **yes** |
 | `Custom Shirts/Specialty Material/Reflective/` | `custom-shirts/` | no |
 | `Custom Shirts/Specialty Material/Rhinestones/` | `custom-shirts/` | no |
 | `Ground Signs/A-Frames/` | `sidewalk-signs/` | no |
@@ -1697,20 +1697,20 @@ Create `public/images/outdoor-signs/` before copying.
 
 ### `pages/custom-apparel/puff-shirts.blade.php`
 
-*Not in R1 inventory — all slots were Keep. R2 new images: 3 — fills first 3 eligible slots.*
+*All 10 slots complete. Directory: `custom-shirts/` (shared across all specialty apparel pages by design — no own dir). Not in R1 inventory. Hero updated via 2-slot swap: R2 `top5pct-custom-puff-shirts.jpg` promoted from carousel 1 to hero (Rule 1 + Rule 2 fix). All 3 R2 carousel images were already in blade. No file moves needed. R2 doc corrected: carousel 4, card-left, and card-right all had wrong images (blade is authoritative). Rule 2 violations in slots 2, 5, 6, 7, 8, 9 are unfixable — no puff-named images exist for those slots; shared dir limitation.*
 
 | # | Component | Size | Current Image | Replaced? |
 |---|---|---|---|---|
-| 1 | `category-hero` | full-width × 576px | `custom-shirts/top5pct-banner-custom-apparel-custom-shirts-custom-hoodies-custom-caps.jpg` | Keep |
-| 2 | `carousel` slot 1 | 600×450px | `custom-shirts/top5pct-custom-puff-shirts.jpg` | Pending |
-| 3 | `carousel` slot 2 | 600×450px | `custom-shirts/top5pct-puff-shirts-joliet.jpg` | Pending |
-| 4 | `carousel` slot 3 | 600×450px | `custom-shirts/top5pct-puff-shirts.jpg` | Pending |
-| 5 | `carousel` slot 4 | 600×450px | `custom-shirts/top5pct-custom-brick-shirts-hoodies-cap-joliet.jpg` | Keep |
-| 6 | `card-image-with-text` (left) | 600×450px | `custom-shirts/top5pct-banner-custom-apparel-custom-shirts-custom-hoodies-custom-caps.jpg` | Keep |
-| 7 | `card-image-with-text` (right) | 600×450px | `custom-shirts/top5pct-custom-brick-shirts-hoodies-cap-joliet.jpg` | Keep |
-| 8 | `card-detailed-info` image1 | 400×300px | `custom-shirts/top5pct-custom-brick-shirts-hoodies-cap-joliet.jpg` | Keep |
-| 9 | `card-banner-slide-in` (right→left) | full-width 16:7 | `custom-shirts/top5pct-custom-brick-shirts-hoodies-cap-joliet.jpg` | Keep |
-| 10 | `card-banner-slide-in` (left→right) | full-width 16:7 | `custom-shirts/top5pct-custom-rhinestone-shirt-cap-hoodie-joliet.jpg` | Keep |
+| 1 | `category-hero` | full-width × 576px | `custom-shirts/top5pct-custom-puff-shirts.jpg` | Done — R2 to hero (Rule 1 + Rule 2 fix) |
+| 2 | `carousel` slot 1 | 600×450px | `custom-shirts/top5pct-banner-custom-apparel-custom-shirts-custom-hoodies-custom-caps.jpg` | Pre-existing hero displaced here (2-slot swap); Rule 2 unfixable, no puff-named alt |
+| 3 | `carousel` slot 2 | 600×450px | `custom-shirts/top5pct-puff-shirts-joliet.jpg` | Done (R2, already in blade) |
+| 4 | `carousel` slot 3 | 600×450px | `custom-shirts/top5pct-puff-shirts.jpg` | Done (R2, already in blade) |
+| 5 | `carousel` slot 4 | 600×450px | `custom-shirts/top5pct-t-shirt-maker-article-pic1.jpg` | Keep; Rule 2 unfixable, no puff-named alt |
+| 6 | `card-image-with-text` (left) "3D Texture That Gets Noticed" | 600×450px | `custom-shirts/top5pct-custom-brick-shirts-hoodies-cap-joliet.jpg` | Keep; Rule 2 unfixable, no puff-named alt |
+| 7 | `card-image-with-text` (right) "Premium Appeal for Your Brand" | 600×450px | `custom-shirts/top5pct-custom-pattern-shirts-caps-hoodies-joliet.jpg` | Keep; Rule 2 unfixable, no puff-named alt |
+| 8 | `card-detailed-info` image1 | 400×300px | `custom-shirts/top5pct-custom-brick-shirts-hoodies-cap-joliet.jpg` | Keep; Rule 2 unfixable, no puff-named alt |
+| 9 | `card-banner-slide-in` (direction="left") | full-width 16:7 | `custom-shirts/top5pct-custom-brick-shirts-hoodies-cap-joliet.jpg` | Keep; Rule 2 unfixable, no puff-named alt |
+| 10 | `card-banner-slide-in` (direction="right") | full-width 16:7 | `custom-shirts/top5pct-custom-rhinestone-shirt-cap-hoodie-joliet.jpg` | Keep — intentional cross-promo ("Puff, Rhinestone, or Flock…") |
 
 ---
 

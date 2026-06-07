@@ -47,7 +47,7 @@
         primaryButtonHref="/contact"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/custom-shirts/top5pct-banner-custom-apparel-custom-shirts-custom-hoodies-custom-caps.jpg"
+        image="/images/custom-shirts/top5pct-custom-puff-shirts.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />
@@ -56,10 +56,10 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/custom-shirts/top5pct-custom-puff-shirts.jpg',                              'alt' => 'Custom puff print shirts in Joliet Illinois'],
-            ['src' => '/images/custom-shirts/top5pct-puff-shirts-joliet.jpg',                               'alt' => 'Custom puff shirts in Joliet Illinois'],
-            ['src' => '/images/custom-shirts/top5pct-puff-shirts.jpg',                                      'alt' => 'Custom puff print apparel in Joliet Illinois'],
-            ['src' => '/images/custom-shirts/top5pct-t-shirt-maker-article-pic1.jpg',                                     'alt' => 'Custom apparel and puff print shirts made in Joliet Illinois'],
+            ['src' => '/images/custom-shirts/top5pct-banner-custom-apparel-custom-shirts-custom-hoodies-custom-caps.jpg', 'alt' => 'Custom puff print shirts and apparel in Joliet Illinois'],
+            ['src' => '/images/custom-shirts/top5pct-puff-shirts-joliet.jpg',                                            'alt' => 'Custom puff shirts in Joliet Illinois'],
+            ['src' => '/images/custom-shirts/top5pct-puff-shirts.jpg',                                                   'alt' => 'Custom puff print apparel in Joliet Illinois'],
+            ['src' => '/images/custom-shirts/top5pct-t-shirt-maker-article-pic1.jpg',                                    'alt' => 'Custom apparel and puff print shirts made in Joliet Illinois'],
         ]"
         visible=2
     />
