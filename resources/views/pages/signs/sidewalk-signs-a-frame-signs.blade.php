@@ -47,7 +47,7 @@
         primaryButtonHref="#all-products"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/business-signs/top5pct-banner-business-signs-joliet-plainfield-shorewood.jpg"
+        image="/images/sidewalk-signs/top5pct-a-frame-sidewalk-signs.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />
@@ -56,10 +56,10 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/business-signs/top5pct-banner-business-signs-joliet-plainfield-shorewood.jpg', 'alt' => 'Custom parking signs and lot signage for businesses in Joliet, Plainfield, and Shorewood Illinois'],
-            ['src' => '/images/business-signs/top5pct-business-signs-joliet-shorewood-crest-hill.jpg',        'alt' => 'Custom business signs and parking signs in Joliet, Shorewood, and Crest Hill Illinois'],
-            ['src' => '/images/window-wall-floor-decals/top5pct-banner-wall-decal-door-signs-joliet.jpg',     'alt' => 'Custom signs and lot signage printed in Joliet Illinois'],
-            ['src' => '/images/window-wall-floor-decals/top5pct-article-window-wall-signs.jpg',               'alt' => 'Custom business and parking signs for Will and DuPage County businesses'],
+            ['src' => '/images/sidewalk-signs/top5pct-a-frame-sign.jpg',                                      'alt' => 'Custom a-frame sidewalk sign printed in Joliet Illinois'],
+            ['src' => '/images/sidewalk-signs/top5pct-custom-a-frame-sidewalk-signs-joliet.jpg',               'alt' => 'Custom a-frame sidewalk signs in Joliet Illinois'],
+            ['src' => '/images/sidewalk-signs/top5pct-sidewalk-sign.jpg',                                      'alt' => 'Custom sidewalk sign printed by Top 5 Percent in Joliet Illinois'],
+            ['src' => '/images/sidewalk-signs/top5pct-sidewalk-signs-joliet.jpg',                              'alt' => 'Custom sidewalk signs for businesses in Joliet Illinois'],
         ]"
         visible=2
     />
@@ -70,8 +70,8 @@
     />
 
     <x-sections.card-image-with-text
-        image="/images/business-signs/top5pct-business-signs-joliet-shorewood-crest-hill.jpg"
-        alt="Custom parking and lot signs for businesses in Joliet, Shorewood, and Crest Hill Illinois"
+        image="/images/sidewalk-signs/top5pct-a-frame-sidewalk-sign-joliet.jpg"
+        alt="Custom a-frame sidewalk sign for a business in Joliet Illinois"
         title="Keep Your Parking Lot Organized"
     >
         <p class="mb-4">Custom parking signs help your customers find their way and protect your property from unauthorized use, and they coordinate naturally with your other exterior business signage like our <a href="/signs/business-signs/window-signs" class="link-notification">window signs</a> and entrance graphics to create a polished, professional arrival experience. Whether you need reserved parking signs for staff and management, customer-only parking notices, accessible parking designations, tow-away zones, or general lot rules, we produce clear, professional parking signage that holds up through Illinois weather year round. We serve businesses, churches, medical offices, apartment complexes, and commercial properties throughout Joliet, Shorewood, Plainfield, and all of Will and DuPage County, and for clients who also need branded exterior signage above the entrance our <a href="/signs/business-signs" class="link-notification">business signs</a> shop completes the professional look from the lot to the door.</p>
@@ -80,8 +80,8 @@
     </x-sections.card-image-with-text>
 
     <x-sections.card-image-with-text
-        image="/images/business-signs/top5pct-banner-business-signs-joliet-plainfield-shorewood.jpg"
-        alt="Custom branded parking signs and lot signage for businesses in Joliet Illinois"
+        image="/images/sidewalk-signs/top5pct-sidewalk-signage.jpg"
+        alt="Custom sidewalk signage for businesses in Joliet Illinois"
         title="Custom Designs to Fit Your Property"
         imagePosition="right"
     >
@@ -96,8 +96,8 @@
 
     <x-sections.card-detailed-info
         heading="Why Custom Parking Signs Are Worth the Investment for Your Property"
-        image1="/images/business-signs/top5pct-business-signs-joliet-shorewood-crest-hill.jpg"
-        alt1="Custom parking signs and outdoor lot signage printed in Joliet, Will and DuPage County Illinois"
+        image1="/images/sidewalk-signs/top5pct-article-a-frame-sidewalk-signs.jpg"
+        alt1="Custom a-frame sidewalk signs for businesses in Joliet, Will and DuPage County Illinois"
     >
         <x-slot name="intro">
             <p class="mb-4">A well-signed parking lot is not just about telling people where to park, it is a direct reflection of how professionally your property is managed and how much you care about the experience of everyone who arrives at your location. Visitors and customers make quick judgments about a business based on every element of their arrival experience, and the quality of your parking signage is part of that assessment, much like the quality of your <a href="/signs/business-signs/window-signs" class="link-notification">window signs</a> and entrance graphics that greet every visitor before they even open the door. Clear, professional parking signs reduce frustration, prevent conflicts, and create a smoother customer experience from the moment someone pulls into your lot.</p>
@@ -125,8 +125,8 @@
         name="Jerry E Olson"
     />
     <x-ui.card-banner-slide-in
-        image="/images/business-signs/top5pct-business-signs-joliet-shorewood-crest-hill.jpg"
-        alt="Custom parking signs and lot signage printed by Top 5 Percent in Joliet Illinois"
+        image="/images/sidewalk-signs/top5pct-sidewalk-a-frames-joliet-shorewood.jpg"
+        alt="Custom sidewalk a-frame signs for businesses in Joliet and Shorewood Illinois"
         title="Custom Parking Signs Built for Illinois Weather"
         href="/contact"
         direction="right"

@@ -56,7 +56,7 @@ Move all files from `public/new-images/` into the matching `public/images/` dire
 | `signs/business-signs/door-signs/` | `window-wall-floor-decals/` | **yes** |
 | `signs/business-signs/wall-signs/` | `window-wall-floor-decals/` | no |
 | `signs/business-signs/window-signs/` | `window-wall-floor-decals/` | **yes** |
-| `signs/ground-signs/a-frame-signs/` | `sidewalk-signs/` | no |
+| `signs/ground-signs/a-frame-signs/` | `sidewalk-signs/` | **yes** |
 | `signs/ground-signs/yard-signs/` | `yard-signs/` | no |
 | `signs/table-signs/table-cloths/` | `table-runners/` | no |
 | `signs/table-signs/table-runners/` | `table-runners/` | no |
@@ -1061,7 +1061,7 @@ Move all files from `public/new-images/` (Round 2 batch) into the matching `publ
 | `Custom Shirts/Specialty Material/Puff/` | `custom-shirts/` | **yes** |
 | `Custom Shirts/Specialty Material/Reflective/` | `custom-shirts/` | no |
 | `Custom Shirts/Specialty Material/Rhinestones/` | `custom-shirts/` | **yes** |
-| `Ground Signs/A-Frames/` | `sidewalk-signs/` | no |
+| `Ground Signs/A-Frames/` | `sidewalk-signs/` | **yes** |
 | `Koozies/` | `promo-items/koozies/` | no |
 | `Mugs/` | `promo-items/mugs/` | no |
 | `Stickers/Custom Shaped Stickers/` | `stickers-decals/` | **yes** |
@@ -1904,21 +1904,20 @@ Create `public/images/outdoor-signs/` before copying.
 
 ### `pages/signs/sidewalk-signs-a-frame-signs.blade.php`
 
-*R1 used 4 slots (carousel 1–4 Done). R2 new images: 3 — fills next 3 eligible slots.*
+*All 10 slots complete. Directory: `sidewalk-signs/` (own dir ✓). Blade was completely reworked to a Parking Signs page before this pass — all images had been replaced with `business-signs/` and `window-wall-floor-decals/` content; none of the R1/R2 sidewalk-signs images were present. All 9 non-cross-promo slots replaced in full (Rules 1+2+3). No file moves needed — all sidewalk-signs/ images were already in place. Note: R1 doc at line 692 tracks `sidewalk-signs.blade.php` — a separate page, not this one.*
 
 | # | Component | Size | Current Image | Replaced? |
 |---|---|---|---|---|
-| 1 | `category-hero` | full-width × 576px | `sidewalk-signs/top5pct-banner-a-frame-sidewalk-signs-joliet-romeoville.jpg` | Keep |
-| 2 | `carousel` slot 1 | 600×450px | `sidewalk-signs/top5pct-a-frame-sign.jpg` | Done (R1) |
-| 3 | `carousel` slot 2 | 600×450px | `sidewalk-signs/top5pct-custom-a-frame-sidewalk-signs-joliet.jpg` | Done (R1) |
-| 4 | `carousel` slot 3 | 600×450px | `sidewalk-signs/top5pct-sidewalk-sign.jpg` | Done (R1) |
-| 5 | `carousel` slot 4 | 600×450px | `sidewalk-signs/top5pct-sidewalk-signs-joliet.jpg` | Done (R1) — R2 replaces file transparently via collision rename |
-| 6 | `card-image-with-text` (left) | 600×450px | `sidewalk-signs/top5pct-a-frame-sidewalk-signs.jpg` | Pending |
-| 7 | `card-image-with-text` (right) | 600×450px | `sidewalk-signs/top5pct-sidewalk-signage.jpg` | Pending |
-| 8 | `card-image-with-text` (left) | 600×450px | `sidewalk-signs/top5pct-sidewalk-signs-joliet-shorewood-crest-hill.jpg` | Keep |
-| 9 | `card-detailed-info` image1 | 400×300px | `sidewalk-signs/top5pct-article-a-frame-sidewalk-signs.jpg` | Keep |
-| 10 | `card-banner-slide-in` (left→right) | full-width 16:7 | `sidewalk-signs/top5pct-a-frame-sidewalk-sign-joliet.jpg` | Keep |
-| 11 | `card-banner-slide-in` (right→left) | full-width 16:7 | `business-signs/top5pct-business-signs-joliet-shorewood-crest-hill.jpg` | Keep |
+| 1 | `category-hero` | full-width × 576px | `sidewalk-signs/top5pct-a-frame-sidewalk-signs.jpg` | Done — R2 to hero (Rules 1+2+3 fix) |
+| 2 | `carousel` slot 1 | 600×450px | `sidewalk-signs/top5pct-a-frame-sign.jpg` | Done — R1 (Rules 2+3 fix) |
+| 3 | `carousel` slot 2 | 600×450px | `sidewalk-signs/top5pct-custom-a-frame-sidewalk-signs-joliet.jpg` | Done — R1 (Rules 2+3 fix) |
+| 4 | `carousel` slot 3 | 600×450px | `sidewalk-signs/top5pct-sidewalk-sign.jpg` | Done — R1 (Rules 2+3 fix) |
+| 5 | `carousel` slot 4 | 600×450px | `sidewalk-signs/top5pct-sidewalk-signs-joliet.jpg` | Done — R2 collision replaces R1 transparently (Rules 2+3 fix) |
+| 6 | `card-image-with-text` (left) "Keep Your Parking Lot Organized" | 600×450px | `sidewalk-signs/top5pct-a-frame-sidewalk-sign-joliet.jpg` | Done — pre-existing, "a-frame"+"sidewalk" ✓ (Rules 2+3 fix) |
+| 7 | `card-image-with-text` (right) "Custom Designs to Fit Your Property" | 600×450px | `sidewalk-signs/top5pct-sidewalk-signage.jpg` | Done — R2 (Rules 2+3 fix) |
+| 8 | `card-detailed-info` image1 | 400×300px | `sidewalk-signs/top5pct-article-a-frame-sidewalk-signs.jpg` | Done — pre-existing, "a-frame"+"sidewalk" ✓ (Rules 2+3 fix) |
+| 9 | `card-banner-slide-in` (direction="right") | full-width 16:7 | `sidewalk-signs/top5pct-sidewalk-a-frames-joliet-shorewood.jpg` | Done — pre-existing, "sidewalk"+"a-frames" ✓ (Rules 2+3 fix) |
+| 10 | `card-banner-slide-in` (direction="left") | full-width 16:7 | `banners/top5pct-banner-business-banners-joliet-shorewood-crest-hill.jpg` | Keep — intentional cross-promo ("Banners, Sidewalk Signs, and More…") |
 
 ---
 
