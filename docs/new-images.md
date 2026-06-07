@@ -63,7 +63,7 @@ Move all files from `public/new-images/` into the matching `public/images/` dire
 | `stickers/custom-shaped/` | `stickers-decals/` | **yes** |
 | `vehicle-decals/automobile-graphics/` | `automobile-graphics/` | **yes** |
 | `vehicle-decals/dot-decals/` | `dot-decals/` | **yes** |
-| `vehicle-decals/vehicle-magnets/` | `vehicle-magnets/` | no |
+| `vehicle-decals/vehicle-magnets/` | `vehicle-magnets/` | **yes** |
 
 ---
 
@@ -893,22 +893,22 @@ These are product photos of vinyl banners. Existing `top5pct-banner-*` files in 
 
 ### `pages/vehicle-graphics/vehicle-magnets.blade.php`
 
-*New images available: 8 (vehicle-magnets/) — 9 eligible slots — 8 Pending (all except card-detailed-info)*
+*All 12 slots complete. Directory: `vehicle-magnets/`. Hero updated via R2 excess: `top5pct-magnet-vehicle-signs-joliet.jpg` promoted to hero (Rule 1 fix). Slot 10 R2 image already in blade. Slot 12 cross-promo undocumented in prior tables, added now. No file moves needed.*
 
 | # | Component | Size | Current Image | Replaced? |
 |---|---|---|---|---|
-| 1 | `category-hero` | full-width × 576px | `vehicle-magnets/top5pct-banner-car-magnets-joliet-shorewood-crest-hill.jpg` | Keep |
-| 2 | `carousel` slot 1 | 600×450px | `vehicle-magnets/top5pct-automobile-magnets-joliet.jpg` | Done |
-| 3 | `carousel` slot 2 | 600×450px | `vehicle-magnets/top5pct-car-magnets-joliet.jpg` | Done |
-| 4 | `carousel` slot 3 | 600×450px | `vehicle-magnets/top5pct-car-magnets.jpg` | Done |
-| 5 | `carousel` slot 4 | 600×450px | `vehicle-magnets/top5pct-car-sign-magnets-joliet.jpg` | Done |
-| 6 | `card-image-with-text` (left) | 600×450px | `vehicle-magnets/top5pct-custom-car-magnets-in-joliet.jpg` | Done |
-| 7 | `card-image-with-text` (right) | 600×450px | `vehicle-magnets/top5pct-custom-car-magnets.jpg` | Done |
-| 8 | `card-2image-with-text` image1 | fluid 4:3, ~50% | `vehicle-magnets/top5pct-vehicle-magnets-joliet.jpg` | Done |
-| 9 | `card-2image-with-text` image2 | fluid 4:3, ~50% | `vehicle-magnets/top5pct-vehicle-magnets.jpg` | Done |
-| 10 | `card-detailed-info` image1 | 400×300px | `vehicle-magnets/top5pct-article-car-magnets-truck-magnets.jpg` | Keep |
-| 11 | `card-banner-slide-in` (right→left) | full-width 16:7 | `vehicle-magnets/top5pct-car-magnets-vehicle-magnets-joliet.jpg` | Keep |
-| 12 | `card-banner-slide-in` (left→right) | full-width 16:7 | `automobile-graphics/top5pct-car-wraps-vinyl-lettering-joliet-shorewood.jpg` | Keep |
+| 1 | `category-hero` | full-width × 576px | `vehicle-magnets/top5pct-magnet-vehicle-signs-joliet.jpg` | Done — R2 excess to hero (Rule 1 fix) |
+| 2 | `carousel` slot 1 | 600×450px | `vehicle-magnets/top5pct-automobile-magnets-joliet.jpg` | Done (R1) |
+| 3 | `carousel` slot 2 | 600×450px | `vehicle-magnets/top5pct-car-magnets-joliet.jpg` | Done (R1) |
+| 4 | `carousel` slot 3 | 600×450px | `vehicle-magnets/top5pct-car-magnets.jpg` | Done (R1) |
+| 5 | `carousel` slot 4 | 600×450px | `vehicle-magnets/top5pct-car-sign-magnets-joliet.jpg` | Done (R1) |
+| 6 | `card-image-with-text` (left) | 600×450px | `vehicle-magnets/top5pct-custom-car-magnets-in-joliet.jpg` | Done (R1) |
+| 7 | `card-image-with-text` (right) | 600×450px | `vehicle-magnets/top5pct-custom-car-magnets.jpg` | Done (R1) |
+| 8 | `card-2image-with-text` image1 | fluid 4:3, ~50% | `vehicle-magnets/top5pct-vehicle-magnets-joliet.jpg` | Done (R1) |
+| 9 | `card-2image-with-text` image2 | fluid 4:3, ~50% | `vehicle-magnets/top5pct-vehicle-magnets.jpg` | Done (R1) |
+| 10 | `card-detailed-info` image1 | 400×300px | `vehicle-magnets/top5pct-car-decals-white-oaks-library.jpg` | Done (R2, already in blade) |
+| 11 | `card-banner-slide-in` (direction="right") | full-width 16:7 | `vehicle-magnets/top5pct-car-magnets-vehicle-magnets-joliet.jpg` | Keep |
+| 12 | `card-banner-slide-in` (direction="left") | full-width 16:7 | `automobile-graphics/top5pct-car-wraps-vinyl-lettering-joliet-shorewood.jpg` | Keep — intentional cross-promo to automobile-graphics |
 
 ---
 
@@ -1070,7 +1070,7 @@ Move all files from `public/new-images/` (Round 2 batch) into the matching `publ
 | `Table Signs/Table Runner/` | `table-runners/` | no |
 | `Vehicle Decals/Automobile Graphics/` | `automobile-graphics/` | **yes** |
 | `Vehicle Decals/DOT Decals/` | `dot-decals/` | **yes** |
-| `Vehicle Decals/Vehicle Magnets/` | `vehicle-magnets/` | no |
+| `Vehicle Decals/Vehicle Magnets/` | `vehicle-magnets/` | **yes** |
 
 ---
 
@@ -2016,17 +2016,24 @@ Create `public/images/outdoor-signs/` before copying.
 
 ### `pages/vehicle-graphics/vehicle-magnets.blade.php`
 
-*R1 used 8 slots (all Done). R2 new images: 5 — fills next eligible slot (only 1 remains).*
+*All 12 slots complete. Directory: `vehicle-magnets/`. Hero updated via R2 excess: `top5pct-magnet-vehicle-signs-joliet.jpg` promoted to hero (Rule 1 fix). Slot 10 R2 image already in blade. Slot 12 cross-promo undocumented in prior tables, added now. No file moves needed.*
 
 | # | Component | Size | Current Image | Replaced? |
 |---|---|---|---|---|
-| 1 | `category-hero` | full-width × 576px | `vehicle-magnets/top5pct-banner-car-magnets-joliet-shorewood-crest-hill.jpg` | Keep |
-| 2–9 | *(carousel 1–4, card-left, card-right, card-2image ×2)* | — | *(Done R1)* | Done (R1) |
-| 10 | `card-detailed-info` image1 | 400×300px | `vehicle-magnets/top5pct-car-decals-white-oaks-library.jpg` | Pending |
-| 11 | `card-banner-slide-in` (right→left) | full-width 16:7 | `vehicle-magnets/top5pct-car-magnets-vehicle-magnets-joliet.jpg` | Keep |
-| 12 | `card-banner-slide-in` (left→right) | full-width 16:7 | `automobile-graphics/top5pct-car-wraps-vinyl-lettering-joliet-shorewood.jpg` | Keep |
+| 1 | `category-hero` | full-width × 576px | `vehicle-magnets/top5pct-magnet-vehicle-signs-joliet.jpg` | Done — R2 excess to hero (Rule 1 fix) |
+| 2 | `carousel` slot 1 | 600×450px | `vehicle-magnets/top5pct-automobile-magnets-joliet.jpg` | Done (R1) |
+| 3 | `carousel` slot 2 | 600×450px | `vehicle-magnets/top5pct-car-magnets-joliet.jpg` | Done (R1) |
+| 4 | `carousel` slot 3 | 600×450px | `vehicle-magnets/top5pct-car-magnets.jpg` | Done (R1) |
+| 5 | `carousel` slot 4 | 600×450px | `vehicle-magnets/top5pct-car-sign-magnets-joliet.jpg` | Done (R1) |
+| 6 | `card-image-with-text` (left) | 600×450px | `vehicle-magnets/top5pct-custom-car-magnets-in-joliet.jpg` | Done (R1) |
+| 7 | `card-image-with-text` (right) | 600×450px | `vehicle-magnets/top5pct-custom-car-magnets.jpg` | Done (R1) |
+| 8 | `card-2image-with-text` image1 | fluid 4:3, ~50% | `vehicle-magnets/top5pct-vehicle-magnets-joliet.jpg` | Done (R1) |
+| 9 | `card-2image-with-text` image2 | fluid 4:3, ~50% | `vehicle-magnets/top5pct-vehicle-magnets.jpg` | Done (R1) |
+| 10 | `card-detailed-info` image1 | 400×300px | `vehicle-magnets/top5pct-car-decals-white-oaks-library.jpg` | Done (R2, already in blade) |
+| 11 | `card-banner-slide-in` (direction="right") | full-width 16:7 | `vehicle-magnets/top5pct-car-magnets-vehicle-magnets-joliet.jpg` | Keep |
+| 12 | `card-banner-slide-in` (direction="left") | full-width 16:7 | `automobile-graphics/top5pct-car-wraps-vinyl-lettering-joliet-shorewood.jpg` | Keep — intentional cross-promo to automobile-graphics |
 
-> R2 excess (copied to `vehicle-magnets/`, no slot assignment): `top5pct-joliet-car-magnets.jpg`, `top5pct-magnet-vehicle-signs-joliet.jpg`, `top5pct-truck-sign-magnets-joliet.jpg`, `top5pct-yard-signs-near-me.jpg`.
+> R2 excess (in `vehicle-magnets/`, no slot assignment): `top5pct-joliet-car-magnets.jpg`, `top5pct-truck-sign-magnets-joliet.jpg`, `top5pct-yard-signs-near-me.jpg` (yard-signs has no "magnet"/"vehicle" — Rule 2 ineligible for this page). Hero displaced `top5pct-banner-car-magnets-joliet-shorewood-crest-hill.jpg` to unassigned.
 
 ---
 
