@@ -1081,7 +1081,7 @@ Move all files from `public/new-images/` (Round 2 batch) into the matching `publ
 | `Custom Shirts/Specialty Material/Glow/` | `glow-shirts/` | **yes** |
 | `Custom Shirts/Specialty Material/Holographic/` | `holographic-shirts/` | **yes** |
 | `Custom Shirts/Specialty Material/Puff/` | `custom-shirts/` | **yes** |
-| `Custom Shirts/Specialty Material/Reflective/` | `custom-shirts/` | no |
+| `Custom Shirts/Specialty Material/Reflective/` | `reflective-shirts/` | **yes** |
 | `Custom Shirts/Specialty Material/Rhinestones/` | `custom-shirts/` | **yes** |
 | `Ground Signs/A-Frames/` | `sidewalk-signs/` | **yes** |
 | `Koozies/` | `promo-items/koozies/` | **yes** |
@@ -1757,20 +1757,20 @@ Create `public/images/outdoor-signs/` before copying.
 
 ### `pages/custom-apparel/reflective-shirts.blade.php`
 
-*R1 used 1 slot (carousel 1 Done). R2 new images: 4 — fills next 4 eligible slots.*
+*All 10 slots complete. Directory: `reflective-shirts/` (own dedicated dir per Rule 3 — created this pass). R1 had 1 image (`reflective-shirts-gold.jpg`) pre-applied to carousel 1. All 4 R2 images pre-applied to carousel 2–4 and card-left before this pass — doc Pending entries corrected. Hero (slot 1) was pre-existing `custom-reflective-shirts-hoodies-caps-joliet.jpg` — not R1/R2 (Rule 1 violation). 2-slot swap: R1 `reflective-shirts-gold.jpg` promoted from carousel 1 → hero; displaced hero → carousel 1. Slot 7 was `custom-vinyl-shirts` placeholder — replaced with reflective image (Rule 2 fix). Slot 10 intentional cross-promo, excluded from Rule 3. `top5pct-custom-reflective-shirts-hoodies-caps-joliet.jpg` dual-homed: `custom-shirts/` (7 other page references) and `reflective-shirts/` (this page). All 5 R1/R2 images also copied to `reflective-shirts/` (originals kept in `custom-shirts/`).*
 
 | # | Component | Size | Current Image | Replaced? |
 |---|---|---|---|---|
-| 1 | `category-hero` | full-width × 576px | `custom-shirts/top5pct-custom-reflective-shirts-hoodies-caps-joliet.jpg` | Keep |
-| 2 | `carousel` slot 1 | 600×450px | `custom-shirts/top5pct-reflective-shirts-gold.jpg` | Done (R1) |
-| 3 | `carousel` slot 2 | 600×450px | `custom-shirts/top5pct-custom-reflective-hoodies.jpg` | Pending |
-| 4 | `carousel` slot 3 | 600×450px | `custom-shirts/top5pct-reflective-shirts.jpg` | Pending |
-| 5 | `carousel` slot 4 | 600×450px | `custom-shirts/top5pct-reflective-shirts-shorewood.jpg` | Pending |
-| 6 | `card-image-with-text` (left) | 600×450px | `custom-shirts/top5pct-reflective-vinyl-shirts-plainfield.jpg` | Pending |
-| 7 | `card-image-with-text` (right) | 600×450px | `custom-shirts/top5pct-custom-vinyl-shirts-caps-hoodies.jpg` | Keep |
-| 8 | `card-detailed-info` image1 | 400×300px | `custom-shirts/top5pct-custom-reflective-shirts-hoodies-caps-joliet.jpg` | Keep |
-| 9 | `card-banner-slide-in` (right→left) | full-width 16:7 | `custom-shirts/top5pct-custom-reflective-shirts-hoodies-caps-joliet.jpg` | Keep |
-| 10 | `card-banner-slide-in` (left→right) | full-width 16:7 | `custom-shirts/top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg` | Keep |
+| 1 | `category-hero` | full-width × 576px | `reflective-shirts/top5pct-reflective-shirts-gold.jpg` | Done — Rule 1 fix: 2-slot swap (R1 promoted from carousel 1) |
+| 2 | `carousel` slot 1 | 600×450px | `reflective-shirts/top5pct-custom-reflective-shirts-hoodies-caps-joliet.jpg` | Displaced hero fills vacated slot; "reflective" ✓ |
+| 3 | `carousel` slot 2 | 600×450px | `reflective-shirts/top5pct-custom-reflective-hoodies.jpg` | Done (R2, pre-applied, Rule 3 fix, "reflective" ✓) |
+| 4 | `carousel` slot 3 | 600×450px | `reflective-shirts/top5pct-reflective-shirts.jpg` | Done (R2, pre-applied, Rule 3 fix, "reflective" ✓) |
+| 5 | `carousel` slot 4 | 600×450px | `reflective-shirts/top5pct-reflective-shirts-shorewood.jpg` | Done (R2, pre-applied, Rule 3 fix, "reflective" ✓) |
+| 6 | `card-image-with-text` (left) "Visibility That Could Save a Life" | 600×450px | `reflective-shirts/top5pct-reflective-vinyl-shirts-plainfield.jpg` | Done (R2, pre-applied, Rule 3 fix, "reflective" ✓) |
+| 7 | `card-image-with-text` (right) "Style Meets Safety for Athletes and Events" | 600×450px | `reflective-shirts/top5pct-custom-reflective-shirts-hoodies-caps-joliet.jpg` | Done — Rule 2 fix: replaces vinyl-shirts placeholder; Rule 3 fix |
+| 8 | `card-detailed-info` image1 | 400×300px | `reflective-shirts/top5pct-custom-reflective-shirts-hoodies-caps-joliet.jpg` | Done (Rule 3 fix; "reflective" ✓) |
+| 9 | `card-banner-slide-in` (direction="left") "Reflective Branded Shirts…" | full-width 16:7 | `reflective-shirts/top5pct-custom-reflective-shirts-hoodies-caps-joliet.jpg` | Done (Rule 3 fix; "reflective" ✓) |
+| 10 | `card-banner-slide-in` (direction="right") "Glow in the Dark or Reflective…" | full-width 16:7 | `custom-shirts/top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg` | Keep — intentional cross-promo, excluded from Rule 3 |
 
 ---
 
