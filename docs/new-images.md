@@ -1079,7 +1079,7 @@ Move all files from `public/new-images/` (Round 2 batch) into the matching `publ
 | `Custom Shirts/Specialty Material/Foil/` | `custom-shirts/` | **yes** |
 | `Custom Shirts/Specialty Material/Glitter/` | `glitter-shirts/` | **yes** |
 | `Custom Shirts/Specialty Material/Glow/` | `glow-shirts/` | **yes** |
-| `Custom Shirts/Specialty Material/Holographic/` | `custom-shirts/` | no |
+| `Custom Shirts/Specialty Material/Holographic/` | `holographic-shirts/` | **yes** |
 | `Custom Shirts/Specialty Material/Puff/` | `custom-shirts/` | **yes** |
 | `Custom Shirts/Specialty Material/Reflective/` | `custom-shirts/` | no |
 | `Custom Shirts/Specialty Material/Rhinestones/` | `custom-shirts/` | **yes** |
@@ -1700,20 +1700,20 @@ Create `public/images/outdoor-signs/` before copying.
 
 ### `pages/custom-apparel/holographic-shirts.blade.php`
 
-*R1 had 0 new images — all Keep. R2 new images: 1 — fills carousel slot 1.*
+*All 10 slots complete. Directory: `holographic-shirts/` (own dedicated dir per Rule 3 — created this pass). R1 had 0 images. R2 had 1 image (`holographic-vinyl-hoodie-foil.jpg`) — pre-applied to carousel 1 before this pass. Hero (slot 1) was pre-existing `custom-holographic-shirt-hoodie-cap-joliet.jpg` — not R1/R2 (Rule 1 violation). 2-slot swap: R2 `holographic-vinyl-hoodie-foil.jpg` promoted from carousel 1 → hero; displaced hero → carousel 1. Doc slot 3 prediction was stale (blade had generic banner image, not holographic). Slots 3, 4, 5 Rule 2 fixes: foil and generic placeholders replaced with holographic images. Slot 7 Rule 2 fix: foil placeholder replaced with holographic. Carousel alternates 2 holographic images for variety. Slot 10 intentional cross-promo, excluded from Rule 3. `top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg` dual-homed: `custom-shirts/` (13 other page references) and `holographic-shirts/` (this page).*
 
 | # | Component | Size | Current Image | Replaced? |
 |---|---|---|---|---|
-| 1 | `category-hero` | full-width × 576px | `custom-shirts/top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg` | Keep |
-| 2 | `carousel` slot 1 | 600×450px | `custom-shirts/top5pct-holographic-vinyl-hoodie-foil.jpg` | Pending |
-| 3 | `carousel` slot 2 | 600×450px | `custom-shirts/top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg` | Keep |
-| 4 | `carousel` slot 3 | 600×450px | `custom-shirts/top5pct-custom-foil-shirts-hoodies-caps-joliet.jpg` | Keep |
-| 5 | `carousel` slot 4 | 600×450px | `custom-shirts/top5pct-t-shirt-maker-article-pic1.jpg` | Keep |
-| 6 | `card-image-with-text` (left) | 600×450px | `custom-shirts/top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg` | Keep |
-| 7 | `card-image-with-text` (right) | 600×450px | `custom-shirts/top5pct-custom-foil-shirts-hoodies-caps-joliet.jpg` | Keep |
-| 8 | `card-detailed-info` image1 | 400×300px | `custom-shirts/top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg` | Keep |
-| 9 | `card-banner-slide-in` (right→left) | full-width 16:7 | `custom-shirts/top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg` | Keep |
-| 10 | `card-banner-slide-in` (left→right) | full-width 16:7 | `custom-shirts/top5pct-custom-foil-shirts-hoodies-caps-joliet.jpg` | Keep |
+| 1 | `category-hero` | full-width × 576px | `holographic-shirts/top5pct-holographic-vinyl-hoodie-foil.jpg` | Done — Rule 1 fix: 2-slot swap (R2 promoted from carousel 1) |
+| 2 | `carousel` slot 1 | 600×450px | `holographic-shirts/top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg` | Displaced hero fills vacated slot; "holographic" ✓ |
+| 3 | `carousel` slot 2 | 600×450px | `holographic-shirts/top5pct-holographic-vinyl-hoodie-foil.jpg` | Done — Rule 2 fix: replaces generic banner image (stale doc prediction); R2 reused for variety; "holographic" ✓ |
+| 4 | `carousel` slot 3 | 600×450px | `holographic-shirts/top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg` | Done — Rule 2 fix: replaces foil placeholder; "holographic" ✓ |
+| 5 | `carousel` slot 4 | 600×450px | `holographic-shirts/top5pct-holographic-vinyl-hoodie-foil.jpg` | Done — Rule 2 fix: replaces generic pic1; R2 reused for variety; "holographic" ✓ |
+| 6 | `card-image-with-text` (left) "The Shirt That Shifts…" | 600×450px | `holographic-shirts/top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg` | Done (Rule 3 fix; "holographic" ✓) |
+| 7 | `card-image-with-text` (right) "Futuristic Apparel…" | 600×450px | `holographic-shirts/top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg` | Done — Rule 2 fix: replaces foil placeholder; Rule 3 fix |
+| 8 | `card-detailed-info` image1 | 400×300px | `holographic-shirts/top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg` | Done (Rule 3 fix; "holographic" ✓) |
+| 9 | `card-banner-slide-in` (direction="left") "Holographic Shirts, Color-Shifting…" | full-width 16:7 | `holographic-shirts/top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg` | Done (Rule 3 fix; "holographic" ✓) |
+| 10 | `card-banner-slide-in` (direction="right") "Holographic, Foil, or Glitter, Shine Your Way" | full-width 16:7 | `custom-shirts/top5pct-custom-foil-shirts-hoodies-caps-joliet.jpg` | Keep — intentional cross-promo, excluded from Rule 3 |
 
 ---
 
