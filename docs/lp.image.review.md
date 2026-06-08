@@ -286,3 +286,171 @@ Slots 14–18 use Custom Shirts Sublimation R1/R2 from staging as cross-category
 *All 18 slots distinct. 13 promo-items images fill slots 1–13 (hero, C1×4, LP banners×6, card-left). Slots 14–18 use Custom Shirts R1/R2 flock and sublimation files as cross-category placeholders (Rule 2 allows) pending additional promo-items image imports. Note: sublimation staging files `custom-sublimation-shirts.jpg`, `dye-sublimation-custom-shirt-joliet.jpg`, `sublmation-team-shirts.jpg` were not yet migrated to `custom-shirts/` at time of apply — flock files used instead. All 6 LP banners will need to be updated once sub-page heroes are set.*
 
 **Status: Applied.**
+
+---
+
+### `/signs` LP
+
+**File:** `resources/views/pages/signs/index.blade.php`
+**Status:** Proposed map complete. 25 of 25 slots assigned. Apply when ready.
+**Sub-pages:** `banners`, `business-signs`, `yard-signs`, `sidewalk-signs`, `posters`, `wall-signs`, `window-signs`, `door-signs`, `floor-signs`, `table-runners`, `table-cloths`, `sidewalk-signs-a-frame-signs` (parking signs)
+
+This is the largest LP analyzed so far: **25 slots** — hero, 5×C1, 12×LP banners, card-left, 4×C2, 2×slide-ins.
+
+---
+
+#### Image directories (confirmed in `public/images/`)
+
+| Dir | Files | Notes |
+|---|---|---|
+| `backlit-signs/` | 7 | all import-round (no root staging dir — staging has `Business Signs/Backlit Signs/`) |
+| `business-signs/` | 8 | all import-round (no root staging dir — staging has sub-dirs only) |
+| `corona-virus-signs/` | 8 | not used in LP |
+| `outdoor-signs/` | 2 | R1 ✓ (staging: `Business Signs/Outdoor Signs/`) |
+| `sidewalk-signs/` | 12 | mixed — 3 R1 from staging `Ground Signs/A-Frames/`, rest import-round |
+| `wall-signs/` | 6 | R1 ✓ (staging: `Business Signs/Wall Signs/`) |
+| `yard-signs/` | 11 | all import-round (no yard-signs staging dir) |
+| `banners/` | 20 | mixed — 5 R1 from staging `Business Signs/Banners/`, rest import-round |
+| `posters/` | 11 | mixed — 4 R1 from staging `Business Signs/Posters/`, rest import-round |
+| `table-runners/` | 17 | mixed — 1 R1 from staging `Table Signs/Table Runner/`, rest import-round |
+| `table-cloths/` | 8 | mixed — 2 R1 from staging `Table Signs/Table Cloths/`, rest import-round |
+| `window-wall-floor-decals/` | 25 | mixed — 3 R1 from staging `Business Signs/Window Signs/`, rest import-round |
+| `floor-signs/` | NOT FOUND | no dedicated dir — floor-signs sub-page uses `window-wall-floor-decals/` |
+| `door-signs/` | NOT FOUND | no dedicated dir — door-signs sub-page uses `window-wall-floor-decals/` |
+
+---
+
+#### R1/R2 confirmed (staging sources)
+
+**`Business Signs/Banners/` → `banners/`:**
+`top5pct-banners-for-trade-shows.jpg`, `top5pct-mesh-construction-banner.jpg`, `top5pct-portable-banners.jpg`, `top5pct-retractable-banners-plainfield.jpg`, `top5pct-sports-banners.jpg`
+
+**`Business Signs/Outdoor Signs/` → `outdoor-signs/`:**
+`top5pct-outdoor-banner-signs-joliet.jpg`, `top5pct-outdoor-sign-joliet.jpg`
+
+**`Business Signs/Backlit Signs/` → `backlit-signs/`:**
+`top5pct-backlit-company-signs.jpg`, `top5pct-backlit-display-signs-joliet.jpg`, `top5pct-backlit-monument-sign-joliet.jpg`, `top5pct-backlit-outdoor-signs.jpg`, `top5pct-backlit-sign-new-lenox.jpg`, `top5pct-custom-backlit-display-signs-in-joliet.jpg`, `top5pct-monument-signs-joliet.jpg`
+
+**`Business Signs/Door Signs/` → `window-wall-floor-decals/`:**
+`top5pct-business-door-signs.jpg`, `top5pct-door-sign-installers.jpg`, `top5pct-door-wraps-joliet.jpg`, `top5pct-vinyl-door-lettering.jpg`, `top5pct-vinyl-door-signs.jpg`
+
+**`Business Signs/Posters/` → `posters/`:**
+`top5pct-big-posters-joliet.jpg`, `top5pct-custom-posters.jpg`, `top5pct-poster-board-joliet.jpg`, `top5pct-posters-printed-joliet.jpg`
+
+**`Business Signs/Wall Signs/` → `wall-signs/`:**
+`top5pct-wall-signs.jpg`, `top5pct-wall-wraps.jpg` (note: staging has `custom-wall-Signs.jpg` — mixed case, skip)
+
+**`Business Signs/Window Signs/` → `window-wall-floor-decals/`:**
+`top5pct-joliet-slammers-window-signs-joliet.jpg`, `top5pct-window-signage.jpg`, `top5pct-window-signs-joliet.jpg`
+
+**`Ground Signs/A-Frames/` → `sidewalk-signs/`:**
+`top5pct-a-frame-sidewalk-signs.jpg`, `top5pct-sidewalk-signage.jpg`, `top5pct-sidewalk-signs-joliet.jpg`
+
+**`Table Signs/Table Cloths/` → `table-cloths/`:**
+`top5pct-custom-table-cloth-business.jpg`, `top5pct-printed-table-cloths.jpg`
+
+**`Table Signs/Table Runner/` → `table-runners/`:**
+`top5pct-table-runner-joliet.jpg`
+
+---
+
+#### Sub-page hero status
+
+| Sub-page | Current hero | R1? | R3? | Notes |
+|---|---|---|---|---|
+| `/signs/business-signs/banners` | `banners/top5pct-sports-banners.jpg` | R1 ✓ | — | ✓ ready |
+| `/signs/business-signs` | `business-signs/top5pct-banner-business-signs-joliet-plainfield-shorewood.jpg` | — | R3 ✗ | fix sub-page hero first |
+| `/signs/ground-signs/yard-signs` | `yard-signs/top5pct-custom-yard-signs-joliet.jpg` | import-round | — | ✓ ready |
+| `/signs/ground-signs/sidewalk-signs` | `sidewalk-signs/top5pct-banner-a-frame-sidewalk-signs-joliet-romeoville.jpg` | — | R3 ✗ | fix sub-page hero first |
+| `/signs/business-signs/posters` | `posters/top5pct-posters-printed-joliet.jpg` | R1 ✓ | — | ✓ ready |
+| `/signs/table-signs/table-runners` | `table-runners/top5pct-banner-custom-table-cloth-custom-table-runner-joliet.jpg` | — | R3 ✗ | fix sub-page hero first |
+| `/signs/business-signs/window-signs` | `window-wall-floor-decals/top5pct-window-signage.jpg` | R1 ✓ | — | ✓ ready (no dedicated window-signs dir) |
+| `/signs/business-signs/wall-signs` | `wall-signs/top5pct-wall-signs.jpg` | R1 ✓ | — | ✓ ready |
+| `/signs/business-signs/floor-signs` | `window-wall-floor-decals/top5pct-banner-wall-decal-door-signs-joliet.jpg` | — | R3 ✗ + R6 | fix sub-page hero first; no floor-signs dir |
+| `/signs/business-signs/door-signs` | `window-wall-floor-decals/top5pct-door-signage.jpg` | import-round | — | ✓ ready (no dedicated door-signs dir) |
+| `/signs/table-signs/table-cloths` | `table-cloths/top5pct-custom-table-cloth.jpg` | import-round | — | ✓ ready |
+| `/signs/ground-signs/sidewalk-signs-a-frame-signs` | `sidewalk-signs/top5pct-a-frame-sidewalk-signs.jpg` | R1 ✓ | — | ✓ ready (used for Parking Signs LP banner) |
+
+**4 sub-pages need hero fixes before their LP banners can be set per Rule 5:**
+`/signs/business-signs`, `/signs/ground-signs/sidewalk-signs`, `/signs/table-signs/table-runners`, `/signs/business-signs/floor-signs`
+
+---
+
+#### Current 25-slot state (pre-fix)
+
+| # | Component | Current file | Dir | Issues |
+|---|---|---|---|---|
+| 1 | `category-hero` | `top5pct-banner-poster-maker-joliet-romeoville-shorewood.jpg` | `posters/` | R3 |
+| 2 | C1 slot 1 | `top5pct-banner-business-banners-joliet-shorewood-crest-hill.jpg` | `banners/` | R3, 3× |
+| 3 | C1 slot 2 | `top5pct-banner-yard-signs-joliet-shorewood-crest-hill.jpg` | `yard-signs/` | R3, 2× |
+| 4 | C1 slot 3 | `top5pct-banner-a-frame-sidewalk-signs-joliet-romeoville.jpg` | `sidewalk-signs/` | R3, 2× |
+| 5 | C1 slot 4 | `top5pct-banner-business-signs-joliet-plainfield-shorewood.jpg` | `business-signs/` | R3, 3× |
+| 6 | C1 slot 5 | `top5pct-banner-poster-maker-joliet-romeoville-shorewood.jpg` | `posters/` | R3, 3× repeat of slot 1 |
+| 7 | LP banner 1 "Yard Signs" | `top5pct-banner-yard-signs-joliet-shorewood-crest-hill.jpg` | `yard-signs/` | R3, 2×, R5 |
+| 8 | LP banner 2 "Sidewalk Signs" | `top5pct-banner-a-frame-sidewalk-signs-joliet-romeoville.jpg` | `sidewalk-signs/` | R3, 2×, R5 |
+| 9 | LP banner 3 "Banners" | `top5pct-banner-business-banners-joliet-shorewood-crest-hill.jpg` | `banners/` | R3, 3×, R5 |
+| 10 | LP banner 4 "Business Signs" | `top5pct-banner-business-signs-joliet-plainfield-shorewood.jpg` | `business-signs/` | R3, 3×, R5 |
+| 11 | LP banner 5 "Posters" | `top5pct-banner-poster-maker-joliet-romeoville-shorewood.jpg` | `posters/` | R3, 3×, R5 |
+| 12 | LP banner 6 "Table Runners" | `top5pct-banner-custom-table-cloth-custom-table-runner-joliet.jpg` | `table-runners/` | R3, R5 |
+| 13 | LP banner 7 "Window Signs" | `top5pct-window-decals-joliet-shorewood-crest-hill.jpg` | `window-wall-floor-decals/` | R5, 3× |
+| 14 | LP banner 8 "Wall Signs" | `top5pct-wall-signs-joliet.jpg` | `window-wall-floor-decals/` | R5, R6 (should be wall-signs/) |
+| 15 | LP banner 9 "Floor Signs" | `top5pct-outdoor-signs-joliet-shorewood-crest-hill.jpg` | `business-signs/` | R5, R6, 2× |
+| 16 | LP banner 10 "Door Signs" | `top5pct-door-signs-joliet-shorewood-crest-hill.jpg` | `business-signs/` | R5, R6 |
+| 17 | LP banner 11 "Table Cloths" | `top5pct-custom-table-cloth-joliet-crest-hill.jpg` | `table-runners/` | R5, R6 (should be table-cloths/) |
+| 18 | LP banner 12 "Parking Signs" | `top5pct-outdoor-signs-joliet-shorewood-crest-hill.jpg` | `business-signs/` | R5, R6, 2× repeat of slot 15 |
+| 19 | `card-image-with-text` | `top5pct-banner-business-signs-joliet-plainfield-shorewood.jpg` | `business-signs/` | R3, 3× repeat of slot 10 |
+| 20 | C2 slot 1 | `top5pct-window-decals-joliet-shorewood-crest-hill.jpg` | `window-wall-floor-decals/` | 3× repeat of slot 13 |
+| 21 | C2 slot 2 | `top5pct-custom-table-runner-joliet-shorewood.jpg` | `table-runners/` | — |
+| 22 | C2 slot 3 | `top5pct-birthday-banner-joliet-shorewood-plainfield.jpg` | `banners/` | R3 |
+| 23 | C2 slot 4 | `top5pct-business-signs-joliet-shorewood-crest-hill.jpg` | `business-signs/` | — |
+| 24 | Slide-in right | `top5pct-banner-business-banners-joliet-shorewood-crest-hill.jpg` | `banners/` | R3, 3× repeat of slot 9 |
+| 25 | Slide-in left | `top5pct-window-decals-joliet-shorewood-crest-hill.jpg` | `window-wall-floor-decals/` | 3× repeat of slots 13, 20 |
+
+**Duplicate summary:**
+- `banner-poster-maker-joliet-romeoville-shorewood.jpg` — slots 1, 6, 11 (3×)
+- `banner-business-signs-joliet-plainfield-shorewood.jpg` — slots 5, 10, 19 (3×)
+- `banner-business-banners-joliet-shorewood-crest-hill.jpg` — slots 2, 9, 24 (3×)
+- `window-decals-joliet-shorewood-crest-hill.jpg` — slots 13, 20, 25 (3×)
+- `outdoor-signs-joliet-shorewood-crest-hill.jpg` — slots 15, 18 (2×)
+- `banner-yard-signs-joliet-shorewood-crest-hill.jpg` — slots 3, 7 (2×)
+- `banner-a-frame-sidewalk-signs-joliet-romeoville.jpg` — slots 4, 8 (2×)
+
+Only 2 slots clean (no R3, no duplicate): slot 21 (`custom-table-runner-joliet-shorewood.jpg`) and slot 23 (`business-signs-joliet-shorewood-crest-hill.jpg`).
+
+---
+
+#### Proposed final slot map (all 25 slots)
+
+LP banners 2, 4, 6, 9 use R1 proxies — update to exact sub-page heroes once those 4 sub-page heroes are fixed.
+
+| # | Component | Proposed file | Dir | R1/R2? | Notes |
+|---|---|---|---|---|---|
+| 1 | `category-hero` | `top5pct-outdoor-sign-joliet.jpg` | `outdoor-signs/` | R1 ✓ | |
+| 2 | C1 slot 1 | `top5pct-banners-for-trade-shows.jpg` | `banners/` | R1 ✓ | |
+| 3 | C1 slot 2 | `top5pct-yard-sign-joliet.jpg` | `yard-signs/` | import-round | |
+| 4 | C1 slot 3 | `top5pct-sidewalk-signs-joliet.jpg` | `sidewalk-signs/` | R1 ✓ | |
+| 5 | C1 slot 4 | `top5pct-business-signs-joliet-plainfield-romeoville.jpg` | `business-signs/` | import-round | |
+| 6 | C1 slot 5 | `top5pct-custom-posters.jpg` | `posters/` | R1 ✓ | |
+| 7 | LP banner 1 "Yard Signs" | `top5pct-custom-yard-signs-joliet.jpg` | `yard-signs/` | import-round | sub-page hero ✓ |
+| 8 | LP banner 2 "Sidewalk Signs" | `top5pct-sidewalk-signage.jpg` | `sidewalk-signs/` | R1 ✓ | proxy — sub-page hero has R3, update when fixed |
+| 9 | LP banner 3 "Banners" | `top5pct-sports-banners.jpg` | `banners/` | R1 ✓ | sub-page hero ✓ |
+| 10 | LP banner 4 "Business Signs" | `top5pct-business-signs-joliet-shorewood-crest-hill.jpg` | `business-signs/` | import-round | proxy — sub-page hero has R3, update when fixed |
+| 11 | LP banner 5 "Posters" | `top5pct-posters-printed-joliet.jpg` | `posters/` | R1 ✓ | sub-page hero ✓ |
+| 12 | LP banner 6 "Table Runners" | `top5pct-table-runner-joliet.jpg` | `table-runners/` | R1 ✓ | proxy — sub-page hero has R3, update when fixed |
+| 13 | LP banner 7 "Window Signs" | `top5pct-window-signage.jpg` | `window-wall-floor-decals/` | R1 ✓ | sub-page hero ✓ (no dedicated window-signs dir) |
+| 14 | LP banner 8 "Wall Signs" | `top5pct-wall-signs.jpg` | `wall-signs/` | R1 ✓ | sub-page hero ✓ |
+| 15 | LP banner 9 "Floor Signs" | `top5pct-wall-decals-joliet.jpg` | `window-wall-floor-decals/` | import-round | proxy — sub-page hero has R3+R6, update when fixed |
+| 16 | LP banner 10 "Door Signs" | `top5pct-door-signage.jpg` | `window-wall-floor-decals/` | import-round | sub-page hero ✓ (no dedicated door-signs dir) |
+| 17 | LP banner 11 "Table Cloths" | `top5pct-custom-table-cloth.jpg` | `table-cloths/` | import-round | sub-page hero ✓ |
+| 18 | LP banner 12 "Parking Signs" | `top5pct-a-frame-sidewalk-signs.jpg` | `sidewalk-signs/` | R1 ✓ | sidewalk-signs-a-frame-signs sub-page hero ✓ |
+| 19 | `card-image-with-text` | `top5pct-backlit-display-signs-joliet.jpg` | `backlit-signs/` | R1 ✓ | |
+| 20 | C2 slot 1 | `top5pct-banners-near-me.jpg` | `banners/` | import-round | |
+| 21 | C2 slot 2 | `top5pct-custom-table-runners.jpg` | `table-runners/` | import-round | |
+| 22 | C2 slot 3 | `top5pct-business-signs-joliet-shorewood-channahon.jpg` | `business-signs/` | import-round | |
+| 23 | C2 slot 4 | `top5pct-poster-board-joliet.jpg` | `posters/` | R1 ✓ | |
+| 24 | Slide-in right | `top5pct-backlit-company-signs.jpg` | `backlit-signs/` | R1 ✓ | |
+| 25 | Slide-in left | `top5pct-outdoor-banner-signs-joliet.jpg` | `outdoor-signs/` | R1 ✓ | |
+
+*All 25 slots distinct. Sub-pages with R3 heroes (slots 8, 10, 12, 15) use best available R1/import-round proxies until those sub-pages are fixed.*
+
+**Status: Proposed map complete. 25 of 25 slots assigned. Apply when ready.**
