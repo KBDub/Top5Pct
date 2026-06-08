@@ -47,7 +47,7 @@
         primaryButtonHref="#all-products"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/stickers-decals/top5pct-banner-stickers-decals-joliet.jpg"
+        image="/images/custom-shaped-stickers-decals/top5pct-custom-stickers-cresthill.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />
@@ -56,10 +56,10 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/stickers-decals/top5pct-custom-stickers-cresthill.jpg',               'alt' => 'Custom stickers in Crest Hill Illinois'],
-            ['src' => '/images/stickers-decals/top5pct-stickers-decals-joliet-beer-brewery.jpg',    'alt' => 'Custom business stickers and decals printed for a brewery in Joliet Illinois'],
-            ['src' => '/images/stickers-decals/top5pct-stickers-decals-joliet-boxing-sports.jpg',   'alt' => 'Custom sports stickers and decals for a boxing gym in Joliet Illinois'],
-            ['src' => '/images/stickers-decals/top5pct-stickers-decals-joliet-labels.jpg',          'alt' => 'Custom product labels and branded stickers printed in Joliet Illinois'],
+            ['src' => '/images/custom-shaped-stickers-decals/top5pct-banner-stickers-decals-joliet.jpg',               'alt' => 'Custom stickers in Crest Hill Illinois'],
+            ['src' => '/images/custom-shaped-stickers-decals/top5pct-stickers-decals-joliet-beer-brewery.jpg',    'alt' => 'Custom business stickers and decals printed for a brewery in Joliet Illinois'],
+            ['src' => '/images/custom-shaped-stickers-decals/top5pct-stickers-decals-joliet-boxing-sports.jpg',   'alt' => 'Custom sports stickers and decals for a boxing gym in Joliet Illinois'],
+            ['src' => '/images/custom-shaped-stickers-decals/top5pct-stickers-decals-joliet-labels.jpg',          'alt' => 'Custom product labels and branded stickers printed in Joliet Illinois'],
         ]"
         visible=2
     />
@@ -70,7 +70,7 @@
     />
 
         <x-sections.card-image-with-text
-            image="/images/stickers-decals/top5pct-stickers-decals-joliet-beer-brewery.jpg"
+            image="/images/custom-shaped-stickers-decals/top5pct-stickers-decals-joliet-beer-brewery.jpg"
             alt="Custom business stickers and decals printed for a beer brewery in Joliet Illinois"
             title="Custom Stickers for Your Brand"
         >
@@ -81,7 +81,7 @@
         </x-sections.card-image-with-text>
 
         <x-sections.card-image-with-text
-            image="/images/stickers-decals/top5pct-stickers-decals-joliet-boxing-sports.jpg"
+            image="/images/custom-shaped-stickers-decals/top5pct-stickers-decals-joliet-boxing-sports.jpg"
             alt="Custom sports stickers and decals for a boxing gym in Joliet Illinois"
             title="Sports and Event Stickers"
             imagePosition="right"
@@ -95,9 +95,9 @@
         <x-sections.cta-quadruple-button-banner />
 
         <x-sections.card-2image-with-text
-            image1="/images/stickers-decals/top5pct-stickers-decals-joliet-labels.jpg"
+            image1="/images/custom-shaped-stickers-decals/top5pct-stickers-decals-joliet-labels.jpg"
             alt1="Custom product labels and stickers printed in Joliet Illinois"
-            image2="/images/stickers-decals/top5pct-stickers-decals-joliet-ocean-viewz.jpg"
+            image2="/images/custom-shaped-stickers-decals/top5pct-stickers-decals-joliet-ocean-viewz.jpg"
             alt2="Custom branded stickers and decals for Ocean Viewz in Joliet Illinois"
             title="Product Labels and Branded Decals"
         >
@@ -107,9 +107,9 @@
         </x-sections.card-2image-with-text>
 
         <x-sections.card-2image-with-text
-            image1="/images/stickers-decals/top5pct-stickers-decals-joliet-stoner-rock-bbq.jpg"
+            image1="/images/custom-shaped-stickers-decals/top5pct-stickers-decals-joliet-stoner-rock-bbq.jpg"
             alt1="Custom die cut stickers for Stoner Rock BBQ printed in Joliet Illinois"
-            image2="/images/stickers-decals/top5pct-stickers-decals-joliet-volleyball-team.jpg"
+            image2="/images/custom-shaped-stickers-decals/top5pct-stickers-decals-joliet-volleyball-team.jpg"
             alt2="Custom team stickers and decals for a volleyball team in Joliet Illinois"
             title="Die Cut Stickers for Any Group"
         >
@@ -124,7 +124,7 @@
 
             <x-sections.card-detailed-info
                 heading="5 Benefits of Sticker Decals and the Role They Play in Promoting Your Business"
-                image1="/images/stickers-decals/top5pct-article-buy-stickers-decals-joliet.jpg"
+                image1="/images/standard-stickers-decals/top5pct-article-buy-stickers-decals-joliet.jpg"
                 alt1="Custom stickers and decals printed in Joliet, Will and DuPage County Illinois"
             >
                 <x-slot name="intro">
@@ -155,14 +155,14 @@
         name="Chewy Orkwiszewski"
     />
     <x-ui.card-banner-slide-in
-        image="/images/stickers-decals/top5pct-stickers-decals-joliet-stoner-rock-bbq.jpg"
+        image="/images/custom-shaped-stickers-decals/top5pct-stickers-decals-joliet-stoner-rock-bbq.jpg"
         alt="Custom die cut stickers and decals printed by Top 5 Percent in Joliet Illinois"
         title="Custom Stickers in Any Shape or Size"
         href="/contact"
         direction="left"
     />
     <x-ui.card-banner-slide-in
-        image="/images/stickers-decals/top5pct-stickers-decals-joliet-boxing-sports.jpg"
+        image="/images/custom-shaped-stickers-decals/top5pct-stickers-decals-joliet-boxing-sports.jpg"
         alt="Custom die cut stickers and sports decals printed by Top 5 Percent in Joliet Illinois"
         title="Die Cut Custom Stickers in Any Shape"
         href="/contact"

@@ -62,6 +62,7 @@ Move all files from `public/new-images/` into the matching `public/images/` dire
 | `signs/table-signs/table-cloths/` | `table-cloths/` | **yes** |
 | `signs/table-signs/table-runners/` | `table-runners/` | no |
 | `stickers/custom-shaped/` | `custom-shaped-stickers-decals/` | **yes** |
+| `stickers/standard/` | `standard-stickers-decals/` | **yes** |
 | `vehicle-decals/automobile-graphics/` | `automobile-graphics/` | **yes** |
 | `vehicle-decals/dot-decals/` | `dot-decals/` | **yes** |
 | `vehicle-decals/vehicle-magnets/` | `vehicle-magnets/` | **yes** |
@@ -2027,14 +2028,24 @@ Create `public/images/outdoor-signs/` before copying.
 
 ### `pages/stickers/standard-stickers.blade.php`
 
-*Not in R1 inventory — all slots were Keep. R2 new images: 1 — fills carousel slot 1.*
+*All 14 slots complete. Directory: `standard-stickers-decals/` (Rule 3 applied). Only 2 files in `standard-stickers-decals/`; remaining 13 slots reference `custom-shaped-stickers-decals/` per user instruction. Rule 1 hero fix via 2-slot swap: R2 `top5pct-custom-stickers-cresthill.jpg` promoted from carousel 1 to hero; displaced `top5pct-banner-stickers-decals-joliet.jpg` fills carousel 1. Old `stickers-decals/` dir gone; all refs updated. No file copies needed.*
 
-| # | Component | Size | Current Image | Replaced? |
+| # | Component | Size | Final Image | Status |
 |---|---|---|---|---|
-| 1 | `category-hero` | full-width × 576px | *(existing hero)* | Keep |
-| 2 | `carousel` slot 1 | 600×450px | `stickers-decals/top5pct-custom-stickers-cresthill.jpg` | Pending |
-| 3–8 | *(remaining eligible slots)* | — | *(existing images)* | Keep |
-| 9–10 | `card-banner-slide-in` × 2 | full-width 16:7 | *(existing)* | Keep |
+| 1 | `category-hero` | full-width × 576px | `custom-shaped-stickers-decals/top5pct-custom-stickers-cresthill.jpg` | Done — Rule 1: 2-slot swap (R2 promoted to hero) |
+| 2 | `carousel` slot 1 | 600×450px | `custom-shaped-stickers-decals/top5pct-banner-stickers-decals-joliet.jpg` | Done — displaced hero fills vacated slot |
+| 3 | `carousel` slot 2 | 600×450px | `custom-shaped-stickers-decals/top5pct-stickers-decals-joliet-beer-brewery.jpg` | Done — Rule 3 path fix |
+| 4 | `carousel` slot 3 | 600×450px | `custom-shaped-stickers-decals/top5pct-stickers-decals-joliet-boxing-sports.jpg` | Done — Rule 3 path fix |
+| 5 | `carousel` slot 4 | 600×450px | `custom-shaped-stickers-decals/top5pct-stickers-decals-joliet-labels.jpg` | Done — Rule 3 path fix |
+| 6 | `card-image-with-text` (left) "Custom Stickers for Your Brand" | 600×450px | `custom-shaped-stickers-decals/top5pct-stickers-decals-joliet-beer-brewery.jpg` | Done — Rule 3 path fix |
+| 7 | `card-image-with-text` (right) "Sports and Event Stickers" | 600×450px | `custom-shaped-stickers-decals/top5pct-stickers-decals-joliet-boxing-sports.jpg` | Done — Rule 3 path fix |
+| 8 | `card-2image-with-text` image1 "Product Labels and Branded Decals" | 600×450px | `custom-shaped-stickers-decals/top5pct-stickers-decals-joliet-labels.jpg` | Done — Rule 3 path fix |
+| 9 | `card-2image-with-text` image2 "Product Labels and Branded Decals" | 600×450px | `custom-shaped-stickers-decals/top5pct-stickers-decals-joliet-ocean-viewz.jpg` | Done — Rule 3 path fix |
+| 10 | `card-2image-with-text` image1 "Die Cut Stickers for Any Group" | 600×450px | `custom-shaped-stickers-decals/top5pct-stickers-decals-joliet-stoner-rock-bbq.jpg` | Done — Rule 3 path fix |
+| 11 | `card-2image-with-text` image2 "Die Cut Stickers for Any Group" | 600×450px | `custom-shaped-stickers-decals/top5pct-stickers-decals-joliet-volleyball-team.jpg` | Done — Rule 3 path fix |
+| 12 | `card-detailed-info` image1 | 400×300px | `standard-stickers-decals/top5pct-article-buy-stickers-decals-joliet.jpg` | Done — only native `standard-stickers-decals/` file on page; Rule 3 ✓ |
+| 13 | `card-banner-slide-in` (left) "Custom Stickers in Any Shape or Size" | full-width 16:7 | `custom-shaped-stickers-decals/top5pct-stickers-decals-joliet-stoner-rock-bbq.jpg` | Done — Rule 3 path fix |
+| 14 | `card-banner-slide-in` (right) "Die Cut Custom Stickers in Any Shape" | full-width 16:7 | `custom-shaped-stickers-decals/top5pct-stickers-decals-joliet-boxing-sports.jpg` | Done — Rule 3 path fix |
 
 ---
 
