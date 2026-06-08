@@ -111,7 +111,7 @@
             'href'  => '/custom-apparel/specialty-materials/glitter-shirts',
         ],
         [
-            'image' => '/images/custom-shirts/top5pct-custom-brick-shirts-hoodies-cap-joliet.jpg',
+            'image' => '/images/custom-shirts/top5pct-custom-puff-shirts.jpg',
             'alt'   => 'Custom puff print shirts with 3D raised texture in Joliet Illinois',
             'title' => 'Puff Print Shirts',
             'href'  => '/custom-apparel/specialty-materials/puff-shirts',

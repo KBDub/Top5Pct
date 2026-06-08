@@ -20,6 +20,7 @@ Apply the four LP rules from `docs/new-images.md`:
 | 2 | Cross-category referencing is allowed (e.g. an LP can reference both `custom-shaped-stickers-decals/` and `standard-stickers-decals/`). |
 | 3 | Never modify an image filename. Only reference existing files as-is. |
 | 4 | Use distinct images. Each image file should appear no more than once per page across all slots. Repeats are a last resort only. |
+| 5 | Each LP category banner must use an image from the sub-category dir it links to. For example, the "Puff Print" banner (linking to `/custom-apparel/specialty-materials/puff-shirts`) must pull from `public/images/puff-shirts/`. A generic fallback dir (e.g. `custom-shirts/`) is only acceptable when the sub-category has no dedicated image dir yet, and must be replaced once that sub-page migration is complete. |
 
 ### Step 3 — Identify violations
 
@@ -81,7 +82,7 @@ Add an entry to this file under "Review Instances" with the full slot table, vio
 | 10 | LP banner 4 "Embroidery" | `top5pct-custom-embroidery-shops-near-me-joliet.jpg` | `custom-shirts/` | Yes — also slots 35, 38 |
 | 11 | LP banner 5 "Rhinestone Shirts" | `top5pct-custom-rhinestone-shirt-cap-hoodie-joliet.jpg` | `custom-shirts/` | No |
 | 12 | LP banner 6 "Glitter Shirts" | `top5pct-custom-glitter-shirt-cap-hoodie-joliet.jpg` | `custom-shirts/` | No |
-| 13 | LP banner 7 "Puff Print Shirts" | `top5pct-custom-brick-shirts-hoodies-cap-joliet.jpg` | `custom-shirts/` | Yes — also slots 3, 25. **Wrong image for category.** |
+| 13 | LP banner 7 "Puff Print Shirts" | `top5pct-custom-puff-shirts.jpg` | `custom-shirts/` | **Fixed** — was `top5pct-custom-brick-shirts-hoodies-cap-joliet.jpg` (brick image, wrong category). Swapped to puff-specific fallback. Long-term: move to `puff-shirts/` dir once sub-page migration runs. |
 | 14 | LP banner 8 "Glow In The Dark" | `top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg` | `custom-shirts/` | No |
 | 15 | LP banner 9 "Flock Shirts" | `top5pct-custom-flock-shirt-hoodie-cap-joliet.jpg` | `custom-shirts/` | No |
 | 16 | LP banner 10 "Brick Shirts" | `top5pct-custom-brick-shirts-hoodies-cap-joliet.jpg` | `custom-shirts/` | Yes — also slots 3, 13 |
@@ -104,7 +105,7 @@ Add an entry to this file under "Review Instances" with the full slot table, vio
 | File | Slots | Count | Priority |
 |---|---|---|---|
 | `top5pct-banner-custom-apparel-custom-shirts-custom-hoodies-custom-caps.jpg` | Hero, carousel 1 slot 1, LP banner 2 | 3× | Medium — hero/carousel overlap + wrong image for Dye Sub banner |
-| `top5pct-custom-brick-shirts-hoodies-cap-joliet.jpg` | Carousel 1 slot 2, LP banner 7 "Puff Print", LP banner 10 "Brick" | 3× | **Highest** — LP banner 7 uses a brick image for puff print (wrong category) |
+| `top5pct-custom-brick-shirts-hoodies-cap-joliet.jpg` | Carousel 1 slot 2, LP banner 10 "Brick" | 2× | **Fixed** — LP banner 7 removed. Banner 10 "Brick" keeps it correctly. Carousel 1 slot 2 repeat remains (medium priority). |
 | `top5pct-custom-embroidery-shops-near-me-joliet.jpg` | LP banner 4, carousel 2 slot 1, slide-in right | 3× | Medium |
 | `top5pct-banner-banner-family-reunion-shirts-joliet-shorewood.jpg` | Carousel 1 slot 3, LP banner 14 | 2× | Medium |
 | `top5pct-banner-fanwear-spiritwear-uniforms-joliet-shorewood.jpg` | Carousel 1 slot 4, LP banner 15 | 2× | Medium |
