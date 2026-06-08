@@ -47,7 +47,7 @@
         primaryButtonHref="/contact"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/custom-shirts/top5pct-custom-flock-shirt-hoodie-cap-joliet.jpg"
+        image="/images/flock-shirts/top5pct-custom-flock-t-shirt-printing.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />
@@ -56,9 +56,9 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/custom-shirts/top5pct-custom-flock-t-shirt-printing.jpg',                    'alt' => 'Custom flock t-shirt printing in Joliet Illinois'],
-            ['src' => '/images/custom-shirts/top5pct-flock-hoodie-printing.jpg',                            'alt' => 'Custom flock hoodie printing in Joliet Illinois'],
-            ['src' => '/images/custom-shirts/top5pct-flock-shirt-vinyl.jpg',                               'alt' => 'Custom flock shirt vinyl in Joliet Illinois'],
+            ['src' => '/images/flock-shirts/top5pct-custom-flock-shirt-hoodie-cap-joliet.jpg',              'alt' => 'Custom flock shirts hoodies and caps in Joliet Illinois'],
+            ['src' => '/images/flock-shirts/top5pct-flock-hoodie-printing.jpg',                             'alt' => 'Custom flock hoodie printing in Joliet Illinois'],
+            ['src' => '/images/flock-shirts/top5pct-flock-shirt-vinyl.jpg',                                'alt' => 'Custom flock shirt vinyl in Joliet Illinois'],
             ['src' => '/images/custom-shirts/top5pct-t-shirt-maker-article-pic2.jpg',                                     'alt' => 'Custom flock velvet shirts made in Joliet, Will and DuPage County Illinois'],
         ]"
         visible=2
@@ -70,7 +70,7 @@
     />
 
     <x-sections.card-image-with-text
-        image="/images/custom-shirts/top5pct-custom-flock-shirt-hoodie-cap-joliet.jpg"
+        image="/images/flock-shirts/top5pct-custom-flock-shirt-hoodie-cap-joliet.jpg"
         alt="Custom flock shirts with soft velvet texture for brands in Joliet Illinois"
         title="The Velvet Feel That Premium Apparel Deserves"
     >
@@ -80,7 +80,7 @@
     </x-sections.card-image-with-text>
 
     <x-sections.card-image-with-text
-        image="/images/custom-shirts/top5pct-custom-brick-shirts-hoodies-cap-joliet.jpg"
+        image="/images/flock-shirts/top5pct-custom-flock-shirt-hoodie-cap-joliet.jpg"
         alt="Custom flock and specialty textured shirts for lifestyle brands and sports teams in Joliet Illinois"
         title="Bold Designs That Perform on Any Garment"
         imagePosition="right"
@@ -97,7 +97,7 @@
 
     <x-sections.card-detailed-info
         heading="Why Flock Printing Creates a Premium Brand Experience You Can Feel"
-        image1="/images/custom-shirts/top5pct-custom-flock-shirt-hoodie-cap-joliet.jpg"
+        image1="/images/flock-shirts/top5pct-custom-flock-shirt-hoodie-cap-joliet.jpg"
         alt1="Custom flock shirts with velvet texture for brands and events in Joliet, Will and DuPage County Illinois"
     >
         <x-slot name="intro">
@@ -126,7 +126,7 @@
         name="Vicky Donis"
     />
     <x-ui.card-banner-slide-in
-        image="/images/custom-shirts/top5pct-custom-flock-shirt-hoodie-cap-joliet.jpg"
+        image="/images/flock-shirts/top5pct-custom-flock-shirt-hoodie-cap-joliet.jpg"
         alt="Custom flock velvet shirts by Top 5 Percent in Joliet Illinois"
         title="Custom Flock Shirts, Velvet Feel, Premium Look"
         href="/contact"

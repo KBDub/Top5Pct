@@ -1075,7 +1075,7 @@ Move all files from `public/new-images/` (Round 2 batch) into the matching `publ
 | `Custom Shirts/Printing Options/Sublimation/` | `sublimation/` | **yes** |
 | `Custom Shirts/Specialty Material/Brick/` | `custom-shirts/` | **yes** |
 | `Custom Shirts/Specialty Material/Chameleon/` | `custom-shirts/` | no |
-| `Custom Shirts/Specialty Material/Flock/` | `custom-shirts/` | no |
+| `Custom Shirts/Specialty Material/Flock/` | `flock-shirts/` | **yes** |
 | `Custom Shirts/Specialty Material/Foil/` | `custom-shirts/` | **yes** |
 | `Custom Shirts/Specialty Material/Glitter/` | `glitter-shirts/` | **yes** |
 | `Custom Shirts/Specialty Material/Glow/` | `glow-shirts/` | **yes** |
@@ -1641,20 +1641,20 @@ Create `public/images/outdoor-signs/` before copying.
 
 ### `pages/custom-apparel/flock-shirts.blade.php`
 
-*Not in R1 inventory — all slots were Keep. R2 new images: 3 — fills first 3 eligible slots.*
+*All 10 slots complete. Directory: `flock-shirts/` (own dedicated dir per Rule 3 — created this pass). Not in R1 inventory. All 3 R2 images were pre-applied to blade before this pass — doc Pending entries corrected. Doc slot 5 prediction was stale (blade had `t-shirt-maker-article-pic2` not `custom-brick-shirts`). Hero (slot 1) was pre-existing `custom-flock-shirt-hoodie-cap-joliet.jpg` — not R1/R2 (Rule 1 violation). 2-slot swap: R2 `custom-flock-t-shirt-printing.jpg` promoted from carousel 1 → hero; displaced hero → carousel 1. Slot 7 was `custom-brick-shirts` placeholder — replaced with flock image (Rule 2 fix). Slot 5 Rule 2 unfixable: no flock-named alt remaining; stays in `custom-shirts/` (Rule 3 partial — generic image). Slot 10 intentional cross-promo, excluded from Rule 3. `top5pct-custom-flock-shirt-hoodie-cap-joliet.jpg` is dual-homed: `custom-shirts/` (other pages that reference it as cross-promo) and `flock-shirts/` (this page).*
 
 | # | Component | Size | Current Image | Replaced? |
 |---|---|---|---|---|
-| 1 | `category-hero` | full-width × 576px | `custom-shirts/top5pct-custom-flock-shirt-hoodie-cap-joliet.jpg` | Keep |
-| 2 | `carousel` slot 1 | 600×450px | `custom-shirts/top5pct-custom-flock-t-shirt-printing.jpg` | Pending |
-| 3 | `carousel` slot 2 | 600×450px | `custom-shirts/top5pct-flock-hoodie-printing.jpg` | Pending |
-| 4 | `carousel` slot 3 | 600×450px | `custom-shirts/top5pct-flock-shirt-vinyl.jpg` | Pending |
-| 5 | `carousel` slot 4 | 600×450px | `custom-shirts/top5pct-custom-brick-shirts-hoodies-cap-joliet.jpg` | Keep |
-| 6 | `card-image-with-text` (left) | 600×450px | `custom-shirts/top5pct-custom-flock-shirt-hoodie-cap-joliet.jpg` | Keep |
-| 7 | `card-image-with-text` (right) | 600×450px | `custom-shirts/top5pct-custom-brick-shirts-hoodies-cap-joliet.jpg` | Keep |
-| 8 | `card-detailed-info` image1 | 400×300px | `custom-shirts/top5pct-custom-flock-shirt-hoodie-cap-joliet.jpg` | Keep |
-| 9 | `card-banner-slide-in` (right→left) | full-width 16:7 | `custom-shirts/top5pct-custom-flock-shirt-hoodie-cap-joliet.jpg` | Keep |
-| 10 | `card-banner-slide-in` (left→right) | full-width 16:7 | `custom-shirts/top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg` | Keep |
+| 1 | `category-hero` | full-width × 576px | `flock-shirts/top5pct-custom-flock-t-shirt-printing.jpg` | Done — Rule 1 fix: 2-slot swap (R2 promoted from carousel 1) |
+| 2 | `carousel` slot 1 | 600×450px | `flock-shirts/top5pct-custom-flock-shirt-hoodie-cap-joliet.jpg` | Displaced hero fills vacated slot; "flock" ✓ |
+| 3 | `carousel` slot 2 | 600×450px | `flock-shirts/top5pct-flock-hoodie-printing.jpg` | Done (R2, pre-applied, "flock" ✓) |
+| 4 | `carousel` slot 3 | 600×450px | `flock-shirts/top5pct-flock-shirt-vinyl.jpg` | Done (R2, pre-applied, "flock" ✓) |
+| 5 | `carousel` slot 4 | 600×450px | `custom-shirts/top5pct-t-shirt-maker-article-pic2.jpg` | Keep — Rule 2 unfixable: no flock-named alt remaining; Rule 3 partial: generic stays in custom-shirts/ (doc prediction was stale) |
+| 6 | `card-image-with-text` (left) "The Velvet Feel…" | 600×450px | `flock-shirts/top5pct-custom-flock-shirt-hoodie-cap-joliet.jpg` | Done (Rule 3 fix; "flock" ✓) |
+| 7 | `card-image-with-text` (right) "Bold Designs That Perform…" | 600×450px | `flock-shirts/top5pct-custom-flock-shirt-hoodie-cap-joliet.jpg` | Done — Rule 2 fix: flock image replaces brick-shirts placeholder; Rule 3 fix |
+| 8 | `card-detailed-info` image1 | 400×300px | `flock-shirts/top5pct-custom-flock-shirt-hoodie-cap-joliet.jpg` | Done (Rule 3 fix; "flock" ✓) |
+| 9 | `card-banner-slide-in` (direction="left") "Custom Flock Shirts, Velvet Feel, Premium Look" | full-width 16:7 | `flock-shirts/top5pct-custom-flock-shirt-hoodie-cap-joliet.jpg` | Done (Rule 3 fix; "flock" ✓) |
+| 10 | `card-banner-slide-in` (direction="right") "Mix Flock With Holographic or Glitter…" | full-width 16:7 | `custom-shirts/top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg` | Keep — intentional cross-promo, excluded from Rule 3 |
 
 ---
 
