@@ -37,11 +37,11 @@ Move all files from `public/new-images/` into the matching `public/images/` dire
 
 | `public/new-images/` source | `public/images/` destination | New dir? |
 |---|---|---|
-| `custom-apparel/digital-vinyl/` | `custom-shirts/` | no |
+| `custom-apparel/digital-vinyl/` | `custom-shirts/` + `digital-vinyl/` | **yes** |
 | `custom-apparel/group-shirts/corporate-wear-shirts/` | `corporate-wear/` | no |
 | `custom-apparel/group-shirts/reunion-shirts/` | `reunion-shirts/` | no |
 | `custom-apparel/group-shirts/spirit-wear-shirts/` | `spirit-wear/` | no |
-| `custom-apparel/printing-options/digital-vinyl/` | `custom-shirts/` | no |
+| `custom-apparel/printing-options/digital-vinyl/` | `custom-shirts/` + `digital-vinyl/` | **yes** |
 | `custom-apparel/printing-options/dtf-printing/` | `dtf-transfers/` | **yes** |
 | `custom-apparel/printing-options/embroidery/` | `embroidery/` | **yes** |
 | `custom-apparel/printing-options/rhinestones/` | `custom-shirts/` | **yes** |
@@ -442,6 +442,28 @@ These are product photos of vinyl banners. Existing `top5pct-banner-*` files in 
 | 8 | `card-detailed-info` image1 | 400×300px | `custom-shirts/top5pct-custom-flock-shirt-hoodie-cap-joliet.jpg` | Keep — Rule 2 unfixable: no screen-named alt, shared dir |
 | 9 | `card-banner-slide-in` (direction="right") "Bold Screen Printed Shirts for Your Group or Brand" | full-width 16:7 | `custom-shirts/top5pct-screenprinting-shirts.jpg` | Done — R1 reused, "screenprinting" ✓ (Rule 2 fix; was reflective-shirts placeholder) |
 | 10 | `card-banner-slide-in` (direction="left") "Add Embroidery or Vinyl to Complement Your Screen Print Order" | full-width 16:7 | `custom-shirts/top5pct-custom-embroidery-shops-near-me-joliet.jpg` | Keep — intentional cross-promo |
+
+---
+
+### `pages/custom-apparel/printing-options/digital-vinyl.blade.php`
+
+*All 13 slots complete. Directory: `digital-vinyl/` (own dir ✓ Rule 3). Note: this page is separate from `vinyl-shirts.blade.php` which uses `custom-shirts/`. R1/R2 files with "digital-vinyl" in name are dual-homed: prefixed copies in `custom-shirts/` (for vinyl-shirts.blade.php) and also copied to `digital-vinyl/` (for this page). Hero (slot 1) was non-prefixed original `custom-vinyl-shirts.jpg` — not R1/R2 (Rule 1 violation). Fixed: R2 `top5pct-digital-vinyl-t-shirts.jpg` copied from `custom-shirts/` → `digital-vinyl/`, assigned to hero. Slots 2–13: all pre-existing non-prefixed originals — all contain "vinyl" ✓ Rule 2, all in `digital-vinyl/` ✓ Rule 3. Directory cleanup note: 2 apparent misplaced yard-signs files in `digital-vinyl/` dir (see Cleanup Notes section).*
+
+| # | Component | Size | Current Image | Replaced? |
+|---|---|---|---|---|
+| 1 | `category-hero` | full-width × 576px | `digital-vinyl/top5pct-digital-vinyl-t-shirts.jpg` | Done — R2 copied from `custom-shirts/`, "digital-vinyl" ✓ (Rule 1 fix) |
+| 2 | `carousel` slot 1 | 600×450px | `digital-vinyl/vinyl-shirts.jpg` | Keep (pre-existing original, "vinyl" ✓) |
+| 3 | `carousel` slot 2 | 600×450px | `digital-vinyl/vinyl-hoodie.jpg` | Keep (pre-existing original, "vinyl" ✓) |
+| 4 | `carousel` slot 3 | 600×450px | `digital-vinyl/vinyl-caps.jpg` | Keep (pre-existing original, "vinyl" ✓) |
+| 5 | `carousel` slot 4 | 600×450px | `digital-vinyl/custom-vinyl-hoodies.jpg` | Keep (pre-existing original, "vinyl" ✓) |
+| 6 | `card-image-with-text` (left) "Full Color Designs on Any Shirt" | 600×450px | `digital-vinyl/custom-vinyl-shirts.jpg` | Keep (pre-existing original, "vinyl" ✓) |
+| 7 | `card-image-with-text` (right) "Digital Vinyl Hoodies and Sweatshirts" | 600×450px | `digital-vinyl/custom-vinyl-hoodies.jpg` | Keep (pre-existing original, "vinyl" ✓) |
+| 8 | `card-2image-with-text` image1 "Digital Vinyl on Hats, Caps, and More" | 600×450px | `digital-vinyl/vinyl-caps.jpg` | Keep (pre-existing original, "vinyl" ✓) |
+| 9 | `card-2image-with-text` image2 | 600×450px | `digital-vinyl/neon-vinyl-shirts.jpg` | Keep (pre-existing original, "vinyl" ✓) |
+| 10 | `card-image-with-text` "Business Branding and Event Merchandise" | 600×450px | `digital-vinyl/vinyl-zip-up-hoodies.jpg` | Keep (pre-existing original, "vinyl" ✓) |
+| 11 | `card-detailed-info` image1 | 400×300px | `digital-vinyl/custom-vinyl-shirts.jpg` | Keep (pre-existing original, "vinyl" ✓) |
+| 12 | `card-banner-slide-in` (direction="left") "Full Color Designs on Any Garment" | full-width 16:7 | `digital-vinyl/custom-vinyl-hoodies.jpg` | Keep (pre-existing original, "vinyl" ✓) |
+| 13 | `card-banner-slide-in` (direction="right") "Digital Vinyl Shirts, Hoodies, Hats, and More" | full-width 16:7 | `digital-vinyl/vinyl-caps.jpg` | Keep (pre-existing original, "vinyl" ✓) |
 
 ---
 
@@ -1046,7 +1068,7 @@ Move all files from `public/new-images/` (Round 2 batch) into the matching `publ
 | `Business Signs/Window Signs/` | `window-wall-floor-decals/` | **yes** |
 | `Custom Shirts/Group Shirts/Corporate Wear/` | `corporate-wear/` | no |
 | `Custom Shirts/Group Shirts/Spirit Wear/` | `spirit-wear/` | no |
-| `Custom Shirts/Printing Options/Digital Vinyl/` | `custom-shirts/` | no |
+| `Custom Shirts/Printing Options/Digital Vinyl/` | `custom-shirts/` + `digital-vinyl/` | **yes** |
 | `Custom Shirts/Printing Options/DTF/` | `dtf-transfers/` | **yes** |
 | `Custom Shirts/Printing Options/Embroidery/` | `embroidery/` | **yes** |
 | `Custom Shirts/Printing Options/Rhinestones/` | `custom-shirts/` | **yes** |
@@ -2110,3 +2132,14 @@ Create `public/images/outdoor-signs/` before copying.
 - [ ] Create `signs/outdoor-signs.blade.php` and build slot inventory
 - [ ] Create chameleon blade page and build slot inventory
 - [ ] Remove `public/new-images/` directory once all above is verified
+
+---
+
+## Directory Cleanup Notes
+
+> These files appear to be in the wrong directory. Per image handling rules, no files are deleted — issues are documented here for manual review.
+
+| Directory | File | Issue |
+|---|---|---|
+| `public/images/digital-vinyl/` | `top5pct-article-yard-signs-buy.jpg` | Appears misplaced — yard-signs content in digital-vinyl dir; not referenced by any digital-vinyl blade slot |
+| `public/images/digital-vinyl/` | `top5pct-banner-yard-signs-joliet-shorewood-crest-hill.jpg` | Appears misplaced — yard-signs content in digital-vinyl dir; not referenced by any digital-vinyl blade slot |

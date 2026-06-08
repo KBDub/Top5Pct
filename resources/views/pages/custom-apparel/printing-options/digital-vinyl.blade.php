@@ -47,7 +47,7 @@
         primaryButtonHref="#all-products"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/digital-vinyl/custom-vinyl-shirts.jpg"
+        image="/images/digital-vinyl/top5pct-digital-vinyl-t-shirts.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />
