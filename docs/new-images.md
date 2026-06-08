@@ -2,7 +2,9 @@
 
 ## General Rules
 
-These rules apply to all rounds of migration and all page slot assignments.
+### Sub-category pages
+
+These rules apply to all sub-category product pages (e.g. `/stickers/custom-shaped-stickers-decals`, `/signs/business-signs/wall-signs`, etc.).
 
 | # | Rule |
 |---|---|
@@ -10,6 +12,17 @@ These rules apply to all rounds of migration and all page slot assignments.
 | 2 | **All images must contain their category name (or a derivative) in the filename.** Example: embroidery images must include "embroid" or "stitched" in the name. |
 | 3 | **Create a `public/images/<category>/` directory for each distinct category.** `custom-shirts/` is a shared fallback only for images that genuinely appear across multiple unrelated pages (e.g. cross-promo banners). If a page has its own dedicated images, they go in `public/images/<that-page-slug>/`, not `custom-shirts/`. Create the dir if it does not exist. |
 | 4 | **Every image file referenced in any blade file must carry the `top5pct-` prefix.** This applies to all files in all `public/images/` dirs — not just incoming R1/R2 files. Pre-existing originals without the prefix must be renamed (with hyphens replacing any spaces) and all blade references updated to match. Apply this rule page by page during migration; a full sweep and verification will be run at the end. |
+
+### Category landing pages (LPs)
+
+Category LPs (e.g. `/stickers`, `/signs`, `/custom-apparel`) are hub pages that link to their child sub-category pages. Their rules are different from sub-category pages.
+
+| # | Rule |
+|---|---|
+| 1 | **Images always reference sub-category image dirs.** LPs pull images from their child sub-category `public/images/<sub-category>/` directories. No dedicated LP-level dir is created. |
+| 2 | **Cross-category referencing is allowed.** An LP may point to images in any of its child sub-category dirs (e.g. `/stickers` LP can reference both `custom-shaped-stickers-decals/` and `standard-stickers-decals/`). Cross-promo refs to unrelated categories are also fine. |
+| 3 | **Rules 1–3 for sub-category pages do not apply.** No R1/R2 hero requirement, no category-name-in-filename requirement, no per-LP dir. The LP uses whatever sub-category images are already compliant. |
+| 4 | **Rule 4 still applies.** Every image filename referenced in an LP blade must carry the `top5pct-` prefix. |
 
 ---
 
