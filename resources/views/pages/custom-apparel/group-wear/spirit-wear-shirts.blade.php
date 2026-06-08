@@ -43,7 +43,7 @@
         primaryButtonHref="#all-products"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/spirit-wear/top5pct-banner-fanwear-spiritwear-uniforms-joliet-shorewood.jpg"
+        image="/images/spirit-wear/top5pct-spirit-wear-joliet.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />
@@ -55,7 +55,7 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/spirit-wear/top5pct-spirit-wear-joliet.jpg', 'alt' => 'Custom spirit wear and fan wear for schools in Joliet and Shorewood Illinois'],
+            ['src' => '/images/spirit-wear/top5pct-banner-fanwear-spiritwear-uniforms-joliet-shorewood.jpg', 'alt' => 'Custom fan wear and spirit wear uniforms in Joliet and Shorewood Illinois'],
             ['src' => '/images/spirit-wear/top5pct-spirit-wear-shirts.jpg',            'alt' => 'Joliet West spirit wear hoodie printed in Shorewood Illinois'],
             ['src' => '/images/spirit-wear/top5pct-spirit-wear-clothing.jpg',                              'alt' => 'Custom spirit wear clothing in Joliet Illinois'],
             ['src' => '/images/spirit-wear/top5pct-volleyball-team-uniforms-joliet.jpg',                    'alt' => 'Custom volleyball team uniforms in Joliet Illinois'],

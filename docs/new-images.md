@@ -671,26 +671,26 @@ These are product photos of vinyl banners. Existing `top5pct-banner-*` files in 
 
 ---
 
-### `pages/custom-apparel/spirit-wear-shirts.blade.php`
+### `pages/custom-apparel/group-wear/spirit-wear-shirts.blade.php`
 
-*New images available: 2 (spirit-wear-shirts/) — 11 eligible slots — 2 Pending (carousel 1–2)*
+*All 14 slots complete. Directory: `spirit-wear/` (own dedicated dir ✓ Rule 3). 4 R1 images placed across hero + carousel slots. Hero (slot 1) was pre-existing banner — not R1/R2 (Rule 1 violation). 2-slot swap: R1 `top5pct-spirit-wear-joliet.jpg` promoted from carousel 1 → hero; displaced hero fills carousel 1. Carousel 3 and 4 were stale in the doc (pre-R1 state) — blade already had R1 `top5pct-spirit-wear-clothing.jpg` and `top5pct-volleyball-team-uniforms-joliet.jpg` applied. Rule 4: all files already carry `top5pct-` prefix, no renames needed. Rule 2: all filenames contain "spirit", "wear", "school", "fan", or category derivative. Doc path corrected: was `pages/custom-apparel/spirit-wear-shirts.blade.php` (wrong), now `pages/custom-apparel/group-wear/spirit-wear-shirts.blade.php`. Slot 14 intentional cross-promo, excluded.*
 
 | # | Component | Size | Current Image | Replaced? |
 |---|---|---|---|---|
-| 1 | `category-hero` | full-width × 576px | `spirit-wear/top5pct-banner-fanwear-spiritwear-uniforms-joliet-shorewood.jpg` | Keep |
-| 2 | `carousel` slot 1 | 600×450px | `spirit-wear/top5pct-spirit-wear-joliet.jpg` | Done |
-| 3 | `carousel` slot 2 | 600×450px | `spirit-wear/top5pct-spirit-wear-shirts.jpg` | Done |
-| 4 | `carousel` slot 3 | 600×450px | `spirit-wear/top5pct-spiritwear-fanwear-joliet-plainfield-shorewood.jpg` | Keep |
-| 5 | `carousel` slot 4 | 600×450px | `spirit-wear/top5pct-bowling-shirts-joliet-shorewood-crest-hill.jpg` | Keep |
-| 6 | `card-image-with-text` (left) | 600×450px | `spirit-wear/top5pct-joliet-west-spirit-wear-hoodie-shorewood.jpg` | Keep |
-| 7 | `card-image-with-text` (right) | 600×450px | `spirit-wear/top5pct-spiritwear-fanwear-joliet-plainfield-shorewood.jpg` | Keep |
-| 8 | `card-2image-with-text` image1 | fluid 4:3, ~50% | `spirit-wear/top5pct-sator-sanchez-school-shirt-joliet-crest-hill.jpg` | Keep |
-| 9 | `card-2image-with-text` image2 | fluid 4:3, ~50% | `spirit-wear/top5pct-plainfield-south-high-school-hoodie.jpg` | Keep |
-| 10 | `card-image-with-text` (left) | 600×450px | `spirit-wear/top5pct-bowling-shirts-joliet-shorewood-crest-hill.jpg` | Keep |
+| 1 | `category-hero` | full-width × 576px | `spirit-wear/top5pct-spirit-wear-joliet.jpg` | Done — Rule 1 fix: 2-slot swap (R1 promoted from carousel 1) |
+| 2 | `carousel` slot 1 | 600×450px | `spirit-wear/top5pct-banner-fanwear-spiritwear-uniforms-joliet-shorewood.jpg` | Displaced hero fills vacated slot; "spiritwear" ✓ Rule 2 |
+| 3 | `carousel` slot 2 | 600×450px | `spirit-wear/top5pct-spirit-wear-shirts.jpg` | Keep (R1, already in place) |
+| 4 | `carousel` slot 3 | 600×450px | `spirit-wear/top5pct-spirit-wear-clothing.jpg` | Keep (R1, already in place — doc was stale) |
+| 5 | `carousel` slot 4 | 600×450px | `spirit-wear/top5pct-volleyball-team-uniforms-joliet.jpg` | Keep (R1, already in place — doc was stale) |
+| 6 | `card-image-with-text` (left) "School Spirit Wear" | 600×450px | `spirit-wear/top5pct-joliet-west-spirit-wear-hoodie-shorewood.jpg` | Keep |
+| 7 | `card-image-with-text` (right) "Custom Fan Wear" | 600×450px | `spirit-wear/top5pct-spiritwear-fanwear-joliet-plainfield-shorewood.jpg` | Keep |
+| 8 | `card-2image-with-text` image1 "Spirit Wear That Delivers" | fluid 4:3 | `spirit-wear/top5pct-sator-sanchez-school-shirt-joliet-crest-hill.jpg` | Keep |
+| 9 | `card-2image-with-text` image2 "Spirit Wear That Delivers" | fluid 4:3 | `spirit-wear/top5pct-plainfield-south-high-school-hoodie.jpg` | Keep |
+| 10 | `card-image-with-text` (left) "League and Recreational Spirit Wear" | 600×450px | `spirit-wear/top5pct-bowling-shirts-joliet-shorewood-crest-hill.jpg` | Keep |
 | 11 | `card-detailed-info` image1 | 400×300px | `spirit-wear/top5pct-article-spirit-wear-pic1.jpg` | Keep |
 | 12 | `card-detailed-info` image2 | 400×300px | `spirit-wear/top5pct-article-fan-wear-pic2.jpg` | Keep |
-| 13 | `card-banner-slide-in` (right→left) | full-width 16:7 | `spirit-wear/top5pct-plainfield-south-high-school-hoodie.jpg` | Keep |
-| 14 | `card-banner-slide-in` (left→right) | full-width 16:7 | `reunion-shirts/toptpct-family-reunion-shirts-joliet-romeoville.jpg` | Keep |
+| 13 | `card-banner-slide-in` `direction="left"` "Spirit Wear for Your School or Team" | full-width 16:7 | `spirit-wear/top5pct-plainfield-south-high-school-hoodie.jpg` | Keep |
+| 14 | `card-banner-slide-in` `direction="right"` "Reunion Shirts, Corporate Wear..." | full-width 16:7 | `reunion-shirts/top5pct-family-reunion-shirts-joliet-romeoville.jpg` | Keep — intentional cross-promo, excluded |
 
 ---
 
