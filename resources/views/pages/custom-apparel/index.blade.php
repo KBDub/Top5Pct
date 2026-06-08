@@ -59,9 +59,9 @@
         :images="[
             ['src' => '/images/custom-shirts/top5pct-banner-custom-apparel-custom-shirts-custom-hoodies-custom-caps.jpg', 'alt' => 'Custom shirts, hoodies, and caps printed in Joliet Illinois'],
             ['src' => '/images/custom-shirts/top5pct-custom-brick-shirts-hoodies-cap-joliet.jpg',                         'alt' => 'Custom brick textured shirts and hoodies in Joliet Illinois'],
-            ['src' => '/images/reunion-shirts/toptpct-banner-banner-family-reunion-shirts-joliet-shorewood.jpg',          'alt' => 'Family and class reunion shirts in Joliet and Shorewood Illinois'],
+            ['src' => '/images/reunion-shirts/top5pct-banner-banner-family-reunion-shirts-joliet-shorewood.jpg',          'alt' => 'Family and class reunion shirts in Joliet and Shorewood Illinois'],
             ['src' => '/images/spirit-wear/top5pct-banner-fanwear-spiritwear-uniforms-joliet-shorewood.jpg',             'alt' => 'Custom spirit wear, fan wear, and uniforms in Joliet Illinois'],
-            ['src' => '/images/corporate-wear/toptpct-banner-corporate-shirts-uniforms-joliet-shorewood.jpg',            'alt' => 'Corporate shirts and uniforms printed in Joliet and Shorewood Illinois'],
+            ['src' => '/images/corporate-wear/top5pct-banner-corporate-shirts-uniforms-joliet-shorewood.jpg',            'alt' => 'Corporate shirts and uniforms printed in Joliet and Shorewood Illinois'],
         ]"
         visible=3
     />
@@ -75,7 +75,7 @@
         id="apparel-categories"
         :banners="[
         [
-            'image' => '/images/dtf-transfers/toptpct-banner-dtf-transfers-joliet.jpg',
+            'image' => '/images/dtf-transfers/top5pct-banner-dtf-transfers-joliet.jpg',
             'alt'   => 'DTF transfer printing on shirts and apparel in Joliet Illinois',
             'title' => 'DTF Transfers',
             'href'  => '/custom-apparel/printing-options/dtf-printing',
@@ -153,7 +153,7 @@
             'href'  => '/custom-apparel/specialty-materials/reflective-shirts',
         ],
         [
-            'image' => '/images/reunion-shirts/toptpct-banner-banner-family-reunion-shirts-joliet-shorewood.jpg',
+            'image' => '/images/reunion-shirts/top5pct-banner-banner-family-reunion-shirts-joliet-shorewood.jpg',
             'alt'   => 'Custom family and class reunion shirts in Joliet and Shorewood Illinois',
             'title' => 'Reunion Shirts',
             'href'  => '/custom-apparel/group-wear/reunion-shirts',
@@ -165,7 +165,7 @@
             'href'  => '/custom-apparel/group-wear/spirit-wear-shirts',
         ],
         [
-            'image' => '/images/corporate-wear/toptpct-banner-corporate-shirts-uniforms-joliet-shorewood.jpg',
+            'image' => '/images/corporate-wear/top5pct-banner-corporate-shirts-uniforms-joliet-shorewood.jpg',
             'alt'   => 'Custom corporate shirts, polo shirts, and uniforms in Joliet Illinois',
             'title' => 'Corporate Wear',
             'href'  => '/custom-apparel/group-wear/corporate-wear-shirts',
@@ -189,7 +189,7 @@
         :images="[
             ['src' => '/images/custom-shirts/top5pct-custom-embroidery-shops-near-me-joliet.jpg',       'alt' => 'Custom embroidered shirts and caps in Joliet Illinois'],
             ['src' => '/images/custom-shirts/top5pct-custom-vinyl-shirts-caps-hoodies.jpg',             'alt' => 'Custom vinyl shirts and heat transfer apparel in Joliet Illinois'],
-            ['src' => '/images/dtf-transfers/toptpct-banner-dtf-transfers-joliet.jpg',                  'alt' => 'DTF transfer prints on shirts in Joliet Illinois'],
+            ['src' => '/images/dtf-transfers/top5pct-banner-dtf-transfers-joliet.jpg',                  'alt' => 'DTF transfer prints on shirts in Joliet Illinois'],
             ['src' => '/images/custom-shirts/top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg',   'alt' => 'Custom holographic shirts in Joliet Illinois'],
         ]"
         visible=2

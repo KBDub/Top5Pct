@@ -164,7 +164,7 @@
         direction="left"
     />
     <x-ui.card-banner-slide-in
-        image="/images/reunion-shirts/toptpct-family-reunion-shirts-joliet-romeoville.jpg"
+        image="/images/reunion-shirts/top5pct-family-reunion-shirts-joliet-romeoville.jpg"
         alt="Custom group shirts and event apparel from Top 5 Percent in Joliet and Romeoville Illinois"
         title="Reunion Shirts, Corporate Wear, and More Available"
         href="/contact"

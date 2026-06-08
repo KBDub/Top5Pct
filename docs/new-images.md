@@ -40,7 +40,7 @@ Move all files from `public/new-images/` into the matching `public/images/` dire
 |---|---|---|
 | `custom-apparel/digital-vinyl/` | `custom-shirts/` + `digital-vinyl/` | **yes** |
 | `custom-apparel/group-shirts/corporate-wear-shirts/` | `corporate-wear/` | no |
-| `custom-apparel/group-shirts/reunion-shirts/` | `reunion-shirts/` | no |
+| `custom-apparel/group-shirts/reunion-shirts/` | `reunion-shirts/` | **yes** |
 | `custom-apparel/group-shirts/spirit-wear-shirts/` | `spirit-wear/` | no |
 | `custom-apparel/printing-options/digital-vinyl/` | `custom-shirts/` + `digital-vinyl/` | **yes** |
 | `custom-apparel/printing-options/dtf-printing/` | `dtf-transfers/` | **yes** |
@@ -646,28 +646,28 @@ These are product photos of vinyl banners. Existing `top5pct-banner-*` files in 
 
 ---
 
-### `pages/custom-apparel/reunion-shirts.blade.php`
+### `pages/custom-apparel/group-wear/reunion-shirts.blade.php`
 
-*New images available: 6 (reunion-shirts/) — 12 eligible slots — 6 Pending (carousel 1–4, card-left, card-right)*
+*All 16 slots complete. Directory: `reunion-shirts/` (own dedicated dir ✓ Rule 3). 6 R1 images placed across hero + carousel + card slots. Hero (slot 1) was pre-existing `toptpct-banner-banner-...` — not R1/R2 (Rule 1 violation). 2-slot swap: R1 `top5pct-family-reunion-shirts-joliet.jpg` promoted from carousel 2 → hero; displaced hero fills carousel 2. Carousel 4 was a broken ref (`top5pct-group-wear.jpg` — file does not exist) — fixed to R1 `top5pct-group-shirts.jpg`; Rule 2 unfixable ("group-shirts" has no "reunion", no reunion-named alt). Rule 4: all pre-existing files had `toptpct-` typo prefix (missing "5") — all 10 renamed to `top5pct-` (8 active, 2 unreferenced in dir). External pages updated: `spirit-wear-shirts.blade.php` and `custom-apparel/index.blade.php` had `toptpct-` reunion refs — fixed via sed. Doc path corrected: was `pages/custom-apparel/reunion-shirts.blade.php` (wrong), now `pages/custom-apparel/group-wear/reunion-shirts.blade.php`. Slot 16 intentional cross-promo, excluded.*
 
 | # | Component | Size | Current Image | Replaced? |
 |---|---|---|---|---|
-| 1 | `category-hero` | full-width × 576px | `reunion-shirts/toptpct-banner-banner-family-reunion-shirts-joliet-shorewood.jpg` | Keep |
-| 2 | `carousel` slot 1 | 600×450px | `reunion-shirts/top5pct-class-reunion-shirt.jpg` | Done |
-| 3 | `carousel` slot 2 | 600×450px | `reunion-shirts/top5pct-family-reunion-shirts-joliet.jpg` | Done |
-| 4 | `carousel` slot 3 | 600×450px | `reunion-shirts/top5pct-family-reunion-tshirts-in-joliet.jpg` | Done |
-| 5 | `carousel` slot 4 | 600×450px | `reunion-shirts/top5pct-group-shirts.jpg` | Done |
-| 6 | `card-image-with-text` (left) | 600×450px | `reunion-shirts/top5pct-reunion-group-shirts.jpg` | Done |
-| 7 | `card-image-with-text` (right) | 600×450px | `reunion-shirts/top5pct-reunion-shirts.jpg` | Done |
-| 8 | `card-2image-with-text` image1 | fluid 4:3, ~50% | `reunion-shirts/toptpct-class-reunion-shirt-templates.gif` | Keep |
-| 9 | `card-2image-with-text` image2 | fluid 4:3, ~50% | `reunion-shirts/toptpct-class-reunion-shirt-templates2.gif` | Keep |
-| 10 | `card-2image-with-text` image1 | fluid 4:3, ~50% | `reunion-shirts/toptpct-family-reunion-shirts-joliet-crest-hill.jpg` | Keep |
-| 11 | `card-2image-with-text` image2 | fluid 4:3, ~50% | `reunion-shirts/toptpct-family-reunion-shirts-joliet-romeoville.jpg` | Keep |
-| 12 | `card-image-with-text` (left) | 600×450px | `reunion-shirts/toptpct-family-reunion-shirts-joliet-plainfield.jpg` | Keep |
-| 13 | `card-detailed-info` image1 | 400×300px | `reunion-shirts/toptpct-article-family-reunion-pic1.jpg` | Keep |
-| 14 | `card-detailed-info` image2 | 400×300px | `reunion-shirts/toptpct-article-family-reunion-pic2.jpg` | Keep |
-| 15 | `card-banner-slide-in` (right→left) | full-width 16:7 | `reunion-shirts/toptpct-family-reunion-shirts-joliet-romeoville.jpg` | Keep |
-| 16 | `card-banner-slide-in` (left→right) | full-width 16:7 | `custom-shirts/top5pct-t-shirt-maker-article-pic1.jpg` | Keep |
+| 1 | `category-hero` | full-width × 576px | `reunion-shirts/top5pct-family-reunion-shirts-joliet.jpg` | Done — Rule 1 fix: 2-slot swap (R1 promoted from carousel 2) |
+| 2 | `carousel` slot 1 | 600×450px | `reunion-shirts/top5pct-class-reunion-shirt.jpg` | Keep (R1, pre-applied, "reunion" ✓) |
+| 3 | `carousel` slot 2 | 600×450px | `reunion-shirts/top5pct-banner-banner-family-reunion-shirts-joliet-shorewood.jpg` | Displaced hero fills vacated slot; Rule 4 rename; "reunion" ✓ |
+| 4 | `carousel` slot 3 | 600×450px | `reunion-shirts/top5pct-family-reunion-tshirts-in-joliet.jpg` | Keep (R1, pre-applied, "reunion" ✓) |
+| 5 | `carousel` slot 4 | 600×450px | `reunion-shirts/top5pct-group-shirts.jpg` | Done — fixes broken `group-wear.jpg` ref; Rule 2 unfixable ("group-shirts" has no "reunion") |
+| 6 | `card-image-with-text` (left) "Class Reunion Shirts" | 600×450px | `reunion-shirts/top5pct-reunion-group-shirts.jpg` | Keep (R1, pre-applied, "reunion" ✓) |
+| 7 | `card-image-with-text` (right) "School Alumni Shirts" | 600×450px | `reunion-shirts/top5pct-reunion-shirts.jpg` | Keep (R1, pre-applied, "reunion" ✓) |
+| 8 | `card-2image-with-text` image1 "Reunion Shirt Templates" | fluid 4:3 | `reunion-shirts/top5pct-class-reunion-shirt-templates.gif` | Done — Rule 4 rename (`toptpct-` → `top5pct-`) |
+| 9 | `card-2image-with-text` image2 "Reunion Shirt Templates" | fluid 4:3 | `reunion-shirts/top5pct-class-reunion-shirt-templates2.gif` | Done — Rule 4 rename |
+| 10 | `card-2image-with-text` image1 "Family Reunion Shirts" | fluid 4:3 | `reunion-shirts/top5pct-family-reunion-shirts-joliet-crest-hill.jpg` | Done — Rule 4 rename |
+| 11 | `card-2image-with-text` image2 "Family Reunion Shirts" | fluid 4:3 | `reunion-shirts/top5pct-family-reunion-shirts-joliet-romeoville.jpg` | Done — Rule 4 rename; also updated in `spirit-wear-shirts.blade.php` |
+| 12 | `card-image-with-text` (left) "Make Your Reunion Special" | 600×450px | `reunion-shirts/top5pct-family-reunion-shirts-joliet-plainfield.jpg` | Done — Rule 4 rename |
+| 13 | `card-detailed-info` image1 | 400×300px | `reunion-shirts/top5pct-article-family-reunion-pic1.jpg` | Done — Rule 4 rename |
+| 14 | `card-detailed-info` image2 | 400×300px | `reunion-shirts/top5pct-article-family-reunion-pic2.jpg` | Done — Rule 4 rename |
+| 15 | `card-banner-slide-in` (direction="right") "Order Your Reunion Shirts Today" | full-width 16:7 | `reunion-shirts/top5pct-family-reunion-shirts-joliet-romeoville.jpg` | Done — Rule 4 rename (same file as slot 11) |
+| 16 | `card-banner-slide-in` (direction="left") "Need Custom Shirts for Another Event?" | full-width 16:7 | `custom-shirts/top5pct-t-shirt-maker-article-pic1.jpg` | Keep — intentional cross-promo, excluded |
 
 ---
 

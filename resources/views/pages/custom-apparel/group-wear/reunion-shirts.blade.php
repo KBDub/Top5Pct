@@ -43,7 +43,7 @@
         primaryButtonHref="#all-products"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/reunion-shirts/toptpct-banner-banner-family-reunion-shirts-joliet-shorewood.jpg"
+        image="/images/reunion-shirts/top5pct-family-reunion-shirts-joliet.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />
@@ -53,9 +53,9 @@
     <x-ui.carousel-rotating-images
         :images="[
             ['src' => '/images/reunion-shirts/top5pct-class-reunion-shirt.jpg', 'alt' => 'Custom family and class reunion shirts in Joliet and Shorewood Illinois'],
-            ['src' => '/images/reunion-shirts/top5pct-family-reunion-shirts-joliet.jpg',                'alt' => 'Class reunion shirts printed in Joliet and Shorewood Illinois'],
+            ['src' => '/images/reunion-shirts/top5pct-banner-banner-family-reunion-shirts-joliet-shorewood.jpg', 'alt' => 'Family reunion shirts banner for Joliet and Shorewood Illinois'],
             ['src' => '/images/reunion-shirts/top5pct-family-reunion-tshirts-in-joliet.jpg',             'alt' => 'Custom family reunion shirts in Joliet and Plainfield Illinois'],
-            ['src' => '/images/reunion-shirts/top5pct-group-wear.jpg',   'alt' => 'Westinghouse class reunion shirts in Joliet and Shorewood Illinois'],
+            ['src' => '/images/reunion-shirts/top5pct-group-shirts.jpg',  'alt' => 'Custom group shirts for reunions and events in Joliet Illinois'],
         ]"
         visible=2
     />
@@ -92,9 +92,9 @@
         <x-sections.cta-quadruple-button-banner />
 
         <x-sections.card-2image-with-text
-            image1="/images/reunion-shirts/toptpct-class-reunion-shirt-templates.gif"
+            image1="/images/reunion-shirts/top5pct-class-reunion-shirt-templates.gif"
             alt1="Class reunion shirt templates available at Top 5 Percent in Joliet Illinois"
-            image2="/images/reunion-shirts/toptpct-class-reunion-shirt-templates2.gif"
+            image2="/images/reunion-shirts/top5pct-class-reunion-shirt-templates2.gif"
             alt2="Family reunion shirt design templates from Top 5 Percent in Joliet Illinois"
             title="Reunion Shirt Templates"
         >
@@ -105,9 +105,9 @@
         </x-sections.card-2image-with-text>
 
         <x-sections.card-2image-with-text
-            image1="/images/reunion-shirts/toptpct-family-reunion-shirts-joliet-crest-hill.jpg"
+            image1="/images/reunion-shirts/top5pct-family-reunion-shirts-joliet-crest-hill.jpg"
             alt1="Family reunion shirts for a group in Joliet and Crest Hill Illinois"
-            image2="/images/reunion-shirts/toptpct-family-reunion-shirts-joliet-romeoville.jpg"
+            image2="/images/reunion-shirts/top5pct-family-reunion-shirts-joliet-romeoville.jpg"
             alt2="Custom family reunion shirts printed for a group in Joliet and Romeoville Illinois"
             title="Family Reunion Shirts"
         >
@@ -119,7 +119,7 @@
         </x-sections.card-2image-with-text>
 
         <x-sections.card-image-with-text
-            image="/images/reunion-shirts/toptpct-family-reunion-shirts-joliet-plainfield.jpg"
+            image="/images/reunion-shirts/top5pct-family-reunion-shirts-joliet-plainfield.jpg"
             alt="Family reunion shirts for a group gathering in Joliet and Plainfield Illinois"
             title="Make Your Reunion Special"
         >
@@ -134,9 +134,9 @@
 
             <x-sections.card-detailed-info
                 heading="How Reunion T-Shirts Make Your Reunion Special"
-                image1="/images/reunion-shirts/toptpct-article-family-reunion-pic1.jpg"
+                image1="/images/reunion-shirts/top5pct-article-family-reunion-pic1.jpg"
                 alt1="Custom family reunion shirts printed in Joliet, Will and DuPage County Illinois"
-                image2="/images/reunion-shirts/toptpct-article-family-reunion-pic2.jpg"
+                image2="/images/reunion-shirts/top5pct-article-family-reunion-pic2.jpg"
                 alt2="Group reunion shirts for families and classes in the Chicagoland area"
             >
                 <x-slot name="intro">
@@ -167,7 +167,7 @@
         name="Euneke Rembert"
     />
     <x-ui.card-banner-slide-in
-        image="/images/reunion-shirts/toptpct-family-reunion-shirts-joliet-romeoville.jpg"
+        image="/images/reunion-shirts/top5pct-family-reunion-shirts-joliet-romeoville.jpg"
         alt="Custom family reunion shirts printed in Joliet and Romeoville Illinois"
         title="Order Your Reunion Shirts Today"
         href="/contact"
