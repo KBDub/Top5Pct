@@ -46,7 +46,7 @@
         primaryButtonHref="#promo-categories"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/custom-shirts/top5pct-banner-custom-apparel-custom-shirts-custom-hoodies-custom-caps.jpg"
+        image="/images/promo-items/mugs/top5pct-custom-mugs.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />
@@ -55,10 +55,10 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/custom-shirts/top5pct-banner-custom-apparel-custom-shirts-custom-hoodies-custom-caps.jpg', 'alt' => 'Custom branded promotional products for businesses in Joliet Illinois'],
-            ['src' => '/images/banners/top5pct-banner-business-banners-joliet-shorewood-crest-hill.jpg',                  'alt' => 'Custom promotional banners and signage in Joliet, Shorewood, and Crest Hill Illinois'],
-            ['src' => '/images/custom-shirts/top5pct-custom-t-shirts-main.jpg',                                          'alt' => 'Custom branded merchandise and promotional apparel in Joliet Illinois'],
-            ['src' => '/images/stickers-decals/top5pct-stickers-decals-joliet-labels.jpg',                               'alt' => 'Custom product labels and promotional stickers in Joliet Illinois'],
+            ['src' => '/images/promo-items/koozies/top5pct-koozies-joliet.jpg',                                          'alt' => 'Custom branded can koozies for events and businesses in Joliet Illinois'],
+            ['src' => '/images/promo-items/mugs/top5pct-custom-printed-mugs.jpg',                                        'alt' => 'Custom printed mugs for corporate gifts and events in Joliet Illinois'],
+            ['src' => '/images/promo-items/koozies/top5pct-personalized-koozies-joliet.jpg',                             'alt' => 'Personalized custom koozies for events and giveaways in Joliet Illinois'],
+            ['src' => '/images/promo-items/mugs/top5pct-picture-on-mugs.jpg',                                            'alt' => 'Custom picture mugs and branded drinkware in Joliet Illinois'],
         ]"
         visible=3
     />
@@ -72,37 +72,37 @@
         id="promo-categories"
         :banners="[
         [
-            'image' => '/images/custom-shirts/top5pct-custom-t-shirts-main.jpg',
+            'image' => '/images/promo-items/mugs/top5pct-custom-coffee-mugs-in-joliet.jpg',
             'alt'   => 'Custom branded mugs and drinkware for businesses in Joliet Illinois',
             'title' => 'Custom Mugs',
             'href'  => '/promotional-items/mugs',
         ],
         [
-            'image' => '/images/custom-shirts/top5pct-custom-brick-shirts-hoodies-cap-joliet.jpg',
+            'image' => '/images/promo-items/koozies/top5pct-can-koozies.jpg',
             'alt'   => 'Custom branded can koozies and drink holders for events in Joliet Illinois',
             'title' => 'Can Koozies',
             'href'  => '/promotional-items/can-koozies',
         ],
         [
-            'image' => '/images/spirit-wear/top5pct-banner-fanwear-spiritwear-uniforms-joliet-shorewood.jpg',
+            'image' => '/images/promo-items/mugs/top5pct-custom-coffee-mugs.jpg',
             'alt'   => 'Custom printed towels for sports teams and events in Joliet Illinois',
             'title' => 'Custom Towels',
             'href'  => '/promotional-items/towels',
         ],
         [
-            'image' => '/images/custom-shirts/top5pct-custom-vinyl-shirts-caps-hoodies.jpg',
+            'image' => '/images/promo-items/koozies/top5pct-custom-koozies.jpg',
             'alt'   => 'Custom branded drink coasters for restaurants and businesses in Joliet Illinois',
             'title' => 'Drink Coasters',
             'href'  => '/promotional-items/drink-coasters',
         ],
         [
-            'image' => '/images/custom-shirts/top5pct-custom-embroidery-shops-near-me-joliet.jpg',
+            'image' => '/images/promo-items/mugs/top5pct-custom-mugs-near-me.jpg',
             'alt'   => 'Custom branded tote bags and drawstring bags for events in Joliet Illinois',
             'title' => 'Tote Bags',
             'href'  => '/promotional-items/tote-bags',
         ],
         [
-            'image' => '/images/banners/top5pct-banner-joliet-romeoville-rockdale-plainfield.jpg',
+            'image' => '/images/promo-items/koozies/top5pct-custom-can-koozies.jpg',
             'alt'   => 'Custom branded mouse pads for corporate gifting in Joliet Illinois',
             'title' => 'Mouse Pads',
             'href'  => '/promotional-items/mouse-pads',
@@ -110,7 +110,7 @@
     ]" />
 
     <x-sections.card-image-with-text
-        image="/images/custom-shirts/top5pct-custom-t-shirts-main.jpg"
+        image="/images/promo-items/mugs/top5pct-printed-mugs.jpg"
         alt="Custom branded promotional products for businesses and events in Joliet Illinois"
         title="Branded Products That Put Your Logo in Your Customers' Hands"
     >
@@ -124,23 +124,23 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/custom-shirts/top5pct-custom-vinyl-shirts-caps-hoodies.jpg',                              'alt' => 'Custom branded promotional merchandise for events in Joliet Illinois'],
-            ['src' => '/images/custom-shirts/top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg',                        'alt' => 'Custom promotional products and branded swag in Joliet Illinois'],
-            ['src' => '/images/stickers-decals/top5pct-stickers-decals-joliet-labels.jpg',                               'alt' => 'Custom product labels and promotional stickers in Joliet Illinois'],
-            ['src' => '/images/custom-shirts/top5pct-banner-custom-apparel-custom-shirts-custom-hoodies-custom-caps.jpg','alt' => 'Custom branded apparel and promotional products in Joliet Illinois'],
+            ['src' => '/images/promo-items/mugs/top5pct-printed-mugs-old.jpg',                                           'alt' => 'Custom printed mugs and branded drinkware for businesses in Joliet Illinois'],
+            ['src' => '/images/custom-shirts/top5pct-long-lasting-graphic-shirts.jpg',                                   'alt' => 'Long-lasting custom graphic shirts and branded apparel in Joliet Illinois'],
+            ['src' => '/images/custom-shirts/top5pct-custom-flock-t-shirt-printing.jpg',                                 'alt' => 'Custom flock t-shirt printing for businesses and events in Joliet Illinois'],
+            ['src' => '/images/custom-shirts/top5pct-flock-hoodie-printing.jpg',                                         'alt' => 'Custom flock hoodie printing for events and corporate orders in Joliet Illinois'],
         ]"
         visible=2
     />
 
     <x-ui.card-banner-slide-in
-        image="/images/custom-shirts/top5pct-custom-t-shirts-main.jpg"
+        image="/images/custom-shirts/top5pct-flock-shirt-vinyl.jpg"
         alt="Custom branded promotional products at Top 5 Percent in Joliet Illinois"
         title="Branded Products Your Clients Will Keep"
         href="/contact"
         direction="left"
     />
     <x-ui.card-banner-slide-in
-        image="/images/custom-shirts/top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg"
+        image="/images/custom-shirts/top5pct-custom-flock-shirt-hoodie-cap-joliet.jpg"
         alt="Branded promotional products and custom giveaways from Top 5 Percent in Joliet Illinois"
         title="Giveaways That Make Impressions, No Minimums"
         href="/contact"

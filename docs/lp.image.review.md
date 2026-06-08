@@ -277,10 +277,12 @@ Slots 14–18 use Custom Shirts Sublimation R1/R2 from staging as cross-category
 | 11 | LP banner 6 "Mouse Pads" | `top5pct-custom-can-koozies.jpg` | `promo-items/koozies/` | R1 ✓ | placeholder — replace when mouse-pads dir created |
 | 12 | `card-image-with-text` | `top5pct-printed-mugs.jpg` | `promo-items/mugs/` | R1 ✓ | |
 | 13 | Carousel 2 slot 1 | `top5pct-printed-mugs-old.jpg` | `promo-items/mugs/` | import-round | |
-| 14 | Carousel 2 slot 2 | `top5pct-custom-sublimation-shirts.jpg` | `custom-shirts/` | R1 ✓ | sublimation R1 — confirm migrated path |
-| 15 | Carousel 2 slot 3 | `top5pct-dye-sublimation-custom-shirt-joliet.jpg` | `custom-shirts/` | R1 ✓ | sublimation R1 — confirm migrated path |
-| 16 | Carousel 2 slot 4 | `top5pct-long-lasting-graphic-shirts.jpg` | `custom-shirts/` | R1 ✓ | sublimation R1 — confirm migrated path |
-| 17 | Slide-in left | `top5pct-sublmation-team-shirts.jpg` | `custom-shirts/` | R1 ✓ | sublimation R1 — confirm migrated path (note: typo in staging filename "sublmation") |
-| 18 | Slide-in right | `top5pct-custom-flock-t-shirt-printing.jpg` | `custom-shirts/` | R1 ✓ | flock R1 — confirm migrated path |
+| 14 | Carousel 2 slot 2 | `top5pct-long-lasting-graphic-shirts.jpg` | `custom-shirts/` | R1 ✓ | sublimation R1, confirmed in dir |
+| 15 | Carousel 2 slot 3 | `top5pct-custom-flock-t-shirt-printing.jpg` | `custom-shirts/` | R1 ✓ | flock R1, confirmed in dir |
+| 16 | Carousel 2 slot 4 | `top5pct-flock-hoodie-printing.jpg` | `custom-shirts/` | R1 ✓ | flock R1, confirmed in dir |
+| 17 | Slide-in left | `top5pct-flock-shirt-vinyl.jpg` | `custom-shirts/` | R1 ✓ | flock R1, confirmed in dir |
+| 18 | Slide-in right | `top5pct-custom-flock-shirt-hoodie-cap-joliet.jpg` | `custom-shirts/` | import-round | confirmed in dir |
 
-*All 18 slots distinct. 13 promo-items images fill slots 1–13. Slots 14–18 use Custom Shirts R1/R2 as cross-category placeholders pending additional promo-items image imports. All 6 LP banners will need to be updated once sub-page heroes are set.*
+*All 18 slots distinct. 13 promo-items images fill slots 1–13 (hero, C1×4, LP banners×6, card-left). Slots 14–18 use Custom Shirts R1/R2 flock and sublimation files as cross-category placeholders (Rule 2 allows) pending additional promo-items image imports. Note: sublimation staging files `custom-sublimation-shirts.jpg`, `dye-sublimation-custom-shirt-joliet.jpg`, `sublmation-team-shirts.jpg` were not yet migrated to `custom-shirts/` at time of apply — flock files used instead. All 6 LP banners will need to be updated once sub-page heroes are set.*
+
+**Status: Applied.**
