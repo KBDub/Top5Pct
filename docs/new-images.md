@@ -21,8 +21,7 @@ Category LPs (e.g. `/stickers`, `/signs`, `/custom-apparel`) are hub pages that 
 |---|---|
 | 1 | **Images always reference sub-category image dirs.** LPs pull images from their child sub-category `public/images/<sub-category>/` directories. No dedicated LP-level dir is created. |
 | 2 | **Cross-category referencing is allowed.** An LP may point to images in any of its child sub-category dirs (e.g. `/stickers` LP can reference both `custom-shaped-stickers-decals/` and `standard-stickers-decals/`). Cross-promo refs to unrelated categories are also fine. |
-| 3 | **Rules 1–3 for sub-category pages do not apply.** No R1/R2 hero requirement, no category-name-in-filename requirement, no per-LP dir. The LP uses whatever sub-category images are already compliant. |
-| 4 | **Rule 4 still applies.** Every image filename referenced in an LP blade must carry the `top5pct-` prefix. |
+| 3 | **Never modify an image filename.** LP images always come from the sub-category page as-is. Only reference existing files — do not rename, prefix, or alter filenames in any way. |
 
 ---
 
