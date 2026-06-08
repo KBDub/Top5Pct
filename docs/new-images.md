@@ -25,6 +25,7 @@ Category LPs (e.g. `/stickers`, `/signs`, `/custom-apparel`) are hub pages that 
 | 3 | **Never modify an image filename.** LP images always come from the sub-category page as-is. Only reference existing files — do not rename, prefix, or alter filenames in any way. |
 | 4 | **Use distinct images — do not repeat.** Each image file should appear no more than once per page across all slots. If inventory is limited across sub-category dirs, repeats are a last resort only. |
 | 5 | **Each LP category banner image must be the hero image of the sub-category page it links to.** For example, the "DTF Transfers" banner on `/custom-apparel` links to `/custom-apparel/printing-options/dtf-printing`, so its image must be `dtf-transfers/top5pct-dtf-t-shirt-printing.jpg` — the exact image used in the `category-hero` on that sub-page. If the sub-category page has not yet been migrated and has no dedicated dir, a visually matching fallback from `custom-shirts/` or the nearest dir is acceptable temporarily. That fallback must be replaced once the sub-page migration is complete. |
+| 6 | **All non-banner image slots on an LP must use R1, R2, R3, or newer files.** This applies to the `category-hero`, carousels, `card-image-with-text`, and `card-banner-slide-in` slots. Pre-migration (older) images must not appear in these slots. LP category banners (Rule 5) are exempt from this rule since they must match the sub-page hero exactly, which may still be an older file pending that sub-page's migration. |
 
 ---
 
