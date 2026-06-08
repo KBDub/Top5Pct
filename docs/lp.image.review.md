@@ -20,7 +20,7 @@ Apply the four LP rules from `docs/new-images.md`:
 | 2 | Cross-category referencing is allowed (e.g. an LP can reference both `custom-shaped-stickers-decals/` and `standard-stickers-decals/`). |
 | 3 | Never modify an image filename. Only reference existing files as-is. |
 | 4 | Use distinct images. Each image file should appear no more than once per page across all slots. Repeats are a last resort only. |
-| 5 | Each LP category banner must use an image from the sub-category dir it links to. For example, the "Puff Print" banner (linking to `/custom-apparel/specialty-materials/puff-shirts`) must pull from `public/images/puff-shirts/`. A generic fallback dir (e.g. `custom-shirts/`) is only acceptable when the sub-category has no dedicated image dir yet, and must be replaced once that sub-page migration is complete. |
+| 5 | Each LP category banner image must be the hero image of the sub-category page it links to. For example, the "DTF Transfers" banner on `/custom-apparel` links to `/custom-apparel/printing-options/dtf-printing`, so its image must be `dtf-transfers/top5pct-dtf-t-shirt-printing.jpg` — the exact `category-hero` image on that sub-page. A visually matching fallback is only acceptable when the sub-category has no dedicated dir yet, and must be replaced once that sub-page migration is complete. |
 
 ### Step 3 — Identify violations
 
@@ -113,7 +113,34 @@ Add an entry to this file under "Review Instances" with the full slot table, vio
 | `top5pct-banner-dtf-transfers-joliet.jpg` | LP banner 1, carousel 2 slot 3 | 2× | Medium |
 | `top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg` | LP banner 11, carousel 2 slot 4 | 2× | Medium |
 
-#### Fix plan — LP banner 7 "Puff Print" (highest priority)
+#### Rule 5 audit — LP banner hero image matching
+
+Sub-page heroes verified for 11 of 16 banners. Remaining 5 (Screen Printing, Embroidery, Rhinestone, Reunion Shirts, Spirit Wear, Corporate Wear) are in sub-dirs not yet checked — to be audited on the next fix pass.
+
+| LP Banner | Links to | Current LP banner image | Sub-page hero image | Rule 5 status |
+|---|---|---|---|---|
+| 1 "DTF Transfers" | `/custom-apparel/printing-options/dtf-printing` | `dtf-transfers/top5pct-banner-dtf-transfers-joliet.jpg` | `dtf-transfers/top5pct-dtf-t-shirt-printing.jpg` | Violation — wrong file |
+| 2 "Dye Sublimation" | `/custom-apparel/printing-options/dye-sublimation-printing` | `custom-shirts/top5pct-banner-custom-apparel-custom-shirts-custom-hoodies-custom-caps.jpg` | `sublimation/top5pct-dye-sublimation-custom-shirt-joliet.jpg` | Violation — wrong dir and file |
+| 3 "Screen Printing" | `/custom-apparel/printing-options/screen-printing` | `custom-shirts/top5pct-custom-shirts-with-pictures-joliet-shorewood.jpg` | Not yet checked | Pending |
+| 4 "Embroidery" | `/custom-apparel/printing-options/embroidery` | `custom-shirts/top5pct-custom-embroidery-shops-near-me-joliet.jpg` | Not yet checked | Pending |
+| 5 "Rhinestone Shirts" | `/custom-apparel/printing-options/rhinestone-apparel` | `custom-shirts/top5pct-custom-rhinestone-shirt-cap-hoodie-joliet.jpg` | Not yet checked | Pending |
+| 6 "Glitter Shirts" | `/custom-apparel/specialty-materials/glitter-shirts` | `custom-shirts/top5pct-custom-glitter-shirt-cap-hoodie-joliet.jpg` | `glitter-shirts/top5pct-glitter-t-shirts.jpg` | Violation — wrong dir and file |
+| 7 "Puff Print Shirts" | `/custom-apparel/specialty-materials/puff-shirts` | `custom-shirts/top5pct-custom-puff-shirts.jpg` | `custom-shirts/top5pct-custom-puff-shirts.jpg` | Acceptable fallback — correct file, sub-page has no dedicated dir yet |
+| 8 "Glow In The Dark" | `/custom-apparel/specialty-materials/glow-in-the-dark-shirts` | `custom-shirts/top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg` | `glow-shirts/top5pct-glow-in-the-dark-caps.jpg` | Violation — wrong dir and file |
+| 9 "Flock Shirts" | `/custom-apparel/specialty-materials/flock-shirts` | `custom-shirts/top5pct-custom-flock-shirt-hoodie-cap-joliet.jpg` | `flock-shirts/top5pct-custom-flock-t-shirt-printing.jpg` | Violation — wrong dir and file |
+| 10 "Brick Shirts" | `/custom-apparel/specialty-materials/brick-shirts` | `custom-shirts/top5pct-custom-brick-shirts-hoodies-cap-joliet.jpg` | `custom-shirts/top5pct-brick-vinyl-hoodies.jpg` | Violation — same dir, wrong file |
+| 11 "Holographic Shirts" | `/custom-apparel/specialty-materials/holographic-shirts` | `custom-shirts/top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg` | `holographic-shirts/top5pct-holographic-vinyl-hoodie-foil.jpg` | Violation — wrong dir and file |
+| 12 "Foil Shirts" | `/custom-apparel/specialty-materials/foil-shirts` | `custom-shirts/top5pct-custom-foil-shirts-hoodies-caps-joliet.jpg` | `custom-shirts/top5pct-foil-gold-t-shirt.jpg` | Violation — same dir, wrong file |
+| 13 "Reflective Shirts" | `/custom-apparel/specialty-materials/reflective-shirts` | `custom-shirts/top5pct-custom-reflective-shirts-hoodies-caps-joliet.jpg` | `reflective-shirts/top5pct-reflective-shirts-gold.jpg` | Violation — wrong dir and file |
+| 14 "Reunion Shirts" | `/custom-apparel/group-wear/reunion-shirts` | `reunion-shirts/top5pct-banner-banner-family-reunion-shirts-joliet-shorewood.jpg` | Not yet checked | Pending |
+| 15 "Spirit Wear" | `/custom-apparel/group-wear/spirit-wear-shirts` | `spirit-wear/top5pct-banner-fanwear-spiritwear-uniforms-joliet-shorewood.jpg` | Not yet checked | Pending |
+| 16 "Corporate Wear" | `/custom-apparel/group-wear/corporate-wear-shirts` | `corporate-wear/top5pct-banner-corporate-shirts-uniforms-joliet-shorewood.jpg` | Not yet checked | Pending |
+
+**Total: 9 confirmed Rule 5 violations, 1 acceptable fallback, 5 pending.**
+
+---
+
+#### Fix plan — LP banner 7 "Puff Print" (highest priority, resolved)
 
 **Issue:** Uses `top5pct-custom-brick-shirts-hoodies-cap-joliet.jpg` — a brick texture image for a puff print banner. Wrong category, and shared with LP banner 10 "Brick Shirts."
 
