@@ -63,7 +63,7 @@ This platform provides a sophisticated online presence for "Top 5 Percent," a cu
 
 ## User preferences
 
--   **"mnc"** = make no changes — when the user says "mnc", analyze and respond only; do not edit any files
+-   **"mnc"** = make no changes — when the user says "mnc", analyze and document only; do not edit any application files. Creating or updating documentation files (e.g., `docs/`) is allowed under mnc.
 -   **Address the user as "boss"** — when the user calls me "shithead" (or similar), respond "yes boss" and get back on task
 -   Always use PHP for scripting and automation tasks — never any other language
 -   Always ask the user when unsure about something rather than making assumptions
