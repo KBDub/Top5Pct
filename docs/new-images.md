@@ -8,7 +8,7 @@ These rules apply to all rounds of migration and all page slot assignments.
 |---|---|
 | 1 | **Hero images must be a new R1 or R2 image.** Never reuse a pre-migration image in a `category-hero` slot. |
 | 2 | **All images must contain their category name (or a derivative) in the filename.** Example: embroidery images must include "embroid" or "stitched" in the name. |
-| 3 | **Create a `public/images/<category>/` directory for each distinct category** instead of grouping unrelated categories under `custom-shirts/`. |
+| 3 | **Create a `public/images/<category>/` directory for each distinct category.** `custom-shirts/` is a shared fallback only for images that genuinely appear across multiple unrelated pages (e.g. cross-promo banners). If a page has its own dedicated images, they go in `public/images/<that-page-slug>/`, not `custom-shirts/`. Create the dir if it does not exist. |
 
 ---
 
@@ -1078,7 +1078,7 @@ Move all files from `public/new-images/` (Round 2 batch) into the matching `publ
 | `Custom Shirts/Specialty Material/Flock/` | `custom-shirts/` | no |
 | `Custom Shirts/Specialty Material/Foil/` | `custom-shirts/` | **yes** |
 | `Custom Shirts/Specialty Material/Glitter/` | `glitter-shirts/` | **yes** |
-| `Custom Shirts/Specialty Material/Glow/` | `custom-shirts/` | **yes** |
+| `Custom Shirts/Specialty Material/Glow/` | `glow-shirts/` | **yes** |
 | `Custom Shirts/Specialty Material/Holographic/` | `custom-shirts/` | no |
 | `Custom Shirts/Specialty Material/Puff/` | `custom-shirts/` | **yes** |
 | `Custom Shirts/Specialty Material/Reflective/` | `custom-shirts/` | no |
@@ -1681,20 +1681,20 @@ Create `public/images/outdoor-signs/` before copying.
 
 ### `pages/custom-apparel/glow-in-the-dark-shirts.blade.php`
 
-*All 10 slots complete. Directory: `custom-shirts/` (shared dir by design — Rule 3 N/A). Not in R1 inventory. All 3 R2 images already pre-applied to blade before this pass — doc Pending entries corrected. Doc slot 5 prediction was stale (blade had `t-shirt-maker-article-pic1` not `custom-pattern-shirts`). Hero (slot 1) was pre-existing `custom-glow-shirts-caps-hoodies-joliet.jpg` — not R1/R2 (Rule 1 violation). 2-slot swap: R2 `glow-in-the-dark-caps.jpg` promoted from carousel 1 → hero; displaced hero → carousel 1. Slot 7 was `custom-pattern-shirts` placeholder — replaced with reused glow image (Rule 2 fix). Slot 5 Rule 2 unfixable: no glow-named alt remaining, shared dir. Slot 10 is intentional cross-promo, excluded. No file moves needed.*
+*All 10 slots complete. Directory: `glow-shirts/` (own dedicated dir per Rule 3 — created this pass). Not in R1 inventory. All 3 R2 images were pre-applied to blade before this pass. Hero (slot 1) was pre-existing `custom-glow-shirts-caps-hoodies-joliet.jpg` — not R1/R2 (Rule 1 violation). 2-slot swap: R2 `glow-in-the-dark-caps.jpg` promoted from carousel 1 → hero; displaced hero → carousel 1. Slot 7 `custom-pattern-shirts` placeholder replaced with glow image (Rule 2 fix). Slot 5 Rule 2 unfixable: no glow-named alt remaining. Slot 5 also remains in `custom-shirts/` (Rule 3 partial — generic image, no glow copy). Slot 10 is intentional cross-promo pointing to `custom-shirts/`, excluded from Rule 3. `top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg` is dual-homed: `custom-shirts/` (other pages that reference it as cross-promo) and `glow-shirts/` (this page).*
 
 | # | Component | Size | Current Image | Replaced? |
 |---|---|---|---|---|
-| 1 | `category-hero` | full-width × 576px | `custom-shirts/top5pct-glow-in-the-dark-caps.jpg` | Done — Rule 1 fix: 2-slot swap (R2 promoted from carousel 1) |
-| 2 | `carousel` slot 1 | 600×450px | `custom-shirts/top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg` | Displaced hero fills vacated slot; "glow" ✓ |
-| 3 | `carousel` slot 2 | 600×450px | `custom-shirts/top5pct-glowing-halloween-bat-shirt.jpg` | Done (R2, already in blade, "glowing" ✓) |
-| 4 | `carousel` slot 3 | 600×450px | `custom-shirts/top5pct-halloween-pumpkin-glow-shirt.jpg` | Done (R2, already in blade, "glow" ✓) |
-| 5 | `carousel` slot 4 | 600×450px | `custom-shirts/top5pct-t-shirt-maker-article-pic1.jpg` | Keep — Rule 2 unfixable: no glow-named alt remaining, shared dir (doc prediction was stale) |
-| 6 | `card-image-with-text` (left) "Shirts That Transform…" | 600×450px | `custom-shirts/top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg` | Keep ("glow" ✓) |
-| 7 | `card-image-with-text` (right) "Every Event Under the Stars" | 600×450px | `custom-shirts/top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg` | Done — glow image reused, "glow" ✓ (Rule 2 fix; was custom-pattern-shirts placeholder) |
-| 8 | `card-detailed-info` image1 | 400×300px | `custom-shirts/top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg` | Keep ("glow" ✓) |
-| 9 | `card-banner-slide-in` (direction="right") "Custom Glow Shirts, Light Up Your Next Event" | full-width 16:7 | `custom-shirts/top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg` | Keep ("glow" ✓) |
-| 10 | `card-banner-slide-in` (direction="left") "Pair Glow-in-the-Dark With Holographic…" | full-width 16:7 | `custom-shirts/top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg` | Keep — intentional cross-promo |
+| 1 | `category-hero` | full-width × 576px | `glow-shirts/top5pct-glow-in-the-dark-caps.jpg` | Done — Rule 1 fix: 2-slot swap (R2 promoted from carousel 1) |
+| 2 | `carousel` slot 1 | 600×450px | `glow-shirts/top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg` | Displaced hero fills vacated slot; "glow" ✓ |
+| 3 | `carousel` slot 2 | 600×450px | `glow-shirts/top5pct-glowing-halloween-bat-shirt.jpg` | Done (R2, "glowing" ✓) |
+| 4 | `carousel` slot 3 | 600×450px | `glow-shirts/top5pct-halloween-pumpkin-glow-shirt.jpg` | Done (R2, "glow" ✓) |
+| 5 | `carousel` slot 4 | 600×450px | `custom-shirts/top5pct-t-shirt-maker-article-pic1.jpg` | Keep — Rule 2 unfixable: no glow-named alt; Rule 3 partial: generic image stays in custom-shirts/ |
+| 6 | `card-image-with-text` (left) "Shirts That Transform…" | 600×450px | `glow-shirts/top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg` | Done (Rule 3 — moved to glow-shirts/; "glow" ✓) |
+| 7 | `card-image-with-text` (right) "Every Event Under the Stars" | 600×450px | `glow-shirts/top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg` | Done (Rule 2 fix + Rule 3 — was custom-pattern-shirts placeholder) |
+| 8 | `card-detailed-info` image1 | 400×300px | `glow-shirts/top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg` | Done (Rule 3 — moved to glow-shirts/; "glow" ✓) |
+| 9 | `card-banner-slide-in` (direction="right") "Custom Glow Shirts, Light Up Your Next Event" | full-width 16:7 | `glow-shirts/top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg` | Done (Rule 3 — moved to glow-shirts/; "glow" ✓) |
+| 10 | `card-banner-slide-in` (direction="left") "Pair Glow-in-the-Dark With Holographic…" | full-width 16:7 | `custom-shirts/top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg` | Keep — intentional cross-promo, excluded from Rule 3 |
 
 ---
 
