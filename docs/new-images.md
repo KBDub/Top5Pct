@@ -39,7 +39,7 @@ Move all files from `public/new-images/` into the matching `public/images/` dire
 | `public/new-images/` source | `public/images/` destination | New dir? |
 |---|---|---|
 | `custom-apparel/digital-vinyl/` | `custom-shirts/` + `digital-vinyl/` | **yes** |
-| `custom-apparel/group-shirts/corporate-wear-shirts/` | `corporate-wear/` | no |
+| `custom-apparel/group-shirts/corporate-wear-shirts/` | `corporate-wear/` | **yes** |
 | `custom-apparel/group-shirts/reunion-shirts/` | `reunion-shirts/` | **yes** |
 | `custom-apparel/group-shirts/spirit-wear-shirts/` | `spirit-wear/` | no |
 | `custom-apparel/printing-options/digital-vinyl/` | `custom-shirts/` + `digital-vinyl/` | **yes** |
@@ -623,26 +623,26 @@ These are product photos of vinyl banners. Existing `top5pct-banner-*` files in 
 
 ---
 
-### `pages/custom-apparel/corporate-wear-shirts.blade.php`
+### `pages/custom-apparel/group-wear/corporate-wear-shirts.blade.php`
 
-*New images available: 7 (corporate-wear-shirts/) — 11 eligible slots — 7 Pending (carousel 1–4, card-left, card-right, card-2image image1)*
+*All 14 slots complete. Directory: `corporate-wear/` (own dedicated dir ✓ Rule 3). 8 R1 images placed across hero + carousel + card slots. Hero (slot 1) was pre-existing `toptpct-banner-...` — not R1/R2 (Rule 1 violation). 2-slot swap: R1 `top5pct-custom-business-shirts.jpg` promoted from carousel 3 → hero; displaced hero fills carousel 3. Rule 4: 8 pre-existing files had `toptpct-` typo prefix — all 8 renamed to `top5pct-` (5 active, 3 unreferenced in dir). Rule 2: slots 2, 3, 5, 13 filenames lack clear corporate derivative — R1 provided names, unfixable. Slot 9 doc was stale (showed `toptpct-custom-hoodie-pullover-...`) — blade already had R1 `top5pct-custom-company-apparel.jpg` applied. Doc path corrected: was `pages/custom-apparel/corporate-wear-shirts.blade.php` (wrong), now `pages/custom-apparel/group-wear/corporate-wear-shirts.blade.php`. Slot 14 intentional cross-promo, excluded.*
 
 | # | Component | Size | Current Image | Replaced? |
 |---|---|---|---|---|
-| 1 | `category-hero` | full-width × 576px | `corporate-wear/toptpct-banner-corporate-shirts-uniforms-joliet-shorewood.jpg` | Keep |
-| 2 | `carousel` slot 1 | 600×450px | `corporate-wear/top5pct-custom-apron-joliet.jpg` | Done |
-| 3 | `carousel` slot 2 | 600×450px | `corporate-wear/top5pct-custom-aprons-joliet.jpg` | Done |
-| 4 | `carousel` slot 3 | 600×450px | `corporate-wear/top5pct-custom-business-shirts.jpg` | Done |
-| 5 | `carousel` slot 4 | 600×450px | `corporate-wear/top5pct-custom-pocket-shirt-joliet.jpg` | Done |
-| 6 | `card-image-with-text` (left) | 600×450px | `corporate-wear/top5pct-landscaping-clothing-joliet.jpg` | Done |
-| 7 | `card-image-with-text` (right) | 600×450px | `corporate-wear/top5pct-lawn-care-clothing.jpg` | Done |
-| 8 | `card-2image-with-text` image1 | fluid 4:3, ~50% | `corporate-wear/top5pct-safety-work-gear-joliet.jpg` | Done |
-| 9 | `card-2image-with-text` image2 | fluid 4:3, ~50% | `corporate-wear/toptpct-custom-hoodie-pullover-joliet-shorewood.jpg` | Keep |
-| 10 | `card-image-with-text` (left) | 600×450px | `corporate-wear/toptpct-custom-cap-hat-joliet-shorewood-rockdale.jpg` | Keep |
-| 11 | `card-detailed-info` image1 | 400×300px | `corporate-wear/toptpct-article-corporate-wear-pic1.jpg` | Keep |
-| 12 | `card-detailed-info` image2 | 400×300px | `corporate-wear/toptpct-article-corporate-wear-pic2.jpg` | Keep |
-| 13 | `card-banner-slide-in` (right→left) | full-width 16:7 | `corporate-wear/toptpct-custom-button-up-shirt-joliet-shorewood.jpg` | Keep |
-| 14 | `card-banner-slide-in` (left→right) | full-width 16:7 | `spirit-wear/top5pct-plainfield-south-high-school-hoodie.jpg` | Keep |
+| 1 | `category-hero` | full-width × 576px | `corporate-wear/top5pct-custom-business-shirts.jpg` | Done — Rule 1 fix: 2-slot swap (R1 promoted from carousel 3) |
+| 2 | `carousel` slot 1 | 600×450px | `corporate-wear/top5pct-custom-apron-joliet.jpg` | Keep (R1); Rule 2 unfixable ("apron") |
+| 3 | `carousel` slot 2 | 600×450px | `corporate-wear/top5pct-custom-aprons-joliet.jpg` | Keep (R1); Rule 2 unfixable ("aprons") |
+| 4 | `carousel` slot 3 | 600×450px | `corporate-wear/top5pct-banner-corporate-shirts-uniforms-joliet-shorewood.jpg` | Displaced hero fills vacated slot; Rule 4 rename; "corporate" ✓ Rule 2 |
+| 5 | `carousel` slot 4 | 600×450px | `corporate-wear/top5pct-custom-pocket-shirt-joliet.jpg` | Keep (R1); Rule 2 unfixable ("pocket-shirt") |
+| 6 | `card-image-with-text` (left) "Custom Polo Shirts" | 600×450px | `corporate-wear/top5pct-landscaping-clothing-joliet.jpg` | Keep (R1); "clothing" ✓ derivative |
+| 7 | `card-image-with-text` (right) "Custom Work Uniforms" | 600×450px | `corporate-wear/top5pct-lawn-care-clothing.jpg` | Keep (R1); "clothing" ✓ derivative |
+| 8 | `card-2image-with-text` image1 "Corporate Wear Builds Your Brand" | fluid 4:3 | `corporate-wear/top5pct-safety-work-gear-joliet.jpg` | Keep (R1); "work-gear" ✓ derivative |
+| 9 | `card-2image-with-text` image2 "Corporate Wear Builds Your Brand" | fluid 4:3 | `corporate-wear/top5pct-custom-company-apparel.jpg` | Keep (R1, blade already applied — doc was stale); "company-apparel" ✓ |
+| 10 | `card-image-with-text` (left) "Custom Caps and Accessories" | 600×450px | `corporate-wear/top5pct-custom-cap-hat-joliet-shorewood-rockdale.jpg` | Done — Rule 4 rename; Rule 2 unfixable ("cap/hat") |
+| 11 | `card-detailed-info` image1 | 400×300px | `corporate-wear/top5pct-article-corporate-wear-pic1.jpg` | Done — Rule 4 rename; "corporate-wear" ✓ |
+| 12 | `card-detailed-info` image2 | 400×300px | `corporate-wear/top5pct-article-corporate-wear-pic2.jpg` | Done — Rule 4 rename; "corporate-wear" ✓ |
+| 13 | `card-banner-slide-in` `direction="right"` "Professional Corporate Wear in Joliet" | full-width 16:7 | `corporate-wear/top5pct-custom-button-up-shirt-joliet-shorewood.jpg` | Done — Rule 4 rename; Rule 2 unfixable ("button-up-shirt") |
+| 14 | `card-banner-slide-in` `direction="left"` "Employee Uniforms and Team Apparel..." | full-width 16:7 | `spirit-wear/top5pct-plainfield-south-high-school-hoodie.jpg` | Keep — intentional cross-promo, excluded |
 
 ---
 

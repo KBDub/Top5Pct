@@ -43,7 +43,7 @@
         primaryButtonHref="#all-products"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/corporate-wear/toptpct-banner-corporate-shirts-uniforms-joliet-shorewood.jpg"
+        image="/images/corporate-wear/top5pct-custom-business-shirts.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />
@@ -54,7 +54,7 @@
         :images="[
             ['src' => '/images/corporate-wear/top5pct-custom-apron-joliet.jpg', 'alt' => 'Custom corporate shirts and uniforms in Joliet and Shorewood Illinois'],
             ['src' => '/images/corporate-wear/top5pct-custom-aprons-joliet.jpg',   'alt' => 'Custom embroidered polo shirts for businesses in Joliet, Shorewood, and Crest Hill Illinois'],
-            ['src' => '/images/corporate-wear/top5pct-custom-business-shirts.jpg',       'alt' => 'Custom branded corporate t-shirts in Joliet and Shorewood Illinois'],
+            ['src' => '/images/corporate-wear/top5pct-banner-corporate-shirts-uniforms-joliet-shorewood.jpg', 'alt' => 'Custom corporate shirts and uniforms banner in Joliet and Shorewood Illinois'],
             ['src' => '/images/corporate-wear/top5pct-custom-pocket-shirt-joliet.jpg',          'alt' => 'Custom branded hoodies and pullovers for businesses in Joliet and Shorewood Illinois'],
         ]"
         visible=2
@@ -105,7 +105,7 @@
         </x-sections.card-2image-with-text>
 
         <x-sections.card-image-with-text
-            image="/images/corporate-wear/toptpct-custom-cap-hat-joliet-shorewood-rockdale.jpg"
+            image="/images/corporate-wear/top5pct-custom-cap-hat-joliet-shorewood-rockdale.jpg"
             alt="Custom branded caps and hats printed for businesses in Joliet Shorewood and Rockdale Illinois"
             title="Custom Caps and Accessories"
         >
@@ -120,9 +120,9 @@
 
             <x-sections.card-detailed-info
                 heading="The Importance of Corporate Wear for Your Business"
-                image1="/images/corporate-wear/toptpct-article-corporate-wear-pic1.jpg"
+                image1="/images/corporate-wear/top5pct-article-corporate-wear-pic1.jpg"
                 alt1="Custom corporate wear and branded employee uniforms in Joliet Illinois"
-                image2="/images/corporate-wear/toptpct-article-corporate-wear-pic2.jpg"
+                image2="/images/corporate-wear/top5pct-article-corporate-wear-pic2.jpg"
                 alt2="Professional corporate apparel printed for businesses in Will and DuPage County"
             >
                 <x-slot name="intro">
@@ -151,7 +151,7 @@
         name="Vicky Donis"
     />
     <x-ui.card-banner-slide-in
-        image="/images/corporate-wear/toptpct-custom-button-up-shirt-joliet-shorewood.jpg"
+        image="/images/corporate-wear/top5pct-custom-button-up-shirt-joliet-shorewood.jpg"
         alt="Custom corporate wear and branded employee uniforms in Joliet and Shorewood Illinois"
         title="Professional Corporate Wear in Joliet"
         href="/contact"
