@@ -47,7 +47,7 @@
         primaryButtonHref="#all-products"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/yard-signs/top5pct-banner-yard-signs-joliet-shorewood-crest-hill.jpg"
+        image="/images/yard-signs/top5pct-custom-yard-signs-joliet.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />
@@ -56,7 +56,7 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/yard-signs/top5pct-custom-yard-signs-joliet.jpg',  'alt' => 'Custom yard signs and lawn signs printed in Joliet, Shorewood, and Crest Hill Illinois'],
+            ['src' => '/images/yard-signs/top5pct-banner-yard-signs-joliet-shorewood-crest-hill.jpg', 'alt' => 'Custom yard signs and lawn signs printed in Joliet, Shorewood, and Crest Hill Illinois'],
             ['src' => '/images/yard-signs/top5pct-lawn-signs.jpg',                              'alt' => 'Custom yard signs for businesses and events in Joliet Illinois'],
             ['src' => '/images/yard-signs/top5pct-yard-sign-joliet.jpg',          'alt' => 'Real estate and campaign yard signs in Joliet, Plainfield, and New Lenox Illinois'],
             ['src' => '/images/yard-signs/top5pct-yard-signs-joliet.jpg',         'alt' => 'Corrugated plastic yard signs printed in Joliet, Shorewood, and Romeoville Illinois'],
@@ -95,8 +95,8 @@
         <x-sections.card-2image-with-text
             image1="/images/yard-signs/top5pct-yard-signs-joliet-shorewood-romeoville.jpg"
             alt1="Corrugated plastic yard signs printed for customers in Joliet, Shorewood, and Romeoville"
-            image2="/images/yard-signs/top5pct-table-signs-joliet-shorewood-plainfield.jpg"
-            alt2="Custom table top signs printed in Joliet, Shorewood, and Plainfield Illinois"
+            image2="/images/yard-signs/top5pct-yard-signs-joliet-old.jpg"
+            alt2="Custom yard signs and corrugated plastic signs printed in Joliet and Shorewood Illinois"
             title="Corrugated Plastic and Table Signs"
         >
             <p class="mb-4">We print on corrugated plastic because it is the best material for the price. Corrugated plastic is lightweight but strong. It does not crack or warp in cold weather and it resists moisture so your design stays looking sharp through rain and shine. We can print on one side or both sides depending on how you plan to use the sign. Optional metal H stakes make it easy to push your sign right into the ground with no tools required. If you need something heavier and more permanent, we can also print on aluminum for a sign that will last for many years outdoors.</p>

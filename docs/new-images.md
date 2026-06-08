@@ -58,7 +58,7 @@ Move all files from `public/new-images/` into the matching `public/images/` dire
 | `signs/business-signs/wall-signs/` | `wall-signs/` | **yes** |
 | `signs/business-signs/window-signs/` | `window-wall-floor-decals/` | **yes** |
 | `signs/ground-signs/a-frame-signs/` | `sidewalk-signs/` | **yes** |
-| `signs/ground-signs/yard-signs/` | `yard-signs/` | no |
+| `signs/ground-signs/yard-signs/` | `yard-signs/` | **yes** |
 | `signs/table-signs/table-cloths/` | `table-runners/` | no |
 | `signs/table-signs/table-runners/` | `table-runners/` | no |
 | `stickers/custom-shaped/` | `stickers-decals/` | **yes** |
@@ -756,22 +756,22 @@ These are product photos of vinyl banners. Existing `top5pct-banner-*` files in 
 
 ### `pages/signs/yard-signs.blade.php`
 
-*New images available: 5 (yard-signs/) — 9 eligible slots — 5 Pending (carousel 1–4, card-left)*
+*All 12 slots complete. Directory: `yard-signs/` (Rule 3 applied, dir and refs already correct). Hero updated via 2-slot swap: R1 `top5pct-custom-yard-signs-joliet.jpg` promoted from carousel 1 to hero (Rule 1 fix), displaced hero `top5pct-banner-yard-signs-joliet-shorewood-crest-hill.jpg` fills carousel 1. Slot 9 image replaced for Rule 2: `top5pct-table-signs-joliet-shorewood-plainfield.jpg` → `top5pct-yard-signs-joliet-old.jpg` (already in dir, only used by this blade). Cross-promo slide-in (slot 12) intentionally excluded, stays in `banners/`.*
 
 | # | Component | Size | Current Image | Replaced? |
 |---|---|---|---|---|
-| 1 | `category-hero` | full-width × 576px | `yard-signs/top5pct-banner-yard-signs-joliet-shorewood-crest-hill.jpg` | Keep |
-| 2 | `carousel` slot 1 | 600×450px | `yard-signs/top5pct-custom-yard-signs-joliet.jpg` | Done |
-| 3 | `carousel` slot 2 | 600×450px | `yard-signs/top5pct-lawn-signs.jpg` | Done |
-| 4 | `carousel` slot 3 | 600×450px | `yard-signs/top5pct-yard-sign-joliet.jpg` | Done |
-| 5 | `carousel` slot 4 | 600×450px | `yard-signs/top5pct-yard-signs-joliet.jpg` | Done |
-| 6 | `card-image-with-text` (left) | 600×450px | `yard-signs/top5pct-yard-signs.jpg` | Done |
-| 7 | `card-image-with-text` (right) | 600×450px | `yard-signs/top5pct-yard-signs-joliet-plainfied-new-lenox.jpg` | Keep |
-| 8 | `card-2image-with-text` image1 | fluid 4:3, ~50% | `yard-signs/top5pct-yard-signs-joliet-shorewood-romeoville.jpg` | Keep |
-| 9 | `card-2image-with-text` image2 | fluid 4:3, ~50% | `yard-signs/top5pct-table-signs-joliet-shorewood-plainfield.jpg` | Keep |
-| 10 | `card-detailed-info` image1 | 400×300px | `yard-signs/top5pct-article-yard-signs-buy.jpg` | Keep |
-| 11 | `card-banner-slide-in` (right→left) | full-width 16:7 | `yard-signs/top5pct-yard-signs-joliet-plainfied-new-lenox.jpg` | Keep |
-| 12 | `card-banner-slide-in` (left→right) | full-width 16:7 | `banners/top5pct-banners-business-joliet-shorewood-crest-hill.jpg` | Keep |
+| 1 | `category-hero` | full-width × 576px | `yard-signs/top5pct-custom-yard-signs-joliet.jpg` | Done — Rule 1: 2-slot swap (R1 promoted from carousel 1) |
+| 2 | `carousel` slot 1 | 600×450px | `yard-signs/top5pct-banner-yard-signs-joliet-shorewood-crest-hill.jpg` | Done — displaced hero fills vacated slot; "yard-signs" ✓ |
+| 3 | `carousel` slot 2 | 600×450px | `yard-signs/top5pct-lawn-signs.jpg` | Done (R2); lawn-signs = yard sign synonym ✓ |
+| 4 | `carousel` slot 3 | 600×450px | `yard-signs/top5pct-yard-sign-joliet.jpg` | Done (R2); "yard-sign" ✓ |
+| 5 | `carousel` slot 4 | 600×450px | `yard-signs/top5pct-yard-signs-joliet.jpg` | Done (R2); "yard-signs" ✓ |
+| 6 | `card-image-with-text` (left) | 600×450px | `yard-signs/top5pct-yard-signs.jpg` | Done (R2); "yard-signs" ✓ |
+| 7 | `card-image-with-text` (right) | 600×450px | `yard-signs/top5pct-yard-signs-joliet-plainfied-new-lenox.jpg` | Keep; "yard-signs" ✓ |
+| 8 | `card-2image-with-text` image1 | fluid 4:3, ~50% | `yard-signs/top5pct-yard-signs-joliet-shorewood-romeoville.jpg` | Keep; "yard-signs" ✓ |
+| 9 | `card-2image-with-text` image2 | fluid 4:3, ~50% | `yard-signs/top5pct-yard-signs-joliet-old.jpg` | Done — Rule 2 fix; replaces `top5pct-table-signs-joliet-shorewood-plainfield.jpg`; "yard-signs" ✓ |
+| 10 | `card-detailed-info` image1 | 400×300px | `yard-signs/top5pct-article-yard-signs-buy.jpg` | Keep; "yard-signs" ✓ |
+| 11 | `card-banner-slide-in` (left) | full-width 16:7 | `yard-signs/top5pct-yard-signs-joliet-plainfied-new-lenox.jpg` | Keep; same file as slot 7 |
+| 12 | `card-banner-slide-in` (right) cross-promo | full-width 16:7 | `banners/top5pct-banners-business-joliet-shorewood-crest-hill.jpg` | Excluded — intentional cross-promo |
 
 ---
 
