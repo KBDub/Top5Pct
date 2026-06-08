@@ -47,7 +47,7 @@
         primaryButtonHref="#all-products"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/vinyl/custom-vinyl-shirts.jpg"
+        image="/images/vinyl/top5pct-vinyl-shirts.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />
@@ -56,7 +56,7 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/vinyl/vinyl-shirts.jpg',         'alt' => 'Custom vinyl shirts made with heat press in Joliet Illinois'],
+            ['src' => '/images/vinyl/custom-vinyl-shirts.jpg',   'alt' => 'Custom vinyl shirts made with heat press in Joliet Illinois'],
             ['src' => '/images/vinyl/vinyl-hoodie.jpg',         'alt' => 'Custom vinyl hoodies pressed in Joliet and Shorewood Illinois'],
             ['src' => '/images/vinyl/vinyl-caps.jpg',           'alt' => 'Custom vinyl hats and caps in Joliet, Will and DuPage County Illinois'],
             ['src' => '/images/vinyl/vinyl-zip-up-hoodies.jpg', 'alt' => 'Vinyl zip-up hoodies custom pressed in Joliet Illinois'],
@@ -119,8 +119,8 @@
 
     <x-sections.card-detailed-info
         heading="5 Reasons Vinyl Shirts Are a Smart Choice"
-        image1="/images/vinyl/custom-vinyl-shirts.jpg"
-        alt1="Custom vinyl shirts and apparel made in Joliet, Will and DuPage County Illinois"
+        image1="/images/vinyl/top5pct-vinyl-t-shirt-maker.jpg"
+        alt1="Custom vinyl shirt maker and heat press apparel in Joliet, Will and DuPage County Illinois"
     >
         <x-slot name="intro">
             <p class="mb-4">Vinyl shirts have been a popular choice for custom apparel for a long time, and for good reason. Heat press vinyl gives you a clean, durable, professional result on almost any type of garment. We have been pressing vinyl shirts, hoodies, hats, and other apparel for customers throughout Joliet, Shorewood, Crest Hill, and Will and DuPage County since 2017, and our full <a href="/custom-apparel" class="link-notification">custom apparel</a> shop means you can pair vinyl shirts with embroidery, DTF, screen printing, and more all in one order. Here are five reasons why vinyl is worth choosing for your next custom apparel order.</p>

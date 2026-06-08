@@ -426,6 +426,28 @@ These are product photos of vinyl banners. Existing `top5pct-banner-*` files in 
 
 ---
 
+### `pages/custom-apparel/specialty-materials/vinyl.blade.php`
+
+*All 13 slots complete. Directory: `vinyl/` (pre-existing dir — not created by R1/R2 migration; Rule 3 already satisfied). All pre-existing originals in `vinyl/` are non-prefixed. R1 copies live in `custom-shirts/`; 2 R1 files brought into `vinyl/` this pass. Hero (slot 1) was pre-existing `custom-vinyl-shirts.jpg` — not R1/R2 (Rule 1 violation). 2-slot swap: R1 `top5pct-vinyl-shirts.jpg` copied from `custom-shirts/` → `vinyl/`, promoted to hero; displaced `custom-vinyl-shirts.jpg` → carousel 1. Slot 11 dedup fix: `custom-vinyl-shirts.jpg` appeared in slots 1, 6, 11 — replaced in slot 11 with R1 `top5pct-vinyl-t-shirt-maker.jpg` (copied from `custom-shirts/` → `vinyl/`; "vinyl" ✓). File rename this pass: `vinyl-t-shirt maker.jpg` (space) → `vinyl-t-shirt-maker.jpg`. Rules 2 and 3 were fully satisfied before this pass — no other changes needed.*
+
+| # | Component | Size | Current Image | Replaced? |
+|---|---|---|---|---|
+| 1 | `category-hero` | full-width × 576px | `vinyl/top5pct-vinyl-shirts.jpg` | Done — Rule 1 fix: 2-slot swap (R1 copied from `custom-shirts/`) |
+| 2 | `carousel` slot 1 | 600×450px | `vinyl/custom-vinyl-shirts.jpg` | Displaced hero fills vacated slot; "vinyl" ✓ |
+| 3 | `carousel` slot 2 | 600×450px | `vinyl/vinyl-hoodie.jpg` | Keep (pre-existing, "vinyl" ✓) |
+| 4 | `carousel` slot 3 | 600×450px | `vinyl/vinyl-caps.jpg` | Keep (pre-existing, "vinyl" ✓) |
+| 5 | `carousel` slot 4 | 600×450px | `vinyl/vinyl-zip-up-hoodies.jpg` | Keep (pre-existing, "vinyl" ✓) |
+| 6 | `card-image-with-text` (left) "Vinyl Shirts With Sharp, Clean Designs" | 600×450px | `vinyl/custom-vinyl-shirts.jpg` | Keep (pre-existing, "vinyl" ✓) |
+| 7 | `card-image-with-text` (right) "Vinyl Hoodies and Sweatshirts" | 600×450px | `vinyl/custom-vinyl-hoodies.jpg` | Keep (pre-existing, "vinyl" ✓) |
+| 8 | `card-2image-with-text` image1 "Vinyl Hats, Caps, and Specialty Colors" | 600×450px | `vinyl/custom-caps-vinyl.jpg` | Keep (pre-existing, "vinyl" ✓) |
+| 9 | `card-2image-with-text` image2 | 600×450px | `vinyl/neon-vinyl-shirts.jpg` | Keep (pre-existing, "vinyl" ✓) |
+| 10 | `card-image-with-text` (left) "Business and Group Vinyl Apparel" | 600×450px | `vinyl/vinyl-zip-up-hoodies.jpg` | Keep (pre-existing, "vinyl" ✓) |
+| 11 | `card-detailed-info` image1 | 400×300px | `vinyl/top5pct-vinyl-t-shirt-maker.jpg` | Done — dedup fix: breaks `custom-vinyl-shirts.jpg` repeat; R1 copied from `custom-shirts/`; "vinyl" ✓ |
+| 12 | `card-banner-slide-in` (direction="left") "Custom Vinyl Apparel for Any Occasion" | full-width 16:7 | `vinyl/custom-vinyl-hoodies.jpg` | Keep (pre-existing, "vinyl" ✓) |
+| 13 | `card-banner-slide-in` (direction="right") "Shirts, Hoodies, Hats, and More…" | full-width 16:7 | `vinyl/vinyl-caps.jpg` | Keep (pre-existing, "vinyl" ✓) |
+
+---
+
 ### `pages/custom-apparel/printing-options/screen-printing.blade.php`
 
 *All 10 slots complete. Directory: `custom-shirts/` (shared dir by design — same as all printing-options pages; Rule 3 N/A). No R2 images for this page. R1 filled carousel slots 2–5 (pre-applied). Hero (slot 1) was a generic banner — not R1/R2 (Rule 1 violation). 2-slot swap: R1 `screenprinted-shirts-joliet.jpg` promoted from carousel 3 → hero; displaced hero fills carousel 3. Slide-in right (slot 9) was `reflective-shirts` placeholder — replaced with reused R1 `screenprinting-shirts.jpg` (Rule 2 fix). Slots 6–8 Rule 2 unfixable: no screen-named alt, shared dir limitation. Slot 10 is intentional cross-promo, excluded. No file moves needed (all 4 R1 files already in `custom-shirts/`).*
