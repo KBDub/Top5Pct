@@ -9,6 +9,7 @@ These rules apply to all rounds of migration and all page slot assignments.
 | 1 | **Hero images must be a new R1 or R2 image.** Never reuse a pre-migration image in a `category-hero` slot. |
 | 2 | **All images must contain their category name (or a derivative) in the filename.** Example: embroidery images must include "embroid" or "stitched" in the name. |
 | 3 | **Create a `public/images/<category>/` directory for each distinct category.** `custom-shirts/` is a shared fallback only for images that genuinely appear across multiple unrelated pages (e.g. cross-promo banners). If a page has its own dedicated images, they go in `public/images/<that-page-slug>/`, not `custom-shirts/`. Create the dir if it does not exist. |
+| 4 | **Every image file referenced in any blade file must carry the `top5pct-` prefix.** This applies to all files in all `public/images/` dirs — not just incoming R1/R2 files. Pre-existing originals without the prefix must be renamed (with hyphens replacing any spaces) and all blade references updated to match. Apply this rule page by page during migration; a full sweep and verification will be run at the end. |
 
 ---
 
