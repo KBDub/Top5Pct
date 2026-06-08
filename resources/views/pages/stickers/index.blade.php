@@ -48,7 +48,7 @@
         primaryButtonHref="#sticker-categories"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/stickers-decals/top5pct-banner-stickers-decals-joliet.jpg"
+        image="/images/custom-shaped-stickers-decals/top5pct-banner-stickers-decals-joliet.jpg"
         :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />
@@ -57,11 +57,11 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/stickers-decals/top5pct-banner-stickers-decals-joliet.jpg',       'alt' => 'Custom stickers and decals printed in Joliet Illinois'],
-            ['src' => '/images/stickers-decals/top5pct-stickers-decals-joliet-beer-brewery.jpg', 'alt' => 'Custom stickers for a beer brewery in Joliet Illinois'],
-            ['src' => '/images/stickers-decals/top5pct-stickers-decals-joliet-boxing-sports.jpg','alt' => 'Custom stickers and decals for sports and fitness in Joliet Illinois'],
-            ['src' => '/images/stickers-decals/top5pct-stickers-decals-joliet-volleyball-team.jpg','alt' => 'Custom stickers for a volleyball team in Joliet Illinois'],
-            ['src' => '/images/stickers-decals/top5pct-stickers-decals-joliet-labels.jpg',       'alt' => 'Custom product labels and business stickers in Joliet Illinois'],
+            ['src' => '/images/custom-shaped-stickers-decals/top5pct-banner-stickers-decals-joliet.jpg',       'alt' => 'Custom stickers and decals printed in Joliet Illinois'],
+            ['src' => '/images/custom-shaped-stickers-decals/top5pct-stickers-decals-joliet-beer-brewery.jpg', 'alt' => 'Custom stickers for a beer brewery in Joliet Illinois'],
+            ['src' => '/images/custom-shaped-stickers-decals/top5pct-stickers-decals-joliet-boxing-sports.jpg','alt' => 'Custom stickers and decals for sports and fitness in Joliet Illinois'],
+            ['src' => '/images/custom-shaped-stickers-decals/top5pct-stickers-decals-joliet-volleyball-team.jpg','alt' => 'Custom stickers for a volleyball team in Joliet Illinois'],
+            ['src' => '/images/custom-shaped-stickers-decals/top5pct-stickers-decals-joliet-labels.jpg',       'alt' => 'Custom product labels and business stickers in Joliet Illinois'],
         ]"
         visible=3
     />
@@ -75,13 +75,13 @@
         id="sticker-categories"
         :banners="[
         [
-            'image' => '/images/stickers-decals/top5pct-stickers-decals-joliet-beer-brewery.jpg',
+            'image' => '/images/custom-shaped-stickers-decals/top5pct-stickers-decals-joliet-beer-brewery.jpg',
             'alt'   => 'Standard custom stickers printed for businesses in Joliet Illinois',
             'title' => 'Standard Stickers',
             'href'  => '/stickers/standard-stickers-decals',
         ],
         [
-            'image' => '/images/stickers-decals/top5pct-stickers-decals-joliet-ocean-viewz.jpg',
+            'image' => '/images/custom-shaped-stickers-decals/top5pct-stickers-decals-joliet-ocean-viewz.jpg',
             'alt'   => 'Custom shaped die cut stickers printed in Joliet Illinois',
             'title' => 'Custom Shaped Stickers',
             'href'  => '/stickers/custom-shaped-stickers-decals',
@@ -89,7 +89,7 @@
     ]" />
 
     <x-sections.card-image-with-text
-        image="/images/stickers-decals/top5pct-stickers-decals-joliet-ocean-viewz.jpg"
+        image="/images/custom-shaped-stickers-decals/top5pct-stickers-decals-joliet-ocean-viewz.jpg"
         alt="Custom stickers and decals for businesses and events in Joliet Illinois"
         title="Custom Stickers for Business, Events, and Personal Use"
     >
@@ -103,23 +103,23 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/stickers-decals/top5pct-stickers-decals-joliet-stoner-rock-bbq.jpg', 'alt' => 'Custom stickers for a BBQ restaurant in Joliet Illinois'],
-            ['src' => '/images/stickers-decals/top5pct-article-buy-stickers-decals-joliet.jpg',     'alt' => 'Buy custom stickers and decals in Joliet Illinois'],
-            ['src' => '/images/stickers-decals/top5pct-stickers-decals-joliet-labels.jpg',          'alt' => 'Custom product labels and stickers in Joliet Illinois'],
-            ['src' => '/images/stickers-decals/top5pct-stickers-decals-joliet-boxing-sports.jpg',   'alt' => 'Sports stickers and custom decals for gyms in Joliet Illinois'],
+            ['src' => '/images/custom-shaped-stickers-decals/top5pct-stickers-decals-joliet-stoner-rock-bbq.jpg', 'alt' => 'Custom stickers for a BBQ restaurant in Joliet Illinois'],
+            ['src' => '/images/standard-stickers-decals/top5pct-article-buy-stickers-decals-joliet.jpg',     'alt' => 'Buy custom stickers and decals in Joliet Illinois'],
+            ['src' => '/images/custom-shaped-stickers-decals/top5pct-stickers-decals-joliet-labels.jpg',          'alt' => 'Custom product labels and stickers in Joliet Illinois'],
+            ['src' => '/images/custom-shaped-stickers-decals/top5pct-stickers-decals-joliet-boxing-sports.jpg',   'alt' => 'Sports stickers and custom decals for gyms in Joliet Illinois'],
         ]"
         visible=2
     />
 
     <x-ui.card-banner-slide-in
-        image="/images/stickers-decals/top5pct-stickers-decals-joliet-boxing-sports.jpg"
+        image="/images/custom-shaped-stickers-decals/top5pct-stickers-decals-joliet-boxing-sports.jpg"
         alt="Custom stickers and decals printed at Top 5 Percent in Joliet Illinois"
         title="Custom Stickers Any Shape in Joliet"
         href="/contact"
         direction="right"
     />
     <x-ui.card-banner-slide-in
-        image="/images/stickers-decals/top5pct-stickers-decals-joliet-stoner-rock-bbq.jpg"
+        image="/images/custom-shaped-stickers-decals/top5pct-stickers-decals-joliet-stoner-rock-bbq.jpg"
         alt="Custom die cut stickers and labels printed by Top 5 Percent in Joliet Illinois"
         title="Die Cut Stickers for Businesses and Creators"
         href="/contact"

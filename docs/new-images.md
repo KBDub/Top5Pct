@@ -2038,6 +2038,30 @@ Create `public/images/outdoor-signs/` before copying.
 
 ---
 
+### `pages/stickers/index.blade.php` (LP)
+
+*All 15 slots complete. LP rules apply: sub-category dirs referenced directly, no LP dir created, no filename changes. 14 slots → `custom-shaped-stickers-decals/`; slot 11 (carousel 2 slot 2) → `standard-stickers-decals/` (only file that lives there). Old `stickers-decals/` dir gone; all refs updated.*
+
+| # | Component | Size | Final Image | Status |
+|---|---|---|---|---|
+| 1 | `category-hero` | full-width × 576px | `custom-shaped-stickers-decals/top5pct-banner-stickers-decals-joliet.jpg` | Done — LP Rule 1: sub-category dir ref |
+| 2 | `carousel` 1 slot 1 | 600×450px | `custom-shaped-stickers-decals/top5pct-banner-stickers-decals-joliet.jpg` | Done — LP path fix |
+| 3 | `carousel` 1 slot 2 | 600×450px | `custom-shaped-stickers-decals/top5pct-stickers-decals-joliet-beer-brewery.jpg` | Done — LP path fix |
+| 4 | `carousel` 1 slot 3 | 600×450px | `custom-shaped-stickers-decals/top5pct-stickers-decals-joliet-boxing-sports.jpg` | Done — LP path fix |
+| 5 | `carousel` 1 slot 4 | 600×450px | `custom-shaped-stickers-decals/top5pct-stickers-decals-joliet-volleyball-team.jpg` | Done — LP path fix |
+| 6 | `carousel` 1 slot 5 | 600×450px | `custom-shaped-stickers-decals/top5pct-stickers-decals-joliet-labels.jpg` | Done — LP path fix |
+| 7 | `lp-category-banners` banner 1 "Standard Stickers" | banner | `custom-shaped-stickers-decals/top5pct-stickers-decals-joliet-beer-brewery.jpg` | Done — LP path fix |
+| 8 | `lp-category-banners` banner 2 "Custom Shaped Stickers" | banner | `custom-shaped-stickers-decals/top5pct-stickers-decals-joliet-ocean-viewz.jpg` | Done — LP path fix |
+| 9 | `card-image-with-text` (left) | 600×450px | `custom-shaped-stickers-decals/top5pct-stickers-decals-joliet-ocean-viewz.jpg` | Done — LP path fix |
+| 10 | `carousel` 2 slot 1 | 600×450px | `custom-shaped-stickers-decals/top5pct-stickers-decals-joliet-stoner-rock-bbq.jpg` | Done — LP path fix |
+| 11 | `carousel` 2 slot 2 | 600×450px | `standard-stickers-decals/top5pct-article-buy-stickers-decals-joliet.jpg` | Done — LP Rule 2: cross-category ref to `standard-stickers-decals/` |
+| 12 | `carousel` 2 slot 3 | 600×450px | `custom-shaped-stickers-decals/top5pct-stickers-decals-joliet-labels.jpg` | Done — LP path fix |
+| 13 | `carousel` 2 slot 4 | 600×450px | `custom-shaped-stickers-decals/top5pct-stickers-decals-joliet-boxing-sports.jpg` | Done — LP path fix |
+| 14 | `card-banner-slide-in` (right) | full-width 16:7 | `custom-shaped-stickers-decals/top5pct-stickers-decals-joliet-boxing-sports.jpg` | Done — LP path fix |
+| 15 | `card-banner-slide-in` (left) | full-width 16:7 | `custom-shaped-stickers-decals/top5pct-stickers-decals-joliet-stoner-rock-bbq.jpg` | Done — LP path fix |
+
+---
+
 ### `pages/stickers/standard-stickers.blade.php`
 
 *All 14 slots complete. Directory: `standard-stickers-decals/` (Rule 3 applied). Only 2 files in `standard-stickers-decals/`; remaining 13 slots reference `custom-shaped-stickers-decals/` per user instruction. Rule 1 hero fix via 2-slot swap: R2 `top5pct-custom-stickers-cresthill.jpg` promoted from carousel 1 to hero; displaced `top5pct-banner-stickers-decals-joliet.jpg` fills carousel 1. Old `stickers-decals/` dir gone; all refs updated. No file copies needed.*
