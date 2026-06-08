@@ -45,7 +45,7 @@ Move all files from `public/new-images/` into the matching `public/images/` dire
 | `custom-apparel/printing-options/dtf-printing/` | `dtf-transfers/` | **yes** |
 | `custom-apparel/printing-options/embroidery/` | `embroidery/` | **yes** |
 | `custom-apparel/printing-options/rhinestones/` | `custom-shirts/` | **yes** |
-| `custom-apparel/printing-options/screenprint/` | `custom-shirts/` | no |
+| `custom-apparel/printing-options/screenprint/` | `custom-shirts/` | **yes** |
 | `custom-apparel/printing-options/sublimation/` | `sublimation/` | **yes** |
 | `custom-apparel/specialty-material/brick/` | `custom-shirts/` | **yes** |
 | `custom-apparel/specialty-material/glitter/` | `glitter-shirts/` | **yes** |
@@ -426,22 +426,22 @@ These are product photos of vinyl banners. Existing `top5pct-banner-*` files in 
 
 ---
 
-### `pages/custom-apparel/screen-printing.blade.php`
+### `pages/custom-apparel/printing-options/screen-printing.blade.php`
 
-*New images available: 4 (screenprint/) — 7 eligible slots — 4 Pending (carousel 1–4)*
+*All 10 slots complete. Directory: `custom-shirts/` (shared dir by design — same as all printing-options pages; Rule 3 N/A). No R2 images for this page. R1 filled carousel slots 2–5 (pre-applied). Hero (slot 1) was a generic banner — not R1/R2 (Rule 1 violation). 2-slot swap: R1 `screenprinted-shirts-joliet.jpg` promoted from carousel 3 → hero; displaced hero fills carousel 3. Slide-in right (slot 9) was `reflective-shirts` placeholder — replaced with reused R1 `screenprinting-shirts.jpg` (Rule 2 fix). Slots 6–8 Rule 2 unfixable: no screen-named alt, shared dir limitation. Slot 10 is intentional cross-promo, excluded. No file moves needed (all 4 R1 files already in `custom-shirts/`).*
 
 | # | Component | Size | Current Image | Replaced? |
 |---|---|---|---|---|
-| 1 | `category-hero` | full-width × 576px | `custom-shirts/top5pct-banner-custom-apparel-custom-shirts-custom-hoodies-custom-caps.jpg` | Keep |
-| 2 | `carousel` slot 1 | 600×450px | `custom-shirts/top5pct-screenprint-custom-shirts.jpg` | Done |
-| 3 | `carousel` slot 2 | 600×450px | `custom-shirts/top5pct-screenprinted-shirts-in-joliet.jpg` | Done |
-| 4 | `carousel` slot 3 | 600×450px | `custom-shirts/top5pct-screenprinted-shirts-joliet.jpg` | Done |
-| 5 | `carousel` slot 4 | 600×450px | `custom-shirts/top5pct-screenprinting-shirts.jpg` | Done |
-| 6 | `card-image-with-text` (left) | 600×450px | `custom-shirts/top5pct-custom-flock-shirt-hoodie-cap-joliet.jpg` | Keep |
-| 7 | `card-image-with-text` (right) | 600×450px | `custom-shirts/top5pct-custom-reflective-shirts-hoodies-caps-joliet.jpg` | Keep |
-| 8 | `card-detailed-info` image1 | 400×300px | `custom-shirts/top5pct-custom-flock-shirt-hoodie-cap-joliet.jpg` | Keep |
-| 9 | `card-banner-slide-in` (right→left) | full-width 16:7 | `custom-shirts/top5pct-custom-reflective-shirts-hoodies-caps-joliet.jpg` | Keep |
-| 10 | `card-banner-slide-in` (left→right) | full-width 16:7 | `custom-shirts/top5pct-custom-embroidery-shops-near-me-joliet.jpg` | Keep |
+| 1 | `category-hero` | full-width × 576px | `custom-shirts/top5pct-screenprinted-shirts-joliet.jpg` | Done — Rule 1 fix: 2-slot swap (R1 promoted from carousel 3) |
+| 2 | `carousel` slot 1 | 600×450px | `custom-shirts/top5pct-screenprint-custom-shirts.jpg` | Done (R1, "screenprint" ✓) |
+| 3 | `carousel` slot 2 | 600×450px | `custom-shirts/top5pct-screenprinted-shirts-in-joliet.jpg` | Done (R1, "screenprinted" ✓) |
+| 4 | `carousel` slot 3 | 600×450px | `custom-shirts/top5pct-banner-custom-apparel-custom-shirts-custom-hoodies-custom-caps.jpg` | Displaced hero fills vacated carousel slot |
+| 5 | `carousel` slot 4 | 600×450px | `custom-shirts/top5pct-screenprinting-shirts.jpg` | Done (R1, "screenprinting" ✓) |
+| 6 | `card-image-with-text` (left) "The Classic Standard for Custom Apparel" | 600×450px | `custom-shirts/top5pct-custom-flock-shirt-hoodie-cap-joliet.jpg` | Keep — Rule 2 unfixable: no screen-named alt, shared dir |
+| 7 | `card-image-with-text` (right) "Ideal for Bulk Orders and Uniforms" | 600×450px | `custom-shirts/top5pct-custom-reflective-shirts-hoodies-caps-joliet.jpg` | Keep — Rule 2 unfixable: no screen-named alt, shared dir |
+| 8 | `card-detailed-info` image1 | 400×300px | `custom-shirts/top5pct-custom-flock-shirt-hoodie-cap-joliet.jpg` | Keep — Rule 2 unfixable: no screen-named alt, shared dir |
+| 9 | `card-banner-slide-in` (direction="right") "Bold Screen Printed Shirts for Your Group or Brand" | full-width 16:7 | `custom-shirts/top5pct-screenprinting-shirts.jpg` | Done — R1 reused, "screenprinting" ✓ (Rule 2 fix; was reflective-shirts placeholder) |
+| 10 | `card-banner-slide-in` (direction="left") "Add Embroidery or Vinyl to Complement Your Screen Print Order" | full-width 16:7 | `custom-shirts/top5pct-custom-embroidery-shops-near-me-joliet.jpg` | Keep — intentional cross-promo |
 
 ---
 

@@ -47,7 +47,7 @@
         primaryButtonHref="/contact"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/custom-shirts/top5pct-banner-custom-apparel-custom-shirts-custom-hoodies-custom-caps.jpg"
+        image="/images/custom-shirts/top5pct-screenprinted-shirts-joliet.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />
@@ -58,7 +58,7 @@
         :images="[
             ['src' => '/images/custom-shirts/top5pct-screenprint-custom-shirts.jpg', 'alt' => 'Custom screen printed shirts and apparel in Joliet Illinois'],
             ['src' => '/images/custom-shirts/top5pct-screenprinted-shirts-in-joliet.jpg',                           'alt' => 'Custom screen printed apparel in Joliet Illinois'],
-            ['src' => '/images/custom-shirts/top5pct-screenprinted-shirts-joliet.jpg',                   'alt' => 'Custom screen printing for group apparel and uniforms in Joliet Illinois'],
+            ['src' => '/images/custom-shirts/top5pct-banner-custom-apparel-custom-shirts-custom-hoodies-custom-caps.jpg', 'alt' => 'Custom screen printing for group apparel and uniforms in Joliet Illinois'],
             ['src' => '/images/custom-shirts/top5pct-screenprinting-shirts.jpg',                                     'alt' => 'Custom screen printed shirts made in Joliet Illinois'],
         ]"
         visible=2
@@ -126,7 +126,7 @@
         name="Gerardo Munoz Jr"
     />
     <x-ui.card-banner-slide-in
-        image="/images/custom-shirts/top5pct-custom-reflective-shirts-hoodies-caps-joliet.jpg"
+        image="/images/custom-shirts/top5pct-screenprinting-shirts.jpg"
         alt="Custom screen printed apparel and group shirts printed by Top 5 Percent in Joliet Illinois"
         title="Bold Screen Printed Shirts for Your Group or Brand"
         href="/contact"
