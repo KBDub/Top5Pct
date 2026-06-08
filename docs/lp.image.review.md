@@ -148,3 +148,43 @@ Add an entry to this file under "Review Instances" with the full slot table, vio
 - `stoner-rock-bbq.jpg` was used 2× (C2, slide-in) — moved to C1 slot 3 only.
 - `labels.jpg` was used 2× (C1 slot 5, C2 slot 3) — stays in C1 slot 5, C2 slot 3 replaced with `custom-label-stickers.jpg`.
 - Pulled in 4 previously unused import-round images: `custom-glossy-stickers-in-joliet.jpg`, `custom-label-stickers.jpg`, `custom-shaped-stickers.jpg`, `diecut-stickers.jpg`.
+
+---
+
+### `/vehicle-graphics` LP
+
+**File:** `resources/views/pages/vehicle-graphics/index.blade.php`
+**Status:** Complete. All 15 slots fixed. Rules 3, 4, 5 satisfied. All 15 files distinct. All 3 LP banners use correct sub-page hero images.
+**LP Rules 1–6:** All clean.
+
+#### Final slot map (all 15 slots)
+
+| # | Component | Final File | Dir | Rule 5? | R1/R2? |
+|---|---|---|---|---|---|
+| 1 | `category-hero` | `top5pct-car-wraps-vinyl-lettering-joliet-shorewood.jpg` | `automobile-graphics/` | n/a | import-round |
+| 2 | Carousel 1 slot 1 | `top5pct-joliet-car-magnets.jpg` | `vehicle-magnets/` | n/a | R1 ✓ |
+| 3 | Carousel 1 slot 2 | `top5pct-custom-dot-decals-for-trucks-in-joliet.jpg` | `dot-decals/` | n/a | R1 ✓ |
+| 4 | Carousel 1 slot 3 | `top5pct-dot-decals-semi-truck.jpg` | `dot-decals/` | n/a | R1 ✓ |
+| 5 | Carousel 1 slot 4 | `top5pct-car-decals-white-oaks-library.jpg` | `vehicle-magnets/` | n/a | R1 ✓ |
+| 6 | LP banner 1 "Automobile Graphics" | `top5pct-auto-window-wraps.jpg` | `automobile-graphics/` | ✓ sub-page hero | R1 exempt |
+| 7 | LP banner 2 "Vehicle Magnets" | `top5pct-magnet-vehicle-signs-joliet.jpg` | `vehicle-magnets/` | ✓ sub-page hero | R1 exempt |
+| 8 | LP banner 3 "DOT Decals" | `top5pct-truck-lettering-joliet-shorewood-rockdale.jpg` | `dot-decals/` | ✓ sub-page hero | import-round exempt |
+| 9 | `card-image-with-text` | `top5pct-vinyl-lettering-car-graphics-joliet-crest-hill.jpg` | `automobile-graphics/` | n/a | import-round |
+| 10 | Carousel 2 slot 1 | `top5pct-car-magnets-truck-magnets-joliet.jpg` | `vehicle-magnets/` | n/a | import-round |
+| 11 | Carousel 2 slot 2 | `top5pct-dot-decals-joliet-shorewood-rockdale.jpg` | `dot-decals/` | n/a | import-round |
+| 12 | Carousel 2 slot 3 | `top5pct-boat-decals-joliet-shorewood-crest-hill.jpg` | `automobile-graphics/` | n/a | import-round |
+| 13 | Carousel 2 slot 4 | `top5pct-business-magnets-car-magnets-joliet.jpg` | `vehicle-magnets/` | n/a | import-round |
+| 14 | Slide-in left | `top5pct-trucking-dot-decals-in-joliet.jpg` | `dot-decals/` | n/a | R1 ✓ |
+| 15 | Slide-in right | `top5pct-car-magnets-vehicle-magnets-joliet.jpg` | `vehicle-magnets/` | n/a | import-round |
+
+*All 15 files distinct. All 3 LP banners use correct sub-page hero images. `automobile-graphics/` has one R1 image (`auto-window-wraps.jpg`) which is assigned to LP banner 1 — hero and card-left use import-round automobile-graphics files, fully valid per Rule 6. C2 slots 1–4 and slide-in right were already clean and kept.*
+
+#### Fix notes
+
+- All 3 LP banners used stale `banner-` prefix files — replaced with exact sub-page heroes.
+- `banner-vinyl-lettering-car-wraps-joliet.jpg` appeared 3× (hero, C1 slot 1, LP banner 1) — eliminated entirely.
+- `car-wraps-vinyl-lettering-joliet-shorewood.jpg` appeared 3× (C1 slot 4, card-left, slide-in left) — consolidated to hero only.
+- C1 slots 1–4 replaced with R1 images from `vehicle-magnets/` and `dot-decals/`.
+- Card-left updated to `vinyl-lettering-car-graphics-joliet-crest-hill.jpg` (automobile-graphics import-round).
+- Slide-in left updated to `trucking-dot-decals-in-joliet.jpg` (R1, dot-decals).
+- C2 slots 1–4 and slide-in right were already unique and clean — kept as-is.

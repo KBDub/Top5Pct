@@ -48,7 +48,7 @@
         primaryButtonHref="#vehicle-categories"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/automobile-graphics/top5pct-banner-vinyl-lettering-car-wraps-joliet.jpg"
+        image="/images/automobile-graphics/top5pct-car-wraps-vinyl-lettering-joliet-shorewood.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />
@@ -57,10 +57,10 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/automobile-graphics/top5pct-banner-vinyl-lettering-car-wraps-joliet.jpg',     'alt' => 'Custom car wraps and vinyl lettering for vehicles in Joliet Illinois'],
-            ['src' => '/images/vehicle-magnets/top5pct-banner-car-magnets-joliet-shorewood-crest-hill.jpg',  'alt' => 'Custom vehicle magnets and car magnets in Joliet, Shorewood, and Crest Hill Illinois'],
-            ['src' => '/images/dot-decals/top5pct-banner-DOT-stickers-joliet-shorewood-channahon.jpg',       'alt' => 'DOT compliance decals and USDOT stickers for trucks in Joliet, Shorewood, and Channahon'],
-            ['src' => '/images/automobile-graphics/top5pct-car-wraps-vinyl-lettering-joliet-shorewood.jpg',  'alt' => 'Professional vehicle wraps and vinyl lettering in Joliet and Shorewood Illinois'],
+            ['src' => '/images/vehicle-magnets/top5pct-joliet-car-magnets.jpg',                              'alt' => 'Custom car magnets for vehicles and businesses in Joliet Illinois'],
+            ['src' => '/images/dot-decals/top5pct-custom-dot-decals-for-trucks-in-joliet.jpg',               'alt' => 'Custom DOT decals for commercial trucks in Joliet Illinois'],
+            ['src' => '/images/dot-decals/top5pct-dot-decals-semi-truck.jpg',                                'alt' => 'DOT compliance decals on a semi truck in Joliet Illinois'],
+            ['src' => '/images/vehicle-magnets/top5pct-car-decals-white-oaks-library.jpg',                   'alt' => 'Custom vehicle decals for the White Oaks Library in Joliet Illinois'],
         ]"
         visible=3
     />
@@ -74,19 +74,19 @@
         id="vehicle-categories"
         :banners="[
         [
-            'image' => '/images/automobile-graphics/top5pct-banner-vinyl-lettering-car-wraps-joliet.jpg',
+            'image' => '/images/automobile-graphics/top5pct-auto-window-wraps.jpg',
             'alt'   => 'Custom car wraps and vinyl lettering for vehicles in Joliet Illinois',
             'title' => 'Automobile Graphics',
             'href'  => '/vehicle-graphics/automobile-graphics',
         ],
         [
-            'image' => '/images/vehicle-magnets/top5pct-banner-car-magnets-joliet-shorewood-crest-hill.jpg',
+            'image' => '/images/vehicle-magnets/top5pct-magnet-vehicle-signs-joliet.jpg',
             'alt'   => 'Custom vehicle magnets and car magnets in Joliet, Shorewood, and Crest Hill Illinois',
             'title' => 'Vehicle Magnets',
             'href'  => '/vehicle-graphics/vehicle-magnets',
         ],
         [
-            'image' => '/images/dot-decals/top5pct-banner-DOT-stickers-joliet-shorewood-channahon.jpg',
+            'image' => '/images/dot-decals/top5pct-truck-lettering-joliet-shorewood-rockdale.jpg',
             'alt'   => 'DOT stickers and USDOT compliance decals for trucks in Joliet, Shorewood, and Channahon Illinois',
             'title' => 'DOT Decals',
             'href'  => '/vehicle-graphics/dot-decals',
@@ -94,7 +94,7 @@
     ]" />
 
     <x-sections.card-image-with-text
-        image="/images/automobile-graphics/top5pct-car-wraps-vinyl-lettering-joliet-shorewood.jpg"
+        image="/images/automobile-graphics/top5pct-vinyl-lettering-car-graphics-joliet-crest-hill.jpg"
         alt="Professional vehicle wraps and vinyl lettering installed in Joliet and Shorewood Illinois"
         title="Turn Your Vehicle Into a Moving Billboard"
     >
@@ -117,7 +117,7 @@
     />
 
     <x-ui.card-banner-slide-in
-        image="/images/automobile-graphics/top5pct-car-wraps-vinyl-lettering-joliet-shorewood.jpg"
+        image="/images/dot-decals/top5pct-trucking-dot-decals-in-joliet.jpg"
         alt="Vehicle wraps and vinyl lettering installed by Top 5 Percent in Joliet and Shorewood Illinois"
         title="Turn Your Vehicle Into a Mobile Billboard"
         href="/contact"
