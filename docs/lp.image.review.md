@@ -188,3 +188,103 @@ Add an entry to this file under "Review Instances" with the full slot table, vio
 - Card-left updated to `vinyl-lettering-car-graphics-joliet-crest-hill.jpg` (automobile-graphics import-round).
 - Slide-in left updated to `trucking-dot-decals-in-joliet.jpg` (R1, dot-decals).
 - C2 slots 1–4 and slide-in right were already unique and clean — kept as-is.
+
+---
+
+### `/promotional-items` LP
+
+**File:** `resources/views/pages/promotional-items.blade.php`
+**Status:** Blocked — requires prerequisite work before full standardization. See blockers below.
+**Sub-pages:** `mugs`, `can-koozies`, `towels`, `drink-coasters`, `tote-bags`, `mouse-pads`
+
+---
+
+#### Blockers (must resolve before applying blade changes)
+
+**Blocker A — No sub-page category-hero images:**
+All 6 sub-pages have a `<x-sections.category-hero>` component with NO `image=` attribute. Rule 5 requires LP banners to use the exact `category-hero` image of the sub-page they link to. There are no sub-page heroes to reference yet.
+
+**Blocker B — Missing image directories for 4 of 6 sub-categories:**
+`public/images/promo-items/` only has two sub-dirs: `koozies/` and `mugs/`. No dedicated dirs exist for `tote-bags/`, `towels/`, `drink-coasters/`, or `mouse-pads/`. Rule 6 requires non-banner slots to use import-round files from sub-category dirs. There are no valid import-round files for these 4 sub-categories.
+
+**Resolution path:**
+1. Create image dirs and import images for tote-bags, towels, drink-coasters, and mouse-pads under `public/images/promo-items/`
+2. Add `image=` attributes to all 6 sub-page category-hero components using their best promo-items image as the hero
+3. Then apply full LP standardization using confirmed sub-page heroes for all 6 LP banners
+
+---
+
+#### Current 18-slot state (pre-fix)
+
+This LP has **18 slots**: hero, 4×C1, 6×LP banners, card-left, 4×C2, 2×slide-ins.
+
+| # | Component | Current file | Dir | Issues |
+|---|---|---|---|---|
+| 1 | `category-hero` | `top5pct-banner-custom-apparel-custom-shirts-custom-hoodies-custom-caps.jpg` | `custom-shirts/` | R3 (banner-), R6 (wrong dir), 3× repeat |
+| 2 | Carousel 1 slot 1 | `top5pct-banner-custom-apparel-custom-shirts-custom-hoodies-custom-caps.jpg` | `custom-shirts/` | R3 (banner-), R6 (wrong dir), 3× repeat |
+| 3 | Carousel 1 slot 2 | `top5pct-banner-business-banners-joliet-shorewood-crest-hill.jpg` | `banners/` | R3 (banner-), R6 (wrong dir) |
+| 4 | Carousel 1 slot 3 | `top5pct-custom-t-shirts-main.jpg` | `custom-shirts/` | R6 (wrong dir), 4× repeat |
+| 5 | Carousel 1 slot 4 | `top5pct-stickers-decals-joliet-labels.jpg` | `stickers-decals/` | R6 (wrong dir), 2× repeat |
+| 6 | LP banner 1 "Custom Mugs" | `top5pct-custom-t-shirts-main.jpg` | `custom-shirts/` | R5 (wrong), R6 (wrong dir), 4× repeat |
+| 7 | LP banner 2 "Can Koozies" | `top5pct-custom-brick-shirts-hoodies-cap-joliet.jpg` | `custom-shirts/` | R5 (wrong), R6 (wrong dir) |
+| 8 | LP banner 3 "Custom Towels" | `top5pct-banner-fanwear-spiritwear-uniforms-joliet-shorewood.jpg` | `spirit-wear/` | R3 (banner-), R5 (wrong), R6 (wrong dir) |
+| 9 | LP banner 4 "Drink Coasters" | `top5pct-custom-vinyl-shirts-caps-hoodies.jpg` | `custom-shirts/` | R5 (wrong), R6 (wrong dir), 2× repeat |
+| 10 | LP banner 5 "Tote Bags" | `top5pct-custom-embroidery-shops-near-me-joliet.jpg` | `custom-shirts/` | R5 (wrong), R6 (wrong dir) |
+| 11 | LP banner 6 "Mouse Pads" | `top5pct-banner-joliet-romeoville-rockdale-plainfield.jpg` | `banners/` | R3 (banner-), R5 (wrong), R6 (wrong dir) |
+| 12 | `card-image-with-text` | `top5pct-custom-t-shirts-main.jpg` | `custom-shirts/` | R6 (wrong dir), 4× repeat |
+| 13 | Carousel 2 slot 1 | `top5pct-custom-vinyl-shirts-caps-hoodies.jpg` | `custom-shirts/` | R6 (wrong dir), 2× repeat |
+| 14 | Carousel 2 slot 2 | `top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg` | `custom-shirts/` | R6 (wrong dir), 2× repeat |
+| 15 | Carousel 2 slot 3 | `top5pct-stickers-decals-joliet-labels.jpg` | `stickers-decals/` | R6 (wrong dir), 2× repeat |
+| 16 | Carousel 2 slot 4 | `top5pct-banner-custom-apparel-custom-shirts-custom-hoodies-custom-caps.jpg` | `custom-shirts/` | R3 (banner-), R6 (wrong dir), 3× repeat |
+| 17 | Slide-in left | `top5pct-custom-t-shirts-main.jpg` | `custom-shirts/` | R6 (wrong dir), 4× repeat |
+| 18 | Slide-in right | `top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg` | `custom-shirts/` | R6 (wrong dir), 2× repeat |
+
+*Every single slot uses images from wrong categories. Zero promo-items images currently on the LP.*
+
+**Duplicate summary:**
+- `banner-custom-apparel-custom-shirts-custom-hoodies-custom-caps.jpg` — slots 1, 2, 16 (3×)
+- `custom-t-shirts-main.jpg` — slots 4, 6, 12, 17 (4×)
+- `custom-vinyl-shirts-caps-hoodies.jpg` — slots 9, 13 (2×)
+- `custom-glow-shirts-caps-hoodies-joliet.jpg` — slots 14, 18 (2×)
+- `stickers-decals-joliet-labels.jpg` — slots 5, 15 (2×)
+
+---
+
+#### Available promo-items images (confirmed in `public/images/promo-items/`)
+
+**`promo-items/mugs/` (8 files):**
+`top5pct-custom-coffee-mugs-in-joliet.jpg`, `top5pct-custom-coffee-mugs.jpg`, `top5pct-custom-mugs.jpg`, `top5pct-custom-mugs-near-me.jpg`, `top5pct-custom-printed-mugs.jpg`, `top5pct-picture-on-mugs.jpg`, `top5pct-printed-mugs.jpg`, `top5pct-printed-mugs-old.jpg`
+
+**`promo-items/koozies/` (5 files):**
+`top5pct-can-koozies.jpg`, `top5pct-custom-can-koozies.jpg`, `top5pct-custom-koozies.jpg`, `top5pct-koozies-joliet.jpg`, `top5pct-personalized-koozies-joliet.jpg`
+
+**Missing dirs:** `promo-items/tote-bags/`, `promo-items/towels/`, `promo-items/drink-coasters/`, `promo-items/mouse-pads/`
+
+---
+
+#### Proposed final slot map (pending blocker resolution)
+
+LP banners and slide-in right marked **[BLOCKED]** require Blocker A/B resolution. All other 11 slots are ready to apply immediately.
+
+| # | Component | Proposed file | Dir | Status |
+|---|---|---|---|---|
+| 1 | `category-hero` | `top5pct-custom-printed-mugs.jpg` | `promo-items/mugs/` | Ready |
+| 2 | Carousel 1 slot 1 | `top5pct-personalized-koozies-joliet.jpg` | `promo-items/koozies/` | Ready |
+| 3 | Carousel 1 slot 2 | `top5pct-custom-coffee-mugs-in-joliet.jpg` | `promo-items/mugs/` | Ready |
+| 4 | Carousel 1 slot 3 | `top5pct-custom-can-koozies.jpg` | `promo-items/koozies/` | Ready |
+| 5 | Carousel 1 slot 4 | `top5pct-custom-mugs-near-me.jpg` | `promo-items/mugs/` | Ready |
+| 6 | LP banner 1 "Custom Mugs" | sub-page hero (TBD — Blocker A) | `promo-items/mugs/` | **[BLOCKED]** |
+| 7 | LP banner 2 "Can Koozies" | sub-page hero (TBD — Blocker A) | `promo-items/koozies/` | **[BLOCKED]** |
+| 8 | LP banner 3 "Custom Towels" | sub-page hero (TBD — Blockers A + B) | `promo-items/towels/` | **[BLOCKED]** |
+| 9 | LP banner 4 "Drink Coasters" | sub-page hero (TBD — Blockers A + B) | `promo-items/drink-coasters/` | **[BLOCKED]** |
+| 10 | LP banner 5 "Tote Bags" | sub-page hero (TBD — Blockers A + B) | `promo-items/tote-bags/` | **[BLOCKED]** |
+| 11 | LP banner 6 "Mouse Pads" | sub-page hero (TBD — Blockers A + B) | `promo-items/mouse-pads/` | **[BLOCKED]** |
+| 12 | `card-image-with-text` | `top5pct-koozies-joliet.jpg` | `promo-items/koozies/` | Ready |
+| 13 | Carousel 2 slot 1 | `top5pct-picture-on-mugs.jpg` | `promo-items/mugs/` | Ready |
+| 14 | Carousel 2 slot 2 | `top5pct-custom-koozies.jpg` | `promo-items/koozies/` | Ready |
+| 15 | Carousel 2 slot 3 | `top5pct-custom-mugs.jpg` | `promo-items/mugs/` | Ready |
+| 16 | Carousel 2 slot 4 | `top5pct-can-koozies.jpg` | `promo-items/koozies/` | Ready |
+| 17 | Slide-in left | `top5pct-printed-mugs.jpg` | `promo-items/mugs/` | Ready |
+| 18 | Slide-in right | 14th unique promo-items file (TBD — Blocker B) | `promo-items/` | **[BLOCKED]** |
+
+*11 of 18 slots ready now. 7 slots blocked. All 13 available promo-items images (8 mugs + 5 koozies) are consumed by the 11 ready slots — a 14th unique file is needed for slide-in right, which is resolved automatically once any one of the 4 missing dirs is populated.*
