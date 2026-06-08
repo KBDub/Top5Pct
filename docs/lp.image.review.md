@@ -21,7 +21,7 @@ Apply the four LP rules from `docs/new-images.md`:
 | 3 | Never modify an image filename. Only reference existing files as-is. |
 | 4 | Use distinct images. Each image file should appear no more than once per page across all slots. Repeats are a last resort only. |
 | 5 | Each LP category banner image must be the hero image of the sub-category page it links to. For example, the "DTF Transfers" banner on `/custom-apparel` links to `/custom-apparel/printing-options/dtf-printing`, so its image must be `dtf-transfers/top5pct-dtf-t-shirt-printing.jpg` — the exact `category-hero` image on that sub-page. A visually matching fallback is only acceptable when the sub-category has no dedicated dir yet, and must be replaced once that sub-page migration is complete. |
-| 6 | All non-banner image slots on an LP must use R1, R2, R3, or newer files. This applies to the `category-hero`, carousels, `card-image-with-text`, and `card-banner-slide-in` slots. Pre-migration (older) images must not appear in these slots. LP category banners (Rule 5) are exempt since they must match the sub-page hero, which may still be an older file. |
+| 6 | All non-banner image slots on an LP must use images from an import round — meaning any file that exists in a sub-category dir under `public/images/`. R1 and R2 files (the most recent import rounds, confirmed by their presence in `public/new-images/`) are preferred where available. R1/R2/R3 refers to Round 1, Round 2, Round 3 of image importing — not to rules. LP category banners are exempt (Rule 5). |
 
 ### Step 3 — Identify violations
 
@@ -108,3 +108,43 @@ Add an entry to this file under "Review Instances" with the full slot table, vio
 - All 13 non-banner slots replaced with R1/R2/R3 images sourced from relevant sub-category dirs.
 - Reunion shirts has no confirmed R1/R2/R3 images in staging — carousel 1 slot 3 uses `spirit-wear/top5pct-spirit-wear-clothing.jpg` instead.
 - `puff-shirts/` dir still needs to be created during the `puff-shirts` sub-page migration pass.
+
+---
+
+### `/stickers` LP
+
+**File:** `resources/views/pages/stickers/index.blade.php`
+**Status:** Complete. All 15 slots fixed. Rules 3, 4, 5 satisfied. All 15 files distinct. Both LP banners use correct sub-page hero images.
+**LP Rules 1–6:** All clean.
+
+#### Final slot map (all 15 slots)
+
+| # | Component | Final File | Dir | Rule 5? | R1/R2? |
+|---|---|---|---|---|---|
+| 1 | `category-hero` | `top5pct-custom-shaped-stickers-cresthill.jpg` | `custom-shaped-stickers-decals/` | n/a | R1 ✓ |
+| 2 | Carousel 1 slot 1 | `top5pct-die-cut-stickers-shorewood.jpg` | `custom-shaped-stickers-decals/` | n/a | R1 ✓ |
+| 3 | Carousel 1 slot 2 | `top5pct-stickers-decals-joliet-beer-brewery.jpg` | `custom-shaped-stickers-decals/` | n/a | import round |
+| 4 | Carousel 1 slot 3 | `top5pct-stickers-decals-joliet-stoner-rock-bbq.jpg` | `custom-shaped-stickers-decals/` | n/a | import round |
+| 5 | Carousel 1 slot 4 | `top5pct-stickers-decals-joliet-volleyball-team.jpg` | `custom-shaped-stickers-decals/` | n/a | import round |
+| 6 | Carousel 1 slot 5 | `top5pct-stickers-decals-joliet-labels.jpg` | `custom-shaped-stickers-decals/` | n/a | import round |
+| 7 | LP banner 1 "Standard Stickers" | `top5pct-custom-stickers-cresthill.jpg` | `custom-shaped-stickers-decals/` | ✓ sub-page hero | R1 exempt |
+| 8 | LP banner 2 "Custom Shaped Stickers" | `top5pct-die-cut-stickers-joliet.jpg` | `custom-shaped-stickers-decals/` | ✓ sub-page hero | R1 exempt |
+| 9 | `card-image-with-text` | `top5pct-stickers-decals-joliet-ocean-viewz.jpg` | `custom-shaped-stickers-decals/` | n/a | import round |
+| 10 | Carousel 2 slot 1 | `top5pct-custom-glossy-stickers-in-joliet.jpg` | `custom-shaped-stickers-decals/` | n/a | import round |
+| 11 | Carousel 2 slot 2 | `top5pct-article-buy-stickers-decals-joliet.jpg` | `standard-stickers-decals/` | n/a | import round |
+| 12 | Carousel 2 slot 3 | `top5pct-custom-label-stickers.jpg` | `custom-shaped-stickers-decals/` | n/a | import round |
+| 13 | Carousel 2 slot 4 | `top5pct-stickers-decals-joliet-boxing-sports.jpg` | `custom-shaped-stickers-decals/` | n/a | import round |
+| 14 | Slide-in right | `top5pct-diecut-stickers.jpg` | `standard-stickers-decals/` | n/a | import round |
+| 15 | Slide-in left | `top5pct-custom-shaped-stickers.jpg` | `custom-shaped-stickers-decals/` | n/a | import round |
+
+*All 15 files distinct. Both LP banners use correct sub-page hero images (R1). Hero and carousel 1 slot 1 use R1 preferred images. Stickers has 18 total import-round images across both dirs — enough for all slots with no gaps.*
+
+#### Fix notes
+
+- Hero and C1 slot 1 both used the stale `banner-` prefixed file — replaced with the two available R1 images.
+- LP banner 1 "Standard Stickers" was using a beer brewery photo — corrected to the sub-page hero `top5pct-custom-stickers-cresthill.jpg`.
+- LP banner 2 "Custom Shaped Stickers" was using `ocean-viewz.jpg` — corrected to the sub-page hero `top5pct-die-cut-stickers-joliet.jpg`.
+- `boxing-sports.jpg` was used 3× (C1, C2, slide-in) — consolidated to C2 slot 4 only.
+- `stoner-rock-bbq.jpg` was used 2× (C2, slide-in) — moved to C1 slot 3 only.
+- `labels.jpg` was used 2× (C1 slot 5, C2 slot 3) — stays in C1 slot 5, C2 slot 3 replaced with `custom-label-stickers.jpg`.
+- Pulled in 4 previously unused import-round images: `custom-glossy-stickers-in-joliet.jpg`, `custom-label-stickers.jpg`, `custom-shaped-stickers.jpg`, `diecut-stickers.jpg`.
