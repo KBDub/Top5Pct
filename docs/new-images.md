@@ -59,7 +59,7 @@ Move all files from `public/new-images/` into the matching `public/images/` dire
 | `signs/business-signs/window-signs/` | `window-wall-floor-decals/` | **yes** |
 | `signs/ground-signs/a-frame-signs/` | `sidewalk-signs/` | **yes** |
 | `signs/ground-signs/yard-signs/` | `yard-signs/` | **yes** |
-| `signs/table-signs/table-cloths/` | `table-runners/` | no |
+| `signs/table-signs/table-cloths/` | `table-cloths/` | **yes** |
 | `signs/table-signs/table-runners/` | `table-runners/` | no |
 | `stickers/custom-shaped/` | `stickers-decals/` | **yes** |
 | `vehicle-decals/automobile-graphics/` | `automobile-graphics/` | **yes** |
@@ -777,7 +777,7 @@ These are product photos of vinyl banners. Existing `top5pct-banner-*` files in 
 
 ### `pages/signs/table-cloths.blade.php`
 
-*New images available: 3 (table-cloths/) — 7 eligible slots — all 3 wired ✓*
+*(Round 1 entry — superseded by updated entry in Round 2 section below)*
 
 | # | Component | Size | Current Image | Replaced? |
 |---|---|---|---|---|
@@ -1968,20 +1968,20 @@ Create `public/images/outdoor-signs/` before copying.
 
 ### `pages/signs/table-cloths.blade.php`
 
-*R1 used 3 slots (carousel 1–3 Done). R2 new images: 2 — fills next 2 eligible slots.*
+*All 10 slots complete. Directory: `table-cloths/` (Rule 3 applied). Hero updated via 2-slot swap: R1 `top5pct-custom-table-cloth.jpg` promoted from carousel 1 to hero (Rule 1 fix), displaced hero fills carousel 1. Carousel 4 missing-file replaced with `top5pct-custom-table-cloth-joliet-crest-hill.jpg` (Rule 2 fix). Slide-in left `top5pct-custom-table-runner-joliet-shorewood.jpg` replaced with `top5pct-article-custom-table-cloths-joliet.jpg` (Rule 2 fix — "table-runner" not a table-cloths derivative). R2 slots 6–7 were already in blade (doc was stale). All 8 files dual-homed: table-runners page keeps pointing to `table-runners/`. Cross-promo slide-in (slot 10) stays in `banners/`.*
 
 | # | Component | Size | Current Image | Replaced? |
 |---|---|---|---|---|
-| 1 | `category-hero` | full-width × 576px | `table-runners/top5pct-banner-custom-table-cloth-custom-table-runner-joliet.jpg` | Keep |
-| 2 | `carousel` slot 1 | 600×450px | `table-runners/top5pct-custom-table-cloth.jpg` | Done (R1) |
-| 3 | `carousel` slot 2 | 600×450px | `table-runners/top5pct-personalized-tablecloth-joliet.jpg` | Done (R1) |
-| 4 | `carousel` slot 3 | 600×450px | `table-runners/top5pct-table-cloths.jpg` | Done (R1) |
-| 5 | `carousel` slot 4 | 600×450px | `table-runners/top5pct-article-table-cloths-table-runners.jpg` ⚠ file still missing | Keep |
-| 6 | `card-image-with-text` (left) | 600×450px | `table-runners/top5pct-custom-table-cloth-business.jpg` | Pending |
-| 7 | `card-image-with-text` (right) | 600×450px | `table-runners/top5pct-printed-table-cloths.jpg` | Pending |
-| 8 | `card-detailed-info` image1 | 400×300px | `table-runners/top5pct-banner-custom-table-cloth-custom-table-runner-joliet.jpg` | Keep |
-| 9 | `card-banner-slide-in` (right→left) | full-width 16:7 | `table-runners/top5pct-custom-table-runner-joliet-shorewood.jpg` | Keep |
-| 10 | `card-banner-slide-in` (left→right) | full-width 16:7 | `banners/top5pct-banner-joliet-romeoville-rockdale-plainfield.jpg` | Keep |
+| 1 | `category-hero` | full-width × 576px | `table-cloths/top5pct-custom-table-cloth.jpg` | Done — Rule 1: 2-slot swap (R1 promoted from carousel 1) |
+| 2 | `carousel` slot 1 | 600×450px | `table-cloths/top5pct-banner-custom-table-cloth-custom-table-runner-joliet.jpg` | Done — displaced hero fills vacated slot; "table-cloth" ✓; dual-homed |
+| 3 | `carousel` slot 2 | 600×450px | `table-cloths/top5pct-personalized-tablecloth-joliet.jpg` | Done (R1); "tablecloth" ✓ |
+| 4 | `carousel` slot 3 | 600×450px | `table-cloths/top5pct-table-cloths.jpg` | Done (R1); "table-cloths" ✓ |
+| 5 | `carousel` slot 4 | 600×450px | `table-cloths/top5pct-custom-table-cloth-joliet-crest-hill.jpg` | Done — Rule 2 fix: replaces missing `top5pct-article-table-cloths-table-runners.jpg`; "table-cloth" ✓; dual-homed |
+| 6 | `card-image-with-text` (left) | 600×450px | `table-cloths/top5pct-custom-table-cloth-business.jpg` | Done (R2, already in blade); "table-cloth" ✓ |
+| 7 | `card-image-with-text` (right) | 600×450px | `table-cloths/top5pct-printed-table-cloths.jpg` | Done (R2, already in blade); "table-cloths" ✓ |
+| 8 | `card-detailed-info` image1 | 400×300px | `table-cloths/top5pct-banner-custom-table-cloth-custom-table-runner-joliet.jpg` | Keep; same file as slot 2; dual-homed |
+| 9 | `card-banner-slide-in` (left) | full-width 16:7 | `table-cloths/top5pct-article-custom-table-cloths-joliet.jpg` | Done — Rule 2 fix: replaces `top5pct-custom-table-runner-joliet-shorewood.jpg`; "table-cloths" ✓; dual-homed |
+| 10 | `card-banner-slide-in` (right) cross-promo | full-width 16:7 | `banners/top5pct-banner-joliet-romeoville-rockdale-plainfield.jpg` | Excluded — intentional cross-promo |
 
 ---
 

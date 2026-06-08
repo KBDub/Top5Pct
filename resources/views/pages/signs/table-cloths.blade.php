@@ -47,7 +47,7 @@
         primaryButtonHref="#all-products"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/table-runners/top5pct-banner-custom-table-cloth-custom-table-runner-joliet.jpg"
+        image="/images/table-cloths/top5pct-custom-table-cloth.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />
@@ -56,10 +56,10 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/table-runners/top5pct-custom-table-cloth.jpg', 'alt' => 'Custom branded table cloths and table covers for events in Joliet Illinois'],
-            ['src' => '/images/table-runners/top5pct-personalized-tablecloth-joliet.jpg',                 'alt' => 'Custom table runners and table covers for trade shows in Joliet and Shorewood Illinois'],
-            ['src' => '/images/table-runners/top5pct-table-cloths.jpg',               'alt' => 'Full color custom table cloths for events and businesses in Joliet Illinois'],
-            ['src' => '/images/table-runners/top5pct-article-table-cloths-table-runners.jpg',                  'alt' => 'Custom branded table covers and table runners in Joliet, Will and DuPage County Illinois'],
+            ['src' => '/images/table-cloths/top5pct-banner-custom-table-cloth-custom-table-runner-joliet.jpg', 'alt' => 'Custom branded table cloths and table covers for events in Joliet Illinois'],
+            ['src' => '/images/table-cloths/top5pct-personalized-tablecloth-joliet.jpg',                 'alt' => 'Custom table runners and table covers for trade shows in Joliet and Shorewood Illinois'],
+            ['src' => '/images/table-cloths/top5pct-table-cloths.jpg',               'alt' => 'Full color custom table cloths for events and businesses in Joliet Illinois'],
+            ['src' => '/images/table-cloths/top5pct-custom-table-cloth-joliet-crest-hill.jpg',                'alt' => 'Custom branded table covers and table runners in Joliet, Will and DuPage County Illinois'],
         ]"
         visible=2
     />
@@ -70,7 +70,7 @@
     />
 
     <x-sections.card-image-with-text
-        image="/images/table-runners/top5pct-custom-table-cloth-business.jpg"
+        image="/images/table-cloths/top5pct-custom-table-cloth-business.jpg"
         alt="Custom branded table cloths for businesses in Joliet Illinois"
         title="Look Professional at Every Event"
     >
@@ -81,7 +81,7 @@
     </x-sections.card-image-with-text>
 
     <x-sections.card-image-with-text
-        image="/images/table-runners/top5pct-printed-table-cloths.jpg"
+        image="/images/table-cloths/top5pct-printed-table-cloths.jpg"
         alt="Custom printed table cloths in Joliet Illinois"
         title="Fitted, Throw, and Stretch Styles Available"
         imagePosition="right"
@@ -98,7 +98,7 @@
 
     <x-sections.card-detailed-info
         heading="Why a Branded Table Cloth Is Your Best Event Investment"
-        image1="/images/table-runners/top5pct-banner-custom-table-cloth-custom-table-runner-joliet.jpg"
+        image1="/images/table-cloths/top5pct-banner-custom-table-cloth-custom-table-runner-joliet.jpg"
         alt1="Custom branded table cloths and table covers for events and trade shows in Joliet Illinois"
     >
         <x-slot name="intro">
@@ -127,7 +127,7 @@
         name="Jerry E Olson"
     />
     <x-ui.card-banner-slide-in
-        image="/images/table-runners/top5pct-custom-table-runner-joliet-shorewood.jpg"
+        image="/images/table-cloths/top5pct-article-custom-table-cloths-joliet.jpg"
         alt="Custom branded table cloths and table covers printed by Top 5 Percent in Joliet Illinois"
         title="Branded Table Cloths for Your Next Event"
         href="/contact"
