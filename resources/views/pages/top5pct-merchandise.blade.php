@@ -19,6 +19,13 @@
 
     <x-sections.top5pct-same-day-service serviceType="merchandise" displayServiceType="Merchandise" />
 
+    <x-ui.banner-testimonial
+        quote="Amazing service and quality! Will definitely be doing more business in the future."
+        name="Jonathan Young"
+    />
+
+    <x-sections.product-grid :alwaysShow="true" />
+
     <x-ui.carousel-rotating-images
         :images="[
             ['src' => '/images/custom-shirts/top5pct-custom-t-shirts-main.jpg',                                          'alt' => 'Top 5 Percent branded t-shirts and apparel'],
@@ -27,11 +34,6 @@
             ['src' => '/images/custom-shirts/top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg',                    'alt' => 'Premium holographic shirts from Top 5 Percent in Joliet Illinois'],
         ]"
         visible=3
-    />
-
-    <x-ui.banner-testimonial
-        quote="Amazing service and quality! Will definitely be doing more business in the future."
-        name="Jonathan Young"
     />
 
     <x-sections.card-image-with-text
@@ -70,8 +72,6 @@
         href="/contact"
         direction="left"
     />
-
-    <x-sections.product-grid :alwaysShow="true" />
 
     <x-ui.banner-testimonial
         quote="Good customer service and you met my expectations! Keep up the good work and I'll definitely be sending people your way."
