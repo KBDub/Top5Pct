@@ -46,14 +46,14 @@
                 <div class="mb-4">
                     <a href="/about-us" class="link-notification text-sm text-charcoal-light underline underline-offset-2">Learn more about us and our veteran story →</a>
                 </div>
-                <div class="overflow-hidden shadow-lg">
+                <a href="/signs/business-signs/banners" class="block overflow-hidden shadow-lg group">
                     <img
-                        src="/images/about-preview.jpg"
-                        alt="Custom signage and apparel production at Top 5 Percent in Joliet, Illinois"
-                        class="w-full h-56 object-cover"
+                        src="/images/banners/top5pct-banners-near-me.jpg"
+                        alt="Custom vinyl banners for businesses and events in Joliet, Illinois"
+                        class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300"
                         loading="lazy"
                     />
-                </div>
+                </a>
                 <div class="absolute -bottom-2 right-4 bg-white shadow-lg border border-linen-dark px-6 py-4 text-center z-20">
                     <h4 class="text-charcoal font-bold">When Quality Matters</h4>
                     <p class="text-charcoal-light text-sm">Serving Joliet &amp; Will County</p>

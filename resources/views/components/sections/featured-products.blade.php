@@ -13,7 +13,7 @@
             <x-ui.card-product
                 title="Custom Apparel"
                 href="/custom-apparel"
-                image="/images/custom-shirts/top5pct-banner-custom-apparel-custom-shirts-custom-hoodies-custom-caps.jpg"
+                image="/images/dtf-transfers/top5pct-custom-dtf-shirts.jpg"
             >
                 <p class="text-sm text-charcoal-light mb-3">
                     <strong class="text-charcoal">Need custom t-shirts in Joliet?</strong> Whether you are ordering screen printed and heat pressed custom shirts for a team, a family reunion, or your business, Top 5 Percent delivers premium quality. Ask about our <a href="/custom-apparel" class="text-azure hover:text-azure-dark underline decoration-azure/30 hover:decoration-azure transition-colors">full custom apparel lineup</a> for all your branding needs.
@@ -23,7 +23,7 @@
             <x-ui.card-product
                 title="Corporate Wear"
                 href="/custom-apparel/group-wear/corporate-wear-shirts"
-                image="/images/corporate-wear/toptpct-banner-corporate-shirts-uniforms-joliet-shorewood.jpg"
+                image="/images/corporate-wear/top5pct-custom-business-shirts.jpg"
             >
                 <p class="text-sm text-charcoal-light mb-3">
                     <strong class="text-charcoal">Looking for professional branded apparel?</strong> Outfit your entire team with <a href="/custom-apparel/group-wear/corporate-wear-shirts" class="text-azure hover:text-azure-dark underline decoration-azure/30 hover:decoration-azure transition-colors">custom polos, jackets, and dress shirts</a> featuring your company logo. Embroidered or printed to match your brand standards. Need it fast? We also offer <a href="/custom-apparel" class="text-azure hover:text-azure-dark underline decoration-azure/30 hover:decoration-azure transition-colors">same day shirt service</a> for urgent orders.
@@ -33,7 +33,7 @@
             <x-ui.card-product
                 title="Business Signs"
                 href="/signs"
-                image="/images/business-signs/top5pct-banner-business-signs-joliet-plainfield-shorewood.jpg"
+                image="/images/outdoor-signs/top5pct-outdoor-sign-joliet.jpg"
             >
                 <p class="text-sm text-charcoal-light mb-3">
                     <strong class="text-charcoal">Want to attract more customers with a new sign?</strong> Our <a href="/signs" class="text-azure hover:text-azure-dark underline decoration-azure/30 hover:decoration-azure transition-colors">custom business signs</a> are designed to maximize visibility and build brand recognition. From storefront signs to building wraps, we also offer <a href="/signs/business-signs/banners" class="text-azure hover:text-azure-dark underline decoration-azure/30 hover:decoration-azure transition-colors">custom banners</a> for temporary promotions and grand openings.
@@ -43,7 +43,7 @@
             <x-ui.card-product
                 title="Banners"
                 href="/signs/business-signs/banners"
-                image="/images/banners/top5pct-banner-business-banners-joliet-shorewood-crest-hill.jpg"
+                image="/images/banners/top5pct-sports-banners.jpg"
             >
                 <p class="text-sm text-charcoal-light mb-3">
                     <strong class="text-charcoal">Need a banner for your next event or promotion?</strong> Durable <a href="/signs/business-signs/banners" class="text-azure hover:text-azure-dark underline decoration-azure/30 hover:decoration-azure transition-colors">indoor and outdoor banners</a> with full-color printing on premium vinyl and fabric. Perfect for grand openings and trade shows. We also print <a href="/signs/table-signs/table-runners" class="text-azure hover:text-azure-dark underline decoration-azure/30 hover:decoration-azure transition-colors">custom table runners</a> for a complete event presence.
@@ -53,7 +53,7 @@
             <x-ui.card-product
                 title="Vehicle Graphics"
                 href="/vehicle-graphics/automobile-graphics"
-                image="/images/automobile-graphics/top5pct-banner-vinyl-lettering-car-wraps-joliet.jpg"
+                image="/images/automobile-graphics/top5pct-auto-window-wraps.jpg"
             >
                 <p class="text-sm text-charcoal-light mb-3">
                     <strong class="text-charcoal">Ready to turn your vehicle into a mobile billboard?</strong> <a href="/vehicle-graphics/automobile-graphics" class="text-azure hover:text-azure-dark underline decoration-azure/30 hover:decoration-azure transition-colors">Custom vehicle wraps and vinyl lettering</a> that advertise your business everywhere you drive. For a flexible, no-commitment option, check out our <a href="/vehicle-graphics/vehicle-magnets" class="text-azure hover:text-azure-dark underline decoration-azure/30 hover:decoration-azure transition-colors">removable vehicle magnets</a>.
@@ -63,7 +63,7 @@
             <x-ui.card-product
                 title="Custom Stickers"
                 href="/stickers/standard-stickers-decals"
-                image="/images/stickers-decals/top5pct-banner-stickers-decals-joliet.jpg"
+                image="/images/custom-shaped-stickers-decals/top5pct-custom-stickers-cresthill.jpg"
             >
                 <p class="text-sm text-charcoal-light mb-3">
                     <strong class="text-charcoal">Looking for custom stickers or labels?</strong> High-quality <a href="/stickers/standard-stickers-decals" class="text-azure hover:text-azure-dark underline decoration-azure/30 hover:decoration-azure transition-colors">die-cut stickers and labels</a> for branding, packaging, giveaways, and promotions. We also offer <a href="/signs/business-signs/window-signs" class="text-azure hover:text-azure-dark underline decoration-azure/30 hover:decoration-azure transition-colors">window and wall decals</a> for storefronts and office spaces.
@@ -73,7 +73,7 @@
             <x-ui.card-product
                 title="DTF Transfers"
                 href="/custom-apparel/printing-options/dtf-printing"
-                image="/images/dtf-transfers/toptpct-banner-dtf-transfers-joliet.jpg"
+                image="/images/dtf-transfers/top5pct-dtf-t-shirt-printing.jpg"
             >
                 <p class="text-sm text-charcoal-light mb-3">
                     <strong class="text-charcoal">What are DTF transfers and why choose them?</strong> <a href="/custom-apparel/printing-options/dtf-printing" class="text-azure hover:text-azure-dark underline decoration-azure/30 hover:decoration-azure transition-colors">Direct-to-film transfers</a> produce vibrant, photo-quality designs on virtually any fabric. Ideal for small batches with no minimums. Share your artwork or describe what you want and we will handle the rest.
@@ -83,7 +83,7 @@
             <x-ui.card-product
                 title="Yard Signs"
                 href="/signs/ground-signs/yard-signs"
-                image="/images/yard-signs/top5pct-banner-yard-signs-joliet-shorewood-crest-hill.jpg"
+                image="/images/yard-signs/top5pct-custom-yard-signs-joliet.jpg"
             >
                 <p class="text-sm text-charcoal-light mb-3">
                     <strong class="text-charcoal">Where can I get yard signs near Joliet?</strong> Corrugated <a href="/signs/ground-signs/yard-signs" class="text-azure hover:text-azure-dark underline decoration-azure/30 hover:decoration-azure transition-colors">yard signs for real estate, campaigns, and events</a>. Weather-resistant with single or double-sided printing. Need something larger? We also offer <a href="/signs/business-signs/posters" class="text-azure hover:text-azure-dark underline decoration-azure/30 hover:decoration-azure transition-colors">custom posters and foam boards</a> for indoor displays.
@@ -93,7 +93,7 @@
             <x-ui.card-product
                 title="Promotional Items"
                 href="/promotional-items"
-                image="/images/place-holder.1x1.jpg"
+                image="/images/promo-items/mugs/top5pct-custom-mugs.jpg"
             >
                 <p class="text-sm text-charcoal-light mb-3">
                     <strong class="text-charcoal">Want branded merchandise for your next event?</strong> Custom pens, mugs, tote bags, koozies, and hundreds of other <a href="/promotional-items" class="text-azure hover:text-azure-dark underline decoration-azure/30 hover:decoration-azure transition-colors">promotional products with your logo</a>. Make a lasting impression at trade shows and events. Ready to get started? <a href="/contact" class="text-azure hover:text-azure-dark underline decoration-azure/30 hover:decoration-azure transition-colors">Request a free quote</a> and we will help you find the right items.

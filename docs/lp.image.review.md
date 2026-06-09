@@ -580,4 +580,4 @@ Each featured-products card must match the `category-hero` image of the page it 
 3. **Slots 5, 6, 10 (signs sub-pages):** Apply together with the signs LP fix. Both the signs LP and these 3 home page cards should be updated in the same pass so card images and page heroes are immediately in sync.
 4. **Slot 8 (broken path):** Highest urgency — the current `stickers-decals/` path is a 404. Fix applies the correct path (`custom-shaped-stickers-decals/`) and the correct non-banner R1 image in one step.
 
-**Status: Proposed map finalized. All 11 slots confirmed. Apply when ready — coordinate slots 5, 6, 10 with signs LP apply.**
+**Status: Applied.** All 10 changed slots live. Slot 1 hero unchanged by design. About-preview image links to `/signs/business-signs/banners`. Slots 5, 6, 10 use the signs LP proposed heroes — update those again once signs LP is applied if any conflict emerges.
