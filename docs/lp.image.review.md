@@ -556,7 +556,7 @@ Each featured-products card must match the `category-hero` image of the page it 
 | # | Component | Proposed image | Dir | Rule 5? | R1/R2? |
 |---|---|---|---|---|---|
 | 1 | `category-hero` (default prop — no change) | `top5pct-banner-joliet.jpg` | root | n/a — leave as-is per user decision | — |
-| 2 | About preview | `top5pct-banners-near-me.jpg` | `banners/` | n/a | import-round |
+| 2 | About preview | `top5pct-custom-t-shirts-main.jpg` | `custom-shirts/` | n/a | import-round |
 | 3 | Card "Custom Apparel" | `top5pct-custom-dtf-shirts.jpg` | `dtf-transfers/` | ✓ sub-page hero | R1 ✓ |
 | 4 | Card "Corporate Wear" | `top5pct-custom-business-shirts.jpg` | `corporate-wear/` | ✓ sub-page hero | R1 ✓ |
 | 5 | Card "Business Signs" | `top5pct-outdoor-sign-joliet.jpg` | `outdoor-signs/` | ✓ sub-page hero | R1 ✓ |
