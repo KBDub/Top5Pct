@@ -454,3 +454,28 @@ LP banners 2, 4, 6, 9 use R1 proxies — update to exact sub-page heroes once th
 *All 25 slots distinct. Sub-pages with R3 heroes (slots 8, 10, 12, 15) use best available R1/import-round proxies until those sub-pages are fixed.*
 
 **Status: Proposed map complete. 25 of 25 slots assigned. Apply when ready.**
+
+---
+
+#### Post-apply finding — LP banner 4 "Business Signs" is circular
+
+LP banner 4 ("Business Signs", current slot 10) has `'href' => '/signs'` — it links back to the `/signs` LP itself. This is a circular, dead-end link that sends users nowhere new. The banner must be removed entirely.
+
+**Blade block to remove (lines 98–103):**
+```php
+[
+    'image' => '/images/business-signs/top5pct-business-signs-joliet-shorewood-crest-hill.jpg',
+    'alt'   => 'Custom business signs in Joliet, Plainfield, and Shorewood Illinois',
+    'title' => 'Business Signs',
+    'href'  => '/signs',
+],
+```
+
+**Effect of removal:**
+- LP drops from 25 to 24 slots, and from 12 to 11 LP banners
+- `top5pct-business-signs-joliet-shorewood-crest-hill.jpg` is freed — reassign to any remaining slot that needs a business-signs image, or leave freed
+- Sub-page `/signs/business-signs` still exists and has its own page — if a "Business Signs" LP banner is ever needed, the correct href is `/signs/business-signs`, not `/signs`
+
+**Note:** There is a `/signs/business-signs` sub-page blade. A banner for it could be added back with the corrected href if desired. This is a separate decision from the removal.
+
+**Action required:** Remove the 4-line block. This is the only change needed — no image reassignment required since all remaining 24 slots are already distinct.
