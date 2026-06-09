@@ -581,3 +581,84 @@ Each featured-products card must match the `category-hero` image of the page it 
 4. **Slot 8 (broken path):** Highest urgency — the current `stickers-decals/` path is a 404. Fix applies the correct path (`custom-shaped-stickers-decals/`) and the correct non-banner R1 image in one step.
 
 **Status: Applied.** All 10 changed slots live. Slot 1 hero unchanged by design. About-preview image links to `/signs/business-signs/banners`. Slots 5, 6, 10 use the signs LP proposed heroes — update those again once signs LP is applied if any conflict emerges.
+
+---
+
+### `/top5pct-merchandise` LP
+
+**File:** `resources/views/pages/top5pct-merchandise.blade.php`
+**Status:** MNC analysis complete. 12 of 12 slots audited. Proposed map below. Apply when ready.
+
+**Key structural notes:**
+- This is a branded merchandise e-commerce page, not a sub-category LP. It contains an embedded `x-sections.product-grid` (dynamic Lunar product listing) — this is not an image slot and is excluded from the LP rules.
+- **No LP banners.** Rule 5 does not apply. All slots are non-banner.
+- All 12 image slots source exclusively from `custom-shirts/`. No staging directory exists for `custom-shirts/` — all files are import-round.
+
+---
+
+#### Current slot map — all 12 slots
+
+| # | Component | Current image | Dir | Violations |
+|---|---|---|---|---|
+| 1 | `category-hero` | `top5pct-custom-t-shirts-main.jpg` | `custom-shirts/` | None |
+| 2 | C1 slot 1 | `top5pct-custom-t-shirts-main.jpg` | `custom-shirts/` | **R4 — 3× repeat (slots 1, 2, 6)** |
+| 3 | C1 slot 2 | `top5pct-banner-custom-apparel-custom-shirts-custom-hoodies-custom-caps.jpg` | `custom-shirts/` | **R3 (banner-)** |
+| 4 | C1 slot 3 | `top5pct-custom-foil-shirts-hoodies-caps-joliet.jpg` | `custom-shirts/` | None |
+| 5 | C1 slot 4 | `top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg` | `custom-shirts/` | **R4 — 2× repeat (slots 5, 12)** |
+| 6 | `card-image-with-text` | `top5pct-custom-t-shirts-main.jpg` | `custom-shirts/` | **R4 — 3× repeat (slots 1, 2, 6)** |
+| 7 | C2 slot 1 | `top5pct-custom-rhinestone-shirt-cap-hoodie-joliet.jpg` | `custom-shirts/` | None |
+| 8 | C2 slot 2 | `top5pct-custom-glitter-shirt-cap-hoodie-joliet.jpg` | `custom-shirts/` | None |
+| 9 | C2 slot 3 | `top5pct-custom-embroidery-shops-near-me-joliet.jpg` | `custom-shirts/` | None |
+| 10 | C2 slot 4 | `top5pct-t-shirt-maker-article-pic2.jpg` | `custom-shirts/` | None |
+| 11 | Slide-in right | `top5pct-custom-flock-shirt-hoodie-cap-joliet.jpg` | `custom-shirts/` | None |
+| 12 | Slide-in left | `top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg` | `custom-shirts/` | **R4 — 2× repeat (slots 5, 12)** |
+
+**Violation count:** R3×1, R4×2 groups (`top5pct-custom-t-shirts-main.jpg` 3×; `top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg` 2×). 8 of 12 slots are clean. R1, R5, R6: no violations.
+
+---
+
+#### Repeat groups
+
+| File | Slots | Priority |
+|---|---|---|
+| `top5pct-custom-t-shirts-main.jpg` | 1, 2, 6 | High — 3× across hero, carousel, and card |
+| `top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg` | 5, 12 | Medium — 2× across carousel and slide-in |
+
+---
+
+#### Available replacements from `custom-shirts/` (not currently used)
+
+`top5pct-custom-hoodies.jpg`, `top5pct-custom-vinyl-shirts-caps-hoodies.jpg`, `top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg`, `top5pct-custom-pattern-shirts-caps-hoodies-joliet.jpg`, `top5pct-custom-reflective-shirts-hoodies-caps-joliet.jpg`, `top5pct-screenprinted-shirts-joliet.jpg`, `top5pct-long-lasting-graphic-shirts.jpg` (R1 ✓ — confirmed in custom-apparel LP), `top5pct-custom-hoodies.jpg`, `top5pct-vinyl-shirts.jpg`, `top5pct-custom-vinyl-hoodies.jpg`, `top5pct-screenprint-custom-shirts.jpg`, `top5pct-brick-vinyl-cresthill.jpg` (R1 ✓ — confirmed in custom-apparel LP)
+
+---
+
+#### Proposed slot map — all 12 slots
+
+| # | Component | Proposed image | Dir | Change? | R1/R2? |
+|---|---|---|---|---|---|
+| 1 | `category-hero` | `top5pct-custom-t-shirts-main.jpg` | `custom-shirts/` | Keep | import-round |
+| 2 | C1 slot 1 | `top5pct-custom-vinyl-shirts-caps-hoodies.jpg` | `custom-shirts/` | Replace (R4) | import-round |
+| 3 | C1 slot 2 | `top5pct-long-lasting-graphic-shirts.jpg` | `custom-shirts/` | Replace (R3) | R1 ✓ |
+| 4 | C1 slot 3 | `top5pct-custom-foil-shirts-hoodies-caps-joliet.jpg` | `custom-shirts/` | Keep | import-round |
+| 5 | C1 slot 4 | `top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg` | `custom-shirts/` | Keep | import-round |
+| 6 | `card-image-with-text` | `top5pct-screenprinted-shirts-joliet.jpg` | `custom-shirts/` | Replace (R4) | import-round |
+| 7 | C2 slot 1 | `top5pct-custom-rhinestone-shirt-cap-hoodie-joliet.jpg` | `custom-shirts/` | Keep | import-round |
+| 8 | C2 slot 2 | `top5pct-custom-glitter-shirt-cap-hoodie-joliet.jpg` | `custom-shirts/` | Keep | import-round |
+| 9 | C2 slot 3 | `top5pct-custom-embroidery-shops-near-me-joliet.jpg` | `custom-shirts/` | Keep | import-round |
+| 10 | C2 slot 4 | `top5pct-t-shirt-maker-article-pic2.jpg` | `custom-shirts/` | Keep | import-round |
+| 11 | Slide-in right | `top5pct-custom-flock-shirt-hoodie-cap-joliet.jpg` | `custom-shirts/` | Keep | import-round |
+| 12 | Slide-in left | `top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg` | `custom-shirts/` | Replace (R4) | import-round |
+
+**3 slots changing, 9 staying. All 12 files distinct after fix. No R3, no R4, no repeats.**
+
+---
+
+#### Fix notes (for apply phase)
+
+All 3 changes are in `resources/views/pages/top5pct-merchandise.blade.php`:
+
+1. **Slot 2** (C1 slot 1, line 31): `top5pct-custom-t-shirts-main.jpg` → `top5pct-custom-vinyl-shirts-caps-hoodies.jpg`
+2. **Slot 3** (C1 slot 2, line 32): `top5pct-banner-custom-apparel-custom-shirts-custom-hoodies-custom-caps.jpg` → `top5pct-long-lasting-graphic-shirts.jpg`
+3. **Slot 12** (Slide-in left, line 69): `top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg` → `top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg`
+
+**Status: Proposed map complete. 3 of 12 slots need changes. Apply when ready.**
