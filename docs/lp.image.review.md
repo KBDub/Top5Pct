@@ -592,7 +592,7 @@ Each featured-products card must match the `category-hero` image of the page it 
 **Key structural notes:**
 - This is a branded merchandise e-commerce page, not a sub-category LP. It contains an embedded `x-sections.product-grid` (dynamic Lunar product listing) — this is not an image slot and is excluded from the LP rules.
 - **No LP banners.** Rule 5 does not apply. All slots are non-banner.
-- All 12 image slots source exclusively from `custom-shirts/`. No staging directory exists for `custom-shirts/` — all files are import-round.
+- All 12 image slots source exclusively from `custom-shirts/`. A staging directory exists at `public/new-images/Custom Shirts/` with 33 R1 files across subdirs (Brick, Flock, Foil, Glitter, Glow, Holographic, Puff, Reflective, Rhinestones, Sublimation, DTF, Embroidery, Digital Vinyl, Corporate Wear, Spirit Wear). **Zero R1 files are currently in use on this page** — all 12 slots use import-round images.
 
 ---
 
@@ -613,7 +613,7 @@ Each featured-products card must match the `category-hero` image of the page it 
 | 11 | Slide-in right | `top5pct-custom-flock-shirt-hoodie-cap-joliet.jpg` | `custom-shirts/` | None |
 | 12 | Slide-in left | `top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg` | `custom-shirts/` | **R4 — 2× repeat (slots 5, 12)** |
 
-**Violation count:** R3×1, R4×2 groups (`top5pct-custom-t-shirts-main.jpg` 3×; `top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg` 2×). 8 of 12 slots are clean. R1, R5, R6: no violations.
+**Violation count:** R3×1, R4×2 groups (`top5pct-custom-t-shirts-main.jpg` 3×; `top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg` 2×). 8 of 12 slots are clean. R1, R5, R6: no violations. **All 12 files are import-round — confirmed by cross-checking against `public/new-images/Custom Shirts/`.**
 
 ---
 
@@ -626,9 +626,13 @@ Each featured-products card must match the `category-hero` image of the page it 
 
 ---
 
-#### Available replacements from `custom-shirts/` (not currently used)
+#### Available replacements from `custom-shirts/` (not currently used on this page)
 
-`top5pct-custom-hoodies.jpg`, `top5pct-custom-vinyl-shirts-caps-hoodies.jpg`, `top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg`, `top5pct-custom-pattern-shirts-caps-hoodies-joliet.jpg`, `top5pct-custom-reflective-shirts-hoodies-caps-joliet.jpg`, `top5pct-screenprinted-shirts-joliet.jpg`, `top5pct-long-lasting-graphic-shirts.jpg` (R1 ✓ — confirmed in custom-apparel LP), `top5pct-custom-hoodies.jpg`, `top5pct-vinyl-shirts.jpg`, `top5pct-custom-vinyl-hoodies.jpg`, `top5pct-screenprint-custom-shirts.jpg`, `top5pct-brick-vinyl-cresthill.jpg` (R1 ✓ — confirmed in custom-apparel LP)
+**R1 (confirmed in `public/new-images/Custom Shirts/`):**
+`top5pct-brick-vinyl-cresthill.jpg`, `top5pct-brick-vinyl-custom-t-shirt.jpg`, `top5pct-brick-vinyl-jackets-joliet.jpg`, `top5pct-customized-brick-vinyl-shirts.jpg`, `top5pct-custom-flock-t-shirt-printing.jpg`, `top5pct-custom-foil-polo.jpg`, `top5pct-custom-puff-shirts.jpg`, `top5pct-custom-reflective-hoodies.jpg`, `top5pct-custom-rhinestone-shirts.jpg`, `top5pct-custom-shirt-chameleon.jpg`, `top5pct-custom-wedding-foil-shirts.jpg`, `top5pct-digital-vinyl-t-shirts.jpg`, `top5pct-flock-hoodie-printing.jpg`, `top5pct-flock-shirt-vinyl.jpg`, `top5pct-foil-custom-t-shirts.jpg`, `top5pct-foil-gold-t-shirt.jpg`, `top5pct-glowing-halloween-bat-shirt.jpg`, `top5pct-glow-in-the-dark-caps.jpg`, `top5pct-gold-foil-printed-shirts.jpg`, `top5pct-halloween-pumpkin-glow-shirt.jpg`, `top5pct-holographic-vinyl-hoodie-foil.jpg`, `top5pct-long-lasting-graphic-shirts.jpg`, `top5pct-puff-shirts-joliet.jpg`, `top5pct-puff-shirts.jpg`, `top5pct-reflective-shirts.jpg`, `top5pct-reflective-shirts-shorewood.jpg`, `top5pct-reflective-vinyl-shirts-plainfield.jpg`, `top5pct-rhinestone-apparel-keith-elementary.jpg`, `top5pct-rhinestone-bling-joliet.jpg`, `top5pct-rhinestone-hoodie-joliet-west.jpg`, `top5pct-rhinestone-ladies-shirt.jpg`, `top5pct-rhinestone-t-shirts-joliet.jpg`, `top5pct-rhinetsone-t-shirts.jpg`
+
+**Import-round (in `public/images/custom-shirts/`, not in staging):**
+`top5pct-custom-hoodies.jpg`, `top5pct-custom-vinyl-shirts-caps-hoodies.jpg`, `top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg`, `top5pct-custom-pattern-shirts-caps-hoodies-joliet.jpg`, `top5pct-custom-reflective-shirts-hoodies-caps-joliet.jpg`, `top5pct-screenprinted-shirts-joliet.jpg`, `top5pct-vinyl-shirts.jpg`, `top5pct-custom-vinyl-hoodies.jpg`, `top5pct-screenprint-custom-shirts.jpg`
 
 ---
 
@@ -637,7 +641,7 @@ Each featured-products card must match the `category-hero` image of the page it 
 | # | Component | Proposed image | Dir | Change? | R1/R2? |
 |---|---|---|---|---|---|
 | 1 | `category-hero` | `top5pct-custom-t-shirts-main.jpg` | `custom-shirts/` | Keep | import-round |
-| 2 | C1 slot 1 | `top5pct-custom-vinyl-shirts-caps-hoodies.jpg` | `custom-shirts/` | Replace (R4) | import-round |
+| 2 | C1 slot 1 | `top5pct-foil-gold-t-shirt.jpg` | `custom-shirts/` | Replace (R4) | R1 ✓ |
 | 3 | C1 slot 2 | `top5pct-long-lasting-graphic-shirts.jpg` | `custom-shirts/` | Replace (R3) | R1 ✓ |
 | 4 | C1 slot 3 | `top5pct-custom-foil-shirts-hoodies-caps-joliet.jpg` | `custom-shirts/` | Keep | import-round |
 | 5 | C1 slot 4 | `top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg` | `custom-shirts/` | Keep | import-round |
@@ -647,9 +651,9 @@ Each featured-products card must match the `category-hero` image of the page it 
 | 9 | C2 slot 3 | `top5pct-custom-embroidery-shops-near-me-joliet.jpg` | `custom-shirts/` | Keep | import-round |
 | 10 | C2 slot 4 | `top5pct-t-shirt-maker-article-pic2.jpg` | `custom-shirts/` | Keep | import-round |
 | 11 | Slide-in right | `top5pct-custom-flock-shirt-hoodie-cap-joliet.jpg` | `custom-shirts/` | Keep | import-round |
-| 12 | Slide-in left | `top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg` | `custom-shirts/` | Replace (R4) | import-round |
+| 12 | Slide-in left | `top5pct-puff-shirts-joliet.jpg` | `custom-shirts/` | Replace (R4) | R1 ✓ |
 
-**3 slots changing, 9 staying. All 12 files distinct after fix. No R3, no R4, no repeats.**
+**3 slots changing, 9 staying. All 12 files distinct after fix. No R3, no R4, no repeats. 2 of 3 replacements are R1.**
 
 ---
 
@@ -657,8 +661,8 @@ Each featured-products card must match the `category-hero` image of the page it 
 
 All 3 changes are in `resources/views/pages/top5pct-merchandise.blade.php`:
 
-1. **Slot 2** (C1 slot 1, line 31): `top5pct-custom-t-shirts-main.jpg` → `top5pct-custom-vinyl-shirts-caps-hoodies.jpg`
-2. **Slot 3** (C1 slot 2, line 32): `top5pct-banner-custom-apparel-custom-shirts-custom-hoodies-custom-caps.jpg` → `top5pct-long-lasting-graphic-shirts.jpg`
-3. **Slot 12** (Slide-in left, line 69): `top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg` → `top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg`
+1. **Slot 2** (C1 slot 1, line 31): `top5pct-custom-t-shirts-main.jpg` → `top5pct-foil-gold-t-shirt.jpg` (R1 ✓)
+2. **Slot 3** (C1 slot 2, line 32): `top5pct-banner-custom-apparel-custom-shirts-custom-hoodies-custom-caps.jpg` → `top5pct-long-lasting-graphic-shirts.jpg` (R1 ✓)
+3. **Slot 12** (Slide-in left, line 69): `top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg` → `top5pct-puff-shirts-joliet.jpg` (R1 ✓)
 
-**Status: Proposed map complete. 3 of 12 slots need changes. Apply when ready.**
+**Status: Proposed map updated. 3 of 12 slots need changes. All 3 replacements confirmed R1. Apply when ready.**
