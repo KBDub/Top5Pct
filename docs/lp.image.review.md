@@ -479,3 +479,5 @@ LP banner 4 ("Business Signs", current slot 10) has `'href' => '/signs'` — it 
 **Note:** There is a `/signs/business-signs` sub-page blade. A banner for it could be added back with the corrected href if desired. This is a separate decision from the removal.
 
 **Action required:** Remove the 4-line block. This is the only change needed — no image reassignment required since all remaining 24 slots are already distinct.
+
+**Status: Removed.** LP is now 24 slots, 11 LP banners.

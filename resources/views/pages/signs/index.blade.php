@@ -93,12 +93,6 @@
             'href'  => '/signs/business-signs/banners',
         ],
         [
-            'image' => '/images/business-signs/top5pct-business-signs-joliet-shorewood-crest-hill.jpg',
-            'alt'   => 'Custom business signs in Joliet, Plainfield, and Shorewood Illinois',
-            'title' => 'Business Signs',
-            'href'  => '/signs',
-        ],
-        [
             'image' => '/images/posters/top5pct-posters-printed-joliet.jpg',
             'alt'   => 'Poster printing services in Joliet, Shorewood, and Romeoville Illinois',
             'title' => 'Posters',
