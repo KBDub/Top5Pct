@@ -28,8 +28,8 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/custom-shirts/top5pct-custom-t-shirts-main.jpg',                                          'alt' => 'Top 5 Percent branded t-shirts and apparel'],
-            ['src' => '/images/custom-shirts/top5pct-banner-custom-apparel-custom-shirts-custom-hoodies-custom-caps.jpg', 'alt' => 'Custom branded shirts, hoodies, and caps representing the Top 5% lifestyle'],
+            ['src' => '/images/glitter-shirts/top5pct-glitter-t-shirts.jpg',                'alt' => 'Custom glitter t-shirts from Top 5 Percent in Joliet Illinois'],
+            ['src' => '/images/flock-shirts/top5pct-custom-flock-t-shirt-printing.jpg', 'alt' => 'Custom flock t-shirt printing from Top 5 Percent in Joliet Illinois'],
             ['src' => '/images/custom-shirts/top5pct-custom-foil-shirts-hoodies-caps-joliet.jpg',                        'alt' => 'Premium foil print shirts from Top 5 Percent in Joliet Illinois'],
             ['src' => '/images/custom-shirts/top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg',                    'alt' => 'Premium holographic shirts from Top 5 Percent in Joliet Illinois'],
         ]"
@@ -37,8 +37,8 @@
     />
 
     <x-sections.card-image-with-text
-        image="/images/custom-shirts/top5pct-custom-t-shirts-main.jpg"
-        alt="Top 5 Percent branded merchandise and apparel representing the 5% lifestyle"
+        image="/images/custom-shirts/top5pct-foil-gold-t-shirt.jpg"
+        alt="Premium foil print shirts and apparel from Top 5 Percent in Joliet Illinois"
         title="Wear the 5% Standard"
     >
         <p class="mb-4">Top 5% Merchandise is our exclusive line of branded apparel and accessories for people who live by the standard of excellence. The concept behind <a href="/" class="link-notification">Top 5 Percent</a> has always been simple, only the top five percent of people commit to the level of quality, consistency, and craftsmanship that separates great work from good enough. Our merchandise is a physical expression of that standard. Every piece in the collection is produced with the same attention to detail we put into every custom order that leaves our shop.</p>
@@ -66,7 +66,7 @@
         direction="right"
     />
     <x-ui.card-banner-slide-in
-        image="/images/custom-shirts/top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg"
+        image="/images/holographic-shirts/top5pct-holographic-vinyl-hoodie-foil.jpg"
         alt="Custom holographic and specialty apparel at Top 5 Percent in Joliet Illinois"
         title="Step Up Your Brand, Custom Prints From Top 5 Percent"
         href="/contact"

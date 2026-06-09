@@ -587,7 +587,7 @@ Each featured-products card must match the `category-hero` image of the page it 
 ### `/top5pct-merchandise` LP
 
 **File:** `resources/views/pages/top5pct-merchandise.blade.php`
-**Status:** MNC analysis complete. 12 of 12 slots audited. Proposed map below. Apply when ready.
+**Status:** Applied. 4 of 12 slots changed. All 12 slots now clean.
 
 **Key structural notes:**
 - This is a branded merchandise e-commerce page, not a sub-category LP. It contains an embedded `x-sections.product-grid` (dynamic Lunar product listing) — this is not an image slot and is excluded from the LP rules.
