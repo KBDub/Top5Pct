@@ -481,3 +481,105 @@ LP banner 4 ("Business Signs", current slot 10) has `'href' => '/signs'` — it 
 **Action required:** Remove the 4-line block. This is the only change needed — no image reassignment required since all remaining 24 slots are already distinct.
 
 **Status: Removed.** LP is now 24 slots, 11 LP banners.
+
+---
+
+### `/` Home Page
+
+**File:** `resources/views/pages/home.blade.php`
+**Status:** MNC analysis complete. 11 of 11 slots audited. Proposed map below. Apply when ready.
+
+**Key structural difference:** Unlike the LPs, the home page blade contains no inline `image=` attributes. All image slots live inside section component files. The fix strategy must account for this:
+- Slot 1 (hero): add `image=` to `home.blade.php` — do NOT change the `category-hero.blade.php` default (that default is shared with every page that omits `image=`).
+- Slots 2–11: edit the component files directly (`about-preview.blade.php`, `featured-products.blade.php`).
+
+---
+
+#### Image directories used
+
+| Dir | Notes |
+|---|---|
+| root `public/images/` | `top5pct-banner-joliet.jpg` (hero default), `about-preview.jpg` (about section), `place-holder.1x1.jpg` (promo card) |
+| `custom-shirts/` | 1 file used (R3) |
+| `corporate-wear/` | 1 file used (R3) |
+| `business-signs/` | 1 file used (R3) |
+| `banners/` | 1 file used (R3) |
+| `automobile-graphics/` | 1 file used (R3) |
+| `stickers-decals/` | **BROKEN** — this dir does not exist in `public/images/`. File is actually at `custom-shaped-stickers-decals/`. Slot 8 is producing a 404. |
+| `dtf-transfers/` | 1 file used (R3, typo in filename) |
+| `yard-signs/` | 1 file used (R3) |
+
+---
+
+#### Current slot map — all 11 slots
+
+| # | Component | Source file | Current image | Dir | Violations |
+|---|---|---|---|---|---|
+| 1 | `category-hero` (default prop) | `category-hero.blade.php` L10 | `top5pct-banner-joliet.jpg` | root | R3 (banner-), R6 (root, no category) |
+| 2 | About preview image | `about-preview.blade.php` L51 | `about-preview.jpg` | root | None — brand photo, special case |
+| 3 | Card "Custom Apparel" → `/custom-apparel` | `featured-products.blade.php` L16 | `custom-shirts/top5pct-banner-custom-apparel-custom-shirts-custom-hoodies-custom-caps.jpg` | `custom-shirts/` | R3, R5 |
+| 4 | Card "Corporate Wear" → `/custom-apparel/group-wear/corporate-wear-shirts` | `featured-products.blade.php` L26 | `corporate-wear/toptpct-banner-corporate-shirts-uniforms-joliet-shorewood.jpg` | `corporate-wear/` | R3, R5, filename typo ("toptpct") |
+| 5 | Card "Business Signs" → `/signs` | `featured-products.blade.php` L36 | `business-signs/top5pct-banner-business-signs-joliet-plainfield-shorewood.jpg` | `business-signs/` | R3, R5 |
+| 6 | Card "Banners" → `/signs/business-signs/banners` | `featured-products.blade.php` L46 | `banners/top5pct-banner-business-banners-joliet-shorewood-crest-hill.jpg` | `banners/` | R3, R5 |
+| 7 | Card "Vehicle Graphics" → `/vehicle-graphics/automobile-graphics` | `featured-products.blade.php` L56 | `automobile-graphics/top5pct-banner-vinyl-lettering-car-wraps-joliet.jpg` | `automobile-graphics/` | R3, R5 |
+| 8 | Card "Custom Stickers" → `/stickers/standard-stickers-decals` | `featured-products.blade.php` L66 | `stickers-decals/top5pct-banner-stickers-decals-joliet.jpg` | `stickers-decals/` | **R1 (404 — dir broken)**, R3, R5, R6 |
+| 9 | Card "DTF Transfers" → `/custom-apparel/printing-options/dtf-printing` | `featured-products.blade.php` L76 | `dtf-transfers/toptpct-banner-dtf-transfers-joliet.jpg` | `dtf-transfers/` | R3, R5, filename typo ("toptpct") |
+| 10 | Card "Yard Signs" → `/signs/ground-signs/yard-signs` | `featured-products.blade.php` L86 | `yard-signs/top5pct-banner-yard-signs-joliet-shorewood-crest-hill.jpg` | `yard-signs/` | R3, R5 |
+| 11 | Card "Promotional Items" → `/promotional-items` | `featured-products.blade.php` L96 | `place-holder.1x1.jpg` | root | **R1 (placeholder)**, R5 |
+
+**Violation count:** R1×2, R3×9, R5×9, R6×2. Slot 2 is clean.
+
+---
+
+#### Sub-page hero confirmation
+
+Each featured-products card must match the `category-hero` image of the page it links to (Rule 5). Heroes confirmed from the applied LP maps and direct blade greps:
+
+| Card links to | Confirmed hero | Source | R1/R2? |
+|---|---|---|---|
+| `/custom-apparel` | `dtf-transfers/top5pct-custom-dtf-shirts.jpg` | custom-apparel LP slot 1 (applied) | R1 ✓ |
+| `/custom-apparel/group-wear/corporate-wear-shirts` | `corporate-wear/top5pct-custom-business-shirts.jpg` | custom-apparel LP banner 16 (applied) | R1 ✓ |
+| `/signs` | `outdoor-signs/top5pct-outdoor-sign-joliet.jpg` | signs LP proposed slot 1 (not yet applied) | R1 ✓ |
+| `/signs/business-signs/banners` | `banners/top5pct-sports-banners.jpg` | signs LP proposed banner 3 (not yet applied) | R1 ✓ |
+| `/vehicle-graphics/automobile-graphics` | `automobile-graphics/top5pct-auto-window-wraps.jpg` | vehicle-graphics LP banner 1 (applied) | R1 ✓ |
+| `/stickers/standard-stickers-decals` | `custom-shaped-stickers-decals/top5pct-custom-stickers-cresthill.jpg` | stickers LP banner 1 (applied) | R1 ✓ |
+| `/custom-apparel/printing-options/dtf-printing` | `dtf-transfers/top5pct-dtf-t-shirt-printing.jpg` | custom-apparel LP banner 1 (applied) | R1 ✓ |
+| `/signs/ground-signs/yard-signs` | `yard-signs/top5pct-custom-yard-signs-joliet.jpg` | signs LP proposed banner 1 (not yet applied) | import-round |
+| `/promotional-items` | `promo-items/mugs/top5pct-custom-mugs.jpg` | promotional-items LP hero (applied) | R1 ✓ |
+
+**Note on `/signs` sub-pages (slots 5, 6, 10):** These three cards link to sub-pages whose heroes come from the signs LP proposed map, which has not yet been applied. The home page fix for these 3 slots must be coordinated with the signs LP apply — do both together so the card images and the sub-page heroes stay in sync.
+
+---
+
+#### Proposed slot map — all 11 slots
+
+| # | Component | Proposed image | Dir | Rule 5? | R1/R2? |
+|---|---|---|---|---|---|
+| 1 | `category-hero` (via `home.blade.php` `image=`) | `top5pct-outdoor-sign-joliet.jpg` | `outdoor-signs/` | n/a — site hero | R1 ✓ |
+| 2 | About preview | `about-preview.jpg` | root | n/a — brand photo | keep as-is |
+| 3 | Card "Custom Apparel" | `top5pct-custom-dtf-shirts.jpg` | `dtf-transfers/` | ✓ sub-page hero | R1 ✓ |
+| 4 | Card "Corporate Wear" | `top5pct-custom-business-shirts.jpg` | `corporate-wear/` | ✓ sub-page hero | R1 ✓ |
+| 5 | Card "Business Signs" | `top5pct-outdoor-sign-joliet.jpg` | `outdoor-signs/` | ✓ sub-page hero | R1 ✓ |
+| 6 | Card "Banners" | `top5pct-sports-banners.jpg` | `banners/` | ✓ sub-page hero | R1 ✓ |
+| 7 | Card "Vehicle Graphics" | `top5pct-auto-window-wraps.jpg` | `automobile-graphics/` | ✓ sub-page hero | R1 ✓ |
+| 8 | Card "Custom Stickers" | `top5pct-custom-stickers-cresthill.jpg` | `custom-shaped-stickers-decals/` | ✓ sub-page hero | R1 ✓ |
+| 9 | Card "DTF Transfers" | `top5pct-dtf-t-shirt-printing.jpg` | `dtf-transfers/` | ✓ sub-page hero | R1 ✓ |
+| 10 | Card "Yard Signs" | `top5pct-custom-yard-signs-joliet.jpg` | `yard-signs/` | ✓ sub-page hero | import-round |
+| 11 | Card "Promotional Items" | `top5pct-custom-mugs.jpg` | `promo-items/mugs/` | ✓ sub-page hero | R1 ✓ |
+
+**Note on slot 1 (hero):** `top5pct-outdoor-sign-joliet.jpg` is proposed as a strong, clean general-brand image (R1, wide-format). Alternative: any non-banner image from a top-level category dir. Final choice is yours — flag if a different image is preferred before apply.
+
+**Note on slots 1 and 5 (same image):** Both the site hero and the "Business Signs" card propose `outdoor-signs/top5pct-outdoor-sign-joliet.jpg`. This is a repeat (Rule 4 violation). To resolve, slot 1 (hero) should use a different image. Candidates from existing R1 dirs: `dtf-transfers/top5pct-custom-dtf-shirts.jpg` (already used in slot 3), `automobile-graphics/top5pct-auto-window-wraps.jpg` (slot 7), `custom-shaped-stickers-decals/top5pct-die-cut-stickers-joliet.jpg` (R1, not used). A good choice for the home hero is an apparel-and-signs combo image — check if one exists in `custom-shirts/` or `outdoor-signs/` that isn't already assigned. **Pending hero image decision before apply.**
+
+**All 10 non-hero slots distinct. 9 of 9 cards will match sub-page heroes. Slot 2 unchanged.**
+
+---
+
+#### Fix notes (for apply phase)
+
+1. **Slot 1 (hero):** Add `image="/images/[chosen-image]"` to `home.blade.php` line 41 (`x-sections.category-hero`). Do not edit `category-hero.blade.php` default. Resolve the slot 1 vs slot 5 repeat first.
+2. **Slots 3–11 (cards):** Edit `resources/views/components/sections/featured-products.blade.php` — replace the `image=` value for each of the 9 `x-ui.card-product` components.
+3. **Slots 5, 6, 10 (signs sub-pages):** Apply together with the signs LP fix. Both the signs LP and these 3 home page cards should be updated in the same pass so card images and page heroes are immediately in sync.
+4. **Slot 8 (broken path):** Highest urgency — the current `stickers-decals/` path is a 404. Fix applies the correct path (`custom-shaped-stickers-decals/`) and the correct non-banner R1 image in one step.
+
+**Status: Proposed map complete. Pending hero image decision (slot 1 vs slot 5 repeat). Apply when ready — coordinate slots 5, 6, 10 with signs LP apply.**
