@@ -455,8 +455,8 @@ Tables: `| # | slot | file | dir | placed | round |`
 | 9 | C-8 | top5pct-screenprinting-hoodies-joliet.jpg | screen-printing/ | Jun 3 | R3 |
 | 10 | C-9 | top5pct-screenprinting-t-shirts-joliet.jpg | screen-printing/ | Jun 3 | R3 |
 | 11 | C-10 | top5pct-screenprinting-t-shirt-maker-joliet.jpg | screen-printing/ | Jun 8 | R3 |
-| 12 | card-1 | top5pct-custom-flock-shirt-hoodie-cap-joliet.jpg | custom-shirts/ | Mar 16 | Initial |
-| 13 | card-2 | top5pct-custom-reflective-shirts-hoodies-caps-joliet.jpg | custom-shirts/ | Mar 16 | Initial |
+| 12 | card-1 | top5pct-neon-vinyl-shirts.jpg | custom-shirts/ | May 11 | R1 |
+| 13 | card-2 | top5pct-vinyl-caps.jpg | custom-shirts/ | May 11 | R1 |
 | 14 | slide-L | top5pct-screenprinting-shirts.jpg | custom-shirts/ | May 11 | R1 |
 | 15 | slide-R | top5pct-custom-embroidery-shops-near-me-joliet.jpg | custom-shirts/ | Mar 16 | Initial |
 
@@ -502,7 +502,7 @@ Tables: `| # | slot | file | dir | placed | round |`
 | 2 | C-1 | top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg | glow-shirts/ | Mar 16 | Initial (moved) |
 | 3 | C-2 | top5pct-glowing-halloween-bat-shirt.jpg | glow-shirts/ | Jun 2 | R2 |
 | 4 | C-3 | top5pct-halloween-pumpkin-glow-shirt.jpg | glow-shirts/ | Jun 2 | R2 |
-| 5 | C-4 | top5pct-t-shirt-maker-article-pic1.jpg | custom-shirts/ | Mar 16 | Initial |
+| 5 | C-4 | top5pct-custom-vinyl-shirts.jpg | custom-shirts/ | May 11 | R1 |
 | 6 | card-1 | top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg | glow-shirts/ | Mar 16 | Initial (moved) |
 | 7 | card-2 | top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg | glow-shirts/ | Mar 16 | Initial (moved) |
 | 8 | slide-L | top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg | glow-shirts/ | Mar 16 | Initial (moved) |
@@ -517,7 +517,7 @@ Tables: `| # | slot | file | dir | placed | round |`
 | 2 | C-1 | top5pct-custom-flock-shirt-hoodie-cap-joliet.jpg | flock-shirts/ | Mar 16 | Initial (moved) |
 | 3 | C-2 | top5pct-flock-hoodie-printing.jpg | flock-shirts/ | Jun 2 | R2 (moved) |
 | 4 | C-3 | top5pct-flock-shirt-vinyl.jpg | flock-shirts/ | Jun 2 | R2 (moved) |
-| 5 | C-4 | top5pct-t-shirt-maker-article-pic2.jpg | custom-shirts/ | Mar 16 | Initial |
+| 5 | C-4 | top5pct-custom-vinyl-shirts.jpg | custom-shirts/ | May 11 | R1 |
 | 6 | card-1 | top5pct-custom-flock-shirt-hoodie-cap-joliet.jpg | flock-shirts/ | Mar 16 | Initial (moved) |
 | 7 | card-2 | top5pct-custom-flock-shirt-hoodie-cap-joliet.jpg | flock-shirts/ | Mar 16 | Initial (moved) |
 | 8 | slide-L | top5pct-custom-flock-shirt-hoodie-cap-joliet.jpg | flock-shirts/ | Mar 16 | Initial (moved) |
@@ -572,7 +572,7 @@ Tables: `| # | slot | file | dir | placed | round |`
 | 8 | card-1 | top5pct-custom-brick-shirts-hoodies-cap-joliet.jpg | custom-shirts/ | Mar 16 | Initial |
 | 9 | card-2 | top5pct-custom-pattern-shirts-caps-hoodies-joliet.jpg | custom-shirts/ | Mar 16 | Initial |
 | 10 | slide-L | top5pct-custom-brick-shirts-hoodies-cap-joliet.jpg | custom-shirts/ | Mar 16 | Initial |
-| 11 | slide-R | top5pct-custom-flock-shirt-hoodie-cap-joliet.jpg | custom-shirts/ | Mar 16 | Initial |
+| 11 | slide-R | top5pct-custom-hoodies.jpg | custom-shirts/ | May 11 | R1 |
 
 #### custom-apparel/puff-shirts
 **Blade:** `resources/views/pages/custom-apparel/puff-shirts.blade.php`
@@ -583,11 +583,11 @@ Tables: `| # | slot | file | dir | placed | round |`
 | 2 | C-1 | top5pct-banner-custom-apparel-custom-shirts-custom-hoodies-custom-caps.jpg | custom-shirts/ | Mar 16 | Initial |
 | 3 | C-2 | top5pct-puff-shirts-joliet.jpg | custom-shirts/ | Jun 2 | R2 |
 | 4 | C-3 | top5pct-puff-shirts.jpg | custom-shirts/ | Jun 2 | R2 |
-| 5 | C-4 | top5pct-t-shirt-maker-article-pic1.jpg | custom-shirts/ | Mar 16 | Initial |
+| 5 | C-4 | top5pct-custom-vinyl-shirts.jpg | custom-shirts/ | May 11 | R1 |
 | 6 | card-1 | top5pct-custom-brick-shirts-hoodies-cap-joliet.jpg | custom-shirts/ | Mar 16 | Initial |
 | 7 | card-2 | top5pct-custom-pattern-shirts-caps-hoodies-joliet.jpg | custom-shirts/ | Mar 16 | Initial |
 | 8 | slide-L | top5pct-custom-brick-shirts-hoodies-cap-joliet.jpg | custom-shirts/ | Mar 16 | Initial |
-| 9 | slide-R | top5pct-custom-rhinestone-shirt-cap-hoodie-joliet.jpg | custom-shirts/ | Mar 16 | Initial |
+| 9 | slide-R | top5pct-rhinetsone-t-shirts.jpg | custom-shirts/ | Jun 2 | R2 |
 
 #### custom-apparel/reflective-shirts
 **Blade:** `resources/views/pages/custom-apparel/reflective-shirts.blade.php`
@@ -661,7 +661,7 @@ Tables: `| # | slot | file | dir | placed | round |`
 | 7 | card-set-2 | top5pct-lawn-care-clothing.jpg | corporate-wear/ | May 11 | R1 |
 | 8 | card-set-3 | top5pct-custom-cap-hat-joliet-shorewood-rockdale.jpg | corporate-wear/ | Mar 16 | Initial |
 | 9 | slide-L | top5pct-custom-button-up-shirt-joliet-shorewood.jpg | corporate-wear/ | Mar 16 | Initial |
-| 10 | slide-R | top5pct-plainfield-south-high-school-hoodie.jpg | spirit-wear/ | Mar 16 | Initial |
+| 10 | slide-R | top5pct-volleyball-team-uniforms-joliet.jpg | spirit-wear/ | Jun 2 | R2 |
 
 #### custom-apparel/group-wear/reunion-shirts
 **Blade:** `resources/views/pages/custom-apparel/group-wear/reunion-shirts.blade.php`
@@ -695,7 +695,7 @@ Tables: `| # | slot | file | dir | placed | round |`
 | 8 | card-set-2 | top5pct-spiritwear-fanwear-joliet-plainfield-shorewood.jpg | spirit-wear/ | Mar 16 | Initial |
 | 9 | card-set-3 | top5pct-bowling-shirts-joliet-shorewood-crest-hill.jpg | spirit-wear/ | Mar 16 | Initial |
 | 10 | slide-L | top5pct-plainfield-south-high-school-hoodie.jpg | spirit-wear/ | Mar 16 | Initial |
-| 11 | slide-R | top5pct-family-reunion-shirts-joliet-romeoville.jpg | reunion-shirts/ | Mar 16 | Initial |
+| 11 | slide-R | top5pct-family-reunion-tees.jpg | reunion-shirts/ | Jun 8 | R3 |
 
 ---
 
@@ -741,7 +741,7 @@ Tables: `| # | slot | file | dir | placed | round |`
 | 12 | card-set-2 | top5pct-vecal-decals.jpg | automobile-graphics/ | May 11 | R1 |
 | 13 | card-set-3 | top5pct-vehicle-window-graphics-joliet.jpg | automobile-graphics/ | May 11 | R1 |
 | 14 | slide-L | top5pct-vinyl-lettering-car-graphics-joliet-crest-hill.jpg | automobile-graphics/ | Mar 17 | Initial |
-| 15 | slide-R | top5pct-car-magnets-vehicle-magnets-joliet.jpg | vehicle-magnets/ | Mar 17 | Initial |
+| 15 | slide-R | top5pct-truck-sign-magnets-joliet.jpg | vehicle-magnets/ | Jun 2 | R2 |
 
 #### vehicle-graphics/dot-decals
 **Blade:** `resources/views/pages/vehicle-graphics/dot-decals.blade.php`
@@ -773,7 +773,7 @@ Tables: `| # | slot | file | dir | placed | round |`
 | 6 | card-set-1 | top5pct-custom-car-magnets-in-joliet.jpg | vehicle-magnets/ | May 11 | R1 |
 | 7 | card-set-2 | top5pct-custom-car-magnets.jpg | vehicle-magnets/ | May 11 | R1 |
 | 8 | slide-L | top5pct-car-magnets-vehicle-magnets-joliet.jpg | vehicle-magnets/ | Mar 17 | Initial |
-| 9 | slide-R | top5pct-car-wraps-vinyl-lettering-joliet-shorewood.jpg | automobile-graphics/ | Mar 17 | Initial |
+| 9 | slide-R | top5pct-vehicle-graphics.jpg | automobile-graphics/ | May 11 | R1 |
 
 ---
 
@@ -806,14 +806,14 @@ Tables: `| # | slot | file | dir | placed | round |`
 | # | slot | file | dir | placed | round |
 |---|---|---|---|---|---|
 | 1 | hero | top5pct-custom-stickers-cresthill.jpg | custom-shaped-stickers-decals/ | Jun 2 | R2 |
-| 2 | C-1 | top5pct-banner-stickers-decals-joliet.jpg | custom-shaped-stickers-decals/ | Mar 16 | Initial |
-| 3 | C-2 | top5pct-stickers-decals-joliet-beer-brewery.jpg | custom-shaped-stickers-decals/ | Mar 16 | Initial |
-| 4 | C-3 | top5pct-stickers-decals-joliet-boxing-sports.jpg | custom-shaped-stickers-decals/ | Mar 16 | Initial |
-| 5 | C-4 | top5pct-stickers-decals-joliet-labels.jpg | custom-shaped-stickers-decals/ | Mar 16 | Initial |
-| 6 | card-set-1 | top5pct-stickers-decals-joliet-beer-brewery.jpg | custom-shaped-stickers-decals/ | Mar 16 | Initial |
-| 7 | card-set-2 | top5pct-stickers-decals-joliet-boxing-sports.jpg | custom-shaped-stickers-decals/ | Mar 16 | Initial |
-| 8 | slide-L | top5pct-stickers-decals-joliet-stoner-rock-bbq.jpg | custom-shaped-stickers-decals/ | Mar 16 | Initial |
-| 9 | slide-R | top5pct-stickers-decals-joliet-boxing-sports.jpg | custom-shaped-stickers-decals/ | Mar 16 | Initial |
+| 2 | C-1 | top5pct-custom-stickers.jpg | custom-shaped-stickers-decals/ | May 11 | R1 |
+| 3 | C-2 | top5pct-stickers-in-joliet.jpg | custom-shaped-stickers-decals/ | May 11 | R1 |
+| 4 | C-3 | top5pct-die-cut-stickers-joliet-r3.jpg | custom-shaped-stickers-decals/ | Jun 8 | R3 |
+| 5 | C-4 | top5pct-custom-glossy-stickers-in-joliet.jpg | custom-shaped-stickers-decals/ | May 11 | R1 |
+| 6 | card-set-1 | top5pct-custom-label-stickers.jpg | custom-shaped-stickers-decals/ | May 11 | R1 |
+| 7 | card-set-2 | top5pct-custom-shaped-stickers.jpg | custom-shaped-stickers-decals/ | May 11 | R1 |
+| 8 | slide-L | top5pct-custom-stickers-cresthill.jpg | custom-shaped-stickers-decals/ | Jun 2 | R2 |
+| 9 | slide-R | top5pct-die-cut-stickers-shorewood.jpg | custom-shaped-stickers-decals/ | Jun 2 | R2 |
 
 #### stickers/custom-shaped-stickers
 **Blade:** `resources/views/pages/stickers/custom-shaped-stickers.blade.php`
@@ -828,7 +828,7 @@ Tables: `| # | slot | file | dir | placed | round |`
 | 6 | card-1 | top5pct-diecut-stickers.jpg | standard-stickers-decals/ | May 11 | R1 |
 | 7 | card-2 | top5pct-stickers-in-joliet.jpg | custom-shaped-stickers-decals/ | May 11 | R1 |
 | 8 | slide-L | top5pct-stickers-decals-joliet-boxing-sports.jpg | custom-shaped-stickers-decals/ | Mar 16 | Initial |
-| 9 | slide-R | top5pct-stickers-decals-joliet-stoner-rock-bbq.jpg | custom-shaped-stickers-decals/ | Mar 16 | Initial |
+| 9 | slide-R | top5pct-die-cut-stickers-shorewood.jpg | custom-shaped-stickers-decals/ | Jun 2 | R2 |
 
 ---
 
