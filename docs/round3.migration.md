@@ -18,16 +18,32 @@
 
 ---
 
-## Dir Name Authority (CSV vs. current state)
+## Image Directory Overrides
 
-The table below maps every CSV target dir to its current `public/images/` state.
+The following 7 categories have been granted exceptions to the CSV target dir name. The **old dir is kept as-is** and used as the active image dir. No rename will be performed for these categories. The CSV name is noted for reference only.
+
+| Category | Active dir (keep) | CSV target (ignored) | Blade refs stay on |
+|---|---|---|---|
+| DTF | `dtf-transfers/` | `dtf-printing` | `dtf-transfers/` |
+| Dye-Sublimation | `sublimation/` | `dye-sublimation-printing` | `sublimation/` |
+| Sidewalk / A-Frame Signs | `sidewalk-signs/` | `sidewalk-signs-a-frame-signs` | `sidewalk-signs/` |
+| Glow in the Dark | `glow-shirts/` | `glow-in-the-dark-shirts` | `glow-shirts/` |
+| Family Reunion | `reunion-shirts/` | `reunion-wear-shirts` | `reunion-shirts/` |
+| Spirit Wear | `spirit-wear/` | `spirit-wear-shirts` | `spirit-wear/` |
+| Corporate Wear | `corporate-wear/` | `corporate-wear-shirts` | `corporate-wear/` |
+
+> These overrides affect Phase 1 (fewer dirs to create), Phase 2 (R3 files route to old dirs), and eliminate Phase 3 renames entirely.
+
+---
+
+## Dir Name Authority (CSV vs. current state)
 
 ### Custom Apparel — Printing Options
 
-| CSV target dir | Current dir | Status |
+| CSV target dir | Active dir | Status |
 |---|---|---|
-| `dtf-printing` | `dtf-transfers/` | ⚠ Rename needed |
-| `dye-sublimation-printing` | `sublimation/` | ⚠ Rename needed |
+| `dtf-printing` | `dtf-transfers/` | ◎ Override — keep old dir |
+| `dye-sublimation-printing` | `sublimation/` | ◎ Override — keep old dir |
 | `screen-printing` | (none — in `custom-shirts/`) | ✗ Create |
 | `embroidery` | `embroidery/` | ✓ Match |
 | `rhinestone-apparel` | (none — in `custom-shirts/`) | ✗ Create |
@@ -35,11 +51,11 @@ The table below maps every CSV target dir to its current `public/images/` state.
 
 ### Custom Apparel — Specialty Materials
 
-| CSV target dir | Current dir | Status |
+| CSV target dir | Active dir | Status |
 |---|---|---|
 | `glitter-shirts` | `glitter-shirts/` | ✓ Match (already flat) |
 | `puff-shirts` | (none — in `custom-shirts/`) | ✗ Create |
-| `glow-in-the-dark-shirts` | `glow-shirts/` | ⚠ Rename needed |
+| `glow-in-the-dark-shirts` | `glow-shirts/` | ◎ Override — keep old dir |
 | `flock-shirts` | `flock-shirts/` | ✓ Match |
 | `brick-shirts` | (none — in `custom-shirts/`) | ✗ Create |
 | `holographic-shirts` | `holographic-shirts/` | ✓ Match |
@@ -50,15 +66,15 @@ The table below maps every CSV target dir to its current `public/images/` state.
 
 ### Custom Apparel — Group Wear
 
-| CSV target dir | Current dir | Status |
+| CSV target dir | Active dir | Status |
 |---|---|---|
-| `reunion-wear-shirts` | `reunion-shirts/` | ⚠ Rename needed |
-| `spirit-wear-shirts` | `spirit-wear/` | ⚠ Rename needed |
-| `corporate-wear-shirts` | `corporate-wear/` | ⚠ Rename needed |
+| `reunion-wear-shirts` | `reunion-shirts/` | ◎ Override — keep old dir |
+| `spirit-wear-shirts` | `spirit-wear/` | ◎ Override — keep old dir |
+| `corporate-wear-shirts` | `corporate-wear/` | ◎ Override — keep old dir |
 
 ### Signs — Business Signs
 
-| CSV target dir | Current dir | Status |
+| CSV target dir | Active dir | Status |
 |---|---|---|
 | `banners` | `banners/` | ✓ Match |
 | `window-signs` | (images in `window-wall-floor-decals/`) | ✗ Create + split |
@@ -72,22 +88,22 @@ The table below maps every CSV target dir to its current `public/images/` state.
 
 ### Signs — Ground Signs
 
-| CSV target dir | Current dir | Status |
+| CSV target dir | Active dir | Status |
 |---|---|---|
 | `yard-signs` | `yard-signs/` | ✓ Match |
-| `sidewalk-signs-a-frame-signs` | `sidewalk-signs/` | ⚠ Rename needed |
+| `sidewalk-signs-a-frame-signs` | `sidewalk-signs/` | ◎ Override — keep old dir |
 | `parking-signs` | (none) | ✗ Create (future page) |
 
 ### Signs — Table Signs
 
-| CSV target dir | Current dir | Status |
+| CSV target dir | Active dir | Status |
 |---|---|---|
 | `table-cloths` | `table-cloths/` | ✓ Match |
 | `table-runners` | `table-runners/` | ✓ Match |
 
 ### Vehicle Graphics
 
-| CSV target dir | Current dir | Status |
+| CSV target dir | Active dir | Status |
 |---|---|---|
 | `automobile-graphics` | `automobile-graphics/` | ✓ Match |
 | `vehicle-magnets` | `vehicle-magnets/` | ✓ Match |
@@ -95,7 +111,7 @@ The table below maps every CSV target dir to its current `public/images/` state.
 
 ### Stickers
 
-| CSV target dir | Current dir | Status |
+| CSV target dir | Active dir | Status |
 |---|---|---|
 | `standard-stickers-decals` | `standard-stickers-decals/` | ✓ Match |
 | `custom-shaped-stickers-decals` | `custom-shaped-stickers-decals/` | ✓ Match |
@@ -104,18 +120,16 @@ The table below maps every CSV target dir to its current `public/images/` state.
 
 | CSV target dir | Current path | Status |
 |---|---|---|
-| `mugs` | `promo-items/mugs/` | ⚠ Flatten + rename — 8 files |
+| `mugs` | `promo-items/mugs/` | ⚠ Flatten — 8 files |
 | `can-koozies` | `promo-items/koozies/` | ⚠ Flatten + rename — 5 files |
 | `towels` | (none) | ✗ Create |
 | `drink-coasters` | (none) | ✗ Create |
 | `tote-bags` | (none) | ✗ Create |
 | `mouse-pads` | (none) | ✗ Create |
 
-> **Flatten note:** Blade pages and components currently reference `/images/promo-items/mugs/...` and `/images/promo-items/koozies/...`. After flattening, all refs update to `/images/mugs/...` and `/images/can-koozies/...`.
+> **Flatten note:** Blade pages currently reference `/images/promo-items/mugs/...` and `/images/promo-items/koozies/...`. After flattening, all refs update to `/images/mugs/...` and `/images/can-koozies/...`.
 
 ### Image Path Flattening — Rule Clarification
-
-The user identified three areas to flatten. Status of each:
 
 | Noted item | Issue | Resolution |
 |---|---|---|
@@ -131,7 +145,9 @@ The user identified three areas to flatten. Status of each:
 
 These dirs must exist before any R3 files can be moved. Create all before starting Phase 2.
 
-### Dirs required for R3 moves (create first)
+### Phase 1a — Dirs required for R3 moves (create first)
+
+> 4 dirs removed from this list vs. the original plan due to overrides. Sublimation R3 files go to existing `sublimation/`, reunion to `reunion-shirts/`, spirit-wear to `spirit-wear/`, sidewalk to `sidewalk-signs/`.
 
 | Dir to create | R3 files targeting it |
 |---|---|
@@ -139,14 +155,10 @@ These dirs must exist before any R3 files can be moved. Create all before starti
 | `public/images/foil-shirts/` | 5 files |
 | `public/images/screen-printing/` | 6 files |
 | `public/images/rhinestone-apparel/` | 1 file |
-| `public/images/dye-sublimation-printing/` | 4 files |
 | `public/images/door-signs/` | 2 files |
 | `public/images/window-signs/` | 7 files |
-| `public/images/sidewalk-signs-a-frame-signs/` | 3 files |
-| `public/images/reunion-wear-shirts/` | 1 file |
-| `public/images/spirit-wear-shirts/` | 1 file |
 
-### Dirs to create now (no R3 files, but needed per CSV)
+### Phase 1b — Dirs to create now (no R3 files, but needed per CSV or flatten)
 
 | Dir to create | Notes |
 |---|---|
@@ -194,7 +206,7 @@ All 57 R3 files, sorted by target dir:
 
 ### `custom-shaped-stickers-decals/` (1 file)
 
-> ⚠ Collision check: `top5pct-die-cut-stickers-joliet.jpg` already exists in this dir (R2 file). Rename incoming to `top5pct-die-cut-stickers-joliet-r3.jpg`.
+> ⚠ Collision: `top5pct-die-cut-stickers-joliet.jpg` already exists in this dir (R2 file). Rename incoming to `top5pct-die-cut-stickers-joliet-r3.jpg`.
 
 | Source | Target filename |
 |---|---|
@@ -215,17 +227,6 @@ All 57 R3 files, sorted by target dir:
 |---|---|
 | `6_7_2026/DOT Decals/DOT-truck-decals-rockdale.jpg` | `top5pct-DOT-truck-decals-rockdale.jpg` |
 
-### `dye-sublimation-printing/` ✗ new dir (4 files)
-
-> This dir is created fresh. Existing sublimation images stay in `sublimation/` until Phase 3 rename is executed.
-
-| Source | Target filename |
-|---|---|
-| `6_3_2026/Custom Shirts/Printing Options/Sublimation/dye-sublimation-jerseys.jpg` | `top5pct-dye-sublimation-jerseys.jpg` |
-| `6_3_2026/Custom Shirts/Printing Options/Sublimation/dye-sublimation-tees.jpg` | `top5pct-dye-sublimation-tees.jpg` |
-| `6_3_2026/Custom Shirts/Printing Options/Sublimation/sublimated-graphic-tees.jpg` | `top5pct-sublimated-graphic-tees.jpg` |
-| `6_3_2026/Custom Shirts/Printing Options/Sublimation/sublimation-tees.jpg` | `top5pct-sublimation-tees.jpg` |
-
 ### `embroidery/` (1 file)
 
 | Source | Target filename |
@@ -244,7 +245,7 @@ All 57 R3 files, sorted by target dir:
 
 ### `glitter-shirts/` (2 files)
 
-> ⚠ Filename note: source file `glitter-sportwear-shirtsjpg.jpg` has a doubled-extension typo in its name. Correct to `glitter-sportswear-shirts.jpg` (also fix "sportwear" to "sportswear") when applying prefix.
+> ⚠ Filename fix: `glitter-sportwear-shirtsjpg.jpg` has a doubled extension and a spelling error. Correct both when applying the prefix.
 
 | Source | Target filename |
 |---|---|
@@ -263,19 +264,19 @@ All 57 R3 files, sorted by target dir:
 |---|---|
 | `6_9_2026/Outdoor Signs/business-signs-outdoor-joliet.jpg` | `top5pct-business-signs-outdoor-joliet.jpg` |
 
-### `reunion-wear-shirts/` ✗ new dir (1 file)
-
-> This dir is created fresh. Existing reunion images stay in `reunion-shirts/` until Phase 3 rename is executed.
-
-| Source | Target filename |
-|---|---|
-| `6_9_2026/Family Reunion/family-reunion-tees.jpg` | `top5pct-family-reunion-tees.jpg` |
-
 ### `rhinestone-apparel/` ✗ new dir (1 file)
 
 | Source | Target filename |
 |---|---|
 | `6_3_2026/Custom Shirts/Printing Options/Rhinestones/rhinestone-tshirts-joliet.jpg` | `top5pct-rhinestone-tshirts-joliet.jpg` |
+
+### `reunion-shirts/` ◎ override (1 file)
+
+> Routed to the old dir. CSV target `reunion-wear-shirts` is not used.
+
+| Source | Target filename |
+|---|---|
+| `6_9_2026/Family Reunion/family-reunion-tees.jpg` | `top5pct-family-reunion-tees.jpg` |
 
 ### `screen-printing/` ✗ new dir (6 files)
 
@@ -288,9 +289,9 @@ All 57 R3 files, sorted by target dir:
 | `6_9_2026/Screenprinting/screenprinting-joliet.jpg` | `top5pct-screenprinting-joliet.jpg` |
 | `6_9_2026/Screenprinting/screenprinting-t-shirt-maker-joliet.jpg` | `top5pct-screenprinting-t-shirt-maker-joliet.jpg` |
 
-### `sidewalk-signs-a-frame-signs/` ✗ new dir (3 files)
+### `sidewalk-signs/` ◎ override (3 files)
 
-> This dir is created fresh. Existing sidewalk images stay in `sidewalk-signs/` until Phase 3 rename is executed.
+> Routed to the old dir. CSV target `sidewalk-signs-a-frame-signs` is not used.
 
 | Source | Target filename |
 |---|---|
@@ -298,13 +299,24 @@ All 57 R3 files, sorted by target dir:
 | `6_9_2026/A-Frames/sidewalk-sign-a-frame-cresthill.jpg` | `top5pct-sidewalk-sign-a-frame-cresthill.jpg` |
 | `6_9_2026/A-Frames/sidewalk-signs-plainfield.jpg` | `top5pct-sidewalk-signs-plainfield.jpg` |
 
-### `spirit-wear-shirts/` ✗ new dir (1 file)
+### `spirit-wear/` ◎ override (1 file)
 
-> This dir is created fresh. Existing spirit-wear images stay in `spirit-wear/` until Phase 3 rename is executed.
+> Routed to the old dir. CSV target `spirit-wear-shirts` is not used.
 
 | Source | Target filename |
 |---|---|
 | `6_3_2026/Custom Shirts/Group Shirts/Spirit Wear/spirit-wear-volleyball-track.jpg` | `top5pct-spirit-wear-volleyball-track.jpg` |
+
+### `sublimation/` ◎ override (4 files)
+
+> Routed to the old dir. CSV target `dye-sublimation-printing` is not used.
+
+| Source | Target filename |
+|---|---|
+| `6_3_2026/Custom Shirts/Printing Options/Sublimation/dye-sublimation-jerseys.jpg` | `top5pct-dye-sublimation-jerseys.jpg` |
+| `6_3_2026/Custom Shirts/Printing Options/Sublimation/dye-sublimation-tees.jpg` | `top5pct-dye-sublimation-tees.jpg` |
+| `6_3_2026/Custom Shirts/Printing Options/Sublimation/sublimated-graphic-tees.jpg` | `top5pct-sublimated-graphic-tees.jpg` |
+| `6_3_2026/Custom Shirts/Printing Options/Sublimation/sublimation-tees.jpg` | `top5pct-sublimation-tees.jpg` |
 
 ### `table-cloths/` (4 files)
 
@@ -356,21 +368,9 @@ All 57 R3 files, sorted by target dir:
 
 ## Phase 3: Dir Restructuring (Separate Effort — Not R3 Scope)
 
-These are existing dirs with wrong names per the CSV. Each requires moving all files and updating every blade reference. This is a larger effort — do not mix with Phase 2.
+> The 7 dir renames originally planned here have been **eliminated by the Image Directory Overrides**. Phase 3 now covers only the `window-wall-floor-decals/` split and the two promo-items flattens.
 
-### Renames (existing dir → CSV target name)
-
-| Old dir | CSV target dir | File count | Risk |
-|---|---|---|---|
-| `glow-shirts/` | `glow-in-the-dark-shirts/` | 4 files | Low — 1 sub-page + LP |
-| `spirit-wear/` | `spirit-wear-shirts/` | 12 files | Medium — 1 sub-page + LP |
-| `corporate-wear/` | `corporate-wear-shirts/` | 16 files | Medium — 1 sub-page + LP |
-| `reunion-shirts/` | `reunion-wear-shirts/` | 16 files | Medium — 1 sub-page + LP + home |
-| `dtf-transfers/` | `dtf-printing/` | 13 files | Medium — 1 sub-page + LP + home |
-| `sublimation/` | `dye-sublimation-printing/` | 10 files | Medium — 1 sub-page + LP |
-| `sidewalk-signs/` | `sidewalk-signs-a-frame-signs/` | 12 files | Low — 1 sub-page + signs LP |
-
-### Splits (one dir → multiple dirs)
+### Split: `window-wall-floor-decals/` → 3 dirs
 
 | Old dir | Split into | File count | Notes |
 |---|---|---|---|
@@ -401,35 +401,30 @@ These are existing dirs with wrong names per the CSV. Each requires moving all f
 | `top5pct-article-window-wall-signs.jpg` | `wall-signs/` (move, don't duplicate) |
 | `top5pct-banner-wall-decal-door-signs-joliet.jpg` | `wall-signs/` (move, don't duplicate) |
 | `top5pct-wall-decals-joliet.jpg` | `wall-signs/` |
-| `top5pct-wall-signs.jpg` | `wall-signs/` (may already exist there — check collision) |
-| `top5pct-wall-signs-joliet.jpg` | `wall-signs/` (may already exist there — check collision) |
+| `top5pct-wall-signs.jpg` | `wall-signs/` (check collision) |
+| `top5pct-wall-signs-joliet.jpg` | `wall-signs/` (check collision) |
 | `top5pct-wall-signs-old.jpg` | `wall-signs/` |
-| `top5pct-wall-wraps.jpg` | `wall-signs/` (may already exist there — check collision) |
+| `top5pct-wall-wraps.jpg` | `wall-signs/` (check collision) |
 
-> Note: `floor-signs/` has no files to move from `window-wall-floor-decals/` — no floor-specific files exist there. Floor signs needs its own new photography. The dir is created empty and populated when new floor sign images arrive.
+> `floor-signs/` has no files from `window-wall-floor-decals/` — no floor-specific content exists there yet. Dir is created empty and filled when new floor sign images arrive.
 
-### Flattens (nested path → flat)
+### Flattens: `promo-items/` → flat dirs
 
-| Old path | New flat dir | File count |
-|---|---|---|
-| `promo-items/mugs/` → | `mugs/` | 8 files |
-| `promo-items/koozies/` → | `can-koozies/` | 5 files |
+| Old path | New flat dir | File count | Blade refs affected |
+|---|---|---|---|
+| `promo-items/mugs/` | `mugs/` | 8 files | `mugs.blade.php`, `promotional-items.blade.php`, `featured-products.blade.php` |
+| `promo-items/koozies/` | `can-koozies/` | 5 files | `can-koozies.blade.php`, `promotional-items.blade.php` |
 
 ---
 
 ## Phase 4: Blade Reference Updates Required
 
-After Phase 3 dir renames and flattens, these blade files need their image path references updated.
+After Phase 3 split and flattens, these blade files need their image path references updated.
+
+> The 7 override categories require no blade updates — their dirs are unchanged.
 
 | Dir change | Blade files affected |
 |---|---|
-| `glow-shirts/` → `glow-in-the-dark-shirts/` | `pages/custom-apparel/glow-in-the-dark-shirts.blade.php`, `pages/custom-apparel/index.blade.php` |
-| `spirit-wear/` → `spirit-wear-shirts/` | `pages/custom-apparel/group-wear/spirit-wear-shirts.blade.php`, `pages/custom-apparel/index.blade.php` |
-| `corporate-wear/` → `corporate-wear-shirts/` | `pages/custom-apparel/group-wear/corporate-wear-shirts.blade.php`, `pages/custom-apparel/index.blade.php` |
-| `reunion-shirts/` → `reunion-wear-shirts/` | `pages/custom-apparel/group-wear/reunion-shirts.blade.php`, `pages/custom-apparel/index.blade.php`, `pages/home.blade.php` |
-| `dtf-transfers/` → `dtf-printing/` | `pages/custom-apparel/dtf-transfers.blade.php`, `pages/custom-apparel/index.blade.php`, `pages/home.blade.php`, `components/sections/featured-products.blade.php` |
-| `sublimation/` → `dye-sublimation-printing/` | `pages/custom-apparel/dye-sublimation.blade.php`, `pages/custom-apparel/index.blade.php` |
-| `sidewalk-signs/` → `sidewalk-signs-a-frame-signs/` | `pages/signs/sidewalk-signs.blade.php`, `pages/signs/index.blade.php` |
 | `window-wall-floor-decals/` → split | `pages/signs/window-signs.blade.php`, `pages/signs/door-signs.blade.php`, `pages/signs/floor-signs.blade.php`, `pages/signs/index.blade.php` |
 | `promo-items/mugs/` → `mugs/` | `pages/promotional-items/mugs.blade.php`, `pages/promotional-items.blade.php`, `components/sections/featured-products.blade.php` |
 | `promo-items/koozies/` → `can-koozies/` | `pages/promotional-items/can-koozies.blade.php`, `pages/promotional-items.blade.php` |
@@ -438,30 +433,30 @@ After Phase 3 dir renames and flattens, these blade files need their image path 
 
 ## R3 Move Summary
 
-| Target dir | Files to move | Dir exists? |
-|---|---|---|
-| `automobile-graphics/` | 5 | ✓ |
-| `brick-shirts/` | 2 | ✗ create |
-| `custom-shaped-stickers-decals/` | 1 (rename collision) | ✓ |
-| `door-signs/` | 2 | ✗ create |
-| `dot-decals/` | 1 | ✓ |
-| `dye-sublimation-printing/` | 4 | ✗ create |
-| `embroidery/` | 1 | ✓ |
-| `foil-shirts/` | 5 | ✗ create |
-| `glitter-shirts/` | 2 (1 filename fix) | ✓ |
-| `holographic-shirts/` | 1 | ✓ |
-| `outdoor-signs/` | 1 | ✓ |
-| `reunion-wear-shirts/` | 1 | ✗ create |
-| `rhinestone-apparel/` | 1 | ✗ create |
-| `screen-printing/` | 6 | ✗ create |
-| `sidewalk-signs-a-frame-signs/` | 3 | ✗ create |
-| `spirit-wear-shirts/` | 1 | ✗ create |
-| `table-cloths/` | 4 | ✓ |
-| `table-runners/` | 4 | ✓ |
-| `wall-signs/` | 3 | ✓ |
-| `window-signs/` | 7 | ✗ create |
-| `yard-signs/` | 3 | ✓ |
-| **Total** | **57** | 10 new dirs |
+| Target dir | Files to move | Dir exists? | Note |
+|---|---|---|---|
+| `automobile-graphics/` | 5 | ✓ | |
+| `brick-shirts/` | 2 | ✗ create | |
+| `custom-shaped-stickers-decals/` | 1 | ✓ | Rename collision |
+| `door-signs/` | 2 | ✗ create | |
+| `dot-decals/` | 1 | ✓ | |
+| `embroidery/` | 1 | ✓ | |
+| `foil-shirts/` | 5 | ✗ create | |
+| `glitter-shirts/` | 2 | ✓ | Filename fix on 1 |
+| `holographic-shirts/` | 1 | ✓ | |
+| `outdoor-signs/` | 1 | ✓ | |
+| `reunion-shirts/` | 1 | ✓ | Override |
+| `rhinestone-apparel/` | 1 | ✗ create | |
+| `screen-printing/` | 6 | ✗ create | |
+| `sidewalk-signs/` | 3 | ✓ | Override |
+| `spirit-wear/` | 1 | ✓ | Override |
+| `sublimation/` | 4 | ✓ | Override |
+| `table-cloths/` | 4 | ✓ | |
+| `table-runners/` | 4 | ✓ | |
+| `wall-signs/` | 3 | ✓ | |
+| `window-signs/` | 7 | ✗ create | |
+| `yard-signs/` | 3 | ✓ | |
+| **Total** | **57** | **6 new dirs** | |
 
 ---
 
@@ -472,10 +467,8 @@ After Phase 3 dir renames and flattens, these blade files need their image path 
 | 1 | `glitter-sportwear-shirtsjpg.jpg` — doubled extension + "sportwear" spelling error | Fix on move: → `top5pct-glitter-sportswear-shirts.jpg` |
 | 2 | `custom-shaped-stickers-decals/top5pct-die-cut-stickers-joliet.jpg` already exists (R2) | Rename R3 incoming → `top5pct-die-cut-stickers-joliet-r3.jpg` |
 | 3 | `window-wall-floor-decals/top5pct-door-wraps-joliet.jpg` exists — R3 has same base name targeting `door-signs/` | No conflict — different dirs. Proceed normally. |
-| 4 | `wall-signs/` already has some files that overlap with `window-wall-floor-decals/` (article, banner, wall-wraps) | Check for collisions before Phase 3 wall-signs merge |
-| 5 | `sublimation/` and `dye-sublimation-printing/` will coexist after Phase 2 | Expected — Phase 3 merges them. Blade refs stay on `sublimation/` until Phase 3. |
-| 6 | `reunion-shirts/` and `reunion-wear-shirts/` will coexist after Phase 2 | Expected — same pattern as above. |
-| 7 | `dtf-transfers/` has 2 files with `toptpct-` prefix typo (missing `5`): `toptpct-banner-dtf-transfers-joliet.jpg`, `toptpct-dtf-transfer-pricing.jpg` | Flag for fix during Phase 3 rename — correct prefix to `top5pct-` |
+| 4 | `wall-signs/` already has some files that overlap with `window-wall-floor-decals/` | Check for collisions before Phase 3 wall-signs merge |
+| 5 | `dtf-transfers/` has 2 files with `toptpct-` prefix typo: `toptpct-banner-dtf-transfers-joliet.jpg`, `toptpct-dtf-transfer-pricing.jpg` | Rename in-place within `dtf-transfers/` to correct prefix (`top5pct-`) — separate cleanup task |
 
 ---
 
@@ -483,12 +476,12 @@ After Phase 3 dir renames and flattens, these blade files need their image path 
 
 | Phase | Description | Status |
 |---|---|---|
-| Phase 1a | Create 10 new dirs needed for R3 | Pending |
+| Phase 1a | Create 6 new dirs needed for R3 | Pending |
 | Phase 1b | Create 8 additional dirs per CSV | Pending |
 | Phase 2 | Move all 57 R3 files with prefix | Pending |
 | Phase 2 audit | Verify all 57 files present in target dirs | Pending |
 | Phase 2 blade | Add R3 images to appropriate page slots | Pending |
-| Phase 3 renames | Rename 7 existing dirs + update blade refs | Pending |
+| Phase 3 renames | ~~Rename 7 existing dirs~~ Eliminated by overrides | N/A |
 | Phase 3 split | Split `window-wall-floor-decals/` into 3 dirs | Pending |
 | Phase 3 flatten | Move `promo-items/mugs/` + `promo-items/koozies/` to flat dirs | Pending |
-| Phase 4 blade audit | Update all affected blade refs after Phase 3 | Pending |
+| Phase 4 blade audit | Update blade refs after Phase 3 split and flattens | Pending |
