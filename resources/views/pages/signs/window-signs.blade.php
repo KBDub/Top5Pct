@@ -47,7 +47,7 @@
         primaryButtonHref="#all-products"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/window-wall-floor-decals/top5pct-window-signage.jpg"
+        image="/images/window-signs/top5pct-window-signage.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />
@@ -56,10 +56,17 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/window-wall-floor-decals/top5pct-business-window-signs.jpg',     'alt' => 'Custom window signs and door graphics for businesses in Joliet Illinois'],
-            ['src' => '/images/window-wall-floor-decals/top5pct-custom-window-signs.jpg','alt' => 'Custom window decals and window graphics in Joliet, Shorewood, and Crest Hill Illinois'],
-            ['src' => '/images/window-wall-floor-decals/top5pct-window-door-signs.jpg',     'alt' => 'Window clings and perforated vinyl for businesses in Joliet and Shorewood Illinois'],
-            ['src' => '/images/window-wall-floor-decals/top5pct-window-signs-joliet-slammers.jpg',  'alt' => 'Custom window decals installed in Joliet, Shorewood, and Rockdale Illinois'],
+            ['src' => '/images/window-signs/top5pct-business-window-signs.jpg',     'alt' => 'Custom window signs and door graphics for businesses in Joliet Illinois'],
+            ['src' => '/images/window-signs/top5pct-custom-window-signs.jpg','alt' => 'Custom window decals and window graphics in Joliet, Shorewood, and Crest Hill Illinois'],
+            ['src' => '/images/window-signs/top5pct-window-door-signs.jpg',     'alt' => 'Window clings and perforated vinyl for businesses in Joliet and Shorewood Illinois'],
+            ['src' => '/images/window-signs/top5pct-window-signs-joliet-slammers.jpg',     'alt' => 'Custom window decals installed in Joliet, Shorewood, and Rockdale Illinois'],
+            ['src' => '/images/window-signs/top5pct-window-business-signs.jpg',            'alt' => 'Window business signs for storefronts and offices in Joliet Illinois'],
+            ['src' => '/images/window-signs/top5pct-window-graphics-joliet.jpg',           'alt' => 'Custom window graphics for businesses in Joliet, Shorewood, and Crest Hill Illinois'],
+            ['src' => '/images/window-signs/top5pct-window-sign-installers-joliet.jpg',    'alt' => 'Professional window sign installers in Joliet and Will County Illinois'],
+            ['src' => '/images/window-signs/top5pct-window-signs-cresthill.jpg',           'alt' => 'Custom window signs for businesses in Crest Hill Illinois'],
+            ['src' => '/images/window-signs/top5pct-window-signs.jpg',                     'alt' => 'Custom window signs and window graphics in Joliet, Will and DuPage County Illinois'],
+            ['src' => '/images/window-signs/top5pct-window-vinyl-sign-installers.jpg',     'alt' => 'Vinyl window sign installation for businesses in Joliet Illinois'],
+            ['src' => '/images/window-signs/top5pct-window-signs-for-businesses-joliet.jpg', 'alt' => 'Custom window signs for businesses throughout Joliet Illinois'],
         ]"
         visible=2
     />
@@ -70,7 +77,7 @@
     />
 
     <x-sections.card-image-with-text
-        image="/images/window-wall-floor-decals/top5pct-window-signs-joliet.jpg"
+        image="/images/window-signs/top5pct-window-signs-joliet.jpg"
         alt="Custom window decals and window graphics for businesses in Joliet, Shorewood, and Crest Hill Illinois"
         title="Turn Your Windows Into Advertising Space"
     >
@@ -80,7 +87,7 @@
     </x-sections.card-image-with-text>
 
     <x-sections.card-image-with-text
-        image="/images/window-wall-floor-decals/top5pct-joliet-slammers-window-signs-joliet.jpg"
+        image="/images/window-signs/top5pct-joliet-slammers-window-signs-joliet.jpg"
         alt="Custom window signs at Joliet Slammers stadium in Joliet Illinois"
         title="Perforated Vinyl and Window Clings"
         imagePosition="right"
@@ -96,7 +103,7 @@
 
     <x-sections.card-detailed-info
         heading="How Window Graphics Give Your Business a Professional, Polished Storefront"
-        image1="/images/window-wall-floor-decals/top5pct-banner-wall-decal-door-signs-joliet.jpg"
+        image1="/images/wall-signs/top5pct-banner-wall-decal-door-signs-joliet.jpg"
         alt1="Custom window and door signs for businesses in Joliet Illinois"
     >
         <x-slot name="intro">
@@ -125,14 +132,14 @@
         name="Jerry E Olson"
     />
     <x-ui.card-banner-slide-in
-        image="/images/window-wall-floor-decals/top5pct-window-decals-joliet-shorewood-crest-hill.jpg"
+        image="/images/window-signs/top5pct-window-decals-joliet-shorewood-crest-hill.jpg"
         alt="Custom window graphics and window decals printed and installed by Top 5 Percent in Joliet Illinois"
         title="Custom Window Graphics for Your Joliet Business"
         href="/contact"
         direction="left"
     />
     <x-ui.card-banner-slide-in
-        image="/images/window-wall-floor-decals/top5pct-wall-decals-joliet.jpg"
+        image="/images/wall-signs/top5pct-wall-decals-joliet.jpg"
         alt="Custom wall graphics and interior decals installed by Top 5 Percent in Joliet Illinois"
         title="Also Install Wall Graphics and Floor Signs"
         href="/contact"

@@ -59,7 +59,8 @@
             ['src' => '/images/custom-shirts/top5pct-rhinestone-apparel-keith-elementary.jpg',             'alt' => 'Custom rhinestone apparel at Keith Elementary in Joliet Illinois'],
             ['src' => '/images/custom-shirts/top5pct-rhinestone-bling-joliet.jpg',                         'alt' => 'Custom rhinestone bling shirts in Joliet Illinois'],
             ['src' => '/images/custom-shirts/top5pct-rhinestone-hoodie-joliet-west.jpg',                   'alt' => 'Custom rhinestone hoodie at Joliet West in Joliet Illinois'],
-            ['src' => '/images/custom-shirts/top5pct-rhinestone-ladies-shirt.jpg',                         'alt' => 'Custom rhinestone ladies shirt in Joliet Illinois'],
+            ['src' => '/images/custom-shirts/top5pct-rhinestone-ladies-shirt.jpg',         'alt' => 'Custom rhinestone ladies shirt in Joliet Illinois'],
+            ['src' => '/images/rhinestone-apparel/top5pct-rhinestone-tshirts-joliet.jpg', 'alt' => 'Custom rhinestone t-shirts for businesses and events in Joliet Illinois'],
         ]"
         visible=2
     />

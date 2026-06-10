@@ -222,7 +222,7 @@
                                 </div>
                             </div>
                             <x-layout.mega-menu-ad
-                                image="/images/window-wall-floor-decals/top5pct-banner-wall-decal-door-signs-joliet.jpg"
+                                image="/images/wall-signs/top5pct-banner-wall-decal-door-signs-joliet.jpg"
                                 alt="Same day signs"
                                 tag="Same Day Available"
                                 title="Custom Signs & Banners"

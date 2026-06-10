@@ -60,6 +60,9 @@
             ['src' => '/images/wall-signs/top5pct-wall-wraps.jpg',                    'alt' => 'Custom wall wraps for businesses in Joliet Illinois'],
             ['src' => '/images/wall-signs/top5pct-article-window-wall-signs.jpg',      'alt' => 'Office murals and lobby wall graphics in Joliet, Will and DuPage County Illinois'],
             ['src' => '/images/wall-signs/top5pct-banner-wall-decal-door-signs-joliet.jpg', 'alt' => 'Wall decals and door signs for businesses in Joliet Illinois'],
+            ['src' => '/images/wall-signs/top5pct-wall-decals-bedroom.jpg',                'alt' => 'Custom wall decals for bedrooms and interior spaces in Joliet Illinois'],
+            ['src' => '/images/wall-signs/top5pct-wall-sign-for-businesses.jpg',           'alt' => 'Custom wall signs for businesses in Joliet, Shorewood, and Plainfield Illinois'],
+            ['src' => '/images/wall-signs/top5pct-wall-signs-for-businesses.jpg',          'alt' => 'Branded wall signs for businesses throughout Will and DuPage County Illinois'],
         ]"
         visible=2
     />
@@ -132,7 +135,7 @@
         direction="right"
     />
     <x-ui.card-banner-slide-in
-        image="/images/window-wall-floor-decals/top5pct-window-decals-joliet-shorewood-crest-hill.jpg"
+        image="/images/window-signs/top5pct-window-decals-joliet-shorewood-crest-hill.jpg"
         alt="Custom window graphics and decals installed by Top 5 Percent in Joliet Illinois"
         title="Window Graphics and Door Signs Available Too"
         href="/contact"

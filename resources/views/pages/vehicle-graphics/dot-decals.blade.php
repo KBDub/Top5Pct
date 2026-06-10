@@ -59,7 +59,8 @@
             ['src' => '/images/dot-decals/top5pct-dot-decals-joliet.jpg', 'alt' => 'DOT decals and USDOT compliance stickers for trucks in Joliet, Shorewood, and Channahon Illinois'],
             ['src' => '/images/dot-decals/top5pct-dot-semi-truck-decals.jpg',         'alt' => 'USDOT number stickers and DOT compliance decals printed in Joliet, Shorewood, and Rockdale Illinois'],
             ['src' => '/images/dot-decals/top5pct-dot-truck-decals-joliet.jpg',           'alt' => 'Print and cut DOT decals and vinyl lettering for trucks in Joliet, Shorewood, and Rockdale Illinois'],
-            ['src' => '/images/dot-decals/top5pct-custom-dot-decals-for-trucks-in-joliet.jpg',          'alt' => 'Custom DOT decals for trucks in Joliet Illinois'],
+            ['src' => '/images/dot-decals/top5pct-custom-dot-decals-for-trucks-in-joliet.jpg', 'alt' => 'Custom DOT decals for trucks in Joliet Illinois'],
+            ['src' => '/images/dot-decals/top5pct-DOT-truck-decals-rockdale.jpg',            'alt' => 'DOT truck decals and USDOT compliance stickers in Rockdale Illinois'],
         ]"
         visible=2
     />

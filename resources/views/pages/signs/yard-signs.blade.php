@@ -60,6 +60,9 @@
             ['src' => '/images/yard-signs/top5pct-lawn-signs.jpg',                              'alt' => 'Custom yard signs for businesses and events in Joliet Illinois'],
             ['src' => '/images/yard-signs/top5pct-yard-sign-joliet.jpg',          'alt' => 'Real estate and campaign yard signs in Joliet, Plainfield, and New Lenox Illinois'],
             ['src' => '/images/yard-signs/top5pct-yard-signs-joliet.jpg',         'alt' => 'Corrugated plastic yard signs printed in Joliet, Shorewood, and Romeoville Illinois'],
+            ['src' => '/images/yard-signs/top5pct-yard-signs-plainfield.jpg',   'alt' => 'Custom yard signs printed for businesses and events in Plainfield Illinois'],
+            ['src' => '/images/yard-signs/top5pct-yard-signs-rockdale.jpg',     'alt' => 'Custom yard signs and lawn signs printed in Rockdale Illinois'],
+            ['src' => '/images/yard-signs/top5pct-yard-signs-shorewood.jpg',    'alt' => 'Yard signs and campaign signs printed for Shorewood Illinois businesses'],
         ]"
         visible=2
     />

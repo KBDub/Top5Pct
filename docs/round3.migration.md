@@ -524,8 +524,8 @@ Captured by `scripts/migrate-r3-images.php` on 2026-06-10.
 | Phase 1b | Create 8 additional dirs per CSV | ✓ Done |
 | Phase 2 | Move all 58 R3 image files with prefix | ✓ Done |
 | Phase 2 audit | Verify all files present in target dirs | ✓ Done — counts confirmed above |
-| Phase 2 blade | Add R3 images to appropriate page slots | Pending |
+| Phase 2 blade | Add R3 images to appropriate page slots | ✓ Done — 2026-06-10 |
 | Phase 3 renames | ~~Rename 7 existing dirs~~ Eliminated by overrides | N/A |
 | Phase 3 split | Split `window-wall-floor-decals/` into 3 dirs | ✓ Done |
 | Phase 3 flatten | Move `promo-items/mugs/` + `promo-items/koozies/` to flat dirs | ✓ Done |
-| Phase 4 blade audit | Update blade refs after Phase 3 split and flattens | Pending |
+| Phase 4 blade audit | Update blade refs after Phase 3 split and flattens | ✓ Done — 2026-06-10 |

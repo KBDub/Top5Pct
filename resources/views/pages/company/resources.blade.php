@@ -46,7 +46,7 @@
                 </a>
                 <a href="/blog/window-wall-signs" class="group block bg-linen hover:bg-linen-dark transition-colors">
                     <div class="overflow-hidden">
-                        <img src="/images/window-wall-floor-decals/top5pct-article-window-wall-signs.jpg" alt="Window and wall sign tips for businesses in Joliet Illinois" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
+                        <img src="/images/wall-signs/top5pct-article-window-wall-signs.jpg" alt="Window and wall sign tips for businesses in Joliet Illinois" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
                     </div>
                     <div class="p-6">
                         <h3 class="text-h3 font-bold text-charcoal mb-2">How to Use Window & Wall Signs</h3>

@@ -47,7 +47,7 @@
         primaryButtonHref="#all-products"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/window-wall-floor-decals/top5pct-door-signage.jpg"
+        image="/images/door-signs/top5pct-door-signage.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />
@@ -56,10 +56,11 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/window-wall-floor-decals/top5pct-door-signs-joliet-shorewood-crest-hill.jpg', 'alt' => 'Custom door signs and door graphics for businesses in Joliet, Shorewood, and Crest Hill Illinois'],
-            ['src' => '/images/window-wall-floor-decals/top5pct-business-door-signs.jpg',                   'alt' => 'Custom business door signs in Joliet Illinois'],
-            ['src' => '/images/window-wall-floor-decals/top5pct-door-sign-installers.jpg',                  'alt' => 'Custom door sign installation in Joliet Illinois'],
-            ['src' => '/images/window-wall-floor-decals/top5pct-door-wraps-joliet.jpg',                     'alt' => 'Custom door wraps in Joliet Illinois'],
+            ['src' => '/images/door-signs/top5pct-door-signs-joliet-shorewood-crest-hill.jpg', 'alt' => 'Custom door signs and door graphics for businesses in Joliet, Shorewood, and Crest Hill Illinois'],
+            ['src' => '/images/door-signs/top5pct-business-door-signs.jpg',                   'alt' => 'Custom business door signs in Joliet Illinois'],
+            ['src' => '/images/door-signs/top5pct-door-sign-installers.jpg',                  'alt' => 'Custom door sign installation in Joliet Illinois'],
+            ['src' => '/images/door-signs/top5pct-door-wraps-joliet.jpg',         'alt' => 'Custom door wraps in Joliet Illinois'],
+            ['src' => '/images/door-signs/top5pct-door-lettering-vinyl.jpg',   'alt' => 'Custom vinyl door lettering and door graphics for businesses in Joliet Illinois'],
         ]"
         visible=2
     />
@@ -70,7 +71,7 @@
     />
 
     <x-sections.card-image-with-text
-        image="/images/window-wall-floor-decals/top5pct-vinyl-door-lettering.jpg"
+        image="/images/door-signs/top5pct-vinyl-door-lettering.jpg"
         alt="Custom vinyl door lettering for businesses in Joliet Illinois"
         title="Professional Door Graphics That Make an Impression"
     >
@@ -81,7 +82,7 @@
     </x-sections.card-image-with-text>
 
     <x-sections.card-image-with-text
-        image="/images/window-wall-floor-decals/top5pct-vinyl-door-signs.jpg"
+        image="/images/door-signs/top5pct-vinyl-door-signs.jpg"
         alt="Custom vinyl door signs for businesses in Joliet Illinois"
         title="Frosted, Perforated, and Full-Color Options"
         imagePosition="right"
@@ -98,7 +99,7 @@
 
     <x-sections.card-detailed-info
         heading="What Your Door Signage Communicates Before You Say a Word"
-        image1="/images/window-wall-floor-decals/top5pct-door-signs-joliet-shorewood-crest-hill.jpg"
+        image1="/images/door-signs/top5pct-door-signs-joliet-shorewood-crest-hill.jpg"
         alt1="Custom door signs and door graphics installed for businesses in Joliet, Will and DuPage County Illinois"
     >
         <x-slot name="intro">
@@ -127,14 +128,14 @@
         name="Jerry E Olson"
     />
     <x-ui.card-banner-slide-in
-        image="/images/window-wall-floor-decals/top5pct-door-signs-joliet-shorewood-crest-hill.jpg"
+        image="/images/door-signs/top5pct-door-signs-joliet-shorewood-crest-hill.jpg"
         alt="Custom door signs and door graphics printed and installed by Top 5 Percent in Joliet Illinois"
         title="Professional Door Graphics for Any Business"
         href="/contact"
         direction="left"
     />
     <x-ui.card-banner-slide-in
-        image="/images/window-wall-floor-decals/top5pct-wall-decals-joliet.jpg"
+        image="/images/wall-signs/top5pct-wall-decals-joliet.jpg"
         alt="Custom wall graphics and interior signage installed by Top 5 Percent in Joliet Illinois"
         title="Wall Graphics and Window Signs, Same Fast Turnaround"
         href="/contact"

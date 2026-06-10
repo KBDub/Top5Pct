@@ -59,7 +59,12 @@
             ['src' => '/images/automobile-graphics/top5pct-car-wraps.jpg',     'alt' => 'Custom car wraps and vinyl lettering in Joliet Illinois'],
             ['src' => '/images/automobile-graphics/top5pct-pickup-truck-graphics.jpg',  'alt' => 'Professional vehicle wraps and vinyl lettering in Joliet and Shorewood Illinois'],
             ['src' => '/images/automobile-graphics/top5pct-trailer-decal-graphics.jpg',     'alt' => 'Custom boat decals and marine vinyl graphics in Joliet, Shorewood, and Crest Hill Illinois'],
-            ['src' => '/images/automobile-graphics/top5pct-trailer-decals.jpg',       'alt' => 'Custom truck decals and door graphics in Joliet, Shorewood, and Rockdale Illinois'],
+            ['src' => '/images/automobile-graphics/top5pct-trailer-decals.jpg',           'alt' => 'Custom truck decals and door graphics in Joliet, Shorewood, and Rockdale Illinois'],
+            ['src' => '/images/automobile-graphics/top5pct-car-graphics-installers-joliet.jpg', 'alt' => 'Professional car graphics installers in Joliet, Shorewood, and Crest Hill Illinois'],
+            ['src' => '/images/automobile-graphics/top5pct-decals-for-work-trucks.jpg',         'alt' => 'Custom decals for work trucks and commercial vehicles in Joliet Illinois'],
+            ['src' => '/images/automobile-graphics/top5pct-car-wrap-decals-joliet.jpg',          'alt' => 'Custom car wrap decals and vehicle graphics in Joliet Illinois'],
+            ['src' => '/images/automobile-graphics/top5pct-vehicle-graphics-near-me.jpg',        'alt' => 'Vehicle graphics near Joliet, Shorewood, and Plainfield Illinois'],
+            ['src' => '/images/automobile-graphics/top5pct-vehicle-signs-joliet.jpg',            'alt' => 'Custom vehicle signs and fleet graphics in Joliet Illinois'],
         ]"
         visible=2
     />

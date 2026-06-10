@@ -59,7 +59,12 @@
             ['src' => '/images/custom-shirts/top5pct-custom-foil-shirts-hoodies-caps-joliet.jpg', 'alt' => 'Custom foil shirts with metallic high-shine prints in Joliet Illinois'],
             ['src' => '/images/custom-shirts/top5pct-gold-foil-printed-shirts.jpg',             'alt' => 'Custom gold foil printed shirts in Joliet Illinois'],
             ['src' => '/images/custom-shirts/top5pct-foil-custom-t-shirts.jpg',                 'alt' => 'Custom foil t-shirts with metallic finish in Joliet Illinois'],
-            ['src' => '/images/custom-shirts/top5pct-custom-foil-polo.jpg',                     'alt' => 'Custom foil polo shirts in Joliet Illinois'],
+            ['src' => '/images/custom-shirts/top5pct-custom-foil-polo.jpg',                 'alt' => 'Custom foil polo shirts in Joliet Illinois'],
+            ['src' => '/images/foil-shirts/top5pct-foil-shirts.jpg',                     'alt' => 'Custom foil shirts with metallic shine in Joliet Illinois'],
+            ['src' => '/images/foil-shirts/top5pct-foil-custom-shirts-joliet.jpg',       'alt' => 'Custom foil shirts printed in Joliet, Shorewood, and Crest Hill Illinois'],
+            ['src' => '/images/foil-shirts/top5pct-foil-custom-apparel-shirts-joliet.jpg', 'alt' => 'Custom foil apparel and shirts in Joliet Illinois'],
+            ['src' => '/images/foil-shirts/top5pct-foil-shirts-cresthill.jpg',           'alt' => 'Custom foil shirts for businesses and events in Crest Hill Illinois'],
+            ['src' => '/images/foil-shirts/top5pct-foil-shirt-shorewood.jpg',            'alt' => 'Custom foil shirt printing in Shorewood Illinois'],
         ]"
         visible=2
     />

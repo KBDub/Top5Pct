@@ -59,7 +59,11 @@
             ['src' => '/images/table-cloths/top5pct-banner-custom-table-cloth-custom-table-runner-joliet.jpg', 'alt' => 'Custom branded table cloths and table covers for events in Joliet Illinois'],
             ['src' => '/images/table-cloths/top5pct-personalized-tablecloth-joliet.jpg',                 'alt' => 'Custom table runners and table covers for trade shows in Joliet and Shorewood Illinois'],
             ['src' => '/images/table-cloths/top5pct-table-cloths.jpg',               'alt' => 'Full color custom table cloths for events and businesses in Joliet Illinois'],
-            ['src' => '/images/table-cloths/top5pct-custom-table-cloth-joliet-crest-hill.jpg',                'alt' => 'Custom branded table covers and table runners in Joliet, Will and DuPage County Illinois'],
+            ['src' => '/images/table-cloths/top5pct-custom-table-cloth-joliet-crest-hill.jpg',    'alt' => 'Custom branded table covers and table runners in Joliet, Will and DuPage County Illinois'],
+            ['src' => '/images/table-cloths/top5pct-table-cloth-8-feet.jpg',                    'alt' => 'Custom 8-foot table cloth for trade shows and events in Joliet Illinois'],
+            ['src' => '/images/table-cloths/top5pct-table-cloth-customized.jpg',                'alt' => 'Customized branded table cloths printed in Joliet Illinois'],
+            ['src' => '/images/table-cloths/top5pct-table-cloths-for-businesses.jpg',          'alt' => 'Custom table cloths for businesses in Joliet, Shorewood, and Crest Hill Illinois'],
+            ['src' => '/images/table-cloths/top5pct-table-cloth-with-photos.jpg',              'alt' => 'Custom printed table cloth with photos for events in Joliet Illinois'],
         ]"
         visible=2
     />

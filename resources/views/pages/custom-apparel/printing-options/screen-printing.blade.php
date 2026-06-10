@@ -59,7 +59,13 @@
             ['src' => '/images/custom-shirts/top5pct-screenprint-custom-shirts.jpg', 'alt' => 'Custom screen printed shirts and apparel in Joliet Illinois'],
             ['src' => '/images/custom-shirts/top5pct-screenprinted-shirts-in-joliet.jpg',                           'alt' => 'Custom screen printed apparel in Joliet Illinois'],
             ['src' => '/images/custom-shirts/top5pct-banner-custom-apparel-custom-shirts-custom-hoodies-custom-caps.jpg', 'alt' => 'Custom screen printing for group apparel and uniforms in Joliet Illinois'],
-            ['src' => '/images/custom-shirts/top5pct-screenprinting-shirts.jpg',                                     'alt' => 'Custom screen printed shirts made in Joliet Illinois'],
+            ['src' => '/images/custom-shirts/top5pct-screenprinting-shirts.jpg',          'alt' => 'Custom screen printed shirts made in Joliet Illinois'],
+            ['src' => '/images/screen-printing/top5pct-screenprinting-joliet.jpg',         'alt' => 'Custom screen printing services in Joliet Illinois'],
+            ['src' => '/images/screen-printing/top5pct-screenprinted-shirts-joliet.jpg',   'alt' => 'Custom screen printed shirts in Joliet, Shorewood, and Crest Hill Illinois'],
+            ['src' => '/images/screen-printing/top5pct-screenprinting-company-shirts.jpg', 'alt' => 'Screen printing company shirts for businesses in Joliet Illinois'],
+            ['src' => '/images/screen-printing/top5pct-screenprinting-hoodies-joliet.jpg', 'alt' => 'Custom screen printed hoodies in Joliet Illinois'],
+            ['src' => '/images/screen-printing/top5pct-screenprinting-t-shirts-joliet.jpg','alt' => 'Screen printed t-shirts for teams and events in Joliet Illinois'],
+            ['src' => '/images/screen-printing/top5pct-screenprinting-t-shirt-maker-joliet.jpg', 'alt' => 'Custom t-shirt screen printing in Joliet, Will and DuPage County Illinois'],
         ]"
         visible=2
     />

@@ -93,7 +93,7 @@
             <x-ui.card-product
                 title="Promotional Items"
                 href="/promotional-items"
-                image="/images/promo-items/mugs/top5pct-custom-mugs.jpg"
+                image="/images/mugs/top5pct-custom-mugs.jpg"
             >
                 <p class="text-sm text-charcoal-light mb-3">
                     <strong class="text-charcoal">Want branded merchandise for your next event?</strong> Custom pens, mugs, tote bags, koozies, and hundreds of other <a href="/promotional-items" class="text-azure hover:text-azure-dark underline decoration-azure/30 hover:decoration-azure transition-colors">promotional products with your logo</a>. Make a lasting impression at trade shows and events. Ready to get started? <a href="/contact" class="text-azure hover:text-azure-dark underline decoration-azure/30 hover:decoration-azure transition-colors">Request a free quote</a> and we will help you find the right items.

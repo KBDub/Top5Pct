@@ -59,7 +59,11 @@
             ['src' => '/images/table-runners/top5pct-custom-table-runner.jpg', 'alt' => 'Custom printed table cloths and table runners for events in Joliet Illinois'],
             ['src' => '/images/table-runners/top5pct-custom-table-runners.jpg',                 'alt' => 'Custom branded table cloth printed for a business in Joliet and Crest Hill Illinois'],
             ['src' => '/images/table-runners/top5pct-table-runner.jpg',                 'alt' => 'Custom table runner printed for an event in Joliet and New Lenox Illinois'],
-            ['src' => '/images/table-runners/top5pct-table-runners.jpg',                 'alt' => 'Custom printed table runner in Joliet and Shorewood Illinois'],
+            ['src' => '/images/table-runners/top5pct-table-runners.jpg',              'alt' => 'Custom printed table runner in Joliet and Shorewood Illinois'],
+            ['src' => '/images/table-runners/top5pct-custom-table-runner-near-me.jpg', 'alt' => 'Custom table runner near Joliet, Shorewood, and Plainfield Illinois'],
+            ['src' => '/images/table-runners/top5pct-table-runner-company.jpg',        'alt' => 'Table runner printing company in Joliet, Will and DuPage County Illinois'],
+            ['src' => '/images/table-runners/top5pct-table-runner-covers.jpg',         'alt' => 'Custom table runner covers and table skirts printed in Joliet Illinois'],
+            ['src' => '/images/table-runners/top5pct-table-runners-customized.jpg',    'alt' => 'Customized table runners with logos for businesses in Joliet Illinois'],
         ]"
         visible=2
     />

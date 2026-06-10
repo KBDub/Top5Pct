@@ -56,10 +56,9 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/holographic-shirts/top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg',        'alt' => 'Custom holographic shirts hoodies and caps in Joliet Illinois'],
-            ['src' => '/images/holographic-shirts/top5pct-holographic-vinyl-hoodie-foil.jpg',                   'alt' => 'Custom holographic vinyl hoodie with foil effect in Joliet Illinois'],
-            ['src' => '/images/holographic-shirts/top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg',        'alt' => 'Custom holographic color-shifting shirts in Joliet Illinois'],
-            ['src' => '/images/holographic-shirts/top5pct-holographic-vinyl-hoodie-foil.jpg',                   'alt' => 'Custom holographic prismatic shirts in Joliet, Will and DuPage County Illinois'],
+            ['src' => '/images/holographic-shirts/top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg', 'alt' => 'Custom holographic shirts hoodies and caps in Joliet Illinois'],
+            ['src' => '/images/holographic-shirts/top5pct-holographic-vinyl-hoodie-foil.jpg',             'alt' => 'Custom holographic vinyl hoodie with foil effect in Joliet Illinois'],
+            ['src' => '/images/holographic-shirts/top5pct-holographic-baby-shirts.jpg',                   'alt' => 'Custom holographic baby shirts with color-shifting prints in Joliet Illinois'],
         ]"
         visible=2
     />

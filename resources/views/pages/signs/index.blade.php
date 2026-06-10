@@ -105,7 +105,7 @@
             'href'  => '/signs/table-signs/table-runners',
         ],
         [
-            'image' => '/images/window-wall-floor-decals/top5pct-window-signage.jpg',
+            'image' => '/images/window-signs/top5pct-window-signage.jpg',
             'alt'   => 'Custom window signs and window decals for businesses in Joliet, Shorewood, and Crest Hill',
             'title' => 'Window Signs',
             'href'  => '/signs/business-signs/window-signs',
@@ -117,13 +117,13 @@
             'href'  => '/signs/business-signs/wall-signs',
         ],
         [
-            'image' => '/images/window-wall-floor-decals/top5pct-wall-decals-joliet.jpg',
+            'image' => '/images/wall-signs/top5pct-wall-decals-joliet.jpg',
             'alt'   => 'Custom floor signs and outdoor signs for businesses in Joliet, Shorewood, and Crest Hill',
             'title' => 'Floor Signs',
             'href'  => '/signs/business-signs/floor-signs',
         ],
         [
-            'image' => '/images/window-wall-floor-decals/top5pct-door-signage.jpg',
+            'image' => '/images/door-signs/top5pct-door-signage.jpg',
             'alt'   => 'Custom door signs and door graphics for businesses in Joliet, Shorewood, and Crest Hill',
             'title' => 'Door Signs',
             'href'  => '/signs/business-signs/door-signs',

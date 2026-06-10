@@ -58,7 +58,8 @@
             ['src' => '/images/spirit-wear/top5pct-banner-fanwear-spiritwear-uniforms-joliet-shorewood.jpg', 'alt' => 'Custom fan wear and spirit wear uniforms in Joliet and Shorewood Illinois'],
             ['src' => '/images/spirit-wear/top5pct-spirit-wear-shirts.jpg',            'alt' => 'Joliet West spirit wear hoodie printed in Shorewood Illinois'],
             ['src' => '/images/spirit-wear/top5pct-spirit-wear-clothing.jpg',                              'alt' => 'Custom spirit wear clothing in Joliet Illinois'],
-            ['src' => '/images/spirit-wear/top5pct-volleyball-team-uniforms-joliet.jpg',                    'alt' => 'Custom volleyball team uniforms in Joliet Illinois'],
+            ['src' => '/images/spirit-wear/top5pct-volleyball-team-uniforms-joliet.jpg',     'alt' => 'Custom volleyball team uniforms in Joliet Illinois'],
+            ['src' => '/images/spirit-wear/top5pct-spirit-wear-volleyball-track.jpg',       'alt' => 'Custom spirit wear for volleyball and track teams in Joliet Illinois'],
         ]"
         visible=2
     />

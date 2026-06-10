@@ -60,6 +60,10 @@
             ['src' => '/images/sublimation/top5pct-custom-face-mask-sublimated.jpg',         'alt' => 'Custom all over print sublimation shirts in Joliet Illinois'],
             ['src' => '/images/sublimation/top5pct-custom-sublimated-towels.jpg',            'alt' => 'Custom sublimation jerseys and performance wear printed in Joliet Illinois'],
             ['src' => '/images/sublimation/top5pct-dye-sublimated-longsleeve-shirt-joliet.jpg', 'alt' => 'Custom dye sublimated long sleeve shirts made in Joliet Illinois'],
+            ['src' => '/images/sublimation/top5pct-dye-sublimation-jerseys.jpg',               'alt' => 'Custom dye sublimation jerseys for sports teams in Joliet Illinois'],
+            ['src' => '/images/sublimation/top5pct-dye-sublimation-tees.jpg',                  'alt' => 'Custom dye sublimation tees and all-over-print shirts in Joliet Illinois'],
+            ['src' => '/images/sublimation/top5pct-sublimated-graphic-tees.jpg',               'alt' => 'Custom sublimated graphic tees printed in Joliet Illinois'],
+            ['src' => '/images/sublimation/top5pct-sublimation-tees.jpg',                      'alt' => 'Full color sublimation tees for events and businesses in Joliet Illinois'],
         ]"
         visible=2
     />

@@ -81,7 +81,7 @@
     <url>
         <loc>https://www.top5pct.com/signs/business-signs/window-signs</loc>
         <image:image>
-            <image:loc>https://www.top5pct.com/images/window-wall-floor-decals/top5pct-window-signs-joliet.jpg</image:loc>
+            <image:loc>https://www.top5pct.com/images/window-signs/top5pct-window-signs-joliet.jpg</image:loc>
             <image:title>Window Signs in Joliet, IL</image:title>
             <image:caption>Custom window decals and signs for businesses in Joliet and Will County, IL.</image:caption>
         </image:image>
@@ -90,7 +90,7 @@
     <url>
         <loc>https://www.top5pct.com/signs/business-signs/wall-signs</loc>
         <image:image>
-            <image:loc>https://www.top5pct.com/images/window-wall-floor-decals/top5pct-wall-decals-joliet.jpg</image:loc>
+            <image:loc>https://www.top5pct.com/images/wall-signs/top5pct-wall-decals-joliet.jpg</image:loc>
             <image:title>Wall Signs &amp; Wall Decals in Joliet, IL</image:title>
             <image:caption>Custom wall signs and decals for businesses and retail spaces in Joliet, IL.</image:caption>
         </image:image>
@@ -99,7 +99,7 @@
     <url>
         <loc>https://www.top5pct.com/signs/business-signs/door-signs</loc>
         <image:image>
-            <image:loc>https://www.top5pct.com/images/window-wall-floor-decals/top5pct-window-decal-joliet-shorewood-rockdale.jpg</image:loc>
+            <image:loc>https://www.top5pct.com/images/window-signs/top5pct-window-decal-joliet-shorewood-rockdale.jpg</image:loc>
             <image:title>Door Signs in Joliet, IL</image:title>
             <image:caption>Custom door signs and window decals for businesses in Joliet, Shorewood, and Rockdale, IL.</image:caption>
         </image:image>
@@ -350,7 +350,7 @@
     <url>
         <loc>https://www.top5pct.com/promotional-items/mugs</loc>
         <image:image>
-            <image:loc>https://www.top5pct.com/images/promo-items/mugs/top5pct-custom-printed-mugs.jpg</image:loc>
+            <image:loc>https://www.top5pct.com/images/mugs/top5pct-custom-printed-mugs.jpg</image:loc>
             <image:title>Custom Printed Mugs in Joliet, IL</image:title>
             <image:caption>Custom printed mugs for businesses, events, and gifts in Joliet and Will County, IL.</image:caption>
         </image:image>

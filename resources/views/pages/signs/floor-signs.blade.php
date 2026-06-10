@@ -47,7 +47,7 @@
         primaryButtonHref="#all-products"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/window-wall-floor-decals/top5pct-banner-wall-decal-door-signs-joliet.jpg"
+        image="/images/wall-signs/top5pct-banner-wall-decal-door-signs-joliet.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />
@@ -56,10 +56,10 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/window-wall-floor-decals/top5pct-banner-wall-decal-door-signs-joliet.jpg', 'alt' => 'Custom floor decals and floor signs for businesses in Joliet Illinois'],
-            ['src' => '/images/window-wall-floor-decals/top5pct-wall-decals-joliet.jpg',                 'alt' => 'Custom branded floor graphics installed in Joliet Illinois'],
-            ['src' => '/images/window-wall-floor-decals/top5pct-article-window-wall-signs.jpg',          'alt' => 'Floor signs and wall graphics for retail businesses in Joliet Illinois'],
-            ['src' => '/images/window-wall-floor-decals/top5pct-wall-signs-joliet.jpg',                  'alt' => 'Custom floor signage printed in Joliet, Will and DuPage County Illinois'],
+            ['src' => '/images/wall-signs/top5pct-banner-wall-decal-door-signs-joliet.jpg', 'alt' => 'Custom floor decals and floor signs for businesses in Joliet Illinois'],
+            ['src' => '/images/wall-signs/top5pct-wall-decals-joliet.jpg',                 'alt' => 'Custom branded floor graphics installed in Joliet Illinois'],
+            ['src' => '/images/wall-signs/top5pct-article-window-wall-signs.jpg',          'alt' => 'Floor signs and wall graphics for retail businesses in Joliet Illinois'],
+            ['src' => '/images/wall-signs/top5pct-wall-signs-joliet.jpg',                  'alt' => 'Custom floor signage printed in Joliet, Will and DuPage County Illinois'],
         ]"
         visible=2
     />
@@ -70,7 +70,7 @@
     />
 
     <x-sections.card-image-with-text
-        image="/images/window-wall-floor-decals/top5pct-wall-decals-joliet.jpg"
+        image="/images/wall-signs/top5pct-wall-decals-joliet.jpg"
         alt="Custom floor decals and floor graphics for retail businesses in Joliet Illinois"
         title="Advertising That Goes Where Customers Walk"
     >
@@ -80,7 +80,7 @@
     </x-sections.card-image-with-text>
 
     <x-sections.card-image-with-text
-        image="/images/window-wall-floor-decals/top5pct-article-window-wall-signs.jpg"
+        image="/images/wall-signs/top5pct-article-window-wall-signs.jpg"
         alt="Floor graphics and branded floor decals for events and retail stores in Joliet Illinois"
         title="From Trade Show Floors to Retail Aisles"
         imagePosition="right"
@@ -96,7 +96,7 @@
 
     <x-sections.card-detailed-info
         heading="5 Ways Floor Graphics Work Harder for Your Business Than You Realize"
-        image1="/images/window-wall-floor-decals/top5pct-banner-wall-decal-door-signs-joliet.jpg"
+        image1="/images/wall-signs/top5pct-banner-wall-decal-door-signs-joliet.jpg"
         alt1="Custom floor graphics and floor decals for businesses in Joliet, Will and DuPage County Illinois"
     >
         <x-slot name="intro">
@@ -125,14 +125,14 @@
         name="Jerry E Olson"
     />
     <x-ui.card-banner-slide-in
-        image="/images/window-wall-floor-decals/top5pct-wall-decals-joliet.jpg"
+        image="/images/wall-signs/top5pct-wall-decals-joliet.jpg"
         alt="Custom floor graphics and floor decals printed and installed by Top 5 Percent in Joliet Illinois"
         title="Custom Floor Graphics for Your Business"
         href="/contact"
         direction="right"
     />
     <x-ui.card-banner-slide-in
-        image="/images/window-wall-floor-decals/top5pct-window-decals-joliet-shorewood-crest-hill.jpg"
+        image="/images/window-signs/top5pct-window-decals-joliet-shorewood-crest-hill.jpg"
         alt="Custom window signs and graphics installed by Top 5 Percent in Joliet Illinois"
         title="Window Signs and Wall Wraps Available Too"
         href="/contact"

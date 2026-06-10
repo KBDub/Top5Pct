@@ -55,10 +55,10 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/promo-items/mugs/top5pct-custom-coffee-mugs-in-joliet.jpg', 'alt' => 'Custom branded promotional products and drinkware in Joliet Illinois'],
-            ['src' => '/images/promo-items/mugs/top5pct-custom-coffee-mugs.jpg',                         'alt' => 'Custom branded gifts and promotional items in Joliet Illinois'],
-            ['src' => '/images/promo-items/mugs/top5pct-custom-mugs-near-me.jpg',                                     'alt' => 'Custom promotional products and branded merchandise in Joliet Illinois'],
-            ['src' => '/images/promo-items/mugs/top5pct-custom-mugs.jpg',                                     'alt' => 'Branded merchandise and custom promotional gifts in Joliet, Will and DuPage County Illinois'],
+            ['src' => '/images/mugs/top5pct-custom-coffee-mugs-in-joliet.jpg', 'alt' => 'Custom branded promotional products and drinkware in Joliet Illinois'],
+            ['src' => '/images/mugs/top5pct-custom-coffee-mugs.jpg',                         'alt' => 'Custom branded gifts and promotional items in Joliet Illinois'],
+            ['src' => '/images/mugs/top5pct-custom-mugs-near-me.jpg',                                     'alt' => 'Custom promotional products and branded merchandise in Joliet Illinois'],
+            ['src' => '/images/mugs/top5pct-custom-mugs.jpg',                                     'alt' => 'Branded merchandise and custom promotional gifts in Joliet, Will and DuPage County Illinois'],
         ]"
         visible=2
     />
@@ -69,7 +69,7 @@
     />
 
     <x-sections.card-image-with-text
-        image="/images/promo-items/mugs/top5pct-custom-printed-mugs.jpg"
+        image="/images/mugs/top5pct-custom-printed-mugs.jpg"
         alt="Custom branded mugs for businesses and events in Joliet Illinois"
         title="Coffee Mugs That Work for Your Brand"
     >
@@ -80,7 +80,7 @@
     </x-sections.card-image-with-text>
 
     <x-sections.card-image-with-text
-        image="/images/promo-items/mugs/top5pct-picture-on-mugs.jpg"
+        image="/images/mugs/top5pct-picture-on-mugs.jpg"
         alt="Custom mug orders and branded drinkware design process in Joliet Illinois"
         title="Easy Ordering, Fast Turnaround"
         imagePosition="right"
@@ -97,7 +97,7 @@
 
     <x-sections.card-detailed-info
         heading="Why Custom Mugs Are One of the Most Effective Promotional Products for Daily Brand Visibility"
-        image1="/images/promo-items/mugs/top5pct-printed-mugs.jpg"
+        image1="/images/mugs/top5pct-printed-mugs.jpg"
         alt1="Custom branded mugs and promotional drinkware for businesses in Joliet, Will and DuPage County Illinois"
     >
         <x-slot name="intro">
@@ -126,7 +126,7 @@
         name="Chewy Orkwiszewski"
     />
     <x-ui.card-banner-slide-in
-        image="/images/promo-items/mugs/top5pct-printed-mugs-old.jpg"
+        image="/images/mugs/top5pct-printed-mugs-old.jpg"
         alt="Custom branded mugs and promotional drinkware from Top 5 Percent in Joliet Illinois"
         title="Custom Mugs With Your Logo, No Minimums"
         href="/contact"
