@@ -76,7 +76,7 @@
     />
 
     <x-sections.card-image-with-text
-        image="/images/custom-shirts/top5pct-custom-flock-shirt-hoodie-cap-joliet.jpg"
+        image="/images/custom-shirts/top5pct-neon-vinyl-shirts.jpg"
         alt="Custom screen printed shirts for businesses and organizations in Joliet Illinois"
         title="The Classic Standard for Custom Apparel"
     >
@@ -86,7 +86,7 @@
     </x-sections.card-image-with-text>
 
     <x-sections.card-image-with-text
-        image="/images/custom-shirts/top5pct-custom-reflective-shirts-hoodies-caps-joliet.jpg"
+        image="/images/custom-shirts/top5pct-vinyl-caps.jpg"
         alt="Custom screen printing for group apparel and uniforms in Joliet Illinois"
         title="Ideal for Bulk Orders and Uniforms"
         imagePosition="right"

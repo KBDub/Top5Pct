@@ -135,7 +135,7 @@
         direction="right"
     />
     <x-ui.card-banner-slide-in
-        image="/images/custom-shaped-stickers-decals/top5pct-stickers-decals-joliet-stoner-rock-bbq.jpg"
+        image="/images/custom-shaped-stickers-decals/top5pct-die-cut-stickers-shorewood.jpg"
         alt="Custom printed labels and sticker sheets from Top 5 Percent in Joliet Illinois"
         title="Custom Printed Labels and Sticker Sheets Available"
         href="/contact"

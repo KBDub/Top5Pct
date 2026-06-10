@@ -56,12 +56,10 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/wall-signs/top5pct-wall-signs-joliet.jpg',        'alt' => 'Custom wall signs and wall graphics for businesses in Joliet Illinois'],
+            ['src' => '/images/wall-signs/top5pct-wall-signs-old.jpg',               'alt' => 'Custom wall signs and wall graphics for businesses in Joliet Illinois'],
             ['src' => '/images/wall-signs/top5pct-wall-wraps.jpg',                    'alt' => 'Custom wall wraps for businesses in Joliet Illinois'],
-            ['src' => '/images/wall-signs/top5pct-article-window-wall-signs.jpg',      'alt' => 'Office murals and lobby wall graphics in Joliet, Will and DuPage County Illinois'],
-            ['src' => '/images/wall-signs/top5pct-banner-wall-decal-door-signs-joliet.jpg', 'alt' => 'Wall decals and door signs for businesses in Joliet Illinois'],
-            ['src' => '/images/wall-signs/top5pct-wall-decals-bedroom.jpg',                'alt' => 'Custom wall decals for bedrooms and interior spaces in Joliet Illinois'],
-            ['src' => '/images/wall-signs/top5pct-wall-sign-for-businesses.jpg',           'alt' => 'Custom wall signs for businesses in Joliet, Shorewood, and Plainfield Illinois'],
+            ['src' => '/images/wall-signs/top5pct-wall-decals-bedroom.jpg',            'alt' => 'Office murals and lobby wall graphics in Joliet, Will and DuPage County Illinois'],
+            ['src' => '/images/wall-signs/top5pct-wall-sign-for-businesses.jpg',       'alt' => 'Wall decals and door signs for businesses in Joliet Illinois'],
             ['src' => '/images/wall-signs/top5pct-wall-signs-for-businesses.jpg',          'alt' => 'Branded wall signs for businesses throughout Will and DuPage County Illinois'],
         ]"
         visible=2
@@ -73,7 +71,7 @@
     />
 
     <x-sections.card-image-with-text
-        image="/images/wall-signs/top5pct-wall-decals-joliet.jpg"
+        image="/images/wall-signs/top5pct-wall-wraps.jpg"
         alt="Custom wall decals and wall graphics for businesses in Joliet Illinois"
         title="Brand Your Interior Spaces"
     >
@@ -83,7 +81,7 @@
     </x-sections.card-image-with-text>
 
     <x-sections.card-image-with-text
-        image="/images/wall-signs/top5pct-article-window-wall-signs.jpg"
+        image="/images/wall-signs/top5pct-wall-signs-for-businesses.jpg"
         alt="Office murals and lobby wall graphics installed in Joliet, Will and DuPage County Illinois"
         title="Office Murals and Lobby Graphics"
         imagePosition="right"
@@ -128,14 +126,14 @@
         name="Jerry E Olson"
     />
     <x-ui.card-banner-slide-in
-        image="/images/wall-signs/top5pct-wall-decals-joliet.jpg"
+        image="/images/window-signs/top5pct-window-signs-joliet.jpg"
         alt="Custom wall graphics and wall decals installed by Top 5 Percent in Joliet Illinois"
         title="Turn Your Walls Into a Brand Statement"
         href="/contact"
         direction="right"
     />
     <x-ui.card-banner-slide-in
-        image="/images/window-signs/top5pct-window-decals-joliet-shorewood-crest-hill.jpg"
+        image="/images/window-signs/top5pct-window-graphics-joliet.jpg"
         alt="Custom window graphics and decals installed by Top 5 Percent in Joliet Illinois"
         title="Window Graphics and Door Signs Available Too"
         href="/contact"

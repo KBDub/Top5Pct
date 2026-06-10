@@ -70,7 +70,7 @@
     />
 
     <x-sections.card-image-with-text
-        image="/images/sidewalk-signs/top5pct-a-frame-sidewalk-sign-joliet.jpg"
+        image="/images/sidewalk-signs/top5pct-sidewalk-signs-joliet-old.jpg"
         alt="Custom a-frame sidewalk sign for a business in Joliet Illinois"
         title="Keep Your Parking Lot Organized"
     >
@@ -125,14 +125,14 @@
         name="Jerry E Olson"
     />
     <x-ui.card-banner-slide-in
-        image="/images/sidewalk-signs/top5pct-sidewalk-a-frames-joliet-shorewood.jpg"
+        image="/images/sidewalk-signs/top5pct-a-frame-sidewalk-signs.jpg"
         alt="Custom sidewalk a-frame signs for businesses in Joliet and Shorewood Illinois"
         title="Custom Parking Signs Built for Illinois Weather"
         href="/contact"
         direction="right"
     />
     <x-ui.card-banner-slide-in
-        image="/images/banners/top5pct-banner-business-banners-joliet-shorewood-crest-hill.jpg"
+        image="/images/banners/top5pct-mesh-construction-banner.jpg"
         alt="Custom business banners and outdoor signage from Top 5 Percent in Joliet Illinois"
         title="Banners, Sidewalk Signs, and More, Ask About Our Full Sign Menu"
         href="/contact"

@@ -158,7 +158,7 @@
         direction="left"
     />
     <x-ui.card-banner-slide-in
-        image="/images/vehicle-magnets/top5pct-car-magnets-vehicle-magnets-joliet.jpg"
+        image="/images/vehicle-magnets/top5pct-truck-sign-magnets-joliet.jpg"
         alt="Custom vehicle magnets and removable signs from Top 5 Percent in Joliet Illinois"
         title="Magnets, Decals, and Full Wraps, One-Stop Shop"
         href="/contact"

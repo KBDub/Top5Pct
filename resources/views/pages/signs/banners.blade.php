@@ -149,14 +149,14 @@
         name="Yolanda S. Flowers"
     />
     <x-ui.card-banner-slide-in
-        image="/images/banners/top5pct-banners-business-joliet-shorewood-crest-hill.jpg"
+        image="/images/banners/top5pct-retractable-banners-plainfield.jpg"
         alt="Custom vinyl banner printing at Top 5 Percent in Joliet, Shorewood, and Crest Hill Illinois"
         title="Same-Day Banner Printing in Joliet"
         href="/contact"
         direction="left"
     />
     <x-ui.card-banner-slide-in
-        image="/images/banners/top5pct-banner-business-banners-joliet-shorewood-crest-hill.jpg"
+        image="/images/banners/top5pct-portable-banners.jpg"
         alt="Custom vinyl banners for birthdays, graduations, and events printed by Top 5 Percent in Joliet Illinois"
         title="Birthday, Graduation, Event Banners, We Print Same Day"
         href="/contact"

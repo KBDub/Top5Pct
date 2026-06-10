@@ -48,7 +48,7 @@
         primaryButtonHref="#vehicle-categories"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/automobile-graphics/top5pct-car-wraps-vinyl-lettering-joliet-shorewood.jpg"
+        image="/images/automobile-graphics/top5pct-vehicle-graphics.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />
@@ -94,7 +94,7 @@
     ]" />
 
     <x-sections.card-image-with-text
-        image="/images/automobile-graphics/top5pct-vinyl-lettering-car-graphics-joliet-crest-hill.jpg"
+        image="/images/automobile-graphics/top5pct-vehicle-window-graphics-in-joliet.jpg"
         alt="Professional vehicle wraps and vinyl lettering installed in Joliet and Shorewood Illinois"
         title="Turn Your Vehicle Into a Moving Billboard"
     >
@@ -108,10 +108,10 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/vehicle-magnets/top5pct-car-magnets-truck-magnets-joliet.jpg',            'alt' => 'Custom car magnets and truck magnets for businesses in Joliet Illinois'],
-            ['src' => '/images/dot-decals/top5pct-dot-decals-joliet-shorewood-rockdale.jpg',             'alt' => 'DOT decals and USDOT compliance stickers for commercial trucks in Joliet, Shorewood, and Rockdale'],
-            ['src' => '/images/automobile-graphics/top5pct-boat-decals-joliet-shorewood-crest-hill.jpg', 'alt' => 'Custom boat decals and watercraft graphics in Joliet, Shorewood, and Crest Hill Illinois'],
-            ['src' => '/images/vehicle-magnets/top5pct-business-magnets-car-magnets-joliet.jpg',         'alt' => 'Business magnets and removable car magnets in Joliet Illinois'],
+            ['src' => '/images/vehicle-magnets/top5pct-truck-sign-magnets-joliet.jpg',                   'alt' => 'Custom car magnets and truck magnets for businesses in Joliet Illinois'],
+            ['src' => '/images/dot-decals/top5pct-dot-truck-decals-joliet.jpg',                          'alt' => 'DOT decals and USDOT compliance stickers for commercial trucks in Joliet, Shorewood, and Rockdale'],
+            ['src' => '/images/automobile-graphics/top5pct-vehicle-window-graphics-joliet.jpg',          'alt' => 'Custom vehicle window graphics and auto decals in Joliet, Shorewood, and Crest Hill Illinois'],
+            ['src' => '/images/vehicle-magnets/top5pct-vehicle-magnets-joliet.jpg',                      'alt' => 'Business magnets and removable car magnets in Joliet Illinois'],
         ]"
         visible=2
     />
@@ -124,7 +124,7 @@
         direction="left"
     />
     <x-ui.card-banner-slide-in
-        image="/images/vehicle-magnets/top5pct-car-magnets-vehicle-magnets-joliet.jpg"
+        image="/images/vehicle-magnets/top5pct-vehicle-magnets.jpg"
         alt="Custom removable vehicle magnets from Top 5 Percent in Joliet Illinois"
         title="Removable Vehicle Magnets, No Commitment Required"
         href="/contact"

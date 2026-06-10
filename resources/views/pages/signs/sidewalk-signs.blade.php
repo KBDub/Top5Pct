@@ -47,7 +47,7 @@
         primaryButtonHref="#all-products"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/sidewalk-signs/top5pct-banner-a-frame-sidewalk-signs-joliet-romeoville.jpg"
+        image="/images/sidewalk-signs/top5pct-sidewalk-signage.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />
@@ -84,7 +84,7 @@
         </x-sections.card-image-with-text>
 
         <x-sections.card-image-with-text
-            image="/images/sidewalk-signs/top5pct-sidewalk-signage.jpg"
+            image="/images/sidewalk-signs/top5pct-sidewalk-signs-joliet-old.jpg"
             alt="Custom sidewalk signage for businesses in Joliet Illinois"
             title="Sidewalk Signs for Events"
             imagePosition="right"

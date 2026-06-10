@@ -47,7 +47,7 @@
         primaryButtonHref="#all-products"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/table-runners/top5pct-banner-custom-table-cloth-custom-table-runner-joliet.jpg"
+        image="/images/table-runners/top5pct-custom-table-cloth-business.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />
@@ -160,7 +160,7 @@
         direction="right"
     />
     <x-ui.card-banner-slide-in
-        image="/images/banners/top5pct-banner-joliet-romeoville-rockdale-plainfield.jpg"
+        image="/images/banners/top5pct-retractable-banner.jpg"
         alt="Custom banners and event signage printed by Top 5 Percent in Joliet Illinois"
         title="Complete Your Event Setup, Banners, Signs, and More"
         href="/contact"

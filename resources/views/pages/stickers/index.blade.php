@@ -58,9 +58,9 @@
     <x-ui.carousel-rotating-images
         :images="[
             ['src' => '/images/custom-shaped-stickers-decals/top5pct-die-cut-stickers-shorewood.jpg',          'alt' => 'Custom die cut stickers printed in Shorewood Illinois'],
-            ['src' => '/images/custom-shaped-stickers-decals/top5pct-stickers-decals-joliet-beer-brewery.jpg', 'alt' => 'Custom stickers for a beer brewery in Joliet Illinois'],
-            ['src' => '/images/custom-shaped-stickers-decals/top5pct-stickers-decals-joliet-stoner-rock-bbq.jpg','alt' => 'Custom stickers for a BBQ restaurant in Joliet Illinois'],
-            ['src' => '/images/custom-shaped-stickers-decals/top5pct-stickers-decals-joliet-volleyball-team.jpg','alt' => 'Custom stickers for a volleyball team in Joliet Illinois'],
+            ['src' => '/images/custom-shaped-stickers-decals/top5pct-custom-stickers.jpg',                       'alt' => 'Custom stickers for a beer brewery in Joliet Illinois'],
+            ['src' => '/images/custom-shaped-stickers-decals/top5pct-stickers-in-joliet.jpg',                    'alt' => 'Custom stickers for a BBQ restaurant in Joliet Illinois'],
+            ['src' => '/images/custom-shaped-stickers-decals/top5pct-die-cut-stickers-joliet-r3.jpg',            'alt' => 'Custom stickers for a volleyball team in Joliet Illinois'],
             ['src' => '/images/custom-shaped-stickers-decals/top5pct-stickers-decals-joliet-labels.jpg',       'alt' => 'Custom product labels and business stickers in Joliet Illinois'],
         ]"
         visible=3

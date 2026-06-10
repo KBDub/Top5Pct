@@ -132,14 +132,14 @@
         name="Jerry E Olson"
     />
     <x-ui.card-banner-slide-in
-        image="/images/window-signs/top5pct-window-decals-joliet-shorewood-crest-hill.jpg"
+        image="/images/window-signs/top5pct-window-signs-for-businesses-joliet.jpg"
         alt="Custom window graphics and window decals printed and installed by Top 5 Percent in Joliet Illinois"
         title="Custom Window Graphics for Your Joliet Business"
         href="/contact"
         direction="left"
     />
     <x-ui.card-banner-slide-in
-        image="/images/wall-signs/top5pct-wall-decals-joliet.jpg"
+        image="/images/wall-signs/top5pct-wall-signs-for-businesses.jpg"
         alt="Custom wall graphics and interior decals installed by Top 5 Percent in Joliet Illinois"
         title="Also Install Wall Graphics and Floor Signs"
         href="/contact"

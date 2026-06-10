@@ -149,7 +149,7 @@
         direction="right"
     />
     <x-ui.card-banner-slide-in
-        image="/images/automobile-graphics/top5pct-car-wraps-vinyl-lettering-joliet-shorewood.jpg"
+        image="/images/automobile-graphics/top5pct-vehicle-graphics.jpg"
         alt="Vehicle wraps and vinyl lettering installed by Top 5 Percent in Joliet and Shorewood Illinois"
         title="Full Vehicle Wraps Available Too, Ask Us"
         href="/contact"

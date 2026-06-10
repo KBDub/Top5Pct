@@ -47,7 +47,7 @@
         primaryButtonHref="#all-products"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/wall-signs/top5pct-banner-wall-decal-door-signs-joliet.jpg"
+        image="/images/wall-signs/top5pct-wall-signs-for-businesses.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />
@@ -56,10 +56,10 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/wall-signs/top5pct-banner-wall-decal-door-signs-joliet.jpg', 'alt' => 'Custom floor decals and floor signs for businesses in Joliet Illinois'],
-            ['src' => '/images/wall-signs/top5pct-wall-decals-joliet.jpg',                 'alt' => 'Custom branded floor graphics installed in Joliet Illinois'],
-            ['src' => '/images/wall-signs/top5pct-article-window-wall-signs.jpg',          'alt' => 'Floor signs and wall graphics for retail businesses in Joliet Illinois'],
-            ['src' => '/images/wall-signs/top5pct-wall-signs-joliet.jpg',                  'alt' => 'Custom floor signage printed in Joliet, Will and DuPage County Illinois'],
+            ['src' => '/images/wall-signs/top5pct-wall-signs-old.jpg',                       'alt' => 'Custom floor decals and floor signs for businesses in Joliet Illinois'],
+            ['src' => '/images/wall-signs/top5pct-wall-sign-for-businesses.jpg',           'alt' => 'Custom branded floor graphics installed in Joliet Illinois'],
+            ['src' => '/images/wall-signs/top5pct-wall-decals-bedroom.jpg',                'alt' => 'Floor signs and wall graphics for retail businesses in Joliet Illinois'],
+            ['src' => '/images/wall-signs/top5pct-wall-wraps.jpg',                         'alt' => 'Custom floor signage printed in Joliet, Will and DuPage County Illinois'],
         ]"
         visible=2
     />
@@ -70,7 +70,7 @@
     />
 
     <x-sections.card-image-with-text
-        image="/images/wall-signs/top5pct-wall-decals-joliet.jpg"
+        image="/images/wall-signs/top5pct-wall-signs.jpg"
         alt="Custom floor decals and floor graphics for retail businesses in Joliet Illinois"
         title="Advertising That Goes Where Customers Walk"
     >
@@ -132,7 +132,7 @@
         direction="right"
     />
     <x-ui.card-banner-slide-in
-        image="/images/window-signs/top5pct-window-decals-joliet-shorewood-crest-hill.jpg"
+        image="/images/window-signs/top5pct-window-signs-for-businesses-joliet.jpg"
         alt="Custom window signs and graphics installed by Top 5 Percent in Joliet Illinois"
         title="Window Signs and Wall Wraps Available Too"
         href="/contact"

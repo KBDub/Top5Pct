@@ -59,7 +59,7 @@
             ['src' => '/images/custom-shirts/top5pct-banner-custom-apparel-custom-shirts-custom-hoodies-custom-caps.jpg', 'alt' => 'Custom puff print shirts and apparel in Joliet Illinois'],
             ['src' => '/images/custom-shirts/top5pct-puff-shirts-joliet.jpg',                                            'alt' => 'Custom puff shirts in Joliet Illinois'],
             ['src' => '/images/custom-shirts/top5pct-puff-shirts.jpg',                                                   'alt' => 'Custom puff print apparel in Joliet Illinois'],
-            ['src' => '/images/custom-shirts/top5pct-t-shirt-maker-article-pic1.jpg',                                    'alt' => 'Custom apparel and puff print shirts made in Joliet Illinois'],
+            ['src' => '/images/custom-shirts/top5pct-custom-vinyl-shirts.jpg',                                    'alt' => 'Custom apparel and puff print shirts made in Joliet Illinois'],
         ]"
         visible=2
     />
@@ -133,7 +133,7 @@
         direction="left"
     />
     <x-ui.card-banner-slide-in
-        image="/images/custom-shirts/top5pct-custom-rhinestone-shirt-cap-hoodie-joliet.jpg"
+        image="/images/custom-shirts/top5pct-rhinetsone-t-shirts.jpg"
         alt="Custom rhinestone and bling shirts from Top 5 Percent in Joliet Illinois"
         title="Puff, Rhinestone, or Flock, Mix Techniques for One of a Kind Shirts"
         href="/contact"

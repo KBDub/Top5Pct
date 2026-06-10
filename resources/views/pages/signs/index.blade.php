@@ -117,7 +117,7 @@
             'href'  => '/signs/business-signs/wall-signs',
         ],
         [
-            'image' => '/images/wall-signs/top5pct-wall-decals-joliet.jpg',
+            'image' => '/images/wall-signs/top5pct-wall-signs-for-businesses.jpg',
             'alt'   => 'Custom floor signs and outdoor signs for businesses in Joliet, Shorewood, and Crest Hill',
             'title' => 'Floor Signs',
             'href'  => '/signs/business-signs/floor-signs',

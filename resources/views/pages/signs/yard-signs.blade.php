@@ -147,7 +147,7 @@
         direction="left"
     />
     <x-ui.card-banner-slide-in
-        image="/images/banners/top5pct-banners-business-joliet-shorewood-crest-hill.jpg"
+        image="/images/banners/top5pct-retractable-banner.jpg"
         alt="Custom banners and business signs printed by Top 5 Percent in Joliet and Shorewood Illinois"
         title="We Also Print Banners, Posters, and More"
         href="/contact"

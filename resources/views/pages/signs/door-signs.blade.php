@@ -56,11 +56,10 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/door-signs/top5pct-door-signs-joliet-shorewood-crest-hill.jpg', 'alt' => 'Custom door signs and door graphics for businesses in Joliet, Shorewood, and Crest Hill Illinois'],
+            ['src' => '/images/door-signs/top5pct-door-lettering-vinyl.jpg', 'alt' => 'Custom door signs and door graphics for businesses in Joliet, Shorewood, and Crest Hill Illinois'],
             ['src' => '/images/door-signs/top5pct-business-door-signs.jpg',                   'alt' => 'Custom business door signs in Joliet Illinois'],
             ['src' => '/images/door-signs/top5pct-door-sign-installers.jpg',                  'alt' => 'Custom door sign installation in Joliet Illinois'],
             ['src' => '/images/door-signs/top5pct-door-wraps-joliet.jpg',         'alt' => 'Custom door wraps in Joliet Illinois'],
-            ['src' => '/images/door-signs/top5pct-door-lettering-vinyl.jpg',   'alt' => 'Custom vinyl door lettering and door graphics for businesses in Joliet Illinois'],
         ]"
         visible=2
     />
@@ -128,14 +127,14 @@
         name="Jerry E Olson"
     />
     <x-ui.card-banner-slide-in
-        image="/images/door-signs/top5pct-door-signs-joliet-shorewood-crest-hill.jpg"
+        image="/images/door-signs/top5pct-business-door-signs.jpg"
         alt="Custom door signs and door graphics printed and installed by Top 5 Percent in Joliet Illinois"
         title="Professional Door Graphics for Any Business"
         href="/contact"
         direction="left"
     />
     <x-ui.card-banner-slide-in
-        image="/images/wall-signs/top5pct-wall-decals-joliet.jpg"
+        image="/images/wall-signs/top5pct-wall-sign-for-businesses.jpg"
         alt="Custom wall graphics and interior signage installed by Top 5 Percent in Joliet Illinois"
         title="Wall Graphics and Window Signs, Same Fast Turnaround"
         href="/contact"

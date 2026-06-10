@@ -59,7 +59,7 @@
             ['src' => '/images/glow-shirts/top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg',            'alt' => 'Custom glow in the dark shirts caps and hoodies in Joliet Illinois'],
             ['src' => '/images/glow-shirts/top5pct-glowing-halloween-bat-shirt.jpg',                      'alt' => 'Custom glowing Halloween bat shirt in Joliet Illinois'],
             ['src' => '/images/glow-shirts/top5pct-halloween-pumpkin-glow-shirt.jpg',                     'alt' => 'Custom Halloween pumpkin glow shirt in Joliet Illinois'],
-            ['src' => '/images/custom-shirts/top5pct-t-shirt-maker-article-pic1.jpg',                                     'alt' => 'Custom glow in the dark shirts made in Joliet, Will and DuPage County Illinois'],
+            ['src' => '/images/custom-shirts/top5pct-custom-vinyl-shirts.jpg',                                     'alt' => 'Custom glow in the dark shirts made in Joliet, Will and DuPage County Illinois'],
         ]"
         visible=2
     />
