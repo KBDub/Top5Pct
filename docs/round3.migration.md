@@ -15,6 +15,7 @@
 | 4 | **Image paths are always flat** under `public/images/<dir>/`. No sub-dirs within a category dir. |
 | 5 | **Source files must be moved, not copied.** After verifying the moved file is present in the target dir, the staging source is no longer needed — but per Rule 1, it stays on disk until a deliberate cleanup pass is approved. |
 | 6 | **No file is ever overwritten silently.** If a target filename already exists, flag it and rename the incoming file to `top5pct-<name>-r3.jpg` before proceeding. |
+| 7 | **Track before and after image counts** for every `public/images/<dir>` touched during the migration. Record counts in the Image Count Tracker section of this document before any moves begin, and update after each phase completes. |
 
 ---
 
@@ -472,16 +473,59 @@ After Phase 3 split and flattens, these blade files need their image path refere
 
 ---
 
+## Image Count Tracker
+
+Captured by `scripts/migrate-r3-images.php` on 2026-06-10.
+
+| Directory | Before | After | Delta | Notes |
+|---|---|---|---|---|
+| `automobile-graphics` | 17 | 22 | +5 | 5 R3 files |
+| `custom-shaped-stickers-decals` | 16 | 17 | +1 | 1 R3 (collision rename applied) |
+| `dot-decals` | 16 | 17 | +1 | 1 R3 |
+| `embroidery` | 10 | 11 | +1 | 1 R3 |
+| `glitter-shirts` | 9 | 11 | +2 | 2 R3 (filename fix applied) |
+| `holographic-shirts` | 2 | 3 | +1 | 1 R3 |
+| `outdoor-signs` | 2 | 3 | +1 | 1 R3 |
+| `reunion-shirts` | 16 | 17 | +1 | 1 R3 (override dir) |
+| `sidewalk-signs` | 13 | 16 | +3 | 3 R3 (override dir) — note: was 12 before but audit found 13 pre-run |
+| `spirit-wear` | 12 | 13 | +1 | 1 R3 (override dir) |
+| `sublimation` | 10 | 14 | +4 | 4 R3 (override dir) |
+| `table-cloths` | 8 | 12 | +4 | 4 R3 |
+| `table-runners` | 17 | 21 | +4 | 4 R3 |
+| `wall-signs` | 6 | 10 | +4 | 3 R3 + 1 from wwf split (wall-signs-old.jpg) |
+| `yard-signs` | 11 | 14 | +3 | 3 R3 |
+| `window-wall-floor-decals` | 25 | 7 | -18 | Split complete — 7 remaining are collision dupes |
+| `brick-shirts` | 0 | 2 | +2 | New dir — 2 R3 |
+| `foil-shirts` | 0 | 5 | +5 | New dir — 5 R3 |
+| `screen-printing` | 0 | 6 | +6 | New dir — 6 R3 |
+| `rhinestone-apparel` | 0 | 1 | +1 | New dir — 1 R3 |
+| `door-signs` | 0 | 8 | +8 | New dir — 2 R3 + 6 from wwf split |
+| `window-signs` | 0 | 18 | +18 | New dir — 7 R3 + 11 from wwf split |
+| `floor-signs` | 0 | 0 | -- | New dir — empty, awaiting new photos |
+| `mugs` | 0 | 8 | +8 | New flat dir — 8 from promo-items/mugs flatten |
+| `can-koozies` | 0 | 5 | +5 | New flat dir — 5 from promo-items/koozies flatten |
+| `puff-shirts` | 0 | 0 | -- | New dir — empty, awaiting R2 sort from custom-shirts |
+| `towels` | 0 | 0 | -- | New dir — empty |
+| `drink-coasters` | 0 | 0 | -- | New dir — empty |
+| `tote-bags` | 0 | 0 | -- | New dir — empty |
+| `mouse-pads` | 0 | 0 | -- | New dir — empty |
+
+**Migration totals:** 14 dirs created, 89 files moved, 7 skipped (collisions), 0 errors.
+
+**window-wall-floor-decals remaining (7 files):** These are duplicates — the same files already exist in `wall-signs/`. They are retained per Rule 1 (never remove). A future cleanup pass can delete them once confirmed safe.
+
+---
+
 ## Status Tracker
 
 | Phase | Description | Status |
 |---|---|---|
-| Phase 1a | Create 6 new dirs needed for R3 | Pending |
-| Phase 1b | Create 8 additional dirs per CSV | Pending |
-| Phase 2 | Move all 57 R3 files with prefix | Pending |
-| Phase 2 audit | Verify all 57 files present in target dirs | Pending |
+| Phase 1a | Create 6 new dirs needed for R3 | ✓ Done |
+| Phase 1b | Create 8 additional dirs per CSV | ✓ Done |
+| Phase 2 | Move all 58 R3 image files with prefix | ✓ Done |
+| Phase 2 audit | Verify all files present in target dirs | ✓ Done — counts confirmed above |
 | Phase 2 blade | Add R3 images to appropriate page slots | Pending |
 | Phase 3 renames | ~~Rename 7 existing dirs~~ Eliminated by overrides | N/A |
-| Phase 3 split | Split `window-wall-floor-decals/` into 3 dirs | Pending |
-| Phase 3 flatten | Move `promo-items/mugs/` + `promo-items/koozies/` to flat dirs | Pending |
+| Phase 3 split | Split `window-wall-floor-decals/` into 3 dirs | ✓ Done |
+| Phase 3 flatten | Move `promo-items/mugs/` + `promo-items/koozies/` to flat dirs | ✓ Done |
 | Phase 4 blade audit | Update blade refs after Phase 3 split and flattens | Pending |
