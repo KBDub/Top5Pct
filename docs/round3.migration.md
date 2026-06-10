@@ -366,7 +366,7 @@ All 57 R3 files, sorted by target dir:
 
 ---
 
-## Phase 3: Dir Restructuring (Separate Effort — Not R3 Scope)
+## Phase 3: Dir Restructuring
 
 > The 7 dir renames originally planned here have been **eliminated by the Image Directory Overrides**. Phase 3 now covers only the `window-wall-floor-decals/` split and the two promo-items flattens.
 
