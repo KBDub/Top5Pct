@@ -1,0 +1,698 @@
+images/:
+total 4568
+drwxr-xr-x 1 runner runner      26 Jan  9 05:41 logos
+-rw-r--r-- 1 runner runner   57099 Feb  9 06:50 top5pct-banner-joliet.jpg
+-rw-r--r-- 1 runner runner  288363 Feb  9 15:53 about-preview.jpg
+-rw-r--r-- 1 runner runner   67560 Feb  9 16:03 place-holder.1x1.jpg
+-rw------- 1 runner runner   10343 Mar 16 04:38 top5pct-t-shirt-maker-7-tips.jpg
+-rw------- 1 runner runner   10899 Mar 16 04:44 top5pct-t-shirt-maker-7-tips2.jpg
+drwxr-xr-x 1 runner runner     328 Mar 16 04:46 demo
+drwxr-xr-x 1 runner runner     826 Mar 16 19:50 corona-virus-signs
+drwxr-xr-x 1 runner runner     850 Mar 16 19:50 business-signs
+drwxr-xr-x 1 runner runner     304 May  3 00:28 og-tags
+-rw------- 1 runner runner 4231451 May  5 20:41 top5pct-dtf-price-chart2.jpg
+drwxr-xr-x 1 runner runner     526 Jun  2 17:03 backlit-signs
+drwxr-xr-x 1 runner runner    1640 Jun  2 17:03 banners
+drwxr-xr-x 1 runner runner     964 Jun  2 17:03 posters
+drwxr-xr-x 1 runner runner     830 Jun  2 17:03 dtf-transfers
+drwxr-xr-x 1 runner runner    1442 Jun  2 17:03 vehicle-magnets
+drwxr-xr-x 1 runner runner    5572 Jun  7 15:15 custom-shirts
+drwxr-xr-x 1 runner runner     882 Jun  8 03:24 digital-vinyl
+drwxr-xr-x 1 runner runner     324 Jun  8 03:35 glow-shirts
+drwxr-xr-x 1 runner runner     302 Jun  8 03:43 flock-shirts
+drwxr-xr-x 1 runner runner     482 Jun  8 03:52 reflective-shirts
+drwxr-xr-x 1 runner runner     692 Jun  8 04:03 vinyl
+drwxr-xr-x 1 runner runner    1356 Jun  8 05:13 corporate-wear
+drwxr-xr-x 1 runner runner     146 Jun  8 15:59 standard-stickers-decals
+drwxr-xr-x 1 runner runner       0 Jun 10 13:56 puff-shirts
+drwxr-xr-x 1 runner runner       0 Jun 10 13:56 floor-signs
+drwxr-xr-x 1 runner runner       0 Jun 10 13:56 towels
+drwxr-xr-x 1 runner runner       0 Jun 10 13:56 drink-coasters
+drwxr-xr-x 1 runner runner       0 Jun 10 13:56 tote-bags
+drwxr-xr-x 1 runner runner       0 Jun 10 13:56 mouse-pads
+drwxr-xr-x 1 runner runner     154 Jun 10 13:56 brick-shirts
+drwxr-xr-x 1 runner runner    1712 Jun 10 13:56 automobile-graphics
+drwxr-xr-x 1 runner runner    1366 Jun 10 13:56 custom-shaped-stickers-decals
+drwxr-xr-x 1 runner runner    1430 Jun 10 13:56 dot-decals
+drwxr-xr-x 1 runner runner     778 Jun 10 13:56 embroidery
+drwxr-xr-x 1 runner runner     260 Jun 10 13:56 holographic-shirts
+drwxr-xr-x 1 runner runner     826 Jun 10 13:56 glitter-shirts
+drwxr-xr-x 1 runner runner     340 Jun 10 13:56 foil-shirts
+drwxr-xr-x 1 runner runner      74 Jun 10 13:56 rhinestone-apparel
+drwxr-xr-x 1 runner runner    1432 Jun 10 13:56 reunion-shirts
+drwxr-xr-x 1 runner runner     222 Jun 10 13:56 outdoor-signs
+drwxr-xr-x 1 runner runner    1182 Jun 10 13:56 sidewalk-signs
+drwxr-xr-x 1 runner runner     486 Jun 10 13:56 screen-printing
+drwxr-xr-x 1 runner runner    1148 Jun 10 13:56 spirit-wear
+drwxr-xr-x 1 runner runner    1006 Jun 10 13:56 sublimation
+drwxr-xr-x 1 runner runner     926 Jun 10 13:56 table-cloths
+drwxr-xr-x 1 runner runner    1626 Jun 10 13:56 table-runners
+drwxr-xr-x 1 runner runner    1014 Jun 10 13:56 yard-signs
+drwxr-xr-x 1 runner runner     516 Jun 10 13:56 door-signs
+drwxr-xr-x 1 runner runner    1348 Jun 10 13:56 window-signs
+drwxr-xr-x 1 runner runner     432 Jun 10 13:56 window-wall-floor-decals
+drwxr-xr-x 1 runner runner     634 Jun 10 13:56 wall-signs
+drwxr-xr-x 1 runner runner     468 Jun 10 13:56 mugs
+drwxr-xr-x 1 runner runner     288 Jun 10 13:56 can-koozies
+
+images/logos:
+total 8
+-rw------- 1 runner runner 5124 Jan  9 05:41 top5-logo.gif
+
+images/demo:
+total 55792
+-rw------- 1 runner runner   957693 Mar 16 04:45 demo-banner-2up.png
+-rw------- 1 runner runner   427601 Mar 16 04:46 demo-banner-floral.png
+-rw------- 1 runner runner 34296487 Mar 16 04:46 demo-banner-video.mov
+-rw------- 1 runner runner    31898 Mar 16 04:46 gymshark1.avif
+-rw------- 1 runner runner    31898 Mar 16 04:46 gymshark2.avif
+-rw------- 1 runner runner   216822 Mar 16 04:46 ModCloth3600x1024.webp
+-rw------- 1 runner runner 10696821 Mar 16 04:46 video-banner.running.8x3.mp4
+-rw------- 1 runner runner 10460113 Mar 16 04:46 video-web-banner.8x3.mp4
+
+images/corona-virus-signs:
+total 396
+-rw------- 1 runner runner 32490 Mar 16 19:50 top5pct-face-masks-joliet.jpg
+-rw------- 1 runner runner 35087 Mar 16 19:50 top5pct-coronavirus-stickers-joliet-shorewood-crest-hill.jpg
+-rw------- 1 runner runner 26425 Mar 16 19:50 top5pct-coronavirus-decals-joliet-shorewood-crest-hill.jpg
+-rw------- 1 runner runner 75500 Mar 16 19:50 top5pct-banner-coronavirus-signs-stickers-joliet-shorewood.png
+-rw------- 1 runner runner 53522 Mar 16 19:50 top5pct-coronavirus-signs-joliet-shorewood-lockport.jpg
+-rw------- 1 runner runner 79937 Mar 16 19:50 top5pct-covid19-signs-stickers-joliet-shorewood.jpg
+-rw------- 1 runner runner 15559 Mar 16 19:50 top5pct-article-coronavirus-sign-pic1.jpg
+-rw------- 1 runner runner 72250 Mar 16 19:50 top5pct-coronavirus-signs-joliet-shorewood-romeoville.jpg
+
+images/business-signs:
+total 852
+-rw------- 1 runner runner  86406 Mar 16 19:50 top5pct-window-signs-joliet-new-lenox-shorewood.jpg
+-rw------- 1 runner runner 123574 Mar 16 19:50 top5pct-business-signs-joliet-plainfield-romeoville.jpg
+-rw------- 1 runner runner  68823 Mar 16 19:50 top5pct-door-signs-joliet-shorewood-crest-hill.jpg
+-rw------- 1 runner runner 208670 Mar 16 19:50 top5pct-banner-business-signs-joliet-plainfield-shorewood.jpg
+-rw------- 1 runner runner  76359 Mar 16 19:50 top5pct-business-signs-joliet-shorewood-crest-hill.jpg
+-rw------- 1 runner runner 152900 Mar 16 19:50 top5pct-outdoor-signs-joliet-shorewood-crest-hill.jpg
+-rw------- 1 runner runner  31138 Mar 16 19:50 top5pct-article-business-signs-pic1.jpg
+-rw------- 1 runner runner 107717 Mar 16 19:50 top5pct-business-signs-joliet-shorewood-channahon.jpg
+
+images/og-tags:
+total 440
+-rw------- 1 runner runner 62249 May  3 00:31 top5pct-og-vehicle-graphics.jpg
+-rw------- 1 runner runner 80702 May  3 00:31 top5pct-og-stickers.jpg
+-rw------- 1 runner runner 79662 May  3 00:31 top5pct-og-signs.jpg
+-rw------- 1 runner runner 80459 May  3 00:31 top5pct-og-home.jpg
+-rw------- 1 runner runner 72423 May  3 00:31 top5pct-og-design-services.jpg
+-rw------- 1 runner runner 62396 May  3 00:31 top5pct-og-custom-apparel.jpg
+
+images/backlit-signs:
+total 2668
+-rw-r--r-- 1 runner runner 433387 Jun  2 17:03 top5pct-custom-backlit-display-signs-in-joliet.jpg
+-rw-r--r-- 1 runner runner 358735 Jun  2 17:03 top5pct-backlit-company-signs.jpg
+-rw-r--r-- 1 runner runner 471109 Jun  2 17:03 top5pct-backlit-display-signs-joliet.jpg
+-rw-r--r-- 1 runner runner 381065 Jun  2 17:03 top5pct-backlit-monument-sign-joliet.jpg
+-rw-r--r-- 1 runner runner 373151 Jun  2 17:03 top5pct-backlit-outdoor-signs.jpg
+-rw-r--r-- 1 runner runner 233470 Jun  2 17:03 top5pct-backlit-sign-new-lenox.jpg
+-rw-r--r-- 1 runner runner 464762 Jun  2 17:03 top5pct-monument-signs-joliet.jpg
+
+images/banners:
+total 4792
+-rw------- 1 runner runner  46904 Mar 16 19:50 top5pct-banners-business-joliet-shorewood-crest-hill.jpg
+-rw------- 1 runner runner  40120 Mar 16 19:50 top5pct-birthday-banner-joliet-shorewood-plainfield.jpg
+-rw------- 1 runner runner  42293 Mar 16 19:50 top5pct-birthday-banners-joliet-shorewood-crest-hill.jpg
+-rw------- 1 runner runner  22128 Mar 16 19:50 top5pct-article-vinyl-banners-pic1.jpg
+-rw------- 1 runner runner  64025 Mar 16 19:50 top5pct-family-reunion-banners-joliet-crest-hill.jpg
+-rw------- 1 runner runner  50982 Mar 16 19:50 top5pct-banner-joliet-romeoville-rockdale-plainfield.jpg
+-rw------- 1 runner runner  46953 Mar 16 19:50 top5pct-team-banners-joliet-shorewood-crest-hill.jpg
+-rw------- 1 runner runner  88590 Mar 16 19:50 top5pct-banner-business-banners-joliet-shorewood-crest-hill.jpg
+-rw-r--r-- 1 runner runner 361227 May 11 05:07 top5pct-banners-and-signs.jpg
+-rw-r--r-- 1 runner runner 222986 May 11 05:07 top5pct-banners-near-me.jpg
+-rw-r--r-- 1 runner runner 563212 May 11 05:07 top5pct-big-banners.jpg
+-rw-r--r-- 1 runner runner 337222 May 11 05:07 top5pct-custom-retractable-banners-joliet.jpg
+-rw-r--r-- 1 runner runner 476102 May 11 05:07 top5pct-custom-vinyl-banners.jpg
+-rw-r--r-- 1 runner runner 459501 May 11 05:07 top5pct-graduation-banners.jpg
+-rw-r--r-- 1 runner runner 234352 May 11 05:07 top5pct-retractable-banner.jpg
+-rw-r--r-- 1 runner runner 232972 Jun  2 17:03 top5pct-banners-for-trade-shows.jpg
+-rw-r--r-- 1 runner runner 287086 Jun  2 17:03 top5pct-mesh-construction-banner.jpg
+-rw-r--r-- 1 runner runner 588614 Jun  2 17:03 top5pct-portable-banners.jpg
+-rw-r--r-- 1 runner runner 295811 Jun  2 17:03 top5pct-retractable-banners-plainfield.jpg
+-rw-r--r-- 1 runner runner 400071 Jun  2 17:03 top5pct-sports-banners.jpg
+
+images/posters:
+total 1944
+-rw------- 1 runner runner  47924 Mar 16 19:50 top5pct-poster-store-joliet-shorewood-plainfield.jpg
+-rw------- 1 runner runner  34502 Mar 16 19:50 top5pct-article-posters-joliet-pic1.jpg
+-rw------- 1 runner runner  54709 Mar 16 19:50 top5pct-postermywall-joliet-shorewood-crest-hill.jpg
+-rw------- 1 runner runner  64974 Mar 16 19:50 top5pct-poster-board-joliet-shorewood-romeoville.jpg
+-rw------- 1 runner runner  49920 Mar 16 19:50 top5pct-poster-maker-joliet-shorewood-plainfield.jpg
+-rw------- 1 runner runner  50991 Mar 16 19:50 top5pct-poster-printing-joliet-shorewood-romeoville.jpg
+-rw------- 1 runner runner 177131 Mar 16 20:33 top5pct-banner-poster-maker-joliet-romeoville-shorewood.jpg
+-rw-r--r-- 1 runner runner 540937 Jun  2 17:03 top5pct-big-posters-joliet.jpg
+-rw-r--r-- 1 runner runner 281940 Jun  2 17:03 top5pct-custom-posters.jpg
+-rw-r--r-- 1 runner runner 275717 Jun  2 17:03 top5pct-poster-board-joliet.jpg
+-rw-r--r-- 1 runner runner 385138 Jun  2 17:03 top5pct-posters-printed-joliet.jpg
+
+images/dtf-transfers:
+total 4196
+-rw------- 1 runner runner 410784 Mar 16 16:30 toptpct-banner-dtf-transfers-joliet.jpg
+-rw------- 1 runner runner 201048 Mar 16 16:30 toptpct-dtf-transfer-pricing.jpg
+-rw-r--r-- 1 runner runner 170120 May 11 05:07 top5pct-custom-sweatshirts.jpg
+-rw-r--r-- 1 runner runner 611314 May 11 05:07 top5pct-custom-shirt-with-picture.jpg
+-rw-r--r-- 1 runner runner 387058 May 11 05:07 top5pct-custom-t-shirts-dtf.jpg
+-rw-r--r-- 1 runner runner 511773 May 11 05:07 top5pct-dtf-hoodies-joliet.jpg
+-rw-r--r-- 1 runner runner 283935 May 11 05:07 top5pct-dtf-zip-up-hoodies.jpg
+-rw-r--r-- 1 runner runner 330133 Jun  2 17:03 top5pct-custom-baby-clothing-joliet.jpg
+-rw-r--r-- 1 runner runner 237769 Jun  2 17:03 top5pct-custom-bowling-shirts-dtf.jpg
+-rw-r--r-- 1 runner runner 275571 Jun  2 17:03 top5pct-custom-dtf-shirts.jpg
+-rw-r--r-- 1 runner runner 262016 Jun  2 17:03 top5pct-dtf-t-shirt-maker.jpg
+-rw-r--r-- 1 runner runner 276288 Jun  2 17:03 top5pct-dtf-t-shirt-printing.jpg
+-rw-r--r-- 1 runner runner 309562 Jun  2 17:03 top5pct-dtf-tees.jpg
+
+images/vehicle-magnets:
+total 5592
+-rw------- 1 runner runner  40283 Mar 17 03:01 top5pct-large-magnets-magnets-near-me-joliet.jpg
+-rw------- 1 runner runner  21870 Mar 17 03:01 top5pct-article-car-magnets-truck-magnets.jpg
+-rw------- 1 runner runner  43779 Mar 17 03:01 top5pct-car-magnets-truck-magnets-joliet.jpg
+-rw------- 1 runner runner  52064 Mar 17 03:01 top5pct-business-magnets-car-magnets-joliet.jpg
+-rw------- 1 runner runner  63477 Mar 17 03:01 top5pct-banner-car-magnets-joliet-shorewood-crest-hill.jpg
+-rw------- 1 runner runner  45252 Mar 17 03:01 top5pct-car-magnets-vehicle-magnets-joliet.jpg
+-rw-r--r-- 1 runner runner 379721 May 11 05:07 top5pct-automobile-magnets-joliet.jpg
+-rw-r--r-- 1 runner runner 419984 May 11 05:07 top5pct-car-magnets-joliet.jpg
+-rw-r--r-- 1 runner runner 306172 May 11 05:07 top5pct-car-magnets.jpg
+-rw-r--r-- 1 runner runner 351813 May 11 05:07 top5pct-car-sign-magnets-joliet.jpg
+-rw-r--r-- 1 runner runner 448396 May 11 05:07 top5pct-custom-car-magnets-in-joliet.jpg
+-rw-r--r-- 1 runner runner 474469 May 11 05:07 top5pct-custom-car-magnets.jpg
+-rw-r--r-- 1 runner runner 384612 May 11 05:07 top5pct-vehicle-magnets-joliet.jpg
+-rw-r--r-- 1 runner runner 424837 May 11 05:07 top5pct-vehicle-magnets.jpg
+-rw-r--r-- 1 runner runner 412392 Jun  2 17:03 top5pct-car-decals-white-oaks-library.jpg
+-rw-r--r-- 1 runner runner 651231 Jun  2 17:03 top5pct-joliet-car-magnets.jpg
+-rw-r--r-- 1 runner runner 301556 Jun  2 17:03 top5pct-magnet-vehicle-signs-joliet.jpg
+-rw-r--r-- 1 runner runner 364413 Jun  2 17:03 top5pct-truck-sign-magnets-joliet.jpg
+-rw-r--r-- 1 runner runner 513624 Jun  2 17:03 top5pct-yard-signs-near-me.jpg
+
+images/custom-shirts:
+total 22236
+-rw------- 1 runner runner  27170 Mar 16 06:49 top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg
+-rw------- 1 runner runner  22816 Mar 16 06:49 top5pct-custom-rhinestone-shirt-cap-hoodie-joliet.jpg
+-rw------- 1 runner runner  28928 Mar 16 06:49 top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg
+-rw------- 1 runner runner  31942 Mar 16 06:49 top5pct-custom-flock-shirt-hoodie-cap-joliet.jpg
+-rw------- 1 runner runner  36014 Mar 16 06:49 top5pct-custom-vinyl-shirts-caps-hoodies.jpg
+-rw------- 1 runner runner  28276 Mar 16 06:49 top5pct-custom-brick-shirts-hoodies-cap-joliet.jpg
+-rw------- 1 runner runner  46723 Mar 16 06:49 top5pct-custom-t-shirts-main.jpg
+-rw------- 1 runner runner 117130 Mar 16 06:49 top5pct-banner-custom-apparel-custom-shirts-custom-hoodies-custom-caps.jpg
+-rw------- 1 runner runner  35586 Mar 16 06:49 top5pct-custom-foil-shirts-hoodies-caps-joliet.jpg
+-rw------- 1 runner runner  23585 Mar 16 06:49 top5pct-custom-shirts-with-pictures-joliet-shorewood.jpg
+-rw------- 1 runner runner  27298 Mar 16 06:49 top5pct-custom-pattern-shirts-caps-hoodies-joliet.jpg
+-rw------- 1 runner runner  25606 Mar 16 06:49 top5pct-custom-reflective-shirts-hoodies-caps-joliet.jpg
+-rw------- 1 runner runner  10899 Mar 17 04:28 top5pct-t-shirt-maker-article-pic2.jpg
+-rw------- 1 runner runner  10343 Mar 17 04:28 top5pct-t-shirt-maker-article-pic1.jpg
+-rw-r--r-- 1 runner runner 281166 May 11 05:07 top5pct-custom-caps-vinyl.jpg
+-rw-r--r-- 1 runner runner 293642 May 11 05:07 top5pct-custom-hoodies.jpg
+-rw-r--r-- 1 runner runner 303516 May 11 05:07 top5pct-custom-vinyl-hoodies.jpg
+-rw-r--r-- 1 runner runner 403071 May 11 05:07 top5pct-custom-vinyl-shirts.jpg
+-rw-r--r-- 1 runner runner 295752 May 11 05:07 top5pct-neon-vinyl-shirts.jpg
+-rw-r--r-- 1 runner runner 566031 May 11 05:07 top5pct-vinyl-caps.jpg
+-rw-r--r-- 1 runner runner 569885 May 11 05:07 top5pct-vinyl-hoodie.jpg
+-rw-r--r-- 1 runner runner 387880 May 11 05:07 top5pct-vinyl-shirts.jpg
+-rw-r--r-- 1 runner runner 385621 May 11 05:07 top5pct-vinyl-t-shirt-maker.jpg
+-rw-r--r-- 1 runner runner 423455 May 11 05:07 top5pct-vinyl-zip-up-hoodies.jpg
+-rw-r--r-- 1 runner runner 445914 May 11 05:07 top5pct-custom-bowling-shirts.jpg
+-rw-r--r-- 1 runner runner 414835 May 11 05:07 top5pct-custom-printed-vinyl-shirts.jpg
+-rw-r--r-- 1 runner runner 396955 May 11 05:07 top5pct-custom-shirt-pictures.jpg
+-rw-r--r-- 1 runner runner 397770 May 11 05:07 top5pct-custom-vinyl-hoodies-2.jpg
+-rw-r--r-- 1 runner runner 379310 May 11 05:07 top5pct-digital-vinyl-hoodie.jpg
+-rw-r--r-- 1 runner runner 398497 May 11 05:07 top5pct-digital-vinyl-hoodies-in-joliet.jpg
+-rw-r--r-- 1 runner runner 705658 May 11 05:07 top5pct-digital-vinyl-shirts.jpg
+-rw-r--r-- 1 runner runner 300466 May 11 05:07 top5pct-toddler-custom-shirts.jpg
+-rw-r--r-- 1 runner runner 299592 May 11 05:07 top5pct-vinyl-printed-shirts.jpg
+-rw-r--r-- 1 runner runner 265834 May 11 05:07 top5pct-rhinestone-hoodies-joliet.jpg
+-rw-r--r-- 1 runner runner 333745 May 11 05:07 top5pct-screenprint-custom-shirts.jpg
+-rw-r--r-- 1 runner runner 447658 May 11 05:07 top5pct-screenprinted-shirts-in-joliet.jpg
+-rw-r--r-- 1 runner runner 304208 May 11 05:07 top5pct-screenprinted-shirts-joliet.jpg
+-rw-r--r-- 1 runner runner 334650 May 11 05:07 top5pct-screenprinting-shirts.jpg
+-rw-r--r-- 1 runner runner 481683 May 11 05:07 top5pct-custom-dog-bandanas.jpg
+-rw-r--r-- 1 runner runner 387963 May 11 05:07 top5pct-brick-vinyl-hoodies.jpg
+-rw-r--r-- 1 runner runner 368369 May 11 05:07 top5pct-custom-glitter-sweatshirts-old.jpg
+-rw-r--r-- 1 runner runner 310970 May 11 05:07 top5pct-reflective-shirts-gold.jpg
+-rw-r--r-- 1 runner runner 481470 Jun  2 17:03 top5pct-digital-vinyl-t-shirts.jpg
+-rw-r--r-- 1 runner runner 363638 Jun  2 17:03 top5pct-rhinestone-apparel-keith-elementary.jpg
+-rw-r--r-- 1 runner runner 315904 Jun  2 17:03 top5pct-rhinestone-bling-joliet.jpg
+-rw-r--r-- 1 runner runner 516859 Jun  2 17:03 top5pct-rhinestone-hoodie-joliet-west.jpg
+-rw-r--r-- 1 runner runner 165477 Jun  2 17:03 top5pct-rhinestone-ladies-shirt.jpg
+-rw-r--r-- 1 runner runner 434508 Jun  2 17:03 top5pct-rhinestone-t-shirts-joliet.jpg
+-rw-r--r-- 1 runner runner 417449 Jun  2 17:03 top5pct-long-lasting-graphic-shirts.jpg
+-rw-r--r-- 1 runner runner 168458 Jun  2 17:03 top5pct-brick-vinyl-cresthill.jpg
+-rw-r--r-- 1 runner runner 336584 Jun  2 17:03 top5pct-brick-vinyl-custom-t-shirt.jpg
+-rw-r--r-- 1 runner runner 331370 Jun  2 17:03 top5pct-brick-vinyl-jackets-joliet.jpg
+-rw-r--r-- 1 runner runner 414128 Jun  2 17:03 top5pct-customized-brick-vinyl-shirts.jpg
+-rw-r--r-- 1 runner runner 507309 Jun  2 17:03 top5pct-custom-shirt-chameleon.jpg
+-rw-r--r-- 1 runner runner 500969 Jun  2 17:03 top5pct-custom-flock-t-shirt-printing.jpg
+-rw-r--r-- 1 runner runner 500463 Jun  2 17:03 top5pct-flock-hoodie-printing.jpg
+-rw-r--r-- 1 runner runner 442959 Jun  2 17:03 top5pct-flock-shirt-vinyl.jpg
+-rw-r--r-- 1 runner runner 216812 Jun  2 17:03 top5pct-custom-foil-polo.jpg
+-rw-r--r-- 1 runner runner 343504 Jun  2 17:03 top5pct-custom-wedding-foil-shirts.jpg
+-rw-r--r-- 1 runner runner 248332 Jun  2 17:03 top5pct-foil-custom-t-shirts.jpg
+-rw-r--r-- 1 runner runner 333225 Jun  2 17:03 top5pct-foil-gold-t-shirt.jpg
+-rw-r--r-- 1 runner runner 213202 Jun  2 17:03 top5pct-gold-foil-printed-shirts.jpg
+-rw-r--r-- 1 runner runner 305140 Jun  2 17:03 top5pct-glow-in-the-dark-caps.jpg
+-rw-r--r-- 1 runner runner 257837 Jun  2 17:03 top5pct-glowing-halloween-bat-shirt.jpg
+-rw-r--r-- 1 runner runner 360569 Jun  2 17:03 top5pct-halloween-pumpkin-glow-shirt.jpg
+-rw-r--r-- 1 runner runner 539184 Jun  2 17:03 top5pct-holographic-vinyl-hoodie-foil.jpg
+-rw-r--r-- 1 runner runner 304042 Jun  2 17:03 top5pct-custom-puff-shirts.jpg
+-rw-r--r-- 1 runner runner 340948 Jun  2 17:03 top5pct-puff-shirts-joliet.jpg
+-rw-r--r-- 1 runner runner 365109 Jun  2 17:03 top5pct-puff-shirts.jpg
+-rw-r--r-- 1 runner runner 227846 Jun  2 17:03 top5pct-custom-reflective-hoodies.jpg
+-rw-r--r-- 1 runner runner 239630 Jun  2 17:03 top5pct-reflective-shirts-shorewood.jpg
+-rw-r--r-- 1 runner runner 126256 Jun  2 17:03 top5pct-reflective-shirts.jpg
+-rw-r--r-- 1 runner runner 169072 Jun  2 17:03 top5pct-reflective-vinyl-shirts-plainfield.jpg
+-rw-r--r-- 1 runner runner 497372 Jun  2 17:03 top5pct-custom-rhinestone-shirts.jpg
+-rw-r--r-- 1 runner runner 266957 Jun  2 17:03 top5pct-rhinetsone-t-shirts.jpg
+
+images/digital-vinyl:
+total 5916
+-rw------- 1 runner runner 303516 May 18 17:34 custom-vinyl-hoodies.jpg
+-rw------- 1 runner runner 295752 May 18 17:34 neon-vinyl-shirts.jpg
+-rw------- 1 runner runner 385621 May 18 17:34 vinyl-t-shirt-maker.jpg
+-rw------- 1 runner runner 387880 May 18 17:34 vinyl-shirts.jpg
+-rw------- 1 runner runner 281166 May 18 17:34 custom-caps-vinyl.jpg
+-rw------- 1 runner runner 403071 May 18 17:34 custom-vinyl-shirts.jpg
+-rw------- 1 runner runner 293642 May 18 17:34 custom-hoodies.jpg
+-rw------- 1 runner runner 423455 May 18 17:34 vinyl-zip-up-hoodies.jpg
+-rw------- 1 runner runner 569885 May 18 17:34 vinyl-hoodie.jpg
+-rw------- 1 runner runner 566031 May 18 17:34 vinyl-caps.jpg
+-rw------- 1 runner runner  96312 May 18 17:36 top5pct-banner-yard-signs-joliet-shorewood-crest-hill.jpg
+-rw------- 1 runner runner  47497 May 18 17:37 top5pct-article-yard-signs-buy.jpg
+-rw-r--r-- 1 runner runner 481470 Jun  8 03:24 top5pct-digital-vinyl-t-shirts.jpg
+-rw-r--r-- 1 runner runner 379310 Jun  8 03:24 top5pct-digital-vinyl-hoodie.jpg
+-rw-r--r-- 1 runner runner 398497 Jun  8 03:24 top5pct-digital-vinyl-hoodies-in-joliet.jpg
+-rw-r--r-- 1 runner runner 705658 Jun  8 03:24 top5pct-digital-vinyl-shirts.jpg
+
+images/glow-shirts:
+total 940
+-rw-r--r-- 1 runner runner 305140 Jun  8 03:35 top5pct-glow-in-the-dark-caps.jpg
+-rw-r--r-- 1 runner runner 257837 Jun  8 03:35 top5pct-glowing-halloween-bat-shirt.jpg
+-rw-r--r-- 1 runner runner 360569 Jun  8 03:35 top5pct-halloween-pumpkin-glow-shirt.jpg
+-rw------- 1 runner runner  28928 Jun  8 03:35 top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg
+
+images/flock-shirts:
+total 1452
+-rw-r--r-- 1 runner runner 500969 Jun  8 03:43 top5pct-custom-flock-t-shirt-printing.jpg
+-rw-r--r-- 1 runner runner 500463 Jun  8 03:43 top5pct-flock-hoodie-printing.jpg
+-rw-r--r-- 1 runner runner 442959 Jun  8 03:43 top5pct-flock-shirt-vinyl.jpg
+-rw------- 1 runner runner  31942 Jun  8 03:43 top5pct-custom-flock-shirt-hoodie-cap-joliet.jpg
+
+images/reflective-shirts:
+total 1084
+-rw-r--r-- 1 runner runner 310970 Jun  8 03:52 top5pct-reflective-shirts-gold.jpg
+-rw-r--r-- 1 runner runner 227846 Jun  8 03:52 top5pct-custom-reflective-hoodies.jpg
+-rw-r--r-- 1 runner runner 126256 Jun  8 03:52 top5pct-reflective-shirts.jpg
+-rw-r--r-- 1 runner runner 239630 Jun  8 03:52 top5pct-reflective-shirts-shorewood.jpg
+-rw-r--r-- 1 runner runner 169072 Jun  8 03:52 top5pct-reflective-vinyl-shirts-plainfield.jpg
+-rw------- 1 runner runner  25606 Jun  8 03:52 top5pct-custom-reflective-shirts-hoodies-caps-joliet.jpg
+
+images/vinyl:
+total 4748
+-rw------- 1 runner runner 281166 May 18 17:35 custom-caps-vinyl.jpg
+-rw------- 1 runner runner 293642 May 18 17:35 custom-hoodies.jpg
+-rw------- 1 runner runner 303516 May 18 17:35 custom-vinyl-hoodies.jpg
+-rw------- 1 runner runner 295752 May 18 17:35 neon-vinyl-shirts.jpg
+-rw------- 1 runner runner 403071 May 18 17:35 custom-vinyl-shirts.jpg
+-rw------- 1 runner runner 387880 May 18 17:35 vinyl-shirts.jpg
+-rw------- 1 runner runner 385621 May 18 17:35 vinyl-t-shirt-maker.jpg
+-rw------- 1 runner runner 423455 May 18 17:35 vinyl-zip-up-hoodies.jpg
+-rw------- 1 runner runner 569885 May 18 17:35 vinyl-hoodie.jpg
+-rw------- 1 runner runner 566031 May 18 17:35 vinyl-caps.jpg
+-rw------- 1 runner runner  96312 May 18 17:37 top5pct-banner-yard-signs-joliet-shorewood-crest-hill.jpg
+-rw------- 1 runner runner  47497 May 18 17:37 top5pct-article-yard-signs-buy.jpg
+-rw-r--r-- 1 runner runner 387880 Jun  8 04:03 top5pct-vinyl-shirts.jpg
+-rw-r--r-- 1 runner runner 385621 Jun  8 04:03 top5pct-vinyl-t-shirt-maker.jpg
+
+images/corporate-wear:
+total 3632
+-rw------- 1 runner runner  30276 Mar 16 16:30 top5pct-custom-polo-shirts-joliet-shorewood-crest-hill.jpg
+-rw------- 1 runner runner  42011 Mar 16 16:30 top5pct-custom-button-up-shirt-joliet-shorewood.jpg
+-rw------- 1 runner runner  40774 Mar 16 16:30 top5pct-custom-hoodie-pullover-joliet-shorewood.jpg
+-rw------- 1 runner runner  40033 Mar 16 16:30 top5pct-custom-cap-hat-joliet-shorewood-rockdale.jpg
+-rw------- 1 runner runner  15327 Mar 16 16:30 top5pct-article-corporate-wear-pic2.jpg
+-rw------- 1 runner runner  44806 Mar 16 16:30 top5pct-custom-corporate-t-shirts-joliet-shorewood.jpg
+-rw------- 1 runner runner  13956 Mar 16 16:30 top5pct-article-corporate-wear-pic1.jpg
+-rw------- 1 runner runner 127172 Mar 16 16:30 top5pct-banner-corporate-shirts-uniforms-joliet-shorewood.jpg
+-rw-r--r-- 1 runner runner 428522 May 11 05:07 top5pct-custom-apron-joliet.jpg
+-rw-r--r-- 1 runner runner 391795 May 11 05:07 top5pct-custom-aprons-joliet.jpg
+-rw-r--r-- 1 runner runner 415498 May 11 05:07 top5pct-custom-business-shirts.jpg
+-rw-r--r-- 1 runner runner 362428 May 11 05:07 top5pct-custom-pocket-shirt-joliet.jpg
+-rw-r--r-- 1 runner runner 565927 May 11 05:07 top5pct-landscaping-clothing-joliet.jpg
+-rw-r--r-- 1 runner runner 476830 May 11 05:07 top5pct-lawn-care-clothing.jpg
+-rw-r--r-- 1 runner runner 413833 May 11 05:07 top5pct-safety-work-gear-joliet.jpg
+-rw-r--r-- 1 runner runner 275626 Jun  2 17:03 top5pct-custom-company-apparel.jpg
+
+images/standard-stickers-decals:
+total 356
+-rw------- 1 runner runner  62408 Jun  8 15:56 top5pct-article-buy-stickers-decals-joliet.jpg
+-rw-r--r-- 1 runner runner 295047 Jun  8 15:59 top5pct-diecut-stickers.jpg
+
+images/puff-shirts:
+total 0
+
+images/floor-signs:
+total 0
+
+images/towels:
+total 0
+
+images/drink-coasters:
+total 0
+
+images/tote-bags:
+total 0
+
+images/mouse-pads:
+total 0
+
+images/brick-shirts:
+total 540
+-rw-r--r-- 1 runner runner 171235 Jun  8 21:29 top5pct-brick-vinyl-custom-shirts-joliet.jpg
+-rw-r--r-- 1 runner runner 378653 Jun  8 21:42 top5pct-brick-vinyl-shorewood.jpg
+
+images/automobile-graphics:
+total 6488
+-rw------- 1 runner runner  67405 Mar 17 03:01 top5pct-vinyl-lettering-car-graphics-joliet-crest-hill.jpg
+-rw------- 1 runner runner  49162 Mar 17 03:01 top5pct-truck-decal-joliet-shorewood-rockdale.jpg
+-rw------- 1 runner runner  27330 Mar 17 03:01 top5pct-article-car-wraps-vinyl-lettering.jpg
+-rw------- 1 runner runner  61071 Mar 17 03:01 top5pct-boat-decals-joliet-shorewood-crest-hill.jpg
+-rw------- 1 runner runner  66650 Mar 17 03:01 top5pct-vinyl-lettering-car-graphics-joliet-shorewood.jpg
+-rw------- 1 runner runner  62948 Mar 17 03:01 top5pct-car-wraps-vinyl-lettering-joliet-shorewood.jpg
+-rw------- 1 runner runner 248012 Mar 17 03:01 top5pct-banner-vinyl-lettering-car-wraps-joliet.jpg
+-rw-r--r-- 1 runner runner 418276 May 11 05:07 top5pct-car-wraps.jpg
+-rw-r--r-- 1 runner runner 407832 May 11 05:07 top5pct-pickup-truck-graphics.jpg
+-rw-r--r-- 1 runner runner 380489 May 11 05:07 top5pct-trailer-decal-graphics.jpg
+-rw-r--r-- 1 runner runner 418234 May 11 05:07 top5pct-trailer-decals.jpg
+-rw-r--r-- 1 runner runner 459746 May 11 05:07 top5pct-van-graphics-decals.jpg
+-rw-r--r-- 1 runner runner 379407 May 11 05:07 top5pct-vecal-decals.jpg
+-rw-r--r-- 1 runner runner 413496 May 11 05:07 top5pct-vehicle-graphics.jpg
+-rw-r--r-- 1 runner runner 415549 May 11 05:07 top5pct-vehicle-window-graphics-in-joliet.jpg
+-rw-r--r-- 1 runner runner 375892 May 11 05:07 top5pct-vehicle-window-graphics-joliet.jpg
+-rw-r--r-- 1 runner runner 419404 Jun  2 17:03 top5pct-auto-window-wraps.jpg
+-rw-r--r-- 1 runner runner 350050 Jun  6 11:50 top5pct-decals-for-work-trucks.jpg
+-rw-r--r-- 1 runner runner 329473 Jun  6 12:01 top5pct-vehicle-graphics-near-me.jpg
+-rw-r--r-- 1 runner runner 334246 Jun  6 12:29 top5pct-car-graphics-installers-joliet.jpg
+-rw-r--r-- 1 runner runner 417837 Jun  6 13:06 top5pct-vehicle-signs-joliet.jpg
+-rw-r--r-- 1 runner runner 493594 Jun  9 19:05 top5pct-car-wrap-decals-joliet.jpg
+
+images/custom-shaped-stickers-decals:
+total 4664
+-rw------- 1 runner runner  40521 Mar 16 20:48 top5pct-stickers-decals-joliet-stoner-rock-bbq.jpg
+-rw------- 1 runner runner  43257 Mar 16 20:48 top5pct-stickers-decals-joliet-labels.jpg
+-rw------- 1 runner runner  45295 Mar 16 20:48 top5pct-stickers-decals-joliet-boxing-sports.jpg
+-rw------- 1 runner runner  57420 Mar 16 20:48 top5pct-banner-stickers-decals-joliet.jpg
+-rw------- 1 runner runner  35594 Mar 16 20:48 top5pct-stickers-decals-joliet-ocean-viewz.jpg
+-rw------- 1 runner runner  45158 Mar 16 20:48 top5pct-stickers-decals-joliet-beer-brewery.jpg
+-rw------- 1 runner runner  43581 Mar 16 20:48 top5pct-stickers-decals-joliet-volleyball-team.jpg
+-rw-r--r-- 1 runner runner 523110 May 11 05:07 top5pct-custom-stickers.jpg
+-rw-r--r-- 1 runner runner 431466 May 11 05:07 top5pct-custom-glossy-stickers-in-joliet.jpg
+-rw-r--r-- 1 runner runner 691036 May 11 05:07 top5pct-custom-label-stickers.jpg
+-rw-r--r-- 1 runner runner 488167 May 11 05:07 top5pct-custom-shaped-stickers.jpg
+-rw-r--r-- 1 runner runner 464090 May 11 05:07 top5pct-stickers-in-joliet.jpg
+-rw-r--r-- 1 runner runner 666930 Jun  2 17:03 top5pct-custom-shaped-stickers-cresthill.jpg
+-rw-r--r-- 1 runner runner 204640 Jun  2 17:03 top5pct-die-cut-stickers-joliet.jpg
+-rw-r--r-- 1 runner runner 314990 Jun  2 17:03 top5pct-die-cut-stickers-shorewood.jpg
+-rw-r--r-- 1 runner runner 291007 Jun  2 17:03 top5pct-custom-stickers-cresthill.jpg
+-rw-r--r-- 1 runner runner 354557 Jun  8 21:06 top5pct-die-cut-stickers-joliet-r3.jpg
+
+images/dot-decals:
+total 4200
+-rw------- 1 runner runner 113185 Mar 17 03:01 top5pct-banner-DOT-stickers-joliet-shorewood-channahon.jpg
+-rw------- 1 runner runner  45410 Mar 17 03:01 top5pct-trucking-logo-joliet-shorewood-rockdale.jpg
+-rw------- 1 runner runner  91750 Mar 17 03:01 top5pct-trucking-logo-joliet-shorewood-crest-hill.jpg
+-rw------- 1 runner runner  40421 Mar 17 03:01 top5pct-truck-lettering-joliet-shorewood-rockdale.jpg
+-rw------- 1 runner runner 104348 Mar 17 03:01 top5pct-DOT-stickers-joliet-shorewood-rockdale.jpg
+-rw------- 1 runner runner  52722 Mar 17 03:01 top5pct-article-DOT-decals-vinyl-lettering.jpg
+-rw------- 1 runner runner  62542 Mar 17 03:01 top5pct-dot-decals-joliet-shorewood-rockdale.jpg
+-rw-r--r-- 1 runner runner 380347 May 11 05:07 top5pct-dot-decals-joliet.jpg
+-rw-r--r-- 1 runner runner 483524 May 11 05:07 top5pct-dot-semi-truck-decals.jpg
+-rw-r--r-- 1 runner runner 444099 May 11 05:07 top5pct-dot-truck-decals-joliet.jpg
+-rw-r--r-- 1 runner runner 426158 Jun  2 17:03 top5pct-dot-lettering-joliet.jpg
+-rw-r--r-- 1 runner runner 308983 Jun  2 17:03 top5pct-custom-dot-decals-for-trucks-in-joliet.jpg
+-rw-r--r-- 1 runner runner 361134 Jun  2 17:03 top5pct-custom-dot-truck-signs-illinois.jpg
+-rw-r--r-- 1 runner runner 368496 Jun  2 17:03 top5pct-dot-decals-semi-truck.jpg
+-rw-r--r-- 1 runner runner 627056 Jun  2 17:03 top5pct-dot-magnets.jpg
+-rw-r--r-- 1 runner runner 133358 Jun  2 17:03 top5pct-trucking-dot-decals-in-joliet.jpg
+-rw-r--r-- 1 runner runner 218752 Jun  7 08:10 top5pct-DOT-truck-decals-rockdale.jpg
+
+images/embroidery:
+total 3652
+-rw------- 1 runner runner  28163 Mar 16 06:49 top5pct-custom-embroidery-shops-near-me-joliet.jpg
+-rw-r--r-- 1 runner runner 291034 May 11 05:07 top5pct-embroidered-aprons.jpg
+-rw-r--r-- 1 runner runner 651417 May 11 05:07 top5pct-embroidered-caps-old.jpg
+-rw-r--r-- 1 runner runner 387725 May 11 05:07 top5pct-embroidery-in-joliet.jpg
+-rw-r--r-- 1 runner runner 524937 May 11 05:07 top5pct-embroidered-stitched-caps.jpg
+-rw-r--r-- 1 runner runner 311127 Jun  2 17:03 top5pct-embroidered-bag.jpg
+-rw-r--r-- 1 runner runner 274348 Jun  2 17:03 top5pct-embroidered-caps.jpg
+-rw-r--r-- 1 runner runner 339557 Jun  2 17:03 top5pct-embroidered-smocks.jpg
+-rw-r--r-- 1 runner runner 341239 Jun  2 17:03 top5pct-embroidery-beanies.jpg
+-rw-r--r-- 1 runner runner 215346 Jun  2 17:03 top5pct-stitched-embroidered-shirts.jpg
+-rw-r--r-- 1 runner runner 353496 Jun  8 18:14 top5pct-embroidered-cap-embroidered-beanies-joliet.jpg
+
+images/holographic-shirts:
+total 788
+-rw-r--r-- 1 runner runner 539184 Jun  8 03:48 top5pct-holographic-vinyl-hoodie-foil.jpg
+-rw------- 1 runner runner  27170 Jun  8 03:48 top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg
+-rw-r--r-- 1 runner runner 236321 Jun  8 21:15 top5pct-holographic-baby-shirts.jpg
+
+images/glitter-shirts:
+total 3272
+-rw------- 1 runner runner  30025 Mar 16 06:49 top5pct-custom-glitter-shirt-cap-hoodie-joliet.jpg
+-rw-r--r-- 1 runner runner 296240 May 11 05:07 top5pct-custom-glitter-clothing.jpg
+-rw-r--r-- 1 runner runner 322956 Jun  2 17:03 top5pct-custom-glitter-sweatshirts.jpg
+-rw-r--r-- 1 runner runner 343504 Jun  2 17:03 top5pct-custom-wedding-glitter-shirts.jpg
+-rw-r--r-- 1 runner runner 339059 Jun  2 17:03 top5pct-gitter-birthday-shirt.jpg
+-rw-r--r-- 1 runner runner 431529 Jun  2 17:03 top5pct-glitter-blue-jean-jacket.jpg
+-rw-r--r-- 1 runner runner 321721 Jun  2 17:03 top5pct-glitter-lips-custom-t-shirt.jpg
+-rw-r--r-- 1 runner runner 366479 Jun  2 17:03 top5pct-glitter-t-shirts-cresthill.jpg
+-rw-r--r-- 1 runner runner 402714 Jun  2 17:03 top5pct-glitter-t-shirts.jpg
+-rw-r--r-- 1 runner runner 375294 Jun  8 18:34 top5pct-glitter-sweatshirts-joliet.jpg
+-rw-r--r-- 1 runner runner 100874 Jun  8 18:57 top5pct-glitter-sportswear-shirts.jpg
+
+images/foil-shirts:
+total 1192
+-rw-r--r-- 1 runner runner 306243 Jun  8 18:48 top5pct-foil-shirts.jpg
+-rw-r--r-- 1 runner runner 245596 Jun  8 20:21 top5pct-foil-custom-shirts-joliet.jpg
+-rw-r--r-- 1 runner runner  40719 Jun  8 21:53 top5pct-foil-shirt-shorewood.jpg
+-rw-r--r-- 1 runner runner 343695 Jun  8 22:01 top5pct-foil-shirts-cresthill.jpg
+-rw-r--r-- 1 runner runner 282521 Jun  9 18:46 top5pct-foil-custom-apparel-shirts-joliet.jpg
+
+images/rhinestone-apparel:
+total 268
+-rw-r--r-- 1 runner runner 271360 Jun  3 14:36 top5pct-rhinestone-tshirts-joliet.jpg
+
+images/reunion-shirts:
+total 3176
+-rw------- 1 runner runner   9075 Mar 16 16:30 top5pct-class-reunion-shirt-templates2.gif
+-rw------- 1 runner runner   9263 Mar 16 16:30 top5pct-class-reunion-shirt-templates.gif
+-rw------- 1 runner runner  26319 Mar 16 16:30 top5pct-article-family-reunion-pic2.jpg
+-rw------- 1 runner runner  42812 Mar 16 16:30 top5pct-westinghouse-class-reunion-shirt-joliet-shorewood.jpg
+-rw------- 1 runner runner  76847 Mar 16 16:30 top5pct-family-reunion-shirts-joliet-romeoville.jpg
+-rw------- 1 runner runner  54751 Mar 16 16:30 top5pct-family-reunion-shirts-joliet-plainfield.jpg
+-rw------- 1 runner runner  17628 Mar 16 16:30 top5pct-article-family-reunion-pic1.jpg
+-rw------- 1 runner runner  78526 Mar 16 16:30 top5pct-family-reunion-shirts-joliet-crest-hill.jpg
+-rw------- 1 runner runner  55390 Mar 16 16:30 top5pct-class-reunion-shirts-joliet-shorewood.jpg
+-rw------- 1 runner runner  74751 Mar 16 16:30 top5pct-banner-banner-family-reunion-shirts-joliet-shorewood.jpg
+-rw-r--r-- 1 runner runner 553698 May 11 05:07 top5pct-class-reunion-shirt.jpg
+-rw-r--r-- 1 runner runner 469955 May 11 05:07 top5pct-family-reunion-shirts-joliet.jpg
+-rw-r--r-- 1 runner runner 345143 May 11 05:07 top5pct-family-reunion-tshirts-in-joliet.jpg
+-rw-r--r-- 1 runner runner 490030 May 11 05:07 top5pct-group-shirts.jpg
+-rw-r--r-- 1 runner runner 300107 May 11 05:07 top5pct-reunion-group-shirts.jpg
+-rw-r--r-- 1 runner runner 494600 May 11 05:07 top5pct-reunion-shirts.jpg
+-rw-r--r-- 1 runner runner 113479 Jun  8 20:30 top5pct-family-reunion-tees.jpg
+
+images/outdoor-signs:
+total 1484
+-rw-r--r-- 1 runner runner 609577 Jun  2 17:03 top5pct-outdoor-banner-signs-joliet.jpg
+-rw-r--r-- 1 runner runner 421586 Jun  2 17:03 top5pct-outdoor-sign-joliet.jpg
+-rw-r--r-- 1 runner runner 484886 Jun  9 18:54 top5pct-business-signs-outdoor-joliet.jpg
+
+images/sidewalk-signs:
+total 3748
+-rw------- 1 runner runner  46664 Mar 16 19:50 top5pct-a-frame-sidewalk-sign-joliet.jpg
+-rw------- 1 runner runner  96381 Mar 16 19:50 top5pct-banner-a-frame-sidewalk-signs-joliet-romeoville.jpg
+-rw------- 1 runner runner  55579 Mar 16 19:50 top5pct-article-a-frame-sidewalk-signs.jpg
+-rw------- 1 runner runner  91292 Mar 16 19:50 top5pct-sidewalk-a-frames-joliet-shorewood.jpg
+-rw------- 1 runner runner  58469 Mar 16 19:50 top5pct-sidewalk-signs-joliet-shorewood-crest-hill.jpg
+-rw-r--r-- 1 runner runner 368746 May 11 05:07 top5pct-a-frame-sign.jpg
+-rw-r--r-- 1 runner runner 435460 May 11 05:07 top5pct-custom-a-frame-sidewalk-signs-joliet.jpg
+-rw-r--r-- 1 runner runner 422772 May 11 05:07 top5pct-sidewalk-sign.jpg
+-rw-r--r-- 1 runner runner 528542 May 11 05:07 top5pct-sidewalk-signs-joliet-old.jpg
+-rw-r--r-- 1 runner runner 245453 Jun  2 17:03 top5pct-a-frame-sidewalk-signs.jpg
+-rw-r--r-- 1 runner runner 284719 Jun  2 17:03 top5pct-sidewalk-signage.jpg
+-rw-r--r-- 1 runner runner 454051 Jun  2 17:03 top5pct-sidewalk-signs-joliet.jpg
+-rw-r--r-- 1 runner runner 153232 Jun  8 20:42 top5pct-sidewalk-signs-plainfield.jpg
+-rw-r--r-- 1 runner runner 264912 Jun  9 17:45 top5pct-a-frame-signs-joliet.jpg
+-rw-r--r-- 1 runner runner 297491 Jun  9 18:28 top5pct-sidewalk-sign-a-frame-cresthill.jpg
+
+images/screen-printing:
+total 1704
+-rw-r--r-- 1 runner runner 494964 Jun  3 19:31 top5pct-screenprinting-t-shirts-joliet.jpg
+-rw-r--r-- 1 runner runner 134925 Jun  8 19:29 top5pct-screenprinting-hoodies-joliet.jpg
+-rw-r--r-- 1 runner runner 319464 Jun  8 19:40 top5pct-screenprinting-company-shirts.jpg
+-rw-r--r-- 1 runner runner 396639 Jun  8 20:01 top5pct-screenprinting-joliet.jpg
+-rw-r--r-- 1 runner runner 318475 Jun  8 20:58 top5pct-screenprinting-t-shirt-maker-joliet.jpg
+-rw-r--r-- 1 runner runner  73877 Jun  8 22:16 top5pct-screenprinted-shirts-joliet.jpg
+
+images/spirit-wear:
+total 2800
+-rw------- 1 runner runner  75920 Mar 16 07:46 top5pct-bowling-shirts-joliet-shorewood-crest-hill.jpg
+-rw------- 1 runner runner  87912 Mar 16 07:46 top5pct-banner-fanwear-spiritwear-uniforms-joliet-shorewood.jpg
+-rw------- 1 runner runner  68651 Mar 16 07:46 top5pct-joliet-west-spirit-wear-hoodie-shorewood.jpg
+-rw------- 1 runner runner  72895 Mar 16 07:46 top5pct-spiritwear-fanwear-joliet-plainfield-shorewood.jpg
+-rw------- 1 runner runner  73350 Mar 16 07:46 top5pct-plainfield-south-high-school-hoodie.jpg
+-rw------- 1 runner runner 267052 Mar 16 07:46 top5pct-sator-sanchez-school-shirt-joliet-crest-hill.jpg
+-rw------- 1 runner runner  13895 Mar 17 04:28 top5pct-article-fan-wear-pic2.jpg
+-rw------- 1 runner runner  17292 Mar 17 04:28 top5pct-article-spirit-wear-pic1.jpg
+-rw-r--r-- 1 runner runner 347281 May 11 05:07 top5pct-spirit-wear-joliet.jpg
+-rw-r--r-- 1 runner runner 516849 May 11 05:07 top5pct-spirit-wear-shirts.jpg
+-rw-r--r-- 1 runner runner 266600 Jun  2 17:03 top5pct-spirit-wear-clothing.jpg
+-rw-r--r-- 1 runner runner 605848 Jun  2 17:03 top5pct-volleyball-team-uniforms-joliet.jpg
+-rw-r--r-- 1 runner runner 428284 Jun  3 20:12 top5pct-spirit-wear-volleyball-track.jpg
+
+images/sublimation:
+total 6028
+-rw-r--r-- 1 runner runner 687506 May 11 05:07 top5pct-custom-face-mask-sublimated.jpg
+-rw-r--r-- 1 runner runner 505565 May 11 05:07 top5pct-custom-sublimated-towels.jpg
+-rw-r--r-- 1 runner runner 438357 May 11 05:07 top5pct-dye-sublimated-longsleeve-shirt-joliet.jpg
+-rw-r--r-- 1 runner runner 332698 May 11 05:07 top5pct-dye-sublimation-shirts.jpg
+-rw-r--r-- 1 runner runner 344652 May 11 05:07 top5pct-sublimation-shirt-printer.jpg
+-rw-r--r-- 1 runner runner 638089 May 11 05:07 top5pct-sublimation-shirt.jpg
+-rw-r--r-- 1 runner runner 570729 May 11 05:07 top5pct-sublimation-shirts.jpg
+-rw-r--r-- 1 runner runner 330865 Jun  2 17:03 top5pct-custom-sublimation-shirts.jpg
+-rw-r--r-- 1 runner runner 301973 Jun  2 17:03 top5pct-dye-sublimation-custom-shirt-joliet.jpg
+-rw-r--r-- 1 runner runner 385364 Jun  2 17:03 top5pct-sublmation-team-shirts.jpg
+-rw-r--r-- 1 runner runner 293681 Jun  3 20:40 top5pct-dye-sublimation-jerseys.jpg
+-rw-r--r-- 1 runner runner 544488 Jun  3 20:58 top5pct-dye-sublimation-tees.jpg
+-rw-r--r-- 1 runner runner 364591 Jun  3 21:26 top5pct-sublimation-tees.jpg
+-rw-r--r-- 1 runner runner 402178 Jun  3 21:51 top5pct-sublimated-graphic-tees.jpg
+
+images/table-cloths:
+total 2388
+-rw-r--r-- 1 runner runner 249674 Jun  4 18:10 top5pct-table-cloth-customized.jpg
+-rw-r--r-- 1 runner runner 222225 Jun  4 18:27 top5pct-table-cloths-for-businesses.jpg
+-rw-r--r-- 1 runner runner 211199 Jun  4 18:42 top5pct-table-cloth-with-photos.jpg
+-rw-r--r-- 1 runner runner 153076 Jun  4 19:09 top5pct-table-cloth-8-feet.jpg
+-rw-r--r-- 1 runner runner 352949 Jun  8 15:35 top5pct-custom-table-cloth.jpg
+-rw------- 1 runner runner 101441 Jun  8 15:35 top5pct-banner-custom-table-cloth-custom-table-runner-joliet.jpg
+-rw-r--r-- 1 runner runner 178690 Jun  8 15:35 top5pct-personalized-tablecloth-joliet.jpg
+-rw-r--r-- 1 runner runner 333514 Jun  8 15:35 top5pct-table-cloths.jpg
+-rw------- 1 runner runner  43283 Jun  8 15:35 top5pct-custom-table-cloth-joliet-crest-hill.jpg
+-rw-r--r-- 1 runner runner 354445 Jun  8 15:35 top5pct-custom-table-cloth-business.jpg
+-rw-r--r-- 1 runner runner 199355 Jun  8 15:35 top5pct-printed-table-cloths.jpg
+-rw------- 1 runner runner  21655 Jun  8 15:35 top5pct-article-custom-table-cloths-joliet.jpg
+
+images/table-runners:
+total 4188
+-rw------- 1 runner runner  21655 Mar 16 19:50 top5pct-article-custom-table-cloths-joliet.jpg
+-rw------- 1 runner runner  43283 Mar 16 19:50 top5pct-custom-table-cloth-joliet-crest-hill.jpg
+-rw------- 1 runner runner  42032 Mar 16 19:50 top5pct-custom-table-skirt-joliet-shorewood-plainfield.jpg
+-rw------- 1 runner runner  51036 Mar 16 19:50 top5pct-custom-table-runner-joliet-new-lenox.jpg
+-rw------- 1 runner runner  58349 Mar 16 19:50 top5pct-custom-table-runner-joliet-shorewood.jpg
+-rw------- 1 runner runner  54253 Mar 16 19:50 top5pct-table-runner-popus-gourmet-popcorn-joliet.jpg
+-rw------- 1 runner runner 101441 Mar 16 19:50 top5pct-banner-custom-table-cloth-custom-table-runner-joliet.jpg
+-rw-r--r-- 1 runner runner 352949 May 11 05:07 top5pct-custom-table-cloth.jpg
+-rw-r--r-- 1 runner runner 178690 May 11 05:07 top5pct-personalized-tablecloth-joliet.jpg
+-rw-r--r-- 1 runner runner 333514 May 11 05:07 top5pct-table-cloths.jpg
+-rw-r--r-- 1 runner runner 571335 May 11 05:07 top5pct-custom-table-runner.jpg
+-rw-r--r-- 1 runner runner 233267 May 11 05:07 top5pct-custom-table-runners.jpg
+-rw-r--r-- 1 runner runner 248286 May 11 05:07 top5pct-table-runner.jpg
+-rw-r--r-- 1 runner runner 296252 May 11 05:07 top5pct-table-runners.jpg
+-rw-r--r-- 1 runner runner 354445 Jun  2 17:03 top5pct-custom-table-cloth-business.jpg
+-rw-r--r-- 1 runner runner 199355 Jun  2 17:03 top5pct-printed-table-cloths.jpg
+-rw-r--r-- 1 runner runner 329884 Jun  2 17:03 top5pct-table-runner-joliet.jpg
+-rw-r--r-- 1 runner runner 219826 Jun  6 10:27 top5pct-custom-table-runner-near-me.jpg
+-rw-r--r-- 1 runner runner 167933 Jun  6 10:35 top5pct-table-runners-customized.jpg
+-rw-r--r-- 1 runner runner 157557 Jun  6 10:56 top5pct-table-runner-covers.jpg
+-rw-r--r-- 1 runner runner 232485 Jun  6 11:20 top5pct-table-runner-company.jpg
+
+images/yard-signs:
+total 5316
+-rw------- 1 runner runner   56892 Mar 16 19:50 top5pct-table-signs-joliet-shorewood-plainfield.jpg
+-rw------- 1 runner runner   96312 Mar 16 19:50 top5pct-banner-yard-signs-joliet-shorewood-crest-hill.jpg
+-rw------- 1 runner runner   47497 Mar 16 19:50 top5pct-article-yard-signs-buy.jpg
+-rw------- 1 runner runner   75961 Mar 16 19:50 top5pct-yard-signs-joliet-plainfied-new-lenox.jpg
+-rw------- 1 runner runner  347633 Mar 16 19:50 top5pct-yard-signs-joliet-shorewood-romeoville.jpg
+-rw------- 1 runner runner 1865746 Mar 16 19:50 top5pct-yard-signs-joliet-old.jpg
+-rw-r--r-- 1 runner runner  508522 May 11 05:07 top5pct-custom-yard-signs-joliet.jpg
+-rw-r--r-- 1 runner runner  317596 May 11 05:07 top5pct-lawn-signs.jpg
+-rw-r--r-- 1 runner runner  425648 May 11 05:07 top5pct-yard-sign-joliet.jpg
+-rw-r--r-- 1 runner runner  401728 May 11 05:07 top5pct-yard-signs-joliet.jpg
+-rw-r--r-- 1 runner runner  429304 May 11 05:07 top5pct-yard-signs.jpg
+-rw-r--r-- 1 runner runner  233520 Jun  7 08:22 top5pct-yard-signs-plainfield.jpg
+-rw-r--r-- 1 runner runner  270983 Jun  7 08:34 top5pct-yard-signs-rockdale.jpg
+-rw-r--r-- 1 runner runner  338416 Jun  7 08:49 top5pct-yard-signs-shorewood.jpg
+
+images/door-signs:
+total 2360
+-rw------- 1 runner runner  59939 Mar 16 20:48 top5pct-door-signs-joliet-shorewood-crest-hill.jpg
+-rw-r--r-- 1 runner runner 356308 May 11 05:07 top5pct-door-signage.jpg
+-rw-r--r-- 1 runner runner 486390 Jun  2 17:03 top5pct-business-door-signs.jpg
+-rw-r--r-- 1 runner runner 253952 Jun  2 17:03 top5pct-door-sign-installers.jpg
+-rw-r--r-- 1 runner runner 452864 Jun  2 17:03 top5pct-vinyl-door-lettering.jpg
+-rw-r--r-- 1 runner runner 275664 Jun  2 17:03 top5pct-vinyl-door-signs.jpg
+-rw-r--r-- 1 runner runner 198776 Jun  7 06:14 top5pct-door-lettering-vinyl.jpg
+-rw-r--r-- 1 runner runner 321029 Jun  8 19:20 top5pct-door-wraps-joliet.jpg
+
+images/window-signs:
+total 6880
+-rw------- 1 runner runner  54269 Mar 16 20:48 top5pct-window-cling-decal-joliet-shorewood.jpg
+-rw------- 1 runner runner  58240 Mar 16 20:48 top5pct-window-decal-joliet-shorewood-rockdale.jpg
+-rw------- 1 runner runner  71592 Mar 16 20:48 top5pct-window-decals-joliet-shorewood-crest-hill.jpg
+-rw-r--r-- 1 runner runner 419142 May 11 05:07 top5pct-business-window-signs.jpg
+-rw-r--r-- 1 runner runner 606821 May 11 05:07 top5pct-custom-window-signs.jpg
+-rw-r--r-- 1 runner runner 436391 May 11 05:07 top5pct-window-door-signs.jpg
+-rw-r--r-- 1 runner runner 607610 May 11 05:07 top5pct-window-signs-joliet-slammers.jpg
+-rw-r--r-- 1 runner runner 370528 May 11 05:07 top5pct-window-signs-joliet-old.jpg
+-rw-r--r-- 1 runner runner 414623 Jun  2 17:03 top5pct-joliet-slammers-window-signs-joliet.jpg
+-rw-r--r-- 1 runner runner 619751 Jun  2 17:03 top5pct-window-signage.jpg
+-rw-r--r-- 1 runner runner 595453 Jun  2 17:03 top5pct-window-signs-joliet.jpg
+-rw-r--r-- 1 runner runner 438416 Jun  7 06:30 top5pct-window-signs.jpg
+-rw-r--r-- 1 runner runner 329731 Jun  7 06:43 top5pct-window-graphics-joliet.jpg
+-rw-r--r-- 1 runner runner 298821 Jun  7 07:07 top5pct-window-signs-cresthill.jpg
+-rw-r--r-- 1 runner runner 544851 Jun  7 07:20 top5pct-window-sign-installers-joliet.jpg
+-rw-r--r-- 1 runner runner 414076 Jun  7 07:34 top5pct-window-vinyl-sign-installers.jpg
+-rw-r--r-- 1 runner runner 310250 Jun  7 07:54 top5pct-window-business-signs.jpg
+-rw-r--r-- 1 runner runner 406973 Jun  8 22:23 top5pct-window-signs-for-businesses-joliet.jpg
+
+images/window-wall-floor-decals:
+total 1584
+-rw------- 1 runner runner  54482 Mar 16 20:48 top5pct-wall-signs-joliet.jpg
+-rw------- 1 runner runner  63355 Mar 16 20:48 top5pct-wall-decals-joliet.jpg
+-rw------- 1 runner runner 134735 Mar 16 20:48 top5pct-banner-wall-decal-door-signs-joliet.jpg
+-rw------- 1 runner runner  41136 Mar 16 20:48 top5pct-article-window-wall-signs.jpg
+-rw-r--r-- 1 runner runner 359998 Jun  2 17:03 top5pct-door-wraps-joliet.jpg
+-rw-r--r-- 1 runner runner 387953 Jun  2 17:03 top5pct-wall-signs.jpg
+-rw-r--r-- 1 runner runner 566983 Jun  2 17:03 top5pct-wall-wraps.jpg
+
+images/wall-signs:
+total 2776
+-rw-r--r-- 1 runner runner 495705 May 11 05:07 top5pct-wall-signs-old.jpg
+-rw-r--r-- 1 runner runner 319795 Jun  6 13:32 top5pct-wall-sign-for-businesses.jpg
+-rw-r--r-- 1 runner runner 364685 Jun  6 15:09 top5pct-wall-signs-for-businesses.jpg
+-rw-r--r-- 1 runner runner 388981 Jun  6 15:29 top5pct-wall-decals-bedroom.jpg
+-rw-r--r-- 1 runner runner 387953 Jun  8 05:48 top5pct-wall-signs.jpg
+-rw------- 1 runner runner  54482 Jun  8 05:48 top5pct-wall-signs-joliet.jpg
+-rw-r--r-- 1 runner runner 566983 Jun  8 05:48 top5pct-wall-wraps.jpg
+-rw------- 1 runner runner  41136 Jun  8 05:48 top5pct-article-window-wall-signs.jpg
+-rw------- 1 runner runner 134735 Jun  8 05:48 top5pct-banner-wall-decal-door-signs-joliet.jpg
+-rw------- 1 runner runner  63355 Jun  8 05:48 top5pct-wall-decals-joliet.jpg
+
+images/mugs:
+total 3056
+-rw-r--r-- 1 runner runner 426222 May 11 05:07 top5pct-custom-coffee-mugs-in-joliet.jpg
+-rw-r--r-- 1 runner runner 472464 May 11 05:07 top5pct-custom-coffee-mugs.jpg
+-rw-r--r-- 1 runner runner 398279 May 11 05:07 top5pct-custom-mugs-near-me.jpg
+-rw-r--r-- 1 runner runner 267012 May 11 05:07 top5pct-custom-mugs.jpg
+-rw-r--r-- 1 runner runner 388060 May 11 05:07 top5pct-custom-printed-mugs.jpg
+-rw-r--r-- 1 runner runner 419209 May 11 05:07 top5pct-picture-on-mugs.jpg
+-rw-r--r-- 1 runner runner 336139 May 11 05:07 top5pct-printed-mugs-old.jpg
+-rw-r--r-- 1 runner runner 398371 Jun  2 17:03 top5pct-printed-mugs.jpg
+
+images/can-koozies:
+total 1844
+-rw-r--r-- 1 runner runner 416597 May 11 05:07 top5pct-can-koozies.jpg
+-rw-r--r-- 1 runner runner 402405 May 11 05:07 top5pct-custom-koozies.jpg
+-rw-r--r-- 1 runner runner 310778 Jun  2 17:03 top5pct-custom-can-koozies.jpg
+-rw-r--r-- 1 runner runner 478938 Jun  2 17:03 top5pct-koozies-joliet.jpg
+-rw-r--r-- 1 runner runner 270838 Jun  2 17:03 top5pct-personalized-koozies-joliet.jpg
