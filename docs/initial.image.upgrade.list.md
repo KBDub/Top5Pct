@@ -445,3 +445,115 @@ Note: spirit-wear-shirts.blade.php C-1 and card-set-1/2/3 are the hardest on thi
 **Total ⛔ outstanding: 15 slots.** All others have confirmed replacements ready.
 
 *Created Jun 10, 2026. Confirm before applying blade changes.*
+
+---
+
+## Completion Log
+
+### Sessions 1-2 — Signs and vehicle-graphics pages (Mar-May 2026)
+
+Applied roughly 65 replacements across:
+- /signs LP, signs/banners, signs/yard-signs, signs/sidewalk-signs, signs/sidewalk-signs-a-frame
+- signs/wall-signs, signs/window-signs, signs/floor-signs, signs/door-signs
+- signs/posters, signs/table-runners, signs/table-cloths
+- vehicle-graphics LP, vehicle-graphics/dot-decals, vehicle-graphics/stickers (index)
+
+### Session 3 — Remaining pages (Jun 10, 2026)
+
+Processed all remaining ~105 Initial slots across:
+vehicle-graphics/automobile-graphics, vehicle-graphics/vehicle-magnets, signs/business-signs,
+stickers/standard-stickers, stickers/custom-shaped-stickers, all custom-apparel sub-pages,
+and promotional-items LP.
+
+**Applied: 20 replacements.** Blocked: ~85 slots.
+
+| Page | Slot | Applied replacement |
+|---|---|---|
+| vehicle-graphics/automobile-graphics | slide-R | vehicle-magnets/top5pct-truck-sign-magnets-joliet.jpg |
+| vehicle-graphics/vehicle-magnets | slide-R | automobile-graphics/top5pct-vehicle-graphics.jpg |
+| stickers/standard-stickers | C-1 | custom-shaped-stickers-decals/top5pct-custom-stickers.jpg |
+| stickers/standard-stickers | C-2 | custom-shaped-stickers-decals/top5pct-stickers-in-joliet.jpg |
+| stickers/standard-stickers | C-3 | custom-shaped-stickers-decals/top5pct-die-cut-stickers-joliet-r3.jpg |
+| stickers/standard-stickers | C-4 | custom-shaped-stickers-decals/top5pct-custom-glossy-stickers-in-joliet.jpg |
+| stickers/standard-stickers | card-set-1 | custom-shaped-stickers-decals/top5pct-custom-label-stickers.jpg |
+| stickers/standard-stickers | card-set-2 | custom-shaped-stickers-decals/top5pct-custom-shaped-stickers.jpg |
+| stickers/standard-stickers | slide-L | custom-shaped-stickers-decals/top5pct-custom-stickers-cresthill.jpg |
+| stickers/standard-stickers | slide-R | custom-shaped-stickers-decals/top5pct-die-cut-stickers-shorewood.jpg |
+| stickers/custom-shaped-stickers | slide-R | custom-shaped-stickers-decals/top5pct-die-cut-stickers-shorewood.jpg |
+| custom-apparel/screen-printing | card-1 | custom-shirts/top5pct-neon-vinyl-shirts.jpg |
+| custom-apparel/screen-printing | card-2 | custom-shirts/top5pct-vinyl-caps.jpg |
+| custom-apparel/glow-in-the-dark-shirts | C-4 | custom-shirts/top5pct-custom-vinyl-shirts.jpg |
+| custom-apparel/flock-shirts | C-4 | custom-shirts/top5pct-custom-vinyl-shirts.jpg |
+| custom-apparel/brick-shirts | slide-R | custom-shirts/top5pct-custom-hoodies.jpg |
+| custom-apparel/puff-shirts | C-4 | custom-shirts/top5pct-custom-vinyl-shirts.jpg |
+| custom-apparel/puff-shirts | slide-R | custom-shirts/top5pct-rhinetsone-t-shirts.jpg |
+| custom-apparel/group-wear/corporate-wear-shirts | slide-R | spirit-wear/top5pct-volleyball-team-uniforms-joliet.jpg |
+| custom-apparel/group-wear/spirit-wear-shirts | slide-R | reunion-shirts/top5pct-family-reunion-tees.jpg |
+
+---
+
+### Why ~85 slots were blocked
+
+Three rules blocked the remainder. No blade edits were made for any of these.
+
+**1. Cross-directory rule (replacement lives in a different dir than the current Initial file)**
+
+The no-cross-dir rule requires the replacement file to be in the same directory as the Initial file it replaces. Most custom-apparel Initial files are in `custom-shirts/`, but the upgrade list proposed replacements from `digital-vinyl/`, `brick-shirts/`, `foil-shirts/`, `holographic-shirts/`, `glow-shirts/`, `rhinestone-apparel/`, `screen-printing/`, `dtf-transfers/`, `embroidery/`, `spirit-wear/`, and `flock-shirts/`. Roughly 28 slots blocked this way.
+
+Affected pages: foil-shirts (all 5 slots), brick-shirts (card-1, card-2, card-2image, slide-L), puff-shirts (card-1, card-2, card-2image, slide-L), vinyl-shirts (hero, slide-L, slide-R), reflective-shirts (slide-R), holographic-shirts (slide-R), glow-in-the-dark (slide-R), flock-shirts (slide-R), rhinestone-apparel (slide-L), glitter-shirts (slide-R), screen-printing (C-3, slide-R), dtf-transfers (slide-R), spirit-wear (slide-L), reunion-shirts (slide-R), promotional-items LP (slide-R).
+
+**2. Directory exhausted (all same-dir R1/R2/R3 files already used elsewhere on the page)**
+
+Several directories had every R1/R2/R3 file already placed in the hero, carousel, or card slots on that same page, leaving nothing unused for the remaining Initial slots. Roughly 27 slots blocked this way.
+
+| Directory | Used slots that exhausted it | Blocked Initial slots |
+|---|---|---|
+| glow-shirts/ | hero + C-2 + C-3 = all 3 R1/R2/R3 files used | C-1, card-1, card-2, card-2image, slide-L (5 slots) |
+| holographic-shirts/ | hero + C-2 + C-3 = all 3 R1/R2/R3 files used | C-1, card-1, card-2, card-2image, slide-L (5 slots) |
+| flock-shirts/ | hero + C-2 + C-3 = all 3 R1/R2/R3 files used | C-1, card-1, card-2, card-2image, slide-L (5 slots) |
+| spirit-wear/ | 5 carousel + 3 card slots + article use all R1/R2/R3 | C-1, card-set-1, card-set-2, card-set-3 (4 slots) |
+| reflective-shirts/ | hero + 4 carousel + card-1 = all R1/R2/R3 used | C-1, card-2, slide-L (3 slots) |
+| reunion-shirts/ | all R1 files in carousel | card-3, slide-L (2 slots) |
+| business-signs/ | zero R1/R2/R3 files exist in this directory | hero, card-1, card-2 (3 slots) |
+
+**3. Duplicate rule (proposed replacement already appears elsewhere on the same page)**
+
+Roughly 11 slots blocked because the upgrade list's proposed file was already placed in another slot on the same page.
+
+| Page | Slot blocked | Duplicate already at |
+|---|---|---|
+| automobile-graphics | slide-L (vehicle-graphics.jpg) | line 103, card-2image |
+| vehicle-magnets | slide-L (vehicle-magnets.jpg) | line 100, card-2image |
+| stickers/custom-shaped-stickers | slide-L (custom-shaped-stickers-cresthill.jpg) | line 102, card-detailed-info |
+| rhinestone-apparel | slide-R (rhinestone-apparel-keith-elementary.jpg) | carousel C-1 |
+| glitter-shirts | slide-L (glitter-sportswear-shirts.jpg) | carousel C-5 |
+| embroidery | slide-L (embroidery-in-joliet.jpg) | carousel C-3 |
+| puff-shirts | C-1 (puff-shirts-joliet.jpg) | carousel C-2 |
+| corporate-wear-shirts | C-3 (custom-company-apparel.jpg) | card-2image image2 |
+| corporate-wear-shirts | card-set-3 (landscaping-clothing-joliet.jpg) | card-set-1 image |
+| corporate-wear-shirts | slide-L (lawn-care-clothing.jpg) | card-set-2 image |
+| reunion-shirts | C-2 (family-reunion-tees.jpg) | carousel C-5 |
+
+---
+
+### Blocked slot summary
+
+| Block reason | Approx. count |
+|---|---|
+| Cross-dir rule | ~28 |
+| Directory exhausted | ~27 |
+| Duplicate on same page | ~11 |
+| Not in upgrade list (unlisted card-2image repeats, etc.) | ~19 |
+| **Total blocked** | **~85** |
+
+### To unlock remaining slots
+
+Three paths forward:
+
+1. **Lift the cross-dir rule for specific pages** where every same-dir R1/R2/R3 is already used and the upgrade list's cross-dir pick is the only non-duplicate option. Pages most affected: foil-shirts, vinyl-shirts, brick-shirts (card slots), puff-shirts (card slots), glow/flock/holographic (C-1 and card/slide slots).
+
+2. **Import new R1/R2/R3 images** into the exhausted directories (glow-shirts/, holographic-shirts/, flock-shirts/, spirit-wear/, business-signs/). Adding even one new file per directory would unblock multiple slots.
+
+3. **Accept the current Initial images** in those slots. They are not broken or missing. They are just older-round images that display correctly. This is a valid choice for slots where options 1 and 2 are not priorities.
+
+*Session 3 logged Jun 10, 2026.*
