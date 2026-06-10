@@ -47,6 +47,8 @@ Rules 1-6 apply to all category landing pages (LPs). Source: `docs/lp.image.revi
 | R3 | Jun 3-10, 2026 | Mod date Jun 3 or later, open permissions. Current migration. |
 | moved | Jun 8, 2026 | File relocated from another dir (e.g. wwf, custom-shirts). Content round preserved in notes. |
 
+> **moved** = Relocated from a common/shared dir (e.g. `window-wall-floor-decals/`, `custom-shirts/`) to a new category-specific dir. The round suffix shows the content's original import round. The file's mod date in the current dir will be Jun 8, not the round's original date. The source dir retains a copy.
+
 ---
 
 ## Slot Types
