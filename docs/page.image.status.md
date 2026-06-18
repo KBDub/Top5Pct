@@ -616,4 +616,42 @@ Status codes: `good` | `initial` | `repeat` | `placeholder` | `undersized`
 
 ---
 
+#### /custom-apparel/specialty-materials/foil-shirts
+
+**Blade:** `resources/views/pages/custom-apparel/foil-shirts.blade.php`
+**URL:** `/custom-apparel/specialty-materials/foil-shirts`
+**Note:** Blade is one level up from URL path (`custom-apparel/` not `custom-apparel/specialty-materials/`). Route mapped separately.
+**Verified:** Jun 18, 2026
+
+| section / category | image | image path | round | file date | status |
+|---|---|---|---|---|---|
+| hero — category-hero | top5pct-foil-gold-t-shirt.jpg | public/images/custom-shirts/top5pct-foil-gold-t-shirt.jpg | R2 | Jun 2 | good, cross-dir |
+| carousel C-1 — carousel-rotating-images | top5pct-custom-foil-shirts-hoodies-caps-joliet.jpg | public/images/custom-shirts/top5pct-custom-foil-shirts-hoodies-caps-joliet.jpg | Initial | Mar 16 | initial, locked, cross-dir |
+| carousel C-2 — carousel-rotating-images | top5pct-gold-foil-printed-shirts.jpg | public/images/custom-shirts/top5pct-gold-foil-printed-shirts.jpg | R2 | Jun 2 | good, cross-dir |
+| carousel C-3 — carousel-rotating-images | top5pct-foil-custom-t-shirts.jpg | public/images/custom-shirts/top5pct-foil-custom-t-shirts.jpg | R2 | Jun 2 | good, cross-dir |
+| carousel C-4 — carousel-rotating-images | top5pct-custom-foil-polo.jpg | public/images/custom-shirts/top5pct-custom-foil-polo.jpg | R2 | Jun 2 | good, cross-dir |
+| carousel C-5 — carousel-rotating-images | top5pct-foil-shirts.jpg | public/images/foil-shirts/top5pct-foil-shirts.jpg | R3 | Jun 8 | good |
+| carousel C-6 — carousel-rotating-images | top5pct-foil-custom-shirts-joliet.jpg | public/images/foil-shirts/top5pct-foil-custom-shirts-joliet.jpg | R3 | Jun 8 | good |
+| carousel C-7 — carousel-rotating-images | top5pct-foil-custom-apparel-shirts-joliet.jpg | public/images/foil-shirts/top5pct-foil-custom-apparel-shirts-joliet.jpg | R3 | Jun 9 | good |
+| carousel C-8 — carousel-rotating-images | top5pct-foil-shirts-cresthill.jpg | public/images/foil-shirts/top5pct-foil-shirts-cresthill.jpg | R3 | Jun 8 | good |
+| carousel C-9 — carousel-rotating-images | top5pct-foil-shirt-shorewood.jpg | public/images/foil-shirts/top5pct-foil-shirt-shorewood.jpg | R3 | Jun 8 | good |
+| card-1 — card-image-with-text | top5pct-custom-foil-shirts-hoodies-caps-joliet.jpg | public/images/custom-shirts/top5pct-custom-foil-shirts-hoodies-caps-joliet.jpg | Initial | Mar 16 | initial, locked, cross-dir, repeat |
+| card-2 — card-image-with-text | top5pct-custom-wedding-foil-shirts.jpg | public/images/custom-shirts/top5pct-custom-wedding-foil-shirts.jpg | R2 | Jun 2 | good, cross-dir |
+| card-detailed image1 — card-detailed-info (single image) | top5pct-custom-foil-shirts-hoodies-caps-joliet.jpg | public/images/custom-shirts/top5pct-custom-foil-shirts-hoodies-caps-joliet.jpg | Initial | Mar 16 | initial, locked, cross-dir, repeat |
+| slide-R — card-banner-slide-in (direction right) | top5pct-custom-foil-shirts-hoodies-caps-joliet.jpg | public/images/custom-shirts/top5pct-custom-foil-shirts-hoodies-caps-joliet.jpg | Initial | Mar 16 | initial, locked, cross-dir, repeat |
+| slide-L — card-banner-slide-in (direction left) | top5pct-custom-glitter-shirt-cap-hoodie-joliet.jpg | public/images/custom-shirts/top5pct-custom-glitter-shirt-cap-hoodie-joliet.jpg | Initial | Mar 16 | wrong dir, 404 |
+
+**Notes:**
+- 15 slots total. 10 good, 4 initial locked (same file across all 4), 1 wrong-dir 404.
+- 9-image carousel — largest carousel found in the entire inventory. C-1 is the only locked carousel slot. C-2 through C-9 are all good (8 of 9 clean).
+- `top5pct-custom-foil-shirts-hoodies-caps-joliet.jpg` from `custom-shirts/` (Initial, Mar 16, 36KB, locked) fills four active slots — carousel C-1, card-1, card-detailed image1, and slide-R. Same four-position repeat pattern as reflective-shirts, but that page's repeat file was R3-locked (Jun 8); this one is Initial locked (Mar 16).
+- slide-L is a confirmed wrong-dir 404 — first in the inventory. The blade references `/images/custom-shirts/top5pct-custom-glitter-shirt-cap-hoodie-joliet.jpg` but that file does not exist in `custom-shirts/`. The file `top5pct-custom-glitter-shirt-cap-hoodie-joliet.jpg` exists in `glitter-shirts/` (Initial, Mar 16, 30KB, locked) — wrong dir and locked. Slide text: "Combine Foil With Glitter or Rhinestone for Custom Apparel."
+- card-detailed-info is single-image (only `image1` and `alt1` — no `image2`). Second consecutive specialty-materials page with a single-image card-detailed (after reflective-shirts).
+- The page's own dir (`foil-shirts/`) only covers carousel C-5 through C-9. The hero, both cards, card-detailed, and both slides all pull from `custom-shirts/`. This is the most cross-dir-dependent page found so far.
+- `foil-shirts/` dir has zero locked files — all 5 are R3, unlocked. The problems are entirely in the cross-dir `custom-shirts/` references.
+- Jun 9 timestamp on carousel C-7 (`top5pct-foil-custom-apparel-shirts-joliet.jpg`, 283KB) — second Jun 9 date seen in the inventory, after spirit-wear's Jun 3 outlier. The rest of the foil-shirts/ dir is Jun 8.
+- `custom-shirts/` is a large shared dir (70+ files) spanning Initial through R3. It serves as a shared pool for multiple specialty pages.
+
+---
+
 *Last updated: Jun 18, 2026*
