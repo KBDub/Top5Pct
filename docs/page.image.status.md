@@ -544,4 +544,44 @@ Status codes: `good` | `initial` | `repeat` | `placeholder` | `undersized`
 
 ---
 
+#### /custom-apparel/group-wear/reunion-shirts
+
+**Blade:** `resources/views/pages/custom-apparel/group-wear/reunion-shirts.blade.php`
+**URL:** `/custom-apparel/group-wear/reunion-shirts`
+**Verified:** Jun 18, 2026
+
+| section / category | image | image path | round | file date | status |
+|---|---|---|---|---|---|
+| hero — category-hero | top5pct-family-reunion-shirts-joliet.jpg | public/images/reunion-shirts/top5pct-family-reunion-shirts-joliet.jpg | R1 | May 11 | good |
+| carousel C-1 — carousel-rotating-images | top5pct-class-reunion-shirt.jpg | public/images/reunion-shirts/top5pct-class-reunion-shirt.jpg | R1 | May 11 | good |
+| carousel C-2 — carousel-rotating-images | top5pct-banner-banner-family-reunion-shirts-joliet-shorewood.jpg | public/images/reunion-shirts/top5pct-banner-banner-family-reunion-shirts-joliet-shorewood.jpg | Initial | Mar 16 | initial, locked |
+| carousel C-3 — carousel-rotating-images | top5pct-family-reunion-tshirts-in-joliet.jpg | public/images/reunion-shirts/top5pct-family-reunion-tshirts-in-joliet.jpg | R1 | May 11 | good |
+| carousel C-4 — carousel-rotating-images | top5pct-group-shirts.jpg | public/images/reunion-shirts/top5pct-group-shirts.jpg | R1 | May 11 | good |
+| carousel C-5 — carousel-rotating-images | top5pct-family-reunion-tees.jpg | public/images/reunion-shirts/top5pct-family-reunion-tees.jpg | R3 | Jun 8 | good |
+| card-1 — card-image-with-text | top5pct-reunion-group-shirts.jpg | public/images/reunion-shirts/top5pct-reunion-group-shirts.jpg | R1 | May 11 | good |
+| card-2 — card-image-with-text | top5pct-reunion-shirts.jpg | public/images/reunion-shirts/top5pct-reunion-shirts.jpg | R1 | May 11 | good |
+| card-2img-A image1 — card-2image-with-text (1st) | top5pct-class-reunion-shirt-templates.gif | public/images/reunion-shirts/top5pct-class-reunion-shirt-templates.gif | Initial | Mar 16 | initial, locked |
+| card-2img-A image2 — card-2image-with-text (1st) | top5pct-class-reunion-shirt-templates2.gif | public/images/reunion-shirts/top5pct-class-reunion-shirt-templates2.gif | Initial | Mar 16 | initial, locked |
+| card-2img-B image1 — card-2image-with-text (2nd) | top5pct-family-reunion-shirts-joliet-crest-hill.jpg | public/images/reunion-shirts/top5pct-family-reunion-shirts-joliet-crest-hill.jpg | Initial | Mar 16 | initial, locked |
+| card-2img-B image2 — card-2image-with-text (2nd) | top5pct-family-reunion-shirts-joliet-romeoville.jpg | public/images/reunion-shirts/top5pct-family-reunion-shirts-joliet-romeoville.jpg | Initial | Mar 16 | initial, locked |
+| card-3 — card-image-with-text | top5pct-family-reunion-shirts-joliet-plainfield.jpg | public/images/reunion-shirts/top5pct-family-reunion-shirts-joliet-plainfield.jpg | Initial | Mar 16 | initial, locked |
+| card-detailed image1 — card-detailed-info | top5pct-article-family-reunion-pic1.jpg | public/images/reunion-shirts/top5pct-article-family-reunion-pic1.jpg | Initial | Mar 16 | initial, locked |
+| card-detailed image2 — card-detailed-info | top5pct-article-family-reunion-pic2.jpg | public/images/reunion-shirts/top5pct-article-family-reunion-pic2.jpg | Initial | Mar 16 | initial, locked |
+| slide-R — card-banner-slide-in (direction right) | top5pct-family-reunion-shirts-joliet-romeoville.jpg | public/images/reunion-shirts/top5pct-family-reunion-shirts-joliet-romeoville.jpg | Initial | Mar 16 | initial, locked, repeat |
+| slide-L — card-banner-slide-in (direction left) | top5pct-t-shirt-maker-article-pic1.jpg | public/images/custom-shirts/top5pct-t-shirt-maker-article-pic1.jpg | Initial | Mar 17 | initial, locked, cross-dir |
+
+**Notes:**
+- 17 slots total — most on any page inventoried. 11 are Initial locked (65%) — highest locked percentage in the entire inventory, edging past spirit-wear-shirts at 60%.
+- Two consecutive card-2image-with-text sections (card-2img-A and card-2img-B) — first page in the inventory with that pattern.
+- card-2img-A holds the first GIF files found in active blade slots anywhere in the inventory. Both template GIFs are Initial locked at 9KB each — among the smallest active-slot files seen. File extension is .gif, not .jpg. Section heading is "Reunion Shirt Templates" — content is intentional template preview art.
+- slide-R is both Initial locked AND repeats card-2img-B image2 — same file (`top5pct-family-reunion-shirts-joliet-romeoville.jpg`, Mar 16, 77KB) used in two active blade positions. Both are locked. Slide text: "Order Your Reunion Shirts Today."
+- slide-L is both Initial locked AND cross-dir — from `custom-shirts/` (Mar 17, 10KB, locked). First cross-dir slide in the inventory that is also Initial locked. Every other cross-dir slide has been R2 or R3 and unlocked. Slide text: "Need Custom Shirts for Another Event? We've Got You."
+- Filename anomaly: carousel C-2 is `top5pct-banner-banner-family-reunion-shirts...` — double "banner" in the name. Only such filename seen in the inventory.
+- The carousel is mostly clean (4 of 5 good). The carousel C-2 slot is the lone locked carousel image — second locked carousel slot found (after spirit-wear C-1).
+- hero and both primary cards (card-1, card-2) are all R1, May 11. Strong above-the-fold coverage.
+- 2 unused Initial locked files in dir not referenced in blade: `top5pct-westinghouse-class-reunion-shirt-joliet-shorewood.jpg` (43KB) and `top5pct-class-reunion-shirts-joliet-shorewood.jpg` (55KB).
+- No R2 or R3 files in this dir except `top5pct-family-reunion-tees.jpg` (R3, Jun 8, 113KB) — the same file confirmed cross-dir on the spirit-wear-shirts page.
+
+---
+
 *Last updated: Jun 18, 2026*
