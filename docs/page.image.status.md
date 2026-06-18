@@ -584,4 +584,36 @@ Status codes: `good` | `initial` | `repeat` | `placeholder` | `undersized`
 
 ---
 
+#### /custom-apparel/specialty-materials/reflective-shirts
+
+**Blade:** `resources/views/pages/custom-apparel/reflective-shirts.blade.php`
+**URL:** `/custom-apparel/specialty-materials/reflective-shirts`
+**Note:** Blade is one level up from the URL path (`custom-apparel/` not `custom-apparel/specialty-materials/`). Route must be mapped separately.
+**Verified:** Jun 18, 2026
+
+| section / category | image | image path | round | file date | status |
+|---|---|---|---|---|---|
+| hero — category-hero | top5pct-reflective-shirts-gold.jpg | public/images/reflective-shirts/top5pct-reflective-shirts-gold.jpg | R3 | Jun 8 | good |
+| carousel C-1 — carousel-rotating-images | top5pct-custom-reflective-shirts-hoodies-caps-joliet.jpg | public/images/reflective-shirts/top5pct-custom-reflective-shirts-hoodies-caps-joliet.jpg | R3 | Jun 8 | R3, locked |
+| carousel C-2 — carousel-rotating-images | top5pct-custom-reflective-hoodies.jpg | public/images/reflective-shirts/top5pct-custom-reflective-hoodies.jpg | R3 | Jun 8 | good |
+| carousel C-3 — carousel-rotating-images | top5pct-reflective-shirts.jpg | public/images/reflective-shirts/top5pct-reflective-shirts.jpg | R3 | Jun 8 | good |
+| carousel C-4 — carousel-rotating-images | top5pct-reflective-shirts-shorewood.jpg | public/images/reflective-shirts/top5pct-reflective-shirts-shorewood.jpg | R3 | Jun 8 | good |
+| card-1 — card-image-with-text | top5pct-reflective-vinyl-shirts-plainfield.jpg | public/images/reflective-shirts/top5pct-reflective-vinyl-shirts-plainfield.jpg | R3 | Jun 8 | good |
+| card-2 — card-image-with-text | top5pct-custom-reflective-shirts-hoodies-caps-joliet.jpg | public/images/reflective-shirts/top5pct-custom-reflective-shirts-hoodies-caps-joliet.jpg | R3 | Jun 8 | R3, locked, repeat |
+| card-detailed image1 — card-detailed-info (single image) | top5pct-custom-reflective-shirts-hoodies-caps-joliet.jpg | public/images/reflective-shirts/top5pct-custom-reflective-shirts-hoodies-caps-joliet.jpg | R3 | Jun 8 | R3, locked, repeat |
+| slide-L — card-banner-slide-in (direction left) | top5pct-custom-reflective-shirts-hoodies-caps-joliet.jpg | public/images/reflective-shirts/top5pct-custom-reflective-shirts-hoodies-caps-joliet.jpg | R3 | Jun 8 | R3, locked, repeat |
+| slide-R — card-banner-slide-in (direction right) | top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg | public/images/custom-shirts/top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg | Initial | Mar 16 | initial, locked, cross-dir |
+
+**Notes:**
+- 10 slots total. 5 good, 5 locked.
+- `top5pct-custom-reflective-shirts-hoodies-caps-joliet.jpg` fills four active blade positions — carousel C-1, card-2, card-detailed image1, and slide-L. Highest single-file repeat count found in the entire inventory. All four uses are the same locked file (R3, Jun 8, 26KB).
+- The locked file is R3 (Jun 8), not Initial (Mar 16-17). First R3-locked file found anywhere in the inventory. The entire dir was uploaded on Jun 8 in one batch — 5 of 6 files were set unlocked, this one was left locked. Permissions appear to have been missed on upload day.
+- card-detailed-info has only one image parameter (`image1` and `alt1` — no `image2`/`alt2`). First single-image card-detailed-info found in the inventory.
+- Dir is entirely R3 (Jun 8). No Initial, R1, or R2 files anywhere in this dir. This is a new, purpose-built dir with no historical files.
+- slide-R is cross-dir from `custom-shirts/` (Initial, Mar 16, 29KB, locked). Second cross-dir slide confirmed as both cross-dir AND Initial locked. Slide text: "Glow in the Dark or Reflective, Both Built for Visibility" — cross-sell appropriate.
+- 5 unlocked R3 files in the dir (hero, C-2, C-3, C-4, card-1) provide good above-the-fold and carousel coverage. The locked file is the only gap, but it blocks four positions.
+- No unused files in dir — all 6 files are referenced in the blade.
+
+---
+
 *Last updated: Jun 18, 2026*
