@@ -820,4 +820,40 @@ Status codes: `good` | `initial` | `repeat` | `placeholder` | `undersized`
 
 ---
 
+#### /custom-apparel/printing-options/rhinestone-apparel
+
+**Blade:** `resources/views/pages/custom-apparel/printing-options/rhinestone-apparel.blade.php`
+**URL:** `/custom-apparel/printing-options/rhinestone-apparel`
+**Dir:** `public/images/rhinestone-apparel/` — 1 file (Jun 3, unlocked). First page in the `printing-options/` blade subdirectory.
+**Verified:** Jun 18, 2026
+
+| section / category | image | image path | round | file date | status |
+|---|---|---|---|---|---|
+| hero — category-hero | top5pct-rhinestone-hoodies-joliet.jpg | public/images/custom-shirts/top5pct-rhinestone-hoodies-joliet.jpg | R1 | May 11 | good, cross-dir |
+| carousel C-1 — carousel-rotating-images | top5pct-rhinestone-apparel-keith-elementary.jpg | public/images/custom-shirts/top5pct-rhinestone-apparel-keith-elementary.jpg | R2 | Jun 2 | good, cross-dir |
+| carousel C-2 — carousel-rotating-images | top5pct-rhinestone-bling-joliet.jpg | public/images/custom-shirts/top5pct-rhinestone-bling-joliet.jpg | R2 | Jun 2 | good, cross-dir |
+| carousel C-3 — carousel-rotating-images | top5pct-rhinestone-hoodie-joliet-west.jpg | public/images/custom-shirts/top5pct-rhinestone-hoodie-joliet-west.jpg | R2 | Jun 2 | good, cross-dir |
+| carousel C-4 — carousel-rotating-images | top5pct-rhinestone-ladies-shirt.jpg | public/images/custom-shirts/top5pct-rhinestone-ladies-shirt.jpg | R2 | Jun 2 | good, cross-dir |
+| carousel C-5 — carousel-rotating-images | top5pct-rhinestone-tshirts-joliet.jpg | public/images/rhinestone-apparel/top5pct-rhinestone-tshirts-joliet.jpg | R2+ | Jun 3 | good |
+| card-1 — card-image-with-text | top5pct-rhinestone-t-shirts-joliet.jpg | public/images/custom-shirts/top5pct-rhinestone-t-shirts-joliet.jpg | R2 | Jun 2 | good, cross-dir |
+| card-2 — card-image-with-text | top5pct-custom-rhinestone-shirts.jpg | public/images/custom-shirts/top5pct-custom-rhinestone-shirts.jpg | R2 | Jun 2 | good, cross-dir |
+| card-detailed image1 — card-detailed-info (single image) | top5pct-rhinetsone-t-shirts.jpg | public/images/custom-shirts/top5pct-rhinetsone-t-shirts.jpg | R2 | Jun 2 | good, cross-dir |
+| slide-R — card-banner-slide-in (direction right) | top5pct-custom-rhinestone-shirt-cap-hoodie-joliet.jpg | public/images/custom-shirts/top5pct-custom-rhinestone-shirt-cap-hoodie-joliet.jpg | Initial | Mar 16 | initial, locked, cross-dir |
+| slide-L — card-banner-slide-in (direction left) | top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg | public/images/custom-shirts/top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg | Initial | Mar 16 | initial, locked, cross-dir |
+
+**Notes:**
+- 11 slots total. 9 good, 2 locked. 18% locked — cleanest page in the entire inventory to date, by a wide margin.
+- First page in the `printing-options/` blade subdirectory. Blade lives at `resources/views/pages/custom-apparel/printing-options/rhinestone-apparel.blade.php`.
+- First page with 5 carousel images (C-1 through C-5). All prior specialty-materials pages had exactly 4 carousel slots. All 5 are rhinestone-specific.
+- Own dir (`rhinestone-apparel/`) has exactly 1 file: `top5pct-rhinestone-tshirts-joliet.jpg` (Jun 3, 271KB, unlocked). This file is used only in carousel C-5. All other 10 slots are cross-dir from `custom-shirts/`. The Jun 3 date is between the R2 batch (Jun 2) and R3 (Jun 4+), suggesting a standalone addition or a late R2 upload.
+- Only the two slides are locked — and both are Initial (Mar 16) files from `custom-shirts/`. The locked file pattern from specialty-materials pages (one R3 thumbnail repeating across 5 slots) does not appear here.
+- slide-R locked: `top5pct-custom-rhinestone-shirt-cap-hoodie-joliet.jpg` (Initial, Mar 16, 23KB) — the rhinestone page's own characteristic locked thumbnail. Unlike specialty pages, it fills only 1 slot (slide-R), not 5.
+- slide-L locked: `top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg` (Initial, Mar 16, 27KB) — same cross-dir holographic file appearing as a slide on flock, glow, and now rhinestone pages. Cross-sell text: "Rhinestone, Holographic, Foil, Premium Effects on Any Garment."
+- card-detailed image1 uses `top5pct-rhinetsone-t-shirts.jpg` — the filename typo (rhinetsone vs rhinestone) that first appeared as puff-shirts slide-R. Second page referencing the same misspelled file. File is unlocked and loads correctly.
+- card-1 and card-2 both use rhinestone-specific, unlocked R2 images — a clean assignment unlike the brick-themed placeholders on the puff page.
+- card-detailed-info is single-image (only `image1` and `alt1`). Eighth consecutive page with single-image card-detailed.
+- The generic `top5pct-custom-vinyl-shirts.jpg` C-4 pattern seen across all specialty-materials pages does not appear here. C-4 is `top5pct-rhinestone-ladies-shirt.jpg` — a rhinestone-specific, on-topic image.
+
+---
+
 *Last updated: Jun 18, 2026*
