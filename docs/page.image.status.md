@@ -40,4 +40,39 @@ Status codes: `good` | `initial` | `repeat` | `placeholder` | `undersized`
 
 ---
 
+#### /signs/table-signs/table-runners
+
+**Blade:** `resources/views/pages/signs/table-runners.blade.php`
+**URL:** `/signs/table-signs/table-runners`
+**Verified:** Jun 18, 2026
+
+| section / category | image | image path | round | file date | status |
+|---|---|---|---|---|---|
+| hero — category-hero | top5pct-custom-table-cloth-business.jpg | public/images/table-runners/top5pct-custom-table-cloth-business.jpg | R2 | Jun 2 | wrong topic (table cloth image on a table runners page) |
+| carousel C-1 — carousel-rotating-images | top5pct-custom-table-runner.jpg | public/images/table-runners/top5pct-custom-table-runner.jpg | R1 | May 11 | good |
+| carousel C-2 — carousel-rotating-images | top5pct-custom-table-runners.jpg | public/images/table-runners/top5pct-custom-table-runners.jpg | R1 | May 11 | good |
+| carousel C-3 — carousel-rotating-images | top5pct-table-runner.jpg | public/images/table-runners/top5pct-table-runner.jpg | R1 | May 11 | good |
+| carousel C-4 — carousel-rotating-images | top5pct-table-runners.jpg | public/images/table-runners/top5pct-table-runners.jpg | R1 | May 11 | good |
+| carousel C-5 — carousel-rotating-images | top5pct-custom-table-runner-near-me.jpg | public/images/table-runners/top5pct-custom-table-runner-near-me.jpg | R3 | Jun 6 | good |
+| carousel C-6 — carousel-rotating-images | top5pct-table-runner-company.jpg | public/images/table-runners/top5pct-table-runner-company.jpg | R3 | Jun 6 | good |
+| carousel C-7 — carousel-rotating-images | top5pct-table-runner-covers.jpg | public/images/table-runners/top5pct-table-runner-covers.jpg | R3 | Jun 6 | good |
+| carousel C-8 — carousel-rotating-images | top5pct-table-runners-customized.jpg | public/images/table-runners/top5pct-table-runners-customized.jpg | R3 | Jun 6 | good |
+| card-1 — card-image-with-text | top5pct-table-runner-joliet.jpg | public/images/table-runners/top5pct-table-runner-joliet.jpg | R2 | Jun 2 | good |
+| card-2 — card-image-with-text | top5pct-custom-table-runner-joliet-new-lenox.jpg | public/images/table-runners/top5pct-custom-table-runner-joliet-new-lenox.jpg | Initial | Mar 16 | initial |
+| card-2img-1 — card-2image-with-text | top5pct-custom-table-runner-joliet-shorewood.jpg | public/images/table-runners/top5pct-custom-table-runner-joliet-shorewood.jpg | Initial | Mar 16 | initial |
+| card-2img-2 — card-2image-with-text | top5pct-custom-table-skirt-joliet-shorewood-plainfield.jpg | public/images/table-runners/top5pct-custom-table-skirt-joliet-shorewood-plainfield.jpg | Initial | Mar 16 | initial |
+| card-3 — card-image-with-text | top5pct-table-runner-popus-gourmet-popcorn-joliet.jpg | public/images/table-runners/top5pct-table-runner-popus-gourmet-popcorn-joliet.jpg | Initial | Mar 16 | initial |
+| card-detailed image1 — card-detailed-info | top5pct-article-custom-table-cloths-joliet.jpg | public/images/table-runners/top5pct-article-custom-table-cloths-joliet.jpg | Initial | Mar 16 | undersized (261x177px, 21KB) |
+| slide-R — card-banner-slide-in (direction right) | top5pct-custom-table-runner-joliet-shorewood.jpg | public/images/table-runners/top5pct-custom-table-runner-joliet-shorewood.jpg | Initial | Mar 16 | initial, repeat |
+| slide-L — card-banner-slide-in (direction left) | top5pct-retractable-banner.jpg | public/images/banners/top5pct-retractable-banner.jpg | R1 | May 11 | good |
+
+**Notes:**
+- Hero uses `top5pct-custom-table-cloth-business.jpg` — a table cloth image, not a table runner image. Filename clearly says "table-cloth." R2 quality but wrong topic for this page.
+- card-detailed image1 is the same 261x177px (21KB) thumbnail used on the table-cloths page. Undersized on both pages.
+- slide-R repeats card-2img-1 (same file: `top5pct-custom-table-runner-joliet-shorewood.jpg`).
+- 4 consecutive Initial slots (card-2, card-2img-1, card-2img-2, card-3) in the lower page sections. All locked Mar 16 files.
+- Unused R1/R2 files in dir (not in blade): `top5pct-table-runner-joliet.jpg` is used. Unused: `top5pct-printed-table-cloths.jpg` (Jun 2, R2), `top5pct-personalized-tablecloth-joliet.jpg` (May 11, R1), `top5pct-table-cloths.jpg` (May 11, R1), `top5pct-custom-table-cloth.jpg` (May 11, R1) — all are table cloth images sharing this dir, not runner images.
+
+---
+
 *Last updated: Jun 18, 2026*
