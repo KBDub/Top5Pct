@@ -267,4 +267,34 @@ Status codes: `good` | `initial` | `repeat` | `placeholder` | `undersized`
 
 ---
 
+#### /signs/business-signs/wall-signs
+
+**Blade:** `resources/views/pages/signs/wall-signs.blade.php`
+**URL:** `/signs/business-signs/wall-signs`
+**Verified:** Jun 18, 2026
+
+| section / category | image | image path | round | file date | status |
+|---|---|---|---|---|---|
+| hero — category-hero | top5pct-wall-signs.jpg | public/images/wall-signs/top5pct-wall-signs.jpg | R3 | Jun 8 | good |
+| carousel C-1 — carousel-rotating-images | top5pct-wall-signs-old.jpg | public/images/wall-signs/top5pct-wall-signs-old.jpg | R1 | May 11 | good |
+| carousel C-2 — carousel-rotating-images | top5pct-wall-wraps.jpg | public/images/wall-signs/top5pct-wall-wraps.jpg | R3 | Jun 8 | good |
+| carousel C-3 — carousel-rotating-images | top5pct-wall-decals-bedroom.jpg | public/images/wall-signs/top5pct-wall-decals-bedroom.jpg | R3 | Jun 6 | good |
+| carousel C-4 — carousel-rotating-images | top5pct-wall-sign-for-businesses.jpg | public/images/wall-signs/top5pct-wall-sign-for-businesses.jpg | R3 | Jun 6 | good |
+| carousel C-5 — carousel-rotating-images | top5pct-wall-signs-for-businesses.jpg | public/images/wall-signs/top5pct-wall-signs-for-businesses.jpg | R3 | Jun 6 | good |
+| card-1 — card-image-with-text | top5pct-wall-wraps.jpg | public/images/wall-signs/top5pct-wall-wraps.jpg | R3 | Jun 8 | repeat |
+| card-2 — card-image-with-text | top5pct-wall-signs-for-businesses.jpg | public/images/wall-signs/top5pct-wall-signs-for-businesses.jpg | R3 | Jun 6 | repeat |
+| card-detailed image1 — card-detailed-info | top5pct-wall-signs-joliet.jpg | public/images/wall-signs/top5pct-wall-signs-joliet.jpg | R3 | Jun 8 | locked |
+| slide-R — card-banner-slide-in (direction right) | top5pct-window-signs-joliet.jpg | public/images/window-signs/top5pct-window-signs-joliet.jpg | R2 | Jun 2 | good |
+| slide-L — card-banner-slide-in (direction left) | top5pct-window-graphics-joliet.jpg | public/images/window-signs/top5pct-window-graphics-joliet.jpg | R3 | Jun 7 | good |
+
+**Notes:**
+- card-1 repeats carousel C-2: both use `top5pct-wall-wraps.jpg` (R3, Jun 8, 567KB).
+- card-2 repeats carousel C-5: both use `top5pct-wall-signs-for-businesses.jpg` (R3, Jun 6, 365KB).
+- card-detailed image1 (`top5pct-wall-signs-joliet.jpg`) is locked (-rw-------) with a Jun 8 date and is only 54KB. This is the same unusual pattern seen in other wall-signs/ Jun 8 locked files — newer date, restricted permissions, small size.
+- carousel C-1 has "old" in the name (`top5pct-wall-signs-old.jpg`). R1 quality (May 11), unlocked, 496KB. Usable but flagged for eventual replacement.
+- Both slides are cross-dir from window-signs/. Slide texts are "Turn Your Walls Into a Brand Statement" (slide-R) and "Window Graphics and Door Signs Available Too" (slide-L). Cross-sell intent is clear and contextually appropriate.
+- Dir note: 3 locked Jun 8 files in wall-signs/ dir are NOT in this blade — they are used by the floor-signs page instead: `top5pct-article-window-wall-signs.jpg` (41KB), `top5pct-wall-decals-joliet.jpg` (63KB), `top5pct-banner-wall-decal-door-signs-joliet.jpg` (135KB). The wall-signs/ dir serves two pages simultaneously.
+
+---
+
 *Last updated: Jun 18, 2026*
