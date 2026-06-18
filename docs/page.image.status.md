@@ -176,4 +176,38 @@ Status codes: `good` | `initial` | `repeat` | `placeholder` | `undersized`
 
 ---
 
+### /signs/business-signs
+
+#### /signs/business-signs/posters
+
+**Blade:** `resources/views/pages/signs/posters.blade.php`
+**URL:** `/signs/business-signs/posters`
+**Verified:** Jun 18, 2026
+
+| section / category | image | image path | round | file date | status |
+|---|---|---|---|---|---|
+| hero — category-hero | top5pct-posters-printed-joliet.jpg | public/images/posters/top5pct-posters-printed-joliet.jpg | R2 | Jun 2 | good |
+| carousel C-1 — carousel-rotating-images | top5pct-big-posters-joliet.jpg | public/images/posters/top5pct-big-posters-joliet.jpg | R2 | Jun 2 | good |
+| carousel C-2 — carousel-rotating-images | top5pct-custom-posters.jpg | public/images/posters/top5pct-custom-posters.jpg | R2 | Jun 2 | good |
+| carousel C-3 — carousel-rotating-images | top5pct-poster-board-joliet.jpg | public/images/posters/top5pct-poster-board-joliet.jpg | R2 | Jun 2 | good |
+| card-1 — card-image-with-text | top5pct-poster-printing-joliet-shorewood-romeoville.jpg | public/images/posters/top5pct-poster-printing-joliet-shorewood-romeoville.jpg | Initial | Mar 16 | initial |
+| card-2 — card-image-with-text | top5pct-poster-maker-joliet-shorewood-plainfield.jpg | public/images/posters/top5pct-poster-maker-joliet-shorewood-plainfield.jpg | Initial | Mar 16 | initial |
+| card-2img-1 — card-2image-with-text | top5pct-poster-board-joliet-shorewood-romeoville.jpg | public/images/posters/top5pct-poster-board-joliet-shorewood-romeoville.jpg | Initial | Mar 16 | initial |
+| card-2img-2 — card-2image-with-text | top5pct-postermywall-joliet-shorewood-crest-hill.jpg | public/images/posters/top5pct-postermywall-joliet-shorewood-crest-hill.jpg | Initial | Mar 16 | initial |
+| card-3 — card-image-with-text | top5pct-poster-store-joliet-shorewood-plainfield.jpg | public/images/posters/top5pct-poster-store-joliet-shorewood-plainfield.jpg | Initial | Mar 16 | initial |
+| card-detailed image1 — card-detailed-info | top5pct-article-posters-joliet-pic1.jpg | public/images/posters/top5pct-article-posters-joliet-pic1.jpg | Initial | Mar 16 | initial |
+| slide-R — card-banner-slide-in (direction right) | top5pct-poster-printing-joliet-shorewood-romeoville.jpg | public/images/posters/top5pct-poster-printing-joliet-shorewood-romeoville.jpg | Initial | Mar 16 | repeat |
+| slide-L — card-banner-slide-in (direction left) | top5pct-retractable-banner.jpg | public/images/banners/top5pct-retractable-banner.jpg | R1 | May 11 | good |
+
+**Notes:**
+- Hard split: hero and all 3 carousel slots are R2 (Jun 2). Every card slot from card-1 down is Initial (Mar 16). The page was partially updated in round 2 but the lower half was never touched.
+- slide-R repeats card-1: both use `top5pct-poster-printing-joliet-shorewood-romeoville.jpg` (Initial, 51KB, locked).
+- 6 unique Initial files in use: card-1, card-2, card-2img-1, card-2img-2, card-3, card-detailed. All locked Mar 16.
+- card-detailed image1 is 35KB, the smallest locked Initial file seen so far in the inventory.
+- slide-L cross-dir from banners/: slide text is "Posters, Banners, and More" so a banner image is contextually intentional. R1 quality.
+- Dir has no R1 or R3 files at all — only R2 (4 files, Jun 2) and Initial (6 files, Mar 16). There are no unused newer images sitting in the dir that could swap into the card slots.
+- Unused Initial locked file in dir (not in blade): `top5pct-banner-poster-maker-joliet-romeoville-shorewood.jpg` (Mar 16, 177KB). Has "banner" in the name, likely a crossover or misnamed file.
+
+---
+
 *Last updated: Jun 18, 2026*
