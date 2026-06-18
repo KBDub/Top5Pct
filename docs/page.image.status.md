@@ -106,4 +106,38 @@ Status codes: `good` | `initial` | `repeat` | `placeholder` | `undersized`
 
 ---
 
+#### /signs/ground-signs/sidewalk-signs
+
+**Blade:** `resources/views/pages/signs/sidewalk-signs.blade.php`
+**URL:** `/signs/ground-signs/sidewalk-signs`
+**Verified:** Jun 18, 2026
+
+| section / category | image | image path | round | file date | status |
+|---|---|---|---|---|---|
+| hero — category-hero | top5pct-sidewalk-signage.jpg | public/images/sidewalk-signs/top5pct-sidewalk-signage.jpg | R2 | Jun 2 | good |
+| carousel C-1 — carousel-rotating-images | top5pct-a-frame-sign.jpg | public/images/sidewalk-signs/top5pct-a-frame-sign.jpg | R1 | May 11 | good |
+| carousel C-2 — carousel-rotating-images | top5pct-custom-a-frame-sidewalk-signs-joliet.jpg | public/images/sidewalk-signs/top5pct-custom-a-frame-sidewalk-signs-joliet.jpg | R1 | May 11 | good |
+| carousel C-3 — carousel-rotating-images | top5pct-sidewalk-sign.jpg | public/images/sidewalk-signs/top5pct-sidewalk-sign.jpg | R1 | May 11 | good |
+| carousel C-4 — carousel-rotating-images | top5pct-sidewalk-signs-joliet.jpg | public/images/sidewalk-signs/top5pct-sidewalk-signs-joliet.jpg | R2 | Jun 2 | good |
+| carousel C-5 — carousel-rotating-images | top5pct-a-frame-signs-joliet.jpg | public/images/sidewalk-signs/top5pct-a-frame-signs-joliet.jpg | R3 | Jun 9 | good |
+| carousel C-6 — carousel-rotating-images | top5pct-sidewalk-sign-a-frame-cresthill.jpg | public/images/sidewalk-signs/top5pct-sidewalk-sign-a-frame-cresthill.jpg | R3 | Jun 9 | good |
+| carousel C-7 — carousel-rotating-images | top5pct-sidewalk-signs-plainfield.jpg | public/images/sidewalk-signs/top5pct-sidewalk-signs-plainfield.jpg | R3 | Jun 8 | good |
+| card-1 — card-image-with-text | top5pct-a-frame-sidewalk-signs.jpg | public/images/sidewalk-signs/top5pct-a-frame-sidewalk-signs.jpg | R2 | Jun 2 | good |
+| card-2 — card-image-with-text | top5pct-sidewalk-signs-joliet-old.jpg | public/images/sidewalk-signs/top5pct-sidewalk-signs-joliet-old.jpg | R1 | May 11 | good |
+| card-3 — card-image-with-text | top5pct-sidewalk-signs-joliet-shorewood-crest-hill.jpg | public/images/sidewalk-signs/top5pct-sidewalk-signs-joliet-shorewood-crest-hill.jpg | Initial | Mar 16 | initial |
+| card-detailed image1 — card-detailed-info | top5pct-article-a-frame-sidewalk-signs.jpg | public/images/sidewalk-signs/top5pct-article-a-frame-sidewalk-signs.jpg | Initial | Mar 16 | initial |
+| slide-L — card-banner-slide-in (direction left) | top5pct-a-frame-sidewalk-sign-joliet.jpg | public/images/sidewalk-signs/top5pct-a-frame-sidewalk-sign-joliet.jpg | Initial | Mar 16 | initial |
+| slide-R — card-banner-slide-in (direction right) | top5pct-business-signs-joliet-shorewood-crest-hill.jpg | public/images/business-signs/top5pct-business-signs-joliet-shorewood-crest-hill.jpg | Initial | Mar 16 | initial |
+
+**Notes:**
+- 4 Initial slots in the lower half of the page: card-3, card-detailed, slide-L, and slide-R. All are locked Mar 16 files.
+- slide-R is a cross-dir business-signs/ image. Slide text is "Also Need Window or Wall Signs?" so using a business-signs image is contextually intentional, but the file is Initial (76KB, locked).
+- card-detailed image1 (`top5pct-article-a-frame-sidewalk-signs.jpg`) is the same Initial file used on the a-frame-signs page. That file is serving two pages.
+- card-2 filename contains "old" suffix (`top5pct-sidewalk-signs-joliet-old.jpg`). R1 quality, not locked, usable.
+- No repeats among any of the 14 slots. All unique files.
+- Carousel is strong: 7 images spanning R1, R2, and R3.
+- Unused locked Initial files in sidewalk-signs/ dir (not in blade): `top5pct-sidewalk-a-frames-joliet-shorewood.jpg` (91KB), `top5pct-banner-a-frame-sidewalk-signs-joliet-romeoville.jpg` (96KB).
+
+---
+
 *Last updated: Jun 18, 2026*
