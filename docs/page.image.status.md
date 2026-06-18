@@ -1113,6 +1113,141 @@ Status codes: `good` | `initial` | `repeat` | `placeholder` | `undersized`
 
 ---
 
+## Unused Images by Category and Page
+
+Files present in a page's own dir but not referenced by that page's blade. Organized by section, then page. Pages with zero unused files are omitted. "Unlocked, unused" files — especially R3 — are the clearest signal of incomplete blade wiring.
+
+---
+
+### Signs / Table Signs
+
+**table-cloths** (`public/images/table-cloths/`)
+| file | round | date | size | locked | note |
+|---|---|---|---|---|---|
+| top5pct-custom-table-cloth-joliet-crest-hill.jpg | Initial | Mar 16 | unknown | yes | candidate for slide-L or card-detailed replacement |
+
+**table-runners** (`public/images/table-runners/`)
+| file | round | date | size | locked | note |
+|---|---|---|---|---|---|
+| top5pct-printed-table-cloths.jpg | R2 | Jun 2 | unknown | no | table cloth image in a table runners dir, wrong product |
+| top5pct-personalized-tablecloth-joliet.jpg | R1 | May 11 | unknown | no | table cloth image in a table runners dir, wrong product |
+| top5pct-table-cloths.jpg | R1 | May 11 | unknown | no | table cloth image in a table runners dir, wrong product |
+| top5pct-custom-table-cloth.jpg | R1 | May 11 | unknown | no | table cloth image in a table runners dir, wrong product |
+
+---
+
+### Signs / Vehicle Graphics
+
+**dot-decals** (`public/images/dot-decals/` or similar)
+| file | round | date | size | locked | note |
+|---|---|---|---|---|---|
+| top5pct-banner-DOT-stickers-joliet-shorewood-channahon.jpg | Initial | Mar 16 | 113KB | yes | unused locked Initial |
+| top5pct-trucking-logo-joliet-shorewood-crest-hill.jpg | Initial | Mar 16 | 92KB | yes | unused locked Initial |
+| top5pct-dot-decals-joliet-shorewood-rockdale.jpg | Initial | Mar 16 | 63KB | yes | unused locked Initial |
+| top5pct-trucking-logo-joliet-shorewood-rockdale.jpg | Initial | Mar 16 | 45KB | yes | unused locked Initial |
+
+**vehicle-magnets** (`public/images/vehicle-magnets/`)
+| file | round | date | size | locked | note |
+|---|---|---|---|---|---|
+| top5pct-banner-car-magnets-joliet-shorewood-crest-hill.jpg | Initial | Mar 16 | 63KB | yes | unused locked Initial |
+| top5pct-business-magnets-car-magnets-joliet.jpg | Initial | Mar 16 | 52KB | yes | unused locked Initial |
+| top5pct-car-magnets-truck-magnets-joliet.jpg | Initial | Mar 16 | 44KB | yes | unused locked Initial |
+| top5pct-large-magnets-magnets-near-me-joliet.jpg | Initial | Mar 16 | 40KB | yes | unused locked Initial |
+| top5pct-article-car-magnets-truck-magnets.jpg | Initial | Mar 16 | 22KB | yes | unused locked Initial |
+| top5pct-joliet-car-magnets.jpg | R2 | Jun 2 | 651KB | no | unlocked, unused — candidate to replace locked slide-R |
+| top5pct-yard-signs-near-me.jpg | R2 | Jun 2 | 514KB | no | unlocked, unused — off-topic filename (yard signs) in magnets dir |
+| top5pct-truck-sign-magnets-joliet.jpg | R2 | Jun 2 | 364KB | no | unlocked, unused here — is used as slide-L on dot-decals page |
+
+**automobile-graphics** (`public/images/automobile-graphics/`)
+| file | round | date | size | locked | note |
+|---|---|---|---|---|---|
+| top5pct-banner-vinyl-lettering-car-wraps-joliet.jpg | Initial | Mar 16 | 248KB | yes | largest Initial file across all dirs, unused locked |
+| top5pct-vinyl-lettering-car-graphics-joliet-shorewood.jpg | Initial | Mar 16 | 67KB | yes | unused locked Initial |
+| top5pct-car-wraps-vinyl-lettering-joliet-shorewood.jpg | Initial | Mar 16 | 63KB | yes | unused locked Initial |
+| top5pct-boat-decals-joliet-shorewood-crest-hill.jpg | Initial | Mar 16 | 61KB | yes | unused locked Initial |
+| top5pct-truck-decal-joliet-shorewood-rockdale.jpg | Initial | Mar 16 | 49KB | yes | unused locked Initial |
+
+---
+
+### Custom Apparel / Group Wear
+
+**corporate-wear-shirts** (`public/images/corporate-wear/`)
+| file | round | date | size | locked | note |
+|---|---|---|---|---|---|
+| top5pct-custom-corporate-t-shirts-joliet-shorewood.jpg | Initial | Mar 16 | 45KB | yes | unused locked Initial |
+| top5pct-custom-hoodie-pullover-joliet-shorewood.jpg | Initial | Mar 16 | 41KB | yes | unused locked Initial |
+| top5pct-custom-polo-shirts-joliet-shorewood-crest-hill.jpg | Initial | Mar 16 | 30KB | yes | unused locked Initial |
+
+**reunion-shirts** (`public/images/reunion-shirts/`)
+| file | round | date | size | locked | note |
+|---|---|---|---|---|---|
+| top5pct-class-reunion-shirts-joliet-shorewood.jpg | Initial | Mar 16 | 55KB | yes | unused locked Initial |
+| top5pct-westinghouse-class-reunion-shirt-joliet-shorewood.jpg | Initial | Mar 16 | 43KB | yes | unused locked Initial |
+
+---
+
+### Custom Apparel / Specialty Materials
+
+All specialty-materials pages except puff-shirts and vinyl have zero unused files in their own dirs. Puff-shirts dir is completely empty. Vinyl is below.
+
+**vinyl** (`public/images/vinyl/`)
+| file | round | date | size | locked | note |
+|---|---|---|---|---|---|
+| top5pct-article-yard-signs-buy.jpg | May 18 batch | May 18 | 47KB | yes | wrong-subject — yard signs image, not vinyl apparel |
+| top5pct-banner-yard-signs-joliet-shorewood-crest-hill.jpg | May 18 batch | May 18 | 96KB | yes | wrong-subject — yard signs image, not vinyl apparel |
+| custom-hoodies.jpg | May 18 batch | May 18 | 294KB | yes | locked, unused, no blade slot assigned |
+| vinyl-shirts.jpg | May 18 batch | May 18 | 388KB | yes | superseded by R3 top5pct-vinyl-shirts.jpg (same size, now used as hero) |
+| vinyl-t-shirt-maker.jpg | May 18 batch | May 18 | 386KB | yes | superseded by R3 top5pct-vinyl-t-shirt-maker.jpg (same size, now card-detailed) |
+
+---
+
+### Custom Apparel / Printing Options
+
+Rhinestone, embroidery, screen-printing, and dye-sublimation have zero unused files in their own dirs.
+
+**dtf-printing** (`public/images/dtf-transfers/`)
+| file | round | date | size | locked | note |
+|---|---|---|---|---|---|
+| toptpct-dtf-transfer-pricing.jpg | Initial | Mar 16 | 201KB | yes | locked, unused — prefix typo "toptpct" matches other locked Initial files in this dir |
+| top5pct-custom-baby-clothing-joliet.jpg | R2 | Jun 2 | 330KB | no | unlocked, unused — candidate for a future card slot |
+| top5pct-custom-shirt-with-picture.jpg | R1 | May 11 | 612KB | no | unlocked, unused — candidate for a future card slot |
+| top5pct-custom-sweatshirts.jpg | R1 | May 11 | 170KB | no | unlocked, unused — candidate for a future card slot |
+
+**digital-vinyl** (`public/images/digital-vinyl/`)
+| file | round | date | size | locked | note |
+|---|---|---|---|---|---|
+| top5pct-article-yard-signs-buy.jpg | May 18 batch | May 18 | 47KB | yes | wrong-subject — yard signs image copied from vinyl/ batch |
+| top5pct-banner-yard-signs-joliet-shorewood-crest-hill.jpg | May 18 batch | May 18 | 96KB | yes | wrong-subject — yard signs image copied from vinyl/ batch |
+| custom-hoodies.jpg | May 18 batch | May 18 | 294KB | yes | locked, unused, no blade slot assigned |
+| vinyl-t-shirt-maker.jpg | May 18 batch | May 18 | 386KB | yes | locked, unused — R3 replacements exist but this original never assigned |
+| top5pct-digital-vinyl-shirts.jpg | R3 | Jun 8 | 706KB | no | **unlocked R3, unused — staged replacement not yet wired into blade** |
+| top5pct-digital-vinyl-hoodies-in-joliet.jpg | R3 | Jun 8 | 398KB | no | **unlocked R3, unused — staged replacement not yet wired into blade** |
+| top5pct-digital-vinyl-hoodie.jpg | R3 | Jun 8 | 379KB | no | **unlocked R3, unused — staged replacement not yet wired into blade** |
+
+---
+
+### Unlocked unused files — priority signal
+
+These unlocked files are sitting in their dirs but unassigned to any blade slot. These are the clearest sign of incomplete wiring — the image is ready, permissions are fine, it just needs a blade reference.
+
+| dir | file | round | date | size | current status |
+|---|---|---|---|---|---|
+| digital-vinyl/ | top5pct-digital-vinyl-shirts.jpg | R3 | Jun 8 | 706KB | unlocked, unassigned |
+| digital-vinyl/ | top5pct-digital-vinyl-hoodies-in-joliet.jpg | R3 | Jun 8 | 398KB | unlocked, unassigned |
+| digital-vinyl/ | top5pct-digital-vinyl-hoodie.jpg | R3 | Jun 8 | 379KB | unlocked, unassigned |
+| dtf-transfers/ | top5pct-custom-baby-clothing-joliet.jpg | R2 | Jun 2 | 330KB | unlocked, unassigned |
+| dtf-transfers/ | top5pct-custom-shirt-with-picture.jpg | R1 | May 11 | 612KB | unlocked, unassigned |
+| dtf-transfers/ | top5pct-custom-sweatshirts.jpg | R1 | May 11 | 170KB | unlocked, unassigned |
+| vehicle-magnets/ | top5pct-joliet-car-magnets.jpg | R2 | Jun 2 | 651KB | unlocked, unassigned to vehicle-magnets blade |
+| vehicle-magnets/ | top5pct-truck-sign-magnets-joliet.jpg | R2 | Jun 2 | 364KB | unlocked, used on dot-decals blade but unassigned here |
+| vehicle-magnets/ | top5pct-yard-signs-near-me.jpg | R2 | Jun 2 | 514KB | unlocked, unassigned, off-topic filename |
+| table-runners/ | top5pct-printed-table-cloths.jpg | R2 | Jun 2 | unknown | unlocked, wrong product in dir |
+| table-runners/ | top5pct-personalized-tablecloth-joliet.jpg | R1 | May 11 | unknown | unlocked, wrong product in dir |
+| table-runners/ | top5pct-table-cloths.jpg | R1 | May 11 | unknown | unlocked, wrong product in dir |
+| table-runners/ | top5pct-custom-table-cloth.jpg | R1 | May 11 | unknown | unlocked, wrong product in dir |
+
+---
+
 ## Inventory Summary (Custom Apparel Section, Jun 18, 2026)
 
 **Pages covered:** 14 pages across specialty-materials (reflective, foil, holographic, brick, flock, glow-in-the-dark, puff, vinyl) and printing-options (rhinestone, embroidery, screen-printing, dye-sublimation, dtf-printing, digital-vinyl).
