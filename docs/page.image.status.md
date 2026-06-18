@@ -431,4 +431,44 @@ Status codes: `good` | `initial` | `repeat` | `placeholder` | `undersized`
 
 ---
 
+#### /vehicle-graphics/automobile-graphics
+
+**Blade:** `resources/views/pages/vehicle-graphics/automobile-graphics.blade.php`
+**URL:** `/vehicle-graphics/automobile-graphics`
+**Verified:** Jun 18, 2026
+
+| section / category | image | image path | round | file date | status |
+|---|---|---|---|---|---|
+| hero — category-hero | top5pct-auto-window-wraps.jpg | public/images/automobile-graphics/top5pct-auto-window-wraps.jpg | R2 | Jun 2 | good |
+| carousel C-1 — carousel-rotating-images | top5pct-car-wraps.jpg | public/images/automobile-graphics/top5pct-car-wraps.jpg | R1 | May 11 | good |
+| carousel C-2 — carousel-rotating-images | top5pct-pickup-truck-graphics.jpg | public/images/automobile-graphics/top5pct-pickup-truck-graphics.jpg | R1 | May 11 | good |
+| carousel C-3 — carousel-rotating-images | top5pct-trailer-decal-graphics.jpg | public/images/automobile-graphics/top5pct-trailer-decal-graphics.jpg | R1 | May 11 | good |
+| carousel C-4 — carousel-rotating-images | top5pct-trailer-decals.jpg | public/images/automobile-graphics/top5pct-trailer-decals.jpg | R1 | May 11 | good |
+| carousel C-5 — carousel-rotating-images | top5pct-car-graphics-installers-joliet.jpg | public/images/automobile-graphics/top5pct-car-graphics-installers-joliet.jpg | R3 | Jun 6 | good |
+| carousel C-6 — carousel-rotating-images | top5pct-decals-for-work-trucks.jpg | public/images/automobile-graphics/top5pct-decals-for-work-trucks.jpg | R3 | Jun 6 | good |
+| carousel C-7 — carousel-rotating-images | top5pct-car-wrap-decals-joliet.jpg | public/images/automobile-graphics/top5pct-car-wrap-decals-joliet.jpg | R3 | Jun 9 | good |
+| carousel C-8 — carousel-rotating-images | top5pct-vehicle-graphics-near-me.jpg | public/images/automobile-graphics/top5pct-vehicle-graphics-near-me.jpg | R3 | Jun 6 | good |
+| carousel C-9 — carousel-rotating-images | top5pct-vehicle-signs-joliet.jpg | public/images/automobile-graphics/top5pct-vehicle-signs-joliet.jpg | R3 | Jun 6 | good |
+| card-1 — card-image-with-text | top5pct-van-graphics-decals.jpg | public/images/automobile-graphics/top5pct-van-graphics-decals.jpg | R1 | May 11 | good |
+| card-2 — card-image-with-text | top5pct-vecal-decals.jpg | public/images/automobile-graphics/top5pct-vecal-decals.jpg | R1 | May 11 | good |
+| card-2img image1 — card-2image-with-text | top5pct-vehicle-graphics.jpg | public/images/automobile-graphics/top5pct-vehicle-graphics.jpg | R1 | May 11 | good |
+| card-2img image2 — card-2image-with-text | top5pct-vehicle-window-graphics-in-joliet.jpg | public/images/automobile-graphics/top5pct-vehicle-window-graphics-in-joliet.jpg | R1 | May 11 | good |
+| card-3 — card-image-with-text | top5pct-vehicle-window-graphics-joliet.jpg | public/images/automobile-graphics/top5pct-vehicle-window-graphics-joliet.jpg | R1 | May 11 | good |
+| card-detailed image1 — card-detailed-info | top5pct-article-car-wraps-vinyl-lettering.jpg | public/images/automobile-graphics/top5pct-article-car-wraps-vinyl-lettering.jpg | Initial | Mar 17 | initial, locked |
+| slide-L — card-banner-slide-in (direction left) | top5pct-vinyl-lettering-car-graphics-joliet-crest-hill.jpg | public/images/automobile-graphics/top5pct-vinyl-lettering-car-graphics-joliet-crest-hill.jpg | Initial | Mar 17 | initial, locked |
+| slide-R — card-banner-slide-in (direction right) | top5pct-truck-sign-magnets-joliet.jpg | public/images/vehicle-magnets/top5pct-truck-sign-magnets-joliet.jpg | R2 | Jun 2 | good |
+
+**Notes:**
+- 18 slots — largest page in the inventory so far, tied with window-signs (17).
+- card-detailed is Initial locked (27KB, Mar 17). Same article-slot pattern seen on dot-decals and other pages.
+- slide-L is Initial locked (67KB, Mar 17). Dir has 3 unused unlocked R1/R2 files that could replace it.
+- No repeats — all 18 images are unique within this page.
+- 9-image carousel spans R1 and R3 directly, skipping R2. C-1 through C-4 are R1 (May 11); C-5 through C-9 are R3 (Jun 6 and Jun 9). No R2 files in carousel.
+- slide-R cross-dir from vehicle-magnets/ (R2, Jun 2, 364KB). Slide text "Car Graphics, Magnets, and Wraps, All From One Shop" — cross-sell appropriate. This same file also serves as slide-L on the vehicle-magnets page, making it the only cross-dir file serving two pages from opposite directions.
+- `top5pct-vecal-decals.jpg` (card-2, R1, May 11) — "vecal" appears to be a typo in the filename ("decal" transposed). File is unlocked and in active use. Not a functional issue.
+- `top5pct-vehicle-graphics.jpg` (card-2img image1) is also the slide-L on the vehicle-magnets page — cross-page reuse, not a within-page repeat.
+- 5 unused locked Initial files in dir (none in blade): `top5pct-banner-vinyl-lettering-car-wraps-joliet.jpg` (248KB, notably the largest Initial file seen across all dirs), `top5pct-truck-decal-joliet-shorewood-rockdale.jpg` (49KB), `top5pct-boat-decals-joliet-shorewood-crest-hill.jpg` (61KB), `top5pct-car-wraps-vinyl-lettering-joliet-shorewood.jpg` (63KB), `top5pct-vinyl-lettering-car-graphics-joliet-shorewood.jpg` (67KB).
+
+---
+
 *Last updated: Jun 18, 2026*
