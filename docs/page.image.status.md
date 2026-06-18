@@ -75,4 +75,35 @@ Status codes: `good` | `initial` | `repeat` | `placeholder` | `undersized`
 
 ---
 
+### /signs/ground-signs
+
+#### /signs/ground-signs/sidewalk-signs-a-frame-signs
+
+**Blade:** `resources/views/pages/signs/sidewalk-signs-a-frame-signs.blade.php`
+**URL:** `/signs/ground-signs/sidewalk-signs-a-frame-signs`
+**Verified:** Jun 18, 2026
+
+| section / category | image | image path | round | file date | status |
+|---|---|---|---|---|---|
+| hero — category-hero | top5pct-a-frame-sidewalk-signs.jpg | public/images/sidewalk-signs/top5pct-a-frame-sidewalk-signs.jpg | R2 | Jun 2 | good |
+| carousel C-1 — carousel-rotating-images | top5pct-a-frame-sign.jpg | public/images/sidewalk-signs/top5pct-a-frame-sign.jpg | R1 | May 11 | good |
+| carousel C-2 — carousel-rotating-images | top5pct-custom-a-frame-sidewalk-signs-joliet.jpg | public/images/sidewalk-signs/top5pct-custom-a-frame-sidewalk-signs-joliet.jpg | R1 | May 11 | good |
+| carousel C-3 — carousel-rotating-images | top5pct-sidewalk-sign.jpg | public/images/sidewalk-signs/top5pct-sidewalk-sign.jpg | R1 | May 11 | good |
+| carousel C-4 — carousel-rotating-images | top5pct-sidewalk-signs-joliet.jpg | public/images/sidewalk-signs/top5pct-sidewalk-signs-joliet.jpg | R2 | Jun 2 | good |
+| card-1 — card-image-with-text | top5pct-sidewalk-signs-joliet-old.jpg | public/images/sidewalk-signs/top5pct-sidewalk-signs-joliet-old.jpg | R1 | May 11 | good |
+| card-2 — card-image-with-text | top5pct-sidewalk-signage.jpg | public/images/sidewalk-signs/top5pct-sidewalk-signage.jpg | R2 | Jun 2 | good |
+| card-detailed image1 — card-detailed-info | top5pct-article-a-frame-sidewalk-signs.jpg | public/images/sidewalk-signs/top5pct-article-a-frame-sidewalk-signs.jpg | Initial | Mar 16 | initial |
+| slide-R — card-banner-slide-in (direction right) | top5pct-a-frame-sidewalk-signs.jpg | public/images/sidewalk-signs/top5pct-a-frame-sidewalk-signs.jpg | R2 | Jun 2 | repeat |
+| slide-L — card-banner-slide-in (direction left) | top5pct-mesh-construction-banner.jpg | public/images/banners/top5pct-mesh-construction-banner.jpg | R2 | Jun 2 | good |
+
+**Notes:**
+- slide-R repeats hero (same file: `top5pct-a-frame-sidewalk-signs.jpg`). One of those two slots needs a different image.
+- card-detailed image1 is a locked (permissions -rw-------) Initial file at 56KB.
+- card-1 filename contains "old" suffix (`top5pct-sidewalk-signs-joliet-old.jpg`). R1 quality and not locked, but naming suggests it may be an older product shot. Worth reviewing visually.
+- 3 R3 files exist in sidewalk-signs/ dir but are NOT in this blade's carousel: `top5pct-a-frame-signs-joliet.jpg` (Jun 9), `top5pct-sidewalk-sign-a-frame-cresthill.jpg` (Jun 9), `top5pct-sidewalk-signs-plainfield.jpg` (Jun 8). Adding any of these to the carousel would also resolve the slide-R repeat (swap slide-R for one of these).
+- Unused locked Initial files in dir (not in blade): `top5pct-a-frame-sidewalk-sign-joliet.jpg`, `top5pct-sidewalk-signs-joliet-shorewood-crest-hill.jpg`, `top5pct-sidewalk-a-frames-joliet-shorewood.jpg`, `top5pct-banner-a-frame-sidewalk-signs-joliet-romeoville.jpg`.
+- Page content note: schema, title, heading, and FAQs are all about "Parking Signs," not a-frame/sidewalk signs. The images show sidewalk/a-frame signs. URL and content topic are misaligned. Not an image issue but worth flagging.
+
+---
+
 *Last updated: Jun 18, 2026*
