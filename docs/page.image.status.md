@@ -238,4 +238,33 @@ Status codes: `good` | `initial` | `repeat` | `placeholder` | `undersized`
 
 ---
 
+#### /signs/business-signs/floor-signs
+
+**Blade:** `resources/views/pages/signs/floor-signs.blade.php`
+**URL:** `/signs/business-signs/floor-signs`
+**Verified:** Jun 18, 2026
+
+| section / category | image | image path | round | file date | status |
+|---|---|---|---|---|---|
+| hero — category-hero | top5pct-wall-signs-for-businesses.jpg | public/images/wall-signs/top5pct-wall-signs-for-businesses.jpg | R3 | Jun 6 | wrong topic |
+| carousel C-1 — carousel-rotating-images | top5pct-wall-signs-old.jpg | public/images/wall-signs/top5pct-wall-signs-old.jpg | R1 | May 11 | wrong topic |
+| carousel C-2 — carousel-rotating-images | top5pct-wall-sign-for-businesses.jpg | public/images/wall-signs/top5pct-wall-sign-for-businesses.jpg | R3 | Jun 6 | wrong topic |
+| carousel C-3 — carousel-rotating-images | top5pct-wall-decals-bedroom.jpg | public/images/wall-signs/top5pct-wall-decals-bedroom.jpg | R3 | Jun 6 | wrong topic |
+| carousel C-4 — carousel-rotating-images | top5pct-wall-wraps.jpg | public/images/wall-signs/top5pct-wall-wraps.jpg | R3 | Jun 8 | wrong topic |
+| card-1 — card-image-with-text | top5pct-wall-signs.jpg | public/images/wall-signs/top5pct-wall-signs.jpg | R3 | Jun 8 | wrong topic |
+| card-2 — card-image-with-text | top5pct-article-window-wall-signs.jpg | public/images/wall-signs/top5pct-article-window-wall-signs.jpg | R3 | Jun 8 | wrong topic, locked |
+| card-detailed image1 — card-detailed-info | top5pct-banner-wall-decal-door-signs-joliet.jpg | public/images/wall-signs/top5pct-banner-wall-decal-door-signs-joliet.jpg | R3 | Jun 8 | wrong topic, locked |
+| slide-R — card-banner-slide-in (direction right) | top5pct-wall-decals-joliet.jpg | public/images/wall-signs/top5pct-wall-decals-joliet.jpg | R3 | Jun 8 | wrong topic, locked |
+| slide-L — card-banner-slide-in (direction left) | top5pct-window-signs-for-businesses-joliet.jpg | public/images/window-signs/top5pct-window-signs-for-businesses-joliet.jpg | R3 | Jun 8 | wrong topic |
+
+**Notes:**
+- Critical finding: public/images/floor-signs/ dir is completely empty (0 files). Every image on this page is pulled from wall-signs/ (9 slots) or window-signs/ (1 slot). There is no floor-signs photography on this page at all.
+- All 10 slots are wrong topic by definition — this page is about floor graphics but every image shows wall signs, wall decals, or window signs.
+- 3 of the wall-signs/ cross-dir images are also locked despite Jun 8 dates: `top5pct-article-window-wall-signs.jpg` (41KB), `top5pct-wall-decals-joliet.jpg` (63KB), `top5pct-banner-wall-decal-door-signs-joliet.jpg` (135KB). These are small files with restricted permissions, same pattern as Initial files despite the newer date.
+- `top5pct-wall-signs-old.jpg` (carousel C-1) has "old" in the name. R1 quality, 496KB, unlocked, but the name flags it as a candidate for eventual replacement.
+- Slide-L cross-dir from window-signs/: slide text is "Window Signs and Wall Wraps Available Too" — contextually acceptable as a cross-sell slide even though it is still wrong topic for a floor-signs page.
+- This page requires dedicated floor-signs photography before any of its image slots can be marked good. All 10 slots need new images from the correct product category.
+
+---
+
 *Last updated: Jun 18, 2026*
