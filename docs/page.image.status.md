@@ -210,4 +210,32 @@ Status codes: `good` | `initial` | `repeat` | `placeholder` | `undersized`
 
 ---
 
+#### /signs/business-signs/door-signs
+
+**Blade:** `resources/views/pages/signs/door-signs.blade.php`
+**URL:** `/signs/business-signs/door-signs`
+**Verified:** Jun 18, 2026
+
+| section / category | image | image path | round | file date | status |
+|---|---|---|---|---|---|
+| hero — category-hero | top5pct-door-signage.jpg | public/images/door-signs/top5pct-door-signage.jpg | R1 | May 11 | good |
+| carousel C-1 — carousel-rotating-images | top5pct-door-lettering-vinyl.jpg | public/images/door-signs/top5pct-door-lettering-vinyl.jpg | R3 | Jun 7 | good |
+| carousel C-2 — carousel-rotating-images | top5pct-business-door-signs.jpg | public/images/door-signs/top5pct-business-door-signs.jpg | R2 | Jun 2 | good |
+| carousel C-3 — carousel-rotating-images | top5pct-door-sign-installers.jpg | public/images/door-signs/top5pct-door-sign-installers.jpg | R2 | Jun 2 | good |
+| carousel C-4 — carousel-rotating-images | top5pct-door-wraps-joliet.jpg | public/images/door-signs/top5pct-door-wraps-joliet.jpg | R3 | Jun 8 | good |
+| card-1 — card-image-with-text | top5pct-vinyl-door-lettering.jpg | public/images/door-signs/top5pct-vinyl-door-lettering.jpg | R2 | Jun 2 | good |
+| card-2 — card-image-with-text | top5pct-vinyl-door-signs.jpg | public/images/door-signs/top5pct-vinyl-door-signs.jpg | R2 | Jun 2 | good |
+| card-detailed image1 — card-detailed-info | top5pct-door-signs-joliet-shorewood-crest-hill.jpg | public/images/door-signs/top5pct-door-signs-joliet-shorewood-crest-hill.jpg | Initial | Mar 16 | initial |
+| slide-L — card-banner-slide-in (direction left) | top5pct-business-door-signs.jpg | public/images/door-signs/top5pct-business-door-signs.jpg | R2 | Jun 2 | repeat |
+| slide-R — card-banner-slide-in (direction right) | top5pct-wall-sign-for-businesses.jpg | public/images/wall-signs/top5pct-wall-sign-for-businesses.jpg | R3 | Jun 6 | good |
+
+**Notes:**
+- slide-L repeats carousel C-2: both use `top5pct-business-door-signs.jpg` (R2, Jun 2, 486KB).
+- Only 1 Initial slot: card-detailed image1 (`top5pct-door-signs-joliet-shorewood-crest-hill.jpg`, 60KB, locked Mar 16). The cleanest page in the inventory so far by issue count.
+- slide-R cross-dir from wall-signs/ (R3, Jun 6). Slide text is "Wall Graphics and Window Signs, Same Fast Turnaround" so a wall-signs image is contextually intentional and well rounded.
+- hero is R1 (May 11). All 8 files in the dir are in use. No unused images available for a hero upgrade.
+- Filename note: carousel C-1 is `top5pct-door-lettering-vinyl.jpg` (R3) and card-1 is `top5pct-vinyl-door-lettering.jpg` (R2). Similar names, different files, both unique. No conflict.
+
+---
+
 *Last updated: Jun 18, 2026*
