@@ -786,4 +786,38 @@ Status codes: `good` | `initial` | `repeat` | `placeholder` | `undersized`
 
 ---
 
+#### /custom-apparel/specialty-materials/puff-shirts
+
+**Blade:** `resources/views/pages/custom-apparel/puff-shirts.blade.php`
+**URL:** `/custom-apparel/specialty-materials/puff-shirts`
+**Dir:** `public/images/puff-shirts/` — dir exists but is **completely empty**. Every image reference in the blade is cross-dir from `custom-shirts/`. First specialty page with a fully empty own dir.
+**Note:** Blade is one level up from URL path (`custom-apparel/` not `custom-apparel/specialty-materials/`). Route mapped separately.
+**Verified:** Jun 18, 2026
+
+| section / category | image | image path | round | file date | status |
+|---|---|---|---|---|---|
+| hero — category-hero | top5pct-custom-puff-shirts.jpg | public/images/custom-shirts/top5pct-custom-puff-shirts.jpg | R2 | Jun 2 | good, cross-dir |
+| carousel C-1 — carousel-rotating-images | top5pct-banner-custom-apparel-custom-shirts-custom-hoodies-custom-caps.jpg | public/images/custom-shirts/top5pct-banner-custom-apparel-custom-shirts-custom-hoodies-custom-caps.jpg | Initial | Mar 16 | initial, locked, cross-dir |
+| carousel C-2 — carousel-rotating-images | top5pct-puff-shirts-joliet.jpg | public/images/custom-shirts/top5pct-puff-shirts-joliet.jpg | R2 | Jun 2 | good, cross-dir |
+| carousel C-3 — carousel-rotating-images | top5pct-puff-shirts.jpg | public/images/custom-shirts/top5pct-puff-shirts.jpg | R2 | Jun 2 | good, cross-dir |
+| carousel C-4 — carousel-rotating-images | top5pct-custom-vinyl-shirts.jpg | public/images/custom-shirts/top5pct-custom-vinyl-shirts.jpg | R1 | May 11 | good, cross-dir |
+| card-1 — card-image-with-text | top5pct-custom-brick-shirts-hoodies-cap-joliet.jpg | public/images/custom-shirts/top5pct-custom-brick-shirts-hoodies-cap-joliet.jpg | Initial | Mar 16 | initial, locked, cross-dir |
+| card-2 — card-image-with-text | top5pct-custom-pattern-shirts-caps-hoodies-joliet.jpg | public/images/custom-shirts/top5pct-custom-pattern-shirts-caps-hoodies-joliet.jpg | Initial | Mar 16 | initial, locked, cross-dir |
+| card-detailed image1 — card-detailed-info (single image) | top5pct-custom-brick-shirts-hoodies-cap-joliet.jpg | public/images/custom-shirts/top5pct-custom-brick-shirts-hoodies-cap-joliet.jpg | Initial | Mar 16 | initial, locked, cross-dir, repeat |
+| slide-L — card-banner-slide-in (direction left) | top5pct-custom-brick-shirts-hoodies-cap-joliet.jpg | public/images/custom-shirts/top5pct-custom-brick-shirts-hoodies-cap-joliet.jpg | Initial | Mar 16 | initial, locked, cross-dir, repeat |
+| slide-R — card-banner-slide-in (direction right) | top5pct-rhinetsone-t-shirts.jpg | public/images/custom-shirts/top5pct-rhinetsone-t-shirts.jpg | R2 | Jun 2 | good, cross-dir |
+
+**Notes:**
+- 10 slots total. 5 good, 5 locked. 50% locked. All 10 slots are cross-dir from `custom-shirts/` — the puff-shirts/ own dir is completely empty.
+- Three separate locked files across the 5 locked slots — different pattern from all prior specialty pages (which each had one locked file filling 5 slots). Breakdown: `top5pct-custom-brick-shirts-hoodies-cap-joliet.jpg` (Initial, 28KB) fills card-1, card-detailed, and slide-L (3 slots); `top5pct-custom-pattern-shirts-caps-hoodies-joliet.jpg` (Initial, 27KB) fills card-2 (1 slot); `top5pct-banner-custom-apparel-custom-shirts-custom-hoodies-custom-caps.jpg` (Initial, 117KB) fills carousel C-1 (1 slot).
+- `top5pct-banner-custom-apparel-...-caps.jpg` is the largest locked file seen in the inventory at 117KB (Initial, Mar 16). All prior locked thumbnails were under 35KB. This is a banner-sized image, not a thumbnail placeholder.
+- card-1, card-detailed image1, and slide-L all show `top5pct-custom-brick-shirts-hoodies-cap-joliet.jpg` — a brick-shirts image on a puff-shirts page. The card content describes puff printing but the image shows a different technique. Wrong-topic image, not just a placeholder.
+- card-2 shows `top5pct-custom-pattern-shirts-caps-hoodies-joliet.jpg` — a pattern-shirts image on a puff page. Same wrong-topic issue.
+- Puff-specific images do exist in `custom-shirts/` (top5pct-custom-puff-shirts.jpg, top5pct-puff-shirts-joliet.jpg, top5pct-puff-shirts.jpg — all R2, unlocked). They are used in the hero, C-2, and C-3 slots but were not assigned to the card or card-detailed slots. The locked slots appear to have been filled with whatever Initial files were available at build time.
+- card-detailed-info is single-image (only `image1` and `alt1`). Seventh consecutive specialty-materials page with single-image card-detailed.
+- Carousel C-4 uses `top5pct-custom-vinyl-shirts.jpg` (R1, May 11) — same file used as C-4 on flock, glow, and brick pages. Alt text here reads "Custom apparel and puff print shirts made in Joliet" — at least mentions puff print, unlike prior pages where the alt was entirely off-topic. Fourth consecutive specialty page using this same C-4 cross-dir file.
+- slide-R uses `top5pct-rhinetsone-t-shirts.jpg` — note the filename contains a typo ("rhinetsone" instead of "rhinestone"). File is unlocked and loads correctly, but the filename typo is a permanent artifact in the codebase.
+
+---
+
 *Last updated: Jun 18, 2026*
