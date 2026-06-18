@@ -931,4 +931,44 @@ Status codes: `good` | `initial` | `repeat` | `placeholder` | `undersized`
 
 ---
 
+#### /custom-apparel/printing-options/dye-sublimation-printing
+
+**Blade:** `resources/views/pages/custom-apparel/dye-sublimation.blade.php`
+**URL:** `/custom-apparel/printing-options/dye-sublimation-printing`
+**Dir:** `public/images/sublimation/` — 14 files, all unlocked. No locked files in dir.
+**Anomalies:** (1) Blade lives in `custom-apparel/` not `custom-apparel/printing-options/` unlike rhinestone, embroidery, screen-printing. (2) Dir name `sublimation/` does not match URL slug `dye-sublimation-printing`. (3) Blade filename `dye-sublimation.blade.php` does not match URL slug `dye-sublimation-printing`.
+**Verified:** Jun 18, 2026
+
+| section / category | image | image path | round | file date | status |
+|---|---|---|---|---|---|
+| hero — category-hero | top5pct-dye-sublimation-custom-shirt-joliet.jpg | public/images/sublimation/top5pct-dye-sublimation-custom-shirt-joliet.jpg | R2 | Jun 2 | good |
+| carousel C-1 — carousel-rotating-images | top5pct-sublimation-shirts.jpg | public/images/sublimation/top5pct-sublimation-shirts.jpg | R1 | May 11 | good |
+| carousel C-2 — carousel-rotating-images | top5pct-custom-face-mask-sublimated.jpg | public/images/sublimation/top5pct-custom-face-mask-sublimated.jpg | R1 | May 11 | good |
+| carousel C-3 — carousel-rotating-images | top5pct-custom-sublimated-towels.jpg | public/images/sublimation/top5pct-custom-sublimated-towels.jpg | R1 | May 11 | good |
+| carousel C-4 — carousel-rotating-images | top5pct-dye-sublimated-longsleeve-shirt-joliet.jpg | public/images/sublimation/top5pct-dye-sublimated-longsleeve-shirt-joliet.jpg | R1 | May 11 | good |
+| carousel C-5 — carousel-rotating-images | top5pct-dye-sublimation-jerseys.jpg | public/images/sublimation/top5pct-dye-sublimation-jerseys.jpg | R2+ | Jun 3 | good |
+| carousel C-6 — carousel-rotating-images | top5pct-dye-sublimation-tees.jpg | public/images/sublimation/top5pct-dye-sublimation-tees.jpg | R2+ | Jun 3 | good |
+| carousel C-7 — carousel-rotating-images | top5pct-sublimated-graphic-tees.jpg | public/images/sublimation/top5pct-sublimated-graphic-tees.jpg | R2+ | Jun 3 | good |
+| carousel C-8 — carousel-rotating-images | top5pct-sublimation-tees.jpg | public/images/sublimation/top5pct-sublimation-tees.jpg | R2+ | Jun 3 | good |
+| card-1 — card-image-with-text | top5pct-dye-sublimation-shirts.jpg | public/images/sublimation/top5pct-dye-sublimation-shirts.jpg | R1 | May 11 | good |
+| card-2 — card-image-with-text | top5pct-sublimation-shirt-printer.jpg | public/images/sublimation/top5pct-sublimation-shirt-printer.jpg | R1 | May 11 | good |
+| card-detailed image1 — card-detailed-info (single image) | top5pct-sublimation-shirt.jpg | public/images/sublimation/top5pct-sublimation-shirt.jpg | R1 | May 11 | good |
+| slide-L — card-banner-slide-in (direction left) | top5pct-custom-sublimation-shirts.jpg | public/images/sublimation/top5pct-custom-sublimation-shirts.jpg | R2 | Jun 2 | good |
+| slide-R — card-banner-slide-in (direction right) | top5pct-sublmation-team-shirts.jpg | public/images/sublimation/top5pct-sublmation-team-shirts.jpg | R2 | Jun 2 | good |
+
+**Notes:**
+- 14 slots total. 14 good, 0 locked. 0% locked — first zero-locked page in the entire inventory.
+- Zero cross-dir references. Every slot pulls from `sublimation/` own dir. Second page with 100% own-dir coverage after embroidery.
+- Perfect 14-file to 14-slot match. All 14 files in the dir are referenced in the blade. No unused files, no missing files.
+- 8-image carousel (C-1 through C-8) — second largest carousel in the inventory after screen-printing's 10.
+- Dir has no Initial (Mar 16) files at all. Every file is R1 (May 11) or later. First dir in the inventory with no Initial-round files.
+- Dir spans two rounds: R1 (May 11, 7 files) and R2 or Jun 3 (7 files). Clean two-batch population.
+- slide-R uses `top5pct-sublmation-team-shirts.jpg` — filename contains a typo ("sublmation" missing the 'i'). File exists and loads, but the typo is permanent in the codebase. Third filename typo confirmed in the inventory (rhinetsone on rhinestone and puff pages, embroidered-caps-old on embroidery, sublmation here).
+- Blade location anomaly: `dye-sublimation.blade.php` lives in `resources/views/pages/custom-apparel/` rather than `resources/views/pages/custom-apparel/printing-options/` where the other printing-options pages live. Likely routed via main-site.php with a manual path override.
+- Dir name anomaly: `sublimation/` vs URL slug `dye-sublimation-printing`. Second URL-to-dir-name mismatch in the inventory (first was glow-in-the-dark-shirts → glow-shirts/).
+- card-detailed-info is single-image (only `image1` and `alt1`). Eleventh consecutive page with single-image card-detailed.
+- No holographic cross-dir locked slide, no banner locked file — dye-sublimation shares none of the cross-dir locked patterns seen across specialty-materials and other printing-options pages.
+
+---
+
 *Last updated: Jun 18, 2026*
