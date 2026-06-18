@@ -720,4 +720,36 @@ Status codes: `good` | `initial` | `repeat` | `placeholder` | `undersized`
 
 ---
 
+#### /custom-apparel/specialty-materials/flock-shirts
+
+**Blade:** `resources/views/pages/custom-apparel/flock-shirts.blade.php`
+**URL:** `/custom-apparel/specialty-materials/flock-shirts`
+**Note:** Blade is one level up from URL path (`custom-apparel/` not `custom-apparel/specialty-materials/`). Route mapped separately.
+**Verified:** Jun 18, 2026
+
+| section / category | image | image path | round | file date | status |
+|---|---|---|---|---|---|
+| hero — category-hero | top5pct-custom-flock-t-shirt-printing.jpg | public/images/flock-shirts/top5pct-custom-flock-t-shirt-printing.jpg | R3 | Jun 8 | good |
+| carousel C-1 — carousel-rotating-images | top5pct-custom-flock-shirt-hoodie-cap-joliet.jpg | public/images/flock-shirts/top5pct-custom-flock-shirt-hoodie-cap-joliet.jpg | R3 | Jun 8 | R3, locked |
+| carousel C-2 — carousel-rotating-images | top5pct-flock-hoodie-printing.jpg | public/images/flock-shirts/top5pct-flock-hoodie-printing.jpg | R3 | Jun 8 | good |
+| carousel C-3 — carousel-rotating-images | top5pct-flock-shirt-vinyl.jpg | public/images/flock-shirts/top5pct-flock-shirt-vinyl.jpg | R3 | Jun 8 | good |
+| carousel C-4 — carousel-rotating-images | top5pct-custom-vinyl-shirts.jpg | public/images/custom-shirts/top5pct-custom-vinyl-shirts.jpg | R1 | May 11 | good, cross-dir |
+| card-1 — card-image-with-text | top5pct-custom-flock-shirt-hoodie-cap-joliet.jpg | public/images/flock-shirts/top5pct-custom-flock-shirt-hoodie-cap-joliet.jpg | R3 | Jun 8 | R3, locked, repeat |
+| card-2 — card-image-with-text | top5pct-custom-flock-shirt-hoodie-cap-joliet.jpg | public/images/flock-shirts/top5pct-custom-flock-shirt-hoodie-cap-joliet.jpg | R3 | Jun 8 | R3, locked, repeat |
+| card-detailed image1 — card-detailed-info (single image) | top5pct-custom-flock-shirt-hoodie-cap-joliet.jpg | public/images/flock-shirts/top5pct-custom-flock-shirt-hoodie-cap-joliet.jpg | R3 | Jun 8 | R3, locked, repeat |
+| slide-L — card-banner-slide-in (direction left) | top5pct-custom-flock-shirt-hoodie-cap-joliet.jpg | public/images/flock-shirts/top5pct-custom-flock-shirt-hoodie-cap-joliet.jpg | R3 | Jun 8 | R3, locked, repeat |
+| slide-R — card-banner-slide-in (direction right) | top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg | public/images/custom-shirts/top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg | Initial | Mar 16 | initial, locked, cross-dir |
+
+**Notes:**
+- 10 slots total. 4 good, 6 locked (5 same-file R3 repeats + 1 Initial locked cross-dir). 60% locked — ties spirit-wear-shirts for second-worst behind holographic-shirts at 67%.
+- `top5pct-custom-flock-shirt-hoodie-cap-joliet.jpg` (R3, Jun 8, 32KB, locked) fills five active slots — carousel C-1, card-1, card-2, card-detailed image1, and slide-L. Ties holographic-shirts for the highest single-file repeat count in the inventory.
+- Dir has only 4 files covering all flock-specific slots. With 4 files and 9 own-dir demand positions, heavy repetition is structural. Even with the locked file fixed, it would still appear in five positions.
+- All 4 flock-shirts/ dir files are referenced in the blade. No unused files in dir.
+- card-detailed-info is single-image (only `image1` and `alt1`). Fifth consecutive specialty-materials page with single-image card-detailed. Fully confirmed as the standard for this page family.
+- slide-R is cross-dir from `custom-shirts/` — `top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg` (Initial, Mar 16, 27KB, locked). This is the same file that exists in both `custom-shirts/` and `holographic-shirts/`. The holographic page uses the copy from `holographic-shirts/` (R3, Jun 8, locked); this flock page uses the copy from `custom-shirts/` (Initial, Mar 16, locked). Both copies are locked. Slide text: "Mix Flock With Holographic or Glitter for Custom Shirts" — cross-sell appropriate.
+- Carousel C-4 is cross-dir from `custom-shirts/` using `top5pct-custom-vinyl-shirts.jpg` (R1, May 11, 403KB). Alt text in blade reads "Custom flock velvet shirts made in Joliet" — but the file is a generic vinyl shirts image, not a flock-specific photo. Second consecutive specialty page with a carousel alt text mismatch (after brick-shirts slide-R).
+- The specialty-page pattern is now fully established: R3 dir with one locked thumbnail-sized file that propagates into carousel C-1, both cards, card-detailed image1, and slide-L (five slots). The slide-R is always a cross-dir Initial locked file from `custom-shirts/`. This pattern has appeared on reflective, foil, holographic, and now flock.
+
+---
+
 *Last updated: Jun 18, 2026*
