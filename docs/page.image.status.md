@@ -366,4 +366,37 @@ Status codes: `good` | `initial` | `repeat` | `placeholder` | `undersized`
 
 ---
 
+#### /vehicle-graphics/dot-decals
+
+**Blade:** `resources/views/pages/vehicle-graphics/dot-decals.blade.php`
+**URL:** `/vehicle-graphics/dot-decals`
+**Verified:** Jun 18, 2026
+
+| section / category | image | image path | round | file date | status |
+|---|---|---|---|---|---|
+| hero — category-hero | top5pct-truck-lettering-joliet-shorewood-rockdale.jpg | public/images/dot-decals/top5pct-truck-lettering-joliet-shorewood-rockdale.jpg | Initial | Mar 17 | initial, locked |
+| carousel C-1 — carousel-rotating-images | top5pct-dot-decals-joliet.jpg | public/images/dot-decals/top5pct-dot-decals-joliet.jpg | R1 | May 11 | good |
+| carousel C-2 — carousel-rotating-images | top5pct-dot-semi-truck-decals.jpg | public/images/dot-decals/top5pct-dot-semi-truck-decals.jpg | R1 | May 11 | good |
+| carousel C-3 — carousel-rotating-images | top5pct-dot-truck-decals-joliet.jpg | public/images/dot-decals/top5pct-dot-truck-decals-joliet.jpg | R1 | May 11 | good |
+| carousel C-4 — carousel-rotating-images | top5pct-custom-dot-decals-for-trucks-in-joliet.jpg | public/images/dot-decals/top5pct-custom-dot-decals-for-trucks-in-joliet.jpg | R2 | Jun 2 | good |
+| carousel C-5 — carousel-rotating-images | top5pct-DOT-truck-decals-rockdale.jpg | public/images/dot-decals/top5pct-DOT-truck-decals-rockdale.jpg | R3 | Jun 7 | good |
+| card-1 — card-image-with-text | top5pct-custom-dot-truck-signs-illinois.jpg | public/images/dot-decals/top5pct-custom-dot-truck-signs-illinois.jpg | R2 | Jun 2 | good |
+| card-2 — card-image-with-text | top5pct-dot-decals-semi-truck.jpg | public/images/dot-decals/top5pct-dot-decals-semi-truck.jpg | R2 | Jun 2 | good |
+| card-2img image1 — card-2image-with-text | top5pct-dot-lettering-joliet.jpg | public/images/dot-decals/top5pct-dot-lettering-joliet.jpg | R2 | Jun 2 | good |
+| card-2img image2 — card-2image-with-text | top5pct-dot-magnets.jpg | public/images/dot-decals/top5pct-dot-magnets.jpg | R2 | Jun 2 | good |
+| card-3 — card-image-with-text | top5pct-trucking-dot-decals-in-joliet.jpg | public/images/dot-decals/top5pct-trucking-dot-decals-in-joliet.jpg | R2 | Jun 2 | good |
+| card-detailed image1 — card-detailed-info | top5pct-article-DOT-decals-vinyl-lettering.jpg | public/images/dot-decals/top5pct-article-DOT-decals-vinyl-lettering.jpg | Initial | Mar 17 | initial, locked |
+| slide-L — card-banner-slide-in (direction left) | top5pct-DOT-stickers-joliet-shorewood-rockdale.jpg | public/images/dot-decals/top5pct-DOT-stickers-joliet-shorewood-rockdale.jpg | Initial | Mar 17 | initial, locked |
+| slide-R — card-banner-slide-in (direction right) | top5pct-truck-sign-magnets-joliet.jpg | public/images/vehicle-magnets/top5pct-truck-sign-magnets-joliet.jpg | R2 | Jun 2 | good |
+
+**Notes:**
+- 3 Initial locked slots in active blade positions: hero (40KB), card-detailed (53KB), slide-L (104KB). Highest count of Initial locked slots in any page inventoried so far. Hero is the most visible slot on the page and it is the weakest image (40KB, Mar 17, locked).
+- No repeats — all 14 images are unique across the page.
+- Carousel spans R1 through R3 — the full round range. C-5 is the only R3 image on the page.
+- slide-R cross-dir from vehicle-magnets/ (R2, Jun 2, 364KB). Slide text is "Magnets, Decals, and Full Wraps, One-Stop Shop" — cross-sell is intentional and contextually appropriate.
+- `top5pct-trucking-dot-decals-in-joliet.jpg` (card-3, R2, Jun 2, 133KB) is the lowest-size unlocked image in this blade. Still unlocked and usable.
+- 4 unused locked Initial files in dir (none in blade): `top5pct-banner-DOT-stickers-joliet-shorewood-channahon.jpg` (113KB), `top5pct-trucking-logo-joliet-shorewood-rockdale.jpg` (45KB), `top5pct-dot-decals-joliet-shorewood-rockdale.jpg` (63KB), `top5pct-trucking-logo-joliet-shorewood-crest-hill.jpg` (92KB).
+
+---
+
 *Last updated: Jun 18, 2026*
