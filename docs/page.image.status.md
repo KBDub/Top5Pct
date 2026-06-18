@@ -1065,4 +1065,52 @@ Status codes: `good` | `initial` | `repeat` | `placeholder` | `undersized`
 
 ---
 
+#### /custom-apparel/specialty-materials/vinyl
+
+**Blade:** `resources/views/pages/custom-apparel/specialty-materials/vinyl.blade.php`
+**URL:** `/custom-apparel/specialty-materials/vinyl`
+**Dir:** `public/images/vinyl/` — 13 files (11 May 18 locked, 2 R3 Jun 8 unlocked). 5 unused files in dir. No .DS_Store (unlike digital-vinyl/).
+**Anomalies:** (1) Dir is near-identical to `digital-vinyl/` — same 11 May 18 locked files, same two wrong-subject yard-signs files, same filenames and file sizes. May 18 batch appears copied to both dirs simultaneously. (2) Four repeat instances across 13 slots. (3) 85% locked.
+**Verified:** Jun 18, 2026
+
+| section / category | image | image path | round | file date | status |
+|---|---|---|---|---|---|
+| hero — category-hero | top5pct-vinyl-shirts.jpg | public/images/vinyl/top5pct-vinyl-shirts.jpg | R3 | Jun 8 | good |
+| carousel C-1 — carousel-rotating-images | custom-vinyl-shirts.jpg | public/images/vinyl/custom-vinyl-shirts.jpg | May 18 batch | May 18 | initial locked |
+| carousel C-2 — carousel-rotating-images | vinyl-hoodie.jpg | public/images/vinyl/vinyl-hoodie.jpg | May 18 batch | May 18 | initial locked |
+| carousel C-3 — carousel-rotating-images | vinyl-caps.jpg | public/images/vinyl/vinyl-caps.jpg | May 18 batch | May 18 | initial locked |
+| carousel C-4 — carousel-rotating-images | vinyl-zip-up-hoodies.jpg | public/images/vinyl/vinyl-zip-up-hoodies.jpg | May 18 batch | May 18 | initial locked |
+| card-1 — card-image-with-text | custom-vinyl-shirts.jpg | public/images/vinyl/custom-vinyl-shirts.jpg | May 18 batch | May 18 | initial locked, repeat (same as C-1) |
+| card-2 — card-image-with-text | custom-vinyl-hoodies.jpg | public/images/vinyl/custom-vinyl-hoodies.jpg | May 18 batch | May 18 | initial locked |
+| card-2image image1 — card-2image-with-text | custom-caps-vinyl.jpg | public/images/vinyl/custom-caps-vinyl.jpg | May 18 batch | May 18 | initial locked |
+| card-2image image2 — card-2image-with-text | neon-vinyl-shirts.jpg | public/images/vinyl/neon-vinyl-shirts.jpg | May 18 batch | May 18 | initial locked |
+| card-3 — card-image-with-text | vinyl-zip-up-hoodies.jpg | public/images/vinyl/vinyl-zip-up-hoodies.jpg | May 18 batch | May 18 | initial locked, repeat (same as C-4) |
+| card-detailed image1 — card-detailed-info (single image) | top5pct-vinyl-t-shirt-maker.jpg | public/images/vinyl/top5pct-vinyl-t-shirt-maker.jpg | R3 | Jun 8 | good |
+| slide-L — card-banner-slide-in (direction left) | custom-vinyl-hoodies.jpg | public/images/vinyl/custom-vinyl-hoodies.jpg | May 18 batch | May 18 | initial locked, repeat (same as card-2) |
+| slide-R — card-banner-slide-in (direction right) | vinyl-caps.jpg | public/images/vinyl/vinyl-caps.jpg | May 18 batch | May 18 | initial locked, repeat (same as C-3) |
+
+**Unused files in dir (not referenced by blade):**
+| file | round | date | size | locked | note |
+|---|---|---|---|---|---|
+| custom-hoodies.jpg | May 18 batch | May 18 | 294KB | yes | locked, unused |
+| vinyl-t-shirt-maker.jpg | May 18 batch | May 18 | 386KB | yes | locked, superseded by R3 top5pct-vinyl-t-shirt-maker.jpg (same size) |
+| vinyl-shirts.jpg | May 18 batch | May 18 | 388KB | yes | locked, superseded by R3 top5pct-vinyl-shirts.jpg (same size) |
+| top5pct-article-yard-signs-buy.jpg | May 18 batch | May 18 | 47KB | yes | wrong-subject: yard signs, not vinyl apparel |
+| top5pct-banner-yard-signs-joliet-shorewood-crest-hill.jpg | May 18 batch | May 18 | 96KB | yes | wrong-subject: yard signs, not vinyl apparel |
+
+**Notes:**
+- 13 slots total. 2 good (hero, card-detailed), 11 locked (all May 18). 0 wrong-dir 404s. 85% locked.
+- **Four repeat instances**: `custom-vinyl-shirts.jpg` ×2 (C-1, card-1); `vinyl-zip-up-hoodies.jpg` ×2 (C-4, card-3); `custom-vinyl-hoodies.jpg` ×2 (card-2, slide-L); `vinyl-caps.jpg` ×2 (C-3, slide-R).
+- **Dir is a near-duplicate of `digital-vinyl/`** — the May 18 locked batch (10 non-yard-signs files) appears in both dirs with identical filenames and byte-for-byte matching file sizes. The two wrong-subject yard-signs files also appear in both dirs at the same 47KB and 96KB sizes. The May 18 batch was almost certainly copied or uploaded to both dirs at once, serving as placeholder content for two related pages.
+- **R3 replacements match May 18 originals in size**: `top5pct-vinyl-shirts.jpg` (R3, 388KB) matches `vinyl-shirts.jpg` (May 18, 388KB). `top5pct-vinyl-t-shirt-maker.jpg` (R3, 386KB) matches `vinyl-t-shirt-maker.jpg` (May 18, 386KB). Likely the same images renamed with the `top5pct-` prefix when they were republished.
+- **card-detailed-info is the only slot outside the hero with a good (R3) image** — unlike digital-vinyl where card-detailed was still locked.
+- **Both wrong-subject yard-signs files are unused** — same situation as digital-vinyl/. They were uploaded to the wrong dir and never referenced.
+- `custom-hoodies.jpg` (May 18, locked, unused) — not referenced by any slot in this blade. Appears unused in digital-vinyl/ as well.
+- **No cross-dir references** — all 13 slots pull from `vinyl/` own dir.
+- Blade lives correctly in `specialty-materials/` subfolder. URL slug `vinyl` matches blade filename `vinyl.blade.php` — no name mismatch.
+- Three other vinyl-related blades exist: `specialty-materials/vinyl.blade.php` (this page), `printing-options/digital-vinyl.blade.php`, and `vinyl-shirts.blade.php` at the `custom-apparel/` root level.
+- card-detailed-info is single-image (only `image1` and `alt1`). Fourteenth consecutive page with single-image card-detailed.
+
+---
+
 *Last updated: Jun 18, 2026*
