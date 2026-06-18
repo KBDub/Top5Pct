@@ -2,27 +2,44 @@ Top 5 Percent — Hosting.com Deployment Startup Guide
 ======================================================
 Last updated: June 18, 2026
 
-REQUIREMENTS
+NODE.JS NOTE
 ------------
+Node is NOT required on the hosting server. Frontend assets are compiled
+locally before upload and the compiled output (public/build/) is included
+in the upload. The production startup script (scripts/startup.sh) has no
+Node or npm dependencies.
+
+
+REQUIREMENTS (server)
+----------------------
 - PHP 8.4+
-- Node.js 20+
 - Composer 2+
 - PostgreSQL (production database)
 - Meilisearch (self-hosted or cloud)
 - FrankenPHP binary (auto-downloaded on first boot via Octane installer)
 
 
+BEFORE YOU UPLOAD — compile assets locally
+-------------------------------------------
+Run this once on your local machine (Node required locally, not on server):
+
+  npm install
+  npm run build
+
+This generates public/build/. Include that folder in your upload.
+Once it is on the server, Node is never needed again.
+
+
 STEP 1 — Upload files
 ---------------------
 Upload the full project to your hosting root (e.g. /home/username/top5pct/).
-Do NOT upload the /vendor or /node_modules folders — those are built on the server.
+Include public/build/ in the upload (compiled assets — see above).
+Do NOT upload the /vendor or /node_modules folders.
 
 
-STEP 2 — Install dependencies
-------------------------------
+STEP 2 — Install PHP dependencies
+-----------------------------------
   composer install --no-dev --optimize-autoloader
-  npm install
-  npm run build
 
 
 STEP 3 — Create and configure .env
@@ -101,7 +118,7 @@ Run this as a background process or configure it as a service:
 STEP 9 — Start the Laravel server (Octane + FrankenPHP)
 ---------------------------------------------------------
 The production startup script handles FrankenPHP download, Meilisearch health
-check, Laravel startup, and OPcache warm-up automatically:
+check, Laravel startup, and OPcache warm-up automatically. No Node involved.
 
   bash scripts/startup.sh
 
@@ -150,11 +167,11 @@ The Lunar Hub admin panel is available at:
 
 QUICK REFERENCE — useful artisan commands
 ------------------------------------------
-  php artisan optimize:clear          clear all caches
+  php artisan optimize:clear                       clear all caches
   php artisan scout:import "App\Models\Product"    rebuild search index
-  php artisan queue:work              start queue worker
-  php artisan staff:reset-passwords   reset staff passwords (requires STAFF_ADMIN_HASH env var)
-  php artisan octane:reload           hot-reload Octane without downtime
+  php artisan queue:work                           start queue worker
+  php artisan staff:reset-passwords               reset staff passwords (requires STAFF_ADMIN_HASH env var)
+  php artisan octane:reload                        hot-reload Octane without downtime
 
 
 NOTES
@@ -164,3 +181,5 @@ NOTES
 - The public/storage symlink must exist for product images to load.
 - FrankenPHP is gitignored and downloaded at runtime by the startup script.
 - Do not set APP_DEBUG=true in production — it exposes stack traces.
+- If you update CSS or JS after deployment, recompile locally (npm run build)
+  and re-upload public/build/ — no Node needed on the server.
