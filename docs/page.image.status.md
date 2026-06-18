@@ -890,4 +890,45 @@ Status codes: `good` | `initial` | `repeat` | `placeholder` | `undersized`
 
 ---
 
+#### /custom-apparel/printing-options/screen-printing
+
+**Blade:** `resources/views/pages/custom-apparel/printing-options/screen-printing.blade.php`
+**URL:** `/custom-apparel/printing-options/screen-printing`
+**Dir:** `public/images/screen-printing/` — 6 files (1 Jun 3, 5 Jun 8), all unlocked. No locked files in own dir.
+**Verified:** Jun 18, 2026
+
+| section / category | image | image path | round | file date | status |
+|---|---|---|---|---|---|
+| hero — category-hero | top5pct-screenprinted-shirts-joliet.jpg | public/images/custom-shirts/top5pct-screenprinted-shirts-joliet.jpg | R1 | May 11 | good, cross-dir |
+| carousel C-1 — carousel-rotating-images | top5pct-screenprint-custom-shirts.jpg | public/images/custom-shirts/top5pct-screenprint-custom-shirts.jpg | R1 | May 11 | good, cross-dir |
+| carousel C-2 — carousel-rotating-images | top5pct-screenprinted-shirts-in-joliet.jpg | public/images/custom-shirts/top5pct-screenprinted-shirts-in-joliet.jpg | R1 | May 11 | good, cross-dir |
+| carousel C-3 — carousel-rotating-images | top5pct-banner-custom-apparel-custom-shirts-custom-hoodies-custom-caps.jpg | public/images/custom-shirts/top5pct-banner-custom-apparel-custom-shirts-custom-hoodies-custom-caps.jpg | Initial | Mar 16 | initial, locked, cross-dir |
+| carousel C-4 — carousel-rotating-images | top5pct-screenprinting-shirts.jpg | public/images/custom-shirts/top5pct-screenprinting-shirts.jpg | R1 | May 11 | good, cross-dir |
+| carousel C-5 — carousel-rotating-images | top5pct-screenprinting-joliet.jpg | public/images/screen-printing/top5pct-screenprinting-joliet.jpg | R3 | Jun 8 | good |
+| carousel C-6 — carousel-rotating-images | top5pct-screenprinted-shirts-joliet.jpg | public/images/screen-printing/top5pct-screenprinted-shirts-joliet.jpg | R3 | Jun 8 | good |
+| carousel C-7 — carousel-rotating-images | top5pct-screenprinting-company-shirts.jpg | public/images/screen-printing/top5pct-screenprinting-company-shirts.jpg | R3 | Jun 8 | good |
+| carousel C-8 — carousel-rotating-images | top5pct-screenprinting-hoodies-joliet.jpg | public/images/screen-printing/top5pct-screenprinting-hoodies-joliet.jpg | R3 | Jun 8 | good |
+| carousel C-9 — carousel-rotating-images | top5pct-screenprinting-t-shirts-joliet.jpg | public/images/screen-printing/top5pct-screenprinting-t-shirts-joliet.jpg | R2+ | Jun 3 | good |
+| carousel C-10 — carousel-rotating-images | top5pct-screenprinting-t-shirt-maker-joliet.jpg | public/images/screen-printing/top5pct-screenprinting-t-shirt-maker-joliet.jpg | R3 | Jun 8 | good |
+| card-1 — card-image-with-text | top5pct-neon-vinyl-shirts.jpg | public/images/custom-shirts/top5pct-neon-vinyl-shirts.jpg | R1 | May 11 | good, cross-dir |
+| card-2 — card-image-with-text | top5pct-vinyl-caps.jpg | public/images/custom-shirts/top5pct-vinyl-caps.jpg | R1 | May 11 | good, cross-dir |
+| card-detailed image1 — card-detailed-info (single image) | top5pct-custom-flock-shirt-hoodie-cap-joliet.jpg | public/images/custom-shirts/top5pct-custom-flock-shirt-hoodie-cap-joliet.jpg | Initial | Mar 16 | initial, locked, cross-dir |
+| slide-R — card-banner-slide-in (direction right) | top5pct-screenprinting-shirts.jpg | public/images/custom-shirts/top5pct-screenprinting-shirts.jpg | R1 | May 11 | good, cross-dir, repeat of C-4 |
+| slide-L — card-banner-slide-in (direction left) | top5pct-custom-embroidery-shops-near-me-joliet.jpg | public/images/custom-shirts/top5pct-custom-embroidery-shops-near-me-joliet.jpg | Initial | Mar 16 | wrong-dir 404 |
+
+**Notes:**
+- 16 slots total. 13 good, 2 locked, 1 wrong-dir 404. Largest page in the entire inventory by slot count.
+- 10-image carousel (C-1 through C-10) — unprecedented. Prior printing-options pages had 5 carousel slots. The carousel splits evenly: C-1 to C-4 from `custom-shirts/` (R1, all unlocked except C-3), C-5 to C-10 from own dir (all unlocked).
+- **slide-L is a wrong-dir 404**: blade references `/images/custom-shirts/top5pct-custom-embroidery-shops-near-me-joliet.jpg` but that file does not exist in `custom-shirts/`. It only exists in `embroidery/` (Initial, Mar 16, 28KB, locked). This is a guaranteed broken image on the live page. Second confirmed wrong-dir 404 in the inventory (first was foil-shirts slide-L).
+- **card-detailed uses the flock locked thumbnail**: `top5pct-custom-flock-shirt-hoodie-cap-joliet.jpg` exists in both `flock-shirts/` (R3, Jun 8, 32KB, locked) and `custom-shirts/` (Initial, Mar 16, 32KB, locked). The screen-printing blade references the `custom-shirts/` copy (Initial, Mar 16). Card heading is "5 Reasons Screen Printing Delivers Superior Results" — image is a flock shirt cap. Wrong-topic.
+- C-3 uses `top5pct-banner-custom-apparel-...-caps.jpg` (Initial, Mar 16, 117KB, locked) — same banner file used as C-1 on puff-shirts. Both pages lock on this file.
+- slide-R repeats C-4: `top5pct-screenprinting-shirts.jpg` (R1, May 11) appears in both carousel C-4 and slide-R. Both unlocked.
+- card-1 alt text reads "Custom screen printed shirts" but the image is `top5pct-neon-vinyl-shirts.jpg` — a neon vinyl shirts file, not a screen print image. Not a lock issue but a wrong-topic assignment.
+- card-2 alt text reads "Custom screen printing for group apparel and uniforms" but the image is `top5pct-vinyl-caps.jpg` — a vinyl caps file. Cross-technique assignment similar to card-1.
+- Own dir (`screen-printing/`) has no locked files — all 6 files are unlocked (Jun 3 and Jun 8). Only cross-dir files contribute the 2 locked slots and the wrong-dir 404.
+- `top5pct-custom-flock-shirt-hoodie-cap-joliet.jpg` is the first file confirmed to exist in two separate dirs with different dates: `flock-shirts/` (R3, Jun 8) and `custom-shirts/` (Initial, Mar 16). The custom-shirts/ copy predates the flock-shirts/ copy by nearly 3 months.
+- card-detailed-info is single-image (only `image1` and `alt1`). Tenth consecutive page with single-image card-detailed.
+
+---
+
 *Last updated: Jun 18, 2026*
