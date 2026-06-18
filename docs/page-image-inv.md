@@ -287,24 +287,33 @@ Organized to match `docs/image.status.md` groupings. Use this doc to drive fine-
 
 ### signs/table-cloths
 
+**URL:** `/signs/table-signs/table-cloths`
 **Blade:** `resources/views/pages/signs/table-cloths.blade.php`
-**Summary:** Hero and cards are good (R1/R2 moved). C-1, C-4, and slide-L are Initial (moved). C-5 through C-8 are strong R3. slide-R is Initial from banners/.
+**Blade verified:** Jun 18, 2026
+**Summary:** Hero, carousel, and both cards are all good (R1/R2/R3, all from table-cloths/). Two problem slots: slide-L is a 261x177px thumbnail (21KB) — critically undersized for a slide-in banner. card-detailed is an Initial locked file. slide-R was updated in the blade to a proper R1 banners/ image (differs from image.status.md which had the wrong Initial file recorded).
 
-| slot | image | path | round | date | status |
-|---|---|---|---|---|---|
-| hero | top5pct-custom-table-cloth.jpg | public/images/table-cloths/ | R1 (moved) | May 11 | good |
-| C-1 | top5pct-banner-custom-table-cloth-custom-table-runner-joliet.jpg | public/images/table-cloths/ | Initial (moved) | Mar 16 | initial |
-| C-2 | top5pct-personalized-tablecloth-joliet.jpg | public/images/table-cloths/ | R1 (moved) | May 11 | good |
-| C-3 | top5pct-table-cloths.jpg | public/images/table-cloths/ | R1 (moved) | May 11 | good |
-| C-4 | top5pct-custom-table-cloth-joliet-crest-hill.jpg | public/images/table-cloths/ | Initial (moved) | Mar 16 | initial |
-| C-5 | top5pct-table-cloth-8-feet.jpg | public/images/table-cloths/ | R3 | Jun 4 | good |
-| C-6 | top5pct-table-cloth-customized.jpg | public/images/table-cloths/ | R3 | Jun 4 | good |
-| C-7 | top5pct-table-cloths-for-businesses.jpg | public/images/table-cloths/ | R3 | Jun 4 | good |
-| C-8 | top5pct-table-cloth-with-photos.jpg | public/images/table-cloths/ | R3 | Jun 4 | good |
-| card-1 | top5pct-custom-table-cloth-business.jpg | public/images/table-cloths/ | R2 (moved) | Jun 2 | good |
-| card-2 | top5pct-printed-table-cloths.jpg | public/images/table-cloths/ | R2 (moved) | Jun 2 | good |
-| slide-L | top5pct-article-custom-table-cloths-joliet.jpg | public/images/table-cloths/ | Initial (moved) | Mar 16 | initial |
-| slide-R | top5pct-banner-joliet-romeoville-rockdale-plainfield.jpg | public/images/banners/ | Initial | Mar 16 | initial |
+| slot | component | image | path | round | date | status |
+|---|---|---|---|---|---|---|
+| hero | category-hero | top5pct-custom-table-cloth.jpg | public/images/table-cloths/ | R1 (moved) | Jun 8 | good |
+| C-1 | carousel | top5pct-personalized-tablecloth-joliet.jpg | public/images/table-cloths/ | R1 (moved) | Jun 8 | good |
+| C-2 | carousel | top5pct-table-cloths.jpg | public/images/table-cloths/ | R1 (moved) | Jun 8 | good |
+| C-3 | carousel | top5pct-table-cloth-8-feet.jpg | public/images/table-cloths/ | R3 | Jun 4 | good |
+| C-4 | carousel | top5pct-table-cloth-customized.jpg | public/images/table-cloths/ | R3 | Jun 4 | good |
+| C-5 | carousel | top5pct-table-cloths-for-businesses.jpg | public/images/table-cloths/ | R3 | Jun 4 | good |
+| C-6 | carousel | top5pct-table-cloth-with-photos.jpg | public/images/table-cloths/ | R3 | Jun 4 | good |
+| card-1 | card-image-with-text | top5pct-custom-table-cloth-business.jpg | public/images/table-cloths/ | R2 (moved) | Jun 8 | good |
+| card-2 | card-image-with-text | top5pct-printed-table-cloths.jpg | public/images/table-cloths/ | R2 (moved) | Jun 8 | good |
+| card-detailed | card-detailed-info | top5pct-banner-custom-table-cloth-custom-table-runner-joliet.jpg | public/images/table-cloths/ | Initial (moved) | Jun 8 | initial |
+| slide-L | card-banner-slide-in | top5pct-article-custom-table-cloths-joliet.jpg | public/images/table-cloths/ | Initial (moved) | Jun 8 | ⚠️ undersized (261x177px, 21KB) |
+| slide-R | card-banner-slide-in | top5pct-retractable-banner.jpg | public/images/banners/ | R1 | May 11 | good |
+
+**Unused files on disk (table-cloths/ dir):**
+- `top5pct-custom-table-cloth-joliet-crest-hill.jpg` — Jun 8, locked (-rw-------), Initial. Candidate for card-detailed replacement.
+
+**Corrections vs image.status.md:**
+- slide-R was recorded as `top5pct-banner-joliet-romeoville-rockdale-plainfield.jpg` (Initial) but blade actually uses `top5pct-retractable-banner.jpg` (R1, May 11). Blade is correct.
+- image.status.md counted 8 carousel slots (C-1 through C-8); blade has 6. The former C-1 (`top5pct-banner-custom-table-cloth-custom-table-runner-joliet.jpg`) is actually the card-detailed-info image, not a carousel item. Former C-4 (`top5pct-custom-table-cloth-joliet-crest-hill.jpg`) was removed from the carousel and is now unused on disk.
+- All moved files show Jun 8 disk date (date of consolidation into table-cloths/ dir), not their original creation date.
 
 ---
 
