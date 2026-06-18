@@ -399,4 +399,36 @@ Status codes: `good` | `initial` | `repeat` | `placeholder` | `undersized`
 
 ---
 
+#### /vehicle-graphics/vehicle-magnets
+
+**Blade:** `resources/views/pages/vehicle-graphics/vehicle-magnets.blade.php`
+**URL:** `/vehicle-graphics/vehicle-magnets`
+**Verified:** Jun 18, 2026
+
+| section / category | image | image path | round | file date | status |
+|---|---|---|---|---|---|
+| hero — category-hero | top5pct-magnet-vehicle-signs-joliet.jpg | public/images/vehicle-magnets/top5pct-magnet-vehicle-signs-joliet.jpg | R2 | Jun 2 | good |
+| carousel C-1 — carousel-rotating-images | top5pct-automobile-magnets-joliet.jpg | public/images/vehicle-magnets/top5pct-automobile-magnets-joliet.jpg | R1 | May 11 | good |
+| carousel C-2 — carousel-rotating-images | top5pct-car-magnets-joliet.jpg | public/images/vehicle-magnets/top5pct-car-magnets-joliet.jpg | R1 | May 11 | good |
+| carousel C-3 — carousel-rotating-images | top5pct-car-magnets.jpg | public/images/vehicle-magnets/top5pct-car-magnets.jpg | R1 | May 11 | good |
+| carousel C-4 — carousel-rotating-images | top5pct-car-sign-magnets-joliet.jpg | public/images/vehicle-magnets/top5pct-car-sign-magnets-joliet.jpg | R1 | May 11 | good |
+| card-1 — card-image-with-text | top5pct-custom-car-magnets-in-joliet.jpg | public/images/vehicle-magnets/top5pct-custom-car-magnets-in-joliet.jpg | R1 | May 11 | good |
+| card-2 — card-image-with-text | top5pct-custom-car-magnets.jpg | public/images/vehicle-magnets/top5pct-custom-car-magnets.jpg | R1 | May 11 | good |
+| card-2img image1 — card-2image-with-text | top5pct-vehicle-magnets-joliet.jpg | public/images/vehicle-magnets/top5pct-vehicle-magnets-joliet.jpg | R1 | May 11 | good |
+| card-2img image2 — card-2image-with-text | top5pct-vehicle-magnets.jpg | public/images/vehicle-magnets/top5pct-vehicle-magnets.jpg | R1 | May 11 | good |
+| card-detailed image1 — card-detailed-info | top5pct-car-decals-white-oaks-library.jpg | public/images/vehicle-magnets/top5pct-car-decals-white-oaks-library.jpg | R2 | Jun 2 | good |
+| slide-R — card-banner-slide-in (direction right) | top5pct-car-magnets-vehicle-magnets-joliet.jpg | public/images/vehicle-magnets/top5pct-car-magnets-vehicle-magnets-joliet.jpg | Initial | Mar 17 | initial, locked |
+| slide-L — card-banner-slide-in (direction left) | top5pct-vehicle-graphics.jpg | public/images/automobile-graphics/top5pct-vehicle-graphics.jpg | R1 | May 11 | good |
+
+**Notes:**
+- slide-R is Initial locked (45KB, Mar 17). Only locked slot on this page. Dir has 3 unused unlocked R1/R2 images that could replace it immediately: `top5pct-joliet-car-magnets.jpg` (651KB), `top5pct-truck-sign-magnets-joliet.jpg` (364KB), `top5pct-yard-signs-near-me.jpg` (514KB).
+- slide-L cross-dir from automobile-graphics/ (R1, May 11, 413KB). Slide text "Full Vehicle Wraps Available Too, Ask Us" — cross-sell appropriate.
+- No repeats — all 12 images are unique.
+- No R3 files in this dir. Carousel is all R1; hero and card-detailed are R2.
+- `top5pct-yard-signs-near-me.jpg` (Jun 2, R2, 514KB) is in the vehicle-magnets/ dir but is named for yard signs. Not in this blade. Off-topic file name for this dir.
+- `top5pct-truck-sign-magnets-joliet.jpg` (Jun 2, R2, 364KB) is in this dir but not used here — it is the slide-R on the dot-decals page.
+- 5 unused locked Initial files in dir (none in blade): `top5pct-article-car-magnets-truck-magnets.jpg` (22KB), `top5pct-large-magnets-magnets-near-me-joliet.jpg` (40KB), `top5pct-car-magnets-truck-magnets-joliet.jpg` (44KB), `top5pct-business-magnets-car-magnets-joliet.jpg` (52KB), `top5pct-banner-car-magnets-joliet-shorewood-crest-hill.jpg` (63KB).
+
+---
+
 *Last updated: Jun 18, 2026*
