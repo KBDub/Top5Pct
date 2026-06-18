@@ -333,4 +333,37 @@ Status codes: `good` | `initial` | `repeat` | `placeholder` | `undersized`
 
 ---
 
+#### /signs/business-signs/banners
+
+**Blade:** `resources/views/pages/signs/banners.blade.php`
+**URL:** `/signs/business-signs/banners`
+**Verified:** Jun 18, 2026
+
+| section / category | image | image path | round | file date | status |
+|---|---|---|---|---|---|
+| hero — category-hero | top5pct-sports-banners.jpg | public/images/banners/top5pct-sports-banners.jpg | R2 | Jun 2 | good |
+| carousel C-1 — carousel-rotating-images | top5pct-banners-and-signs.jpg | public/images/banners/top5pct-banners-and-signs.jpg | R1 | May 11 | good |
+| carousel C-2 — carousel-rotating-images | top5pct-banners-near-me.jpg | public/images/banners/top5pct-banners-near-me.jpg | R1 | May 11 | good |
+| carousel C-3 — carousel-rotating-images | top5pct-big-banners.jpg | public/images/banners/top5pct-big-banners.jpg | R1 | May 11 | good |
+| carousel C-4 — carousel-rotating-images | top5pct-custom-retractable-banners-joliet.jpg | public/images/banners/top5pct-custom-retractable-banners-joliet.jpg | R1 | May 11 | good |
+| card-1 — card-image-with-text | top5pct-custom-vinyl-banners.jpg | public/images/banners/top5pct-custom-vinyl-banners.jpg | R1 | May 11 | good |
+| card-2 — card-image-with-text | top5pct-graduation-banners.jpg | public/images/banners/top5pct-graduation-banners.jpg | R1 | May 11 | good |
+| card-2img-1 image1 — card-2image-with-text | top5pct-retractable-banner.jpg | public/images/banners/top5pct-retractable-banner.jpg | R1 | May 11 | good |
+| card-2img-1 image2 — card-2image-with-text | top5pct-banners-for-trade-shows.jpg | public/images/banners/top5pct-banners-for-trade-shows.jpg | R2 | Jun 2 | good |
+| card-2img-2 image1 — card-2image-with-text | top5pct-mesh-construction-banner.jpg | public/images/banners/top5pct-mesh-construction-banner.jpg | R2 | Jun 2 | good |
+| card-2img-2 image2 — card-2image-with-text | top5pct-portable-banners.jpg | public/images/banners/top5pct-portable-banners.jpg | R2 | Jun 2 | good |
+| card-detailed image1 — card-detailed-info | top5pct-retractable-banners-plainfield.jpg | public/images/banners/top5pct-retractable-banners-plainfield.jpg | R2 | Jun 2 | good |
+| slide-L — card-banner-slide-in (direction left) | top5pct-retractable-banners-plainfield.jpg | public/images/banners/top5pct-retractable-banners-plainfield.jpg | R2 | Jun 2 | repeat |
+| slide-R — card-banner-slide-in (direction right) | top5pct-portable-banners.jpg | public/images/banners/top5pct-portable-banners.jpg | R2 | Jun 2 | repeat |
+
+**Notes:**
+- First page in the inventory with zero Initial slots. All 14 images are R1 or R2.
+- No cross-dir references — all images pull from banners/ dir.
+- slide-L repeats card-detailed: both use `top5pct-retractable-banners-plainfield.jpg` (R2, Jun 2, 296KB).
+- slide-R repeats card-2img-2 image2: both use `top5pct-portable-banners.jpg` (R2, Jun 2, 589KB).
+- Carousel spans R1 only (C-1 through C-4 are all May 11). Hero is R2 but carousel was not updated in round 2. No R3 files exist in this dir.
+- 8 unused locked Initial files in dir (none in blade): `top5pct-article-vinyl-banners-pic1.jpg` (22KB, the smallest file in the entire inventory), `top5pct-birthday-banner-joliet-shorewood-plainfield.jpg` (40KB), `top5pct-birthday-banners-joliet-shorewood-crest-hill.jpg` (42KB), `top5pct-banners-business-joliet-shorewood-crest-hill.jpg` (47KB), `top5pct-team-banners-joliet-shorewood-crest-hill.jpg` (47KB), `top5pct-banner-joliet-romeoville-rockdale-plainfield.jpg` (51KB), `top5pct-family-reunion-banners-joliet-crest-hill.jpg` (64KB), `top5pct-banner-business-banners-joliet-shorewood-crest-hill.jpg` (89KB). These cover birthday, team, reunion, and business banner categories that are discussed on the page but not shown.
+
+---
+
 *Last updated: Jun 18, 2026*
