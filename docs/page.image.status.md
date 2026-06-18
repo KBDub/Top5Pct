@@ -1014,4 +1014,55 @@ Status codes: `good` | `initial` | `repeat` | `placeholder` | `undersized`
 
 ---
 
+#### /custom-apparel/printing-options/digital-vinyl
+
+**Blade:** `resources/views/pages/custom-apparel/printing-options/digital-vinyl.blade.php`
+**URL:** `/custom-apparel/printing-options/digital-vinyl`
+**Dir:** `public/images/digital-vinyl/` — 15 image files + `.DS_Store`. Two locked batches: May 18 (11 files, all locked) and R3 Jun 8 (4 files, unlocked). 7 unused files in dir.
+**Anomalies:** (1) New component `x-sections.card-2image-with-text` appears for first time — has two image slots (image1, image2). (2) Three `x-sections.card-image-with-text` blocks — most on any page in the inventory. (3) May 18 locked batch is a new date not seen in any prior dir (between R1 May 11 and R2 Jun 2). Most May 18 files lack the `top5pct-` prefix. (4) Two wrong-subject yard-signs images in the dir (locked, unused). (5) `.DS_Store` Mac metadata file in the dir. (6) 92% locked — highest in the inventory.
+**Verified:** Jun 18, 2026
+
+| section / category | image | image path | round | file date | status |
+|---|---|---|---|---|---|
+| hero — category-hero | top5pct-digital-vinyl-t-shirts.jpg | public/images/digital-vinyl/top5pct-digital-vinyl-t-shirts.jpg | R3 | Jun 8 | good |
+| carousel C-1 — carousel-rotating-images | vinyl-shirts.jpg | public/images/digital-vinyl/vinyl-shirts.jpg | May 18 batch | May 18 | initial locked |
+| carousel C-2 — carousel-rotating-images | vinyl-hoodie.jpg | public/images/digital-vinyl/vinyl-hoodie.jpg | May 18 batch | May 18 | initial locked |
+| carousel C-3 — carousel-rotating-images | vinyl-caps.jpg | public/images/digital-vinyl/vinyl-caps.jpg | May 18 batch | May 18 | initial locked |
+| carousel C-4 — carousel-rotating-images | custom-vinyl-hoodies.jpg | public/images/digital-vinyl/custom-vinyl-hoodies.jpg | May 18 batch | May 18 | initial locked |
+| card-1 — card-image-with-text | custom-vinyl-shirts.jpg | public/images/digital-vinyl/custom-vinyl-shirts.jpg | May 18 batch | May 18 | initial locked |
+| card-2 — card-image-with-text | custom-vinyl-hoodies.jpg | public/images/digital-vinyl/custom-vinyl-hoodies.jpg | May 18 batch | May 18 | initial locked, repeat (same as C-4) |
+| card-2image image1 — card-2image-with-text | vinyl-caps.jpg | public/images/digital-vinyl/vinyl-caps.jpg | May 18 batch | May 18 | initial locked, repeat (same as C-3) |
+| card-2image image2 — card-2image-with-text | neon-vinyl-shirts.jpg | public/images/digital-vinyl/neon-vinyl-shirts.jpg | May 18 batch | May 18 | initial locked |
+| card-3 — card-image-with-text | vinyl-zip-up-hoodies.jpg | public/images/digital-vinyl/vinyl-zip-up-hoodies.jpg | May 18 batch | May 18 | initial locked |
+| card-detailed image1 — card-detailed-info (single image) | custom-vinyl-shirts.jpg | public/images/digital-vinyl/custom-vinyl-shirts.jpg | May 18 batch | May 18 | initial locked, repeat (same as card-1) |
+| slide-L — card-banner-slide-in (direction left) | custom-vinyl-hoodies.jpg | public/images/digital-vinyl/custom-vinyl-hoodies.jpg | May 18 batch | May 18 | initial locked, repeat (same as C-4, card-2) |
+| slide-R — card-banner-slide-in (direction right) | vinyl-caps.jpg | public/images/digital-vinyl/vinyl-caps.jpg | May 18 batch | May 18 | initial locked, repeat (same as C-3, card-2image image1) |
+
+**Unused files in dir (not referenced by blade):**
+| file | round | date | size | locked | note |
+|---|---|---|---|---|---|
+| top5pct-digital-vinyl-hoodie.jpg | R3 | Jun 8 | 379KB | no | unlocked, unused |
+| top5pct-digital-vinyl-hoodies-in-joliet.jpg | R3 | Jun 8 | 398KB | no | unlocked, unused |
+| top5pct-digital-vinyl-shirts.jpg | R3 | Jun 8 | 706KB | no | unlocked, unused |
+| custom-hoodies.jpg | May 18 | May 18 | 294KB | yes | locked, unused |
+| vinyl-t-shirt-maker.jpg | May 18 | May 18 | 386KB | yes | locked, unused |
+| top5pct-article-yard-signs-buy.jpg | May 18 | May 18 | 47KB | yes | wrong-subject: yard signs, not vinyl apparel |
+| top5pct-banner-yard-signs-joliet-shorewood-crest-hill.jpg | May 18 | May 18 | 96KB | yes | wrong-subject: yard signs, not vinyl apparel |
+
+**Notes:**
+- 13 slots total. 1 good, 12 locked (all May 18). 0 wrong-dir 404s. 92% locked — highest in the entire inventory.
+- **May 18 batch is a new locked date** — not seen in any prior dir. 11 files uploaded May 18, all locked (-rw-------). This batch sits between R1 (May 11) and R2 (Jun 2) and appears to be an intermediate upload round specific to this dir. Most May 18 files use bare descriptive names without the `top5pct-` prefix (e.g. `vinyl-shirts.jpg`, `vinyl-hoodie.jpg`), unlike the standard naming convention.
+- **Five repeat instances across 13 slots**: `vinyl-caps.jpg` used 3× (C-3, card-2image image1, slide-R); `custom-vinyl-hoodies.jpg` used 3× (C-4, card-2, slide-L); `custom-vinyl-shirts.jpg` used 2× (card-1, card-detailed image1). Only 7 unique images power all 12 locked slots.
+- **New component: `x-sections.card-2image-with-text`** — first appearance in the inventory. Has two named image slots (image1, image2 with alt1, alt2). This is distinct from `card-detailed-info` (which also has image1) — it is a two-image card text layout.
+- **Three `card-image-with-text` blocks** (card-1, card-2, card-3) — most on any page in the inventory. Prior max was two.
+- **Two wrong-subject yard-signs files in dir** — `top5pct-article-yard-signs-buy.jpg` (47KB) and `top5pct-banner-yard-signs-joliet-shorewood-crest-hill.jpg` (96KB), both May 18 locked. Neither is referenced by the blade. These were clearly uploaded to the wrong dir.
+- **`.DS_Store` file in dir** — Mac OS metadata artifact. Should not be in a web-served directory.
+- **7 unused files in dir** — most are the 3 R3 unlocked files and 4 May 18 locked files (2 wrong-subject). The 3 unused R3 files (`top5pct-digital-vinyl-hoodie.jpg`, `top5pct-digital-vinyl-hoodies-in-joliet.jpg`, `top5pct-digital-vinyl-shirts.jpg`) appear to be the replacements staged for locked slots but not yet wired into the blade (MNC, no changes).
+- **Hero is the only good slot** — the single R3 Jun 8 file used in the blade is the hero. The 3 other R3 files in dir are not yet assigned to any slot in the blade.
+- **No cross-dir references** — all 13 slots pull from `digital-vinyl/` own dir.
+- card-detailed-info is single-image (only `image1` and `alt1`). Thirteenth consecutive page with single-image card-detailed.
+- Blade and URL both use `digital-vinyl` — no name mismatch on this page.
+
+---
+
 *Last updated: Jun 18, 2026*
