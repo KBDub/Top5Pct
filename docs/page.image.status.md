@@ -654,4 +654,35 @@ Status codes: `good` | `initial` | `repeat` | `placeholder` | `undersized`
 
 ---
 
+#### /custom-apparel/specialty-materials/holographic-shirts
+
+**Blade:** `resources/views/pages/custom-apparel/holographic-shirts.blade.php`
+**URL:** `/custom-apparel/specialty-materials/holographic-shirts`
+**Note:** Blade is one level up from URL path (`custom-apparel/` not `custom-apparel/specialty-materials/`). Route mapped separately.
+**Verified:** Jun 18, 2026
+
+| section / category | image | image path | round | file date | status |
+|---|---|---|---|---|---|
+| hero — category-hero | top5pct-holographic-vinyl-hoodie-foil.jpg | public/images/holographic-shirts/top5pct-holographic-vinyl-hoodie-foil.jpg | R3 | Jun 8 | good |
+| carousel C-1 — carousel-rotating-images | top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg | public/images/holographic-shirts/top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg | R3 | Jun 8 | R3, locked |
+| carousel C-2 — carousel-rotating-images | top5pct-holographic-vinyl-hoodie-foil.jpg | public/images/holographic-shirts/top5pct-holographic-vinyl-hoodie-foil.jpg | R3 | Jun 8 | good, repeat |
+| carousel C-3 — carousel-rotating-images | top5pct-holographic-baby-shirts.jpg | public/images/holographic-shirts/top5pct-holographic-baby-shirts.jpg | R3 | Jun 8 | good |
+| card-1 — card-image-with-text | top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg | public/images/holographic-shirts/top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg | R3 | Jun 8 | R3, locked, repeat |
+| card-2 — card-image-with-text | top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg | public/images/holographic-shirts/top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg | R3 | Jun 8 | R3, locked, repeat |
+| card-detailed image1 — card-detailed-info (single image) | top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg | public/images/holographic-shirts/top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg | R3 | Jun 8 | R3, locked, repeat |
+| slide-L — card-banner-slide-in (direction left) | top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg | public/images/holographic-shirts/top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg | R3 | Jun 8 | R3, locked, repeat |
+| slide-R — card-banner-slide-in (direction right) | top5pct-custom-foil-shirts-hoodies-caps-joliet.jpg | public/images/custom-shirts/top5pct-custom-foil-shirts-hoodies-caps-joliet.jpg | Initial | Mar 16 | initial, locked, cross-dir |
+
+**Notes:**
+- 9 slots total. 3 good (including 1 good repeat), 6 locked (5 same-file R3 repeats + 1 Initial locked cross-dir). 67% locked — highest locked percentage in the entire inventory.
+- `top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg` (R3, Jun 8, 27KB, locked) fills five active slots — carousel C-1, card-1, card-2, card-detailed image1, and slide-L. Highest single-file repeat count in the entire inventory, surpassing the previous record of four (reflective-shirts and foil-shirts).
+- The dir has only 3 files total covering 9 slots. With only 3 files and 9 slot demands, heavy repetition is structural, not incidental. Even if the locked file were unlocked, the same image would appear in 5 of 9 visible positions.
+- carousel C-2 repeats the hero image (`top5pct-holographic-vinyl-hoodie-foil.jpg`, R3, 539KB, unlocked). Both are good but a visitor scrolling from hero into the carousel sees the same image immediately. Marked "good, repeat" — permissions fine, visual duplication only.
+- card-detailed-info is single-image (only `image1` and `alt1`). Third consecutive specialty-materials page with single-image card-detailed (after reflective-shirts and foil-shirts). This appears to be the standard for this page type.
+- slide-R is cross-dir from `custom-shirts/` — `top5pct-custom-foil-shirts-hoodies-caps-joliet.jpg` (Initial, Mar 16, 36KB, locked). This is the exact same file used as slide-R on the foil-shirts page and as carousel C-1 and three other slots on the foil-shirts page. One Initial-locked file in `custom-shirts/` is now confirmed feeding locked cross-dir slots on at least two separate pages.
+- Only 3 unique images serve all 9 slots (the locked holographic file, the hoodie-foil file twice, and the baby-shirts file). Adding the cross-dir slide-R, only 4 unique images are referenced total.
+- No unused files in dir — all 3 files are referenced in the blade.
+
+---
+
 *Last updated: Jun 18, 2026*
