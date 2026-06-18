@@ -471,4 +471,40 @@ Status codes: `good` | `initial` | `repeat` | `placeholder` | `undersized`
 
 ---
 
+#### /custom-apparel/group-wear/corporate-wear-shirts
+
+**Blade:** `resources/views/pages/custom-apparel/group-wear/corporate-wear-shirts.blade.php`
+**URL:** `/custom-apparel/group-wear/corporate-wear-shirts`
+**Verified:** Jun 18, 2026
+
+| section / category | image | image path | round | file date | status |
+|---|---|---|---|---|---|
+| hero — category-hero | top5pct-custom-business-shirts.jpg | public/images/corporate-wear/top5pct-custom-business-shirts.jpg | R1 | May 11 | good |
+| carousel C-1 — carousel-rotating-images | top5pct-custom-apron-joliet.jpg | public/images/corporate-wear/top5pct-custom-apron-joliet.jpg | R1 | May 11 | good |
+| carousel C-2 — carousel-rotating-images | top5pct-custom-aprons-joliet.jpg | public/images/corporate-wear/top5pct-custom-aprons-joliet.jpg | R1 | May 11 | good |
+| carousel C-3 — carousel-rotating-images | top5pct-banner-corporate-shirts-uniforms-joliet-shorewood.jpg | public/images/corporate-wear/top5pct-banner-corporate-shirts-uniforms-joliet-shorewood.jpg | Initial | Mar 16 | initial, locked |
+| carousel C-4 — carousel-rotating-images | top5pct-custom-pocket-shirt-joliet.jpg | public/images/corporate-wear/top5pct-custom-pocket-shirt-joliet.jpg | R1 | May 11 | good |
+| card-1 — card-image-with-text | top5pct-landscaping-clothing-joliet.jpg | public/images/corporate-wear/top5pct-landscaping-clothing-joliet.jpg | R1 | May 11 | good |
+| card-2 — card-image-with-text | top5pct-lawn-care-clothing.jpg | public/images/corporate-wear/top5pct-lawn-care-clothing.jpg | R1 | May 11 | good |
+| card-2img image1 — card-2image-with-text | top5pct-safety-work-gear-joliet.jpg | public/images/corporate-wear/top5pct-safety-work-gear-joliet.jpg | R1 | May 11 | good |
+| card-2img image2 — card-2image-with-text | top5pct-custom-company-apparel.jpg | public/images/corporate-wear/top5pct-custom-company-apparel.jpg | R2 | Jun 2 | good |
+| card-3 — card-image-with-text | top5pct-custom-cap-hat-joliet-shorewood-rockdale.jpg | public/images/corporate-wear/top5pct-custom-cap-hat-joliet-shorewood-rockdale.jpg | Initial | Mar 16 | initial, locked |
+| card-detailed image1 — card-detailed-info | top5pct-article-corporate-wear-pic1.jpg | public/images/corporate-wear/top5pct-article-corporate-wear-pic1.jpg | Initial | Mar 16 | initial, locked |
+| card-detailed image2 — card-detailed-info | top5pct-article-corporate-wear-pic2.jpg | public/images/corporate-wear/top5pct-article-corporate-wear-pic2.jpg | Initial | Mar 16 | initial, locked |
+| slide-R — card-banner-slide-in (direction right) | top5pct-custom-button-up-shirt-joliet-shorewood.jpg | public/images/corporate-wear/top5pct-custom-button-up-shirt-joliet-shorewood.jpg | Initial | Mar 16 | initial, locked |
+| slide-L — card-banner-slide-in (direction left) | top5pct-volleyball-team-uniforms-joliet.jpg | public/images/spirit-wear/top5pct-volleyball-team-uniforms-joliet.jpg | R2 | Jun 2 | good |
+
+**Notes:**
+- 5 Initial locked slots in active blade positions — highest count in the entire inventory so far. carousel C-3 (127KB), card-3 (40KB), card-detailed image1 (14KB), card-detailed image2 (15KB), slide-R (42KB).
+- card-detailed has two image slots (image1 and image2) — first page in the inventory with a dual-image card-detailed. Both slots are Initial locked.
+- card-detailed image1 at 14KB and image2 at 15KB are the two smallest files seen in any active slot across the entire inventory.
+- carousel C-3 is the first carousel slot in the inventory confirmed to be Initial locked. All other carousel images across all pages inventoried to date are R1 or newer.
+- No repeats — all 14 images are unique.
+- No R3 files in this dir. One R2 file (top5pct-custom-company-apparel.jpg, Jun 2). All other active unlocked images are R1.
+- slide-L cross-dir from spirit-wear/ (R2, Jun 2, 606KB). Slide text "Employee Uniforms and Team Apparel, Ask About Group Pricing" — cross-sell appropriate.
+- Dir mtime is Jun 8 but no file inside carries a Jun 8 date. A file was likely added then removed on that date, leaving the dir timestamp behind.
+- 3 unused locked Initial files in dir (none in blade): `top5pct-custom-polo-shirts-joliet-shorewood-crest-hill.jpg` (30KB), `top5pct-custom-hoodie-pullover-joliet-shorewood.jpg` (41KB), `top5pct-custom-corporate-t-shirts-joliet-shorewood.jpg` (45KB).
+
+---
+
 *Last updated: Jun 18, 2026*
