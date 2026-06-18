@@ -297,4 +297,40 @@ Status codes: `good` | `initial` | `repeat` | `placeholder` | `undersized`
 
 ---
 
+#### /signs/business-signs/window-signs
+
+**Blade:** `resources/views/pages/signs/window-signs.blade.php`
+**URL:** `/signs/business-signs/window-signs`
+**Verified:** Jun 18, 2026
+
+| section / category | image | image path | round | file date | status |
+|---|---|---|---|---|---|
+| hero — category-hero | top5pct-window-signage.jpg | public/images/window-signs/top5pct-window-signage.jpg | R2 | Jun 2 | good |
+| carousel C-1 — carousel-rotating-images | top5pct-business-window-signs.jpg | public/images/window-signs/top5pct-business-window-signs.jpg | R1 | May 11 | good |
+| carousel C-2 — carousel-rotating-images | top5pct-custom-window-signs.jpg | public/images/window-signs/top5pct-custom-window-signs.jpg | R1 | May 11 | good |
+| carousel C-3 — carousel-rotating-images | top5pct-window-door-signs.jpg | public/images/window-signs/top5pct-window-door-signs.jpg | R1 | May 11 | good |
+| carousel C-4 — carousel-rotating-images | top5pct-window-signs-joliet-slammers.jpg | public/images/window-signs/top5pct-window-signs-joliet-slammers.jpg | R1 | May 11 | good |
+| carousel C-5 — carousel-rotating-images | top5pct-window-business-signs.jpg | public/images/window-signs/top5pct-window-business-signs.jpg | R3 | Jun 7 | good |
+| carousel C-6 — carousel-rotating-images | top5pct-window-graphics-joliet.jpg | public/images/window-signs/top5pct-window-graphics-joliet.jpg | R3 | Jun 7 | good |
+| carousel C-7 — carousel-rotating-images | top5pct-window-sign-installers-joliet.jpg | public/images/window-signs/top5pct-window-sign-installers-joliet.jpg | R3 | Jun 7 | good |
+| carousel C-8 — carousel-rotating-images | top5pct-window-signs-cresthill.jpg | public/images/window-signs/top5pct-window-signs-cresthill.jpg | R3 | Jun 7 | good |
+| carousel C-9 — carousel-rotating-images | top5pct-window-signs.jpg | public/images/window-signs/top5pct-window-signs.jpg | R3 | Jun 7 | good |
+| carousel C-10 — carousel-rotating-images | top5pct-window-vinyl-sign-installers.jpg | public/images/window-signs/top5pct-window-vinyl-sign-installers.jpg | R3 | Jun 7 | good |
+| carousel C-11 — carousel-rotating-images | top5pct-window-signs-for-businesses-joliet.jpg | public/images/window-signs/top5pct-window-signs-for-businesses-joliet.jpg | R3 | Jun 8 | good |
+| card-1 — card-image-with-text | top5pct-window-signs-joliet.jpg | public/images/window-signs/top5pct-window-signs-joliet.jpg | R2 | Jun 2 | good |
+| card-2 — card-image-with-text | top5pct-joliet-slammers-window-signs-joliet.jpg | public/images/window-signs/top5pct-joliet-slammers-window-signs-joliet.jpg | R2 | Jun 2 | good |
+| card-detailed image1 — card-detailed-info | top5pct-banner-wall-decal-door-signs-joliet.jpg | public/images/wall-signs/top5pct-banner-wall-decal-door-signs-joliet.jpg | R3 | Jun 8 | wrong topic, locked |
+| slide-L — card-banner-slide-in (direction left) | top5pct-window-signs-for-businesses-joliet.jpg | public/images/window-signs/top5pct-window-signs-for-businesses-joliet.jpg | R3 | Jun 8 | repeat |
+| slide-R — card-banner-slide-in (direction right) | top5pct-wall-signs-for-businesses.jpg | public/images/wall-signs/top5pct-wall-signs-for-businesses.jpg | R3 | Jun 6 | good |
+
+**Notes:**
+- slide-L repeats carousel C-11: both use `top5pct-window-signs-for-businesses-joliet.jpg` (R3, Jun 8, 407KB).
+- card-detailed image1 cross-dir from wall-signs/ (`top5pct-banner-wall-decal-door-signs-joliet.jpg`, Jun 8, locked, 135KB). This is a wall-signs image on a window-signs page. Same locked 135KB file that also appears on floor-signs (card-detailed) and wall-signs (not in blade). Third page that references this file.
+- 11-image carousel is the largest in the inventory so far. Spans R1 (May 11), R2 (Jun 2), and R3 (Jun 7-8) rounds with all unique files. No gaps.
+- slide-R cross-dir from wall-signs/ (R3, Jun 6). Slide text is "Also Install Wall Graphics and Floor Signs" — cross-sell intent is clear.
+- 3 Initial locked files in window-signs/ dir are unused and not in blade: `top5pct-window-cling-decal-joliet-shorewood.jpg` (54KB), `top5pct-window-decal-joliet-shorewood-rockdale.jpg` (58KB), `top5pct-window-decals-joliet-shorewood-crest-hill.jpg` (72KB). All Mar 16, all locked.
+- `top5pct-window-signs-joliet-old.jpg` (May 11, R1, 371KB) is in the dir but not in the blade. Has "old" in name, skipped from carousel.
+
+---
+
 *Last updated: Jun 18, 2026*
