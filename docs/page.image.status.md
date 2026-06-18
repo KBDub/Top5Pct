@@ -685,4 +685,39 @@ Status codes: `good` | `initial` | `repeat` | `placeholder` | `undersized`
 
 ---
 
+#### /custom-apparel/specialty-materials/brick-shirts
+
+**Blade:** `resources/views/pages/custom-apparel/brick-shirts.blade.php`
+**URL:** `/custom-apparel/specialty-materials/brick-shirts`
+**Note:** Blade is one level up from URL path (`custom-apparel/` not `custom-apparel/specialty-materials/`). Route mapped separately.
+**Verified:** Jun 18, 2026
+
+| section / category | image | image path | round | file date | status |
+|---|---|---|---|---|---|
+| hero — category-hero | top5pct-brick-vinyl-hoodies.jpg | public/images/custom-shirts/top5pct-brick-vinyl-hoodies.jpg | R1 | May 11 | good, cross-dir |
+| carousel C-1 — carousel-rotating-images | top5pct-brick-vinyl-cresthill.jpg | public/images/custom-shirts/top5pct-brick-vinyl-cresthill.jpg | R2 | Jun 2 | good, cross-dir |
+| carousel C-2 — carousel-rotating-images | top5pct-brick-vinyl-custom-t-shirt.jpg | public/images/custom-shirts/top5pct-brick-vinyl-custom-t-shirt.jpg | R2 | Jun 2 | good, cross-dir |
+| carousel C-3 — carousel-rotating-images | top5pct-brick-vinyl-jackets-joliet.jpg | public/images/custom-shirts/top5pct-brick-vinyl-jackets-joliet.jpg | R2 | Jun 2 | good, cross-dir |
+| carousel C-4 — carousel-rotating-images | top5pct-customized-brick-vinyl-shirts.jpg | public/images/custom-shirts/top5pct-customized-brick-vinyl-shirts.jpg | R2 | Jun 2 | good, cross-dir |
+| carousel C-5 — carousel-rotating-images | top5pct-brick-vinyl-custom-shirts-joliet.jpg | public/images/brick-shirts/top5pct-brick-vinyl-custom-shirts-joliet.jpg | R3 | Jun 8 | good |
+| carousel C-6 — carousel-rotating-images | top5pct-brick-vinyl-shorewood.jpg | public/images/brick-shirts/top5pct-brick-vinyl-shorewood.jpg | R3 | Jun 8 | good |
+| card-1 — card-image-with-text | top5pct-custom-brick-shirts-hoodies-cap-joliet.jpg | public/images/custom-shirts/top5pct-custom-brick-shirts-hoodies-cap-joliet.jpg | Initial | Mar 16 | initial, locked, cross-dir |
+| card-2 — card-image-with-text | top5pct-custom-pattern-shirts-caps-hoodies-joliet.jpg | public/images/custom-shirts/top5pct-custom-pattern-shirts-caps-hoodies-joliet.jpg | Initial | Mar 16 | initial, locked, cross-dir |
+| card-detailed image1 — card-detailed-info (single image) | top5pct-custom-brick-shirts-hoodies-cap-joliet.jpg | public/images/custom-shirts/top5pct-custom-brick-shirts-hoodies-cap-joliet.jpg | Initial | Mar 16 | initial, locked, cross-dir, repeat |
+| slide-L — card-banner-slide-in (direction left) | top5pct-custom-brick-shirts-hoodies-cap-joliet.jpg | public/images/custom-shirts/top5pct-custom-brick-shirts-hoodies-cap-joliet.jpg | Initial | Mar 16 | initial, locked, cross-dir, repeat |
+| slide-R — card-banner-slide-in (direction right) | top5pct-custom-hoodies.jpg | public/images/custom-shirts/top5pct-custom-hoodies.jpg | R1 | May 11 | good, cross-dir |
+
+**Notes:**
+- 12 slots total. 8 good, 4 initial locked (all cross-dir from custom-shirts/). 33% locked — best locked ratio among all specialty-materials pages inventoried so far.
+- `top5pct-custom-brick-shirts-hoodies-cap-joliet.jpg` (Initial, Mar 16, 28KB, locked) fills three active slots — card-1, card-detailed image1, and slide-L. All three are cross-dir references to `custom-shirts/`.
+- `top5pct-custom-pattern-shirts-caps-hoodies-joliet.jpg` (Initial, Mar 16, 27KB, locked) fills card-2. Content mismatch — the filename suggests a general "pattern shirts" file, not a brick-specific image. May be a placeholder from the Initial batch.
+- card-detailed-info is single-image (only `image1` and `alt1`). Fourth consecutive specialty-materials page with single-image card-detailed. This is the confirmed standard for this page family.
+- The page's own dir (`brick-shirts/`) has zero locked files — both files are R3, unlocked, and cover carousel C-5 and C-6 cleanly. All locked slots come from `custom-shirts/` cross-dir references.
+- The carousel is split: C-1 through C-4 draw from `custom-shirts/` (R1 and R2, all unlocked), C-5 and C-6 draw from `brick-shirts/` (R3, unlocked). All 6 carousel slots are good.
+- slide-R uses `top5pct-custom-hoodies.jpg` (R1, May 11, 294KB). Alt text in blade reads "Custom flock velvet shirts from Top 5 Percent in Joliet Illinois" — alt text describes flock/velvet shirts on a brick shirts page. Image content may also be off-topic for this slide. Slide text: "Add Flock, Puff, or Glitter to Your Shirt Order" — a cross-sell to other specialty techniques.
+- Hero is cross-dir from `custom-shirts/` (R1, May 11, 388KB). The brick-vinyl-hoodies image is topic-appropriate for the page.
+- No unused files in the brick-shirts/ dir — both files are referenced in the carousel.
+
+---
+
 *Last updated: Jun 18, 2026*
