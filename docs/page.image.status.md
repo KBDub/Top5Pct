@@ -507,4 +507,41 @@ Status codes: `good` | `initial` | `repeat` | `placeholder` | `undersized`
 
 ---
 
+#### /custom-apparel/group-wear/spirit-wear-shirts
+
+**Blade:** `resources/views/pages/custom-apparel/group-wear/spirit-wear-shirts.blade.php`
+**URL:** `/custom-apparel/group-wear/spirit-wear-shirts`
+**Verified:** Jun 18, 2026
+
+| section / category | image | image path | round | file date | status |
+|---|---|---|---|---|---|
+| hero — category-hero | top5pct-spirit-wear-joliet.jpg | public/images/spirit-wear/top5pct-spirit-wear-joliet.jpg | R1 | May 11 | good |
+| carousel C-1 — carousel-rotating-images | top5pct-banner-fanwear-spiritwear-uniforms-joliet-shorewood.jpg | public/images/spirit-wear/top5pct-banner-fanwear-spiritwear-uniforms-joliet-shorewood.jpg | Initial | Mar 16 | initial, locked |
+| carousel C-2 — carousel-rotating-images | top5pct-spirit-wear-shirts.jpg | public/images/spirit-wear/top5pct-spirit-wear-shirts.jpg | R1 | May 11 | good |
+| carousel C-3 — carousel-rotating-images | top5pct-spirit-wear-clothing.jpg | public/images/spirit-wear/top5pct-spirit-wear-clothing.jpg | R2 | Jun 2 | good |
+| carousel C-4 — carousel-rotating-images | top5pct-volleyball-team-uniforms-joliet.jpg | public/images/spirit-wear/top5pct-volleyball-team-uniforms-joliet.jpg | R2 | Jun 2 | good |
+| carousel C-5 — carousel-rotating-images | top5pct-spirit-wear-volleyball-track.jpg | public/images/spirit-wear/top5pct-spirit-wear-volleyball-track.jpg | R2 | Jun 3 | good |
+| card-1 — card-image-with-text | top5pct-joliet-west-spirit-wear-hoodie-shorewood.jpg | public/images/spirit-wear/top5pct-joliet-west-spirit-wear-hoodie-shorewood.jpg | Initial | Mar 16 | initial, locked |
+| card-2 — card-image-with-text | top5pct-spiritwear-fanwear-joliet-plainfield-shorewood.jpg | public/images/spirit-wear/top5pct-spiritwear-fanwear-joliet-plainfield-shorewood.jpg | Initial | Mar 16 | initial, locked |
+| card-2img image1 — card-2image-with-text | top5pct-sator-sanchez-school-shirt-joliet-crest-hill.jpg | public/images/spirit-wear/top5pct-sator-sanchez-school-shirt-joliet-crest-hill.jpg | Initial | Mar 16 | initial, locked |
+| card-2img image2 — card-2image-with-text | top5pct-plainfield-south-high-school-hoodie.jpg | public/images/spirit-wear/top5pct-plainfield-south-high-school-hoodie.jpg | Initial | Mar 16 | initial, locked |
+| card-3 — card-image-with-text | top5pct-bowling-shirts-joliet-shorewood-crest-hill.jpg | public/images/spirit-wear/top5pct-bowling-shirts-joliet-shorewood-crest-hill.jpg | Initial | Mar 16 | initial, locked |
+| card-detailed image1 — card-detailed-info | top5pct-article-spirit-wear-pic1.jpg | public/images/spirit-wear/top5pct-article-spirit-wear-pic1.jpg | Initial | Mar 17 | initial, locked |
+| card-detailed image2 — card-detailed-info | top5pct-article-fan-wear-pic2.jpg | public/images/spirit-wear/top5pct-article-fan-wear-pic2.jpg | Initial | Mar 17 | initial, locked |
+| slide-L — card-banner-slide-in (direction left) | top5pct-plainfield-south-high-school-hoodie.jpg | public/images/spirit-wear/top5pct-plainfield-south-high-school-hoodie.jpg | Initial | Mar 16 | initial, locked, repeat |
+| slide-R — card-banner-slide-in (direction right) | top5pct-family-reunion-tees.jpg | public/images/reunion-shirts/top5pct-family-reunion-tees.jpg | R3 | Jun 8 | good |
+
+**Notes:**
+- 9 Initial locked slots in active blade positions — highest count in the entire inventory by a wide margin. 60% of the page is locked. Only the carousel (4 of 5 images), the hero, and slide-R are good.
+- slide-L is both Initial locked AND repeats card-2img image2 — the only slot in the inventory confirmed as both locked and a within-page repeat simultaneously. Both are `top5pct-plainfield-south-high-school-hoodie.jpg` (Initial, Mar 16, 73KB).
+- carousel C-1 is locked (88KB). Second consecutive apparel page with a locked carousel slot.
+- Both card-detailed images are Initial locked (17KB and 14KB). Same two-slot card-detailed pattern seen on corporate-wear-shirts.
+- Dir has only 3 unlocked images beyond the hero that could serve as replacements: `top5pct-spirit-wear-clothing.jpg`, `top5pct-volleyball-team-uniforms-joliet.jpg`, `top5pct-spirit-wear-volleyball-track.jpg`. All 3 are already in the carousel. New uploads are required to fix the 9 locked slots without pulling carousel images into card slots.
+- `top5pct-sator-sanchez-school-shirt-joliet-crest-hill.jpg` (card-2img image1, Initial, Mar 16, 267KB) is the largest Initial file in active use across the entire inventory.
+- `top5pct-spirit-wear-volleyball-track.jpg` is dated Jun 3 — the only Jun 3 date seen in the inventory so far. Not Jun 2 and not Jun 4. Likely a same-batch upload that arrived one day late.
+- slide-R cross-dir from reunion-shirts/ (R3, Jun 8, 113KB). Slide text "Reunion Shirts, Corporate Wear, and More Available" — cross-sell appropriate.
+- No R3 files in this dir.
+
+---
+
 *Last updated: Jun 18, 2026*
