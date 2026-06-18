@@ -971,4 +971,47 @@ Status codes: `good` | `initial` | `repeat` | `placeholder` | `undersized`
 
 ---
 
+#### /custom-apparel/printing-options/dtf-printing
+
+**Blade:** `resources/views/pages/custom-apparel/dtf-transfers.blade.php`
+**URL:** `/custom-apparel/printing-options/dtf-printing`
+**Dir:** `public/images/dtf-transfers/` — 13 files (2 locked Initial, 11 unlocked). 4 unused files in dir.
+**Anomalies:** (1) Blade lives in `custom-apparel/` not `custom-apparel/printing-options/`, same as dye-sublimation. (2) Dir name `dtf-transfers/` does not match URL slug `dtf-printing`. Third URL-to-dir mismatch (glow-shirts, sublimation, dtf-transfers). (3) Both locked Initial files in dir use prefix `toptpct-` instead of `top5pct-` — a naming typo present from the Mar 16 launch batch.
+**Verified:** Jun 18, 2026
+
+| section / category | image | image path | round | file date | status |
+|---|---|---|---|---|---|
+| hero — category-hero | top5pct-dtf-t-shirt-printing.jpg | public/images/dtf-transfers/top5pct-dtf-t-shirt-printing.jpg | R2 | Jun 2 | good |
+| carousel C-1 — carousel-rotating-images | top5pct-dtf-tees.jpg | public/images/dtf-transfers/top5pct-dtf-tees.jpg | R2 | Jun 2 | good |
+| carousel C-2 — carousel-rotating-images | top5pct-dtf-t-shirt-maker.jpg | public/images/dtf-transfers/top5pct-dtf-t-shirt-maker.jpg | R2 | Jun 2 | good |
+| carousel C-3 — carousel-rotating-images | top5pct-custom-t-shirts-dtf.jpg | public/images/dtf-transfers/top5pct-custom-t-shirts-dtf.jpg | R1 | May 11 | good |
+| carousel C-4 — carousel-rotating-images | top5pct-dtf-hoodies-joliet.jpg | public/images/dtf-transfers/top5pct-dtf-hoodies-joliet.jpg | R1 | May 11 | good |
+| card-1 — card-image-with-text | top5pct-dtf-zip-up-hoodies.jpg | public/images/dtf-transfers/top5pct-dtf-zip-up-hoodies.jpg | R1 | May 11 | good |
+| card-2 — card-image-with-text | top5pct-custom-dtf-shirts.jpg | public/images/dtf-transfers/top5pct-custom-dtf-shirts.jpg | R2 | Jun 2 | good |
+| card-detailed image1 — card-detailed-info (single image) | top5pct-custom-bowling-shirts-dtf.jpg | public/images/dtf-transfers/top5pct-custom-bowling-shirts-dtf.jpg | R2 | Jun 2 | good |
+| slide-R — card-banner-slide-in (direction right) | toptpct-banner-dtf-transfers-joliet.jpg | public/images/dtf-transfers/toptpct-banner-dtf-transfers-joliet.jpg | Initial | Mar 16 | initial, locked |
+| slide-L — card-banner-slide-in (direction left) | top5pct-custom-embroidery-shops-near-me-joliet.jpg | public/images/custom-shirts/top5pct-custom-embroidery-shops-near-me-joliet.jpg | Initial | Mar 16 | wrong-dir 404 |
+
+**Unused files in dir (not referenced by blade):**
+| file | round | date | size | locked |
+|---|---|---|---|---|
+| toptpct-dtf-transfer-pricing.jpg | Initial | Mar 16 | 201KB | yes (-rw-------) |
+| top5pct-custom-sweatshirts.jpg | R1 | May 11 | 170KB | no |
+| top5pct-custom-shirt-with-picture.jpg | R1 | May 11 | 611KB | no |
+| top5pct-custom-baby-clothing-joliet.jpg | R2 | Jun 2 | 330KB | no |
+
+**Notes:**
+- 10 slots total. 8 good, 1 locked, 1 wrong-dir 404. 4-image carousel, back to smaller count vs screen-printing (10) and dye-sublimation (8).
+- **slide-L is a wrong-dir 404**: blade references `/images/custom-shirts/top5pct-custom-embroidery-shops-near-me-joliet.jpg` — file does not exist in `custom-shirts/`, only in `embroidery/`. Identical broken path to screen-printing slide-L. Same wrong reference copied to two pages. Third wrong-dir 404 in inventory.
+- **slide-R locked with prefix typo**: `toptpct-banner-dtf-transfers-joliet.jpg` (Initial, Mar 16, 411KB, locked). Prefix is `toptpct-` not `top5pct-`. The typo is in the filename itself, not a variable. This is the largest locked file in any DTF slot.
+- **Both locked Initial files share the `toptpct-` prefix typo**: `toptpct-banner-dtf-transfers-joliet.jpg` (used, locked) and `toptpct-dtf-transfer-pricing.jpg` (unused, locked). The naming error appears to have originated in the Mar 16 launch batch for this dir.
+- **4 unused files in dir** — most in any dir so far: `toptpct-dtf-transfer-pricing.jpg` (locked, unused), `top5pct-custom-sweatshirts.jpg`, `top5pct-custom-shirt-with-picture.jpg`, `top5pct-custom-baby-clothing-joliet.jpg`. The sweatshirts, shirt-with-picture, and baby-clothing images appear to be candidates for future blade slots that were uploaded but never assigned.
+- **`top5pct-dtf-price-chart2.jpg` found at `public/images/` root** — a loose file not in any subdir, not referenced by this blade. Orphan file at the images root level.
+- **Unique page-level components**: `x-ui.dtf-confirm-modal`, `x-sections.dtf-pricing-section`, and `x-ui.banner-cta-dtf-dropzone` appear only on this page. None carry direct image slots in the blade (images are inside those components if any).
+- **product-grid uses `collectionSlug="dtf-transfers"`** — first page in the inventory where product-grid references a collection other than `custom-shirts`.
+- card-detailed-info is single-image (only `image1` and `alt1`). Twelfth consecutive page with single-image card-detailed.
+- Blade location anomaly: `dtf-transfers.blade.php` lives in `resources/views/pages/custom-apparel/` not `custom-apparel/printing-options/`, same pattern as dye-sublimation.
+
+---
+
 *Last updated: Jun 18, 2026*
