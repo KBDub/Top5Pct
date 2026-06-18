@@ -752,4 +752,38 @@ Status codes: `good` | `initial` | `repeat` | `placeholder` | `undersized`
 
 ---
 
+#### /custom-apparel/specialty-materials/glow-in-the-dark-shirts
+
+**Blade:** `resources/views/pages/custom-apparel/glow-in-the-dark-shirts.blade.php`
+**URL:** `/custom-apparel/specialty-materials/glow-in-the-dark-shirts`
+**Dir:** `public/images/glow-shirts/` — dir name is `glow-shirts/`, shorter than the URL slug `glow-in-the-dark-shirts`. First confirmed URL-slug-to-dir-name mismatch in the inventory.
+**Note:** Blade is one level up from URL path (`custom-apparel/` not `custom-apparel/specialty-materials/`). Route mapped separately.
+**Verified:** Jun 18, 2026
+
+| section / category | image | image path | round | file date | status |
+|---|---|---|---|---|---|
+| hero — category-hero | top5pct-glow-in-the-dark-caps.jpg | public/images/glow-shirts/top5pct-glow-in-the-dark-caps.jpg | R3 | Jun 8 | good |
+| carousel C-1 — carousel-rotating-images | top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg | public/images/glow-shirts/top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg | R3 | Jun 8 | R3, locked |
+| carousel C-2 — carousel-rotating-images | top5pct-glowing-halloween-bat-shirt.jpg | public/images/glow-shirts/top5pct-glowing-halloween-bat-shirt.jpg | R3 | Jun 8 | good |
+| carousel C-3 — carousel-rotating-images | top5pct-halloween-pumpkin-glow-shirt.jpg | public/images/glow-shirts/top5pct-halloween-pumpkin-glow-shirt.jpg | R3 | Jun 8 | good |
+| carousel C-4 — carousel-rotating-images | top5pct-custom-vinyl-shirts.jpg | public/images/custom-shirts/top5pct-custom-vinyl-shirts.jpg | R1 | May 11 | good, cross-dir |
+| card-1 — card-image-with-text | top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg | public/images/glow-shirts/top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg | R3 | Jun 8 | R3, locked, repeat |
+| card-2 — card-image-with-text | top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg | public/images/glow-shirts/top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg | R3 | Jun 8 | R3, locked, repeat |
+| card-detailed image1 — card-detailed-info (single image) | top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg | public/images/glow-shirts/top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg | R3 | Jun 8 | R3, locked, repeat |
+| slide-R — card-banner-slide-in (direction right) | top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg | public/images/glow-shirts/top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg | R3 | Jun 8 | R3, locked, repeat |
+| slide-L — card-banner-slide-in (direction left) | top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg | public/images/custom-shirts/top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg | Initial | Mar 16 | initial, locked, cross-dir |
+
+**Notes:**
+- 10 slots total. 4 good, 6 locked (5 same-file R3 repeats + 1 Initial locked cross-dir). 60% locked — matches flock-shirts exactly.
+- `top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg` (R3, Jun 8, 28KB, locked) fills five active slots — carousel C-1, card-1, card-2, card-detailed image1, and slide-R. Ties holographic-shirts and flock-shirts for the most single-file repeat count in the inventory.
+- Slide directions are flipped vs flock-shirts: here the page-file repeat lands on slide-R (direction="right") and the cross-dir locked file lands on slide-L (direction="left"). On flock-shirts it was the reverse. The structural count (5 page-file slots, 1 cross-dir locked slide) is identical.
+- slide-L cross-dir is `top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg` from `custom-shirts/` (Initial, Mar 16, 27KB, locked). This is the same file used as slide-R on flock-shirts. The holographic locked thumbnail now appears as a cross-sell slide on at least two other specialty pages.
+- card-detailed-info is single-image (only `image1` and `alt1`). Sixth consecutive specialty-materials page with single-image card-detailed.
+- Carousel C-4 is cross-dir from `custom-shirts/` using `top5pct-custom-vinyl-shirts.jpg` (R1, May 11). Alt text in blade reads "Custom glow in the dark shirts made in Joliet" on a generic vinyl shirts image. Third consecutive specialty page with this same C-4 mismatch (flock-shirts and brick-shirts also used this file with an off-topic alt).
+- Dir name mismatch: URL slug is `glow-in-the-dark-shirts` but the image dir is `glow-shirts/`. All prior specialty pages had a 1-to-1 match between URL slug and dir name. This is the first exception.
+- Dir has 4 files, same count as flock-shirts/. All 4 files referenced in blade with no unused files in dir.
+- glow-shirts/ dir structure is identical to flock-shirts/ in every way: 4 files all from the same R3 batch (Jun 8), one locked thumbnail (28KB), three unlocked photos.
+
+---
+
 *Last updated: Jun 18, 2026*
