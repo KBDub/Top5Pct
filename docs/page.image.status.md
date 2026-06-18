@@ -1113,4 +1113,41 @@ Status codes: `good` | `initial` | `repeat` | `placeholder` | `undersized`
 
 ---
 
+## Inventory Summary (Custom Apparel Section, Jun 18, 2026)
+
+**Pages covered:** 14 pages across specialty-materials (reflective, foil, holographic, brick, flock, glow-in-the-dark, puff, vinyl) and printing-options (rhinestone, embroidery, screen-printing, dye-sublimation, dtf-printing, digital-vinyl).
+
+---
+
+### Issue categories found
+
+**Locked images**
+Range is wide — from 0% locked (dye-sublimation, embroidery) to 92% locked (digital-vinyl). Specialty-materials pages are mostly 18-20% locked with one or two files per page still locked. The vinyl and digital-vinyl pages are dominated by a May 18 batch that locked nearly every slot. Screen-printing and rhinestone are mid-range at 12-18%. These will be addressed page by page.
+
+**Wrong-dir 404s**
+Three confirmed broken image references across the section. Foil slide-L references a file that lives in `glitter-shirts/` not `custom-shirts/`. Screen-printing slide-L and DTF slide-L both reference the same broken path, `custom-shirts/top5pct-custom-embroidery-shops-near-me-joliet.jpg`, which only exists in `embroidery/`. The same wrong path was copied into two separate blades.
+
+**Cross-dir locked references**
+All seven specialty-materials pages pull a locked Mar 16 holographic image from `custom-shirts/` for their second slide slot. This is a shared cross-dir dependency that affects the whole group uniformly.
+
+**Filename typos**
+Four confirmed typos baked into filenames that are actively referenced in blades: `rhinetsone` (rhinestone and puff pages), `sublmation` (dye-sublimation slide-R), `embroidered-caps-old` (embroidery slide-R), and `toptpct-` prefix (DTF dir, two files). All load without error but carry the wrong name permanently unless renamed and rereferenced.
+
+**Dir, URL, and blade name mismatches**
+Three URL-to-dir-name mismatches: glow-in-the-dark-shirts points to `glow-shirts/`, dye-sublimation-printing points to `sublimation/`, dtf-printing points to `dtf-transfers/`. Two blades live outside their expected subdir: `dye-sublimation.blade.php` and `dtf-transfers.blade.php` are in `custom-apparel/` root rather than `custom-apparel/printing-options/`.
+
+**May 18 locked batch (vinyl and digital-vinyl dirs)**
+Both dirs share an identical set of May 18 locked placeholder files — same filenames, same byte sizes — indicating a single upload copied to two dirs. Both dirs also contain the same two wrong-subject yard-signs images (47KB and 96KB) from that batch. The `digital-vinyl/` dir also has a `.DS_Store` Mac metadata file. A loose DTF price-chart file sits at the `public/images/` root outside any subdir.
+
+**Repeat usage**
+Most common on digital-vinyl and vinyl pages, where the same 3-4 locked files fill the carousel, cards, and slides because not enough unique images existed when the blade was wired. Some individual files appear in 3 separate slots on the same page.
+
+**Unused files in dirs**
+Every dir has at least one unused file. Worst cases are digital-vinyl (7 unused, including 3 R3 unlocked files staged but not yet assigned to blade slots) and vinyl (5 unused). Unlocked R3 files sitting unused in a dir are the clearest signal that blade wiring is incomplete.
+
+**Universal structural observation**
+`card-detailed-info` uses only `image1` across all 14 pages inventoried. The `image2` slot exists in the component but has never been used in this section.
+
+---
+
 *Last updated: Jun 18, 2026*
