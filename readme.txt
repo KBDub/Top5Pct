@@ -42,23 +42,6 @@ STEP 2 — Install PHP dependencies
   composer install --no-dev --optimize-autoloader
 
 
-STEP 2b — Create required storage directories
------------------------------------------------
-The .gitignore excludes /storage/* so these folders will not exist on a
-fresh server. Laravel needs them before any artisan command can run.
-Missing directories cause: "Please provide a valid cache path" (Compiler.php).
-
-  mkdir -p storage/framework/views
-  mkdir -p storage/framework/cache/data
-  mkdir -p storage/framework/sessions
-  mkdir -p storage/logs
-  mkdir -p bootstrap/cache
-  chmod -R 775 storage
-  chmod -R 775 bootstrap/cache
-
-Run this step before any php artisan command.
-
-
 STEP 3 — Create and configure .env
 ------------------------------------
 Copy .env.example to .env and fill in the values below.
