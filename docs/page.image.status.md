@@ -856,4 +856,38 @@ Status codes: `good` | `initial` | `repeat` | `placeholder` | `undersized`
 
 ---
 
+#### /custom-apparel/printing-options/embroidery
+
+**Blade:** `resources/views/pages/custom-apparel/printing-options/embroidery.blade.php`
+**URL:** `/custom-apparel/printing-options/embroidery`
+**Dir:** `public/images/embroidery/` — 11 files. Best-populated own dir in the inventory.
+**Verified:** Jun 18, 2026
+
+| section / category | image | image path | round | file date | status |
+|---|---|---|---|---|---|
+| hero — category-hero | top5pct-stitched-embroidered-shirts.jpg | public/images/embroidery/top5pct-stitched-embroidered-shirts.jpg | R2 | Jun 2 | good |
+| carousel C-1 — carousel-rotating-images | top5pct-embroidered-aprons.jpg | public/images/embroidery/top5pct-embroidered-aprons.jpg | R1 | May 11 | good |
+| carousel C-2 — carousel-rotating-images | top5pct-embroidered-caps.jpg | public/images/embroidery/top5pct-embroidered-caps.jpg | R2 | Jun 2 | good |
+| carousel C-3 — carousel-rotating-images | top5pct-embroidery-in-joliet.jpg | public/images/embroidery/top5pct-embroidery-in-joliet.jpg | R1 | May 11 | good |
+| carousel C-4 — carousel-rotating-images | top5pct-embroidered-stitched-caps.jpg | public/images/embroidery/top5pct-embroidered-stitched-caps.jpg | R1 | May 11 | good |
+| carousel C-5 — carousel-rotating-images | top5pct-embroidered-cap-embroidered-beanies-joliet.jpg | public/images/embroidery/top5pct-embroidered-cap-embroidered-beanies-joliet.jpg | R3 | Jun 8 | good |
+| card-1 — card-image-with-text | top5pct-embroidered-bag.jpg | public/images/embroidery/top5pct-embroidered-bag.jpg | R2 | Jun 2 | good |
+| card-2 — card-image-with-text | top5pct-embroidered-smocks.jpg | public/images/embroidery/top5pct-embroidered-smocks.jpg | R2 | Jun 2 | good |
+| card-detailed image1 — card-detailed-info (single image) | top5pct-embroidery-beanies.jpg | public/images/embroidery/top5pct-embroidery-beanies.jpg | R2 | Jun 2 | good |
+| slide-L — card-banner-slide-in (direction left) | top5pct-custom-embroidery-shops-near-me-joliet.jpg | public/images/embroidery/top5pct-custom-embroidery-shops-near-me-joliet.jpg | Initial | Mar 16 | initial, locked |
+| slide-R — card-banner-slide-in (direction right) | top5pct-embroidered-caps-old.jpg | public/images/embroidery/top5pct-embroidered-caps-old.jpg | R1 | May 11 | good |
+
+**Notes:**
+- 11 slots total. 10 good, 1 locked. 9% locked — new record cleanest page in the inventory, surpassing rhinestone-apparel at 18%.
+- First page with zero cross-dir references. Every one of the 11 slots uses a file from `embroidery/` own dir. No `custom-shirts/` or any other dir referenced.
+- All 11 files in the embroidery/ dir are referenced by the blade — perfect 11-file to 11-slot match with zero unused files in dir.
+- The only locked slot is slide-L: `top5pct-custom-embroidery-shops-near-me-joliet.jpg` (Initial, Mar 16, 28KB). Unlike specialty-materials pages, this locked thumbnail fills only 1 slot, not 5. It is an own-dir file, not cross-dir.
+- 5 carousel slots (C-1 through C-5), same as rhinestone-apparel. Confirms this as the printing-options section carousel standard.
+- card-detailed-info is single-image (only `image1` and `alt1`). Ninth consecutive page with single-image card-detailed.
+- slide-R uses `top5pct-embroidered-caps-old.jpg` (R1, May 11, 651KB) — largest file in the dir. Filename contains an "old" suffix, suggesting it may have been marked for replacement during a photo refresh but is still actively referenced in the blade.
+- Dir has files spanning four rounds: Initial (1 locked), R1 (4 files), R2 (5 files), R3 (1 file). Most diverse round spread seen in any own dir so far.
+- The holographic cross-dir locked slide pattern seen on flock, glow, and rhinestone pages does not appear here. Embroidery breaks that pattern entirely.
+
+---
+
 *Last updated: Jun 18, 2026*
