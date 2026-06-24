@@ -36,8 +36,8 @@ Status codes: `good` | `initial` | `repeat` | `placeholder` | `undersized`
 
 **Notes:**
 - slide-L is a 261x177px thumbnail (21KB). Far too small for a slide-in banner. Needs replacement.
-- card-detailed image1 is a locked (permissions -rw-------) Initial file.
-- Unused in dir: `top5pct-custom-table-cloth-joliet-crest-hill.jpg` (Jun 8, locked, Initial). Candidate for slide-L or card-detailed replacement.
+- card-detailed image1 is an Initial file. Replace with a carousel image — 6 in carousel, 2 can move to fill card-detailed and slide-L, leaving 4 in carousel.
+- Unused in dir: `top5pct-custom-table-cloth-joliet-crest-hill.jpg` (Jun 8, Initial). Additional candidate if needed.
 - slide-R uses a banners/ image (retractable banner product shot). Contextually appropriate for the "complete your event setup" slide.
 
 ---
