@@ -70,8 +70,8 @@
     />
 
     <x-sections.card-image-with-text
-        image="/images/wall-signs/top5pct-banner-wall-decal-door-signs-joliet.jpg"
-        alt="Custom wall decals and door signs for businesses in Joliet Illinois"
+        image="/images/wall-signs/top5pct-wall-wraps.jpg"
+        alt="Custom wall decals and wall graphics for businesses in Joliet Illinois"
         title="Brand Your Interior Spaces"
     >
         <p class="mb-4">Wall signs and graphics are one of the most effective ways to create a professional, branded environment inside your business, and they coordinate naturally with our <a href="/signs/business-signs/window-signs" class="link-notification">window signs</a> and exterior signage for a consistent brand statement from the curb to the back of your space. Whether you want your company logo on the lobby wall, an inspirational quote in the break room, a product mural in your showroom, or directional graphics throughout your facility, we can produce and install wall graphics that make an immediate impact, and for clients who need branded staff uniforms to match their new interior look our <a href="/custom-apparel" class="link-notification">custom apparel</a> shop produces shirts and hoodies right next door.</p>

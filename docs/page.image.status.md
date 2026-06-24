@@ -261,18 +261,18 @@ All R1/R2/R3 images redistributed to sidewalk-signs-a-frame-signs and yard-signs
 | carousel C-2 — carousel-rotating-images | top5pct-wall-wraps.jpg | public/images/wall-signs/top5pct-wall-wraps.jpg | R3 | Jun 8 | good |
 | carousel C-3 — carousel-rotating-images | top5pct-wall-decals-bedroom.jpg | public/images/wall-signs/top5pct-wall-decals-bedroom.jpg | R3 | Jun 6 | good |
 | carousel C-4 — carousel-rotating-images | top5pct-wall-sign-for-businesses.jpg | public/images/wall-signs/top5pct-wall-sign-for-businesses.jpg | R3 | Jun 6 | good |
-| card-1 — card-image-with-text | top5pct-banner-wall-decal-door-signs-joliet.jpg | public/images/wall-signs/top5pct-banner-wall-decal-door-signs-joliet.jpg | R3 | Jun 8 | good |
+| card-1 — card-image-with-text | top5pct-wall-wraps.jpg | public/images/wall-signs/top5pct-wall-wraps.jpg | R3 | Jun 8 | repeat |
 | card-2 — card-image-with-text | top5pct-wall-signs-for-businesses.jpg | public/images/wall-signs/top5pct-wall-signs-for-businesses.jpg | R3 | Jun 6 | good |
 | card-detailed image1 — card-detailed-info | top5pct-wall-signs-joliet.jpg | public/images/wall-signs/top5pct-wall-signs-joliet.jpg | R3 | Jun 8 | good |
 | slide-R — card-banner-slide-in (direction right) | top5pct-window-signs-joliet.jpg | public/images/window-signs/top5pct-window-signs-joliet.jpg | R2 | Jun 2 | good |
 | slide-L — card-banner-slide-in (direction left) | top5pct-window-graphics-joliet.jpg | public/images/window-signs/top5pct-window-graphics-joliet.jpg | R3 | Jun 7 | good |
 
 **Notes:**
-- Carousel reduced from 5 to 4 Jun 24: C-5 (top5pct-wall-signs-for-businesses.jpg) removed. card-2 repeat resolved.
-- card-1 repeat resolved Jun 24: top5pct-wall-wraps.jpg replaced by top5pct-banner-wall-decal-door-signs-joliet.jpg (R3), moved from window-signs card-detailed. No repeats remain.
+- Carousel reduced from 5 to 4 Jun 24: C-5 (top5pct-wall-signs-for-businesses.jpg) removed. card-2 repeat resolved — that image is now only in card-2.
+- card-1 still repeats carousel C-2: both use top5pct-wall-wraps.jpg (R3). Needs a new image to break.
 - carousel C-1 renamed from top5pct-wall-signs-old.jpg to top5pct-wall-signs-mishas-gaming-lounge.jpg Jun 24. R1, 496KB. Name now reflects actual content (Misha's Gaming Lounge).
 - Both slides are cross-dir from window-signs/. Slide texts are "Turn Your Walls Into a Brand Statement" (slide-R) and "Window Graphics and Door Signs Available Too" (slide-L). Cross-sell intent is clear and contextually appropriate.
-- Dir note: 2 files in wall-signs/ dir are used by the floor-signs page but not this blade: top5pct-article-window-wall-signs.jpg (41KB), top5pct-wall-decals-joliet.jpg (63KB). top5pct-banner-wall-decal-door-signs-joliet.jpg is now in this blade (card-1).
+- Dir note: 3 files in wall-signs/ dir are NOT in this blade — used by the floor-signs page instead: top5pct-article-window-wall-signs.jpg (41KB), top5pct-wall-decals-joliet.jpg (63KB), top5pct-banner-wall-decal-door-signs-joliet.jpg (135KB). The wall-signs/ dir serves two pages simultaneously.
 
 ---
 
@@ -295,18 +295,20 @@ All R1/R2/R3 images redistributed to sidewalk-signs-a-frame-signs and yard-signs
 | carousel C-8 — carousel-rotating-images | top5pct-window-signs-cresthill.jpg | public/images/window-signs/top5pct-window-signs-cresthill.jpg | R3 | Jun 7 | good |
 | carousel C-9 — carousel-rotating-images | top5pct-window-signs.jpg | public/images/window-signs/top5pct-window-signs.jpg | R3 | Jun 7 | good |
 | carousel C-10 — carousel-rotating-images | top5pct-window-vinyl-sign-installers.jpg | public/images/window-signs/top5pct-window-vinyl-sign-installers.jpg | R3 | Jun 7 | good |
+| carousel C-11 — carousel-rotating-images | top5pct-window-signs-for-businesses-joliet.jpg | public/images/window-signs/top5pct-window-signs-for-businesses-joliet.jpg | R3 | Jun 8 | good |
 | card-1 — card-image-with-text | top5pct-window-signs-joliet.jpg | public/images/window-signs/top5pct-window-signs-joliet.jpg | R2 | Jun 2 | good |
 | card-2 — card-image-with-text | top5pct-joliet-slammers-window-signs-joliet.jpg | public/images/window-signs/top5pct-joliet-slammers-window-signs-joliet.jpg | R2 | Jun 2 | good |
-| card-detailed image1 — card-detailed-info | top5pct-window-signs-joliet-business-signage.jpg | public/images/window-signs/top5pct-window-signs-joliet-business-signage.jpg | R1 | May 11 | good |
-| slide-L — card-banner-slide-in (direction left) | top5pct-window-signs-for-businesses-joliet.jpg | public/images/window-signs/top5pct-window-signs-for-businesses-joliet.jpg | R3 | Jun 8 | good |
+| card-detailed image1 — card-detailed-info | top5pct-banner-wall-decal-door-signs-joliet.jpg | public/images/wall-signs/top5pct-banner-wall-decal-door-signs-joliet.jpg | R3 | Jun 8 | wrong topic, locked |
+| slide-L — card-banner-slide-in (direction left) | top5pct-window-signs-for-businesses-joliet.jpg | public/images/window-signs/top5pct-window-signs-for-businesses-joliet.jpg | R3 | Jun 8 | repeat |
 | slide-R — card-banner-slide-in (direction right) | top5pct-wall-signs-for-businesses.jpg | public/images/wall-signs/top5pct-wall-signs-for-businesses.jpg | R3 | Jun 6 | good |
 
 **Notes:**
-- slide-L repeat resolved Jun 24: C-11 (top5pct-window-signs-for-businesses-joliet.jpg) dropped from carousel. slide-L is now the only slot using that image.
-- card-detailed image1 fixed Jun 24: wall-signs cross-dir image replaced by top5pct-window-signs-joliet-business-signage.jpg (R1, May 11). Formerly top5pct-window-signs-joliet-old.jpg, renamed by user to reflect actual content.
-- 10-image carousel spans R1 (May 11), R2 (Jun 2), and R3 (Jun 7-8) with all unique files. Under the carousel depth rule, this count is acceptable since all other slots are filled.
+- slide-L repeats carousel C-11: both use `top5pct-window-signs-for-businesses-joliet.jpg` (R3, Jun 8, 407KB).
+- card-detailed image1 cross-dir from wall-signs/ (`top5pct-banner-wall-decal-door-signs-joliet.jpg`, Jun 8, locked, 135KB). This is a wall-signs image on a window-signs page. Same locked 135KB file that also appears on floor-signs (card-detailed) and wall-signs (not in blade). Third page that references this file.
+- 11-image carousel is the largest in the inventory so far. Spans R1 (May 11), R2 (Jun 2), and R3 (Jun 7-8) rounds with all unique files. No gaps.
 - slide-R cross-dir from wall-signs/ (R3, Jun 6). Slide text is "Also Install Wall Graphics and Floor Signs" — cross-sell intent is clear.
-- 3 Initial files in window-signs/ dir are unused and not in blade: top5pct-window-cling-decal-joliet-shorewood.jpg (54KB), top5pct-window-decal-joliet-shorewood-rockdale.jpg (58KB), top5pct-window-decals-joliet-shorewood-crest-hill.jpg (72KB). All Mar 16.
+- 3 Initial locked files in window-signs/ dir are unused and not in blade: `top5pct-window-cling-decal-joliet-shorewood.jpg` (54KB), `top5pct-window-decal-joliet-shorewood-rockdale.jpg` (58KB), `top5pct-window-decals-joliet-shorewood-crest-hill.jpg` (72KB). All Mar 16, all locked.
+- `top5pct-window-signs-joliet-old.jpg` (May 11, R1, 371KB) is in the dir but not in the blade. Has "old" in name, skipped from carousel.
 
 ---
 
