@@ -1250,6 +1250,78 @@ These unlocked files are sitting in their dirs but unassigned to any blade slot.
 
 ---
 
+## Placement Issues
+
+All permissions are resolved. The remaining work is entirely about what images are placed, where they are placed, and whether they belong there.
+
+---
+
+### Not placed — images in dir, not referenced by any blade slot
+
+These images exist, are accessible, and belong to the page topic, but no blade slot points to them. Incomplete wiring.
+
+| dir | file | round | date | size | next action |
+|---|---|---|---|---|---|
+| digital-vinyl/ | top5pct-digital-vinyl-shirts.jpg | R3 | Jun 8 | 706KB | assign to a carousel or card slot |
+| digital-vinyl/ | top5pct-digital-vinyl-hoodies-in-joliet.jpg | R3 | Jun 8 | 398KB | assign to a carousel or card slot |
+| digital-vinyl/ | top5pct-digital-vinyl-hoodie.jpg | R3 | Jun 8 | 379KB | assign to a carousel or card slot |
+| dtf-transfers/ | top5pct-custom-baby-clothing-joliet.jpg | R2 | Jun 2 | 330KB | candidate for a future card slot |
+| dtf-transfers/ | top5pct-custom-shirt-with-picture.jpg | R1 | May 11 | 612KB | candidate for a future card slot |
+| dtf-transfers/ | top5pct-custom-sweatshirts.jpg | R1 | May 11 | 170KB | candidate for a future card slot |
+| vehicle-magnets/ | top5pct-joliet-car-magnets.jpg | R2 | Jun 2 | 651KB | candidate to replace slide-R on vehicle-magnets page |
+
+---
+
+### Incorrectly placed — wrong product or wrong topic in an active slot
+
+These images are referenced by a blade and will display, but show the wrong product or topic for the slot they fill.
+
+| page | slot | current image | issue |
+|---|---|---|---|
+| floor-signs | all 10 carousel slots | wall-signs images | floor-signs/ dir is empty, page uses wall-signs images throughout |
+| screen-printing | card-1 | top5pct-neon-vinyl-shirts.jpg | alt says screen printed shirts, image is neon vinyl shirts |
+| screen-printing | card-2 | top5pct-vinyl-caps.jpg | alt says screen printing uniforms, image is vinyl caps |
+| screen-printing | card-detailed image1 | top5pct-custom-flock-shirt-hoodie-cap-joliet.jpg | flock shirt image in a screen-printing article slot |
+| brick-shirts | slide-R | top5pct-custom-hoodies.jpg | alt says flock/velvet shirts on a brick vinyl page |
+| flock-shirts | carousel C-4 | top5pct-custom-vinyl-shirts.jpg | alt says flock velvet shirts, image is generic vinyl shirts |
+| glow-in-the-dark-shirts | carousel C-4 | top5pct-custom-vinyl-shirts.jpg | alt says glow in the dark shirts, image is generic vinyl shirts |
+| table-runners | (unused in dir) | 4 table-cloth images | table-cloth images uploaded to table-runners/ dir, wrong product |
+| vehicle-magnets | (unused in dir) | top5pct-yard-signs-near-me.jpg | yard-signs image sitting in vehicle-magnets/ dir |
+
+---
+
+### Broken references — wrong-dir 404s
+
+Blade points to a file path that does not exist. Image slot renders broken on the live page.
+
+| page | slot | blade path | where the file actually lives |
+|---|---|---|---|
+| foil-shirts | slide-L | public/images/custom-shirts/top5pct-custom-glitter-shirt-cap-hoodie-joliet.jpg | public/images/glitter-shirts/ |
+| screen-printing | slide-L | public/images/custom-shirts/top5pct-custom-embroidery-shops-near-me-joliet.jpg | public/images/embroidery/ |
+| dtf-printing | slide-L | public/images/custom-shirts/top5pct-custom-embroidery-shops-near-me-joliet.jpg | public/images/embroidery/ |
+
+---
+
+### Pages missing category-specific images
+
+These pages have no photography specific to their own product. Slots are filled with off-topic or shared images from other categories.
+
+| page | situation |
+|---|---|
+| floor-signs | floor-signs/ dir is completely empty. All 10 carousel slots use wall-signs images. Needs a dedicated photo shoot. |
+| puff-shirts | puff-shirts/ dir is completely empty. All slots pull from custom-shirts/. |
+| holographic-shirts | Only 3 files in dir for 9 slots. Structural shortage, not a wiring issue. New images needed. |
+
+---
+
+### Undersized images in active slots
+
+| page | slot | image | dimensions | issue |
+|---|---|---|---|---|
+| table-cloths | slide-L | top5pct-article-custom-table-cloths-joliet.jpg | 261x177px, 21KB | too small for a slide-in banner slot |
+
+---
+
 ## Inventory Summary (Custom Apparel Section, Jun 18, 2026)
 
 **Pages covered:** 14 pages across specialty-materials (reflective, foil, holographic, brick, flock, glow-in-the-dark, puff, vinyl) and printing-options (rhinestone, embroidery, screen-printing, dye-sublimation, dtf-printing, digital-vinyl).
@@ -1258,14 +1330,23 @@ These unlocked files are sitting in their dirs but unassigned to any blade slot.
 
 ### Issue categories found
 
-**Locked images — resolved Jun 24, 2026**
-All file permissions across `public/images/` were set to 644 in one pass on Jun 24, 2026. This is no longer an active issue. For historical reference: range was 0% locked (dye-sublimation, embroidery) to 92% locked (digital-vinyl). The vinyl and digital-vinyl dirs were dominated by a May 18 placeholder batch. Specialty-materials pages had one or two locked files each. All are now readable by the web server.
+**Broken references — wrong-dir 404s**
+Three confirmed broken image slots on the live site. Foil slide-L references a file that lives in `glitter-shirts/` not `custom-shirts/`. Screen-printing slide-L and DTF slide-L both reference the same broken path — `custom-shirts/top5pct-custom-embroidery-shops-near-me-joliet.jpg` — which only exists in `embroidery/`. The same wrong path was copied into two separate blades. See the Placement Issues section above for the full table.
 
-**Wrong-dir 404s**
-Three confirmed broken image references across the section. Foil slide-L references a file that lives in `glitter-shirts/` not `custom-shirts/`. Screen-printing slide-L and DTF slide-L both reference the same broken path, `custom-shirts/top5pct-custom-embroidery-shops-near-me-joliet.jpg`, which only exists in `embroidery/`. The same wrong path was copied into two separate blades.
+**Not placed — unassigned R1/R2/R3 images**
+Several dirs contain R1, R2, or R3 images that are not referenced by any blade slot. The three R3 files in `digital-vinyl/` are the clearest examples — uploaded, on-topic, and sitting unused while the page blade still points to placeholder files. See the Placement Issues section above for the full table.
 
-**Cross-dir locked references**
-All seven specialty-materials pages pull a locked Mar 16 holographic image from `custom-shirts/` for their second slide slot. This is a shared cross-dir dependency that affects the whole group uniformly.
+**Incorrectly placed — wrong topic in an active slot**
+Multiple pages display images that do not match the product or section they are placed in. The most widespread pattern is the generic `top5pct-custom-vinyl-shirts.jpg` appearing in carousel C-4 on both flock-shirts and glow-in-the-dark-shirts with off-topic alt text. The floor-signs page has no floor-signs photography at all — all 10 carousel slots show wall-signs images. See the Placement Issues section above for the full table.
+
+**Cross-dir repeat references — shared placeholder in slide slots**
+All seven specialty-materials pages pull the same holographic image from `custom-shirts/` for a slide slot. This is a shared cross-dir dependency that affects the whole group uniformly. Each page needs its own on-topic image in that slot.
+
+**May 18 placeholder batch — vinyl and digital-vinyl dirs**
+Both dirs share an identical set of May 18 placeholder files — same filenames, same byte sizes — indicating a single upload copied to two dirs at once. Both dirs also contain the same two wrong-subject yard-signs images from that batch. The `digital-vinyl/` dir also has a `.DS_Store` Mac metadata file. A loose DTF price-chart file sits at the `public/images/` root outside any subdir.
+
+**Repeat usage — same image in multiple slots on one page**
+Most common on digital-vinyl, vinyl, holographic-shirts, flock-shirts, and glow-in-the-dark-shirts pages, where not enough unique images were available when the blade was wired. Some individual files appear in three or more slots on the same page.
 
 **Filename typos**
 Four confirmed typos baked into filenames that are actively referenced in blades: `rhinetsone` (rhinestone and puff pages), `sublmation` (dye-sublimation slide-R), `embroidered-caps-old` (embroidery slide-R), and `toptpct-` prefix (DTF dir, two files). All load without error but carry the wrong name permanently unless renamed and rereferenced.
@@ -1273,18 +1354,9 @@ Four confirmed typos baked into filenames that are actively referenced in blades
 **Dir, URL, and blade name mismatches**
 Three URL-to-dir-name mismatches: glow-in-the-dark-shirts points to `glow-shirts/`, dye-sublimation-printing points to `sublimation/`, dtf-printing points to `dtf-transfers/`. Two blades live outside their expected subdir: `dye-sublimation.blade.php` and `dtf-transfers.blade.php` are in `custom-apparel/` root rather than `custom-apparel/printing-options/`.
 
-**May 18 locked batch (vinyl and digital-vinyl dirs)**
-Both dirs share an identical set of May 18 locked placeholder files — same filenames, same byte sizes — indicating a single upload copied to two dirs. Both dirs also contain the same two wrong-subject yard-signs images (47KB and 96KB) from that batch. The `digital-vinyl/` dir also has a `.DS_Store` Mac metadata file. A loose DTF price-chart file sits at the `public/images/` root outside any subdir.
-
-**Repeat usage**
-Most common on digital-vinyl and vinyl pages, where the same 3-4 locked files fill the carousel, cards, and slides because not enough unique images existed when the blade was wired. Some individual files appear in 3 separate slots on the same page.
-
-**Unused files in dirs**
-Every dir has at least one unused file. Worst cases are digital-vinyl (7 unused, including 3 R3 unlocked files staged but not yet assigned to blade slots) and vinyl (5 unused). Unlocked R3 files sitting unused in a dir are the clearest signal that blade wiring is incomplete.
-
 **Universal structural observation**
 `card-detailed-info` uses only `image1` across all 14 pages inventoried. The `image2` slot exists in the component but has never been used in this section.
 
 ---
 
-*Last updated: Jun 24, 2026 — permissions resolved across all of public/images/.*
+*Last updated: Jun 24, 2026 — permissions resolved; Placement Issues section added covering not placed, incorrectly placed, broken references, pages missing category images, and undersized slots.*
