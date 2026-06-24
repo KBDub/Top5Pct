@@ -80,8 +80,8 @@
         </x-sections.card-image-with-text>
 
         <x-sections.card-image-with-text
-            image="/images/yard-signs/top5pct-yard-signs-joliet-plainfied-new-lenox.jpg"
-            alt="Real estate and political yard signs in Joliet, Plainfield, and New Lenox Illinois"
+            image="/images/sidewalk-signs/top5pct-sidewalk-signs-joliet-old.jpg"
+            alt="Custom outdoor signage for businesses in Joliet Illinois"
             title="Real Estate and Political Signs"
             imagePosition="right"
         >
@@ -137,8 +137,8 @@
         name="Datjaeda"
     />
     <x-ui.card-banner-slide-in
-        image="/images/yard-signs/top5pct-yard-signs-joliet-shorewood-romeoville.jpg"
-        alt="Custom yard signs and lawn signs printed by Top 5 Percent in Joliet, Shorewood, and Romeoville Illinois"
+        image="/images/sidewalk-signs/top5pct-sidewalk-signs-joliet-shorewood-crest-hill.jpg"
+        alt="Custom outdoor signs for businesses in Joliet, Shorewood, and Crest Hill Illinois"
         title="Custom Yard Signs for Business and Events"
         href="/contact"
         direction="left"

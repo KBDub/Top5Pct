@@ -89,17 +89,15 @@ Status codes: `good` | `initial` | `repeat` | `placeholder` | `undersized`
 | carousel C-4 — carousel-rotating-images | top5pct-sidewalk-signs-joliet.jpg | public/images/sidewalk-signs/top5pct-sidewalk-signs-joliet.jpg | R2 | Jun 2 | good |
 | card-1 — card-image-with-text | top5pct-sidewalk-sign-a-frame-cresthill.jpg | public/images/sidewalk-signs/top5pct-sidewalk-sign-a-frame-cresthill.jpg | R3 | Jun 9 | good |
 | card-2 — card-image-with-text | top5pct-sidewalk-signage.jpg | public/images/sidewalk-signs/top5pct-sidewalk-signage.jpg | R2 | Jun 2 | good |
-| card-detailed image1 — card-detailed-info | top5pct-article-a-frame-sidewalk-signs.jpg | public/images/sidewalk-signs/top5pct-article-a-frame-sidewalk-signs.jpg | Initial | Mar 16 | initial |
+| card-detailed image1 — card-detailed-info | top5pct-a-frame-sign.jpg | public/images/sidewalk-signs/top5pct-a-frame-sign.jpg | R1 | May 11 | good |
 | slide-R — card-banner-slide-in (direction right) | top5pct-a-frame-signs-joliet.jpg | public/images/sidewalk-signs/top5pct-a-frame-signs-joliet.jpg | R3 | Jun 9 | good |
 | slide-L — card-banner-slide-in (direction left) | top5pct-mesh-construction-banner.jpg | public/images/banners/top5pct-mesh-construction-banner.jpg | R2 | Jun 2 | good |
 
 **Notes:**
-- All 3 R3 images now placed: top5pct-sidewalk-signs-plainfield.jpg → carousel C-1, top5pct-sidewalk-sign-a-frame-cresthill.jpg → card-1, top5pct-a-frame-signs-joliet.jpg → slide-R.
-- slide-R hero repeat resolved: slide-R now uses top5pct-a-frame-signs-joliet.jpg (R3), hero retains top5pct-a-frame-sidewalk-signs.jpg (R2).
-- card-1 "old" suffix retired: top5pct-sidewalk-signs-joliet-old.jpg replaced by top5pct-sidewalk-sign-a-frame-cresthill.jpg (R3).
-- carousel C-1 upgraded from top5pct-a-frame-sign.jpg (R1) to top5pct-sidewalk-signs-plainfield.jpg (R3).
-- card-detailed image1 (top5pct-article-a-frame-sidewalk-signs.jpg, Initial) has no better replacement yet. Pending new image batch.
-- Unused Initial files in dir remain unused and can be archived: top5pct-a-frame-sidewalk-sign-joliet.jpg, top5pct-sidewalk-signs-joliet-shorewood-crest-hill.jpg, top5pct-sidewalk-a-frames-joliet-shorewood.jpg, top5pct-banner-a-frame-sidewalk-signs-joliet-romeoville.jpg.
+- card-detailed image1 upgraded from Initial (top5pct-article-a-frame-sidewalk-signs.jpg) to R1 (top5pct-a-frame-sign.jpg), redistributed from sidewalk-signs page removal.
+- All R1/R2/R3 images from the former sidewalk-signs page are now placed on either this page or yard-signs.
+- Two Initial files from sidewalk-signs dir retired: top5pct-a-frame-sidewalk-sign-joliet.jpg and top5pct-sidewalk-signs-joliet-shorewood-crest-hill.jpg (redistributed to yard-signs slide-L, Initial swap).
+- Other unused Initial files in dir can be archived: top5pct-sidewalk-a-frames-joliet-shorewood.jpg, top5pct-banner-a-frame-sidewalk-signs-joliet-romeoville.jpg.
 - slide-L cross-dir from banners/ is contextually appropriate. No change.
 - Page content note: schema, title, heading, and FAQs all reference "Parking Signs." The images show sidewalk/a-frame signs. URL and content topic are misaligned. Not an image issue but worth a separate review.
 
@@ -107,35 +105,25 @@ Status codes: `good` | `initial` | `repeat` | `placeholder` | `undersized`
 
 #### /signs/ground-signs/sidewalk-signs
 
-**Blade:** `resources/views/pages/signs/sidewalk-signs.blade.php`
-**URL:** `/signs/ground-signs/sidewalk-signs`
-**Verified:** Jun 18, 2026
+**Status: PAGE REMOVED — Jun 24, 2026**
+All R1/R2/R3 images redistributed to sidewalk-signs-a-frame-signs and yard-signs pages. Initial-only files retired.
 
-| section / category | image | image path | round | file date | status |
-|---|---|---|---|---|---|
-| hero — category-hero | top5pct-sidewalk-signage.jpg | public/images/sidewalk-signs/top5pct-sidewalk-signage.jpg | R2 | Jun 2 | good |
-| carousel C-1 — carousel-rotating-images | top5pct-a-frame-sign.jpg | public/images/sidewalk-signs/top5pct-a-frame-sign.jpg | R1 | May 11 | good |
-| carousel C-2 — carousel-rotating-images | top5pct-custom-a-frame-sidewalk-signs-joliet.jpg | public/images/sidewalk-signs/top5pct-custom-a-frame-sidewalk-signs-joliet.jpg | R1 | May 11 | good |
-| carousel C-3 — carousel-rotating-images | top5pct-sidewalk-sign.jpg | public/images/sidewalk-signs/top5pct-sidewalk-sign.jpg | R1 | May 11 | good |
-| carousel C-4 — carousel-rotating-images | top5pct-sidewalk-signs-joliet.jpg | public/images/sidewalk-signs/top5pct-sidewalk-signs-joliet.jpg | R2 | Jun 2 | good |
-| carousel C-5 — carousel-rotating-images | top5pct-a-frame-signs-joliet.jpg | public/images/sidewalk-signs/top5pct-a-frame-signs-joliet.jpg | R3 | Jun 9 | good |
-| carousel C-6 — carousel-rotating-images | top5pct-sidewalk-sign-a-frame-cresthill.jpg | public/images/sidewalk-signs/top5pct-sidewalk-sign-a-frame-cresthill.jpg | R3 | Jun 9 | good |
-| carousel C-7 — carousel-rotating-images | top5pct-sidewalk-signs-plainfield.jpg | public/images/sidewalk-signs/top5pct-sidewalk-signs-plainfield.jpg | R3 | Jun 8 | good |
-| card-1 — card-image-with-text | top5pct-a-frame-sidewalk-signs.jpg | public/images/sidewalk-signs/top5pct-a-frame-sidewalk-signs.jpg | R2 | Jun 2 | good |
-| card-2 — card-image-with-text | top5pct-sidewalk-signs-joliet-old.jpg | public/images/sidewalk-signs/top5pct-sidewalk-signs-joliet-old.jpg | R1 | May 11 | good |
-| card-3 — card-image-with-text | top5pct-sidewalk-signs-joliet-shorewood-crest-hill.jpg | public/images/sidewalk-signs/top5pct-sidewalk-signs-joliet-shorewood-crest-hill.jpg | Initial | Mar 16 | initial |
-| card-detailed image1 — card-detailed-info | top5pct-article-a-frame-sidewalk-signs.jpg | public/images/sidewalk-signs/top5pct-article-a-frame-sidewalk-signs.jpg | Initial | Mar 16 | initial |
-| slide-L — card-banner-slide-in (direction left) | top5pct-a-frame-sidewalk-sign-joliet.jpg | public/images/sidewalk-signs/top5pct-a-frame-sidewalk-sign-joliet.jpg | Initial | Mar 16 | initial |
-| slide-R — card-banner-slide-in (direction right) | top5pct-business-signs-joliet-shorewood-crest-hill.jpg | public/images/business-signs/top5pct-business-signs-joliet-shorewood-crest-hill.jpg | Initial | Mar 16 | initial |
-
-**Notes:**
-- 4 Initial slots in the lower half of the page: card-3, card-detailed, slide-L, and slide-R. All are locked Mar 16 files.
-- slide-R is a cross-dir business-signs/ image. Slide text is "Also Need Window or Wall Signs?" so using a business-signs image is contextually intentional, but the file is Initial (76KB, locked).
-- card-detailed image1 (`top5pct-article-a-frame-sidewalk-signs.jpg`) is the same Initial file used on the a-frame-signs page. That file is serving two pages.
-- card-2 filename contains "old" suffix (`top5pct-sidewalk-signs-joliet-old.jpg`). R1 quality, not locked, usable.
-- No repeats among any of the 14 slots. All unique files.
-- Carousel is strong: 7 images spanning R1, R2, and R3.
-- Unused locked Initial files in sidewalk-signs/ dir (not in blade): `top5pct-sidewalk-a-frames-joliet-shorewood.jpg` (91KB), `top5pct-banner-a-frame-sidewalk-signs-joliet-romeoville.jpg` (96KB).
+| image | round | redistributed to |
+|---|---|---|
+| top5pct-sidewalk-signage.jpg | R2 | a-frame page — card-2 (already placed) |
+| top5pct-a-frame-sign.jpg | R1 | a-frame page — card-detailed image1 |
+| top5pct-custom-a-frame-sidewalk-signs-joliet.jpg | R1 | a-frame page — carousel C-2 (already placed) |
+| top5pct-sidewalk-sign.jpg | R1 | a-frame page — carousel C-3 (already placed) |
+| top5pct-sidewalk-signs-joliet.jpg | R2 | a-frame page — carousel C-4 (already placed) |
+| top5pct-a-frame-signs-joliet.jpg | R3 | a-frame page — slide-R (already placed) |
+| top5pct-sidewalk-sign-a-frame-cresthill.jpg | R3 | a-frame page — card-1 (already placed) |
+| top5pct-sidewalk-signs-plainfield.jpg | R3 | a-frame page — carousel C-1 (already placed) |
+| top5pct-a-frame-sidewalk-signs.jpg | R2 | a-frame page — hero (already placed) |
+| top5pct-sidewalk-signs-joliet-old.jpg | R1 | yard-signs page — card-2 |
+| top5pct-sidewalk-signs-joliet-shorewood-crest-hill.jpg | Initial | yard-signs page — slide-L |
+| top5pct-article-a-frame-sidewalk-signs.jpg | Initial | retired |
+| top5pct-a-frame-sidewalk-sign-joliet.jpg | Initial | retired |
+| top5pct-business-signs-joliet-shorewood-crest-hill.jpg | Initial | left in business-signs/ dir, not redistributed |
 
 ---
 
@@ -153,20 +141,18 @@ Status codes: `good` | `initial` | `repeat` | `placeholder` | `undersized`
 | carousel C-3 — carousel-rotating-images | top5pct-yard-signs-rockdale.jpg | public/images/yard-signs/top5pct-yard-signs-rockdale.jpg | R3 | Jun 7 | good |
 | carousel C-4 — carousel-rotating-images | top5pct-yard-signs-shorewood.jpg | public/images/yard-signs/top5pct-yard-signs-shorewood.jpg | R3 | Jun 7 | good |
 | card-1 — card-image-with-text | top5pct-yard-signs.jpg | public/images/yard-signs/top5pct-yard-signs.jpg | R1 | May 11 | good |
-| card-2 — card-image-with-text | top5pct-yard-signs-joliet-plainfied-new-lenox.jpg | public/images/yard-signs/top5pct-yard-signs-joliet-plainfied-new-lenox.jpg | Initial | Mar 16 | initial |
+| card-2 — card-image-with-text | top5pct-sidewalk-signs-joliet-old.jpg | public/images/sidewalk-signs/top5pct-sidewalk-signs-joliet-old.jpg | R1 | May 11 | good |
 | card-2img image1 — card-2image-with-text | top5pct-lawn-signs.jpg | public/images/yard-signs/top5pct-lawn-signs.jpg | R1 | May 11 | good |
 | card-2img image2 — card-2image-with-text | top5pct-yard-sign-joliet.jpg | public/images/yard-signs/top5pct-yard-sign-joliet.jpg | R1 | May 11 | good |
 | card-detailed image1 — card-detailed-info | top5pct-article-yard-signs-buy.jpg | public/images/yard-signs/top5pct-article-yard-signs-buy.jpg | Initial | Mar 16 | initial |
-| slide-L — card-banner-slide-in (direction left) | top5pct-yard-signs-joliet-shorewood-romeoville.jpg | public/images/yard-signs/top5pct-yard-signs-joliet-shorewood-romeoville.jpg | Initial | Mar 16 | initial |
+| slide-L — card-banner-slide-in (direction left) | top5pct-sidewalk-signs-joliet-shorewood-crest-hill.jpg | public/images/sidewalk-signs/top5pct-sidewalk-signs-joliet-shorewood-crest-hill.jpg | Initial | Mar 16 | initial |
 | slide-R — card-banner-slide-in (direction right) | top5pct-retractable-banner.jpg | public/images/banners/top5pct-retractable-banner.jpg | R1 | May 11 | good |
 
 **Notes:**
-- Carousel reduced from 7 to 4. Old C-1 (Initial banner composite) retired. Old C-2 (lawn-signs.jpg, R1) moved to card-2img image1. Old C-3 (yard-sign-joliet.jpg, R1) moved to card-2img image2. New C-1 through C-4 are the former C-4 through C-7.
-- card-2img image1 and image2 both upgraded from Initial to R1 by receiving the displaced carousel R1 images.
-- slide-L repeat with card-2 broken: slide-L now uses top5pct-yard-signs-joliet-shorewood-romeoville.jpg (displaced from card-2img image1). Still Initial but no longer a repeat.
-- card-2 (top5pct-yard-signs-joliet-plainfied-new-lenox.jpg, Initial) and card-detailed image1 (top5pct-article-yard-signs-buy.jpg, Initial) have no better replacement available yet. Pending new image batch.
-- Retired from active slots: top5pct-banner-yard-signs-joliet-shorewood-crest-hill.jpg (Initial, composite banner image), top5pct-yard-signs-joliet-old.jpg (Initial, "old" suffix, 1.87MB).
-- slide-R cross-dir from banners/ is contextually appropriate — slide text is "We Also Print Banners, Posters, and More." No change.
+- card-2 upgraded from Initial to R1: top5pct-yard-signs-joliet-plainfied-new-lenox.jpg retired, replaced by top5pct-sidewalk-signs-joliet-old.jpg (R1, redistributed from sidewalk-signs page removal). Image is in sidewalk-signs/ dir.
+- slide-L swapped to a different Initial: top5pct-yard-signs-joliet-shorewood-romeoville.jpg retired, replaced by top5pct-sidewalk-signs-joliet-shorewood-crest-hill.jpg (Initial, redistributed from sidewalk-signs page removal). Image is in sidewalk-signs/ dir.
+- card-detailed image1 (top5pct-article-yard-signs-buy.jpg, Initial) still pending a proper yard-sign-specific replacement from R4 batch.
+- slide-R cross-dir from banners/ is contextually appropriate. No change.
 - Dir anomaly unchanged: top5pct-table-signs-joliet-shorewood-plainfield.jpg (Mar 16, Initial) sits in the yard-signs/ dir. Wrong product category, not in blade.
 
 ---

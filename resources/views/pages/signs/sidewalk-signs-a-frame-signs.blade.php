@@ -96,8 +96,8 @@
 
     <x-sections.card-detailed-info
         heading="Why Custom Parking Signs Are Worth the Investment for Your Property"
-        image1="/images/sidewalk-signs/top5pct-article-a-frame-sidewalk-signs.jpg"
-        alt1="Custom a-frame sidewalk signs for businesses in Joliet, Will and DuPage County Illinois"
+        image1="/images/sidewalk-signs/top5pct-a-frame-sign.jpg"
+        alt1="Custom a-frame sign for businesses in Joliet Illinois"
     >
         <x-slot name="intro">
             <p class="mb-4">A well-signed parking lot is not just about telling people where to park, it is a direct reflection of how professionally your property is managed and how much you care about the experience of everyone who arrives at your location. Visitors and customers make quick judgments about a business based on every element of their arrival experience, and the quality of your parking signage is part of that assessment, much like the quality of your <a href="/signs/business-signs/window-signs" class="link-notification">window signs</a> and entrance graphics that greet every visitor before they even open the door. Clear, professional parking signs reduce frustration, prevent conflicts, and create a smoother customer experience from the moment someone pulls into your lot.</p>
