@@ -261,20 +261,18 @@ All R1/R2/R3 images redistributed to sidewalk-signs-a-frame-signs and yard-signs
 | carousel C-2 — carousel-rotating-images | top5pct-wall-wraps.jpg | public/images/wall-signs/top5pct-wall-wraps.jpg | R3 | Jun 8 | good |
 | carousel C-3 — carousel-rotating-images | top5pct-wall-decals-bedroom.jpg | public/images/wall-signs/top5pct-wall-decals-bedroom.jpg | R3 | Jun 6 | good |
 | carousel C-4 — carousel-rotating-images | top5pct-wall-sign-for-businesses.jpg | public/images/wall-signs/top5pct-wall-sign-for-businesses.jpg | R3 | Jun 6 | good |
-| carousel C-5 — carousel-rotating-images | top5pct-wall-signs-for-businesses.jpg | public/images/wall-signs/top5pct-wall-signs-for-businesses.jpg | R3 | Jun 6 | good |
 | card-1 — card-image-with-text | top5pct-wall-wraps.jpg | public/images/wall-signs/top5pct-wall-wraps.jpg | R3 | Jun 8 | repeat |
-| card-2 — card-image-with-text | top5pct-wall-signs-for-businesses.jpg | public/images/wall-signs/top5pct-wall-signs-for-businesses.jpg | R3 | Jun 6 | repeat |
-| card-detailed image1 — card-detailed-info | top5pct-wall-signs-joliet.jpg | public/images/wall-signs/top5pct-wall-signs-joliet.jpg | R3 | Jun 8 | locked |
+| card-2 — card-image-with-text | top5pct-wall-signs-for-businesses.jpg | public/images/wall-signs/top5pct-wall-signs-for-businesses.jpg | R3 | Jun 6 | good |
+| card-detailed image1 — card-detailed-info | top5pct-wall-signs-joliet.jpg | public/images/wall-signs/top5pct-wall-signs-joliet.jpg | R3 | Jun 8 | good |
 | slide-R — card-banner-slide-in (direction right) | top5pct-window-signs-joliet.jpg | public/images/window-signs/top5pct-window-signs-joliet.jpg | R2 | Jun 2 | good |
 | slide-L — card-banner-slide-in (direction left) | top5pct-window-graphics-joliet.jpg | public/images/window-signs/top5pct-window-graphics-joliet.jpg | R3 | Jun 7 | good |
 
 **Notes:**
-- card-1 repeats carousel C-2: both use `top5pct-wall-wraps.jpg` (R3, Jun 8, 567KB).
-- card-2 repeats carousel C-5: both use `top5pct-wall-signs-for-businesses.jpg` (R3, Jun 6, 365KB).
-- card-detailed image1 (`top5pct-wall-signs-joliet.jpg`) is locked (-rw-------) with a Jun 8 date and is only 54KB. This is the same unusual pattern seen in other wall-signs/ Jun 8 locked files — newer date, restricted permissions, small size.
-- carousel C-1 renamed from top5pct-wall-signs-old.jpg to top5pct-wall-signs-mishas-gaming-lounge.jpg. R1 quality (May 11), unlocked, 496KB. "Old" suffix removed, name now reflects actual content.
+- Carousel reduced from 5 to 4 Jun 24: C-5 (top5pct-wall-signs-for-businesses.jpg) removed. card-2 repeat resolved — that image is now only in card-2.
+- card-1 still repeats carousel C-2: both use top5pct-wall-wraps.jpg (R3). Needs a new image to break.
+- carousel C-1 renamed from top5pct-wall-signs-old.jpg to top5pct-wall-signs-mishas-gaming-lounge.jpg Jun 24. R1, 496KB. Name now reflects actual content (Misha's Gaming Lounge).
 - Both slides are cross-dir from window-signs/. Slide texts are "Turn Your Walls Into a Brand Statement" (slide-R) and "Window Graphics and Door Signs Available Too" (slide-L). Cross-sell intent is clear and contextually appropriate.
-- Dir note: 3 locked Jun 8 files in wall-signs/ dir are NOT in this blade — they are used by the floor-signs page instead: `top5pct-article-window-wall-signs.jpg` (41KB), `top5pct-wall-decals-joliet.jpg` (63KB), `top5pct-banner-wall-decal-door-signs-joliet.jpg` (135KB). The wall-signs/ dir serves two pages simultaneously.
+- Dir note: 3 files in wall-signs/ dir are NOT in this blade — used by the floor-signs page instead: top5pct-article-window-wall-signs.jpg (41KB), top5pct-wall-decals-joliet.jpg (63KB), top5pct-banner-wall-decal-door-signs-joliet.jpg (135KB). The wall-signs/ dir serves two pages simultaneously.
 
 ---
 
