@@ -56,7 +56,7 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/wall-signs/top5pct-wall-signs-old.jpg',                       'alt' => 'Custom floor decals and floor signs for businesses in Joliet Illinois'],
+            ['src' => '/images/wall-signs/top5pct-wall-signs-mishas-gaming-lounge.jpg',                       'alt' => 'Custom floor decals and floor signs for businesses in Joliet Illinois'],
             ['src' => '/images/wall-signs/top5pct-wall-sign-for-businesses.jpg',           'alt' => 'Custom branded floor graphics installed in Joliet Illinois'],
             ['src' => '/images/wall-signs/top5pct-wall-decals-bedroom.jpg',                'alt' => 'Floor signs and wall graphics for retail businesses in Joliet Illinois'],
             ['src' => '/images/wall-signs/top5pct-wall-wraps.jpg',                         'alt' => 'Custom floor signage printed in Joliet, Will and DuPage County Illinois'],

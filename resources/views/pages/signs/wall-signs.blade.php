@@ -56,7 +56,7 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/wall-signs/top5pct-wall-signs-old.jpg',               'alt' => 'Custom wall signs and wall graphics for businesses in Joliet Illinois'],
+            ['src' => '/images/wall-signs/top5pct-wall-signs-mishas-gaming-lounge.jpg',               'alt' => 'Custom wall signs and wall graphics for businesses in Joliet Illinois'],
             ['src' => '/images/wall-signs/top5pct-wall-wraps.jpg',                    'alt' => 'Custom wall wraps for businesses in Joliet Illinois'],
             ['src' => '/images/wall-signs/top5pct-wall-decals-bedroom.jpg',            'alt' => 'Office murals and lobby wall graphics in Joliet, Will and DuPage County Illinois'],
             ['src' => '/images/wall-signs/top5pct-wall-sign-for-businesses.jpg',       'alt' => 'Wall decals and door signs for businesses in Joliet Illinois'],
