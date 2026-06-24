@@ -60,8 +60,6 @@
             ['src' => '/images/table-cloths/top5pct-table-cloths.jpg',               'alt' => 'Full color custom table cloths for events and businesses in Joliet Illinois'],
             ['src' => '/images/table-cloths/top5pct-table-cloth-8-feet.jpg',                    'alt' => 'Custom 8-foot table cloth for trade shows and events in Joliet Illinois'],
             ['src' => '/images/table-cloths/top5pct-table-cloth-customized.jpg',                'alt' => 'Customized branded table cloths printed in Joliet Illinois'],
-            ['src' => '/images/table-cloths/top5pct-table-cloths-for-businesses.jpg',          'alt' => 'Custom table cloths for businesses in Joliet, Shorewood, and Crest Hill Illinois'],
-            ['src' => '/images/table-cloths/top5pct-table-cloth-with-photos.jpg',              'alt' => 'Custom printed table cloth with photos for events in Joliet Illinois'],
         ]"
         visible=2
     />
@@ -100,8 +98,8 @@
 
     <x-sections.card-detailed-info
         heading="Why a Branded Table Cloth Is Your Best Event Investment"
-        image1="/images/table-cloths/top5pct-banner-custom-table-cloth-custom-table-runner-joliet.jpg"
-        alt1="Custom branded table cloths and table covers for events and trade shows in Joliet Illinois"
+        image1="/images/table-cloths/top5pct-table-cloths-for-businesses.jpg"
+        alt1="Custom branded table cloths for businesses in Joliet, Shorewood, and Crest Hill Illinois"
     >
         <x-slot name="intro">
             <p class="mb-4">When you exhibit at a trade show, community fair, farmers market, or corporate event, you have approximately three to five seconds to capture the attention of someone walking past your booth. Every visual element of your display, your <a href="/signs/business-signs/banners" class="link-notification">banner stands</a>, your booth backdrop, your product displays, and your table, contributes to that first impression. A branded table cloth is one of the most cost-effective upgrades you can make to your event display because it replaces a large, unbranded surface with a powerful visual statement that works the moment anyone approaches your table.</p>
@@ -129,8 +127,8 @@
         name="Jerry E Olson"
     />
     <x-ui.card-banner-slide-in
-        image="/images/table-cloths/top5pct-article-custom-table-cloths-joliet.jpg"
-        alt="Custom branded table cloths and table covers printed by Top 5 Percent in Joliet Illinois"
+        image="/images/table-cloths/top5pct-table-cloth-with-photos.jpg"
+        alt="Custom printed table cloth with photos for events in Joliet Illinois"
         title="Branded Table Cloths for Your Next Event"
         href="/contact"
         direction="left"

@@ -56,10 +56,6 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/table-runners/top5pct-custom-table-runner.jpg', 'alt' => 'Custom printed table cloths and table runners for events in Joliet Illinois'],
-            ['src' => '/images/table-runners/top5pct-custom-table-runners.jpg',                 'alt' => 'Custom branded table cloth printed for a business in Joliet and Crest Hill Illinois'],
-            ['src' => '/images/table-runners/top5pct-table-runner.jpg',                 'alt' => 'Custom table runner printed for an event in Joliet and New Lenox Illinois'],
-            ['src' => '/images/table-runners/top5pct-table-runners.jpg',              'alt' => 'Custom printed table runner in Joliet and Shorewood Illinois'],
             ['src' => '/images/table-runners/top5pct-custom-table-runner-near-me.jpg', 'alt' => 'Custom table runner near Joliet, Shorewood, and Plainfield Illinois'],
             ['src' => '/images/table-runners/top5pct-table-runner-company.jpg',        'alt' => 'Table runner printing company in Joliet, Will and DuPage County Illinois'],
             ['src' => '/images/table-runners/top5pct-table-runner-covers.jpg',         'alt' => 'Custom table runner covers and table skirts printed in Joliet Illinois'],
@@ -84,8 +80,8 @@
         </x-sections.card-image-with-text>
 
         <x-sections.card-image-with-text
-            image="/images/table-runners/top5pct-custom-table-runner-joliet-new-lenox.jpg"
-            alt="Custom printed table runner for an event in Joliet and New Lenox Illinois"
+            image="/images/table-runners/top5pct-custom-table-runner.jpg"
+            alt="Custom printed table runner for events in Joliet Illinois"
             title="Custom Table Runners"
             imagePosition="right"
         >
@@ -98,10 +94,10 @@
         <x-sections.cta-quadruple-button-banner />
 
         <x-sections.card-2image-with-text
-            image1="/images/table-runners/top5pct-custom-table-runner-joliet-shorewood.jpg"
-            alt1="Custom table runner printed in Joliet and Shorewood Illinois"
-            image2="/images/table-runners/top5pct-custom-table-skirt-joliet-shorewood-plainfield.jpg"
-            alt2="Custom printed table skirt for events in Joliet, Shorewood, and Plainfield Illinois"
+            image1="/images/table-runners/top5pct-custom-table-runners.jpg"
+            alt1="Custom branded table runners printed for businesses in Joliet and Crest Hill Illinois"
+            image2="/images/table-runners/top5pct-table-runner.jpg"
+            alt2="Custom table runner printed for an event in Joliet Illinois"
             title="Table Runners and Table Skirts"
         >
             <p class="mb-4">We offer a full range of table covering products including table runners, table cloths, and table skirts to help you create a cohesive and professional look at any event. Table skirts attach to the front and sides of your table to create a finished, draped look that hides the legs and any storage underneath. We print table skirts in full color so your branding is visible from every angle of your event space. Table skirts are especially popular for trade shows, gala dinners, and corporate presentations where the appearance of every detail matters.</p>
@@ -110,8 +106,8 @@
         </x-sections.card-2image-with-text>
 
         <x-sections.card-image-with-text
-            image="/images/table-runners/top5pct-table-runner-popus-gourmet-popcorn-joliet.jpg"
-            alt="Branded table runner printed for Popus Gourmet Popcorn in Joliet Illinois"
+            image="/images/table-runners/top5pct-table-runners.jpg"
+            alt="Custom printed table runners for events and businesses in Joliet Illinois"
             title="Branded Event Table Products"
         >
             <p class="mb-4">We help local businesses in Joliet and across Will and DuPage County use custom table cloths and runners as a key part of their brand promotion strategy. A branded table at a community event, farmer's market, or business expo tells everyone who walks by exactly who you are, and many of our clients pair their branded table with a matching <a href="/signs/business-signs/banners" class="link-notification">banner</a> above the display to capture attention from across the room. People see your logo before they even stop to talk to you, and a professionally printed table cloth is one of the easiest ways to make that first impression count, which is why our clients also add branded <a href="/custom-apparel/group-wear/corporate-wear-shirts" class="link-notification">corporate wear</a> for their staff so every person at the table reinforces the brand.</p>
