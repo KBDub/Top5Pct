@@ -66,7 +66,6 @@
             ['src' => '/images/window-signs/top5pct-window-signs-cresthill.jpg',           'alt' => 'Custom window signs for businesses in Crest Hill Illinois'],
             ['src' => '/images/window-signs/top5pct-window-signs.jpg',                     'alt' => 'Custom window signs and window graphics in Joliet, Will and DuPage County Illinois'],
             ['src' => '/images/window-signs/top5pct-window-vinyl-sign-installers.jpg',     'alt' => 'Vinyl window sign installation for businesses in Joliet Illinois'],
-            ['src' => '/images/window-signs/top5pct-window-signs-for-businesses-joliet.jpg', 'alt' => 'Custom window signs for businesses throughout Joliet Illinois'],
         ]"
         visible=2
     />
