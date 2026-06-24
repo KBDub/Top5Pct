@@ -56,10 +56,7 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/yard-signs/top5pct-banner-yard-signs-joliet-shorewood-crest-hill.jpg', 'alt' => 'Custom yard signs and lawn signs printed in Joliet, Shorewood, and Crest Hill Illinois'],
-            ['src' => '/images/yard-signs/top5pct-lawn-signs.jpg',                              'alt' => 'Custom yard signs for businesses and events in Joliet Illinois'],
-            ['src' => '/images/yard-signs/top5pct-yard-sign-joliet.jpg',          'alt' => 'Real estate and campaign yard signs in Joliet, Plainfield, and New Lenox Illinois'],
-            ['src' => '/images/yard-signs/top5pct-yard-signs-joliet.jpg',         'alt' => 'Corrugated plastic yard signs printed in Joliet, Shorewood, and Romeoville Illinois'],
+            ['src' => '/images/yard-signs/top5pct-yard-signs-joliet.jpg',       'alt' => 'Corrugated plastic yard signs printed in Joliet, Shorewood, and Romeoville Illinois'],
             ['src' => '/images/yard-signs/top5pct-yard-signs-plainfield.jpg',   'alt' => 'Custom yard signs printed for businesses and events in Plainfield Illinois'],
             ['src' => '/images/yard-signs/top5pct-yard-signs-rockdale.jpg',     'alt' => 'Custom yard signs and lawn signs printed in Rockdale Illinois'],
             ['src' => '/images/yard-signs/top5pct-yard-signs-shorewood.jpg',    'alt' => 'Yard signs and campaign signs printed for Shorewood Illinois businesses'],
@@ -96,10 +93,10 @@
         <x-sections.cta-quadruple-button-banner />
 
         <x-sections.card-2image-with-text
-            image1="/images/yard-signs/top5pct-yard-signs-joliet-shorewood-romeoville.jpg"
-            alt1="Corrugated plastic yard signs printed for customers in Joliet, Shorewood, and Romeoville"
-            image2="/images/yard-signs/top5pct-yard-signs-joliet-old.jpg"
-            alt2="Custom yard signs and corrugated plastic signs printed in Joliet and Shorewood Illinois"
+            image1="/images/yard-signs/top5pct-lawn-signs.jpg"
+            alt1="Custom lawn signs and yard signs for businesses and events in Joliet Illinois"
+            image2="/images/yard-signs/top5pct-yard-sign-joliet.jpg"
+            alt2="Real estate and campaign yard signs in Joliet, Plainfield, and New Lenox Illinois"
             title="Corrugated Plastic and Table Signs"
         >
             <p class="mb-4">We print on corrugated plastic because it is the best material for the price. Corrugated plastic is lightweight but strong. It does not crack or warp in cold weather and it resists moisture so your design stays looking sharp through rain and shine. We can print on one side or both sides depending on how you plan to use the sign. Optional metal H stakes make it easy to push your sign right into the ground with no tools required. If you need something heavier and more permanent, we can also print on aluminum for a sign that will last for many years outdoors.</p>
@@ -140,8 +137,8 @@
         name="Datjaeda"
     />
     <x-ui.card-banner-slide-in
-        image="/images/yard-signs/top5pct-yard-signs-joliet-plainfied-new-lenox.jpg"
-        alt="Custom yard signs and lawn signs printed by Top 5 Percent in Joliet, Plainfield, and New Lenox Illinois"
+        image="/images/yard-signs/top5pct-yard-signs-joliet-shorewood-romeoville.jpg"
+        alt="Custom yard signs and lawn signs printed by Top 5 Percent in Joliet, Shorewood, and Romeoville Illinois"
         title="Custom Yard Signs for Business and Events"
         href="/contact"
         direction="left"

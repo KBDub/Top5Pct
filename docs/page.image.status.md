@@ -141,35 +141,31 @@ Status codes: `good` | `initial` | `repeat` | `placeholder` | `undersized`
 
 **Blade:** `resources/views/pages/signs/yard-signs.blade.php`
 **URL:** `/signs/ground-signs/yard-signs`
-**Verified:** Jun 18, 2026
+**Verified:** Jun 24, 2026
 
 | section / category | image | image path | round | file date | status |
 |---|---|---|---|---|---|
 | hero — category-hero | top5pct-custom-yard-signs-joliet.jpg | public/images/yard-signs/top5pct-custom-yard-signs-joliet.jpg | R1 | May 11 | good |
-| carousel C-1 — carousel-rotating-images | top5pct-banner-yard-signs-joliet-shorewood-crest-hill.jpg | public/images/yard-signs/top5pct-banner-yard-signs-joliet-shorewood-crest-hill.jpg | Initial | Mar 16 | initial |
-| carousel C-2 — carousel-rotating-images | top5pct-lawn-signs.jpg | public/images/yard-signs/top5pct-lawn-signs.jpg | R1 | May 11 | good |
-| carousel C-3 — carousel-rotating-images | top5pct-yard-sign-joliet.jpg | public/images/yard-signs/top5pct-yard-sign-joliet.jpg | R1 | May 11 | good |
-| carousel C-4 — carousel-rotating-images | top5pct-yard-signs-joliet.jpg | public/images/yard-signs/top5pct-yard-signs-joliet.jpg | R1 | May 11 | good |
-| carousel C-5 — carousel-rotating-images | top5pct-yard-signs-plainfield.jpg | public/images/yard-signs/top5pct-yard-signs-plainfield.jpg | R3 | Jun 7 | good |
-| carousel C-6 — carousel-rotating-images | top5pct-yard-signs-rockdale.jpg | public/images/yard-signs/top5pct-yard-signs-rockdale.jpg | R3 | Jun 7 | good |
-| carousel C-7 — carousel-rotating-images | top5pct-yard-signs-shorewood.jpg | public/images/yard-signs/top5pct-yard-signs-shorewood.jpg | R3 | Jun 7 | good |
+| carousel C-1 — carousel-rotating-images | top5pct-yard-signs-joliet.jpg | public/images/yard-signs/top5pct-yard-signs-joliet.jpg | R1 | May 11 | good |
+| carousel C-2 — carousel-rotating-images | top5pct-yard-signs-plainfield.jpg | public/images/yard-signs/top5pct-yard-signs-plainfield.jpg | R3 | Jun 7 | good |
+| carousel C-3 — carousel-rotating-images | top5pct-yard-signs-rockdale.jpg | public/images/yard-signs/top5pct-yard-signs-rockdale.jpg | R3 | Jun 7 | good |
+| carousel C-4 — carousel-rotating-images | top5pct-yard-signs-shorewood.jpg | public/images/yard-signs/top5pct-yard-signs-shorewood.jpg | R3 | Jun 7 | good |
 | card-1 — card-image-with-text | top5pct-yard-signs.jpg | public/images/yard-signs/top5pct-yard-signs.jpg | R1 | May 11 | good |
 | card-2 — card-image-with-text | top5pct-yard-signs-joliet-plainfied-new-lenox.jpg | public/images/yard-signs/top5pct-yard-signs-joliet-plainfied-new-lenox.jpg | Initial | Mar 16 | initial |
-| card-2img-1 — card-2image-with-text | top5pct-yard-signs-joliet-shorewood-romeoville.jpg | public/images/yard-signs/top5pct-yard-signs-joliet-shorewood-romeoville.jpg | Initial | Mar 16 | initial |
-| card-2img-2 — card-2image-with-text | top5pct-yard-signs-joliet-old.jpg | public/images/yard-signs/top5pct-yard-signs-joliet-old.jpg | Initial | Mar 16 | initial |
+| card-2img image1 — card-2image-with-text | top5pct-lawn-signs.jpg | public/images/yard-signs/top5pct-lawn-signs.jpg | R1 | May 11 | good |
+| card-2img image2 — card-2image-with-text | top5pct-yard-sign-joliet.jpg | public/images/yard-signs/top5pct-yard-sign-joliet.jpg | R1 | May 11 | good |
 | card-detailed image1 — card-detailed-info | top5pct-article-yard-signs-buy.jpg | public/images/yard-signs/top5pct-article-yard-signs-buy.jpg | Initial | Mar 16 | initial |
-| slide-L — card-banner-slide-in (direction left) | top5pct-yard-signs-joliet-plainfied-new-lenox.jpg | public/images/yard-signs/top5pct-yard-signs-joliet-plainfied-new-lenox.jpg | Initial | Mar 16 | repeat |
+| slide-L — card-banner-slide-in (direction left) | top5pct-yard-signs-joliet-shorewood-romeoville.jpg | public/images/yard-signs/top5pct-yard-signs-joliet-shorewood-romeoville.jpg | Initial | Mar 16 | initial |
 | slide-R — card-banner-slide-in (direction right) | top5pct-retractable-banner.jpg | public/images/banners/top5pct-retractable-banner.jpg | R1 | May 11 | good |
 
 **Notes:**
-- slide-L repeats card-2: both use `top5pct-yard-signs-joliet-plainfied-new-lenox.jpg` (Initial, locked, 76KB). One of those two slots needs a different image.
-- 5 unique Initial files in use: carousel C-1, card-2, card-2img-1, card-2img-2, card-detailed. All locked Mar 16.
-- card-2img-2 (`top5pct-yard-signs-joliet-old.jpg`) is locked but 1.87MB, the largest Initial file seen in the inventory so far. The "old" suffix also flags it as a candidate for replacement.
-- card-detailed image1 is 47KB (tiny, locked Initial). Standard card-detailed problem seen across most pages.
-- carousel C-1 is the only Initial slot in a 7-image carousel that otherwise runs R1 through R3. Swapping it for one of the R1/R3 files in dir would clean the carousel.
-- hero is R1 (May 11). Dir has no R2 or later hero-quality image beyond what is already in the carousel. The carousel's R3 files (Plainfield, Rockdale, Shorewood) could serve as a hero upgrade.
-- slide-R cross-dir from banners/: slide text is "We Also Print Banners, Posters, and More" so using a banner image is intentional and contextually sound. R1 quality.
-- Dir anomaly: `top5pct-table-signs-joliet-shorewood-plainfield.jpg` (Mar 16, Initial, 57KB, locked) is a table-signs image sitting in the yard-signs/ dir. Not in blade, wrong product category.
+- Carousel reduced from 7 to 4. Old C-1 (Initial banner composite) retired. Old C-2 (lawn-signs.jpg, R1) moved to card-2img image1. Old C-3 (yard-sign-joliet.jpg, R1) moved to card-2img image2. New C-1 through C-4 are the former C-4 through C-7.
+- card-2img image1 and image2 both upgraded from Initial to R1 by receiving the displaced carousel R1 images.
+- slide-L repeat with card-2 broken: slide-L now uses top5pct-yard-signs-joliet-shorewood-romeoville.jpg (displaced from card-2img image1). Still Initial but no longer a repeat.
+- card-2 (top5pct-yard-signs-joliet-plainfied-new-lenox.jpg, Initial) and card-detailed image1 (top5pct-article-yard-signs-buy.jpg, Initial) have no better replacement available yet. Pending new image batch.
+- Retired from active slots: top5pct-banner-yard-signs-joliet-shorewood-crest-hill.jpg (Initial, composite banner image), top5pct-yard-signs-joliet-old.jpg (Initial, "old" suffix, 1.87MB).
+- slide-R cross-dir from banners/ is contextually appropriate — slide text is "We Also Print Banners, Posters, and More." No change.
+- Dir anomaly unchanged: top5pct-table-signs-joliet-shorewood-plainfield.jpg (Mar 16, Initial) sits in the yard-signs/ dir. Wrong product category, not in blade.
 
 ---
 
