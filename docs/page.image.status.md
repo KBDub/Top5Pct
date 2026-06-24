@@ -5,6 +5,8 @@ Columns: section/category (component + slot), image filename, full image path, r
 
 Status codes: `good` | `initial` | `repeat` | `placeholder` | `undersized`
 
+> **Permissions resolved — Jun 24, 2026.** All files in `public/images/` were set to 644 in one pass. File permissions are no longer an issue anywhere in the inventory. Status column entries that say "locked" reflect the state at the time of inventory (Jun 18, 2026) and are now historical only. The only remaining image issues are the three confirmed wrong-dir 404s and the incomplete blade wiring for unlocked unused files.
+
 ---
 
 ## Signs
@@ -1256,8 +1258,8 @@ These unlocked files are sitting in their dirs but unassigned to any blade slot.
 
 ### Issue categories found
 
-**Locked images**
-Range is wide — from 0% locked (dye-sublimation, embroidery) to 92% locked (digital-vinyl). Specialty-materials pages are mostly 18-20% locked with one or two files per page still locked. The vinyl and digital-vinyl pages are dominated by a May 18 batch that locked nearly every slot. Screen-printing and rhinestone are mid-range at 12-18%. These will be addressed page by page.
+**Locked images — resolved Jun 24, 2026**
+All file permissions across `public/images/` were set to 644 in one pass on Jun 24, 2026. This is no longer an active issue. For historical reference: range was 0% locked (dye-sublimation, embroidery) to 92% locked (digital-vinyl). The vinyl and digital-vinyl dirs were dominated by a May 18 placeholder batch. Specialty-materials pages had one or two locked files each. All are now readable by the web server.
 
 **Wrong-dir 404s**
 Three confirmed broken image references across the section. Foil slide-L references a file that lives in `glitter-shirts/` not `custom-shirts/`. Screen-printing slide-L and DTF slide-L both reference the same broken path, `custom-shirts/top5pct-custom-embroidery-shops-near-me-joliet.jpg`, which only exists in `embroidery/`. The same wrong path was copied into two separate blades.
@@ -1285,4 +1287,4 @@ Every dir has at least one unused file. Worst cases are digital-vinyl (7 unused,
 
 ---
 
-*Last updated: Jun 18, 2026*
+*Last updated: Jun 24, 2026 — permissions resolved across all of public/images/.*
