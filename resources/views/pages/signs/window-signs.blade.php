@@ -66,7 +66,6 @@
             ['src' => '/images/window-signs/top5pct-window-signs-cresthill.jpg',           'alt' => 'Custom window signs for businesses in Crest Hill Illinois'],
             ['src' => '/images/window-signs/top5pct-window-signs.jpg',                     'alt' => 'Custom window signs and window graphics in Joliet, Will and DuPage County Illinois'],
             ['src' => '/images/window-signs/top5pct-window-vinyl-sign-installers.jpg',     'alt' => 'Vinyl window sign installation for businesses in Joliet Illinois'],
-            ['src' => '/images/window-signs/top5pct-window-signs-for-businesses-joliet.jpg', 'alt' => 'Custom window signs for businesses throughout Joliet Illinois'],
         ]"
         visible=2
     />
@@ -103,8 +102,8 @@
 
     <x-sections.card-detailed-info
         heading="How Window Graphics Give Your Business a Professional, Polished Storefront"
-        image1="/images/wall-signs/top5pct-banner-wall-decal-door-signs-joliet.jpg"
-        alt1="Custom window and door signs for businesses in Joliet Illinois"
+        image1="/images/window-signs/top5pct-window-signs-joliet-business-signage.jpg"
+        alt1="Custom window signs for businesses in Joliet Illinois"
     >
         <x-slot name="intro">
             <p class="mb-4">Your storefront windows are one of the most powerful and underutilized marketing surfaces your business has. Every person who walks or drives past your location sees your windows, which means window graphics are a constant, passive advertisement for your business that never stops working, much like the <a href="/signs/business-signs/banners" class="link-notification">outdoor banners</a> we print for storefronts throughout Will and DuPage County. A well-executed window display communicates your brand identity, your product offerings, your business hours, and your personality to everyone in your immediate area, all without spending anything beyond the initial installation cost.</p>
