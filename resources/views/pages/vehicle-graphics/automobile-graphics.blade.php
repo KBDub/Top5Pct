@@ -126,8 +126,8 @@
 
             <x-sections.card-detailed-info
                 heading="5 Benefits of Vehicle Graphics for Your Business"
-                image1="/images/automobile-graphics/top5pct-article-car-wraps-vinyl-lettering.jpg"
-                alt1="Custom car wraps and vinyl lettering for vehicles in Joliet Illinois"
+                image1="/images/automobile-graphics/top5pct-vehicle-decals-custom-helmets-joliet.jpg"
+                alt1="Custom vehicle decals and helmet graphics in Joliet Illinois"
             >
                 <x-slot name="intro">
                     <p class="mb-4">Vehicle graphics are one of the most powerful and cost effective advertising tools available to businesses of any size in the Chicagoland area. When your vehicle is branded with your logo, your phone number, and the services you offer, it becomes a mobile billboard that reaches potential customers in every neighborhood it drives through. We have been producing custom vehicle graphics, vinyl lettering, and vehicle wraps for businesses throughout Joliet, Shorewood, Plainfield, and all of Will and DuPage County since 2017, and for clients who want a complete brand kit our <a href="/custom-apparel/group-wear/corporate-wear-shirts" class="link-notification">corporate wear</a> team produces branded crew uniforms that match the look on your doors. Here are five reasons why investing in vehicle graphics is one of the smartest marketing decisions a local business can make.</p>
@@ -157,8 +157,8 @@
         name="Rachel James"
     />
     <x-ui.card-banner-slide-in
-        image="/images/automobile-graphics/top5pct-vinyl-lettering-car-graphics-joliet-crest-hill.jpg"
-        alt="Vehicle wraps and vinyl lettering installed by Top 5 Percent in Joliet and Crest Hill Illinois"
+        image="/images/automobile-graphics/top5pct-vehicle-window-graphics-joliet-r4.jpg"
+        alt="Custom vehicle window graphics and car wraps installed in Joliet Illinois"
         title="Turn Your Vehicle Into a Mobile Billboard"
         href="/contact"
         direction="left"
