@@ -322,4 +322,4 @@ The Initial file top5pct-custom-foil-shirts-hoodies-caps-joliet.jpg (35K, Mar 16
 - slide-R is now a rhinestone cross-sell (rhinestone-apparel/, Jun 3, R2-adjacent, 271K).
 - slide-L image is now R3 (glitter-shirts/top5pct-glitter-sweatshirts-joliet.jpg, Jun 8, 366K); cross-sell direction and title unchanged.
 - top5pct-foil-shirt-shorewood.jpg (41K, R3) was removed from the carousel as part of the trim to 4. Quality flag stands — verify display quality if it is used elsewhere.
-- No remaining R4 image requirements for this page. All slots are R1-R3.
+- R4 placed Jun 25: C-5 added to carousel using top5pct-foil-custom-shirts.jpg (R4). Carousel now at 5 slots. 16 of 16 slots R1-R4.
