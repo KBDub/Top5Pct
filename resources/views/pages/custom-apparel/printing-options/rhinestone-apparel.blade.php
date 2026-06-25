@@ -60,7 +60,8 @@
             ['src' => '/images/rhinestone-apparel/top5pct-rhinestone-bling-joliet.jpg',                         'alt' => 'Custom rhinestone bling shirts in Joliet Illinois'],
             ['src' => '/images/rhinestone-apparel/top5pct-rhinestone-hoodie-joliet-west.jpg',                   'alt' => 'Custom rhinestone hoodie at Joliet West in Joliet Illinois'],
             ['src' => '/images/rhinestone-apparel/top5pct-rhinestone-ladies-shirt.jpg',         'alt' => 'Custom rhinestone ladies shirt in Joliet Illinois'],
-            ['src' => '/images/rhinestone-apparel/top5pct-rhinestone-tshirts-joliet.jpg', 'alt' => 'Custom rhinestone t-shirts for businesses and events in Joliet Illinois'],
+            ['src' => '/images/rhinestone-apparel/top5pct-rhinestone-tshirts-joliet.jpg',        'alt' => 'Custom rhinestone t-shirts for businesses and events in Joliet Illinois'],
+            ['src' => '/images/rhinestone-apparel/top5pct-rhinestone-school-backpacks-joliet.jpg', 'alt' => 'Custom rhinestone school backpacks printed in Joliet Illinois'],
         ]"
         visible=2
     />

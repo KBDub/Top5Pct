@@ -27,6 +27,7 @@ Only one same-dir file exists. All other rhinestone files referenced by the blad
 | carousel C-3 — carousel-rotating-images | top5pct-rhinestone-hoodie-joliet-west.jpg | custom-shirts/ | R2 | Jun 2 | 505K | good |
 | carousel C-4 — carousel-rotating-images | top5pct-rhinestone-ladies-shirt.jpg | custom-shirts/ | R2 | Jun 2 | 162K | good |
 | carousel C-5 — carousel-rotating-images | top5pct-rhinestone-tshirts-joliet.jpg | rhinestone-apparel/ | R2+ | Jun 3 | 265K | good, same-dir |
+| carousel C-6 — carousel-rotating-images | top5pct-rhinestone-school-backpacks-joliet.jpg | rhinestone-apparel/ | R4 | Jun 25 | — | R4 placed, same-dir |
 | card-1 — card-image-with-text | top5pct-rhinestone-t-shirts-joliet.jpg | custom-shirts/ | R2 | Jun 2 | 425K | good |
 | card-2 — card-image-with-text (imagePosition right) | top5pct-custom-rhinestone-shirts.jpg | custom-shirts/ | R2 | Jun 2 | 486K | good |
 | card-detailed image1 — card-detailed-info | top5pct-rhinetsone-t-shirts.jpg | custom-shirts/ | R2 | Jun 2 | 261K | good, filename has typo ("rhinetsone") |
@@ -39,10 +40,10 @@ Only one same-dir file exists. All other rhinestone files referenced by the blad
 
 ## R1-R3 Placement Summary
 
-**Filled:** 11 of 11 slots
-**Remaining (Initial):** 0
+**Filled:** 12 of 12 slots (carousel expanded to 6)
+**Remaining:** 0
 
-All blade image slots are R1-R3. Carousel stays at 5 same-category slots. No Initial files remain. R4 audit ready.
+All blade image slots are R1-R4. Carousel at 6. No Initial files remain. Page complete.
 
 **Remaining notes (not Initial, but worth tracking):**
 
@@ -102,7 +103,9 @@ Carousel stayed at 5 — confirmed R1-R3 cross-sell images were available for bo
 ## Notes
 
 - `top5pct-rhinetsone-t-shirts.jpg` has a typo ("rhinetsone") in the filename. File is R2 (Jun 2, 261K) and loads correctly. A rename would require a blade update — lower priority than the Initial slot fixes.
-- `rhinestone-apparel/` dir has only 1 file (R2+, 265K). Any additional rhinestone-apparel/ photos from future rounds should go there and take priority in the carousel over `custom-shirts/` files.
-- slide-R title "Custom Rhinestone Shirts for Any Special Occasion" does not read as a cross-sell. A content update is a separate task.
-- holographic-shirts/ dir has 3 R3 files (Jun 8). The page for that category has not yet been audited.
-- R4 audit deferred until both suggestions are applied.
+- 12 of 12 slots R1-R4 as of Jun 25, 2026. Page complete.
+- R4 placed Jun 25: C-6 (top5pct-rhinestone-school-backpacks-joliet.jpg, rhinestone-apparel/ same-dir). Over-target condition was already met — all non-carousel slots R1-R3.
+- rhinestone-apparel/ dir now has 2 files (R2+ C-5, R4 C-6). Future rhinestone-apparel/ photos take carousel priority over custom-shirts/ files.
+- slide-R title "Custom Rhinestone Shirts for Any Special Occasion" does not read as a cross-sell. Content update is a separate task.
+- holographic-shirts/ dir has 3 R3 files (Jun 8). Page for that category not yet audited.
+- card-detailed image1 filename typo ("rhinetsone") is a separate rename task — lower priority.
