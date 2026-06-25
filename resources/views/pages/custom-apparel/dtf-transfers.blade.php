@@ -130,15 +130,15 @@
         name="Brittney Porter"
     />
     <x-ui.card-banner-slide-in
-        image="/images/dtf-transfers/toptpct-banner-dtf-transfers-joliet.jpg"
-        alt="Custom DTF direct-to-film transfers by Top 5 Percent in Joliet Illinois"
+        image="/images/screen-printing/top5pct-screenprinting-company-shirts.jpg"
+        alt="Custom screen printed company shirts by Top 5 Percent in Joliet Illinois"
         title="DTF Transfers, Full Color, Any Fabric, Same Day Available"
         href="/contact"
         direction="right"
     />
     <x-ui.card-banner-slide-in
-        image="/images/custom-shirts/top5pct-custom-embroidery-shops-near-me-joliet.jpg"
-        alt="Custom embroidery and specialty apparel printing at Top 5 Percent in Joliet Illinois"
+        image="/images/embroidery/top5pct-embroidered-cap-embroidered-beanies-joliet.jpg"
+        alt="Custom embroidered caps and beanies by Top 5 Percent in Joliet Illinois"
         title="DTF or Embroidery, We Print Both for Any Fabric"
         href="/contact"
         direction="left"
