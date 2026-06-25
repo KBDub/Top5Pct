@@ -127,8 +127,8 @@
         name="Ania Jarosz"
     />
     <x-ui.card-banner-slide-in
-        image="/images/embroidery/top5pct-custom-embroidery-shops-near-me-joliet.jpg"
-        alt="Custom embroidery shirts and embroidered apparel by Top 5 Percent in Joliet Illinois"
+        image="/images/screen-printing/top5pct-screenprinting-joliet.jpg"
+        alt="Custom screen printing services from Top 5 Percent in Joliet Illinois"
         title="Custom Embroidery, The Professional Standard"
         href="/contact"
         direction="left"

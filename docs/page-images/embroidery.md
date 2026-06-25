@@ -42,7 +42,7 @@ All 11 dir files are referenced by the blade. There are no unused same-dir files
 | card-1 — card-image-with-text | top5pct-embroidered-bag.jpg | embroidery/ | R2 | Jun 2 | 304K | good |
 | card-2 — card-image-with-text (imagePosition right) | top5pct-embroidered-smocks.jpg | embroidery/ | R2 | Jun 2 | 332K | good |
 | card-detailed image1 — card-detailed-info | top5pct-embroidery-beanies.jpg | embroidery/ | R2 | Jun 2 | 334K | good |
-| slide-L — card-banner-slide-in (direction left) | top5pct-custom-embroidery-shops-near-me-joliet.jpg | embroidery/ | Initial | Mar 16 | 28K | initial, small file |
+| slide-L — card-banner-slide-in (direction left) | top5pct-screenprinting-joliet.jpg | screen-printing/ | R3 | Jun 8 | 388K | good, cross-sell |
 | slide-R — card-banner-slide-in (direction right) | top5pct-embroidered-caps-old.jpg | embroidery/ | R1 | May 11 | 637K | good, accepted |
 
 **Note:** `card-detailed-info` on this page uses only `image1`. There is no `image2` slot on this component instance.
@@ -51,14 +51,12 @@ All 11 dir files are referenced by the blade. There are no unused same-dir files
 
 ## R1-R3 Placement Summary
 
-**Filled:** 10 of 11 slots
-**Remaining (Initial):** 1 slot
+**Filled:** 11 of 11 slots
+**Remaining (Initial):** 0
 
-| slot | image | size | issue |
-|---|---|---|---|
-| slide-L | top5pct-custom-embroidery-shops-near-me-joliet.jpg (embroidery/) | 28K | Initial, small file |
+All blade image slots are R1-R3. Carousel stays at 5 same-dir slots. No Initial files remain. R4 audit ready.
 
-**Carousel:** 5 slots, all R1-R3 same-dir embroidery/. Carousel stays at 5 — card-1, card-2, card-detailed, and slide-R are all R1+, and a confirmed R1-R3 cross-sell is available for slide-L. No carousel drop needed.
+**Carousel:** 5 slots, all R1-R3 same-dir embroidery/. Stays at 5 — all other slots were R1+ and a confirmed R3 cross-sell was available for slide-L.
 
 ---
 
@@ -81,7 +79,7 @@ None. All 11 embroidery/ files are referenced by the blade. No same-dir file is 
 | top5pct-embroidered-bag.jpg | embroidery/ | 304K | R2 | card-1 only |
 | top5pct-embroidered-smocks.jpg | embroidery/ | 332K | R2 | card-2 only |
 | top5pct-embroidery-beanies.jpg | embroidery/ | 334K | R2 | card-detailed image1 only |
-| top5pct-custom-embroidery-shops-near-me-joliet.jpg | embroidery/ | 28K | Initial | slide-L only |
+| top5pct-custom-embroidery-shops-near-me-joliet.jpg | embroidery/ | 28K | Initial | unused (replaced Jun 25) |
 | top5pct-embroidered-caps-old.jpg | embroidery/ | 637K | R1 | slide-R only |
 
 Every slot has a unique file. No file is used in more than one slot.
@@ -114,41 +112,13 @@ Note: vinyl/ also contains files from May 18 (not a named round — between R1 a
 
 ---
 
-## Immediate Suggestion
+## Changes Made Jun 25, 2026
 
-### 1. Replace slide-L with a cross-sell from screen-printing/ or vinyl/
+| slot | from | to |
+|---|---|---|
+| slide-L | top5pct-custom-embroidery-shops-near-me-joliet.jpg (embroidery/, Initial, 28K) | top5pct-screenprinting-joliet.jpg (screen-printing/, R3, Jun 8, 388K) |
 
-No unused embroidery/ files remain. slide-L must become a cross-sell. The slide title is "Custom Embroidery, The Professional Standard" — same-page CTA language, not a cross-sell title. A title update is a separate content task.
-
-Screen printing is the most natural cross-sell for embroidery. It is mentioned directly in the blade content as a complementary service, and the slide-R title "Combine Embroidery With Vinyl or Screen Print" reinforces this relationship.
-
-| candidate | path | round | date | size | note |
-|---|---|---|---|---|---|
-| top5pct-screenprinting-joliet.jpg | screen-printing/ | R3 | Jun 8 | 388K | recommended, largest R3 in dir |
-| top5pct-screenprinting-t-shirts-joliet.jpg | screen-printing/ | R2+ | Jun 3 | 484K | R2+, largest in dir |
-| top5pct-vinyl-shirts.jpg | vinyl/ | R3 | Jun 8 | 379K | alternative, vinyl referenced in slide-R title |
-
-Recommended: `top5pct-screenprinting-joliet.jpg` (screen-printing/, R3, Jun 8, 388K).
-
----
-
-## After Suggestion Applied
-
-| slot | image | path | round | status |
-|---|---|---|---|---|
-| hero | top5pct-stitched-embroidered-shirts.jpg | embroidery/ | R2 | good |
-| C-1 | top5pct-embroidered-aprons.jpg | embroidery/ | R1 | good |
-| C-2 | top5pct-embroidered-caps.jpg | embroidery/ | R2 | good |
-| C-3 | top5pct-embroidery-in-joliet.jpg | embroidery/ | R1 | good |
-| C-4 | top5pct-embroidered-stitched-caps.jpg | embroidery/ | R1 | good |
-| C-5 | top5pct-embroidered-cap-embroidered-beanies-joliet.jpg | embroidery/ | R3 | good |
-| card-1 | top5pct-embroidered-bag.jpg | embroidery/ | R2 | good |
-| card-2 | top5pct-embroidered-smocks.jpg | embroidery/ | R2 | good |
-| card-detailed image1 | top5pct-embroidery-beanies.jpg | embroidery/ | R2 | good |
-| slide-L | top5pct-screenprinting-joliet.jpg | screen-printing/ | R3 | good, cross-sell |
-| slide-R | top5pct-embroidered-caps-old.jpg | embroidery/ | R1 | good, accepted |
-
-All 11 blade image slots R1-R3. Carousel stays at 5 same-dir slots. No Initial files remain. R4 audit ready.
+Carousel stayed at 5 — all other slots were R1+ and a confirmed R3 cross-sell was available for slide-L.
 
 ---
 
