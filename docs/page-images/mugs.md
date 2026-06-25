@@ -40,7 +40,7 @@ Critical: every mugs/ file is placed in the blade. No unused same-dir files avai
 
 | slot | component | image | dir | round | date | size | status |
 |---|---|---|---|---|---|---|---|
-| hero | category-hero | (no image= parameter) | — | — | — | — | missing: hero rendered without image; deferred to R4 |
+| hero | category-hero | top5pct-mugs-custom-plainfield.jpg | mugs/ | R4 | Jun 25 | — | R4 placed |
 | C-1 | carousel-rotating-images | top5pct-custom-coffee-mugs-in-joliet.jpg | mugs/ | R1 | May 11 | 426K | good |
 | C-2 | carousel-rotating-images | top5pct-custom-coffee-mugs.jpg | mugs/ | R1 | May 11 | 472K | good |
 | C-3 | carousel-rotating-images | top5pct-custom-mugs-near-me.jpg | mugs/ | R1 | May 11 | 398K | good |
@@ -55,17 +55,11 @@ Critical: every mugs/ file is placed in the blade. No unused same-dir files avai
 
 ## R1-R3 Placement Summary
 
-**Total image slots with an image path referenced:** 9 (hero excluded — no image parameter)
-**Confirmed R1-R3:** 9
+**Total image slots:** 10
+**Confirmed R1-R4:** 10
 **Remaining to fill:** 0
 
-All 9 referenced image slots are R1-R3 as of Jun 25, 2026.
-
-Outstanding item — not a round violation:
-
-| slot | issue | resolution |
-|---|---|---|
-| hero | no image= parameter; hero renders without photo | deferred to R4; all mugs/ files placed, no inventory remains |
+All 10 image slots are R1-R4 as of Jun 25, 2026. Hero filled with R4 image.
 
 ---
 
@@ -135,18 +129,17 @@ No mugs/ files remain to assign to the hero. R4 must supply a hero-quality mugs/
 | top5pct-printed-mugs.jpg | mugs/ | 398K | R2 | card-detailed image1 only |
 | top5pct-printed-mugs-and-tees.jpg | mugs/ | 336K | R1 | slide-L only; renamed from top5pct-printed-mugs-old.jpg Jun 25 |
 | top5pct-glitter-sweatshirts-joliet.jpg | glitter-shirts/ | 375K | R3 | slide-R only |
+| top5pct-mugs-custom-plainfield.jpg | mugs/ | — | R4 | hero only |
 
-No duplicate image use across blade slots. All 8 mugs/ files are placed — none unused.
+No duplicate image use across blade slots. All 9 mugs/ files are placed — none unused.
 
 ---
 
 ## Notes
 
-- 9 of 9 referenced image slots are R1-R3 as of Jun 25, 2026. Page is clean.
-- Hero has no image= parameter — not a round violation but a missing slot. Deferred to R4.
+- 10 of 10 image slots R1-R4 as of Jun 25, 2026. Page complete.
+- Hero filled Jun 25 with top5pct-mugs-custom-plainfield.jpg (R4). Hero was previously imageless.
 - slide-R double violation (broken path + Initial) resolved Jun 25: replaced with glitter-shirts/ R3.
 - slide-L renamed Jun 25: top5pct-printed-mugs-old.jpg renamed to top5pct-printed-mugs-and-tees.jpg on disk and in blade.
-- All 8 mugs/ files are placed. No unused same-dir files. No Initial files in mugs/ dir.
-- No R3 files in mugs/ dir. R4 should supply R3-or-better mugs/ images for hero and carousel expansion.
-- Carousel at exactly 4, all mugs/ R1. Eligible for expansion after hero is resolved.
-- R4 priorities: (1) hero image, (2) carousel expansion candidates.
+- All 9 mugs/ files are placed. No unused same-dir files. No Initial files in mugs/ dir.
+- Carousel at 4, all mugs/ R1. Over-target condition met — eligible for expansion if new mugs/ files arrive.
