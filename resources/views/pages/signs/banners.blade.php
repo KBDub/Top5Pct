@@ -156,10 +156,10 @@
         direction="left"
     />
     <x-ui.card-banner-slide-in
-        image="/images/banners/top5pct-portable-banners.jpg"
-        alt="Custom vinyl banners for birthdays, graduations, and events printed by Top 5 Percent in Joliet Illinois"
-        title="Birthday, Graduation, Event Banners, We Print Same Day"
-        href="/contact"
+        image="/images/yard-signs/top5pct-yard-signs-joliet.jpg"
+        alt="Custom yard signs printed and installed by Top 5 Percent in Joliet Illinois"
+        title="Pair Your Banners with Custom Yard Signs"
+        href="/signs/ground-signs/yard-signs"
         direction="right"
     />
 
