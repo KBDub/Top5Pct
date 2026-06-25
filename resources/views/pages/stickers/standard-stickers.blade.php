@@ -95,10 +95,10 @@
         <x-sections.cta-quadruple-button-banner />
 
         <x-sections.card-2image-with-text
-            image1="/images/custom-shaped-stickers-decals/top5pct-stickers-decals-joliet-labels.jpg"
-            alt1="Custom product labels and stickers printed in Joliet Illinois"
-            image2="/images/custom-shaped-stickers-decals/top5pct-stickers-decals-joliet-ocean-viewz.jpg"
-            alt2="Custom branded stickers and decals for Ocean Viewz in Joliet Illinois"
+            image1="/images/custom-shaped-stickers-decals/top5pct-custom-shaped-stickers-cresthill.jpg"
+            alt1="Custom shaped stickers and decals printed in Crest Hill Illinois"
+            image2="/images/custom-shaped-stickers-decals/top5pct-die-cut-stickers-joliet.jpg"
+            alt2="Custom die cut stickers and decals printed in Joliet Illinois"
             title="Product Labels and Branded Decals"
         >
             <p class="mb-4">We print custom product labels and branded decals for small businesses and product makers throughout the Joliet, Will and DuPage County area. Whether you sell handmade candles, bottled sauces, beverages, or packaged goods, a professional label makes your product look like it belongs on a retail shelf. We print labels on white vinyl, clear vinyl, and specialty materials that adhere cleanly to glass, plastic, metal, and cardboard surfaces. Full color printing means your label stands out in any retail environment or at any market or pop up event.</p>
@@ -107,10 +107,10 @@
         </x-sections.card-2image-with-text>
 
         <x-sections.card-2image-with-text
-            image1="/images/custom-shaped-stickers-decals/top5pct-stickers-decals-joliet-stoner-rock-bbq.jpg"
-            alt1="Custom die cut stickers for Stoner Rock BBQ printed in Joliet Illinois"
-            image2="/images/custom-shaped-stickers-decals/top5pct-stickers-decals-joliet-volleyball-team.jpg"
-            alt2="Custom team stickers and decals for a volleyball team in Joliet Illinois"
+            image1="/images/standard-stickers-decals/top5pct-diecut-stickers.jpg"
+            alt1="Custom die cut stickers printed by Top 5 Percent in Joliet Illinois"
+            image2="/images/standard-stickers-decals/top5pct-stickers-morris.jpg"
+            alt2="Custom stickers and decals printed in Morris Illinois"
             title="Die Cut Stickers for Any Group"
         >
             <p class="mb-4">We produce die cut stickers for restaurants, food trucks, bands, clubs, sports teams, and community organizations throughout Joliet, Will and DuPage County. Die cut stickers are custom trimmed to follow the shape of your design rather than being cut into a standard square, circle, or rectangle. The result is a sticker that looks like a miniature version of your actual logo or artwork. It is a small detail that makes a big difference in how professional and premium your brand comes across to customers and fans.</p>
@@ -155,8 +155,8 @@
         name="Chewy Orkwiszewski"
     />
     <x-ui.card-banner-slide-in
-        image="/images/custom-shaped-stickers-decals/top5pct-custom-stickers-cresthill.jpg"
-        alt="Custom die cut stickers and decals printed by Top 5 Percent in Joliet Illinois"
+        image="/images/standard-stickers-decals/top5pct-stickers-plainfield.jpg"
+        alt="Custom stickers and decals printed in Plainfield Illinois"
         title="Custom Stickers in Any Shape or Size"
         href="/contact"
         direction="left"
