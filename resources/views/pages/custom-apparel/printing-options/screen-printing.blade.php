@@ -56,10 +56,10 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/custom-shirts/top5pct-screenprint-custom-shirts.jpg', 'alt' => 'Custom screen printed shirts and apparel in Joliet Illinois'],
-            ['src' => '/images/custom-shirts/top5pct-screenprinted-shirts-in-joliet.jpg',                           'alt' => 'Custom screen printed apparel in Joliet Illinois'],
+            ['src' => '/images/screen-printing/top5pct-screenprint-custom-shirts.jpg', 'alt' => 'Custom screen printed shirts and apparel in Joliet Illinois'],
+            ['src' => '/images/screen-printing/top5pct-screenprinted-shirts-in-joliet.jpg',                           'alt' => 'Custom screen printed apparel in Joliet Illinois'],
             ['src' => '/images/custom-shirts/top5pct-custom-shirt-pictures.jpg', 'alt' => 'Custom printed shirts and apparel made by Top 5 Percent in Joliet Illinois'],
-            ['src' => '/images/custom-shirts/top5pct-screenprinting-shirts.jpg',          'alt' => 'Custom screen printed shirts made in Joliet Illinois'],
+            ['src' => '/images/screen-printing/top5pct-screenprinting-shirts.jpg',          'alt' => 'Custom screen printed shirts made in Joliet Illinois'],
             ['src' => '/images/screen-printing/top5pct-screenprinting-joliet.jpg',         'alt' => 'Custom screen printing services in Joliet Illinois'],
             ['src' => '/images/screen-printing/top5pct-screenprinted-shirts-joliet.jpg',   'alt' => 'Custom screen printed shirts in Joliet, Shorewood, and Crest Hill Illinois'],
             ['src' => '/images/screen-printing/top5pct-screenprinting-company-shirts.jpg', 'alt' => 'Screen printing company shirts for businesses in Joliet Illinois'],
@@ -76,7 +76,7 @@
     />
 
     <x-sections.card-image-with-text
-        image="/images/custom-shirts/top5pct-neon-vinyl-shirts.jpg"
+        image="/images/digital-vinyl/top5pct-neon-vinyl-shirts.jpg"
         alt="Custom screen printed shirts for businesses and organizations in Joliet Illinois"
         title="The Classic Standard for Custom Apparel"
     >
@@ -86,7 +86,7 @@
     </x-sections.card-image-with-text>
 
     <x-sections.card-image-with-text
-        image="/images/custom-shirts/top5pct-vinyl-caps.jpg"
+        image="/images/digital-vinyl/top5pct-vinyl-caps.jpg"
         alt="Custom screen printing for group apparel and uniforms in Joliet Illinois"
         title="Ideal for Bulk Orders and Uniforms"
         imagePosition="right"
@@ -132,7 +132,7 @@
         name="Gerardo Munoz Jr"
     />
     <x-ui.card-banner-slide-in
-        image="/images/custom-shirts/top5pct-screenprinting-shirts.jpg"
+        image="/images/screen-printing/top5pct-screenprinting-shirts.jpg"
         alt="Custom screen printed apparel and group shirts printed by Top 5 Percent in Joliet Illinois"
         title="Bold Screen Printed Shirts for Your Group or Brand"
         href="/contact"

@@ -47,7 +47,7 @@
         primaryButtonHref="/contact"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/custom-shirts/top5pct-custom-puff-shirts.jpg"
+        image="/images/puff-shirts/top5pct-custom-puff-shirts.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />
@@ -57,9 +57,9 @@
     <x-ui.carousel-rotating-images
         :images="[
             ['src' => '/images/custom-shirts/top5pct-banner-custom-apparel-custom-shirts-custom-hoodies-custom-caps.jpg', 'alt' => 'Custom puff print shirts and apparel in Joliet Illinois'],
-            ['src' => '/images/custom-shirts/top5pct-puff-shirts-joliet.jpg',                                            'alt' => 'Custom puff shirts in Joliet Illinois'],
-            ['src' => '/images/custom-shirts/top5pct-puff-shirts.jpg',                                                   'alt' => 'Custom puff print apparel in Joliet Illinois'],
-            ['src' => '/images/custom-shirts/top5pct-custom-vinyl-shirts.jpg',                                    'alt' => 'Custom apparel and puff print shirts made in Joliet Illinois'],
+            ['src' => '/images/puff-shirts/top5pct-puff-shirts-joliet.jpg',                                            'alt' => 'Custom puff shirts in Joliet Illinois'],
+            ['src' => '/images/puff-shirts/top5pct-puff-shirts.jpg',                                                   'alt' => 'Custom puff print apparel in Joliet Illinois'],
+            ['src' => '/images/digital-vinyl/top5pct-custom-vinyl-shirts.jpg',                                    'alt' => 'Custom apparel and puff print shirts made in Joliet Illinois'],
         ]"
         visible=2
     />
@@ -133,7 +133,7 @@
         direction="left"
     />
     <x-ui.card-banner-slide-in
-        image="/images/custom-shirts/top5pct-rhinetsone-t-shirts.jpg"
+        image="/images/rhinestone-apparel/top5pct-rhinestone-t-shirts.jpg"
         alt="Custom rhinestone and bling shirts from Top 5 Percent in Joliet Illinois"
         title="Puff, Rhinestone, or Flock, Mix Techniques for One of a Kind Shirts"
         href="/contact"

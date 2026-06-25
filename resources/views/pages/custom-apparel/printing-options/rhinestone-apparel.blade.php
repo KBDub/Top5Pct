@@ -47,7 +47,7 @@
         primaryButtonHref="/contact"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/custom-shirts/top5pct-rhinestone-hoodies-joliet.jpg"
+        image="/images/rhinestone-apparel/top5pct-rhinestone-hoodies-joliet.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />
@@ -56,10 +56,10 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/custom-shirts/top5pct-rhinestone-apparel-keith-elementary.jpg',             'alt' => 'Custom rhinestone apparel at Keith Elementary in Joliet Illinois'],
-            ['src' => '/images/custom-shirts/top5pct-rhinestone-bling-joliet.jpg',                         'alt' => 'Custom rhinestone bling shirts in Joliet Illinois'],
-            ['src' => '/images/custom-shirts/top5pct-rhinestone-hoodie-joliet-west.jpg',                   'alt' => 'Custom rhinestone hoodie at Joliet West in Joliet Illinois'],
-            ['src' => '/images/custom-shirts/top5pct-rhinestone-ladies-shirt.jpg',         'alt' => 'Custom rhinestone ladies shirt in Joliet Illinois'],
+            ['src' => '/images/rhinestone-apparel/top5pct-rhinestone-apparel-keith-elementary.jpg',             'alt' => 'Custom rhinestone apparel at Keith Elementary in Joliet Illinois'],
+            ['src' => '/images/rhinestone-apparel/top5pct-rhinestone-bling-joliet.jpg',                         'alt' => 'Custom rhinestone bling shirts in Joliet Illinois'],
+            ['src' => '/images/rhinestone-apparel/top5pct-rhinestone-hoodie-joliet-west.jpg',                   'alt' => 'Custom rhinestone hoodie at Joliet West in Joliet Illinois'],
+            ['src' => '/images/rhinestone-apparel/top5pct-rhinestone-ladies-shirt.jpg',         'alt' => 'Custom rhinestone ladies shirt in Joliet Illinois'],
             ['src' => '/images/rhinestone-apparel/top5pct-rhinestone-tshirts-joliet.jpg', 'alt' => 'Custom rhinestone t-shirts for businesses and events in Joliet Illinois'],
         ]"
         visible=2
@@ -71,7 +71,7 @@
     />
 
     <x-sections.card-image-with-text
-        image="/images/custom-shirts/top5pct-rhinestone-t-shirts-joliet.jpg"
+        image="/images/rhinestone-apparel/top5pct-rhinestone-t-shirts-joliet.jpg"
         alt="Custom rhinestone t-shirts in Joliet Illinois"
         title="Crystal Bling That Turns Every Head"
     >
@@ -81,7 +81,7 @@
     </x-sections.card-image-with-text>
 
     <x-sections.card-image-with-text
-        image="/images/custom-shirts/top5pct-custom-rhinestone-shirts.jpg"
+        image="/images/rhinestone-apparel/top5pct-custom-rhinestone-shirts.jpg"
         alt="Custom rhinestone shirts for celebrations and events in Joliet Illinois"
         title="Custom Designs for Any Occasion"
         imagePosition="right"
@@ -98,7 +98,7 @@
 
     <x-sections.card-detailed-info
         heading="Why Custom Rhinestone Shirts Make Every Special Occasion Unforgettable"
-        image1="/images/custom-shirts/top5pct-rhinetsone-t-shirts.jpg"
+        image1="/images/rhinestone-apparel/top5pct-rhinestone-t-shirts.jpg"
         alt1="Custom rhinestone t-shirts for events in Joliet, Will and DuPage County Illinois"
     >
         <x-slot name="intro">

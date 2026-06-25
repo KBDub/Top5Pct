@@ -59,7 +59,7 @@
             ['src' => '/images/flock-shirts/top5pct-custom-flock-shirt-hoodie-cap-joliet.jpg',              'alt' => 'Custom flock shirts hoodies and caps in Joliet Illinois'],
             ['src' => '/images/flock-shirts/top5pct-flock-hoodie-printing.jpg',                             'alt' => 'Custom flock hoodie printing in Joliet Illinois'],
             ['src' => '/images/flock-shirts/top5pct-flock-shirt-vinyl.jpg',                                'alt' => 'Custom flock shirt vinyl in Joliet Illinois'],
-            ['src' => '/images/custom-shirts/top5pct-custom-vinyl-shirts.jpg',                                     'alt' => 'Custom flock velvet shirts made in Joliet, Will and DuPage County Illinois'],
+            ['src' => '/images/digital-vinyl/top5pct-custom-vinyl-shirts.jpg',                                     'alt' => 'Custom flock velvet shirts made in Joliet, Will and DuPage County Illinois'],
         ]"
         visible=2
     />

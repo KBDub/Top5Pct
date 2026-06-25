@@ -47,7 +47,7 @@
         primaryButtonHref="/contact"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/custom-shirts/top5pct-foil-gold-t-shirt.jpg"
+        image="/images/foil-shirts/top5pct-foil-gold-t-shirt.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />
@@ -70,7 +70,7 @@
     />
 
     <x-sections.card-image-with-text
-        image="/images/custom-shirts/top5pct-gold-foil-printed-shirts.jpg"
+        image="/images/foil-shirts/top5pct-gold-foil-printed-shirts.jpg"
         alt="Custom gold foil printed shirts with metallic finish in Joliet Illinois"
         title="Mirror-Finish Metallic That Commands Attention"
     >
@@ -80,7 +80,7 @@
     </x-sections.card-image-with-text>
 
     <x-sections.card-image-with-text
-        image="/images/custom-shirts/top5pct-custom-wedding-foil-shirts.jpg"
+        image="/images/foil-shirts/top5pct-custom-wedding-foil-shirts.jpg"
         alt="Custom wedding foil shirts and metallic apparel for events in Joliet Illinois"
         title="Gold, Silver, and Color Foil Options"
         imagePosition="right"
@@ -97,7 +97,7 @@
 
     <x-sections.card-detailed-info
         heading="Why Metallic Foil Shirts Elevate Your Brand and Events to the Next Level"
-        image1="/images/custom-shirts/top5pct-foil-custom-t-shirts.jpg"
+        image1="/images/foil-shirts/top5pct-foil-custom-t-shirts.jpg"
         alt1="Custom metallic foil t-shirts for brands and events in Joliet, Will and DuPage County Illinois"
     >
         <x-slot name="intro">
