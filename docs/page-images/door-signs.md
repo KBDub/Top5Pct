@@ -3,7 +3,7 @@
 **Blade:** `resources/views/pages/signs/door-signs.blade.php`
 **URL:** `/signs/business-signs/door-signs`
 **Dir:** `public/images/door-signs/` — 8 files total
-**Verified:** Jun 25, 2026
+**Verified:** Jun 25, 2026 | **R4 placed:** Jun 25, 2026
 
 ---
 
@@ -47,30 +47,27 @@ Dir summary: 1 Initial, 1 R1, 4 R2, 2 R3. 8 image files total.
 | C-4 | carousel-rotating-images | top5pct-door-wraps-joliet.jpg | door-signs/ | R3 | Jun 8 | 321K | good |
 | card-1 | card-image-with-text | top5pct-vinyl-door-lettering.jpg | door-signs/ | R2 | Jun 2 | 452K | good |
 | card-2 | card-image-with-text (imagePosition right) | top5pct-vinyl-door-signs.jpg | door-signs/ | R2 | Jun 2 | 275K | good |
-| card-detailed image1 | card-detailed-info | top5pct-door-signs-joliet-shorewood-crest-hill.jpg | door-signs/ | Initial | Mar 16 | 59K | Initial — needs replacement |
-| slide-L | card-banner-slide-in (direction left) | top5pct-business-door-signs.jpg | door-signs/ | R2 | Jun 2 | 486K | good, same-category; duplicate of C-2 |
+| C-5 | carousel-rotating-images | top5pct-door-graphics-joliet.jpg | door-signs/ | R4 | Jun 25 | — | R4 placed |
+| C-6 | carousel-rotating-images | top5pct-door-lettering-installer-joliet.jpg | door-signs/ | R4 | Jun 25 | — | R4 placed |
+| C-7 | carousel-rotating-images | top5pct-door-sign-vinyl-lettering-joliet.jpg | door-signs/ | R4 | Jun 25 | — | R4 placed |
+| card-detailed image1 | card-detailed-info | top5pct-door-signs-crest-hill.jpg | door-signs/ | R4 | Jun 25 | — | R4 placed; Initial replaced |
+| slide-L | card-banner-slide-in (direction left) | top5pct-door-decals-channahon.jpg | door-signs/ | R4 | Jun 25 | — | R4 placed; C-2 duplicate resolved |
 | slide-R | card-banner-slide-in (direction right) | top5pct-wall-sign-for-businesses.jpg | wall-signs/ | R3 | Jun 6 | 319K | good, cross-sell |
 
 ---
 
 ## R1-R3 Placement Summary
 
-**Total blade image slots:** 10
-**Filled R1-R3:** 9
-**Remaining (Initial in blade):** 1
-
-| slot | image | round | issue |
-|---|---|---|---|
-| card-detailed image1 | top5pct-door-signs-joliet-shorewood-crest-hill.jpg | Initial | only Initial file in dir; no same-dir R1-R3 replacement available |
-
-All 7 non-Initial door-signs/ files are already placed in the blade (one used twice). No same-dir R1-R3 candidate exists to replace the card-detailed image1 slot. Per the audit rules, this slot is left Initial for a later round.
+**Total blade image slots:** 13 (carousel expanded to 7)
+**Filled R1-R4:** 13
+**Remaining:** 0
 
 ---
 
 ## Carousel
 
-**Current slots:** 4
-**Target:** 4. May exceed 4 if all non-carousel slots are R1-R3.
+**Current slots:** 7 (expanded from 4)
+**Target:** 4. Over-target condition met — all non-carousel slots are R1-R4.
 
 **Non-carousel slot check:**
 
@@ -79,11 +76,11 @@ All 7 non-Initial door-signs/ files are already placed in the blade (one used tw
 | hero | top5pct-door-signage.jpg | R1 | good |
 | card-1 | top5pct-vinyl-door-lettering.jpg | R2 | good |
 | card-2 | top5pct-vinyl-door-signs.jpg | R2 | good |
-| card-detailed image1 | top5pct-door-signs-joliet-shorewood-crest-hill.jpg | Initial | not filled |
-| slide-L | top5pct-business-door-signs.jpg | R2 | good |
+| card-detailed image1 | top5pct-door-signs-crest-hill.jpg | R4 | good |
+| slide-L | top5pct-door-decals-channahon.jpg | R4 | good |
 | slide-R | top5pct-wall-sign-for-businesses.jpg | R3 | good, cross-sell |
 
-card-detailed image1 is Initial. Carousel must stay at 4 until all non-carousel slots are R1-R3. No carousel expansion possible. All 4 carousel slots are door-signs/ same-dir, R2-R3.
+All non-carousel slots R1-R4. Over-target condition satisfied. Carousel expanded to 7 using 3 R4 files.
 
 ---
 
@@ -109,39 +106,37 @@ slide-R cross-sells to wall-signs/, a directly related signs/ sub-category. The 
 | top5pct-door-wraps-joliet.jpg | door-signs/ | 321K | R3 | C-4 only |
 | top5pct-vinyl-door-lettering.jpg | door-signs/ | 452K | R2 | card-1 only |
 | top5pct-vinyl-door-signs.jpg | door-signs/ | 275K | R2 | card-2 only |
-| top5pct-door-signs-joliet-shorewood-crest-hill.jpg | door-signs/ | 59K | Initial | card-detailed image1 only |
+| top5pct-door-signs-crest-hill.jpg | door-signs/ | — | R4 | card-detailed image1 only |
+| top5pct-door-decals-channahon.jpg | door-signs/ | — | R4 | slide-L only |
+| top5pct-door-graphics-joliet.jpg | door-signs/ | — | R4 | C-5 only |
+| top5pct-door-lettering-installer-joliet.jpg | door-signs/ | — | R4 | C-6 only |
+| top5pct-door-sign-vinyl-lettering-joliet.jpg | door-signs/ | — | R4 | C-7 only |
 | top5pct-wall-sign-for-businesses.jpg | wall-signs/ | 319K | R3 | slide-R only |
+| top5pct-door-signs-joliet-shorewood-crest-hill.jpg | door-signs/ | 59K | Initial | removed from blade (was card-detailed image1) |
 
-All 7 non-Initial door-signs/ files are placed. `top5pct-business-door-signs.jpg` is used twice (C-2 and slide-L). No unused R1-R3 door-signs/ files remain.
+All 13 blade slots filled. No duplicate image use. No unused R1-R4 door-signs/ files remain.
 
 ---
 
-## Immediate Suggestions
+## R4 Placements — Jun 25, 2026
 
-### card-detailed image1 — Initial, no same-dir replacement available
+| slot | old image | new image | round | note |
+|---|---|---|---|---|
+| card-detailed image1 | top5pct-door-signs-joliet-shorewood-crest-hill.jpg (Initial, 59K) | top5pct-door-signs-crest-hill.jpg | R4 | Initial cleared |
+| slide-L | top5pct-business-door-signs.jpg (R2, duplicate of C-2) | top5pct-door-decals-channahon.jpg | R4 | duplicate resolved |
+| C-5 | (new slot) | top5pct-door-graphics-joliet.jpg | R4 | carousel expansion |
+| C-6 | (new slot) | top5pct-door-lettering-installer-joliet.jpg | R4 | carousel expansion |
+| C-7 | (new slot) | top5pct-door-sign-vinyl-lettering-joliet.jpg | R4 | carousel expansion |
 
-`top5pct-door-signs-joliet-shorewood-crest-hill.jpg` (Initial, Mar 16, 59K) is the only Initial file in the dir and is currently placed in the card-detailed image1 slot. All 7 other door-signs/ files are already used in the blade. No same-dir R1-R3 candidate is available to replace it.
-
-Per the audit rules: left Initial for a later round.
-
-When new door-signs/ R4 images arrive, card-detailed image1 is the first priority for replacement. The new image should be a larger door-signs/ file — the current file at 59K is also notably small.
-
-### slide-L — duplicate of C-2
-
-`top5pct-business-door-signs.jpg` (R2, 486K) is used in both C-2 (carousel) and slide-L. This is not a rule violation. Once a new R1-R3 door-signs/ file becomes available in R4, slide-L is a candidate for differentiation.
-
-### Carousel — no expansion available
-
-Carousel is at exactly 4. card-detailed image1 is Initial, so the carousel cannot expand until that slot is resolved. No unused R1-R3 door-signs/ files remain for carousel expansion.
+All 13 slots R1-R4. Initial cleared. Duplicate resolved. Carousel expanded from 4 to 7.
 
 ---
 
 ## Notes
 
-- 9 of 10 blade image slots are R1-R3 as of verification Jun 25, 2026.
-- 1 slot (card-detailed image1) remains Initial. No same-dir R1-R3 replacement is available. Deferred to R4.
-- The only Initial file in the dir (`top5pct-door-signs-joliet-shorewood-crest-hill.jpg`, 59K) is also the only file currently blocking full R1-R3 compliance.
-- `top5pct-business-door-signs.jpg` is used in both C-2 and slide-L. Duplicate is documented; no rule violation.
-- slide-R cross-sells to wall-signs/ (R3, Jun 6), confirmed against wall-signs.md.
-- R3 spans Jun 6-8, 2026. Jun 7 file confirmed R3 consistent with prior audits.
-- R4 audit ready pending card-detailed image1 replacement.
+- 13 of 13 blade image slots R1-R4 as of Jun 25, 2026. Page complete.
+- card-detailed image1 replaced: Initial 59K → top5pct-door-signs-crest-hill.jpg (R4).
+- slide-L replaced: R2 duplicate of C-2 → top5pct-door-decals-channahon.jpg (R4).
+- Carousel expanded from 4 to 7: C-5, C-6, C-7 added using R4 files.
+- No duplicate image use across any slots.
+- slide-R cross-sells to wall-signs/ (R3, Jun 6). Valid.

@@ -60,6 +60,9 @@
             ['src' => '/images/door-signs/top5pct-business-door-signs.jpg',                   'alt' => 'Custom business door signs in Joliet Illinois'],
             ['src' => '/images/door-signs/top5pct-door-sign-installers.jpg',                  'alt' => 'Custom door sign installation in Joliet Illinois'],
             ['src' => '/images/door-signs/top5pct-door-wraps-joliet.jpg',         'alt' => 'Custom door wraps in Joliet Illinois'],
+            ['src' => '/images/door-signs/top5pct-door-graphics-joliet.jpg',       'alt' => 'Custom door graphics for businesses in Joliet Illinois'],
+            ['src' => '/images/door-signs/top5pct-door-lettering-installer-joliet.jpg', 'alt' => 'Professional door lettering installation in Joliet Illinois'],
+            ['src' => '/images/door-signs/top5pct-door-sign-vinyl-lettering-joliet.jpg', 'alt' => 'Custom vinyl lettering door signs in Joliet Illinois'],
         ]"
         visible=2
     />
@@ -98,8 +101,8 @@
 
     <x-sections.card-detailed-info
         heading="What Your Door Signage Communicates Before You Say a Word"
-        image1="/images/door-signs/top5pct-door-signs-joliet-shorewood-crest-hill.jpg"
-        alt1="Custom door signs and door graphics installed for businesses in Joliet, Will and DuPage County Illinois"
+        image1="/images/door-signs/top5pct-door-signs-crest-hill.jpg"
+        alt1="Custom door signs and door graphics installed for businesses in Crest Hill and Joliet Illinois"
     >
         <x-slot name="intro">
             <p class="mb-4">Customers form opinions about your business in the first few seconds of encountering it. Your door is part of that first impression, and what your door sign communicates directly affects whether someone chooses to enter, so pairing your door graphic with matching <a href="/signs/business-signs/window-signs" class="link-notification">window signs</a> creates a consistent brand statement across all your entrance glass. A professionally designed and applied door graphic is one of the simplest investments you can make in your business's curb appeal and customer experience.</p>
@@ -127,8 +130,8 @@
         name="Jerry E Olson"
     />
     <x-ui.card-banner-slide-in
-        image="/images/door-signs/top5pct-business-door-signs.jpg"
-        alt="Custom door signs and door graphics printed and installed by Top 5 Percent in Joliet Illinois"
+        image="/images/door-signs/top5pct-door-decals-channahon.jpg"
+        alt="Custom door decals and door graphics printed and installed by Top 5 Percent in Channahon and Joliet Illinois"
         title="Professional Door Graphics for Any Business"
         href="/contact"
         direction="left"
