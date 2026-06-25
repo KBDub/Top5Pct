@@ -58,7 +58,7 @@
         :images="[
             ['src' => '/images/custom-shirts/top5pct-screenprint-custom-shirts.jpg', 'alt' => 'Custom screen printed shirts and apparel in Joliet Illinois'],
             ['src' => '/images/custom-shirts/top5pct-screenprinted-shirts-in-joliet.jpg',                           'alt' => 'Custom screen printed apparel in Joliet Illinois'],
-            ['src' => '/images/custom-shirts/top5pct-banner-custom-apparel-custom-shirts-custom-hoodies-custom-caps.jpg', 'alt' => 'Custom screen printing for group apparel and uniforms in Joliet Illinois'],
+            ['src' => '/images/custom-shirts/top5pct-custom-shirt-pictures.jpg', 'alt' => 'Custom printed shirts and apparel made by Top 5 Percent in Joliet Illinois'],
             ['src' => '/images/custom-shirts/top5pct-screenprinting-shirts.jpg',          'alt' => 'Custom screen printed shirts made in Joliet Illinois'],
             ['src' => '/images/screen-printing/top5pct-screenprinting-joliet.jpg',         'alt' => 'Custom screen printing services in Joliet Illinois'],
             ['src' => '/images/screen-printing/top5pct-screenprinted-shirts-joliet.jpg',   'alt' => 'Custom screen printed shirts in Joliet, Shorewood, and Crest Hill Illinois'],
@@ -103,8 +103,8 @@
 
     <x-sections.card-detailed-info
         heading="5 Reasons Screen Printing Delivers Superior Results for Group Apparel Orders"
-        image1="/images/custom-shirts/top5pct-custom-flock-shirt-hoodie-cap-joliet.jpg"
-        alt1="Custom screen printed shirts and apparel in Joliet Illinois"
+        image1="/images/custom-shirts/top5pct-long-lasting-graphic-shirts.jpg"
+        alt1="Long-lasting custom graphic shirts and screen printed apparel in Joliet Illinois"
     >
         <x-slot name="intro">
             <p class="mb-4">Screen printing has been the gold standard for custom apparel decoration for decades, and it remains the top choice for large group orders at our <a href="/custom-apparel" class="link-notification">custom apparel shop</a> in Joliet. No other method consistently delivers the combination of bold color vibrancy, long-term durability, and cost efficiency that screen printing provides for group orders. When you need fifty or more matching shirts that look great on day one and still look great years later, screen printing is the right method, and we have the equipment, expertise, and commitment to quality to prove it.</p>
@@ -132,8 +132,8 @@
         name="Gerardo Munoz Jr"
     />
     <x-ui.card-banner-slide-in
-        image="/images/custom-shirts/top5pct-screenprinting-shirts.jpg"
-        alt="Custom screen printed apparel and group shirts printed by Top 5 Percent in Joliet Illinois"
+        image="/images/vinyl/top5pct-vinyl-shirts.jpg"
+        alt="Custom vinyl shirts and printed apparel by Top 5 Percent in Joliet Illinois"
         title="Bold Screen Printed Shirts for Your Group or Brand"
         href="/contact"
         direction="right"
