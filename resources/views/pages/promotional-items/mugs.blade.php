@@ -126,15 +126,15 @@
         name="Chewy Orkwiszewski"
     />
     <x-ui.card-banner-slide-in
-        image="/images/mugs/top5pct-printed-mugs-old.jpg"
+        image="/images/mugs/top5pct-printed-mugs-and-tees.jpg"
         alt="Custom branded mugs and promotional drinkware from Top 5 Percent in Joliet Illinois"
         title="Custom Mugs With Your Logo, No Minimums"
         href="/contact"
         direction="left"
     />
     <x-ui.card-banner-slide-in
-        image="/images/custom-shirts/top5pct-custom-glitter-shirt-cap-hoodie-joliet.jpg"
-        alt="Custom branded apparel and promotional items from Top 5 Percent in Joliet Illinois"
+        image="/images/glitter-shirts/top5pct-glitter-sweatshirts-joliet.jpg"
+        alt="Custom glitter sweatshirts and branded apparel from Top 5 Percent in Joliet Illinois"
         title="Bundle Mugs With Custom Apparel for Event Packages"
         href="/contact"
         direction="right"
