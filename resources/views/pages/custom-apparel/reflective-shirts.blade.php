@@ -56,9 +56,10 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/reflective-shirts/top5pct-custom-reflective-hoodies.jpg',    'alt' => 'Custom reflective hoodies for safety in Joliet Illinois'],
-            ['src' => '/images/reflective-shirts/top5pct-reflective-shirts.jpg',            'alt' => 'Custom reflective shirts in Joliet Illinois'],
-            ['src' => '/images/reflective-shirts/top5pct-reflective-shirts-shorewood.jpg',  'alt' => 'Custom reflective shirts in Shorewood Illinois'],
+            ['src' => '/images/reflective-shirts/top5pct-custom-reflective-hoodies.jpg',       'alt' => 'Custom reflective hoodies for safety in Joliet Illinois'],
+            ['src' => '/images/reflective-shirts/top5pct-reflective-shirts.jpg',               'alt' => 'Custom reflective shirts in Joliet Illinois'],
+            ['src' => '/images/reflective-shirts/top5pct-reflective-shirts-shorewood.jpg',     'alt' => 'Custom reflective shirts in Shorewood Illinois'],
+            ['src' => '/images/reflective-shirts/top5pct-reflective-vinyl-shirts-plainfield.jpg', 'alt' => 'Custom reflective vinyl shirts in Plainfield Illinois'],
         ]"
         visible=2
     />

@@ -15,6 +15,7 @@
 | carousel C-1 — carousel-rotating-images | top5pct-custom-reflective-hoodies.jpg | reflective-shirts/ | R3 | Jun 8 | 223K | good |
 | carousel C-2 — carousel-rotating-images | top5pct-reflective-shirts.jpg | reflective-shirts/ | R3 | Jun 8 | 124K | good |
 | carousel C-3 — carousel-rotating-images | top5pct-reflective-shirts-shorewood.jpg | reflective-shirts/ | R3 | Jun 8 | 235K | good |
+| carousel C-4 — carousel-rotating-images | top5pct-reflective-vinyl-shirts-plainfield.jpg | reflective-shirts/ | R3 | Jun 8 | 166K | good, also in card-1 |
 | card-1 — card-image-with-text | top5pct-reflective-vinyl-shirts-plainfield.jpg | reflective-shirts/ | R3 | Jun 8 | 166K | good |
 | card-2 — card-image-with-text (imagePosition right) | top5pct-custom-reflective-shirts-hoodies-caps-joliet.jpg | reflective-shirts/ | Initial | Jun 8 | 26K | initial, small file |
 | card-detailed image1 — card-detailed-info | top5pct-foil-shirts-cresthill.jpg | foil-shirts/ | R3 | Jun 8 | 336K | good, cross-sell |
@@ -34,7 +35,7 @@
 |---|---|---|---|
 | card-2 | top5pct-custom-reflective-shirts-hoodies-caps-joliet.jpg (reflective-shirts/) | 26K | Initial, small file |
 
-Carousel is 3 slots, all R3. All card and slide slots are R3 except card-2. The Initial 26K file was removed from the carousel.
+Carousel is 4 slots, all R3, all same-dir. All card and slide slots are R3 except card-2. The Initial 26K file remains only in card-2.
 
 ---
 
@@ -53,7 +54,7 @@ None. All 6 reflective-shirts files are referenced by the blade. The 26K Initial
 | top5pct-custom-reflective-hoodies.jpg | reflective-shirts/ | 223K | R3 | C-1 only |
 | top5pct-reflective-shirts.jpg | reflective-shirts/ | 124K | R3 | C-2 only |
 | top5pct-reflective-shirts-shorewood.jpg | reflective-shirts/ | 235K | R3 | C-3 only |
-| top5pct-reflective-vinyl-shirts-plainfield.jpg | reflective-shirts/ | 166K | R3 | card-1 only |
+| top5pct-reflective-vinyl-shirts-plainfield.jpg | reflective-shirts/ | 166K | R3 | C-4, card-1 |
 | top5pct-foil-shirts-cresthill.jpg | foil-shirts/ | 336K | R3 | card-detailed image1 |
 | top5pct-vinyl-shirts.jpg | vinyl/ | 379K | R3 | slide-L |
 | top5pct-halloween-pumpkin-glow-shirt.jpg | glow-shirts/ | 353K | R3 | slide-R |
@@ -84,7 +85,7 @@ No unused R3 reflective-shirts files remain. A new photo uploaded to reflective-
 
 ## Notes
 
-- Carousel is 3 slots, all R3, all same-dir. Carousel is fully compliant.
+- Carousel is 4 slots, all R3, all same-dir. Carousel is fully compliant. top5pct-reflective-vinyl-shirts-plainfield.jpg appears in both C-4 and card-1 — no unused same-dir R3 files remain to avoid the repeat.
 - slide-L cross-sell: vinyl/ (R3, Jun 8) — vinyl is the direct parent process of reflective printing.
 - slide-R cross-sell: glow-shirts/ (R3, Jun 8) — matches the slide title "Glow in the Dark or Reflective, Both Built for Visibility."
 - card-detailed image1 cross-sell: foil-shirts/ (R3, Jun 8) — specialty materials cross-sell appropriate for the long-form article section.
