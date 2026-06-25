@@ -2,3 +2,4 @@
 - [Blade inline array attributes with double quotes](blade-array-attr-quotes.md) — passing :prop="[...html...]" breaks when array values contain HTML with double quotes; use @php block instead.
 - [overflow-x hidden breaks sticky nav](overflow-x-sticky-trap.md) — never put overflow:hidden on html; use body + component-level fixes instead.
 - [page.image.status.md — all entries already exist](doc-image-status-entries.md) — never create new section entries; every page already has one, some filed under wrong nav heading.
+- [Image audit — "locked" word policy](image-audit-locked-policy.md) — never say "locked" to the user; silently remove it from doc as pages are touched.
