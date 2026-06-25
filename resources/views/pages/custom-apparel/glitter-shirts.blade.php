@@ -56,12 +56,10 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/glitter-shirts/top5pct-custom-glitter-clothing.jpg',                         'alt' => 'Custom glitter shirts and sparkle apparel in Joliet Illinois'],
-            ['src' => '/images/glitter-shirts/top5pct-custom-glitter-sweatshirts.jpg', 'alt' => 'Custom celebration shirts and glitter apparel in Joliet Illinois'],
-            ['src' => '/images/glitter-shirts/top5pct-custom-wedding-glitter-shirts.jpg',                   'alt' => 'Custom wedding glitter shirts in Joliet Illinois'],
-            ['src' => '/images/glitter-shirts/top5pct-glitter-blue-jean-jacket.jpg',       'alt' => 'Custom glitter blue jean jacket in Joliet Illinois'],
-            ['src' => '/images/glitter-shirts/top5pct-glitter-sportswear-shirts.jpg',  'alt' => 'Custom glitter sportswear shirts for teams and events in Joliet Illinois'],
-            ['src' => '/images/glitter-shirts/top5pct-glitter-sweatshirts-joliet.jpg', 'alt' => 'Custom glitter sweatshirts printed in Joliet Illinois'],
+            ['src' => '/images/glitter-shirts/top5pct-custom-glitter-clothing.jpg',        'alt' => 'Custom glitter shirts and sparkle apparel in Joliet Illinois'],
+            ['src' => '/images/glitter-shirts/top5pct-glitter-blue-jean-jacket.jpg',        'alt' => 'Custom glitter blue jean jacket in Joliet Illinois'],
+            ['src' => '/images/glitter-shirts/top5pct-glitter-sportswear-shirts.jpg',       'alt' => 'Custom glitter sportswear shirts for teams and events in Joliet Illinois'],
+            ['src' => '/images/glitter-shirts/top5pct-glitter-sweatshirts-joliet.jpg',      'alt' => 'Custom glitter sweatshirts printed in Joliet Illinois'],
         ]"
         visible=2
     />
@@ -99,8 +97,8 @@
 
     <x-sections.card-detailed-info
         heading="Why Glitter Shirts Are the Signature Look for Celebrations in Joliet, Will and DuPage County"
-        image1="/images/glitter-shirts/top5pct-custom-glitter-shirt-cap-hoodie-joliet.jpg"
-        alt1="Custom glitter shirts caps and hoodies in Joliet Illinois"
+        image1="/images/glitter-shirts/top5pct-gitter-birthday-shirt.jpg"
+        alt1="Custom glitter birthday shirts in Joliet Illinois"
     >
         <x-slot name="intro">
             <p class="mb-4">Some events demand more than a standard custom shirt. When the occasion is a milestone birthday, a bachelorette weekend, a <a href="/custom-apparel/group-wear/reunion-shirts" class="link-notification">family reunion</a> with fifty years of history behind it, or a celebration that the participants have been planning for months, the apparel should match the energy and significance of the moment. Glitter shirts deliver that energy, they sparkle under every light, photograph beautifully, and give a group the visual identity that makes them feel like they are celebrating together rather than just wearing matching clothes.</p>
@@ -128,15 +126,15 @@
         name="Arleen Van Hook"
     />
     <x-ui.card-banner-slide-in
-        image="/images/glitter-shirts/top5pct-custom-glitter-shirt-cap-hoodie-joliet.jpg"
-        alt="Custom glitter shirts and sparkle apparel by Top 5 Percent in Joliet Illinois"
+        image="/images/glitter-shirts/top5pct-custom-wedding-glitter-shirts.jpg"
+        alt="Custom wedding and celebration glitter shirts from Top 5 Percent in Joliet Illinois"
         title="Glitter Shirts for Your Next Celebration"
         href="/contact"
         direction="left"
     />
     <x-ui.card-banner-slide-in
-        image="/images/custom-shirts/top5pct-custom-rhinestone-shirt-cap-hoodie-joliet.jpg"
-        alt="Custom rhinestone bling shirts from Top 5 Percent in Joliet Illinois"
+        image="/images/rhinestone-shirts/top5pct-rhinestone-tshirts-joliet.jpg"
+        alt="Custom rhinestone shirts from Top 5 Percent in Joliet Illinois"
         title="Combine Glitter With Rhinestone for Maximum Sparkle"
         href="/contact"
         direction="right"
