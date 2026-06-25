@@ -60,6 +60,10 @@
             ['src' => '/images/table-runners/top5pct-table-runner-company.jpg',        'alt' => 'Table runner printing company in Joliet, Will and DuPage County Illinois'],
             ['src' => '/images/table-runners/top5pct-table-runner-covers.jpg',         'alt' => 'Custom table runner covers and table skirts printed in Joliet Illinois'],
             ['src' => '/images/table-runners/top5pct-table-runners-customized.jpg',    'alt' => 'Customized table runners with logos for businesses in Joliet Illinois'],
+            ['src' => '/images/table-runners/top5pct-table-runner-channahon.jpg',       'alt' => 'Custom table runner printed in Channahon Illinois'],
+            ['src' => '/images/table-runners/top5pct-personalized-tablecloth-joliet.jpg', 'alt' => 'Personalized table cloth and table runner printed in Joliet Illinois'],
+            ['src' => '/images/table-runners/top5pct-table-cloths.jpg',                 'alt' => 'Custom table cloths and table runners printed in Joliet Illinois'],
+            ['src' => '/images/table-runners/top5pct-printed-table-cloths.jpg',         'alt' => 'Printed table cloths and custom table runners in Joliet Illinois'],
         ]"
         visible=2
     />

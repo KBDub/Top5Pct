@@ -60,6 +60,10 @@ Note on table-cloth named files in this dir: `top5pct-custom-table-cloth.jpg`, `
 | C-2 | carousel-rotating-images | top5pct-table-runner-company.jpg | table-runners/ | R3 | Jun 6 | 232K | good |
 | C-3 | carousel-rotating-images | top5pct-table-runner-covers.jpg | table-runners/ | R3 | Jun 6 | 157K | good |
 | C-4 | carousel-rotating-images | top5pct-table-runners-customized.jpg | table-runners/ | R3 | Jun 6 | 167K | good |
+| C-5 | carousel-rotating-images | top5pct-table-runner-channahon.jpg | table-runners/ | R4 | Jun 20 | — | good — R4 same-dir; carousel expansion |
+| C-6 | carousel-rotating-images | top5pct-personalized-tablecloth-joliet.jpg | table-runners/ | R1 | May 11 | 178K | good — R1 same-dir; was unused |
+| C-7 | carousel-rotating-images | top5pct-table-cloths.jpg | table-runners/ | R1 | May 11 | 333K | good — R1 same-dir; was unused |
+| C-8 | carousel-rotating-images | top5pct-printed-table-cloths.jpg | table-runners/ | R2 | Jun 2 | 199K | good — R2 same-dir; was unused |
 | card-1 | card-image-with-text | top5pct-table-runner-joliet.jpg | table-runners/ | R2 | Jun 2 | 329K | good |
 | card-2 | card-image-with-text (imagePosition right) | top5pct-custom-table-runner.jpg | table-runners/ | R1 | May 11 | 571K | good |
 | card-2image image1 | card-2image-with-text | top5pct-custom-table-runners.jpg | table-runners/ | R1 | May 11 | 233K | good |
@@ -73,18 +77,18 @@ Note on table-cloth named files in this dir: `top5pct-custom-table-cloth.jpg`, `
 
 ## R1-R3 Placement Summary
 
-**Total blade image slots:** 13
-**Filled R1-R3:** 13
+**Total blade image slots:** 17
+**Filled R1-R4:** 17
 **Remaining:** 0
 
-All 13 blade image slots are R1-R3. No Initial images in blade.
+All 17 blade image slots are R1-R4. No Initial images in blade.
 
 ---
 
 ## Carousel
 
-**Current slots:** 4
-**Target:** 4. May exceed 4 if all non-carousel slots are R1-R3.
+**Current slots:** 8
+**Target:** 4. Expanded to 8 Jun 25 — over-target condition met.
 
 **Non-carousel slot check:**
 
@@ -100,7 +104,7 @@ All 13 blade image slots are R1-R3. No Initial images in blade.
 | slide-R | top5pct-custom-table-cloth.jpg | R3 | good, cross-sell; fixed Jun 25 |
 | slide-L | top5pct-retractable-banner.jpg | R1 | good, cross-sell |
 
-All 9 non-carousel slots are R1-R3. Carousel is at exactly 4 and eligible for expansion. Three unused R1-R2 table-runners/ files remain: `top5pct-personalized-tablecloth-joliet.jpg` (R1, 178K), `top5pct-table-cloths.jpg` (R1, 333K), `top5pct-printed-table-cloths.jpg` (R2, 199K). Expansion deferred to R4.
+All 9 non-carousel slots are R1-R4. Carousel expanded to 8 Jun 25. C-5 (R4), C-6 (R1), C-7 (R1), C-8 (R2) all added. No unused same-dir R1-R4 files remain.
 
 ---
 
@@ -150,9 +154,10 @@ Note: the same filename `top5pct-custom-table-cloth.jpg` exists in both table-ru
 | top5pct-custom-table-cloth.jpg | table-runners/ | 352K | R1 | card-detailed image1 only |
 | top5pct-custom-table-cloth.jpg | table-cloths/ | 352K | R3 | slide-R only |
 | top5pct-retractable-banner.jpg | banners/ | 234K | R1 | slide-L only |
-| top5pct-personalized-tablecloth-joliet.jpg | table-runners/ | 178K | R1 | unused |
-| top5pct-table-cloths.jpg | table-runners/ | 333K | R1 | unused |
-| top5pct-printed-table-cloths.jpg | table-runners/ | 199K | R2 | unused |
+| top5pct-table-runner-channahon.jpg | table-runners/ | — | R4 | C-5 only |
+| top5pct-personalized-tablecloth-joliet.jpg | table-runners/ | 178K | R1 | C-6 only |
+| top5pct-table-cloths.jpg | table-runners/ | 333K | R1 | C-7 only |
+| top5pct-printed-table-cloths.jpg | table-runners/ | 199K | R2 | C-8 only |
 | top5pct-article-custom-table-cloths-joliet.jpg | table-runners/ | 21K | Initial | unused (was card-detailed image1; replaced Jun 25) |
 | top5pct-custom-table-runner-joliet-shorewood.jpg | table-runners/ | 58K | Initial | unused (was slide-R; replaced Jun 25) |
 | top5pct-banner-custom-table-cloth-custom-table-runner-joliet.jpg | table-runners/ | 101K | Initial | unused |
@@ -161,18 +166,16 @@ Note: the same filename `top5pct-custom-table-cloth.jpg` exists in both table-ru
 | top5pct-custom-table-skirt-joliet-shorewood-plainfield.jpg | table-runners/ | 42K | Initial | unused |
 | top5pct-table-runner-popus-gourmet-popcorn-joliet.jpg | table-runners/ | 54K | Initial | unused |
 
-No duplicate image use across blade slots. 3 unused R1-R2 table-runners/ files available for carousel expansion or future slots.
+No duplicate image use across blade slots. No unused R1-R4 same-dir files remain.
 
 ---
 
 ## Notes
 
-- 13 of 13 blade image slots are R1-R3 as of Jun 25, 2026. Page is clean.
+- 17 of 17 blade image slots are R1-R4 as of Jun 25, 2026. Page complete.
+- 4 carousel slots added Jun 25: C-5 (R4 channahon), C-6 (R1 personalized-tablecloth), C-7 (R1 table-cloths), C-8 (R2 printed-table-cloths). Carousel now 8.
 - card-detailed image1 Initial violation resolved Jun 25: replaced with table-runners/ R1 (352K).
 - slide-R double violation (same-category + Initial) resolved Jun 25: replaced with table-cloths/ R3 cross-sell.
 - slide-R cross-sells to table-cloths/ (R3, Jun 8), the natural full-coverage companion product.
 - slide-L cross-sells to banners/ (R1, May 11), confirmed.
-- Carousel at exactly 4, all table-runners/ same-dir R3 (Jun 6). Eligible for expansion — deferred to R4.
-- 3 unused R1-R2 table-runners/ files available for future use.
-- 7 unused Initial table-runners/ files — none qualify for blade placement.
-- R4 audit ready.
+- No unused R1-R4 same-dir files remain. 7 unused Initial files — none qualify for blade placement.
