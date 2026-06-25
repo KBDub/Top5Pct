@@ -52,11 +52,10 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/reunion-shirts/top5pct-class-reunion-shirt.jpg', 'alt' => 'Custom family and class reunion shirts in Joliet and Shorewood Illinois'],
-            ['src' => '/images/reunion-shirts/top5pct-banner-banner-family-reunion-shirts-joliet-shorewood.jpg', 'alt' => 'Family reunion shirts banner for Joliet and Shorewood Illinois'],
-            ['src' => '/images/reunion-shirts/top5pct-family-reunion-tshirts-in-joliet.jpg',             'alt' => 'Custom family reunion shirts in Joliet and Plainfield Illinois'],
-            ['src' => '/images/reunion-shirts/top5pct-group-shirts.jpg',        'alt' => 'Custom group shirts for reunions and events in Joliet Illinois'],
-            ['src' => '/images/reunion-shirts/top5pct-family-reunion-tees.jpg', 'alt' => 'Custom family reunion tees for groups in Joliet, Shorewood, and Crest Hill Illinois'],
+            ['src' => '/images/reunion-shirts/top5pct-class-reunion-shirt.jpg',             'alt' => 'Custom family and class reunion shirts in Joliet and Shorewood Illinois'],
+            ['src' => '/images/reunion-shirts/top5pct-family-reunion-tshirts-in-joliet.jpg', 'alt' => 'Custom family reunion shirts in Joliet and Plainfield Illinois'],
+            ['src' => '/images/reunion-shirts/top5pct-group-shirts.jpg',                    'alt' => 'Custom group shirts for reunions and events in Joliet Illinois'],
+            ['src' => '/images/reunion-shirts/top5pct-family-reunion-tees.jpg',             'alt' => 'Custom family reunion tees for groups in Joliet, Shorewood, and Crest Hill Illinois'],
         ]"
         visible=2
     />
@@ -168,17 +167,17 @@
         name="Euneke Rembert"
     />
     <x-ui.card-banner-slide-in
-        image="/images/reunion-shirts/top5pct-family-reunion-shirts-joliet-romeoville.jpg"
-        alt="Custom family reunion shirts printed in Joliet and Romeoville Illinois"
-        title="Order Your Reunion Shirts Today"
-        href="/contact"
+        image="/images/spirit-wear/top5pct-spirit-wear-joliet.jpg"
+        alt="Custom spirit wear shirts and fan apparel from Top 5 Percent in Joliet Illinois"
+        title="Spirit Wear for Schools, Teams, and Events"
+        href="/custom-apparel/group-wear/spirit-wear-shirts"
         direction="right"
     />
     <x-ui.card-banner-slide-in
-        image="/images/custom-shirts/top5pct-t-shirt-maker-article-pic1.jpg"
+        image="/images/custom-shirts/top5pct-custom-shirt-pictures.jpg"
         alt="Custom printed shirts and apparel for any occasion from Top 5 Percent in Joliet Illinois"
         title="Need Custom Shirts for Another Event? We've Got You"
-        href="/contact"
+        href="/custom-apparel"
         direction="left"
     />
 
