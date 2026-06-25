@@ -60,6 +60,8 @@
             ['src' => '/images/custom-shaped-stickers-decals/top5pct-custom-glossy-stickers-in-joliet.jpg',    'alt' => 'Custom die cut stickers for a sports organization in Joliet Illinois'],
             ['src' => '/images/custom-shaped-stickers-decals/top5pct-custom-label-stickers.jpg',  'alt' => 'Custom die cut stickers for a restaurant in Joliet Illinois'],
             ['src' => '/images/custom-shaped-stickers-decals/top5pct-custom-shaped-stickers.jpg',           'alt' => 'Custom shaped product labels and die cut stickers in Joliet Illinois'],
+            ['src' => '/images/custom-shaped-stickers-decals/top5pct-custom-stickers-cresthill.jpg',         'alt' => 'Custom stickers and branded decals printed in Crest Hill and Joliet Illinois'],
+            ['src' => '/images/custom-shaped-stickers-decals/top5pct-die-cut-stickers-joliet-r3.jpg',        'alt' => 'Custom die cut stickers and vinyl decals in Joliet Illinois'],
         ]"
         visible=2
     />
@@ -70,8 +72,8 @@
     />
 
     <x-sections.card-image-with-text
-        image="/images/standard-stickers-decals/top5pct-diecut-stickers.jpg"
-        alt="Custom shaped die cut stickers for a sports organization in Joliet Illinois"
+        image="/images/custom-shaped-stickers-decals/top5pct-custom-shaped-stickers-crest-hill.jpg"
+        alt="Custom shaped stickers and die cut decals printed in Crest Hill and Joliet Illinois"
         title="Die Cut to Any Shape"
     >
         <p class="mb-4">Custom shaped stickers let your brand break free from the rectangle. We can die cut stickers to follow the exact outline of your logo, mascot, product, or any custom shape you design. The result is a sticker that looks like a premium branded object rather than a label, and that difference gets noticed, especially when paired with matching <a href="/promotional-items" class="link-notification">promotional items</a> in an event bag or product kit for a complete branded experience. Sports teams, breweries, bands, food trucks, and local businesses throughout Joliet, Will and DuPage County use custom shaped stickers to create a memorable brand impression that stands out from standard square or circle stickers, and many clients extend that brand to their staff with matching <a href="/custom-apparel" class="link-notification">custom apparel</a> for a unified look from the team shirt to the sticker.</p>
@@ -128,9 +130,9 @@
         name="Chewy Orkwiszewski"
     />
     <x-ui.card-banner-slide-in
-        image="/images/custom-shaped-stickers-decals/top5pct-stickers-decals-joliet-boxing-sports.jpg"
-        alt="Custom shaped die cut stickers printed by Top 5 Percent in Joliet Illinois"
-        title="Custom Stickers Die Cut to Any Shape"
+        image="/images/can-koozies/top5pct-can-koozies.jpg"
+        alt="Custom branded can koozies and promotional items from Top 5 Percent in Joliet Illinois"
+        title="Pair Custom Stickers With Branded Koozies for a Complete Event Kit"
         href="/contact"
         direction="right"
     />
