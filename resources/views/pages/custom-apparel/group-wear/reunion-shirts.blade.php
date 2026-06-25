@@ -92,10 +92,10 @@
         <x-sections.cta-quadruple-button-banner />
 
         <x-sections.card-2image-with-text
-            image1="/images/reunion-shirts/top5pct-class-reunion-shirt-templates.gif"
-            alt1="Class reunion shirt templates available at Top 5 Percent in Joliet Illinois"
-            image2="/images/reunion-shirts/top5pct-class-reunion-shirt-templates2.gif"
-            alt2="Family reunion shirt design templates from Top 5 Percent in Joliet Illinois"
+            image1="/images/reunion-shirts/top5pct-reunion-shirts-caps-banner-joliet.jpg"
+            alt1="Custom reunion shirts, caps, and banners printed in Joliet Illinois"
+            image2="/images/reunion-shirts/top5pct-reunion-spirit-wear-apparel-joliet.jpg"
+            alt2="Custom reunion spirit wear and apparel printed in Joliet Illinois"
             title="Reunion Shirt Templates"
         >
             <p class="mb-4">We offer a full library of quick start reunion shirt templates so you do not have to start from scratch, making design easy whether you are printing <a href="/custom-apparel/group-wear/reunion-shirts" class="link-notification">class reunion shirts</a> or matching family group tees. Browse through our template collections and select the design that fits your style. Once you pick a template, we add your family name, school name, mascot, or graduation year, and our <a href="/design-services" class="link-notification">design team</a> can make small modifications to match your vision exactly.</p>
@@ -105,10 +105,10 @@
         </x-sections.card-2image-with-text>
 
         <x-sections.card-2image-with-text
-            image1="/images/reunion-shirts/top5pct-family-reunion-shirts-joliet-crest-hill.jpg"
-            alt1="Family reunion shirts for a group in Joliet and Crest Hill Illinois"
-            image2="/images/reunion-shirts/top5pct-family-reunion-shirts-joliet-romeoville.jpg"
-            alt2="Custom family reunion shirts printed for a group in Joliet and Romeoville Illinois"
+            image1="/images/reunion-shirts/top5pct-reunion-shirts-romeoville.jpg"
+            alt1="Custom family reunion shirts printed in Romeoville and Joliet Illinois"
+            image2="/images/reunion-shirts/top5pct-reunion-hoodies-joliet.jpg"
+            alt2="Custom reunion hoodies printed in Joliet Illinois"
             title="Family Reunion Shirts"
         >
             <p class="mb-4">We love helping families come together. A family reunion is one of the most special events your family will ever share, and matching shirts from our <a href="/custom-apparel" class="link-notification">custom apparel shop</a> are one of the best ways to make everyone feel like part of the group. When your whole family shows up in matching shirts, it shows unity and looks amazing in photos, and our <a href="/design-services" class="link-notification">design team</a> can help you build the perfect family crest or name design from scratch.</p>

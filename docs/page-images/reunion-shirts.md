@@ -71,10 +71,10 @@ Note: the blade has two separate card-2image-with-text components. They are labe
 | C-4 | carousel-rotating-images | top5pct-family-reunion-tees.jpg | reunion-shirts/ | Jun 8 | R3 | 113K | good |
 | card-1 | card-image-with-text (Class Reunion Shirts) | top5pct-reunion-group-shirts.jpg | reunion-shirts/ | May 11 | R1 | 300K | good |
 | card-2 | card-image-with-text (School Alumni Shirts, imagePosition right) | top5pct-reunion-shirts.jpg | reunion-shirts/ | May 11 | R1 | 495K | good |
-| card-2image-A image1 | card-2image-with-text (Reunion Shirt Templates) | top5pct-class-reunion-shirt-templates.gif | reunion-shirts/ | Mar 16 | **Initial** | 9K | violation: Initial; GIF template file at 9K |
-| card-2image-A image2 | card-2image-with-text (Reunion Shirt Templates) | top5pct-class-reunion-shirt-templates2.gif | reunion-shirts/ | Mar 16 | **Initial** | 9K | violation: Initial; GIF template file at 9K |
-| card-2image-B image1 | card-2image-with-text (Family Reunion Shirts) | top5pct-family-reunion-shirts-joliet-crest-hill.jpg | reunion-shirts/ | Mar 16 | **Initial** | 79K | violation: Initial; 79K small |
-| card-2image-B image2 | card-2image-with-text (Family Reunion Shirts) | top5pct-family-reunion-shirts-joliet-romeoville.jpg | reunion-shirts/ | Mar 16 | **Initial** | 77K | violation: Initial; 77K small |
+| card-2image-A image1 | card-2image-with-text (Reunion Shirt Templates) | top5pct-reunion-shirts-caps-banner-joliet.jpg | reunion-shirts/ | Jun 25 | R4 | — | R4 placed; GIF cleared |
+| card-2image-A image2 | card-2image-with-text (Reunion Shirt Templates) | top5pct-reunion-spirit-wear-apparel-joliet.jpg | reunion-shirts/ | Jun 25 | R4 | — | R4 placed; GIF cleared |
+| card-2image-B image1 | card-2image-with-text (Family Reunion Shirts) | top5pct-reunion-shirts-romeoville.jpg | reunion-shirts/ | Jun 25 | R4 | — | R4 placed; Initial 79K cleared |
+| card-2image-B image2 | card-2image-with-text (Family Reunion Shirts) | top5pct-reunion-hoodies-joliet.jpg | reunion-shirts/ | Jun 25 | R4 | — | R4 placed; Initial 77K cleared |
 | card-3 | card-image-with-text (Make Your Reunion Special) | top5pct-family-reunion-shirts-joliet-plainfield.jpg | reunion-shirts/ | Mar 16 | **Initial** | 55K | violation: Initial; 55K small |
 | card-detailed image1 | card-detailed-info (How Reunion T-Shirts Make Your Reunion Special) | top5pct-article-family-reunion-pic1.jpg | reunion-shirts/ | Mar 16 | **Initial** | 17K | violation: Initial; article pic at 17K |
 | card-detailed image2 | card-detailed-info (How Reunion T-Shirts Make Your Reunion Special) | top5pct-article-family-reunion-pic2.jpg | reunion-shirts/ | Mar 16 | **Initial** | 26K | violation: Initial; article pic at 26K |
@@ -86,7 +86,8 @@ Note: the blade has two separate card-2image-with-text components. They are labe
 ## R1-R3 Placement Summary
 
 **Total image slots:** 16
-**Confirmed R1-R3:** 9 of 16
+**Confirmed R1-R4:** 13 of 16
+**Remaining (Initial):** 3
 
 | slot | image | dir | round | status |
 |---|---|---|---|---|
@@ -97,30 +98,27 @@ Note: the blade has two separate card-2image-with-text components. They are labe
 | C-4 | top5pct-family-reunion-tees.jpg | reunion-shirts/ | R3 | good |
 | card-1 | top5pct-reunion-group-shirts.jpg | reunion-shirts/ | R1 | good |
 | card-2 | top5pct-reunion-shirts.jpg | reunion-shirts/ | R1 | good |
+| card-2image-A image1 | top5pct-reunion-shirts-caps-banner-joliet.jpg | reunion-shirts/ | R4 | good — GIF cleared |
+| card-2image-A image2 | top5pct-reunion-spirit-wear-apparel-joliet.jpg | reunion-shirts/ | R4 | good — GIF cleared |
+| card-2image-B image1 | top5pct-reunion-shirts-romeoville.jpg | reunion-shirts/ | R4 | good — Initial 79K cleared |
+| card-2image-B image2 | top5pct-reunion-hoodies-joliet.jpg | reunion-shirts/ | R4 | good — Initial 77K cleared |
 | slide-R | top5pct-spirit-wear-joliet.jpg | spirit-wear/ | R1 | good — R1 cross-sell |
 | slide-L | top5pct-custom-shirt-pictures.jpg | custom-shirts/ | R1 | good — R1 cross-sell |
 
-**Initial (not R1-R3) — 7 slots remaining to fill:**
+**Initial remaining — 3 slots deferred to R5:**
 
 | slot | image | dir | round | size | issue |
 |---|---|---|---|---|---|
-| card-2image-A image1 | top5pct-class-reunion-shirt-templates.gif | reunion-shirts/ | Initial | 9K | GIF template file, not a product photo; no same-dir R1+ replacement available |
-| card-2image-A image2 | top5pct-class-reunion-shirt-templates2.gif | reunion-shirts/ | Initial | 9K | GIF template file, not a product photo; no same-dir R1+ replacement available |
-| card-2image-B image1 | top5pct-family-reunion-shirts-joliet-crest-hill.jpg | reunion-shirts/ | Initial | 79K | 79K small; no same-dir R1+ replacement available |
-| card-2image-B image2 | top5pct-family-reunion-shirts-joliet-romeoville.jpg | reunion-shirts/ | Initial | 77K | 77K small; no same-dir R1+ replacement available |
-| card-3 | top5pct-family-reunion-shirts-joliet-plainfield.jpg | reunion-shirts/ | Initial | 55K | 55K small; no same-dir R1+ replacement available |
-| card-detailed image1 | top5pct-article-family-reunion-pic1.jpg | reunion-shirts/ | Initial | 17K | article pic at 17K; no same-dir R1+ replacement available |
-| card-detailed image2 | top5pct-article-family-reunion-pic2.jpg | reunion-shirts/ | Initial | 26K | article pic at 26K; no same-dir R1+ replacement available |
-
-**R1-R3 filled: 9 of 16**
-**Remaining: 7 of 16**
+| card-3 | top5pct-family-reunion-shirts-joliet-plainfield.jpg | reunion-shirts/ | Initial | 55K | no file available; deferred to R5 |
+| card-detailed image1 | top5pct-article-family-reunion-pic1.jpg | reunion-shirts/ | Initial | 17K | no file available; deferred to R5 |
+| card-detailed image2 | top5pct-article-family-reunion-pic2.jpg | reunion-shirts/ | Initial | 26K | no file available; deferred to R5 |
 
 ---
 
 ## Carousel
 
 **Current slots:** 4
-**Target:** 4. May exceed 4 only if ALL non-carousel slots are R1-R3.
+**Target:** 4. May exceed 4 only if ALL non-carousel slots are R1-R4.
 
 **Non-carousel slot check:**
 
@@ -129,19 +127,19 @@ Note: the blade has two separate card-2image-with-text components. They are labe
 | hero | top5pct-family-reunion-shirts-joliet.jpg | R1 | good |
 | card-1 | top5pct-reunion-group-shirts.jpg | R1 | good |
 | card-2 | top5pct-reunion-shirts.jpg | R1 | good |
-| card-2image-A image1 | top5pct-class-reunion-shirt-templates.gif | Initial | not filled |
-| card-2image-A image2 | top5pct-class-reunion-shirt-templates2.gif | Initial | not filled |
-| card-2image-B image1 | top5pct-family-reunion-shirts-joliet-crest-hill.jpg | Initial | not filled |
-| card-2image-B image2 | top5pct-family-reunion-shirts-joliet-romeoville.jpg | Initial | not filled |
-| card-3 | top5pct-family-reunion-shirts-joliet-plainfield.jpg | Initial | not filled |
-| card-detailed image1 | top5pct-article-family-reunion-pic1.jpg | Initial | not filled |
-| card-detailed image2 | top5pct-article-family-reunion-pic2.jpg | Initial | not filled |
+| card-2image-A image1 | top5pct-reunion-shirts-caps-banner-joliet.jpg | R4 | good |
+| card-2image-A image2 | top5pct-reunion-spirit-wear-apparel-joliet.jpg | R4 | good |
+| card-2image-B image1 | top5pct-reunion-shirts-romeoville.jpg | R4 | good |
+| card-2image-B image2 | top5pct-reunion-hoodies-joliet.jpg | R4 | good |
+| card-3 | top5pct-family-reunion-shirts-joliet-plainfield.jpg | Initial | not filled — deferred to R5 |
+| card-detailed image1 | top5pct-article-family-reunion-pic1.jpg | Initial | not filled — deferred to R5 |
+| card-detailed image2 | top5pct-article-family-reunion-pic2.jpg | Initial | not filled — deferred to R5 |
 | slide-R | top5pct-spirit-wear-joliet.jpg | R1 | good |
 | slide-L | top5pct-custom-shirt-pictures.jpg | R1 | good |
 
-Over-target condition is NOT met — 7 non-carousel slots are Initial. Carousel must stay at 4. It is already at 4. **No carousel changes needed.**
+Over-target condition NOT met — 3 non-carousel slots remain Initial. Carousel stays at 4.
 
-Carousel round quality: C-1 (R1), C-2 (R1), C-3 (R1), C-4 (R3). All four are same-dir (reunion-shirts/). Carousel is correct as-is. No carousel swaps needed.
+Carousel round quality: C-1 (R1), C-2 (R1), C-3 (R1), C-4 (R3). All four are same-dir (reunion-shirts/). Correct as-is. No carousel changes needed.
 
 ---
 
@@ -149,13 +147,11 @@ Carousel round quality: C-1 (R1), C-2 (R1), C-3 (R1), C-4 (R3). All four are sam
 
 | violation | slot | detail |
 |---|---|---|
-| Initial round | card-2image-A image1 | top5pct-class-reunion-shirt-templates.gif — Initial GIF, 9K |
-| Initial round | card-2image-A image2 | top5pct-class-reunion-shirt-templates2.gif — Initial GIF, 9K |
-| Initial round | card-2image-B image1 | top5pct-family-reunion-shirts-joliet-crest-hill.jpg — Initial, 79K |
-| Initial round | card-2image-B image2 | top5pct-family-reunion-shirts-joliet-romeoville.jpg — Initial, 77K |
-| Initial round | card-3 | top5pct-family-reunion-shirts-joliet-plainfield.jpg — Initial, 55K |
-| Initial round | card-detailed image1 | top5pct-article-family-reunion-pic1.jpg — Initial, 17K |
-| Initial round | card-detailed image2 | top5pct-article-family-reunion-pic2.jpg — Initial, 26K |
+| Initial round | card-3 | top5pct-family-reunion-shirts-joliet-plainfield.jpg — Initial, 55K — deferred to R5 |
+| Initial round | card-detailed image1 | top5pct-article-family-reunion-pic1.jpg — Initial, 17K — deferred to R5 |
+| Initial round | card-detailed image2 | top5pct-article-family-reunion-pic2.jpg — Initial, 26K — deferred to R5 |
+
+4 violations resolved Jun 25 (card-2image-A image1 + image2 GIFs cleared; card-2image-B image1 + image2 cleared).
 
 **Slides:** both good. slide-R is R1 spirit-wear/ cross-sell. slide-L is R1 custom-shirts/ cross-sell. No violations.
 
@@ -171,7 +167,7 @@ Note: top5pct-group-shirts.jpg (C-3 here) and top5pct-family-reunion-shirts-joli
 
 ## Immediate Fixes Available
 
-**None.** All 7 reunion-shirts/ R1-R3 files are placed (hero + C-1 through C-4 + card-1 + card-2). There are no unused same-dir R1-R3 files. The 7 Initial slots all require new same-dir reunion-shirts/ photography. The 3 unused reunion-shirts/ files are all Initial (43-75K) and not suitable substitutes for any body or editorial slot.
+None. All 11 reunion-shirts/ R1-R4 files are now placed. No unused same-dir R1-R4 files remain. 3 Initial slots (card-3, card-detailed image1 + image2) require new photography and are deferred to R5.
 
 ---
 
@@ -181,13 +177,11 @@ All changes listed below require new photography. None can be resolved with curr
 
 | priority | slot | current image | round | size | needed |
 |---|---|---|---|---|---|
-| 1 | card-2image-A image1 | top5pct-class-reunion-shirt-templates.gif | Initial | 9K | New R3+ product photo to replace the GIF template graphic in the Reunion Shirt Templates card. Subject: a finished reunion shirt showing a design or template. |
-| 2 | card-2image-A image2 | top5pct-class-reunion-shirt-templates2.gif | Initial | 9K | New R3+ product photo to pair with image1 in the same card. Second angle or design variation of a reunion shirt. |
-| 3 | card-2image-B image1 | top5pct-family-reunion-shirts-joliet-crest-hill.jpg | Initial | 79K | New R3+ family reunion shirt photo for the Family Reunion Shirts card. Larger, more recent image. |
-| 4 | card-2image-B image2 | top5pct-family-reunion-shirts-joliet-romeoville.jpg | Initial | 77K | New R3+ paired reunion shirt photo to go alongside image1 in the same card. |
-| 5 | card-3 | top5pct-family-reunion-shirts-joliet-plainfield.jpg | Initial | 55K | New R3+ reunion shirt group photo for the Make Your Reunion Special card. |
-| 6 | card-detailed image1 | top5pct-article-family-reunion-pic1.jpg | Initial | 17K | New R3+ reunion shirt photo for the How Reunion T-Shirts editorial section. Replace 17K article pic. |
-| 7 | card-detailed image2 | top5pct-article-family-reunion-pic2.jpg | Initial | 26K | New R3+ paired photo for the editorial section. Replace 26K article pic. |
+| 1 | card-3 | top5pct-family-reunion-shirts-joliet-plainfield.jpg | Initial | 55K | New R5+ reunion shirt group photo for the Make Your Reunion Special card. |
+| 2 | card-detailed image1 | top5pct-article-family-reunion-pic1.jpg | Initial | 17K | New R5+ reunion shirt photo for the How Reunion T-Shirts editorial section. Replace 17K article pic. |
+| 3 | card-detailed image2 | top5pct-article-family-reunion-pic2.jpg | Initial | 26K | New R5+ paired photo for the editorial section. Replace 26K article pic. |
+
+4 items resolved Jun 25 with R4 files (card-2image-A image1, card-2image-A image2, card-2image-B image1, card-2image-B image2).
 
 ---
 
@@ -202,13 +196,17 @@ All changes listed below require new photography. None can be resolved with curr
 | top5pct-family-reunion-tees.jpg | reunion-shirts/ | 113K | Jun 8 | R3 | C-4 only |
 | top5pct-reunion-group-shirts.jpg | reunion-shirts/ | 300K | May 11 | R1 | card-1 only |
 | top5pct-reunion-shirts.jpg | reunion-shirts/ | 495K | May 11 | R1 | card-2 only |
-| top5pct-class-reunion-shirt-templates.gif | reunion-shirts/ | 9K | Mar 16 | Initial | card-2image-A image1 — needs R3+ replacement |
-| top5pct-class-reunion-shirt-templates2.gif | reunion-shirts/ | 9K | Mar 16 | Initial | card-2image-A image2 — needs R3+ replacement |
-| top5pct-family-reunion-shirts-joliet-crest-hill.jpg | reunion-shirts/ | 79K | Mar 16 | Initial | card-2image-B image1 — needs R3+ replacement |
-| top5pct-family-reunion-shirts-joliet-romeoville.jpg | reunion-shirts/ | 77K | Mar 16 | Initial | card-2image-B image2 — needs R3+ replacement |
-| top5pct-family-reunion-shirts-joliet-plainfield.jpg | reunion-shirts/ | 55K | Mar 16 | Initial | card-3 — needs R3+ replacement |
-| top5pct-article-family-reunion-pic1.jpg | reunion-shirts/ | 17K | Mar 16 | Initial | card-detailed image1 — needs R3+ replacement |
-| top5pct-article-family-reunion-pic2.jpg | reunion-shirts/ | 26K | Mar 16 | Initial | card-detailed image2 — needs R3+ replacement |
+| top5pct-reunion-shirts-caps-banner-joliet.jpg | reunion-shirts/ | — | R4 | card-2image-A image1 only |
+| top5pct-reunion-spirit-wear-apparel-joliet.jpg | reunion-shirts/ | — | R4 | card-2image-A image2 only |
+| top5pct-reunion-shirts-romeoville.jpg | reunion-shirts/ | — | R4 | card-2image-B image1 only |
+| top5pct-reunion-hoodies-joliet.jpg | reunion-shirts/ | — | R4 | card-2image-B image2 only |
+| top5pct-class-reunion-shirt-templates.gif | reunion-shirts/ | 9K | Mar 16 | Initial | removed from blade (was card-2image-A image1) |
+| top5pct-class-reunion-shirt-templates2.gif | reunion-shirts/ | 9K | Mar 16 | Initial | removed from blade (was card-2image-A image2) |
+| top5pct-family-reunion-shirts-joliet-crest-hill.jpg | reunion-shirts/ | 79K | Mar 16 | Initial | removed from blade (was card-2image-B image1) |
+| top5pct-family-reunion-shirts-joliet-romeoville.jpg | reunion-shirts/ | 77K | Mar 16 | Initial | removed from blade (was card-2image-B image2) |
+| top5pct-family-reunion-shirts-joliet-plainfield.jpg | reunion-shirts/ | 55K | Mar 16 | Initial | card-3 — deferred to R5 |
+| top5pct-article-family-reunion-pic1.jpg | reunion-shirts/ | 17K | Mar 16 | Initial | card-detailed image1 — deferred to R5 |
+| top5pct-article-family-reunion-pic2.jpg | reunion-shirts/ | 26K | Mar 16 | Initial | card-detailed image2 — deferred to R5 |
 | top5pct-banner-banner-family-reunion-shirts-joliet-shorewood.jpg | reunion-shirts/ | 75K | Mar 16 | Initial | unused — marketing banner, not suitable for body slot |
 | top5pct-class-reunion-shirts-joliet-shorewood.jpg | reunion-shirts/ | 55K | Mar 16 | Initial | unused — too small for any slot |
 | top5pct-westinghouse-class-reunion-shirt-joliet-shorewood.jpg | reunion-shirts/ | 43K | Mar 16 | Initial | unused — too small for any slot |
@@ -219,12 +217,11 @@ All changes listed below require new photography. None can be resolved with curr
 
 ## Notes
 
-- 9 of 16 image slots are confirmed R1-R3 as of Jun 25, 2026.
-- 7 slots are Initial: card-2image-A image1 and image2, card-2image-B image1 and image2, card-3, card-detailed image1, card-detailed image2. All 7 are in body or editorial sections.
+- 13 of 16 image slots R1-R4 as of Jun 25, 2026. 3 Initial remain (card-3, card-detailed image1, card-detailed image2) — deferred to R5.
+- R4 placed Jun 25: card-2image-A image1 + image2 (GIFs cleared), card-2image-B image1 + image2 (Initial small files cleared). Both dual-image components fully filled.
+- All 11 reunion-shirts/ R1-R4 files placed. No unused same-dir R1-R4 files remain.
 - No rule violations on slides. slide-R is R1 spirit-wear/ cross-sell. slide-L is R1 custom-shirts/ cross-sell. Both correct.
-- Carousel is correct at 4 slots, C-1 through C-3 are R1, C-4 is R3, all same-dir. No changes needed.
+- Carousel correct at 4 slots, all same-dir. No changes needed.
 - No duplicates within this page.
-- All 7 reunion-shirts/ R1-R3 files are placed. No unused same-dir R1-R3 files remain.
-- The card-2image-A GIF template files (9K each) are a special case — they are intentional graphic assets showing shirt design templates, not product photography. They still count as Initial violations and need R3+ product photo replacements when new photography is available.
-- The 3 unused reunion-shirts/ files (banner 75K, class-reunion-shirts 55K, westinghouse 43K) are all Initial and too small for body slots. Recommend archiving at R4.
-- R4 image delivery for reunion-shirts should target: 2 finished product photos for card-2image-A (replacing GIFs), 2 larger reunion shirt photos for card-2image-B, 1 group/scene photo for card-3, 2 editorial photos for card-detailed.
+- The 3 unused reunion-shirts/ Initial files (banner 75K, class-reunion-shirts 55K, westinghouse 43K) are too small for body slots. Recommend archiving at R5.
+- R5 targets for this page: card-3 (group photo), card-detailed image1 + image2 (editorial photos).
