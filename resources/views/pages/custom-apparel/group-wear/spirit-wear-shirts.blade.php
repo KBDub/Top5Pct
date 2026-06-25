@@ -55,11 +55,10 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/spirit-wear/top5pct-banner-fanwear-spiritwear-uniforms-joliet-shorewood.jpg', 'alt' => 'Custom fan wear and spirit wear uniforms in Joliet and Shorewood Illinois'],
-            ['src' => '/images/spirit-wear/top5pct-spirit-wear-shirts.jpg',            'alt' => 'Joliet West spirit wear hoodie printed in Shorewood Illinois'],
-            ['src' => '/images/spirit-wear/top5pct-spirit-wear-clothing.jpg',                              'alt' => 'Custom spirit wear clothing in Joliet Illinois'],
-            ['src' => '/images/spirit-wear/top5pct-volleyball-team-uniforms-joliet.jpg',     'alt' => 'Custom volleyball team uniforms in Joliet Illinois'],
-            ['src' => '/images/spirit-wear/top5pct-spirit-wear-volleyball-track.jpg',       'alt' => 'Custom spirit wear for volleyball and track teams in Joliet Illinois'],
+            ['src' => '/images/spirit-wear/top5pct-spirit-wear-shirts.jpg',            'alt' => 'Custom spirit wear shirts printed by Top 5 Percent in Joliet Illinois'],
+            ['src' => '/images/spirit-wear/top5pct-spirit-wear-clothing.jpg',          'alt' => 'Custom spirit wear clothing in Joliet Illinois'],
+            ['src' => '/images/spirit-wear/top5pct-volleyball-team-uniforms-joliet.jpg', 'alt' => 'Custom volleyball team uniforms in Joliet Illinois'],
+            ['src' => '/images/spirit-wear/top5pct-spirit-wear-volleyball-track.jpg',  'alt' => 'Custom spirit wear for volleyball and track teams in Joliet Illinois'],
         ]"
         visible=2
     />
@@ -126,10 +125,10 @@
 
             <x-sections.card-detailed-info
                 heading="How Spirit Wear Fundraising Can Help Your School"
-                image1="/images/spirit-wear/top5pct-article-spirit-wear-pic1.jpg"
-                alt1="Custom spirit wear fundraising shirts for schools in Joliet, Will and DuPage County"
-                image2="/images/spirit-wear/top5pct-article-fan-wear-pic2.jpg"
-                alt2="School fan wear and spirit shirts printed in the Chicagoland area"
+                image1="/images/reunion-shirts/top5pct-group-shirts.jpg"
+                alt1="Custom group shirts and spirit wear printed by Top 5 Percent in Joliet Illinois"
+                image2="/images/reunion-shirts/top5pct-family-reunion-shirts-joliet.jpg"
+                alt2="Custom family and group shirts printed in Joliet Illinois"
             >
                 <x-slot name="intro">
                     <p class="mb-4">Spirit wear is one of the best fundraising tools available to schools, booster clubs, and parent organizations across the Chicagoland area. We have helped schools in Joliet, Plainfield, Shorewood, and throughout Will and DuPage County raise money and build pride through <a href="/custom-apparel" class="link-notification">custom printed apparel</a>. From hoodies and t-shirts to hats and bags, the right spirit wear program can do a lot more than just cover costs. Here is how a well run spirit wear fundraiser can make a real difference for your school and for everyone who supports it.</p>
