@@ -59,6 +59,7 @@
             ['src' => '/images/posters/top5pct-big-posters-joliet.jpg',                                       'alt' => 'Custom large posters in Joliet Illinois'],
             ['src' => '/images/posters/top5pct-custom-posters.jpg',                                           'alt' => 'Custom posters in Joliet Illinois'],
             ['src' => '/images/posters/top5pct-poster-board-joliet.jpg',                                      'alt' => 'Custom poster board in Joliet Illinois'],
+            ['src' => '/images/posters/top5pct-posters-joliet.jpg',                                           'alt' => 'Custom posters printed in Joliet Illinois'],
         ]"
         visible=2
     />
@@ -69,8 +70,8 @@
     />
 
         <x-sections.card-image-with-text
-            image="/images/posters/top5pct-poster-printing-joliet-shorewood-romeoville.jpg"
-            alt="Custom poster printing in Joliet, Shorewood, and Romeoville Illinois"
+            image="/images/posters/top5pct-posters-business-joliet.jpg"
+            alt="Custom business posters printed in Joliet Illinois"
             title="Poster Printing in Joliet"
         >
             <p class="mb-4">We produce high quality poster prints for businesses, events, and personal use throughout the Joliet, Will and DuPage County area. Our wide format printers can produce stunning poster prints in a wide range of sizes, and for larger outdoor displays our <a href="/signs/business-signs/banners" class="link-notification">banners</a> offer a weather-resistant format that works on fences, walls, and event stages. We use eco solvent ink on premium semi gloss poster paper as our standard, which gives you sharp images and true to life colors, and our <a href="/design-services/logo-design" class="link-notification">design team</a> builds print-ready artwork from scratch so you never have to arrive with a finished file.</p>
@@ -80,8 +81,8 @@
         </x-sections.card-image-with-text>
 
         <x-sections.card-image-with-text
-            image="/images/posters/top5pct-poster-maker-joliet-shorewood-plainfield.jpg"
-            alt="Large format poster maker in Joliet, Shorewood, and Plainfield Illinois"
+            image="/images/posters/top5pct-posters-company-joliet.jpg"
+            alt="Custom company posters printed in Joliet Illinois"
             title="Large Format Poster Printing"
             imagePosition="right"
         >
@@ -93,10 +94,10 @@
         <x-sections.cta-quadruple-button-banner />
 
         <x-sections.card-2image-with-text
-            image1="/images/posters/top5pct-poster-board-joliet-shorewood-romeoville.jpg"
-            alt1="Mounted poster board displays printed in Joliet, Shorewood, and Romeoville Illinois"
-            image2="/images/posters/top5pct-postermywall-joliet-shorewood-crest-hill.jpg"
-            alt2="Poster wall display options in Joliet, Shorewood, and Crest Hill Illinois"
+            image1="/images/posters/top5pct-posters-shorewood.jpg"
+            alt1="Custom posters printed for businesses in Shorewood and Joliet Illinois"
+            image2="/images/posters/top5pct-posters-customized-joliet.jpg"
+            alt2="Customized posters printed in Joliet Illinois"
             title="Poster Boards and Mounted Prints"
         >
             <p class="mb-4">We offer poster board mounting for customers who need their prints to be rigid, flat, and easy to display. Mounted poster boards are popular for photo portraits, event signage, real estate displays, and office decor. Mounting your print to a foam core or poster board backing eliminates curling and wrinkling so your image always looks polished and professional. A mounted print can be displayed on an easel, pinned to a wall, or placed on a table without any additional framing or support.</p>

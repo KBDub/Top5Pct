@@ -49,12 +49,13 @@ Dir summary: 7 Initial, 0 R1, 4 R2, 0 R3. 11 image files total. All 4 R2 files a
 | C-1 | carousel-rotating-images | top5pct-big-posters-joliet.jpg | posters/ | R2 | Jun 2 | 540K | good |
 | C-2 | carousel-rotating-images | top5pct-custom-posters.jpg | posters/ | R2 | Jun 2 | 281K | good |
 | C-3 | carousel-rotating-images | top5pct-poster-board-joliet.jpg | posters/ | R2 | Jun 2 | 275K | good |
-| card-1 | card-image-with-text | top5pct-poster-printing-joliet-shorewood-romeoville.jpg | posters/ | Initial | Mar 16 | 50K | Initial |
-| card-2 | card-image-with-text (imagePosition right) | top5pct-poster-maker-joliet-shorewood-plainfield.jpg | posters/ | Initial | Mar 16 | 49K | Initial |
-| card-2img image1 | card-2image-with-text | top5pct-poster-board-joliet-shorewood-romeoville.jpg | posters/ | Initial | Mar 16 | 64K | Initial |
-| card-2img image2 | card-2image-with-text | top5pct-postermywall-joliet-shorewood-crest-hill.jpg | posters/ | Initial | Mar 16 | 54K | Initial |
-| card-3 | card-image-with-text | top5pct-poster-store-joliet-shorewood-plainfield.jpg | posters/ | Initial | Mar 16 | 47K | Initial |
-| card-detailed image1 | card-detailed-info | top5pct-article-posters-joliet-pic1.jpg | posters/ | Initial | Mar 16 | 34K | Initial |
+| C-4 | carousel-rotating-images | top5pct-posters-joliet.jpg | posters/ | R4 | Jun 25 | — | R4 placed; carousel brought to target |
+| card-1 | card-image-with-text | top5pct-posters-business-joliet.jpg | posters/ | R4 | Jun 25 | — | R4 placed; replaced Initial 50K |
+| card-2 | card-image-with-text (imagePosition right) | top5pct-posters-company-joliet.jpg | posters/ | R4 | Jun 25 | — | R4 placed; replaced Initial 49K |
+| card-2img image1 | card-2image-with-text | top5pct-posters-shorewood.jpg | posters/ | R4 | Jun 25 | — | R4 placed; replaced Initial 64K |
+| card-2img image2 | card-2image-with-text | top5pct-posters-customized-joliet.jpg | posters/ | R4 | Jun 25 | — | R4 placed; replaced Initial 54K |
+| card-3 | card-image-with-text | top5pct-poster-store-joliet-shorewood-plainfield.jpg | posters/ | Initial | Mar 16 | 47K | Initial — no file available; deferred to R5 |
+| card-detailed image1 | card-detailed-info | top5pct-article-posters-joliet-pic1.jpg | posters/ | Initial | Mar 16 | 34K | Initial — no file available; deferred to R5 |
 | slide-R | card-banner-slide-in (direction right) | top5pct-banners-and-signs.jpg | banners/ | R1 | May 11 | 361K | good, cross-sell; fixed Jun 25 |
 | slide-L | card-banner-slide-in (direction left) | top5pct-retractable-banner.jpg | banners/ | R1 | May 11 | 234K | good, cross-sell |
 
@@ -62,45 +63,39 @@ Dir summary: 7 Initial, 0 R1, 4 R2, 0 R3. 11 image files total. All 4 R2 files a
 
 ## R1-R3 Placement Summary
 
-**Total blade image slots:** 12
-**Filled R1-R3:** 6
-**Remaining (Initial in blade):** 6
+**Total blade image slots:** 13 (C-4 added)
+**Filled R1-R4:** 11
+**Remaining (Initial in blade):** 2
 
 | slot | image | round | issue |
 |---|---|---|---|
-| card-1 | top5pct-poster-printing-joliet-shorewood-romeoville.jpg | Initial | no same-dir R1-R3 replacement available |
-| card-2 | top5pct-poster-maker-joliet-shorewood-plainfield.jpg | Initial | no same-dir R1-R3 replacement available |
-| card-2img image1 | top5pct-poster-board-joliet-shorewood-romeoville.jpg | Initial | no same-dir R1-R3 replacement available |
-| card-2img image2 | top5pct-postermywall-joliet-shorewood-crest-hill.jpg | Initial | no same-dir R1-R3 replacement available |
-| card-3 | top5pct-poster-store-joliet-shorewood-plainfield.jpg | Initial | no same-dir R1-R3 replacement available |
-| card-detailed image1 | top5pct-article-posters-joliet-pic1.jpg | Initial | no same-dir R1-R3 replacement available |
+| card-3 | top5pct-poster-store-joliet-shorewood-plainfield.jpg | Initial | no file available; deferred to R5 |
+| card-detailed image1 | top5pct-article-posters-joliet-pic1.jpg | Initial | no file available; deferred to R5 |
 
-All 4 R2 posters/ files are already placed (hero, C-1, C-2, C-3). No unused R1-R3 posters/ files remain. Per the audit rules, all 6 Initial slots are left for a later round.
+5 R4 files placed Jun 25: C-4, card-1, card-2, card-2img image1, card-2img image2. All 5 R4 posters/ files now placed.
 
 ---
 
 ## Carousel
 
-**Current slots:** 3
-**Target:** 4. May exceed 4 if all non-carousel slots are R1-R3.
+**Current slots:** 4 (at target)
+**Target:** 4.
 
 **Non-carousel slot check:**
 
 | slot | image | round | status |
 |---|---|---|---|
 | hero | top5pct-posters-printed-joliet.jpg | R2 | good |
-| card-1 | top5pct-poster-printing-joliet-shorewood-romeoville.jpg | Initial | not filled |
-| card-2 | top5pct-poster-maker-joliet-shorewood-plainfield.jpg | Initial | not filled |
-| card-2img image1 | top5pct-poster-board-joliet-shorewood-romeoville.jpg | Initial | not filled |
-| card-2img image2 | top5pct-postermywall-joliet-shorewood-crest-hill.jpg | Initial | not filled |
-| card-3 | top5pct-poster-store-joliet-shorewood-plainfield.jpg | Initial | not filled |
-| card-detailed image1 | top5pct-article-posters-joliet-pic1.jpg | Initial | not filled |
+| card-1 | top5pct-posters-business-joliet.jpg | R4 | good |
+| card-2 | top5pct-posters-company-joliet.jpg | R4 | good |
+| card-2img image1 | top5pct-posters-shorewood.jpg | R4 | good |
+| card-2img image2 | top5pct-posters-customized-joliet.jpg | R4 | good |
+| card-3 | top5pct-poster-store-joliet-shorewood-plainfield.jpg | Initial | not filled — deferred to R5 |
+| card-detailed image1 | top5pct-article-posters-joliet-pic1.jpg | Initial | not filled — deferred to R5 |
 | slide-R | top5pct-banners-and-signs.jpg | R1 | good, cross-sell |
 | slide-L | top5pct-retractable-banner.jpg | R1 | good, cross-sell |
 
-6 non-carousel slots are Initial. Carousel must stay at its current size or target 4 until non-carousel slots are resolved. Carousel is currently at 3, below the target of 4.
-
-**Carousel below target:** The carousel has only 3 slots, below the target of 4. All 4 R2 posters/ files are placed (3 in carousel + 1 in hero). No unused R1-R3 posters/ files remain. A 4th carousel slot requires new R4 posters/ images.
+2 non-carousel slots remain Initial. Over-target condition not yet met — carousel stays at 4 until card-3 and card-detailed image1 are filled.
 
 ---
 
@@ -138,12 +133,17 @@ Both slides now cross-sell to banners/, the most referenced complementary catego
 | top5pct-big-posters-joliet.jpg | posters/ | 540K | R2 | C-1 only |
 | top5pct-custom-posters.jpg | posters/ | 281K | R2 | C-2 only |
 | top5pct-poster-board-joliet.jpg | posters/ | 275K | R2 | C-3 only |
-| top5pct-poster-printing-joliet-shorewood-romeoville.jpg | posters/ | 50K | Initial | card-1 only |
-| top5pct-poster-maker-joliet-shorewood-plainfield.jpg | posters/ | 49K | Initial | card-2 only |
-| top5pct-poster-board-joliet-shorewood-romeoville.jpg | posters/ | 64K | Initial | card-2img image1 only |
-| top5pct-postermywall-joliet-shorewood-crest-hill.jpg | posters/ | 54K | Initial | card-2img image2 only |
-| top5pct-poster-store-joliet-shorewood-plainfield.jpg | posters/ | 47K | Initial | card-3 only |
-| top5pct-article-posters-joliet-pic1.jpg | posters/ | 34K | Initial | card-detailed image1 only |
+| top5pct-posters-business-joliet.jpg | posters/ | — | R4 | card-1 only |
+| top5pct-posters-company-joliet.jpg | posters/ | — | R4 | card-2 only |
+| top5pct-posters-shorewood.jpg | posters/ | — | R4 | card-2img image1 only |
+| top5pct-posters-customized-joliet.jpg | posters/ | — | R4 | card-2img image2 only |
+| top5pct-posters-joliet.jpg | posters/ | — | R4 | C-4 only |
+| top5pct-poster-printing-joliet-shorewood-romeoville.jpg | posters/ | 50K | Initial | removed from blade (was card-1) |
+| top5pct-poster-maker-joliet-shorewood-plainfield.jpg | posters/ | 49K | Initial | removed from blade (was card-2) |
+| top5pct-poster-board-joliet-shorewood-romeoville.jpg | posters/ | 64K | Initial | removed from blade (was card-2img image1) |
+| top5pct-postermywall-joliet-shorewood-crest-hill.jpg | posters/ | 54K | Initial | removed from blade (was card-2img image2) |
+| top5pct-poster-store-joliet-shorewood-plainfield.jpg | posters/ | 47K | Initial | card-3 only — deferred to R5 |
+| top5pct-article-posters-joliet-pic1.jpg | posters/ | 34K | Initial | card-detailed image1 only — deferred to R5 |
 | top5pct-banners-and-signs.jpg | banners/ | 361K | R1 | slide-R only |
 | top5pct-retractable-banner.jpg | banners/ | 234K | R1 | slide-L only |
 | top5pct-banner-poster-maker-joliet-romeoville-shorewood.jpg | posters/ | 177K | Initial | unused |
@@ -176,10 +176,10 @@ Carousel is at 3, below the target of 4. No unused R1-R3 posters/ files remain. 
 
 ## Notes
 
-- 6 of 12 blade image slots are R1-R3 as of Jun 25, 2026.
-- This dir has no R1 or R3 files — only Initial (7) and R2 (4). It is the least-complete dir in the audit so far.
-- slide-R rule violation (Initial + same-category) resolved Jun 25, 2026. Replaced with banners/ R1 cross-sell.
-- 6 Initial non-slide slots are deferred to R4 per audit rules.
-- Carousel is below target (3 of 4). First R4 posters/ image should go to carousel.
-- The unused posters/ file (`top5pct-banner-poster-maker-joliet-romeoville-shorewood.jpg`, 177K, Initial) does not qualify for blade placement.
-- R4 audit ready.
+- 11 of 13 slots R1-R4 as of Jun 25, 2026. 2 Initial remain (card-3, card-detailed image1) — deferred to R5.
+- 5 R4 placements made Jun 25: C-4 (carousel to target), card-1, card-2, card-2img image1, card-2img image2.
+- All 5 R4 posters/ files now placed. No unused R1-R4 posters/ files remain.
+- Carousel at 4 (target). Over-target condition not yet met — card-3 and card-detailed remain Initial.
+- This dir has no R1 or R3 files — only Initial (7) and R2 (4). Least-complete dir in the audit.
+- slide-R rule violation (Initial + same-category) resolved Jun 25. Replaced with banners/ R1 cross-sell.
+- The unused Initial file (`top5pct-banner-poster-maker-joliet-romeoville-shorewood.jpg`, 177K) does not qualify for blade placement.
