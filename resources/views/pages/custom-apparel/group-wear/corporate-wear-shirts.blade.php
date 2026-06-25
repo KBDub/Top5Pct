@@ -54,7 +54,7 @@
         :images="[
             ['src' => '/images/corporate-wear/top5pct-custom-apron-joliet.jpg', 'alt' => 'Custom corporate shirts and uniforms in Joliet and Shorewood Illinois'],
             ['src' => '/images/corporate-wear/top5pct-custom-aprons-joliet.jpg',   'alt' => 'Custom embroidered polo shirts for businesses in Joliet, Shorewood, and Crest Hill Illinois'],
-            ['src' => '/images/corporate-wear/top5pct-banner-corporate-shirts-uniforms-joliet-shorewood.jpg', 'alt' => 'Custom corporate shirts and uniforms banner in Joliet and Shorewood Illinois'],
+            ['src' => '/images/corporate-wear/top5pct-custom-company-apparel.jpg', 'alt' => 'Custom company apparel and branded clothing in Joliet and Shorewood Illinois'],
             ['src' => '/images/corporate-wear/top5pct-custom-pocket-shirt-joliet.jpg',          'alt' => 'Custom branded hoodies and pullovers for businesses in Joliet and Shorewood Illinois'],
         ]"
         visible=2
@@ -94,8 +94,8 @@
         <x-sections.card-2image-with-text
             image1="/images/corporate-wear/top5pct-safety-work-gear-joliet.jpg"
             alt1="Custom corporate t shirts printed for businesses in Joliet and Shorewood Illinois"
-            image2="/images/corporate-wear/top5pct-custom-company-apparel.jpg"
-            alt2="Custom company apparel and branded clothing in Joliet and Shorewood Illinois"
+            image2="/images/corporate-wear/top5pct-banner-corporate-shirts-uniforms-joliet-shorewood.jpg"
+            alt2="Custom corporate shirts and uniforms banner in Joliet and Shorewood Illinois"
             title="Corporate Wear Builds Your Brand"
         >
             <p class="mb-4">We know how important corporate apparel is for your business, and our full <a href="/custom-apparel" class="link-notification">custom apparel</a> shop in Joliet is here to outfit your team from head to toe. When your employees wear branded clothing, they become walking advertisements for your company. Customers can spot your team from across the room, and pairing your uniforms with branded <a href="/promotional-items" class="link-notification">promotional items</a> like mugs and tote bags amplifies that brand presence even further.</p>
