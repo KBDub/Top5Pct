@@ -3,7 +3,7 @@
 **Blade:** `resources/views/pages/signs/banners.blade.php`
 **URL:** `/signs/business-signs/banners`
 **Dir:** `public/images/banners/` — 21 files total (including .DS_Store)
-**Verified:** Jun 25, 2026
+**Verified:** Jun 25, 2026 | **R4 placed:** Jun 25, 2026
 
 ---
 
@@ -63,7 +63,7 @@ Dir summary: 8 Initial, 7 R1, 4 R2, 0 R3. 20 image files (excluding .DS_Store).
 | card-2img-2 image1 | card-2image-with-text | top5pct-mesh-construction-banner.jpg | banners/ | R2 | Jun 2 | 287K | good |
 | card-2img-2 image2 | card-2image-with-text | top5pct-portable-banners.jpg | banners/ | R2 | Jun 2 | 588K | good |
 | card-detailed image1 | card-detailed-info | top5pct-retractable-banners-plainfield.jpg | banners/ | R2 | Jun 2 | 295K | good |
-| slide-L | card-banner-slide-in (direction left) | top5pct-retractable-banners-plainfield.jpg | banners/ | R2 | Jun 2 | 295K | good, same-category |
+| slide-L | card-banner-slide-in (direction left) | top5pct-banner-retractable-plainfield.jpg | banners/ | R4 | Jun 25 | — | R4 placed |
 | slide-R | card-banner-slide-in (direction right) | top5pct-yard-signs-joliet.jpg | yard-signs/ | R1 | May 11 | 401K | good, cross-sell |
 
 ---
@@ -106,7 +106,7 @@ All non-carousel slots are R1-R3. Carousel is at exactly 4. All 4 carousel slots
 
 | slot | direction | image | dir | round | rule | status |
 |---|---|---|---|---|---|---|
-| slide-L | left | top5pct-retractable-banners-plainfield.jpg | banners/ | R2 | same-category allowed | good |
+| slide-L | left | top5pct-banner-retractable-plainfield.jpg | banners/ | R4 | same-category allowed | good, R4 |
 | slide-R | right | top5pct-yard-signs-joliet.jpg | yard-signs/ | R1 | must be cross-sell R1-R3 | good |
 
 ---
@@ -126,7 +126,8 @@ All non-carousel slots are R1-R3. Carousel is at exactly 4. All 4 carousel slots
 | top5pct-banners-for-trade-shows.jpg | banners/ | 232K | R2 | card-2img-1 image2 only |
 | top5pct-mesh-construction-banner.jpg | banners/ | 287K | R2 | card-2img-2 image1 only |
 | top5pct-portable-banners.jpg | banners/ | 588K | R2 | card-2img-2 image2 only |
-| top5pct-retractable-banners-plainfield.jpg | banners/ | 295K | R2 | card-detailed image1 AND slide-L (duplicate use) |
+| top5pct-retractable-banners-plainfield.jpg | banners/ | 295K | R2 | card-detailed image1 only |
+| top5pct-banner-retractable-plainfield.jpg | banners/ | — | R4 | slide-L only |
 | top5pct-yard-signs-joliet.jpg | yard-signs/ | 401K | R1 | slide-R only |
 | top5pct-article-vinyl-banners-pic1.jpg | banners/ | 22K | Initial | unused |
 | top5pct-banner-business-banners-joliet-shorewood-crest-hill.jpg | banners/ | 88K | Initial | unused |
@@ -141,31 +142,21 @@ No unused R1-R3 banners/ files remain. All R1-R2 banners/ files are placed in bl
 
 ---
 
-## Immediate Suggestions
+## R4 Placements — Jun 25, 2026
 
-### No R1-R3 fixes required
+| slot | old image | new image | round |
+|---|---|---|---|
+| slide-L | top5pct-retractable-banners-plainfield.jpg (R2, duplicate use) | top5pct-banner-retractable-plainfield.jpg | R4 |
 
-All 14 blade image slots are R1-R3. No Initial images appear in the blade. No rule violations.
-
-### Carousel expansion
-
-Carousel is at exactly 4. All non-carousel slots are R1-R3. Per the carousel rule, the carousel may exceed 4 when all other slots are filled with R1+. However, no unused R1-R3 banners/ files remain. Carousel expansion would require R4 images.
-
-### Duplicate use — slide-L and card-detailed image1
-
-`top5pct-retractable-banners-plainfield.jpg` (banners/, R2) is used in two blade slots: card-detailed image1 and slide-L. This is not a rule violation. Resolving the duplicate would require an R4 banners/ image for one of the two slots.
-
-### Slide-L — candidate for a same-category upgrade to R3 in a future round
-
-slide-L is currently R2 (Jun 2). An R3 same-category banners/ replacement would be an upgrade. No R3 banners/ files currently exist. Deferred to R4.
+Duplicate use resolved. All 14 blade slots are R1-R4. No violations.
 
 ---
 
 ## Notes
 
-- All 14 blade image slots are R1-R3 as of verification Jun 25, 2026.
-- 8 unused banners/ dir files are all Initial. None qualify for blade placement under the R1-R3 standard.
-- slide-R cross-sell to yard-signs/ (R1) is valid. yard-signs is a related signs/ category.
-- `top5pct-retractable-banners-plainfield.jpg` is used twice (card-detailed image1 and slide-L). No rule prevents duplicate use; note for future R4 differentiation.
-- No carousel expansion possible without new R4 banners/ images.
-- R4 audit ready.
+- 14 of 14 blade image slots are R1-R4 as of Jun 25, 2026. Page complete.
+- slide-L upgraded: R2 duplicate → top5pct-banner-retractable-plainfield.jpg (R4). Duplicate use resolved.
+- card-detailed image1 retains top5pct-retractable-banners-plainfield.jpg (R2). No longer shared with slide-L.
+- slide-R cross-sell to yard-signs/ (R1) is valid.
+- 8 unused banners/ dir files are all Initial. None qualify for blade placement.
+- No carousel expansion possible without additional R4 banners/ images.
