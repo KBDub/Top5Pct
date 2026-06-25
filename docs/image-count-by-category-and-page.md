@@ -116,16 +116,19 @@ banners total: 20 files. R2: 5, R1: 8, Initial: 7. High share rate — top5pct-b
 
 ---
 
-## brick-shirts/ (2 files)
-
-All R3.
+## brick-shirts/ (7 files)
 
 | filename | date | round | size | shared |
 |---|---|---|---|---|
+| top5pct-brick-vinyl-cresthill.jpg | Jun 2 | R2 | 165K | yes (2) |
 | top5pct-brick-vinyl-custom-shirts-joliet.jpg | Jun 8 | R3 | 171K | no |
+| top5pct-brick-vinyl-custom-t-shirt.jpg | Jun 2 | R2 | 329K | no |
+| top5pct-brick-vinyl-hoodies.jpg | May 11 | R1 | 379K | yes (2) |
+| top5pct-brick-vinyl-jackets-joliet.jpg | Jun 2 | R2 | 324K | no |
 | top5pct-brick-vinyl-shorewood.jpg | Jun 8 | R3 | 370K | no |
+| top5pct-customized-brick-vinyl-shirts.jpg | Jun 2 | R2 | 405K | no |
 
-brick-shirts total: 2 files. R3: 2. Note: many brick-shirts images still live in custom-shirts/ — see custom-shirts section.
+brick-shirts total: 7 files. R3: 2, R2: 4, R1: 1. Migrated from custom-shirts/ Jun 25.
 
 ---
 
@@ -232,108 +235,42 @@ custom-shaped-stickers-decals total: 17 files. R3: 1, R2: 4, R1: 5, Initial: 7.
 
 ---
 
-## custom-shirts/ (68 files)
+## custom-shirts/ (22 files)
 
-**This dir is the legacy custom apparel landing. Many files here belong in their specific category dirs. Misplaced files are flagged in the note column.**
+**Landing page for custom apparel. Migration to technique dirs completed Jun 25. 8 judgment-call files and 1 collision copy remain alongside 13 shared/generic images. See docs/custom-shirt-img-split.md for full split detail.**
 
 | filename | date | round | size | shared | note |
 |---|---|---|---|---|---|
 | top5pct-banner-custom-apparel-custom-shirts-custom-hoodies-custom-caps.jpg | Mar 16 | Initial | 114K | yes (29) | site-wide banner |
-| top5pct-brick-vinyl-cresthill.jpg | Jun 2 | R2 | 165K | yes (2) | move to brick-shirts/ |
-| top5pct-brick-vinyl-custom-t-shirt.jpg | Jun 2 | R2 | 329K | no | move to brick-shirts/ |
-| top5pct-brick-vinyl-hoodies.jpg | May 11 | R1 | 379K | yes (2) | move to brick-shirts/ |
-| top5pct-brick-vinyl-jackets-joliet.jpg | Jun 2 | R2 | 324K | no | move to brick-shirts/ |
-| top5pct-custom-bowling-shirts.jpg | May 11 | R1 | 436K | no | |
-| top5pct-custom-brick-shirts-hoodies-cap-joliet.jpg | Mar 16 | Initial | 28K | yes (6) | move to brick-shirts/ |
-| top5pct-custom-caps-vinyl.jpg | May 11 | R1 | 275K | no | |
-| top5pct-custom-dog-bandanas.jpg | May 11 | R1 | 471K | no | |
-| top5pct-custom-embroidery-shops-near-me-joliet.jpg | Mar 16 | Initial | 28K | yes (11) | move to embroidery/ |
-| top5pct-custom-flock-shirt-hoodie-cap-joliet.jpg | Mar 16 | Initial | 32K | yes (4) | move to flock-shirts/ |
-| top5pct-custom-flock-t-shirt-printing.jpg | Jun 2 | R2 | 490K | yes (4) | move to flock-shirts/ |
-| top5pct-custom-foil-polo.jpg | Jun 2 | R2 | 212K | no | move to foil-shirts/ |
-| top5pct-custom-foil-shirts-hoodies-caps-joliet.jpg | Mar 16 | Initial | 35K | yes (7) | move to foil-shirts/ |
-| top5pct-custom-glitter-sweatshirts-joliet.jpg | May 11 | R1 | 360K | no | move to glitter-shirts/ |
-| top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg | Mar 16 | Initial | 29K | yes (3) | move to glow-shirts/ |
-| top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg | Mar 16 | Initial | 27K | yes (9) | move to holographic-shirts/ |
-| top5pct-custom-hoodies.jpg | May 11 | R1 | 287K | no | |
-| top5pct-customized-brick-vinyl-shirts.jpg | Jun 2 | R2 | 405K | no | move to brick-shirts/ |
-| top5pct-custom-pattern-shirts-caps-hoodies-joliet.jpg | Mar 16 | Initial | 27K | yes (2) | |
-| top5pct-custom-printed-vinyl-shirts.jpg | May 11 | R1 | 405K | no | move to digital-vinyl/ |
-| top5pct-custom-puff-shirts.jpg | Jun 2 | R2 | 297K | yes (2) | |
-| top5pct-custom-reflective-hoodies.jpg | Jun 2 | R2 | 223K | no | move to reflective-shirts/ |
-| top5pct-custom-reflective-shirts-hoodies-caps-joliet.jpg | Mar 16 | Initial | 25K | yes (6) | move to reflective-shirts/ |
-| top5pct-custom-rhinestone-shirt-cap-hoodie-joliet.jpg | Mar 16 | Initial | 23K | yes (5) | move to rhinestone-apparel/ |
-| top5pct-custom-rhinestone-shirts.jpg | Jun 2 | R2 | 486K | no | move to rhinestone-apparel/ |
-| top5pct-custom-shirt-chameleon.jpg | Jun 2 | R2 | 496K | no | |
-| top5pct-custom-shirt-pictures.jpg | May 11 | R1 | 388K | yes (2) | |
-| top5pct-custom-shirts-with-pictures-joliet-shorewood.jpg | Mar 16 | Initial | 23K | no | |
+| top5pct-custom-bowling-shirts.jpg | May 11 | R1 | 436K | no | no target dir |
+| top5pct-custom-brick-shirts-hoodies-cap-joliet.jpg | Mar 16 | Initial | 28K | yes (6) | judgment call |
+| top5pct-custom-dog-bandanas.jpg | May 11 | R1 | 471K | no | no target dir |
+| top5pct-custom-flock-shirt-hoodie-cap-joliet.jpg | Mar 16 | Initial | 32K | yes (4) | judgment call |
+| top5pct-custom-foil-shirts-hoodies-caps-joliet.jpg | Mar 16 | Initial | 35K | yes (7) | judgment call |
+| top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg | Mar 16 | Initial | 29K | yes (3) | judgment call |
+| top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg | Mar 16 | Initial | 27K | yes (9) | judgment call |
+| top5pct-custom-hoodies.jpg | May 11 | R1 | 287K | no | generic |
+| top5pct-custom-pattern-shirts-caps-hoodies-joliet.jpg | Mar 16 | Initial | 27K | yes (2) | no pattern-shirts/ dir |
+| top5pct-custom-reflective-shirts-hoodies-caps-joliet.jpg | Mar 16 | Initial | 25K | yes (6) | judgment call |
+| top5pct-custom-rhinestone-shirt-cap-hoodie-joliet.jpg | Mar 16 | Initial | 23K | yes (5) | judgment call |
+| top5pct-custom-shirt-chameleon.jpg | Jun 2 | R2 | 496K | no | no target dir |
+| top5pct-custom-shirt-pictures.jpg | May 11 | R1 | 388K | yes (2) | generic |
+| top5pct-custom-shirts-with-pictures-joliet-shorewood.jpg | Mar 16 | Initial | 23K | no | generic |
 | top5pct-custom-t-shirts-main.jpg | Mar 16 | Initial | 46K | yes (10) | site-wide banner |
-| top5pct-custom-vinyl-hoodies.jpg | May 11 | R1 | 296K | no | move to digital-vinyl/ |
-| top5pct-custom-vinyl-hoodies-2.jpg | May 11 | R1 | 389K | no | move to digital-vinyl/ |
-| top5pct-custom-vinyl-shirts.jpg | May 11 | R1 | 394K | yes (4) | move to digital-vinyl/ |
-| top5pct-custom-vinyl-shirts-caps-hoodies.jpg | Mar 16 | Initial | 36K | yes (14) | site-wide banner |
-| top5pct-custom-wedding-foil-shirts.jpg | Jun 2 | R2 | 336K | no | move to foil-shirts/ |
-| top5pct-digital-vinyl-hoodie.jpg | May 11 | R1 | 371K | no | move to digital-vinyl/ |
-| top5pct-digital-vinyl-hoodies-in-joliet.jpg | May 11 | R1 | 390K | no | move to digital-vinyl/ |
-| top5pct-digital-vinyl-shirts.jpg | May 11 | R1 | 689K | no | move to digital-vinyl/ |
-| top5pct-digital-vinyl-t-shirts.jpg | Jun 2 | R2 | 470K | no | move to digital-vinyl/ |
-| top5pct-flock-hoodie-printing.jpg | Jun 2 | R2 | 490K | yes (2) | move to flock-shirts/ |
-| top5pct-flock-shirt-vinyl.jpg | Jun 2 | R2 | 433K | no | move to flock-shirts/ |
-| top5pct-foil-custom-t-shirts.jpg | Jun 2 | R2 | 242K | no | move to foil-shirts/ |
-| top5pct-foil-gold-t-shirt.jpg | Jun 2 | R2 | 326K | yes (3) | move to foil-shirts/ |
-| top5pct-glowing-halloween-bat-shirt.jpg | Jun 2 | R2 | 252K | no | move to glow-shirts/ |
-| top5pct-glow-in-the-dark-caps.jpg | Jun 2 | R2 | 298K | no | move to glow-shirts/ |
-| top5pct-gold-foil-printed-shirts.jpg | Jun 2 | R2 | 208K | no | move to foil-shirts/ |
-| top5pct-halloween-pumpkin-glow-shirt.jpg | Jun 2 | R2 | 353K | no | move to glow-shirts/ |
-| top5pct-holographic-vinyl-hoodie-foil.jpg | Jun 2 | R2 | 527K | yes (2) | move to holographic-shirts/ |
-| top5pct-long-lasting-graphic-shirts.jpg | Jun 2 | R2 | 407K | yes (2) | |
-| top5pct-neon-vinyl-shirts.jpg | May 11 | R1 | 289K | yes (2) | move to digital-vinyl/ |
-| top5pct-puff-shirts-joliet.jpg | Jun 2 | R2 | 333K | no | |
-| top5pct-puff-shirts.jpg | Jun 2 | R2 | 357K | no | |
-| top5pct-reflective-shirts-gold.jpg | May 11 | R1 | 304K | no | move to reflective-shirts/ |
-| top5pct-reflective-shirts.jpg | Jun 2 | R2 | 123K | no | move to reflective-shirts/ |
-| top5pct-reflective-shirts-shorewood.jpg | Jun 2 | R2 | 234K | no | move to reflective-shirts/ |
-| top5pct-reflective-vinyl-shirts-plainfield.jpg | Jun 2 | R2 | 166K | no | move to reflective-shirts/ |
-| top5pct-rhinestone-apparel-keith-elementary.jpg | Jun 2 | R2 | 355K | no | move to rhinestone-apparel/ |
-| top5pct-rhinestone-bling-joliet.jpg | Jun 2 | R2 | 309K | yes (2) | move to rhinestone-apparel/ |
-| top5pct-rhinestone-hoodie-joliet-west.jpg | Jun 2 | R2 | 505K | no | move to rhinestone-apparel/ |
-| top5pct-rhinestone-hoodies-joliet.jpg | May 11 | R1 | 260K | yes (2) | move to rhinestone-apparel/ |
-| top5pct-rhinestone-ladies-shirt.jpg | Jun 2 | R2 | 162K | no | move to rhinestone-apparel/ |
-| top5pct-rhinestone-t-shirts-joliet.jpg | Jun 2 | R2 | 424K | no | move to rhinestone-apparel/ |
-| top5pct-rhinetsone-t-shirts.jpg | Jun 2 | R2 | 261K | yes (2) | move to rhinestone-apparel/ — note typo in filename |
-| top5pct-screenprint-custom-shirts.jpg | May 11 | R1 | 326K | no | move to screen-printing/ |
-| top5pct-screenprinted-shirts-in-joliet.jpg | May 11 | R1 | 437K | no | move to screen-printing/ |
-| top5pct-screenprinted-shirts-joliet.jpg | May 11 | R1 | 297K | yes (2) | move to screen-printing/ |
-| top5pct-screenprinting-shirts.jpg | May 11 | R1 | 327K | yes (2) | move to screen-printing/ |
+| top5pct-custom-vinyl-shirts-caps-hoodies.jpg | Mar 16 | Initial | 36K | yes (14) | judgment call |
+| top5pct-long-lasting-graphic-shirts.jpg | Jun 2 | R2 | 407K | yes (2) | generic |
+| top5pct-screenprinted-shirts-joliet.jpg | May 11 | R1 | 297K | yes (2) | collision copy — different from screen-printing/ version |
 | top5pct-t-shirt-maker-article-pic1.jpg | Mar 17 | Initial | 10K | yes (4) | article asset |
 | top5pct-t-shirt-maker-article-pic2.jpg | Mar 17 | Initial | 11K | yes (4) | article asset |
-| top5pct-toddler-custom-shirts.jpg | May 11 | R1 | 294K | no | |
-| top5pct-vinyl-caps.jpg | May 11 | R1 | 553K | yes (2) | move to digital-vinyl/ |
-| top5pct-vinyl-hoodie.jpg | May 11 | R1 | 557K | no | move to digital-vinyl/ |
-| top5pct-vinyl-printed-shirts.jpg | May 11 | R1 | 293K | no | move to digital-vinyl/ |
-| top5pct-vinyl-shirts.jpg | May 11 | R1 | 379K | no | move to digital-vinyl/ |
-| top5pct-vinyl-t-shirt-maker.jpg | May 11 | R1 | 377K | no | move to digital-vinyl/ |
-| top5pct-vinyl-zip-up-hoodies.jpg | May 11 | R1 | 414K | no | move to digital-vinyl/ |
+| top5pct-toddler-custom-shirts.jpg | May 11 | R1 | 294K | no | no target dir |
 
-custom-shirts total: 68 files. R2: 25, R1: 26, Initial: 15, Mar 17: 2. Approximately 40 files should be migrated to their proper category dirs at R4. Core custom-shirts files (general banners, hoodies, t-shirts) remain here.
-
-**Files to migrate at R4:**
-- brick-shirts/: 5 files
-- digital-vinyl/: 12 files
-- embroidery/: 1 file
-- flock-shirts/: 4 files
-- foil-shirts/: 6 files
-- glow-shirts/: 4 files
-- holographic-shirts/: 2 files
-- reflective-shirts/: 5 files
-- rhinestone-apparel/: 8 files (including the "rhinetsone" filename typo)
-- screen-printing/: 4 files
+custom-shirts total: 22 files. R2: 2, R1: 7, Initial: 11, Mar 17: 2. Migration completed Jun 25 — 53 files removed (37 moved, 16 identical dupes deleted). 8 judgment-call files remain pending user decision. 1 collision copy (screenprinted-shirts-joliet) retained because it differs from the screen-printing/ version.
 
 ---
 
-## digital-vinyl/ (14 files)
+## digital-vinyl/ (26 files)
 
-**Note:** 10 files in this dir are the May 18 R2 batch. Byte-for-byte copies of these also appear in vinyl/ (same filenames, same sizes). The 2 misplaced yard-signs files that were here have been removed — originals live in yard-signs/.
+**Note:** 10 files are the May 18 R2 batch (no top5pct- prefix). Byte-for-byte copies of those also appear in vinyl/ (same filenames, same sizes). 12 additional files migrated from custom-shirts/ Jun 25.
 
 | filename | date | round | size | shared |
 |---|---|---|---|---|
@@ -342,17 +279,29 @@ custom-shirts total: 68 files. R2: 25, R1: 26, Initial: 15, Mar 17: 2. Approxima
 | custom-vinyl-hoodies.jpg | May 18 | R2 | 296K | yes (3) — copy also in vinyl/ |
 | custom-vinyl-shirts.jpg | May 18 | R2 | 394K | yes (2) — copy also in vinyl/ |
 | neon-vinyl-shirts.jpg | May 18 | R2 | 289K | no — copy also in vinyl/ |
+| top5pct-custom-caps-vinyl.jpg | May 11 | R1 | 275K | no |
+| top5pct-custom-printed-vinyl-shirts.jpg | May 11 | R1 | 405K | no |
+| top5pct-custom-vinyl-hoodies.jpg | May 11 | R1 | 296K | no |
+| top5pct-custom-vinyl-hoodies-2.jpg | May 11 | R1 | 389K | no |
+| top5pct-custom-vinyl-shirts.jpg | May 11 | R1 | 394K | yes (4) |
 | top5pct-digital-vinyl-hoodie.jpg | Jun 8 | R3 | 371K | no |
 | top5pct-digital-vinyl-hoodies-in-joliet.jpg | Jun 8 | R3 | 390K | no |
 | top5pct-digital-vinyl-shirts.jpg | Jun 8 | R3 | 689K | no |
 | top5pct-digital-vinyl-t-shirts.jpg | Jun 8 | R3 | 470K | no |
+| top5pct-neon-vinyl-shirts.jpg | May 11 | R1 | 289K | yes (2) |
+| top5pct-vinyl-caps.jpg | May 11 | R1 | 553K | yes (2) |
+| top5pct-vinyl-hoodie.jpg | May 11 | R1 | 557K | no |
+| top5pct-vinyl-printed-shirts.jpg | May 11 | R1 | 293K | no |
+| top5pct-vinyl-shirts.jpg | May 11 | R1 | 379K | no |
+| top5pct-vinyl-t-shirt-maker.jpg | May 11 | R1 | 377K | no |
+| top5pct-vinyl-zip-up-hoodies.jpg | May 11 | R1 | 414K | no |
 | vinyl-caps.jpg | May 18 | R2 | 553K | yes (3) — copy also in vinyl/ |
 | vinyl-hoodie.jpg | May 18 | R2 | 556K | no — copy also in vinyl/ |
 | vinyl-shirts.jpg | May 18 | R2 | 379K | no — copy also in vinyl/ |
 | vinyl-t-shirt-maker.jpg | May 18 | R2 | 377K | no — copy also in vinyl/ |
 | vinyl-zip-up-hoodies.jpg | May 18 | R2 | 414K | no — copy also in vinyl/ |
 
-digital-vinyl total: 14 files. R3: 4, R2: 10. 2 misplaced yard-signs copies removed.
+digital-vinyl total: 26 files. R3: 4, R2: 10, R1: 12. Migrated 12 files from custom-shirts/ Jun 25.
 
 ---
 
@@ -452,35 +401,39 @@ All R3.
 | top5pct-flock-hoodie-printing.jpg | Jun 8 | R3 | 490K | yes (2) |
 | top5pct-flock-shirt-vinyl.jpg | Jun 8 | R3 | 433K | no |
 
-flock-shirts total: 4 files. R3: 4. Note: additional flock files still in custom-shirts/ need migration here.
+flock-shirts total: 4 files. R3: 4. Migration from custom-shirts/ completed Jun 25 — all 3 custom-shirts copies were identical dupes already present here.
 
 ---
 
-## foil-shirts/ (5 files)
-
-All R3.
+## foil-shirts/ (10 files)
 
 | filename | date | round | size | shared |
 |---|---|---|---|---|
+| top5pct-custom-foil-polo.jpg | Jun 2 | R2 | 212K | no |
+| top5pct-custom-wedding-foil-shirts.jpg | Jun 2 | R2 | 336K | no |
 | top5pct-foil-custom-apparel-shirts-joliet.jpg | Jun 9 | R3 | 276K | no |
 | top5pct-foil-custom-shirts-joliet.jpg | Jun 8 | R3 | 240K | no |
+| top5pct-foil-custom-t-shirts.jpg | Jun 2 | R2 | 242K | no |
+| top5pct-foil-gold-t-shirt.jpg | Jun 2 | R2 | 326K | yes (3) |
 | top5pct-foil-shirts-cresthill.jpg | Jun 8 | R3 | 336K | yes (2) |
 | top5pct-foil-shirt-shorewood.jpg | Jun 8 | R3 | 40K | no |
 | top5pct-foil-shirts.jpg | Jun 8 | R3 | 299K | no |
+| top5pct-gold-foil-printed-shirts.jpg | Jun 2 | R2 | 208K | no |
 
-foil-shirts total: 5 files. R3: 5. See also `docs/page-images/foil-shirts.md` for full placement audit. Additional foil files still in custom-shirts/ need migration.
+foil-shirts total: 10 files. R3: 5, R2: 5. Migrated 5 files from custom-shirts/ Jun 25.
 
 ---
 
-## glitter-shirts/ (10 files)
+## glitter-shirts/ (12 files)
 
 | filename | date | round | size | shared |
 |---|---|---|---|---|
 | top5pct-custom-glitter-clothing.jpg | May 11 | R1 | 289K | no |
 | top5pct-custom-glitter-shirt-cap-hoodie-joliet.jpg | Mar 16 | Initial | 30K | yes (5) |
 | top5pct-custom-glitter-sweatshirts.jpg | Jun 2 | R2 | 316K | no |
+| top5pct-custom-glitter-sweatshirts-joliet.jpg | May 11 | R1 | 360K | no |
 | top5pct-custom-wedding-glitter-shirts.jpg | Jun 2 | R2 | 336K | no |
-| top5pct-gitter-birthday-shirt.jpg | Jun 2 | R2 | 331K | no — note: typo "gitter" not "glitter" |
+| top5pct-gitter-birthday-shirt.jpg | Jun 2 | R2 | 331K | no — filename typo: gitter not glitter, rename pending |
 | top5pct-glitter-blue-jean-jacket.jpg | Jun 2 | R2 | 421K | no |
 | top5pct-glitter-lips-custom-t-shirt.jpg | Jun 2 | R2 | 314K | yes (2) |
 | top5pct-glitter-sportswear-shirts.jpg | Jun 8 | R3 | 99K | no |
@@ -488,7 +441,7 @@ foil-shirts total: 5 files. R3: 5. See also `docs/page-images/foil-shirts.md` fo
 | top5pct-glitter-t-shirts-cresthill.jpg | Jun 2 | R2 | 358K | no |
 | top5pct-glitter-t-shirts.jpg | Jun 2 | R2 | 393K | yes (3) |
 
-glitter-shirts total: 11 files. R3: 2, R2: 7, R1: 1, Initial: 1. Note: top5pct-gitter-birthday-shirt.jpg has a filename typo (gitter not glitter) — rename candidate at R4.
+glitter-shirts total: 12 files. R3: 2, R2: 8, R1: 2, Initial: 1. Migrated 1 file from custom-shirts/ Jun 25. Typo rename (gitter) still pending.
 
 ---
 
@@ -503,7 +456,7 @@ All R3.
 | top5pct-glow-in-the-dark-caps.jpg | Jun 8 | R3 | 298K | yes (2) |
 | top5pct-halloween-pumpkin-glow-shirt.jpg | Jun 8 | R3 | 353K | yes (2) |
 
-glow-shirts total: 4 files. R3: 4. Additional glow files still in custom-shirts/ need migration.
+glow-shirts total: 4 files. R3: 4. Migration from custom-shirts/ completed Jun 25 — all 3 custom-shirts copies were identical dupes already present here.
 
 ---
 
@@ -517,7 +470,7 @@ All R3.
 | top5pct-holographic-baby-shirts.jpg | Jun 8 | R3 | 231K | no |
 | top5pct-holographic-vinyl-hoodie-foil.jpg | Jun 8 | R3 | 527K | yes (5) |
 
-holographic-shirts total: 3 files. R3: 3. Additional holographic files still in custom-shirts/ need migration.
+holographic-shirts total: 3 files. R3: 3. Migration from custom-shirts/ completed Jun 25 — both custom-shirts copies were identical dupes already present here.
 
 ---
 
@@ -572,19 +525,18 @@ posters total: 11 files. R2: 4, Initial: 7.
 
 ---
 
-## reflective-shirts/ (5 files)
-
-All R3.
+## reflective-shirts/ (6 files)
 
 | filename | date | round | size | shared |
 |---|---|---|---|---|
+| top5pct-custom-reflective-hoodies.jpg | Jun 2 | R2 | 223K | no |
 | top5pct-custom-reflective-shirts-hoodies-caps-joliet.jpg | Jun 8 | R3 | 25K | no |
 | top5pct-reflective-shirts-gold.jpg | Jun 8 | R3 | 304K | yes (2) |
 | top5pct-reflective-shirts.jpg | Jun 8 | R3 | 123K | yes (2) |
 | top5pct-reflective-shirts-shorewood.jpg | Jun 8 | R3 | 234K | yes (2) |
 | top5pct-reflective-vinyl-shirts-plainfield.jpg | Jun 8 | R3 | 165K | yes (2) |
 
-reflective-shirts total: 5 files. R3: 5. Additional reflective files in custom-shirts/ need migration.
+reflective-shirts total: 6 files. R3: 5, R2: 1. Migration from custom-shirts/ completed Jun 25 — top5pct-custom-reflective-hoodies.jpg confirmed present (was missing from prior doc count).
 
 ---
 
@@ -616,28 +568,53 @@ reunion-shirts total: 17 files. R3: 1, R1: 6, Initial: 10. All R1-R3 files are p
 
 ---
 
-## rhinestone-apparel/ (1 file)
+## rhinestone-apparel/ (9 files)
 
 | filename | date | round | size | shared |
 |---|---|---|---|---|
+| top5pct-custom-rhinestone-shirts.jpg | Jun 2 | R2 | 486K | no |
+| top5pct-rhinestone-apparel-keith-elementary.jpg | Jun 2 | R2 | 355K | no |
+| top5pct-rhinestone-bling-joliet.jpg | Jun 2 | R2 | 309K | yes (2) |
+| top5pct-rhinestone-hoodie-joliet-west.jpg | Jun 2 | R2 | 505K | no |
+| top5pct-rhinestone-hoodies-joliet.jpg | May 11 | R1 | 260K | yes (2) |
+| top5pct-rhinestone-ladies-shirt.jpg | Jun 2 | R2 | 162K | no |
+| top5pct-rhinestone-t-shirts.jpg | Jun 2 | R2 | 261K | yes (2) |
+| top5pct-rhinestone-t-shirts-joliet.jpg | Jun 2 | R2 | 424K | no |
 | top5pct-rhinestone-tshirts-joliet.jpg | Jun 3 | R2 | 265K | yes (3) |
 
-rhinestone-apparel total: 1 file. R2: 1. This dir is severely underpopulated — most rhinestone images are still in custom-shirts/ and need migration. Needs major R4 attention.
+rhinestone-apparel total: 9 files. R2: 8, R1: 1. Migrated 8 files from custom-shirts/ Jun 25. top5pct-rhinestone-t-shirts.jpg renamed from rhinetsone typo at migration.
 
 ---
 
-## screen-printing/ (6 files)
+## screen-printing/ (9 files)
 
 | filename | date | round | size | shared |
 |---|---|---|---|---|
+| top5pct-screenprint-custom-shirts.jpg | May 11 | R1 | 326K | no |
+| top5pct-screenprinted-shirts-in-joliet.jpg | May 11 | R1 | 437K | no |
 | top5pct-screenprinted-shirts-joliet.jpg | Jun 8 | R3 | 72K | yes (2) |
 | top5pct-screenprinting-company-shirts.jpg | Jun 8 | R3 | 312K | yes (2) |
 | top5pct-screenprinting-hoodies-joliet.jpg | Jun 8 | R3 | 132K | no |
 | top5pct-screenprinting-joliet.jpg | Jun 8 | R3 | 387K | yes (2) |
+| top5pct-screenprinting-shirts.jpg | May 11 | R1 | 327K | yes (2) |
 | top5pct-screenprinting-t-shirt-maker-joliet.jpg | Jun 8 | R3 | 311K | no |
 | top5pct-screenprinting-t-shirts-joliet.jpg | Jun 3 | R2 | 483K | no |
 
-screen-printing total: 6 files. R3: 5, R2: 1. Additional screen-printing files in custom-shirts/ need migration.
+screen-printing total: 9 files. R3: 5, R2: 1, R1: 3. Migrated 3 files from custom-shirts/ Jun 25. Note: top5pct-screenprinted-shirts-joliet.jpg has a different-content copy still in custom-shirts/ — review before R4.
+
+---
+
+## puff-shirts/ (3 files)
+
+New dir created Jun 25. All R2.
+
+| filename | date | round | size | shared |
+|---|---|---|---|---|
+| top5pct-custom-puff-shirts.jpg | Jun 2 | R2 | 297K | yes (2) |
+| top5pct-puff-shirts-joliet.jpg | Jun 2 | R2 | 333K | no |
+| top5pct-puff-shirts.jpg | Jun 2 | R2 | 357K | no |
+
+puff-shirts total: 3 files. R2: 3. Dir created and populated Jun 25 from custom-shirts/ migration.
 
 ---
 
@@ -927,30 +904,31 @@ yard-signs total: 15 files. R3: 3, R2: 1, R1: 6, Initial: 5. Note: top5pct-yard-
 | automobile-graphics | 22 | 5 | 1 | 8 | 7 | 0 | |
 | backlit-signs | 7 | 0 | 7 | 0 | 0 | 0 | fully R2 |
 | banners | 20 | 0 | 5 | 8 | 7 | 0 | |
-| brick-shirts | 2 | 2 | 0 | 0 | 0 | 0 | 5 more in custom-shirts/ |
+| brick-shirts | 7 | 2 | 4 | 1 | 0 | 0 | migrated from custom-shirts/ Jun 25 |
 | business-signs | 8 | 0 | 0 | 0 | 8 | 0 | all Initial, high priority |
 | can-koozies | 5 | 0 | 3 | 2 | 0 | 0 | all R1-R2 |
 | corona-virus-signs | 8 | 0 | 0 | 0 | 8 | 0 | legacy, low priority |
 | corporate-wear | 16 | 0 | 1 | 6 | 9 | 0 | 4 body slots Initial |
 | custom-shaped-stickers-decals | 17 | 1 | 4 | 5 | 7 | 0 | |
-| custom-shirts | 68 | 0 | 25 | 26 | 15 | 0 | ~40 files need migration |
-| digital-vinyl | 14 | 4 | 10 | 0 | 0 | 0 | copies also in vinyl/ |
+| custom-shirts | 22 | 0 | 2 | 7 | 11 | 0 | migration done Jun 25, 8 judgment calls remain |
+| digital-vinyl | 26 | 4 | 10 | 12 | 0 | 0 | copies also in vinyl/; 12 migrated Jun 25 |
 | door-signs | 8 | 2 | 4 | 1 | 1 | 0 | |
 | dot-decals | 17 | 1 | 6 | 3 | 7 | 0 | |
 | dtf-transfers | 13 | 0 | 6 | 5 | 2 | 0 | |
 | embroidery | 11 | 1 | 5 | 4 | 1 | 0 | |
-| flock-shirts | 4 | 4 | 0 | 0 | 0 | 0 | 4 more in custom-shirts/ |
-| foil-shirts | 5 | 5 | 0 | 0 | 0 | 0 | 6 more in custom-shirts/ |
-| glitter-shirts | 11 | 2 | 7 | 1 | 1 | 0 | typo in filename (gitter) |
-| glow-shirts | 4 | 4 | 0 | 0 | 0 | 0 | 4 more in custom-shirts/ |
-| holographic-shirts | 3 | 3 | 0 | 0 | 0 | 0 | 2 more in custom-shirts/ |
+| flock-shirts | 4 | 4 | 0 | 0 | 0 | 0 | custom-shirts dupes confirmed identical |
+| foil-shirts | 10 | 5 | 5 | 0 | 0 | 0 | migrated from custom-shirts/ Jun 25 |
+| glitter-shirts | 12 | 2 | 8 | 2 | 1 | 0 | typo in filename (gitter) still pending |
+| glow-shirts | 4 | 4 | 0 | 0 | 0 | 0 | custom-shirts dupes confirmed identical |
+| holographic-shirts | 3 | 3 | 0 | 0 | 0 | 0 | custom-shirts dupes confirmed identical |
 | mugs | 8 | 0 | 1 | 7 | 0 | 0 | all R1-R2 |
 | outdoor-signs | 3 | 1 | 2 | 0 | 0 | 0 | small dir |
 | posters | 11 | 0 | 4 | 0 | 7 | 0 | |
-| reflective-shirts | 5 | 5 | 0 | 0 | 0 | 0 | 5 more in custom-shirts/ |
+| puff-shirts | 3 | 0 | 3 | 0 | 0 | 0 | new dir created Jun 25 |
+| reflective-shirts | 6 | 5 | 1 | 0 | 0 | 0 | corrected count (1 was missing from prior doc) |
 | reunion-shirts | 17 | 1 | 0 | 6 | 10 | 0 | 7 Initial slots need photos |
-| rhinestone-apparel | 1 | 0 | 1 | 0 | 0 | 0 | severely underpopulated |
-| screen-printing | 6 | 5 | 1 | 0 | 0 | 0 | 4 more in custom-shirts/ |
+| rhinestone-apparel | 9 | 0 | 8 | 1 | 0 | 0 | migrated from custom-shirts/ Jun 25 |
+| screen-printing | 9 | 5 | 1 | 3 | 0 | 0 | migrated from custom-shirts/ Jun 25 |
 | sidewalk-signs | 15 | 3 | 3 | 4 | 5 | 0 | |
 | spirit-wear | 13 | 0 | 3 | 2 | 8 | 0 | 5 Initial body slots |
 | standard-stickers-decals | 2 | 2 | 0 | 0 | 0 | 0 | very small dir |
@@ -963,7 +941,7 @@ yard-signs total: 15 files. R3: 3, R2: 1, R1: 6, Initial: 5. Note: top5pct-yard-
 | window-signs | 18 | 8 | 3 | 4 | 3 | 0 | 1 post-R3 (Jun 24) |
 | window-wall-floor-decals | 7 | 0 | 3 | 0 | 4 | 0 | overlap with wall-signs/ |
 | yard-signs | 15 | 3 | 1 | 6 | 5 | 0 | joliet-illinois is 1.8MB |
-| **TOTAL** | **~487** | **~87** | **~119** | **~122** | **~120** | **~2** | |
+| **TOTAL** | **~443** | **~87** | **~127** | **~113** | **~111** | **~2** | |
 
 ---
 
@@ -978,22 +956,22 @@ yard-signs total: 15 files. R3: 3, R2: 1, R1: 6, Initial: 5. Note: top5pct-yard-
 
 ---
 
-### 1. Migrate Misplaced Files from custom-shirts/ (~40 files)
-Files clearly belonging to specific category dirs should be moved. Target dirs:
-- brick-shirts/ (5 files)
-- digital-vinyl/ (12 files)
-- embroidery/ (1 file)
-- flock-shirts/ (4 files)
-- foil-shirts/ (6 files)
-- glow-shirts/ (4 files)
-- holographic-shirts/ (2 files)
-- reflective-shirts/ (5 files)
-- rhinestone-apparel/ (8 files — dir currently has only 1 file)
-- screen-printing/ (4 files)
+### 1. Migrate Misplaced Files from custom-shirts/ — COMPLETED Jun 25
+51 clear files moved. 16 identical dupes deleted. puff-shirts/ dir created (3 files). rhinetsone typo renamed. 8 judgment-call files remain in custom-shirts/ pending user decision. 1 screenprinted-shirts-joliet.jpg has different-content copies in both dirs — resolve before R4.
+
+Results by dir (all confirmed by ls after migration):
+- brick-shirts/: 2 → 7
+- digital-vinyl/: 14 → 26
+- foil-shirts/: 5 → 10
+- glitter-shirts/: 11 → 12
+- rhinestone-apparel/: 1 → 9
+- screen-printing/: 6 → 9
+- puff-shirts/: 0 → 3 (new dir)
+- flock-shirts/, glow-shirts/, holographic-shirts/, reflective-shirts/: counts confirmed (custom-shirts copies were identical dupes already present)
 
 ### 2. Fix Filename Typos
-- glitter-shirts/top5pct-gitter-birthday-shirt.jpg (gitter, not glitter)
-- custom-shirts/top5pct-rhinetsone-t-shirts.jpg (rhinetsone, not rhinestone) — will be fixed when migrated to rhinestone-apparel/
+- glitter-shirts/top5pct-gitter-birthday-shirt.jpg (gitter, not glitter) — rename still pending
+- custom-shirts/top5pct-rhinetsone-t-shirts.jpg — FIXED Jun 25, renamed to top5pct-rhinestone-t-shirts.jpg and moved to rhinestone-apparel/
 
 ### 3. Compress Oversized File
 - yard-signs/top5pct-yard-signs-joliet-illinois.jpg is 1.8MB — compress to under 600K before R4 import
