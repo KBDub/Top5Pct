@@ -60,6 +60,9 @@
             ['src' => '/images/dtf-transfers/top5pct-dtf-t-shirt-maker.jpg',                                    'alt' => 'Custom DTF transfers applied to shirts and apparel in Joliet Illinois'],
             ['src' => '/images/dtf-transfers/top5pct-custom-t-shirts-dtf.jpg',                                           'alt' => 'Full color DTF printed shirts in Joliet, Will and DuPage County Illinois'],
             ['src' => '/images/dtf-transfers/top5pct-dtf-hoodies-joliet.jpg',                                     'alt' => 'Custom DTF transfer shirts and apparel made in Joliet Illinois'],
+            ['src' => '/images/dtf-transfers/top5pct-custom-baby-clothing-joliet.jpg',                            'alt' => 'Custom DTF printed baby clothing and kids apparel in Joliet Illinois'],
+            ['src' => '/images/dtf-transfers/top5pct-custom-shirt-with-picture.jpg',                              'alt' => 'Custom DTF shirts with full color picture prints in Joliet Illinois'],
+            ['src' => '/images/dtf-transfers/top5pct-custom-sweatshirts.jpg',                                     'alt' => 'Custom DTF printed sweatshirts and hoodies in Joliet Illinois'],
         ]"
         visible=2
     />

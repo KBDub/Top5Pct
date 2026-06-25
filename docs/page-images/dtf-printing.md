@@ -40,6 +40,9 @@ Two files have "toptpct" instead of "top5pct" in the filename (missing the "5").
 | C-2 — carousel-rotating-images | top5pct-dtf-t-shirt-maker.jpg | dtf-transfers/ | R2 | Jun 2 | 262K | good |
 | C-3 — carousel-rotating-images | top5pct-custom-t-shirts-dtf.jpg | dtf-transfers/ | R1 | May 11 | 387K | good |
 | C-4 — carousel-rotating-images | top5pct-dtf-hoodies-joliet.jpg | dtf-transfers/ | R1 | May 11 | 512K | good |
+| C-5 — carousel-rotating-images | top5pct-custom-baby-clothing-joliet.jpg | dtf-transfers/ | R2 | Jun 2 | 330K | good |
+| C-6 — carousel-rotating-images | top5pct-custom-shirt-with-picture.jpg | dtf-transfers/ | R1 | May 11 | 611K | good |
+| C-7 — carousel-rotating-images | top5pct-custom-sweatshirts.jpg | dtf-transfers/ | R1 | May 11 | 170K | good |
 | card-1 — card-image-with-text | top5pct-dtf-zip-up-hoodies.jpg | dtf-transfers/ | R1 | May 11 | 284K | good |
 | card-2 — card-image-with-text (imagePosition right) | top5pct-custom-dtf-shirts.jpg | dtf-transfers/ | R2 | Jun 2 | 276K | good |
 | card-detailed image1 — card-detailed-info | top5pct-custom-bowling-shirts-dtf.jpg | dtf-transfers/ | R2 | Jun 2 | 238K | good |
@@ -61,7 +64,7 @@ All 10 blade image slots are R1-R3. No Initial files remain in blade. No rule vi
 
 ## Carousel
 
-**Current slots:** 4
+**Current slots:** 7
 **Target:** 4. May exceed 4 if all non-carousel slots are R1-R3.
 
 **Non-carousel slot check:**
@@ -75,7 +78,7 @@ All 10 blade image slots are R1-R3. No Initial files remain in blade. No rule vi
 | slide-R | R3 — good, cross-sell (fixed Jun 25) |
 | slide-L | R3 — good, cross-sell (fixed Jun 25) |
 
-All non-carousel slots are R1-R3. Carousel may expand to 7 using 3 unused dtf-transfers/ R1-R2 files.
+All non-carousel slots are R1-R3. Carousel expanded to 7 (Jun 25). All 7 slots R1-R3 same-dir.
 
 ---
 
@@ -92,12 +95,12 @@ All non-carousel slots are R1-R3. Carousel may expand to 7 using 3 unused dtf-tr
 | top5pct-custom-dtf-shirts.jpg | dtf-transfers/ | 276K | R2 | card-2 only |
 | top5pct-custom-bowling-shirts-dtf.jpg | dtf-transfers/ | 238K | R2 | card-detailed image1 only |
 | top5pct-banner-dtf-transfers-joliet.jpg | dtf-transfers/ | 411K | Initial | unused (replaced Jun 25; filename corrected) |
-| top5pct-custom-sweatshirts.jpg | dtf-transfers/ | 170K | R1 | unused |
-| top5pct-custom-shirt-with-picture.jpg | dtf-transfers/ | 611K | R1 | unused |
-| top5pct-custom-baby-clothing-joliet.jpg | dtf-transfers/ | 330K | R2 | unused |
+| top5pct-custom-sweatshirts.jpg | dtf-transfers/ | 170K | R1 | C-7 only |
+| top5pct-custom-shirt-with-picture.jpg | dtf-transfers/ | 611K | R1 | C-6 only |
+| top5pct-custom-baby-clothing-joliet.jpg | dtf-transfers/ | 330K | R2 | C-5 only |
 | top5pct-dtf-transfer-pricing.jpg | dtf-transfers/ | 201K | Initial | unused (filename corrected Jun 25) |
 
-3 unused R1-R2 files available (top5pct-custom-sweatshirts.jpg, top5pct-custom-shirt-with-picture.jpg, top5pct-custom-baby-clothing-joliet.jpg). These are carousel expansion candidates once slide-R and slide-L are resolved.
+No unused R1-R2 dtf-transfers/ files remain. All placed.
 
 ---
 
@@ -153,5 +156,5 @@ Both renamed files are now unused in the blade. top5pct-banner-dtf-transfers-jol
 - Both "toptpct" filename typos corrected Jun 25: `top5pct-banner-dtf-transfers-joliet.jpg` and `top5pct-dtf-transfer-pricing.jpg`.
 - `top5pct-dtf-transfer-pricing.jpg` is a pricing chart image, not referenced by the blade, and remains unused.
 - slide-L used the same broken `custom-shirts/top5pct-custom-embroidery-shops-near-me-joliet.jpg` path that was also on the screen-printing blade (fixed there Jun 25). Copy-paste error; file only exists in embroidery/.
-- Carousel eligible for expansion to 7 using 3 unused dtf-transfers/ R1-R2 files: top5pct-custom-baby-clothing-joliet.jpg (R2, 330K), top5pct-custom-shirt-with-picture.jpg (R1, 611K), top5pct-custom-sweatshirts.jpg (R1, 170K).
-- All 10 slots R1-R3. No rule violations. R4 audit ready.
+- Carousel expanded to 7 slots Jun 25 using all 3 previously unused dtf-transfers/ R1-R2 files. All 7 carousel slots R1-R3 same-dir.
+- All 13 blade image slots R1-R3. No unused R1-R2 dtf-transfers/ files remain. No rule violations. R4 audit ready.
