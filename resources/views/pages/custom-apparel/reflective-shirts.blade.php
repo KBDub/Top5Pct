@@ -60,6 +60,8 @@
             ['src' => '/images/reflective-shirts/top5pct-reflective-shirts.jpg',               'alt' => 'Custom reflective shirts in Joliet Illinois'],
             ['src' => '/images/reflective-shirts/top5pct-reflective-shirts-shorewood.jpg',     'alt' => 'Custom reflective shirts in Shorewood Illinois'],
             ['src' => '/images/reflective-shirts/top5pct-reflective-vinyl-shirts-plainfield.jpg', 'alt' => 'Custom reflective vinyl shirts in Plainfield Illinois'],
+            ['src' => '/images/reflective-shirts/top5pct-reflective-hoodies-joliet.jpg',          'alt' => 'Custom reflective hoodies printed in Joliet Illinois'],
+            ['src' => '/images/reflective-shirts/top5pct-reflective-safety-vests-joliet.jpg',     'alt' => 'Custom reflective safety vests printed in Joliet Illinois'],
         ]"
         visible=2
     />
@@ -70,8 +72,8 @@
     />
 
     <x-sections.card-image-with-text
-        image="/images/reflective-shirts/top5pct-reflective-vinyl-shirts-plainfield.jpg"
-        alt="Custom reflective vinyl shirts in Plainfield Illinois"
+        image="/images/reflective-shirts/top5pct-reflective-apparel-joliet.jpg"
+        alt="Custom reflective apparel printed in Joliet Illinois"
         title="Visibility That Could Save a Life"
     >
         <p class="mb-4">Reflective vinyl printing applies a specialized material to your shirt that retroreflects light directly back toward its source. In headlight or flashlight conditions, a reflective print appears intensely bright, dramatically more visible than any standard printed design. For workers, cyclists, runners, and anyone operating in or near vehicle traffic during low-light conditions, reflective apparel is not just a style choice, it is a genuine safety measure that increases the visibility of the wearer to drivers who may otherwise not see them in time.</p>
@@ -80,7 +82,7 @@
     </x-sections.card-image-with-text>
 
     <x-sections.card-image-with-text
-        image="/images/reflective-shirts/top5pct-custom-reflective-shirts-hoodies-caps-joliet.jpg"
+        image="/images/reflective-shirts/top5pct-reflective-custom-shirts-joliet.jpg"
         alt="Custom reflective shirts for sports teams, runners, and night events in Joliet Illinois"
         title="Style Meets Safety for Athletes and Events"
         imagePosition="right"
