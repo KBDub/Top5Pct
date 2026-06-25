@@ -142,10 +142,10 @@
         name="Renea F"
     />
     <x-ui.card-banner-slide-in
-        image="/images/vehicle-magnets/top5pct-car-magnets-vehicle-magnets-joliet.jpg"
-        alt="Custom vehicle magnets and removable car door signs printed by Top 5 Percent in Joliet Illinois"
-        title="Brand Your Vehicle With Removable Magnets"
-        href="/contact"
+        image="/images/yard-signs/top5pct-yard-signs-shorewood.jpg"
+        alt="Custom yard signs and lawn signs printed for businesses in Shorewood Illinois"
+        title="Brand Your Job Site Too, Custom Yard Signs Available"
+        href="/signs/ground-signs/yard-signs"
         direction="right"
     />
     <x-ui.card-banner-slide-in
