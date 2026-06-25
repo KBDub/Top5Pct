@@ -56,12 +56,10 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/custom-shirts/top5pct-brick-vinyl-cresthill.jpg',                             'alt' => 'Custom brick vinyl shirts in Cresthill Illinois'],
-            ['src' => '/images/custom-shirts/top5pct-brick-vinyl-custom-t-shirt.jpg',                        'alt' => 'Custom brick vinyl t-shirt in Joliet Illinois'],
-            ['src' => '/images/custom-shirts/top5pct-brick-vinyl-jackets-joliet.jpg',                        'alt' => 'Custom brick vinyl jackets in Joliet Illinois'],
-            ['src' => '/images/custom-shirts/top5pct-customized-brick-vinyl-shirts.jpg',         'alt' => 'Customized brick vinyl shirts in Joliet Illinois'],
-            ['src' => '/images/brick-shirts/top5pct-brick-vinyl-custom-shirts-joliet.jpg',    'alt' => 'Custom brick vinyl shirts in Joliet, Shorewood, and Crest Hill Illinois'],
-            ['src' => '/images/brick-shirts/top5pct-brick-vinyl-shorewood.jpg',               'alt' => 'Custom brick vinyl shirt printing in Shorewood Illinois'],
+            ['src' => '/images/custom-shirts/top5pct-brick-vinyl-custom-t-shirt.jpg',          'alt' => 'Custom brick vinyl t-shirt in Joliet Illinois'],
+            ['src' => '/images/custom-shirts/top5pct-customized-brick-vinyl-shirts.jpg',        'alt' => 'Customized brick vinyl shirts in Joliet Illinois'],
+            ['src' => '/images/brick-shirts/top5pct-brick-vinyl-custom-shirts-joliet.jpg',      'alt' => 'Custom brick vinyl shirts in Joliet, Shorewood, and Crest Hill Illinois'],
+            ['src' => '/images/brick-shirts/top5pct-brick-vinyl-shorewood.jpg',                 'alt' => 'Custom brick vinyl shirt printing in Shorewood Illinois'],
         ]"
         visible=2
     />
@@ -72,8 +70,8 @@
     />
 
     <x-sections.card-image-with-text
-        image="/images/custom-shirts/top5pct-custom-brick-shirts-hoodies-cap-joliet.jpg"
-        alt="Custom brick print shirts with 3D raised texture in Joliet Illinois"
+        image="/images/custom-shirts/top5pct-brick-vinyl-jackets-joliet.jpg"
+        alt="Custom brick vinyl jackets and shirts with 3D raised texture in Joliet Illinois"
         title="Shirts That Stand Out, Literally"
     >
         <p class="mb-4">Brick-style printing is a specialty technique that produces a dimensional, raised texture on your shirt design. Like puff printing, it uses an additive that expands during the heat-curing process to create a three-dimensional surface effect, but brick printing is engineered to produce a specific raised, segmented pattern that resembles the texture and visual weight of actual brickwork or raised tile. The result is a shirt that has a bold, architectural quality that standard flat prints simply cannot achieve.</p>
@@ -82,8 +80,8 @@
     </x-sections.card-image-with-text>
 
     <x-sections.card-image-with-text
-        image="/images/custom-shirts/top5pct-custom-pattern-shirts-caps-hoodies-joliet.jpg"
-        alt="Custom brick and dimensional print shirts for brands in Joliet Illinois"
+        image="/images/custom-shirts/top5pct-brick-vinyl-cresthill.jpg"
+        alt="Custom brick vinyl shirts for brands in Joliet and Crest Hill Illinois"
         title="Bold Designs Made for This Technique"
         imagePosition="right"
     >
@@ -128,15 +126,15 @@
         name="Jonathan Young"
     />
     <x-ui.card-banner-slide-in
-        image="/images/custom-shirts/top5pct-custom-brick-shirts-hoodies-cap-joliet.jpg"
-        alt="Custom brick print shirts with 3D dimensional texture by Top 5 Percent in Joliet Illinois"
+        image="/images/glitter-shirts/top5pct-glitter-sweatshirts-joliet.jpg"
+        alt="Custom glitter sweatshirts and specialty apparel from Top 5 Percent in Joliet Illinois"
         title="Dimensional Brick Print Shirts, No Minimums"
         href="/contact"
         direction="left"
     />
     <x-ui.card-banner-slide-in
-        image="/images/custom-shirts/top5pct-custom-hoodies.jpg"
-        alt="Custom flock velvet shirts from Top 5 Percent in Joliet Illinois"
+        image="/images/flock-shirts/top5pct-custom-flock-t-shirt-printing.jpg"
+        alt="Custom flock t-shirt printing from Top 5 Percent in Joliet Illinois"
         title="Add Flock, Puff, or Glitter to Your Shirt Order"
         href="/contact"
         direction="right"
