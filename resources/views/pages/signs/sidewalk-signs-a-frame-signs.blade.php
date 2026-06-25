@@ -125,10 +125,10 @@
         name="Jerry E Olson"
     />
     <x-ui.card-banner-slide-in
-        image="/images/sidewalk-signs/top5pct-a-frame-signs-joliet.jpg"
-        alt="Custom a-frame signs for businesses in Joliet Illinois"
-        title="Custom Parking Signs Built for Illinois Weather"
-        href="/contact"
+        image="/images/yard-signs/top5pct-yard-signs-shorewood.jpg"
+        alt="Custom yard signs and lawn signs printed for businesses in Shorewood Illinois"
+        title="Yard Signs and Sidewalk Signs Work Better Together"
+        href="/signs/ground-signs/yard-signs"
         direction="right"
     />
     <x-ui.card-banner-slide-in
