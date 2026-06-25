@@ -20,7 +20,7 @@
 | top5pct-custom-face-mask-sublimated.jpg | 688K | May 11 | R1 |
 | top5pct-dye-sublimation-custom-shirt-joliet.jpg | 302K | Jun 2 | R2 |
 | top5pct-custom-sublimation-shirts.jpg | 331K | Jun 2 | R2 |
-| top5pct-sublmation-team-shirts.jpg | 385K | Jun 2 | R2 |
+| top5pct-sublimation-team-shirts.jpg | 385K | Jun 2 | R2 |
 | top5pct-dye-sublimation-jerseys.jpg | 294K | Jun 3 | R2+ |
 | top5pct-sublimation-tees.jpg | 365K | Jun 3 | R2+ |
 | top5pct-sublimated-graphic-tees.jpg | 402K | Jun 3 | R2+ |
@@ -49,7 +49,7 @@ All 14 sublimation/ files are referenced by the blade. No unused same-dir files 
 | card-2 — card-image-with-text (imagePosition right) | top5pct-sublimation-shirt-printer.jpg | sublimation/ | R1 | May 11 | 345K | good |
 | card-detailed image1 — card-detailed-info | top5pct-sublimation-shirt.jpg | sublimation/ | R1 | May 11 | 638K | good |
 | slide-L — card-banner-slide-in (direction left) | top5pct-custom-sublimation-shirts.jpg | sublimation/ | R2 | Jun 2 | 331K | good, same-category accepted |
-| slide-R — card-banner-slide-in (direction right) | top5pct-sublmation-team-shirts.jpg | sublimation/ | R2 | Jun 2 | 385K | rule violation, see notes |
+| slide-R — card-banner-slide-in (direction right) | top5pct-custom-glitter-sweatshirts.jpg | glitter-shirts/ | R2 | Jun 2 | 316K | good, cross-sell |
 
 Note: `card-detailed-info` on this page uses only `image1`. There is no `image2` slot on this component instance.
 
@@ -61,18 +61,6 @@ Note: `card-detailed-info` on this page uses only `image1`. There is no `image2`
 **Remaining (Initial):** 0
 
 All 14 blade image slots are R1-R3. No Initial files anywhere on this page.
-
----
-
-## Rule Violations
-
-### slide-R — not a cross-sell
-
-The rule requires slide-R to always be a cross-sell to an R1-R3 image from another category. The current slide-R uses `top5pct-sublmation-team-shirts.jpg` (sublimation/, R2, Jun 2) — a same-dir sublimation image. This is not a cross-sell.
-
-The slide title "Combine Dye Sub With Flock, Glitter, or Embroidery" references other categories explicitly, which is cross-sell language. The image must match that intent by coming from a different category dir.
-
-All 14 sublimation/ dir files are already placed on this page. No unused same-dir file is available. The slide-R image must come from another category.
 
 ---
 
@@ -90,7 +78,7 @@ All 14 sublimation/ dir files are already placed on this page. No unused same-di
 | card-2 | R1 — good |
 | card-detailed image1 | R1 — good |
 | slide-L | R2 — good, same-category accepted |
-| slide-R | R2 — filled (separate rule violation, does not affect carousel count) |
+| slide-R | R2 — good, cross-sell (fixed Jun 25) |
 
 All non-carousel slots are R1-R3. Carousel stays at 8.
 
@@ -102,7 +90,7 @@ All non-carousel slots are R1-R3. Carousel stays at 8.
 |---|---|---|---|---|
 | top5pct-dye-sublimation-custom-shirt-joliet.jpg | sublimation/ | 302K | R2 | hero only |
 | top5pct-custom-sublimation-shirts.jpg | sublimation/ | 331K | R2 | slide-L only |
-| top5pct-sublmation-team-shirts.jpg | sublimation/ | 385K | R2 | slide-R only |
+| top5pct-sublimation-team-shirts.jpg | sublimation/ | 385K | R2 | unused (replaced Jun 25; filename corrected) |
 | top5pct-dye-sublimation-jerseys.jpg | sublimation/ | 294K | R2+ | C-5 only |
 | top5pct-sublimation-tees.jpg | sublimation/ | 365K | R2+ | C-8 only |
 | top5pct-sublimated-graphic-tees.jpg | sublimation/ | 402K | R2+ | C-7 only |
@@ -147,48 +135,19 @@ From glitter-shirts page audit: `top5pct-custom-glitter-sweatshirts.jpg` (glitte
 
 ---
 
-## Immediate Suggestion
+## Changes Made Jun 25, 2026
 
-### 1. Fix slide-R — replace with a cross-sell from embroidery/, glitter-shirts/, or holographic-shirts/
+| slot / item | from | to |
+|---|---|---|
+| slide-R | top5pct-sublmation-team-shirts.jpg (sublimation/, R2, same-category) | top5pct-custom-glitter-sweatshirts.jpg (glitter-shirts/, R2, cross-sell) |
+| filename | top5pct-sublmation-team-shirts.jpg (typo) | top5pct-sublimation-team-shirts.jpg (corrected) |
 
-The slide title "Combine Dye Sub With Flock, Glitter, or Embroidery" makes embroidery or glitter the most natural cross-sell choice. The image must come from a dir other than sublimation/.
-
-| candidate | path | round | size | note |
-|---|---|---|---|---|
-| top5pct-custom-glitter-sweatshirts.jpg | glitter-shirts/ | R2 | 316K | recommended, matches "Glitter" in slide title, unused on glitter page |
-| top5pct-embroidery-in-joliet.jpg | embroidery/ | R1 | 379K | alternative, matches "Embroidery" in slide title |
-| top5pct-embroidered-cap-embroidered-beanies-joliet.jpg | embroidery/ | R3 | 346K | alternative, R3 |
-| top5pct-holographic-vinyl-hoodie-foil.jpg | holographic-shirts/ | R3 | 527K | alternative, R3 |
-
-Recommended: `top5pct-custom-glitter-sweatshirts.jpg` (glitter-shirts/, R2, Jun 2, 316K). It directly matches "Glitter" in the slide title, is unused on the glitter page, and is R2.
-
----
-
-## After Suggestion Applied
-
-| slot | image | path | round | status |
-|---|---|---|---|---|
-| hero | top5pct-dye-sublimation-custom-shirt-joliet.jpg | sublimation/ | R2 | good |
-| C-1 | top5pct-sublimation-shirts.jpg | sublimation/ | R1 | good |
-| C-2 | top5pct-custom-face-mask-sublimated.jpg | sublimation/ | R1 | good |
-| C-3 | top5pct-custom-sublimated-towels.jpg | sublimation/ | R1 | good |
-| C-4 | top5pct-dye-sublimated-longsleeve-shirt-joliet.jpg | sublimation/ | R1 | good |
-| C-5 | top5pct-dye-sublimation-jerseys.jpg | sublimation/ | R2+ | good |
-| C-6 | top5pct-dye-sublimation-tees.jpg | sublimation/ | R2+ | good |
-| C-7 | top5pct-sublimated-graphic-tees.jpg | sublimation/ | R2+ | good |
-| C-8 | top5pct-sublimation-tees.jpg | sublimation/ | R2+ | good |
-| card-1 | top5pct-dye-sublimation-shirts.jpg | sublimation/ | R1 | good |
-| card-2 | top5pct-sublimation-shirt-printer.jpg | sublimation/ | R1 | good |
-| card-detailed image1 | top5pct-sublimation-shirt.jpg | sublimation/ | R1 | good |
-| slide-L | top5pct-custom-sublimation-shirts.jpg | sublimation/ | R2 | good, same-category accepted |
-| slide-R | top5pct-custom-glitter-sweatshirts.jpg | glitter-shirts/ | R2 | good, cross-sell |
-
-All 14 blade image slots R1-R3. Carousel stays at 8. No Initial files. No rule violations. R4 audit ready.
+Renamed file is now unused in the blade. It remains in sublimation/ dir for potential future use.
 
 ---
 
 ## Notes
 
-- `top5pct-sublmation-team-shirts.jpg` has a typo in the filename ("sublmation"). A rename to remove the typo would require a blade update. Low priority.
+- `top5pct-sublimation-team-shirts.jpg` — filename corrected Jun 25 (was "sublmation"). File is now unused in the blade and available in sublimation/ dir.
 - slide-L title "All Over Print Apparel With No Minimums" is same-page CTA language, not a cross-sell title. slide-L rule permits same-category; this is accepted as-is.
-- R4 audit deferred until slide-R suggestion is applied.
+- All 14 slots R1-R3. No rule violations. R4 audit ready.

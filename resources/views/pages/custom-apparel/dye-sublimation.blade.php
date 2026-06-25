@@ -137,8 +137,8 @@
         direction="left"
     />
     <x-ui.card-banner-slide-in
-        image="/images/sublimation/top5pct-sublmation-team-shirts.jpg"
-        alt="Custom dye sublimation team shirts and jerseys in Joliet Illinois"
+        image="/images/glitter-shirts/top5pct-custom-glitter-sweatshirts.jpg"
+        alt="Custom glitter sweatshirts and specialty apparel by Top 5 Percent in Joliet Illinois"
         title="Combine Dye Sub With Flock, Glitter, or Embroidery"
         href="/contact"
         direction="right"
