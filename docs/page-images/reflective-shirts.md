@@ -2,7 +2,7 @@
 
 **Blade:** `resources/views/pages/custom-apparel/reflective-shirts.blade.php`
 **URL:** `/custom-apparel/specialty-materials/reflective-shirts`
-**Dir:** `public/images/reflective-shirts/` — 6 files total. 5 referenced by the blade. 1 unused (freed from card-detailed).
+**Dir:** `public/images/reflective-shirts/` — 6 files total. All 6 referenced by the blade. 0 unused.
 **Verified:** Jun 25, 2026
 
 ---
@@ -16,7 +16,7 @@
 | carousel C-2 — carousel-rotating-images | top5pct-reflective-shirts.jpg | reflective-shirts/ | R3 | Jun 8 | 124K | good |
 | carousel C-3 — carousel-rotating-images | top5pct-reflective-shirts-shorewood.jpg | reflective-shirts/ | R3 | Jun 8 | 235K | good |
 | card-1 — card-image-with-text | top5pct-reflective-vinyl-shirts-plainfield.jpg | reflective-shirts/ | R3 | Jun 8 | 166K | good |
-| card-2 — card-image-with-text (imagePosition right) | top5pct-custom-reflective-shirts-hoodies-caps-joliet.jpg | reflective-shirts/ | Initial | Jun 8 | 26K | initial, small file, repeat of C-1 |
+| card-2 — card-image-with-text (imagePosition right) | top5pct-custom-reflective-shirts-hoodies-caps-joliet.jpg | reflective-shirts/ | Initial | Jun 8 | 26K | initial, small file |
 | card-detailed image1 — card-detailed-info | top5pct-foil-shirts-cresthill.jpg | foil-shirts/ | R3 | Jun 8 | 336K | good, cross-sell |
 | slide-L — card-banner-slide-in (direction left) | top5pct-vinyl-shirts.jpg | vinyl/ | R3 | Jun 8 | 379K | good, cross-sell |
 | slide-R — card-banner-slide-in (direction right) | top5pct-halloween-pumpkin-glow-shirt.jpg | glow-shirts/ | R3 | Jun 8 | 353K | good, cross-sell |
@@ -40,11 +40,7 @@ Carousel is 3 slots, all R3. All card and slide slots are R3 except card-2. The 
 
 ## Unused Files in Dir
 
-| file | round | date | size | note |
-|---|---|---|---|---|
-| top5pct-custom-reflective-shirts-hoodies-caps-joliet.jpg | Initial | Jun 8 | 26K | removed from carousel Jun 25, still referenced by card-2 |
-
-The 26K Initial file has been removed from the carousel and card-detailed as of Jun 25. It remains only in card-2.
+None. All 6 reflective-shirts files are referenced by the blade. The 26K Initial file (`top5pct-custom-reflective-shirts-hoodies-caps-joliet.jpg`) was removed from the carousel and card-detailed on Jun 25 and now appears only in card-2.
 
 ---
 
