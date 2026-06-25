@@ -157,10 +157,10 @@
         name="Gerardo Munoz Jr"
     />
     <x-ui.card-banner-slide-in
-        image="/images/spirit-wear/top5pct-plainfield-south-high-school-hoodie.jpg"
-        alt="Custom spirit wear and school hoodies printed by Top 5 Percent in Joliet Illinois"
-        title="Spirit Wear for Your School or Team"
-        href="/contact"
+        image="/images/corporate-wear/top5pct-landscaping-clothing-joliet.jpg"
+        alt="Custom corporate wear and business apparel from Top 5 Percent in Joliet Illinois"
+        title="Corporate Wear and Group Apparel for Your Business"
+        href="/custom-apparel/group-wear/corporate-wear-shirts"
         direction="left"
     />
     <x-ui.card-banner-slide-in
