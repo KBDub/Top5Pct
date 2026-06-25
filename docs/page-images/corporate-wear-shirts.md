@@ -3,7 +3,7 @@
 **Blade:** `resources/views/pages/custom-apparel/group-wear/corporate-wear-shirts.blade.php`
 **URL:** `/custom-apparel/group-wear/corporate-wear-shirts`
 **Primary dir:** `public/images/corporate-wear/` — 16 files
-**Cross-sell dirs:** `public/images/vehicle-magnets/`, `public/images/spirit-wear/`
+**Cross-sell dirs:** `public/images/reunion-shirts/`, `public/images/spirit-wear/`
 **Verified:** Jun 25, 2026
 
 ---
@@ -64,7 +64,7 @@ Slots in blade order. Hero is first, carousel next, then body, then slides.
 | card-3 | card-image-with-text | top5pct-custom-cap-hat-joliet-shorewood-rockdale.jpg | corporate-wear/ | Mar 16 | **Initial** | 40K | violation: Initial; 40K very small |
 | card-detailed image1 | card-detailed-info | top5pct-custom-corporate-t-shirts-joliet-shorewood.jpg | corporate-wear/ | Mar 16 | **Initial** | 44K | violation: Initial; 44K very small |
 | card-detailed image2 | card-detailed-info | top5pct-custom-hoodie-pullover-joliet-shorewood.jpg | corporate-wear/ | Mar 16 | **Initial** | 41K | violation: Initial; 41K very small |
-| slide-R | card-banner-slide-in (direction right) | top5pct-truck-sign-magnets-joliet.jpg | vehicle-magnets/ | Jun 2 | R2 | 364K | good — vehicle magnets cross-sell for business branding |
+| slide-R | card-banner-slide-in (direction right) | top5pct-class-reunion-shirt.jpg | reunion-shirts/ | May 11 | R1 | 554K | good — reunion shirts cross-sell |
 | slide-L | card-banner-slide-in (direction left) | top5pct-volleyball-team-uniforms-joliet.jpg | spirit-wear/ | Jun 2 | R2 | 606K | good — spirit wear / team apparel cross-sell |
 
 ---
@@ -84,7 +84,7 @@ Slots in blade order. Hero is first, carousel next, then body, then slides.
 | card-1 | top5pct-landscaping-clothing-joliet.jpg | R1 | good |
 | card-2 | top5pct-lawn-care-clothing.jpg | R1 | good |
 | card-2image image1 | top5pct-safety-work-gear-joliet.jpg | R1 | good |
-| slide-R | top5pct-truck-sign-magnets-joliet.jpg | R2 | good — vehicle magnets cross-sell |
+| slide-R | top5pct-class-reunion-shirt.jpg | R1 | good — reunion shirts cross-sell |
 | slide-L | top5pct-volleyball-team-uniforms-joliet.jpg | R2 | good — spirit wear cross-sell |
 
 **Initial (not R1-R3) — 4 slots remaining to fill:**
@@ -118,7 +118,7 @@ Slots in blade order. Hero is first, carousel next, then body, then slides.
 | card-3 | top5pct-custom-cap-hat-joliet-shorewood-rockdale.jpg | Initial | not filled |
 | card-detailed image1 | top5pct-custom-corporate-t-shirts-joliet-shorewood.jpg | Initial | not filled |
 | card-detailed image2 | top5pct-custom-hoodie-pullover-joliet-shorewood.jpg | Initial | not filled |
-| slide-R | top5pct-truck-sign-magnets-joliet.jpg | R2 | good |
+| slide-R | top5pct-class-reunion-shirt.jpg | R1 | good |
 | slide-L | top5pct-volleyball-team-uniforms-joliet.jpg | R2 | good |
 
 Over-target condition is NOT met — 4 non-carousel slots are Initial. Carousel must stay at 4. It is already at 4. **No carousel changes needed.**
@@ -129,11 +129,11 @@ Carousel round quality: C-1, C-2, C-4 are R1; C-3 is R2. All four are same-dir (
 
 ## Rule Violations
 
-**None.** Both slides are proper R2 cross-sells from different category dirs.
+**None.** Both slides are proper R1-R2 cross-sells from different category dirs.
 
 | slot | direction | image | dir | date | round | cross-sell | status |
 |---|---|---|---|---|---|---|---|
-| slide-R | right | top5pct-truck-sign-magnets-joliet.jpg | vehicle-magnets/ | Jun 2 | R2 | yes — vehicle magnets, business branding tie-in | good |
+| slide-R | right | top5pct-class-reunion-shirt.jpg | reunion-shirts/ | May 11 | R1 | yes — reunion shirts, group apparel cross-sell | good |
 | slide-L | left | top5pct-volleyball-team-uniforms-joliet.jpg | spirit-wear/ | Jun 2 | R2 | yes — spirit wear / team uniforms | good |
 
 ---
@@ -185,7 +185,7 @@ All changes listed below require new photography. None can be resolved with curr
 | top5pct-article-corporate-wear-pic2.jpg | corporate-wear/ | 15K | Mar 16 | Initial | unused — not suitable for any body slot |
 | top5pct-custom-button-up-shirt-joliet-shorewood.jpg | corporate-wear/ | 42K | Mar 16 | Initial | unused — not suitable for any body slot |
 | top5pct-custom-polo-shirts-joliet-shorewood-crest-hill.jpg | corporate-wear/ | 30K | Mar 16 | Initial | unused — not suitable for any body slot |
-| top5pct-truck-sign-magnets-joliet.jpg | vehicle-magnets/ | 364K | Jun 2 | R2 | slide-R — vehicle magnets cross-sell |
+| top5pct-class-reunion-shirt.jpg | reunion-shirts/ | 554K | May 11 | R1 | slide-R — reunion shirts cross-sell |
 | top5pct-volleyball-team-uniforms-joliet.jpg | spirit-wear/ | 606K | Jun 2 | R2 | slide-L — spirit wear cross-sell |
 
 ---

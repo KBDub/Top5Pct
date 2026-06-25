@@ -151,10 +151,10 @@
         name="Vicky Donis"
     />
     <x-ui.card-banner-slide-in
-        image="/images/vehicle-magnets/top5pct-truck-sign-magnets-joliet.jpg"
-        alt="Custom vehicle magnets and truck signs printed by Top 5 Percent in Joliet Illinois"
-        title="Brand Your Business Vehicles with Custom Magnets"
-        href="/vehicle-graphics/vehicle-magnets"
+        image="/images/reunion-shirts/top5pct-class-reunion-shirt.jpg"
+        alt="Custom reunion shirts and group apparel from Top 5 Percent in Joliet Illinois"
+        title="Custom Reunion Shirts for Your Group or Event"
+        href="/custom-apparel/group-wear/reunion-shirts"
         direction="right"
     />
     <x-ui.card-banner-slide-in
