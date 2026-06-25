@@ -55,10 +55,15 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/spirit-wear/top5pct-spirit-wear-shirts.jpg',            'alt' => 'Custom spirit wear shirts printed by Top 5 Percent in Joliet Illinois'],
-            ['src' => '/images/spirit-wear/top5pct-spirit-wear-clothing.jpg',          'alt' => 'Custom spirit wear clothing in Joliet Illinois'],
+            ['src' => '/images/spirit-wear/top5pct-spirit-wear-shirts.jpg',              'alt' => 'Custom spirit wear shirts printed by Top 5 Percent in Joliet Illinois'],
+            ['src' => '/images/spirit-wear/top5pct-spirit-wear-clothing.jpg',            'alt' => 'Custom spirit wear clothing in Joliet Illinois'],
             ['src' => '/images/spirit-wear/top5pct-volleyball-team-uniforms-joliet.jpg', 'alt' => 'Custom volleyball team uniforms in Joliet Illinois'],
-            ['src' => '/images/spirit-wear/top5pct-spirit-wear-volleyball-track.jpg',  'alt' => 'Custom spirit wear for volleyball and track teams in Joliet Illinois'],
+            ['src' => '/images/spirit-wear/top5pct-spirit-wear-volleyball-track.jpg',   'alt' => 'Custom spirit wear for volleyball and track teams in Joliet Illinois'],
+            ['src' => '/images/spirit-wear/top5pct-spirit-t-shirts-romeoville.jpg',     'alt' => 'Custom spirit t-shirts printed in Romeoville Illinois'],
+            ['src' => '/images/spirit-wear/top5pct-spirit-wear-football-joliet.jpg',    'alt' => 'Custom spirit wear for football teams in Joliet Illinois'],
+            ['src' => '/images/spirit-wear/top5pct-spirit-wear-gear-joliet.jpg',        'alt' => 'Custom spirit wear gear printed in Joliet Illinois'],
+            ['src' => '/images/spirit-wear/top5pct-spirit-wear-pullovers-joliet.jpg',   'alt' => 'Custom spirit wear pullovers printed in Joliet Illinois'],
+            ['src' => '/images/spirit-wear/top5pct-spirit-wear-shirts-channahon.jpg',   'alt' => 'Custom spirit wear shirts printed in Channahon Illinois'],
         ]"
         visible=2
     />
@@ -69,8 +74,8 @@
     />
 
         <x-sections.card-image-with-text
-            image="/images/spirit-wear/top5pct-joliet-west-spirit-wear-hoodie-shorewood.jpg"
-            alt="Joliet West high school spirit wear hoodie printed by Top 5 Percent in Shorewood Illinois"
+            image="/images/spirit-wear/top5pct-spirit-school-gear-joliet.jpg"
+            alt="Custom school spirit gear printed by Top 5 Percent in Joliet Illinois"
             title="School Spirit Wear"
         >
             <p class="mb-4">We are the spirit wear experts for schools, teams, and organizations across the Chicagoland area, a veteran owned <a href="/custom-apparel" class="link-notification">custom apparel shop</a> that has served Will and DuPage County since 2017. We have printed custom shirts and hoodies for schools in Joliet, Shorewood, Plainfield, Crest Hill, Minooka, and many other communities throughout Will and DuPage County. When your students and fans show up to a game or school event wearing matching spirit wear, it creates a sense of pride and energy that goes well beyond the event itself, the same energy that drives our popular <a href="/custom-apparel/group-wear/reunion-shirts" class="link-notification">reunion shirt</a> orders for groups who want everyone to feel included.</p>
@@ -80,8 +85,8 @@
         </x-sections.card-image-with-text>
 
         <x-sections.card-image-with-text
-            image="/images/spirit-wear/top5pct-spiritwear-fanwear-joliet-plainfield-shorewood.jpg"
-            alt="Custom fan wear and spirit wear for teams in Joliet Plainfield and Shorewood Illinois"
+            image="/images/spirit-wear/top5pct-spirit-wear-mom-joliet.jpg"
+            alt="Custom fan and spirit wear for parents and fans in Joliet Illinois"
             title="Custom Fan Wear"
             imagePosition="right"
         >
@@ -96,10 +101,10 @@
         <x-sections.cta-quadruple-button-banner />
 
         <x-sections.card-2image-with-text
-            image1="/images/spirit-wear/top5pct-sator-sanchez-school-shirt-joliet-crest-hill.jpg"
-            alt1="Custom school spirit shirt for Sator Sanchez printed by Top 5 Percent in Joliet and Crest Hill"
-            image2="/images/spirit-wear/top5pct-plainfield-south-high-school-hoodie.jpg"
-            alt2="Plainfield South high school custom spirit hoodie printed by Top 5 Percent"
+            image1="/images/spirit-wear/top5pct-spirit-wear-hoodies-joliet.jpg"
+            alt1="Custom spirit wear hoodies printed by Top 5 Percent in Joliet Illinois"
+            image2="/images/spirit-wear/top5pct-spirit-wear-apparel-joliet.jpg"
+            alt2="Custom spirit wear apparel printed by Top 5 Percent in Joliet Illinois"
             title="Spirit Wear That Delivers"
         >
             <p class="mb-4">We take our commitment to our customers very seriously. Since we opened our doors in Joliet in 2017, we have never been late on an order, and our full <a href="/custom-apparel" class="link-notification">custom apparel</a> lineup has expanded every year to serve more schools, teams, and organizations across Will and DuPage County. When we give you a completion date, that is the date your order will be ready, including for rush <a href="/custom-apparel/group-wear/reunion-shirts" class="link-notification">reunion shirt</a> orders that need to be ready before a family event. Many printing companies make promises they cannot keep. We are not that company.</p>
@@ -109,8 +114,8 @@
         </x-sections.card-2image-with-text>
 
         <x-sections.card-image-with-text
-            image="/images/spirit-wear/top5pct-bowling-shirts-joliet-shorewood-crest-hill.jpg"
-            alt="Custom bowling shirts and league spirit wear printed in Joliet Shorewood and Crest Hill Illinois"
+            image="/images/spirit-wear/top5pct-spirit-gear-baseball-jerseys-joliet.jpg"
+            alt="Custom baseball jerseys and recreational league spirit gear printed in Joliet Illinois"
             title="League and Recreational Spirit Wear"
         >
             <p class="mb-4">We create custom spirit wear for recreational leagues, community clubs, and organized group activities all across the Chicagoland area, part of our full <a href="/custom-apparel" class="link-notification">custom apparel</a> service in Joliet. Bowling leagues, softball teams, dart leagues, golf outings, and neighborhood associations all benefit from having a unified look. When everyone in your group is wearing the same custom shirt, it builds a sense of belonging and pride, and our <a href="/design-services" class="link-notification">design team</a> is here to help you build that look from scratch.</p>
