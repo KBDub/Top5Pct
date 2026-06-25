@@ -51,6 +51,7 @@ Dir summary: 0 Initial, 0 R1, 0 R2, 12 R3 (4 dated Jun 4, 8 dated Jun 8). 12 fil
 | C-2 | carousel-rotating-images | top5pct-table-cloths.jpg | table-cloths/ | R3 | Jun 8 | 333K | good |
 | C-3 | carousel-rotating-images | top5pct-table-cloth-8-feet.jpg | table-cloths/ | R3 | Jun 4 | 153K | good |
 | C-4 | carousel-rotating-images | top5pct-table-cloth-customized.jpg | table-cloths/ | R3 | Jun 4 | 249K | good |
+| C-5 | carousel-rotating-images | top5pct-table-cloths-crest-hill.jpg | table-cloths/ | R4 | Jun 20 | 430K | good — R4 same-dir; carousel expansion |
 | card-1 | card-image-with-text | top5pct-custom-table-cloth-business.jpg | table-cloths/ | R3 | Jun 8 | 354K | good |
 | card-2 | card-image-with-text (imagePosition right) | top5pct-printed-table-cloths.jpg | table-cloths/ | R3 | Jun 8 | 199K | good |
 | card-detailed image1 | card-detailed-info | top5pct-table-cloths-for-businesses.jpg | table-cloths/ | R3 | Jun 4 | 222K | good |
@@ -61,31 +62,20 @@ Dir summary: 0 Initial, 0 R1, 0 R2, 12 R3 (4 dated Jun 4, 8 dated Jun 8). 12 fil
 
 ## R1-R3 Placement Summary
 
-**Total blade image slots:** 10
-**Filled R1-R3:** 10
+**Total blade image slots:** 11
+**Filled R1-R4:** 11
 **Remaining:** 0
 
-All 10 blade image slots are R1-R3. No Initial images in blade. Page is clean.
+All 11 blade image slots are R1-R4. No Initial images in blade. Page is clean.
 
 ---
 
 ## Carousel
 
-**Current slots:** 4
-**Target:** 4. May exceed 4 if all non-carousel slots are R1-R3.
+**Current slots:** 5
+**Target:** 4. Expanded to 5 Jun 25 — over-target condition met.
 
-**Non-carousel slot check:**
-
-| slot | image | round | status |
-|---|---|---|---|
-| hero | top5pct-custom-table-cloth.jpg | R3 | good |
-| card-1 | top5pct-custom-table-cloth-business.jpg | R3 | good |
-| card-2 | top5pct-printed-table-cloths.jpg | R3 | good |
-| card-detailed image1 | top5pct-table-cloths-for-businesses.jpg | R3 | good |
-| slide-L | top5pct-table-cloth-with-photos.jpg | R3 | good, same-category |
-| slide-R | top5pct-retractable-banner.jpg | R1 | good, cross-sell |
-
-All 6 non-carousel slots are R1-R3. Carousel is at exactly 4, all same-dir table-cloths/ R3. Carousel expansion is eligible. Three unused R3 table-cloths/ files exist but are all small (21K, 43K, 101K) — not strong carousel candidates. Expansion deferred to R4 when larger images are available.
+All 6 non-carousel slots are R1-R4. C-5 added Jun 25 with `top5pct-table-cloths-crest-hill.jpg` (R4, 430K, same-dir).
 
 ---
 
@@ -114,6 +104,7 @@ slide-R cross-sells to banners/, the most referenced complementary product in th
 | top5pct-table-cloths-for-businesses.jpg | table-cloths/ | 222K | R3 | card-detailed image1 only |
 | top5pct-table-cloth-with-photos.jpg | table-cloths/ | 211K | R3 | slide-L only |
 | top5pct-retractable-banner.jpg | banners/ | 234K | R1 | slide-R only |
+| top5pct-table-cloths-crest-hill.jpg | table-cloths/ | 430K | R4 | C-5 only |
 | top5pct-banner-custom-table-cloth-custom-table-runner-joliet.jpg | table-cloths/ | 101K | R3 | unused |
 | top5pct-custom-table-cloth-joliet-crest-hill.jpg | table-cloths/ | 43K | R3 | unused; small |
 | top5pct-article-custom-table-cloths-joliet.jpg | table-cloths/ | 21K | R3 | unused; very small |
@@ -124,11 +115,11 @@ No duplicate image use across blade slots.
 
 ## Notes
 
-- 10 of 10 blade image slots are R1-R3 as of Jun 25, 2026. Page is clean.
+- 11 of 11 blade image slots are R1-R4 as of Jun 25, 2026. Page complete.
+- 1 change made Jun 25: C-5 added with `top5pct-table-cloths-crest-hill.jpg` (R4, 430K, same-dir).
 - Jun 4 confirmed as R3 by user on Jun 25, 2026.
 - No rule violations. No Initial images in blade or unused pool.
 - slide-R cross-sells to banners/ (R1, May 11), confirmed.
 - slide-L is same-category table-cloths/ R3, direction left — permitted.
-- Carousel at exactly 4, all table-cloths/ same-dir R3. Eligible for expansion but unused files are all small. Defer to R4.
-- 3 unused R3 files in dir: all small (21K, 43K, 101K). Not recommended for blade use until R4 larger images are available.
-- R4 audit ready.
+- Carousel expanded to 5. Over-target condition met. All same-dir table-cloths/.
+- 3 unused R3 files in dir remain: all small (21K, 43K, 101K) — not recommended for blade use.

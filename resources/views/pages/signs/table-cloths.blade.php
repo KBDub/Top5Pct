@@ -60,6 +60,7 @@
             ['src' => '/images/table-cloths/top5pct-table-cloths.jpg',               'alt' => 'Full color custom table cloths for events and businesses in Joliet Illinois'],
             ['src' => '/images/table-cloths/top5pct-table-cloth-8-feet.jpg',                    'alt' => 'Custom 8-foot table cloth for trade shows and events in Joliet Illinois'],
             ['src' => '/images/table-cloths/top5pct-table-cloth-customized.jpg',                'alt' => 'Customized branded table cloths printed in Joliet Illinois'],
+            ['src' => '/images/table-cloths/top5pct-table-cloths-crest-hill.jpg',              'alt' => 'Custom branded table cloths printed in Crest Hill Illinois'],
         ]"
         visible=2
     />
