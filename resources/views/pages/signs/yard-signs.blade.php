@@ -137,10 +137,10 @@
         name="Datjaeda"
     />
     <x-ui.card-banner-slide-in
-        image="/images/sidewalk-signs/top5pct-sidewalk-signs-joliet-shorewood-crest-hill.jpg"
-        alt="Custom outdoor signs for businesses in Joliet, Shorewood, and Crest Hill Illinois"
-        title="Custom Yard Signs for Business and Events"
-        href="/contact"
+        image="/images/sidewalk-signs/top5pct-sidewalk-signs-plainfield.jpg"
+        alt="Custom sidewalk signs and A-frame signs for businesses in Plainfield Illinois"
+        title="Pair Your Yard Signs With a Sidewalk Sign"
+        href="/signs/ground-signs/sidewalk-signs"
         direction="left"
     />
     <x-ui.card-banner-slide-in
