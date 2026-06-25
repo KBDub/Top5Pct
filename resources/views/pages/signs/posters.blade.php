@@ -148,10 +148,10 @@
         name="Anita Estella"
     />
     <x-ui.card-banner-slide-in
-        image="/images/posters/top5pct-poster-printing-joliet-shorewood-romeoville.jpg"
-        alt="Full color poster printing at Top 5 Percent in Joliet, Shorewood, and Romeoville Illinois"
-        title="High Quality Poster Printing in Joliet"
-        href="/contact"
+        image="/images/banners/top5pct-banners-and-signs.jpg"
+        alt="Custom banners and signs printed by Top 5 Percent in Joliet, Shorewood, and Romeoville Illinois"
+        title="Need a Banner to Go With Your Poster?"
+        href="/signs/business-signs/banners"
         direction="right"
     />
     <x-ui.card-banner-slide-in
