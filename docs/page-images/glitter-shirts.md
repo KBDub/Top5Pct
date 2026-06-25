@@ -48,10 +48,10 @@ Note: `top5pct-gitter-birthday-shirt.jpg` has a typo in the filename ("gitter" i
 
 ## R1-R3 Placement Summary
 
-**Filled:** 10 of 10 slots
-**Remaining (Initial):** 0
+**Filled:** 13 of 13 slots (carousel expanded to 7)
+**Remaining:** 0
 
-All blade image slots are R1-R3. Carousel is at 4 slots, all same-dir glitter-shirts/. No Initial files remain. R4 audit ready.
+All blade image slots are R1-R4. Carousel at 7 slots. No Initial files remain.
 
 ---
 
@@ -78,10 +78,12 @@ All blade image slots are R1-R3. Carousel is at 4 slots, all same-dir glitter-sh
 | top5pct-gitter-birthday-shirt.jpg | glitter-shirts/ | 332K | R2 | card-detailed image1 only |
 | top5pct-custom-wedding-glitter-shirts.jpg | glitter-shirts/ | 336K | R2 | slide-L only |
 | top5pct-rhinestone-tshirts-joliet.jpg | rhinestone-apparel/ | 265K | R2+ | slide-R only |
-| top5pct-custom-glitter-shirt-cap-hoodie-joliet.jpg | glitter-shirts/ | 30K | Initial | unused |
-| top5pct-custom-glitter-sweatshirts.jpg | glitter-shirts/ | 316K | R2 | unused |
+| top5pct-glitter-hoodies-plainfield.jpg | glitter-shirts/ | — | R4 | C-5 only |
+| top5pct-custom-glitter-birthday-shirts-joliet.jpg | glitter-shirts/ | — | R4 | C-6 only |
+| top5pct-custom-glitter-sweatshirts.jpg | glitter-shirts/ | 316K | R2 | C-7 only |
+| top5pct-custom-glitter-shirt-cap-hoodie-joliet.jpg | glitter-shirts/ | 30K | Initial | unused (no blade slot) |
 
-Every active slot has a unique file. No file is used in more than one slot.
+Every active slot has a unique file. No file is used in more than one slot. No unused R1-R4 glitter-shirts/ files remain.
 
 ---
 
@@ -102,6 +104,5 @@ Every active slot has a unique file. No file is used in more than one slot.
 
 - `top5pct-gitter-birthday-shirt.jpg` has a typo ("gitter") in its filename. The file is R2 (Jun 2, 332K) and usable as-is. A rename would require a blade update.
 - `top5pct-glitter-sportswear-shirts.jpg` is R3 but small (99K). It holds its carousel slot because R3 outranks R2 by round. If a larger R3 glitter-shirts/ file arrives in a future round it should replace this slot.
-- `top5pct-custom-glitter-sweatshirts.jpg` (R2, 316K) is now unused. It is the strongest candidate for a 5th carousel slot if a future round lifts all remaining page slots to R1+.
-- rhinestone-apparel/ dir has only one file. If additional rhinestone R1-R3 files arrive in a future round, the slide-R cross-sell can be upgraded.
-- R4 audit ready — no Initial files remain on this page.
+- rhinestone-apparel/ dir has only one file. If additional rhinestone files arrive in a future round, the slide-R cross-sell can be upgraded.
+- R4 placed Jun 25: C-5 (top5pct-glitter-hoodies-plainfield.jpg, R4), C-6 (top5pct-custom-glitter-birthday-shirts-joliet.jpg, R4), C-7 (top5pct-custom-glitter-sweatshirts.jpg, R2, previously benched). Carousel now at 7. 13 of 13 slots R1-R4. Page complete.

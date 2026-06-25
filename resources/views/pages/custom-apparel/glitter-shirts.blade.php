@@ -60,6 +60,9 @@
             ['src' => '/images/glitter-shirts/top5pct-glitter-blue-jean-jacket.jpg',        'alt' => 'Custom glitter blue jean jacket in Joliet Illinois'],
             ['src' => '/images/glitter-shirts/top5pct-glitter-sportswear-shirts.jpg',       'alt' => 'Custom glitter sportswear shirts for teams and events in Joliet Illinois'],
             ['src' => '/images/glitter-shirts/top5pct-glitter-sweatshirts-joliet.jpg',      'alt' => 'Custom glitter sweatshirts printed in Joliet Illinois'],
+            ['src' => '/images/glitter-shirts/top5pct-glitter-hoodies-plainfield.jpg',     'alt' => 'Custom glitter hoodies printed in Plainfield and Joliet Illinois'],
+            ['src' => '/images/glitter-shirts/top5pct-custom-glitter-birthday-shirts-joliet.jpg', 'alt' => 'Custom glitter birthday shirts printed in Joliet Illinois'],
+            ['src' => '/images/glitter-shirts/top5pct-custom-glitter-sweatshirts.jpg',     'alt' => 'Custom glitter sweatshirts and apparel in Joliet Illinois'],
         ]"
         visible=2
     />
