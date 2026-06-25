@@ -47,6 +47,7 @@
         primaryButtonHref="#all-products"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
+        image="/images/can-koozies/top5pct-koozie-can-joliet.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />
@@ -79,7 +80,7 @@
     </x-sections.card-image-with-text>
 
     <x-sections.card-image-with-text
-        image="/images/can-koozies/top5pct-custom-can-koozies.jpg"
+        image="/images/can-koozies/top5pct-koozies-channahon.jpg"
         alt="Custom can koozies in foam and neoprene for events in Joliet Illinois"
         title="Foam, Neoprene, and Custom Colors"
         imagePosition="right"
@@ -124,15 +125,15 @@
         name="Chewy Orkwiszewski"
     />
     <x-ui.card-banner-slide-in
-        image="/images/can-koozies/top5pct-can-koozies.jpg"
-        alt="Custom branded can koozies and drink holders from Top 5 Percent in Joliet Illinois"
+        image="/images/mugs/top5pct-custom-coffee-mugs-in-joliet.jpg"
+        alt="Custom branded mugs and drinkware from Top 5 Percent in Joliet Illinois"
         title="Custom Koozies for Your Next Event, No Minimums"
         href="/contact"
         direction="right"
     />
     <x-ui.card-banner-slide-in
-        image="/images/custom-shirts/top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg"
-        alt="Custom branded shirts and promotional apparel from Top 5 Percent in Joliet Illinois"
+        image="/images/custom-shirts/top5pct-screenprinted-shirts-joliet.jpg"
+        alt="Custom screen printed shirts and apparel from Top 5 Percent in Joliet Illinois"
         title="Add Custom Shirts to Your Koozie Order, Team Packages Available"
         href="/contact"
         direction="left"
