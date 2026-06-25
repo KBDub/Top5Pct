@@ -121,8 +121,8 @@
 
             <x-sections.card-detailed-info
                 heading="The Benefits of Custom Tablecloths for Your Business"
-                image1="/images/table-runners/top5pct-article-custom-table-cloths-joliet.jpg"
-                alt1="Custom printed tablecloths and table runners for businesses in Joliet, Will and DuPage County Illinois"
+                image1="/images/table-runners/top5pct-custom-table-cloth.jpg"
+                alt1="Custom printed table cloth for businesses in Joliet, Will and DuPage County Illinois"
             >
                 <x-slot name="intro">
                     <p class="mb-4">A custom tablecloth is one of the most underrated branding tools available to small businesses and organizations in the Chicagoland area. When you set up at a trade show, a community event, a craft fair, or an outdoor market in Joliet, Shorewood, Plainfield, or anywhere in Will and DuPage County, your table is often the first thing people see before they see you, and a fully branded custom tablecloth paired with an overhead <a href="/signs/business-signs/banners" class="link-notification">banner</a> creates a booth presence that commands attention from across the room. We have helped businesses of every kind in the greater Chicagoland area make a stronger impression at events with custom printed table covers and table runners.</p>
@@ -149,10 +149,10 @@
         name="Yolanda S. Flowers"
     />
     <x-ui.card-banner-slide-in
-        image="/images/table-runners/top5pct-custom-table-runner-joliet-shorewood.jpg"
-        alt="Custom printed table runners and table cloths for events from Top 5 Percent in Joliet and Shorewood Illinois"
-        title="Custom Table Runners for Any Event"
-        href="/contact"
+        image="/images/table-cloths/top5pct-custom-table-cloth.jpg"
+        alt="Custom branded table cloths and table covers for events and trade shows in Joliet Illinois"
+        title="Looking for a Full Table Cover? Try Our Custom Table Cloths"
+        href="/signs/table-signs/table-cloths"
         direction="right"
     />
     <x-ui.card-banner-slide-in
