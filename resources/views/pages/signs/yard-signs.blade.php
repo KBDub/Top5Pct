@@ -80,7 +80,7 @@
         </x-sections.card-image-with-text>
 
         <x-sections.card-image-with-text
-            image="/images/sidewalk-signs/top5pct-sidewalk-signs-joliet-old.jpg"
+            image="/images/sidewalk-signs/top5pct-sidewalk-signs-joliet-illinois.jpg"
             alt="Custom outdoor signage for businesses in Joliet Illinois"
             title="Real Estate and Political Signs"
             imagePosition="right"

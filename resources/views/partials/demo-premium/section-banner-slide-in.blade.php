@@ -25,7 +25,7 @@
             <div>
                 <p class="text-sm text-charcoal-light mb-3 font-semibold">Slides in from the right</p>
                 <x-ui.card-banner-slide-in
-                    image="/images/dtf-transfers/toptpct-banner-dtf-transfers-joliet.jpg"
+                    image="/images/dtf-transfers/top5pct-banner-dtf-transfers-joliet.jpg"
                     alt="DTF transfers printing in Joliet"
                     title="DTF Transfers"
                     href="/custom-apparel/printing-options/dtf-printing"

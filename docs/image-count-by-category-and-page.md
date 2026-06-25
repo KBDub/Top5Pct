@@ -1,6 +1,6 @@
 # Image Count by Category and Page
 
-**Generated:** Jun 25, 2026
+**Generated:** Jun 25, 2026 | **Updated:** Jun 25, 2026 (May 18 confirmed R2; -old files renamed; misplaced files resolved; dtf blade typo fixed)
 **Scope:** All files in `public/images/` excluding `demo/`, `og-tags/`, `logos/`
 **Purpose:** Pre-R4 import inventory. Identifies round status, shared usage, and category misplacements.
 
@@ -12,9 +12,8 @@
 |---|---|---|
 | pre-Initial | Feb 9, 2026 | Site utility/background assets added before project launch |
 | Initial | Mar 16/17, 2026 | First product photography batch |
-| unconfirmed | May 18, 2026 | Between R1 and R2, not assigned a round. Flagged in digital-vinyl and vinyl audits. Byte-for-byte copies appear in both dirs. |
 | R1 | May 11, 2026 | |
-| R2 | Jun 2-3, 2026 | Jun 3 confirmed R2 per prior audits |
+| R2 | May 18 and Jun 2-3, 2026 | May 18 batch (digital-vinyl/ and vinyl/) confirmed R2. Jun 3 confirmed R2 per prior audits. |
 | R3 | Jun 4-9, 2026 | Window: Jun 4, 6, 7, 8, 9 all confirmed R3 |
 | post-R3 | Jun 24, 2026 | One file added after R3 window; treat as standalone until R4 |
 
@@ -253,7 +252,7 @@ custom-shaped-stickers-decals total: 17 files. R3: 1, R2: 4, R1: 5, Initial: 7.
 | top5pct-custom-flock-t-shirt-printing.jpg | Jun 2 | R2 | 490K | yes (4) | move to flock-shirts/ |
 | top5pct-custom-foil-polo.jpg | Jun 2 | R2 | 212K | no | move to foil-shirts/ |
 | top5pct-custom-foil-shirts-hoodies-caps-joliet.jpg | Mar 16 | Initial | 35K | yes (7) | move to foil-shirts/ |
-| top5pct-custom-glitter-sweatshirts-old.jpg | May 11 | R1 | 360K | no | move to glitter-shirts/ — old version |
+| top5pct-custom-glitter-sweatshirts-joliet.jpg | May 11 | R1 | 360K | no | move to glitter-shirts/ |
 | top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg | Mar 16 | Initial | 29K | yes (3) | move to glow-shirts/ |
 | top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg | Mar 16 | Initial | 27K | yes (9) | move to holographic-shirts/ |
 | top5pct-custom-hoodies.jpg | May 11 | R1 | 287K | no | |
@@ -332,30 +331,28 @@ custom-shirts total: 68 files. R2: 25, R1: 26, Initial: 15, Mar 17: 2. Approxima
 
 ---
 
-## digital-vinyl/ (16 files)
+## digital-vinyl/ (14 files)
 
-**Note:** 12 files in this dir are the May 18 unconfirmed batch (between R1 and R2). These are byte-for-byte copies that also appear in vinyl/. Confirmed round must be established before these count as R1-R3. Also contains 2 misplaced yard-signs images.
+**Note:** 10 files in this dir are the May 18 R2 batch. Byte-for-byte copies of these also appear in vinyl/ (same filenames, same sizes). The 2 misplaced yard-signs files that were here have been removed — originals live in yard-signs/.
 
 | filename | date | round | size | shared |
 |---|---|---|---|---|
-| custom-caps-vinyl.jpg | May 18 | unconfirmed | 275K | no — copy also in vinyl/ |
-| custom-hoodies.jpg | May 18 | unconfirmed | 287K | no — copy also in vinyl/ |
-| custom-vinyl-hoodies.jpg | May 18 | unconfirmed | 296K | yes (3) — copy also in vinyl/ |
-| custom-vinyl-shirts.jpg | May 18 | unconfirmed | 394K | yes (2) — copy also in vinyl/ |
-| neon-vinyl-shirts.jpg | May 18 | unconfirmed | 289K | no — copy also in vinyl/ |
-| top5pct-article-yard-signs-buy.jpg | May 18 | unconfirmed | 46K | no — misplaced: belongs in yard-signs/ |
-| top5pct-banner-yard-signs-joliet-shorewood-crest-hill.jpg | May 18 | unconfirmed | 94K | no — misplaced: belongs in yard-signs/ |
+| custom-caps-vinyl.jpg | May 18 | R2 | 275K | no — copy also in vinyl/ |
+| custom-hoodies.jpg | May 18 | R2 | 287K | no — copy also in vinyl/ |
+| custom-vinyl-hoodies.jpg | May 18 | R2 | 296K | yes (3) — copy also in vinyl/ |
+| custom-vinyl-shirts.jpg | May 18 | R2 | 394K | yes (2) — copy also in vinyl/ |
+| neon-vinyl-shirts.jpg | May 18 | R2 | 289K | no — copy also in vinyl/ |
 | top5pct-digital-vinyl-hoodie.jpg | Jun 8 | R3 | 371K | no |
 | top5pct-digital-vinyl-hoodies-in-joliet.jpg | Jun 8 | R3 | 390K | no |
 | top5pct-digital-vinyl-shirts.jpg | Jun 8 | R3 | 689K | no |
 | top5pct-digital-vinyl-t-shirts.jpg | Jun 8 | R3 | 470K | no |
-| vinyl-caps.jpg | May 18 | unconfirmed | 553K | yes (3) — copy also in vinyl/ |
-| vinyl-hoodie.jpg | May 18 | unconfirmed | 556K | no — copy also in vinyl/ |
-| vinyl-shirts.jpg | May 18 | unconfirmed | 379K | no — copy also in vinyl/ |
-| vinyl-t-shirt-maker.jpg | May 18 | unconfirmed | 377K | no — copy also in vinyl/ |
-| vinyl-zip-up-hoodies.jpg | May 18 | unconfirmed | 414K | no — copy also in vinyl/ |
+| vinyl-caps.jpg | May 18 | R2 | 553K | yes (3) — copy also in vinyl/ |
+| vinyl-hoodie.jpg | May 18 | R2 | 556K | no — copy also in vinyl/ |
+| vinyl-shirts.jpg | May 18 | R2 | 379K | no — copy also in vinyl/ |
+| vinyl-t-shirt-maker.jpg | May 18 | R2 | 377K | no — copy also in vinyl/ |
+| vinyl-zip-up-hoodies.jpg | May 18 | R2 | 414K | no — copy also in vinyl/ |
 
-digital-vinyl total: 16 files. R3: 4, unconfirmed (May 18): 12. The 12 unconfirmed files need round assignment before they count toward R1-R3. 2 misplaced yard-signs files to move at R4.
+digital-vinyl total: 14 files. R3: 4, R2: 10. 2 misplaced yard-signs copies removed.
 
 ---
 
@@ -404,11 +401,9 @@ dot-decals total: 17 files. R3: 1, R2: 6, R1: 3, Initial: 7.
 
 ## dtf-transfers/ (13 files)
 
-**Note:** `toptpct-banner-dtf-transfers-joliet.jpg` is referenced 3 times in blades but the actual file on disk is `top5pct-banner-dtf-transfers-joliet.jpg`. This may be a broken blade reference — confirm and fix at R4.
-
 | filename | date | round | size | shared |
 |---|---|---|---|---|
-| top5pct-banner-dtf-transfers-joliet.jpg | Mar 16 | Initial | 401K | yes (3) — note: blades reference "toptpct-" (typo); verify |
+| top5pct-banner-dtf-transfers-joliet.jpg | Mar 16 | Initial | 401K | yes (3) |
 | top5pct-custom-baby-clothing-joliet.jpg | Jun 2 | R2 | 323K | no |
 | top5pct-custom-bowling-shirts-dtf.jpg | Jun 2 | R2 | 232K | no |
 | top5pct-custom-dtf-shirts.jpg | Jun 2 | R2 | 269K | yes (3) |
@@ -435,14 +430,14 @@ dtf-transfers total: 13 files. R2: 6, R1: 5, Initial: 2.
 | top5pct-embroidered-bag.jpg | Jun 2 | R2 | 304K | no |
 | top5pct-embroidered-cap-embroidered-beanies-joliet.jpg | Jun 8 | R3 | 345K | yes (2) |
 | top5pct-embroidered-caps.jpg | Jun 2 | R2 | 268K | yes (2) |
-| top5pct-embroidered-caps-old.jpg | May 11 | R1 | 636K | no — old version |
+| top5pct-embroidered-caps-joliet.jpg | May 11 | R1 | 636K | no |
 | top5pct-embroidered-smocks.jpg | Jun 2 | R2 | 332K | no |
 | top5pct-embroidered-stitched-caps.jpg | May 11 | R1 | 513K | no |
 | top5pct-embroidery-beanies.jpg | Jun 2 | R2 | 333K | yes (2) |
 | top5pct-embroidery-in-joliet.jpg | May 11 | R1 | 379K | no |
 | top5pct-stitched-embroidered-shirts.jpg | Jun 2 | R2 | 210K | yes (2) |
 
-embroidery total: 11 files. R3: 1, R2: 5, R1: 4, Initial: 1. Note: top5pct-embroidered-caps-old.jpg is a superseded version — candidate for removal at R4.
+embroidery total: 11 files. R3: 1, R2: 5, R1: 4, Initial: 1.
 
 ---
 
@@ -662,11 +657,11 @@ screen-printing total: 6 files. R3: 5, R2: 1. Additional screen-printing files i
 | top5pct-sidewalk-sign.jpg | May 11 | R1 | 519K | yes (2) |
 | top5pct-sidewalk-signage.jpg | Jun 2 | R2 | 278K | yes (3) |
 | top5pct-sidewalk-signs-joliet.jpg | Jun 2 | R2 | 443K | yes (3) |
-| top5pct-sidewalk-signs-joliet-old.jpg | May 11 | R1 | 516K | yes (2) — old version, candidate for removal |
+| top5pct-sidewalk-signs-joliet-illinois.jpg | May 11 | R1 | 516K | yes (2) |
 | top5pct-sidewalk-signs-joliet-shorewood-crest-hill.jpg | Mar 16 | Initial | 57K | no |
 | top5pct-sidewalk-signs-plainfield.jpg | Jun 8 | R3 | 150K | yes (3) |
 
-sidewalk-signs total: 15 files. R3: 3, R2: 3, R1: 4, Initial: 5. Note: top5pct-sidewalk-signs-joliet-old.jpg is a superseded version — candidate for removal at R4.
+sidewalk-signs total: 15 files. R3: 3, R2: 3, R1: 4, Initial: 5.
 
 ---
 
@@ -784,7 +779,7 @@ table-runners total: 22 files. R3: 4, R2: 3, R1: 8, Initial: 7. Note: some files
 
 ---
 
-## vehicle-magnets/ (17 files)
+## vehicle-magnets/ (18 files)
 
 | filename | date | round | size | shared |
 |---|---|---|---|---|
@@ -806,34 +801,31 @@ table-runners total: 22 files. R3: 4, R2: 3, R1: 8, Initial: 7. Note: some files
 | top5pct-truck-sign-magnets-joliet.jpg | Jun 2 | R2 | 356K | yes (3) |
 | top5pct-vehicle-magnets.jpg | May 11 | R1 | 415K | yes (2) |
 | top5pct-vehicle-magnets-joliet.jpg | May 11 | R1 | 376K | yes (2) |
-| top5pct-yard-signs-near-me.jpg | Jun 2 | R2 | 502K | no — misplaced: belongs in yard-signs/ |
 
-vehicle-magnets total: 19 files. R2: 5, R1: 8, Initial: 6. Note: top5pct-yard-signs-near-me.jpg is misplaced — belongs in yard-signs/.
+vehicle-magnets total: 18 files. R2: 4, R1: 8, Initial: 6. top5pct-yard-signs-near-me.jpg moved to yard-signs/.
 
 ---
 
-## vinyl/ (14 files)
+## vinyl/ (12 files)
 
-**Note:** 12 of these files are the May 18 unconfirmed batch. Several are byte-for-byte copies also present in digital-vinyl/. See digital-vinyl section for details.
+**Note:** 10 of these files are the May 18 R2 batch. Several are byte-for-byte copies also present in digital-vinyl/. The 2 misplaced yard-signs files have been removed — originals are in yard-signs/.
 
 | filename | date | round | size | shared |
 |---|---|---|---|---|
-| custom-caps-vinyl.jpg | May 18 | unconfirmed | 275K | no — copy in digital-vinyl/ |
-| custom-hoodies.jpg | May 18 | unconfirmed | 287K | no — copy in digital-vinyl/ |
-| custom-vinyl-hoodies.jpg | May 18 | unconfirmed | 296K | yes (2) — copy in digital-vinyl/ |
-| custom-vinyl-shirts.jpg | May 18 | unconfirmed | 394K | yes (2) — copy in digital-vinyl/ |
-| neon-vinyl-shirts.jpg | May 18 | unconfirmed | 289K | no — copy in digital-vinyl/ |
-| top5pct-article-yard-signs-buy.jpg | May 18 | unconfirmed | 46K | no — misplaced: belongs in yard-signs/ |
-| top5pct-banner-yard-signs-joliet-shorewood-crest-hill.jpg | May 18 | unconfirmed | 94K | no — misplaced: belongs in yard-signs/ |
+| custom-caps-vinyl.jpg | May 18 | R2 | 275K | no — copy in digital-vinyl/ |
+| custom-hoodies.jpg | May 18 | R2 | 287K | no — copy in digital-vinyl/ |
+| custom-vinyl-hoodies.jpg | May 18 | R2 | 296K | yes (2) — copy in digital-vinyl/ |
+| custom-vinyl-shirts.jpg | May 18 | R2 | 394K | yes (2) — copy in digital-vinyl/ |
+| neon-vinyl-shirts.jpg | May 18 | R2 | 289K | no — copy in digital-vinyl/ |
 | top5pct-vinyl-shirts.jpg | Jun 8 | R3 | 379K | yes (3) |
 | top5pct-vinyl-t-shirt-maker.jpg | Jun 8 | R3 | 377K | no |
-| vinyl-caps.jpg | May 18 | unconfirmed | 553K | yes (2) — copy in digital-vinyl/ |
-| vinyl-hoodie.jpg | May 18 | unconfirmed | 556K | no — copy in digital-vinyl/ |
-| vinyl-shirts.jpg | May 18 | unconfirmed | 379K | no |
-| vinyl-t-shirt-maker.jpg | May 18 | unconfirmed | 377K | no |
-| vinyl-zip-up-hoodies.jpg | May 18 | unconfirmed | 414K | no |
+| vinyl-caps.jpg | May 18 | R2 | 553K | yes (2) — copy in digital-vinyl/ |
+| vinyl-hoodie.jpg | May 18 | R2 | 556K | no — copy in digital-vinyl/ |
+| vinyl-shirts.jpg | May 18 | R2 | 379K | no |
+| vinyl-t-shirt-maker.jpg | May 18 | R2 | 377K | no |
+| vinyl-zip-up-hoodies.jpg | May 18 | R2 | 414K | no |
 
-vinyl total: 14 files. R3: 2, unconfirmed (May 18): 12. 2 misplaced yard-signs files same as digital-vinyl/ (also May 18). Round assignment needed for 12 files.
+vinyl total: 12 files. R3: 2, R2: 10. 2 misplaced yard-signs copies removed.
 
 ---
 
@@ -903,83 +895,90 @@ Note: Several filenames in this dir match filenames in wall-signs/ (top5pct-wall
 
 ---
 
-## yard-signs/ (13 files)
+## yard-signs/ (15 files)
 
 | filename | date | round | size | shared |
 |---|---|---|---|---|
-| top5pct-article-yard-signs-buy.jpg | Mar 16 | Initial | 46K | no — copies also in digital-vinyl/ and vinyl/ |
-| top5pct-banner-yard-signs-joliet-shorewood-crest-hill.jpg | Mar 16 | Initial | 94K | no — copies also in digital-vinyl/ and vinyl/ |
+| top5pct-article-yard-signs-buy.jpg | Mar 16 | Initial | 46K | no |
+| top5pct-banner-yard-signs-joliet-shorewood-crest-hill.jpg | Mar 16 | Initial | 94K | no |
 | top5pct-custom-yard-signs-joliet.jpg | May 11 | R1 | 496K | yes (3) |
 | top5pct-lawn-signs.jpg | May 11 | R1 | 310K | no |
 | top5pct-table-signs-joliet-shorewood-plainfield.jpg | Mar 16 | Initial | 56K | no |
 | top5pct-yard-sign-joliet.jpg | May 11 | R1 | 416K | yes (2) |
 | top5pct-yard-signs.jpg | May 11 | R1 | 417K | yes (2) |
 | top5pct-yard-signs-joliet.jpg | May 11 | R1 | 392K | yes (2) |
-| top5pct-yard-signs-joliet-old.jpg | Mar 16 | Initial | 1.8MB | no — old, 1.8MB, remove at R4 |
+| top5pct-yard-signs-joliet-illinois.jpg | May 11 | R1 | 1.8MB | no |
 | top5pct-yard-signs-joliet-plainfied-new-lenox.jpg | Mar 16 | Initial | 74K | no |
 | top5pct-yard-signs-joliet-shorewood-romeoville.jpg | Mar 16 | Initial | 339K | no |
+| top5pct-yard-signs-near-me.jpg | Jun 2 | R2 | 490K | no — moved from vehicle-magnets/ |
 | top5pct-yard-signs-plainfield.jpg | Jun 7 | R3 | 228K | no |
 | top5pct-yard-signs-rockdale.jpg | Jun 7 | R3 | 265K | no |
 | top5pct-yard-signs-shorewood.jpg | Jun 7 | R3 | 331K | yes (3) |
 
-yard-signs total: 14 files. R3: 3, R1: 5, Initial: 6. Note: top5pct-yard-signs-joliet-old.jpg is 1.8MB and an old version — remove at R4. The article and banner yard-signs images appear in this dir AND as copies in digital-vinyl/ and vinyl/ (May 18 batch) — all three copies are the same file, the vinyl/ copies are misplaced.
+yard-signs total: 15 files. R3: 3, R2: 1, R1: 6, Initial: 5. Note: top5pct-yard-signs-joliet-illinois.jpg is 1.8MB — compress at R4.
 
 ---
 
 ## Summary by Directory
 
-| dir | files | R3 | R2 | R1 | unconf | Initial | pre-Initial | notes |
-|---|---|---|---|---|---|---|---|---|
-| root | 6 | 0 | 0 | 0 | 1 | 3 | 2 | utility assets |
-| automobile-graphics | 22 | 5 | 1 | 8 | 0 | 7 | 0 | |
-| backlit-signs | 7 | 0 | 7 | 0 | 0 | 0 | 0 | fully R2 |
-| banners | 20 | 0 | 5 | 8 | 0 | 7 | 0 | |
-| brick-shirts | 2 | 2 | 0 | 0 | 0 | 0 | 0 | 5 more in custom-shirts/ |
-| business-signs | 8 | 0 | 0 | 0 | 0 | 8 | 0 | all Initial, high priority |
-| can-koozies | 5 | 0 | 3 | 2 | 0 | 0 | 0 | all R1-R2 |
-| corona-virus-signs | 8 | 0 | 0 | 0 | 0 | 8 | 0 | legacy, low priority |
-| corporate-wear | 16 | 0 | 1 | 6 | 0 | 9 | 0 | 4 body slots Initial |
-| custom-shaped-stickers-decals | 17 | 1 | 4 | 5 | 0 | 7 | 0 | |
-| custom-shirts | 68 | 0 | 25 | 26 | 0 | 15 | 0 | ~40 files need migration |
-| digital-vinyl | 16 | 4 | 0 | 0 | 12 | 0 | 0 | 2 misplaced yard-signs |
-| door-signs | 8 | 2 | 4 | 1 | 0 | 1 | 0 | |
-| dot-decals | 17 | 1 | 6 | 3 | 0 | 7 | 0 | |
-| dtf-transfers | 13 | 0 | 6 | 5 | 0 | 2 | 0 | typo in blade ref |
-| embroidery | 11 | 1 | 5 | 4 | 0 | 1 | 0 | old file to remove |
-| flock-shirts | 4 | 4 | 0 | 0 | 0 | 0 | 0 | 4 more in custom-shirts/ |
-| foil-shirts | 5 | 5 | 0 | 0 | 0 | 0 | 0 | 6 more in custom-shirts/ |
-| glitter-shirts | 11 | 2 | 7 | 1 | 0 | 1 | 0 | typo in filename |
-| glow-shirts | 4 | 4 | 0 | 0 | 0 | 0 | 0 | 4 more in custom-shirts/ |
-| holographic-shirts | 3 | 3 | 0 | 0 | 0 | 0 | 0 | 2 more in custom-shirts/ |
-| mugs | 8 | 0 | 1 | 7 | 0 | 0 | 0 | all R1-R2 |
-| outdoor-signs | 3 | 1 | 2 | 0 | 0 | 0 | 0 | small dir |
-| posters | 11 | 0 | 4 | 0 | 0 | 7 | 0 | |
-| reflective-shirts | 5 | 5 | 0 | 0 | 0 | 0 | 0 | 5 more in custom-shirts/ |
-| reunion-shirts | 17 | 1 | 0 | 6 | 0 | 10 | 0 | 7 Initial slots need photos |
-| rhinestone-apparel | 1 | 0 | 1 | 0 | 0 | 0 | 0 | severely underpopulated |
-| screen-printing | 6 | 5 | 1 | 0 | 0 | 0 | 0 | 4 more in custom-shirts/ |
-| sidewalk-signs | 15 | 3 | 3 | 4 | 0 | 5 | 0 | old file to remove |
-| spirit-wear | 13 | 0 | 3 | 2 | 0 | 8 | 0 | 5 Initial body slots |
-| standard-stickers-decals | 2 | 2 | 0 | 0 | 0 | 0 | 0 | very small dir |
-| sublimation | 14 | 0 | 7 | 7 | 0 | 0 | 0 | all R1-R2 |
-| table-cloths | 12 | 12 | 0 | 0 | 0 | 0 | 0 | fully R3 |
-| table-runners | 22 | 4 | 3 | 8 | 0 | 7 | 0 | overlap with table-cloths/ |
-| vehicle-magnets | 19 | 0 | 5 | 8 | 0 | 6 | 0 | 1 misplaced yard-sign file |
-| vinyl | 14 | 2 | 0 | 0 | 12 | 0 | 0 | 2 misplaced yard-signs |
-| wall-signs | 10 | 9 | 0 | 1 | 0 | 0 | 0 | |
-| window-signs | 18 | 8 | 3 | 4 | 0 | 3 | 1 (post-R3) | |
-| window-wall-floor-decals | 7 | 0 | 3 | 0 | 0 | 4 | 0 | overlap with wall-signs/ |
-| yard-signs | 14 | 3 | 0 | 5 | 0 | 6 | 0 | 1.8MB old file to remove |
-| **TOTAL** | **~493** | **~87** | **~100** | **~131** | **~24** | **~144** | **~2** | |
+| dir | files | R3 | R2 | R1 | Initial | pre-Initial | notes |
+|---|---|---|---|---|---|---|---|
+| root | 6 | 0 | 0 | 0 | 3 | 2 | utility assets |
+| automobile-graphics | 22 | 5 | 1 | 8 | 7 | 0 | |
+| backlit-signs | 7 | 0 | 7 | 0 | 0 | 0 | fully R2 |
+| banners | 20 | 0 | 5 | 8 | 7 | 0 | |
+| brick-shirts | 2 | 2 | 0 | 0 | 0 | 0 | 5 more in custom-shirts/ |
+| business-signs | 8 | 0 | 0 | 0 | 8 | 0 | all Initial, high priority |
+| can-koozies | 5 | 0 | 3 | 2 | 0 | 0 | all R1-R2 |
+| corona-virus-signs | 8 | 0 | 0 | 0 | 8 | 0 | legacy, low priority |
+| corporate-wear | 16 | 0 | 1 | 6 | 9 | 0 | 4 body slots Initial |
+| custom-shaped-stickers-decals | 17 | 1 | 4 | 5 | 7 | 0 | |
+| custom-shirts | 68 | 0 | 25 | 26 | 15 | 0 | ~40 files need migration |
+| digital-vinyl | 14 | 4 | 10 | 0 | 0 | 0 | copies also in vinyl/ |
+| door-signs | 8 | 2 | 4 | 1 | 1 | 0 | |
+| dot-decals | 17 | 1 | 6 | 3 | 7 | 0 | |
+| dtf-transfers | 13 | 0 | 6 | 5 | 2 | 0 | |
+| embroidery | 11 | 1 | 5 | 4 | 1 | 0 | |
+| flock-shirts | 4 | 4 | 0 | 0 | 0 | 0 | 4 more in custom-shirts/ |
+| foil-shirts | 5 | 5 | 0 | 0 | 0 | 0 | 6 more in custom-shirts/ |
+| glitter-shirts | 11 | 2 | 7 | 1 | 1 | 0 | typo in filename (gitter) |
+| glow-shirts | 4 | 4 | 0 | 0 | 0 | 0 | 4 more in custom-shirts/ |
+| holographic-shirts | 3 | 3 | 0 | 0 | 0 | 0 | 2 more in custom-shirts/ |
+| mugs | 8 | 0 | 1 | 7 | 0 | 0 | all R1-R2 |
+| outdoor-signs | 3 | 1 | 2 | 0 | 0 | 0 | small dir |
+| posters | 11 | 0 | 4 | 0 | 7 | 0 | |
+| reflective-shirts | 5 | 5 | 0 | 0 | 0 | 0 | 5 more in custom-shirts/ |
+| reunion-shirts | 17 | 1 | 0 | 6 | 10 | 0 | 7 Initial slots need photos |
+| rhinestone-apparel | 1 | 0 | 1 | 0 | 0 | 0 | severely underpopulated |
+| screen-printing | 6 | 5 | 1 | 0 | 0 | 0 | 4 more in custom-shirts/ |
+| sidewalk-signs | 15 | 3 | 3 | 4 | 5 | 0 | |
+| spirit-wear | 13 | 0 | 3 | 2 | 8 | 0 | 5 Initial body slots |
+| standard-stickers-decals | 2 | 2 | 0 | 0 | 0 | 0 | very small dir |
+| sublimation | 14 | 0 | 7 | 7 | 0 | 0 | all R1-R2 |
+| table-cloths | 12 | 12 | 0 | 0 | 0 | 0 | fully R3 |
+| table-runners | 22 | 4 | 3 | 8 | 7 | 0 | overlap with table-cloths/ |
+| vehicle-magnets | 18 | 0 | 4 | 8 | 6 | 0 | |
+| vinyl | 12 | 2 | 10 | 0 | 0 | 0 | copies also in digital-vinyl/ |
+| wall-signs | 10 | 9 | 0 | 1 | 0 | 0 | |
+| window-signs | 18 | 8 | 3 | 4 | 3 | 0 | 1 post-R3 (Jun 24) |
+| window-wall-floor-decals | 7 | 0 | 3 | 0 | 4 | 0 | overlap with wall-signs/ |
+| yard-signs | 15 | 3 | 1 | 6 | 5 | 0 | joliet-illinois is 1.8MB |
+| **TOTAL** | **~487** | **~87** | **~119** | **~122** | **~120** | **~2** | |
 
 ---
 
 ## R4 Priority Actions
 
-### 1. Resolve May 18 Unconfirmed Round (24 files)
-Files in digital-vinyl/ and vinyl/ dated May 18 need their round officially assigned before they count as R1-R3. 12 files appear in both dirs as byte-for-byte copies.
+### Completed Before R4
+- May 18 round confirmed as R2 (digital-vinyl/ and vinyl/)
+- Misplaced yard-signs copies removed from digital-vinyl/ and vinyl/
+- top5pct-yard-signs-near-me.jpg moved from vehicle-magnets/ to yard-signs/
+- DTF blade typo fixed (toptpct changed to top5pct) in demo-premium partials
+- All -old files renamed with SEO extensions: sidewalk-signs-joliet-illinois, embroidered-caps-joliet, yard-signs-joliet-illinois, custom-glitter-sweatshirts-joliet
 
-### 2. Migrate Misplaced Files from custom-shirts/ (~40 files)
+---
+
+### 1. Migrate Misplaced Files from custom-shirts/ (~40 files)
 Files clearly belonging to specific category dirs should be moved. Target dirs:
 - brick-shirts/ (5 files)
 - digital-vinyl/ (12 files)
@@ -992,35 +991,22 @@ Files clearly belonging to specific category dirs should be moved. Target dirs:
 - rhinestone-apparel/ (8 files — dir currently has only 1 file)
 - screen-printing/ (4 files)
 
-### 3. Fix Misplaced yard-signs Files
-top5pct-article-yard-signs-buy.jpg and top5pct-banner-yard-signs-joliet-shorewood-crest-hill.jpg appear in digital-vinyl/ and vinyl/ — move to yard-signs/ at R4.
-
-### 4. Move top5pct-yard-signs-near-me.jpg
-Currently in vehicle-magnets/ — move to yard-signs/.
-
-### 5. Fix Blade Typo (dtf-transfers)
-Blade references "toptpct-banner-dtf-transfers-joliet.jpg" — should be "top5pct-banner-dtf-transfers-joliet.jpg". Verify and fix the blade reference.
-
-### 6. Remove Old/Superseded Files
-- yard-signs/top5pct-yard-signs-joliet-old.jpg (1.8MB, Initial)
-- sidewalk-signs/top5pct-sidewalk-signs-joliet-old.jpg (May 11, R1)
-- embroidery/top5pct-embroidered-caps-old.jpg (May 11, R1)
-
-### 7. Fix Filename Typos
+### 2. Fix Filename Typos
 - glitter-shirts/top5pct-gitter-birthday-shirt.jpg (gitter, not glitter)
-- custom-shirts/top5pct-rhinetsone-t-shirts.jpg (rhinetsone, not rhinestone)
+- custom-shirts/top5pct-rhinetsone-t-shirts.jpg (rhinetsone, not rhinestone) — will be fixed when migrated to rhinestone-apparel/
 
-### 8. Consolidate Duplicate-Named Files Across Dirs
+### 3. Compress Oversized File
+- yard-signs/top5pct-yard-signs-joliet-illinois.jpg is 1.8MB — compress to under 600K before R4 import
+
+### 4. Consolidate Duplicate-Named Files Across Dirs
 table-cloths/ and table-runners/ share several identical filenames. wall-signs/ and window-wall-floor-decals/ share several filenames. Confirm at R4 whether these dirs should merge or keep separate.
 
-### 9. Priority New Photography Needs by Page
+### 5. Priority New Photography Needs by Page
 | page | Initial slots | needed |
 |---|---|---|
 | business-signs/ (dir) | 8 of 8 | full dir refresh |
 | reunion-shirts | 7 of 16 | product shots, replace GIFs and article pics |
 | spirit-wear-shirts | 5 of 14 | school and fan wear photos |
 | corporate-wear-shirts | 4 of 14 | cap, t-shirt, hoodie, banner replacement |
-| digital-vinyl | 12 of 16 | round assignment or new photos |
 | posters | 7 of 11 | product shots |
 | dot-decals | 7 of 17 | |
-| vinyl | 12 of 14 | round assignment or new photos |

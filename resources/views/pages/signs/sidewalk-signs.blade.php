@@ -84,7 +84,7 @@
         </x-sections.card-image-with-text>
 
         <x-sections.card-image-with-text
-            image="/images/sidewalk-signs/top5pct-sidewalk-signs-joliet-old.jpg"
+            image="/images/sidewalk-signs/top5pct-sidewalk-signs-joliet-illinois.jpg"
             alt="Custom sidewalk signage for businesses in Joliet Illinois"
             title="Sidewalk Signs for Events"
             imagePosition="right"

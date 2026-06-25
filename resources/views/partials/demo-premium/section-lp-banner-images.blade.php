@@ -17,7 +17,7 @@
                 'href'  => '/custom-apparel/custom-shirts',
             ],
             [
-                'image' => '/images/dtf-transfers/toptpct-banner-dtf-transfers-joliet.jpg',
+                'image' => '/images/dtf-transfers/top5pct-banner-dtf-transfers-joliet.jpg',
                 'alt'   => 'DTF transfers printing in Joliet',
                 'title' => 'DTF Transfers',
                 'href'  => '/custom-apparel/printing-options/dtf-printing',
@@ -43,7 +43,7 @@
         'href'  =&gt; '/custom-apparel/custom-shirts',
     ],
     [
-        'image' =&gt; '/images/dtf-transfers/toptpct-banner-dtf-transfers-joliet.jpg',
+        'image' =&gt; '/images/dtf-transfers/top5pct-banner-dtf-transfers-joliet.jpg',
         'alt'   =&gt; 'DTF transfers printing in Joliet',
         'title' =&gt; 'DTF Transfers',
         'href'  =&gt; '/custom-apparel/printing-options/dtf-printing',

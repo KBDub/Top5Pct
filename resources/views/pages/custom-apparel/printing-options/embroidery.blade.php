@@ -134,7 +134,7 @@
         direction="left"
     />
     <x-ui.card-banner-slide-in
-        image="/images/embroidery/top5pct-embroidered-caps-old.jpg"
+        image="/images/embroidery/top5pct-embroidered-caps-joliet.jpg"
         alt="Custom embroidered caps and hats in Joliet Illinois"
         title="Combine Embroidery With Vinyl or Screen Print"
         href="/contact"
