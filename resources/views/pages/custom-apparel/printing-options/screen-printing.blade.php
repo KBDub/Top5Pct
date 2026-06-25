@@ -132,15 +132,15 @@
         name="Gerardo Munoz Jr"
     />
     <x-ui.card-banner-slide-in
-        image="/images/vinyl/top5pct-vinyl-shirts.jpg"
-        alt="Custom vinyl shirts and printed apparel by Top 5 Percent in Joliet Illinois"
+        image="/images/custom-shirts/top5pct-screenprinting-shirts.jpg"
+        alt="Custom screen printed apparel and group shirts printed by Top 5 Percent in Joliet Illinois"
         title="Bold Screen Printed Shirts for Your Group or Brand"
         href="/contact"
         direction="right"
     />
     <x-ui.card-banner-slide-in
-        image="/images/custom-shirts/top5pct-custom-embroidery-shops-near-me-joliet.jpg"
-        alt="Custom embroidery and specialty apparel printing at Top 5 Percent in Joliet Illinois"
+        image="/images/vinyl/top5pct-vinyl-shirts.jpg"
+        alt="Custom vinyl shirts and printed apparel by Top 5 Percent in Joliet Illinois"
         title="Add Embroidery or Vinyl to Complement Your Screen Print Order"
         href="/contact"
         direction="left"

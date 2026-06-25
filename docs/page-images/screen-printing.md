@@ -57,8 +57,8 @@ Note: `top5pct-custom-embroidery-shops-near-me-joliet.jpg` does NOT exist in cus
 | card-1 — card-image-with-text | top5pct-neon-vinyl-shirts.jpg | custom-shirts/ | R1 | May 11 | 296K | good |
 | card-2 — card-image-with-text (imagePosition right) | top5pct-vinyl-caps.jpg | custom-shirts/ | R1 | May 11 | 566K | good |
 | card-detailed image1 — card-detailed-info | top5pct-long-lasting-graphic-shirts.jpg | custom-shirts/ | R2 | Jun 2 | 417K | good |
-| slide-R — card-banner-slide-in (direction right) | top5pct-vinyl-shirts.jpg | vinyl/ | R3 | Jun 8 | 379K | good, cross-sell |
-| slide-L — card-banner-slide-in (direction left) | top5pct-custom-embroidery-shops-near-me-joliet.jpg | custom-shirts/ | — | — | — | MISSING FILE |
+| slide-R — card-banner-slide-in (direction right) | top5pct-screenprinting-shirts.jpg | custom-shirts/ | R1 | May 11 | 335K | good, accepted |
+| slide-L — card-banner-slide-in (direction left) | top5pct-vinyl-shirts.jpg | vinyl/ | R3 | Jun 8 | 379K | good, cross-sell |
 
 Note: `card-detailed-info` on this page uses only `image1`. There is no `image2` slot on this component instance.
 
@@ -66,22 +66,12 @@ Note: `card-detailed-info` on this page uses only `image1`. There is no `image2`
 
 ## R1-R3 Placement Summary
 
-**Filled:** 15 of 16 slots
-**Remaining:** 1 slot
+**Filled:** 16 of 16 slots
+**Remaining:** 0
 
-| slot | image | size | issue |
-|---|---|---|---|
-| slide-L | top5pct-custom-embroidery-shops-near-me-joliet.jpg | — | MISSING FILE, left as-is |
+All 16 slots filled R1-R3. No remaining Initial slots.
 
 ---
-
-## Rule Violations
-
-### slide-L — broken image path (left as-is per Jun 25 instruction)
-
-The blade references `/images/custom-shirts/top5pct-custom-embroidery-shops-near-me-joliet.jpg`. This file does not exist in custom-shirts/. It exists only in `embroidery/`. The current path produces a broken image on the page.
-
-Even with the correct path (embroidery/), the file is Initial (28K, Mar 16) and does not qualify as a valid cross-sell. Cross-sells must be R1-R3. Left unchanged pending a new R1-R3 image for this slot.
 
 ---
 
@@ -97,11 +87,11 @@ Even with the correct path (embroidery/), the file is Initial (28K, Mar 16) and 
 | hero | R1 — good |
 | card-1 | R1 — good |
 | card-2 | R1 — good |
-| card-detailed image1 | R2 — good (fixed Jun 25) |
-| slide-R | R3 — good, cross-sell (fixed Jun 25) |
-| slide-L | Missing file — not filled, left as-is |
+| card-detailed image1 | R2 — good |
+| slide-R | R1 — good, accepted |
+| slide-L | R3 — good, cross-sell |
 
-One non-carousel slot is not properly filled (slide-L, missing file, left as-is). The carousel CANNOT exceed 4 slots while slide-L remains unresolved. All other non-carousel slots are now R1+. Once slide-L is filled, the carousel may stay at 10 provided C-3 replacement holds.
+All non-carousel slots are R1-R3. Carousel may stay at 10.
 
 ---
 
@@ -145,16 +135,16 @@ Note: all embroidery/ R1-R3 files are already used in the embroidery blade. Mult
 |---|---|---|
 | C-3 | top5pct-banner-custom-apparel-custom-shirts-custom-hoodies-custom-caps.jpg (custom-shirts/, Initial, 117K) | top5pct-custom-shirt-pictures.jpg (custom-shirts/, R1, May 11, 397K) |
 | card-detailed image1 | top5pct-custom-flock-shirt-hoodie-cap-joliet.jpg (custom-shirts/, Initial, 32K) | top5pct-long-lasting-graphic-shirts.jpg (custom-shirts/, R2, Jun 2, 417K) |
-| slide-R | top5pct-screenprinting-shirts.jpg (custom-shirts/, R1, same-category, same file as C-4) | top5pct-vinyl-shirts.jpg (vinyl/, R3, Jun 8, 379K, cross-sell) |
+| slide-L | top5pct-custom-embroidery-shops-near-me-joliet.jpg (custom-shirts/, missing file) | top5pct-vinyl-shirts.jpg (vinyl/, R3, Jun 8, 379K, cross-sell) |
 
-slide-L left as-is (broken path, missing file, pending new R1-R3 image).
+slide-R restored to original: top5pct-screenprinting-shirts.jpg (custom-shirts/, R1, May 11, 335K), accepted as-is.
 
 ---
 
 ## File Usage Notes
 
-`top5pct-screenprinting-shirts.jpg` (custom-shirts/, R1) is now only in C-4. The duplicate usage in slide-R is resolved.
+`top5pct-screenprinting-shirts.jpg` (custom-shirts/, R1) is used in both C-4 and slide-R. Accepted as-is.
 
-`top5pct-screenprinting-joliet.jpg` (screen-printing/, R3) is used in C-5 on this page and as slide-L on the embroidery page (as of Jun 25). Multi-page use is permitted.
+`top5pct-screenprinting-joliet.jpg` (screen-printing/, R3) is used in C-5 on this page and as slide-L on the embroidery page. Multi-page use is permitted.
 
-`top5pct-vinyl-shirts.jpg` (vinyl/, R3) is now used as slide-R on this page. It is an R3 cross-sell from the vinyl/ category.
+`top5pct-vinyl-shirts.jpg` (vinyl/, R3) is used as slide-L on this page. It is an R3 cross-sell from the vinyl/ category.
