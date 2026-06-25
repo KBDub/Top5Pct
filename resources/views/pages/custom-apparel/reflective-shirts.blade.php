@@ -97,8 +97,8 @@
 
     <x-sections.card-detailed-info
         heading="Why Reflective Branded Apparel Is the Smart Investment for Businesses With Outdoor Workers"
-        image1="/images/reflective-shirts/top5pct-custom-reflective-shirts-hoodies-caps-joliet.jpg"
-        alt1="Custom reflective shirts and high-visibility safety apparel for businesses in Joliet, Will and DuPage County Illinois"
+        image1="/images/foil-shirts/top5pct-foil-shirts-cresthill.jpg"
+        alt1="Custom specialty apparel and printed shirts for businesses in Joliet, Will and DuPage County Illinois"
     >
         <x-slot name="intro">
             <p class="mb-4">Businesses that operate in outdoor environments, construction, landscaping, utility services, road crews, event management, and similar industries, face a genuine workplace safety requirement to keep their workers visible in and around vehicle traffic and low-light conditions. The standard solution is high-visibility safety vests worn over street clothes, but custom reflective branded apparel offers a superior alternative that combines safety compliance with professional brand presentation. When your crew arrives at a job site in matching reflective branded shirts rather than anonymous safety vests, the impression on clients and the public is immediately more professional.</p>
@@ -126,14 +126,14 @@
         name="Gerardo Munoz Jr"
     />
     <x-ui.card-banner-slide-in
-        image="/images/reflective-shirts/top5pct-custom-reflective-shirts-hoodies-caps-joliet.jpg"
-        alt="Custom reflective shirts and high-visibility apparel by Top 5 Percent in Joliet Illinois"
+        image="/images/vinyl/top5pct-vinyl-shirts.jpg"
+        alt="Custom vinyl shirts and specialty printed apparel from Top 5 Percent in Joliet Illinois"
         title="Reflective Branded Shirts, Safety That Represents Your Business"
         href="/contact"
         direction="left"
     />
     <x-ui.card-banner-slide-in
-        image="/images/custom-shirts/top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg"
+        image="/images/glow-shirts/top5pct-halloween-pumpkin-glow-shirt.jpg"
         alt="Custom glow in the dark shirts from Top 5 Percent in Joliet Illinois"
         title="Glow in the Dark or Reflective, Both Built for Visibility"
         href="/contact"

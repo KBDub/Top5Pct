@@ -2,7 +2,7 @@
 
 **Blade:** `resources/views/pages/custom-apparel/reflective-shirts.blade.php`
 **URL:** `/custom-apparel/specialty-materials/reflective-shirts`
-**Dir:** `public/images/reflective-shirts/` — 6 files total. All 6 referenced by the blade. 0 unused.
+**Dir:** `public/images/reflective-shirts/` — 6 files total. 5 referenced by the blade. 1 unused (freed from card-detailed).
 **Verified:** Jun 25, 2026
 
 ---
@@ -12,15 +12,15 @@
 | section / category | image | path | round | file date | size | status |
 |---|---|---|---|---|---|---|
 | hero — category-hero | top5pct-reflective-shirts-gold.jpg | reflective-shirts/ | R3 | Jun 8 | 304K | good |
-| carousel C-1 — carousel-rotating-images | top5pct-custom-reflective-shirts-hoodies-caps-joliet.jpg | reflective-shirts/ | R3 | Jun 8 | 26K | R3, small file, overused (see notes) |
+| carousel C-1 — carousel-rotating-images | top5pct-custom-reflective-shirts-hoodies-caps-joliet.jpg | reflective-shirts/ | Initial | Jun 8 | 26K | initial, small file |
 | carousel C-2 — carousel-rotating-images | top5pct-custom-reflective-hoodies.jpg | reflective-shirts/ | R3 | Jun 8 | 223K | good |
 | carousel C-3 — carousel-rotating-images | top5pct-reflective-shirts.jpg | reflective-shirts/ | R3 | Jun 8 | 124K | good |
 | carousel C-4 — carousel-rotating-images | top5pct-reflective-shirts-shorewood.jpg | reflective-shirts/ | R3 | Jun 8 | 235K | good |
 | card-1 — card-image-with-text | top5pct-reflective-vinyl-shirts-plainfield.jpg | reflective-shirts/ | R3 | Jun 8 | 166K | good |
-| card-2 — card-image-with-text (imagePosition right) | top5pct-custom-reflective-shirts-hoodies-caps-joliet.jpg | reflective-shirts/ | R3 | Jun 8 | 26K | R3, repeat (2nd use), small file |
-| card-detailed image1 — card-detailed-info | top5pct-custom-reflective-shirts-hoodies-caps-joliet.jpg | reflective-shirts/ | R3 | Jun 8 | 26K | R3, repeat (3rd use), small file |
-| slide-L — card-banner-slide-in (direction left) | top5pct-custom-reflective-shirts-hoodies-caps-joliet.jpg | reflective-shirts/ | R3 | Jun 8 | 26K | R3, same-dir, repeat (4th use), href=/contact |
-| slide-R — card-banner-slide-in (direction right) | top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg | custom-shirts/ | Initial | Mar 16 | 29K | initial, cross-dir, href=/contact |
+| card-2 — card-image-with-text (imagePosition right) | top5pct-custom-reflective-shirts-hoodies-caps-joliet.jpg | reflective-shirts/ | Initial | Jun 8 | 26K | initial, small file, repeat of C-1 |
+| card-detailed image1 — card-detailed-info | top5pct-foil-shirts-cresthill.jpg | foil-shirts/ | R3 | Jun 8 | 336K | good, cross-sell |
+| slide-L — card-banner-slide-in (direction left) | top5pct-vinyl-shirts.jpg | vinyl/ | R3 | Jun 8 | 379K | good, cross-sell |
+| slide-R — card-banner-slide-in (direction right) | top5pct-halloween-pumpkin-glow-shirt.jpg | glow-shirts/ | R3 | Jun 8 | 353K | good, cross-sell |
 
 **Note:** `card-detailed-info` on this page uses only `image1`. There is no `image2` slot on this component instance.
 
@@ -33,83 +33,64 @@
 
 | slot | image | size | issue |
 |---|---|---|---|
-| slide-R | top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg (custom-shirts/) | 29K | Initial, cross-sell must be to R1-R3 image |
+| carousel C-1 | top5pct-custom-reflective-shirts-hoodies-caps-joliet.jpg (reflective-shirts/) | 26K | Initial, small file |
+
+carousel C-2 through C-4 and all card slots are R3. slide-L and slide-R are R3 cross-sells. The only outstanding Initial slot is C-1, which also repeats in card-2 (also Initial).
 
 ---
 
 ## Unused Files in Dir
 
-None. All 6 reflective-shirts files are referenced by the blade.
+| file | round | date | size | note |
+|---|---|---|---|---|
+| top5pct-custom-reflective-shirts-hoodies-caps-joliet.jpg | Initial | Jun 8 | 26K | still referenced by C-1 and card-2 |
+
+No files in reflective-shirts/ are truly unused, but the 26K Initial file has been removed from card-detailed and slide-L as of Jun 25. It remains in C-1 and card-2.
 
 ---
 
-## File Usage Count
+## File Usage Count (current)
 
-| file | size | used in |
-|---|---|---|
-| top5pct-custom-reflective-shirts-hoodies-caps-joliet.jpg | 26K | C-1, card-2, card-detailed image1, slide-L (4 slots) |
-| top5pct-reflective-shirts-gold.jpg | 304K | hero only |
-| top5pct-custom-reflective-hoodies.jpg | 223K | C-2 only |
-| top5pct-reflective-shirts.jpg | 124K | C-3 only |
-| top5pct-reflective-shirts-shorewood.jpg | 235K | C-4 only |
-| top5pct-reflective-vinyl-shirts-plainfield.jpg | 166K | card-1 only |
-
-`top5pct-custom-reflective-shirts-hoodies-caps-joliet.jpg` (26K) is the only file used in more than one slot and is the smallest file in the dir by a wide margin (next smallest is 124K). It fills 4 of the 10 page slots.
+| file | path | size | round | used in |
+|---|---|---|---|---|
+| top5pct-reflective-shirts-gold.jpg | reflective-shirts/ | 304K | R3 | hero only |
+| top5pct-custom-reflective-shirts-hoodies-caps-joliet.jpg | reflective-shirts/ | 26K | Initial | C-1, card-2 (2 slots) |
+| top5pct-custom-reflective-hoodies.jpg | reflective-shirts/ | 223K | R3 | C-2 only |
+| top5pct-reflective-shirts.jpg | reflective-shirts/ | 124K | R3 | C-3 only |
+| top5pct-reflective-shirts-shorewood.jpg | reflective-shirts/ | 235K | R3 | C-4 only |
+| top5pct-reflective-vinyl-shirts-plainfield.jpg | reflective-shirts/ | 166K | R3 | card-1 only |
+| top5pct-foil-shirts-cresthill.jpg | foil-shirts/ | 336K | R3 | card-detailed image1 |
+| top5pct-vinyl-shirts.jpg | vinyl/ | 379K | R3 | slide-L |
+| top5pct-halloween-pumpkin-glow-shirt.jpg | glow-shirts/ | 353K | R3 | slide-R |
 
 ---
 
-## Immediate Suggestions
+## Changes Made Jun 25, 2026
 
-### 1. Replace slide-R with an R1+ cross-sell image
-
-slide-R uses `top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg` (custom-shirts/, Initial, Mar 16, 29K). The cross-sell direction (glow shirts) is appropriate since the slide title is "Glow in the Dark or Reflective, Both Built for Visibility." However, the file is Initial and does not meet the R1+ requirement for cross-sells.
-
-Two paths:
-
-**Option A — Check glow-shirts/ dir first.** If `public/images/glow-shirts/` contains any R1+ files, use one of those. This keeps the cross-sell tightly paired to the glow-shirts category page.
-
-**Option B — Use a custom-shirts/ R1 file.** Confirmed R1 candidates from custom-shirts/ (all May 11):
-
-| candidate | size | round |
+| slot | from | to |
 |---|---|---|
-| top5pct-custom-shirt-pictures.jpg | 388K | R1 |
-| top5pct-custom-printed-vinyl-shirts.jpg | 406K | R1 |
-| top5pct-custom-hoodies.jpg | 287K | R1 |
-| top5pct-brick-vinyl-hoodies.jpg | 379K | R1 |
+| card-detailed image1 | top5pct-custom-reflective-shirts-hoodies-caps-joliet.jpg (reflective-shirts/, Initial, 26K) | top5pct-foil-shirts-cresthill.jpg (foil-shirts/, R3, Jun 8, 336K) |
+| slide-L | top5pct-custom-reflective-shirts-hoodies-caps-joliet.jpg (reflective-shirts/, Initial, 26K) | top5pct-vinyl-shirts.jpg (vinyl/, R3, Jun 8, 379K) |
+| slide-R | top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg (custom-shirts/, Initial, Mar 16, 29K) | top5pct-halloween-pumpkin-glow-shirt.jpg (glow-shirts/, R3, Jun 8, 353K) |
+| doc correction | C-1 classified as R3 | corrected to Initial |
 
-Whichever file is chosen, the href should be updated from `/contact` to the relevant category page (glow-shirts or custom-apparel).
+---
 
-### 2. Replace card-2 and card-detailed image1 to reduce overuse of 26K file
+## Remaining Issues
 
-`top5pct-custom-reflective-shirts-hoodies-caps-joliet.jpg` (26K) currently fills C-1, card-2, card-detailed image1, and slide-L. Across the 5 remaining reflective-shirts files, only the 4 carousel images and card-1 are covered. card-2 and card-detailed image1 have no unique files to draw from.
-
-Two paths:
-
-**Option A — Use carousel files as card stand-ins.** The following are used only once (in the carousel) and could double in a card slot without creating a triple-repeat:
-
-| file | size | currently in |
+| slot | image | issue |
 |---|---|---|
-| top5pct-custom-reflective-hoodies.jpg | 223K | C-2 only |
-| top5pct-reflective-shirts.jpg | 124K | C-3 only |
-| top5pct-reflective-shirts-shorewood.jpg | 235K | C-4 only |
+| C-1 | top5pct-custom-reflective-shirts-hoodies-caps-joliet.jpg (26K, Initial) | Initial, small file, also in card-2 |
+| card-2 | top5pct-custom-reflective-shirts-hoodies-caps-joliet.jpg (26K, Initial) | Initial, small file, repeat of C-1 |
 
-This reduces the 26K file from 4 uses to 2 (card-2 or card-detailed) or even 1 (slide-L only), at the cost of a carousel file appearing in a card slot as well.
-
-**Option B — New photos needed.** Request new R1+ photos uploaded to reflective-shirts/ for card-2 and card-detailed image1 so every slot has a unique file. This is the cleanest long-term solution.
-
-### 3. Update slide-L href
-
-slide-L href currently points to `/contact`. If slide-L is meant to be a direct page CTA for reflective shirts, the href should point to a product or collection page (e.g., `/custom-apparel/specialty-materials/reflective-shirts#all-products` or `/custom-apparel`). The image and title are same-dir and on-topic so no image change is needed.
-
-### 4. Update slide-R href alongside image swap
-
-When slide-R image is replaced (suggestion 1), the href should also move from `/contact` to the appropriate product category page matching the cross-sell destination.
+Both C-1 and card-2 use the same 26K Initial file. No unused R3 reflective-shirts files remain to replace them. New photos are needed in reflective-shirts/ for these two slots. R4 audit deferred until C-1 and card-2 are resolved.
 
 ---
 
 ## Notes
 
-- Carousel is 4 slots, all R3, all same-dir. Carousel is fully compliant. No carousel changes needed.
-- All 6 reflective-shirts dir files are R3 (Jun 8). The round quality across this dir is the best seen in the audit so far.
-- The structural problem on this page is not the round status but the overuse of one small file (26K) and the Initial status of the slide-R cross-sell.
-- R4 audit deferred until slide-R is resolved and the 26K overuse is addressed.
+- Carousel is 4 slots. C-2 through C-4 are R3. C-1 is Initial. One new photo in reflective-shirts/ would resolve C-1 and eliminate the double-use of the 26K file.
+- slide-L cross-sell: vinyl/ (R3, Jun 8) — vinyl is the direct parent process of reflective printing.
+- slide-R cross-sell: glow-shirts/ (R3, Jun 8) — matches the slide title "Glow in the Dark or Reflective, Both Built for Visibility."
+- card-detailed image1 cross-sell: foil-shirts/ (R3, Jun 8) — specialty materials cross-sell appropriate for the long-form article section.
+- glow-shirts/ dir confirmed to contain 4 files, all R3 (Jun 8): top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg (29K), top5pct-glowing-halloween-bat-shirt.jpg (252K), top5pct-glow-in-the-dark-caps.jpg (298K), top5pct-halloween-pumpkin-glow-shirt.jpg (353K).
