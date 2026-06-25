@@ -30,8 +30,8 @@ Only one same-dir file exists. All other rhinestone files referenced by the blad
 | card-1 — card-image-with-text | top5pct-rhinestone-t-shirts-joliet.jpg | custom-shirts/ | R2 | Jun 2 | 425K | good |
 | card-2 — card-image-with-text (imagePosition right) | top5pct-custom-rhinestone-shirts.jpg | custom-shirts/ | R2 | Jun 2 | 486K | good |
 | card-detailed image1 — card-detailed-info | top5pct-rhinetsone-t-shirts.jpg | custom-shirts/ | R2 | Jun 2 | 261K | good, filename has typo ("rhinetsone") |
-| slide-R — card-banner-slide-in (direction right) | top5pct-custom-rhinestone-shirt-cap-hoodie-joliet.jpg | custom-shirts/ | Initial | Mar 16 | 23K | initial, small file, not a cross-sell (slide-R must always be cross-sell) |
-| slide-L — card-banner-slide-in (direction left) | top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg | custom-shirts/ | Initial | Mar 16 | 27K | initial, small file, cross-sell direction (holographic) is correct but file must be R1-R3 |
+| slide-R — card-banner-slide-in (direction right) | top5pct-glitter-sweatshirts-joliet.jpg | glitter-shirts/ | R3 | Jun 8 | 367K | good, cross-sell |
+| slide-L — card-banner-slide-in (direction left) | top5pct-holographic-vinyl-hoodie-foil.jpg | holographic-shirts/ | R3 | Jun 8 | 527K | good, cross-sell |
 
 **Note:** `card-detailed-info` on this page uses only `image1`. There is no `image2` slot on this component instance.
 
@@ -39,22 +39,17 @@ Only one same-dir file exists. All other rhinestone files referenced by the blad
 
 ## R1-R3 Placement Summary
 
-**Filled:** 9 of 11 slots
-**Remaining (Initial):** 2 slots
+**Filled:** 11 of 11 slots
+**Remaining (Initial):** 0
 
-| slot | image | size | issue |
-|---|---|---|---|
-| slide-R | top5pct-custom-rhinestone-shirt-cap-hoodie-joliet.jpg (custom-shirts/) | 23K | Initial, small file, same-category (not a cross-sell), slide-R must always be a cross-sell to R1-R3 |
-| slide-L | top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg (custom-shirts/) | 27K | Initial, small file, cross-sell direction is correct (holographic), but file comes from custom-shirts/ and is Initial |
+All blade image slots are R1-R3. Carousel stays at 5 same-category slots. No Initial files remain. R4 audit ready.
 
-**Additional issues (not Initial, but worth noting):**
+**Remaining notes (not Initial, but worth tracking):**
 
 | item | issue |
 |---|---|
-| slide-R cross-sell direction | Current title "Custom Rhinestone Shirts for Any Special Occasion" is same-page CTA language, not cross-sell language. Image AND title need correction — title is a content task for a later pass. |
-| card-detailed image1 filename | `top5pct-rhinetsone-t-shirts.jpg` has a typo ("rhinetsone" instead of "rhinestone"). File is R2 and loads correctly, but the filename is misspelled. |
-
-**Carousel:** 5 slots, all R2-R2+ same-category. Carousel stays at 5 because confirmed R1-R3 cross-sell images exist for both slide slots — no carousel drop needed.
+| slide-R title | "Custom Rhinestone Shirts for Any Special Occasion" is same-page CTA language, not cross-sell language. A title update is a separate content task. |
+| card-detailed image1 filename | `top5pct-rhinetsone-t-shirts.jpg` has a typo ("rhinetsone" instead of "rhinestone"). File is R2 and loads correctly — lower priority. |
 
 ---
 
@@ -74,8 +69,8 @@ The `custom-shirts/` directory contains all rhinestone-specific images from R1 a
 | top5pct-rhinestone-t-shirts-joliet.jpg | 425K | R2 | card-1 |
 | top5pct-custom-rhinestone-shirts.jpg | 486K | R2 | card-2 |
 | top5pct-rhinetsone-t-shirts.jpg (typo) | 261K | R2 | card-detailed image1 |
-| top5pct-custom-rhinestone-shirt-cap-hoodie-joliet.jpg | 23K | Initial | slide-R |
-| top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg | 27K | Initial | slide-L |
+| top5pct-custom-rhinestone-shirt-cap-hoodie-joliet.jpg | 23K | Initial | unused (replaced Jun 25) |
+| top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg | 27K | Initial | unused (replaced Jun 25) |
 
 ---
 
@@ -93,59 +88,14 @@ Note: `top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg` exists in BOTH `c
 
 ---
 
-## Immediate Suggestions
+## Changes Made Jun 25, 2026
 
-### 1. Replace slide-R with a proper R1-R3 cross-sell
+| slot | from | to |
+|---|---|---|
+| slide-R | top5pct-custom-rhinestone-shirt-cap-hoodie-joliet.jpg (custom-shirts/, Initial, 23K) | top5pct-glitter-sweatshirts-joliet.jpg (glitter-shirts/, R3, Jun 8, 367K) |
+| slide-L | top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg (custom-shirts/, Initial, 27K) | top5pct-holographic-vinyl-hoodie-foil.jpg (holographic-shirts/, R3, Jun 8, 527K) |
 
-slide-R must always be a cross-sell to an R1-R3 file from another category. The current file is Initial (23K) AND same-category rhinestone — it fails both requirements.
-
-The carousel stays at 5 slots because confirmed R1-R3 cross-sell images are available for both slides. No carousel files need to be dropped.
-
-The slide title "Custom Rhinestone Shirts for Any Special Occasion" is same-page CTA language rather than cross-sell language — a title update is a separate content task. For now, the image must become a confirmed R1-R3 cross-sell file.
-
-Glitter is the most natural cross-sell for rhinestone — both are sparkle-based specialty materials with overlapping customer bases.
-
-| candidate | path | round | date | size | note |
-|---|---|---|---|---|---|
-| top5pct-glitter-sweatshirts-joliet.jpg | glitter-shirts/ | R3 | Jun 8 | 367K | recommended, large R3 file |
-| top5pct-glitter-t-shirts.jpg | glitter-shirts/ | R2 | Jun 2 | 394K | R2, also strong |
-| top5pct-foil-shirts-cresthill.jpg | foil-shirts/ | R3 | Jun 8 | 336K | alternative if glitter already cross-sells elsewhere |
-
-Recommended: `top5pct-glitter-sweatshirts-joliet.jpg` (glitter-shirts/, R3, Jun 8, 367K).
-
-### 2. Replace slide-L with an R1-R3 holographic cross-sell
-
-slide-L currently cross-sells to holographic shirts, which matches the slide title "Rhinestone, Holographic, Foil, Premium Effects on Any Garment." The cross-sell direction is correct. The file must change from the Initial `custom-shirts/` version to an R1-R3 `holographic-shirts/` file.
-
-`holographic-shirts/` has two R3 files with meaningful size:
-
-| candidate | path | round | date | size | note |
-|---|---|---|---|---|---|
-| top5pct-holographic-vinyl-hoodie-foil.jpg | holographic-shirts/ | R3 | Jun 8 | 527K | recommended, largest R3 in dir |
-| top5pct-holographic-baby-shirts.jpg | holographic-shirts/ | R3 | Jun 8 | 231K | decent alternative |
-| top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg | holographic-shirts/ | R3 | Jun 8 | 27K | avoid, same small size as current Initial |
-
-Recommended: `top5pct-holographic-vinyl-hoodie-foil.jpg` (holographic-shirts/, R3, Jun 8, 527K).
-
----
-
-## After Both Suggestions Applied
-
-| slot | image | path | round | status |
-|---|---|---|---|---|
-| hero | top5pct-rhinestone-hoodies-joliet.jpg | custom-shirts/ | R1 | good |
-| C-1 | top5pct-rhinestone-apparel-keith-elementary.jpg | custom-shirts/ | R2 | good |
-| C-2 | top5pct-rhinestone-bling-joliet.jpg | custom-shirts/ | R2 | good |
-| C-3 | top5pct-rhinestone-hoodie-joliet-west.jpg | custom-shirts/ | R2 | good |
-| C-4 | top5pct-rhinestone-ladies-shirt.jpg | custom-shirts/ | R2 | good |
-| C-5 | top5pct-rhinestone-tshirts-joliet.jpg | rhinestone-apparel/ | R2+ | good |
-| card-1 | top5pct-rhinestone-t-shirts-joliet.jpg | custom-shirts/ | R2 | good |
-| card-2 | top5pct-custom-rhinestone-shirts.jpg | custom-shirts/ | R2 | good |
-| card-detailed image1 | top5pct-rhinetsone-t-shirts.jpg | custom-shirts/ | R2 | good (typo in filename) |
-| slide-L | top5pct-holographic-vinyl-hoodie-foil.jpg | holographic-shirts/ | R3 | good, cross-sell |
-| slide-R | top5pct-glitter-sweatshirts-joliet.jpg | glitter-shirts/ | R3 | good, cross-sell |
-
-All 11 blade image slots R1-R3. Carousel stays at 5 same-category slots. No Initial files remain. R4 audit ready.
+Carousel stayed at 5 — confirmed R1-R3 cross-sell images were available for both slide slots, so no carousel drop was needed.
 
 ---
 

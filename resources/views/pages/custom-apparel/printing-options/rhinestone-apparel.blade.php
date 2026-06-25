@@ -127,15 +127,15 @@
         name="Jonathan Young"
     />
     <x-ui.card-banner-slide-in
-        image="/images/custom-shirts/top5pct-custom-rhinestone-shirt-cap-hoodie-joliet.jpg"
-        alt="Custom rhinestone bling shirts and crystal apparel by Top 5 Percent in Joliet Illinois"
+        image="/images/glitter-shirts/top5pct-glitter-sweatshirts-joliet.jpg"
+        alt="Custom glitter sweatshirts and sparkle apparel from Top 5 Percent in Joliet Illinois"
         title="Custom Rhinestone Shirts for Any Special Occasion"
         href="/contact"
         direction="right"
     />
     <x-ui.card-banner-slide-in
-        image="/images/custom-shirts/top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg"
-        alt="Custom holographic color-shifting shirts from Top 5 Percent in Joliet Illinois"
+        image="/images/holographic-shirts/top5pct-holographic-vinyl-hoodie-foil.jpg"
+        alt="Custom holographic vinyl hoodie and foil apparel from Top 5 Percent in Joliet Illinois"
         title="Rhinestone, Holographic, Foil, Premium Effects on Any Garment"
         href="/contact"
         direction="left"
