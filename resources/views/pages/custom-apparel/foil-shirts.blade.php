@@ -56,15 +56,10 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/custom-shirts/top5pct-custom-foil-shirts-hoodies-caps-joliet.jpg', 'alt' => 'Custom foil shirts with metallic high-shine prints in Joliet Illinois'],
-            ['src' => '/images/custom-shirts/top5pct-gold-foil-printed-shirts.jpg',             'alt' => 'Custom gold foil printed shirts in Joliet Illinois'],
-            ['src' => '/images/custom-shirts/top5pct-foil-custom-t-shirts.jpg',                 'alt' => 'Custom foil t-shirts with metallic finish in Joliet Illinois'],
-            ['src' => '/images/custom-shirts/top5pct-custom-foil-polo.jpg',                 'alt' => 'Custom foil polo shirts in Joliet Illinois'],
-            ['src' => '/images/foil-shirts/top5pct-foil-shirts.jpg',                     'alt' => 'Custom foil shirts with metallic shine in Joliet Illinois'],
-            ['src' => '/images/foil-shirts/top5pct-foil-custom-shirts-joliet.jpg',       'alt' => 'Custom foil shirts printed in Joliet, Shorewood, and Crest Hill Illinois'],
+            ['src' => '/images/foil-shirts/top5pct-foil-shirts.jpg',                       'alt' => 'Custom foil shirts with metallic shine in Joliet Illinois'],
+            ['src' => '/images/foil-shirts/top5pct-foil-custom-shirts-joliet.jpg',         'alt' => 'Custom foil shirts printed in Joliet, Shorewood, and Crest Hill Illinois'],
             ['src' => '/images/foil-shirts/top5pct-foil-custom-apparel-shirts-joliet.jpg', 'alt' => 'Custom foil apparel and shirts in Joliet Illinois'],
-            ['src' => '/images/foil-shirts/top5pct-foil-shirts-cresthill.jpg',           'alt' => 'Custom foil shirts for businesses and events in Crest Hill Illinois'],
-            ['src' => '/images/foil-shirts/top5pct-foil-shirt-shorewood.jpg',            'alt' => 'Custom foil shirt printing in Shorewood Illinois'],
+            ['src' => '/images/foil-shirts/top5pct-foil-shirts-cresthill.jpg',             'alt' => 'Custom foil shirts for businesses and events in Crest Hill Illinois'],
         ]"
         visible=2
     />
@@ -75,8 +70,8 @@
     />
 
     <x-sections.card-image-with-text
-        image="/images/custom-shirts/top5pct-custom-foil-shirts-hoodies-caps-joliet.jpg"
-        alt="Custom foil shirts with metallic gold and silver prints in Joliet Illinois"
+        image="/images/custom-shirts/top5pct-gold-foil-printed-shirts.jpg"
+        alt="Custom gold foil printed shirts with metallic finish in Joliet Illinois"
         title="Mirror-Finish Metallic That Commands Attention"
     >
         <p class="mb-4">Foil printing uses a heat-activated metallic film that creates a mirror-like, high-gloss surface on your design. The result is a print with an intense metallic sheen, genuine gold foil that looks like polished gold, genuine silver foil that looks like brushed steel, or colored foils in rose gold, copper, red, blue, and other metallic tones that bring a level of luxury and visual impact to custom apparel that standard printing methods simply cannot achieve. If glitter sparkles and holographic shifts, foil shines, a clean, bold, high-polish metallic statement.</p>
@@ -102,8 +97,8 @@
 
     <x-sections.card-detailed-info
         heading="Why Metallic Foil Shirts Elevate Your Brand and Events to the Next Level"
-        image1="/images/custom-shirts/top5pct-custom-foil-shirts-hoodies-caps-joliet.jpg"
-        alt1="Custom metallic foil shirts for brands and events in Joliet, Will and DuPage County Illinois"
+        image1="/images/custom-shirts/top5pct-foil-custom-t-shirts.jpg"
+        alt1="Custom metallic foil t-shirts for brands and events in Joliet, Will and DuPage County Illinois"
     >
         <x-slot name="intro">
             <p class="mb-4">Gold has communicated achievement, luxury, and prestige across human cultures for thousands of years. That symbolic association did not disappear with the advent of custom apparel, if anything, it translated directly into the way consumers perceive gold foil on custom shirts. A gold foil printed shirt communicates championship, milestone, and premium quality in a way that no other print finish can match. When you want your apparel to signal that something significant has been achieved or that your brand operates at a premium level, gold foil is one of the most direct and effective ways to communicate that message through the physical product.</p>
@@ -131,15 +126,15 @@
         name="Jonathan Young"
     />
     <x-ui.card-banner-slide-in
-        image="/images/custom-shirts/top5pct-custom-foil-shirts-hoodies-caps-joliet.jpg"
-        alt="Custom metallic foil shirts by Top 5 Percent in Joliet Illinois"
-        title="Foil Shirts, Gold, Silver, and Metallic Finishes"
+        image="/images/rhinestone-apparel/top5pct-rhinestone-tshirts-joliet.jpg"
+        alt="Custom rhinestone t-shirts and sparkle apparel from Top 5 Percent in Joliet Illinois"
+        title="Add Rhinestone Accents to Your Foil Shirt Order"
         href="/contact"
         direction="right"
     />
     <x-ui.card-banner-slide-in
-        image="/images/custom-shirts/top5pct-custom-glitter-shirt-cap-hoodie-joliet.jpg"
-        alt="Custom glitter shirts and sparkle apparel from Top 5 Percent in Joliet Illinois"
+        image="/images/glitter-shirts/top5pct-glitter-sweatshirts-joliet.jpg"
+        alt="Custom glitter sweatshirts and sparkle apparel from Top 5 Percent in Joliet Illinois"
         title="Combine Foil With Glitter or Rhinestone for Custom Apparel"
         href="/contact"
         direction="left"

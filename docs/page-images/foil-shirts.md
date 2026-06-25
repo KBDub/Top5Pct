@@ -296,13 +296,30 @@ This R3 file is 41K, well below the 246-344K range of the other foil-shirts/ R3 
 
 ---
 
+## Applied Fixes — Jun 25, 2026
+
+All 5 actions were applied to the blade on Jun 25, 2026.
+
+| fix | action | result |
+|---|---|---|
+| 1 | Carousel trimmed from 9 slots to 4 (kept C-5, C-6, C-7, C-8 — all foil-shirts/ R3) | Carousel now 4 slots, all R3, all same-dir |
+| 2 | card-1 image replaced: Initial (35K) → top5pct-gold-foil-printed-shirts.jpg (R2, 213K) | card-1 now R2 |
+| 3 | card-detailed image1 replaced: Initial (35K) → top5pct-foil-custom-t-shirts.jpg (R2, 248K) | card-detailed now R2 |
+| 4 | slide-R replaced: Initial same-product → rhinestone-apparel/top5pct-rhinestone-tshirts-joliet.jpg (R2, 271K); title updated to "Add Rhinestone Accents to Your Foil Shirt Order" | slide-R now a proper cross-sell, R2 |
+| 5 | slide-L image replaced: Initial (30K) → glitter-shirts/top5pct-glitter-sweatshirts-joliet.jpg (R3, 366K); title and href unchanged | slide-L image now R3 |
+
+The Initial file top5pct-custom-foil-shirts-hoodies-caps-joliet.jpg (35K, Mar 16) has been fully removed from the blade. It was used in 4 slots; all 4 are now resolved.
+
+**Post-fix R1-R3 count: 15 of 15 slots confirmed R1-R3.**
+
+---
+
 ## Notes
 
-- 10 of 15 image slots are confirmed R1-R3 as of Jun 25, 2026.
-- 5 slots are Initial: C-1, card-1, card-detailed image1, slide-R, slide-L.
-- All 5 Initial slots can be resolved with currently available files and images already on the page — no new R4 images are required to get to 14 of 15 filled (slide-R is the only slot requiring a new image from another category).
-- The single biggest issue is the carousel being 9 slots instead of 4. Trimming it immediately resolves the structural violation and makes 2 R2 files available for body card reallocation.
-- One Initial file (top5pct-custom-foil-shirts-hoodies-caps-joliet.jpg, 35K) is responsible for all 4 Initial body/slide violations. Eliminating it fully cleans up the Initial problem.
-- slide-R has a rule violation (same-product, not a cross-sell) in addition to being Initial. A rhinestone or vinyl cross-sell from a confirmed R1-R3 dir is needed.
-- slide-L cross-sell direction (glitter) is correct and matches the blade's FAQ and body copy. Only the image needs upgrading to R1-R3.
-- R4 priorities: (1) trim carousel to 4 (foil-shirts/ R3 slots C-5/C-6/C-7/C-8), (2) reallocate C-2 and C-3 R2 files to card-1 and card-detailed, (3) replace slide-R with rhinestone or vinyl R1-R3 cross-sell, (4) replace slide-L image with glitter-shirts/ R3 file, (5) review top5pct-foil-shirt-shorewood.jpg quality.
+- All 15 image slots are confirmed R1-R3 as of Jun 25, 2026 (post-fix).
+- Carousel is 4 slots, all foil-shirts/ R3 — no Initial or surplus files remain in the carousel.
+- The Initial file (top5pct-custom-foil-shirts-hoodies-caps-joliet.jpg, 35K, Mar 16) has been fully eliminated from the blade.
+- slide-R is now a rhinestone cross-sell (rhinestone-apparel/, Jun 3, R2-adjacent, 271K).
+- slide-L image is now R3 (glitter-shirts/top5pct-glitter-sweatshirts-joliet.jpg, Jun 8, 366K); cross-sell direction and title unchanged.
+- top5pct-foil-shirt-shorewood.jpg (41K, R3) was removed from the carousel as part of the trim to 4. Quality flag stands — verify display quality if it is used elsewhere.
+- No remaining R4 image requirements for this page. All slots are R1-R3.
