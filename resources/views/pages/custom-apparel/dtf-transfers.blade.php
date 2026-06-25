@@ -63,6 +63,7 @@
             ['src' => '/images/dtf-transfers/top5pct-custom-baby-clothing-joliet.jpg',                            'alt' => 'Custom DTF printed baby clothing and kids apparel in Joliet Illinois'],
             ['src' => '/images/dtf-transfers/top5pct-custom-shirt-with-picture.jpg',                              'alt' => 'Custom DTF shirts with full color picture prints in Joliet Illinois'],
             ['src' => '/images/dtf-transfers/top5pct-custom-sweatshirts.jpg',                                     'alt' => 'Custom DTF printed sweatshirts and hoodies in Joliet Illinois'],
+            ['src' => '/images/dtf-transfers/top5pct-dtf-shirts-joliet.jpg',                                       'alt' => 'Custom DTF transfer shirts printed in Joliet Illinois'],
         ]"
         visible=2
     />

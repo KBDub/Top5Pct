@@ -43,6 +43,7 @@ Two files have "toptpct" instead of "top5pct" in the filename (missing the "5").
 | C-5 — carousel-rotating-images | top5pct-custom-baby-clothing-joliet.jpg | dtf-transfers/ | R2 | Jun 2 | 330K | good |
 | C-6 — carousel-rotating-images | top5pct-custom-shirt-with-picture.jpg | dtf-transfers/ | R1 | May 11 | 611K | good |
 | C-7 — carousel-rotating-images | top5pct-custom-sweatshirts.jpg | dtf-transfers/ | R1 | May 11 | 170K | good |
+| C-8 — carousel-rotating-images | top5pct-dtf-shirts-joliet.jpg | dtf-transfers/ | R4 | Jun 25 | — | R4 placed |
 | card-1 — card-image-with-text | top5pct-dtf-zip-up-hoodies.jpg | dtf-transfers/ | R1 | May 11 | 284K | good |
 | card-2 — card-image-with-text (imagePosition right) | top5pct-custom-dtf-shirts.jpg | dtf-transfers/ | R2 | Jun 2 | 276K | good |
 | card-detailed image1 — card-detailed-info | top5pct-custom-bowling-shirts-dtf.jpg | dtf-transfers/ | R2 | Jun 2 | 238K | good |
@@ -64,8 +65,8 @@ All 10 blade image slots are R1-R3. No Initial files remain in blade. No rule vi
 
 ## Carousel
 
-**Current slots:** 7
-**Target:** 4. May exceed 4 if all non-carousel slots are R1-R3.
+**Current slots:** 8 (expanded from 7 Jun 25 R4)
+**Target:** 4. Over-target condition met — all non-carousel slots are R1-R4.
 
 **Non-carousel slot check:**
 
@@ -75,10 +76,10 @@ All 10 blade image slots are R1-R3. No Initial files remain in blade. No rule vi
 | card-1 | R1 — good |
 | card-2 | R2 — good |
 | card-detailed image1 | R2 — good |
-| slide-R | R3 — good, cross-sell (fixed Jun 25) |
-| slide-L | R3 — good, cross-sell (fixed Jun 25) |
+| slide-R | R3 — good, cross-sell |
+| slide-L | R3 — good, cross-sell |
 
-All non-carousel slots are R1-R3. Carousel expanded to 7 (Jun 25). All 7 slots R1-R3 same-dir.
+All non-carousel slots R1-R4. Carousel expanded to 8. C-1 through C-7 are R1-R2 same-dir; C-8 is R4 same-dir.
 
 ---
 
@@ -98,9 +99,10 @@ All non-carousel slots are R1-R3. Carousel expanded to 7 (Jun 25). All 7 slots R
 | top5pct-custom-sweatshirts.jpg | dtf-transfers/ | 170K | R1 | C-7 only |
 | top5pct-custom-shirt-with-picture.jpg | dtf-transfers/ | 611K | R1 | C-6 only |
 | top5pct-custom-baby-clothing-joliet.jpg | dtf-transfers/ | 330K | R2 | C-5 only |
+| top5pct-dtf-shirts-joliet.jpg | dtf-transfers/ | — | R4 | C-8 only |
 | top5pct-dtf-transfer-pricing.jpg | dtf-transfers/ | 201K | Initial | unused (filename corrected Jun 25) |
 
-No unused R1-R2 dtf-transfers/ files remain. All placed.
+No unused R1-R4 dtf-transfers/ files remain. All placed.
 
 ---
 
@@ -157,4 +159,6 @@ Both renamed files are now unused in the blade. top5pct-banner-dtf-transfers-jol
 - `top5pct-dtf-transfer-pricing.jpg` is a pricing chart image, not referenced by the blade, and remains unused.
 - slide-L used the same broken `custom-shirts/top5pct-custom-embroidery-shops-near-me-joliet.jpg` path that was also on the screen-printing blade (fixed there Jun 25). Copy-paste error; file only exists in embroidery/.
 - Carousel expanded to 7 slots Jun 25 using all 3 previously unused dtf-transfers/ R1-R2 files. All 7 carousel slots R1-R3 same-dir.
-- All 13 blade image slots R1-R3. No unused R1-R2 dtf-transfers/ files remain. No rule violations. R4 audit ready.
+- 14 of 14 blade image slots R1-R4 as of Jun 25, 2026. Page complete.
+- C-8 added: top5pct-dtf-shirts-joliet.jpg (R4). Carousel now at 8.
+- No unused R1-R4 dtf-transfers/ files remain. No rule violations.
