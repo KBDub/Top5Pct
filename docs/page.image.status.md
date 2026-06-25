@@ -466,23 +466,22 @@ All R1/R2/R3 images redistributed to sidewalk-signs-a-frame-signs and yard-signs
 | card-2img image1 — card-2image-with-text | top5pct-safety-work-gear-joliet.jpg | public/images/corporate-wear/top5pct-safety-work-gear-joliet.jpg | R1 | May 11 | good |
 | card-2img image2 — card-2image-with-text | top5pct-custom-company-apparel.jpg | public/images/corporate-wear/top5pct-custom-company-apparel.jpg | R2 | Jun 2 | good |
 | card-3 — card-image-with-text | top5pct-custom-cap-hat-joliet-shorewood-rockdale.jpg | public/images/corporate-wear/top5pct-custom-cap-hat-joliet-shorewood-rockdale.jpg | Initial | Mar 16 | initial |
-| card-detailed image1 — card-detailed-info | top5pct-article-corporate-wear-pic1.jpg | public/images/corporate-wear/top5pct-article-corporate-wear-pic1.jpg | Initial | Mar 16 | initial, tiny |
-| card-detailed image2 — card-detailed-info | top5pct-article-corporate-wear-pic2.jpg | public/images/corporate-wear/top5pct-article-corporate-wear-pic2.jpg | Initial | Mar 16 | initial, tiny |
-| slide-R — card-banner-slide-in (direction right) | top5pct-custom-button-up-shirt-joliet-shorewood.jpg | public/images/corporate-wear/top5pct-custom-button-up-shirt-joliet-shorewood.jpg | Initial | Mar 16 | wrong topic |
+| card-detailed image1 — card-detailed-info | top5pct-custom-corporate-t-shirts-joliet-shorewood.jpg | public/images/corporate-wear/top5pct-custom-corporate-t-shirts-joliet-shorewood.jpg | Initial | Mar 16 | initial |
+| card-detailed image2 — card-detailed-info | top5pct-custom-hoodie-pullover-joliet-shorewood.jpg | public/images/corporate-wear/top5pct-custom-hoodie-pullover-joliet-shorewood.jpg | Initial | Mar 16 | initial |
+| slide-R — card-banner-slide-in (direction right) | top5pct-truck-sign-magnets-joliet.jpg | public/images/vehicle-magnets/top5pct-truck-sign-magnets-joliet.jpg | R2 | Jun 2 | good |
 | slide-L — card-banner-slide-in (direction left) | top5pct-volleyball-team-uniforms-joliet.jpg | public/images/spirit-wear/top5pct-volleyball-team-uniforms-joliet.jpg | R2 | Jun 2 | good |
 
 **Notes:**
 - Nav note: site navigation incorrectly places this page under /signs/business-signs. Known issue, leave as-is.
-- 5 Initial slots in active blade positions — highest count in the entire inventory so far: carousel C-3 (125KB), card-3 (40KB), card-detailed image1 (14KB), card-detailed image2 (15KB), slide-R (42KB).
-- slide-R is not a cross-sell — all slide-Rs must be cross-sells. Currently same-dir corporate-wear/ Initial file (42KB). Pending replacement with a vehicle-magnets cross-sell (top5pct-truck-sign-magnets-joliet.jpg, R2).
-- card-detailed image1 (14KB) and image2 (15KB) are the two smallest files in any active slot across the entire inventory. Pending replacement: image1 with top5pct-custom-corporate-t-shirts-joliet-shorewood.jpg (45KB, Initial), image2 with top5pct-custom-hoodie-pullover-joliet-shorewood.jpg (41KB, Initial).
+- 3 Initial slots remain in active blade positions: carousel C-3 (125KB), card-3 (40KB), card-detailed image1 (44KB), card-detailed image2 (40KB). card-detailed image1 and image2 replaced Jun 24 — were 14KB and 15KB, the two smallest files seen in any active slot across the entire inventory.
+- slide-R fixed Jun 24: replaced same-dir Initial file (42KB) with vehicle-magnets cross-sell (top5pct-truck-sign-magnets-joliet.jpg, R2, Jun 2, 356KB). href points to /vehicle-graphics/vehicle-magnets.
 - card-detailed has two image slots (image1 and image2) — first page in the inventory with a dual-image card-detailed.
 - carousel C-3 is the only carousel slot confirmed to be Initial across all pages inventoried. All other carousel images are R1 or newer.
 - C-1 (apron, 419KB) and C-2 (aprons, 383KB) are different files and different sizes but both are apron photos — visual check recommended.
 - No repeats — all 14 images are unique.
 - No R3 files in this dir. One R2 file (top5pct-custom-company-apparel.jpg, Jun 2). All other active non-Initial images are R1.
 - slide-L cross-dir from spirit-wear/ (R2, Jun 2, 592KB). Slide text "Employee Uniforms and Team Apparel, Ask About Group Pricing" — cross-sell appropriate.
-- 3 unused Initial files in dir (none in blade): `top5pct-custom-polo-shirts-joliet-shorewood-crest-hill.jpg` (30KB), `top5pct-custom-hoodie-pullover-joliet-shorewood.jpg` (41KB), `top5pct-custom-corporate-t-shirts-joliet-shorewood.jpg` (45KB). Top two are candidates for card-detailed replacements.
+- 1 unused Initial file in dir (none in blade): `top5pct-custom-polo-shirts-joliet-shorewood-crest-hill.jpg` (30KB). The hoodie and corporate-t-shirts files moved into card-detailed slots Jun 24.
 
 ---
 

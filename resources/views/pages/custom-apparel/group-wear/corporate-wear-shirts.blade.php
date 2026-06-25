@@ -120,10 +120,10 @@
 
             <x-sections.card-detailed-info
                 heading="The Importance of Corporate Wear for Your Business"
-                image1="/images/corporate-wear/top5pct-article-corporate-wear-pic1.jpg"
-                alt1="Custom corporate wear and branded employee uniforms in Joliet Illinois"
-                image2="/images/corporate-wear/top5pct-article-corporate-wear-pic2.jpg"
-                alt2="Professional corporate apparel printed for businesses in Will and DuPage County"
+                image1="/images/corporate-wear/top5pct-custom-corporate-t-shirts-joliet-shorewood.jpg"
+                alt1="Custom corporate t-shirts printed for businesses in Joliet and Shorewood Illinois"
+                image2="/images/corporate-wear/top5pct-custom-hoodie-pullover-joliet-shorewood.jpg"
+                alt2="Custom branded hoodies and pullovers for businesses in Joliet and Shorewood Illinois"
             >
                 <x-slot name="intro">
                     <p class="mb-4">The way your team looks at work says a lot about your business. Custom <a href="/custom-apparel/group-wear/corporate-wear-shirts" class="link-notification">corporate wear</a> is one of the most effective tools a business owner in Joliet, Shorewood, Plainfield, or anywhere in the Chicagoland area can use to build a strong and professional brand image. We have been helping local businesses design and produce corporate apparel since 2017 and we have seen firsthand how the right clothing can change the way customers perceive a company. Here is why corporate wear matters more than most business owners realize, and how we help Will and DuPage County businesses make a stronger impression every single day.</p>
@@ -151,10 +151,10 @@
         name="Vicky Donis"
     />
     <x-ui.card-banner-slide-in
-        image="/images/corporate-wear/top5pct-custom-button-up-shirt-joliet-shorewood.jpg"
-        alt="Custom corporate wear and branded employee uniforms in Joliet and Shorewood Illinois"
-        title="Professional Corporate Wear in Joliet"
-        href="/contact"
+        image="/images/vehicle-magnets/top5pct-truck-sign-magnets-joliet.jpg"
+        alt="Custom vehicle magnets and truck signs printed by Top 5 Percent in Joliet Illinois"
+        title="Brand Your Business Vehicles with Custom Magnets"
+        href="/vehicle-graphics/vehicle-magnets"
         direction="right"
     />
     <x-ui.card-banner-slide-in
