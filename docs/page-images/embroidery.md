@@ -3,7 +3,7 @@
 **Blade:** `resources/views/pages/custom-apparel/printing-options/embroidery.blade.php`
 **URL:** `/custom-apparel/printing-options/embroidery`
 **Dir:** `public/images/embroidery/` — 11 files total.
-**Verified:** Jun 25, 2026
+**Verified:** Jun 25, 2026 | **R4 placed:** Jun 25, 2026
 
 ---
 
@@ -39,6 +39,10 @@ All 11 dir files are referenced by the blade. There are no unused same-dir files
 | carousel C-3 — carousel-rotating-images | top5pct-embroidery-in-joliet.jpg | embroidery/ | R1 | May 11 | 379K | good |
 | carousel C-4 — carousel-rotating-images | top5pct-embroidered-stitched-caps.jpg | embroidery/ | R1 | May 11 | 513K | good |
 | carousel C-5 — carousel-rotating-images | top5pct-embroidered-cap-embroidered-beanies-joliet.jpg | embroidery/ | R3 | Jun 8 | 346K | good |
+| carousel C-6 — carousel-rotating-images | top5pct-embroidery-caps-joliet.jpg | embroidery/ | R4 | Jun 25 | — | R4 placed |
+| carousel C-7 — carousel-rotating-images | top5pct-embroidered-patch-joliet.jpg | embroidery/ | R4 | Jun 25 | — | R4 placed |
+| carousel C-8 — carousel-rotating-images | top5pct-embroidered-towels-joliet.jpg | embroidery/ | R4 | Jun 25 | — | R4 placed |
+| carousel C-9 — carousel-rotating-images | top5pct-stitched-polo-shirts-joliet.jpg | embroidery/ | R4 | Jun 25 | — | R4 placed |
 | card-1 — card-image-with-text | top5pct-embroidered-bag.jpg | embroidery/ | R2 | Jun 2 | 304K | good |
 | card-2 — card-image-with-text (imagePosition right) | top5pct-embroidered-smocks.jpg | embroidery/ | R2 | Jun 2 | 332K | good |
 | card-detailed image1 — card-detailed-info | top5pct-embroidery-beanies.jpg | embroidery/ | R2 | Jun 2 | 334K | good |
@@ -51,18 +55,18 @@ All 11 dir files are referenced by the blade. There are no unused same-dir files
 
 ## R1-R3 Placement Summary
 
-**Filled:** 11 of 11 slots
-**Remaining (Initial):** 0
+**Filled:** 15 of 15 slots (carousel expanded to 9)
+**Remaining:** 0
 
-All blade image slots are R1-R3. Carousel stays at 5 same-dir slots. No Initial files remain. R4 audit ready.
+All blade image slots are R1-R4. No Initial files in blade. No rule violations.
 
-**Carousel:** 5 slots, all R1-R3 same-dir embroidery/. Stays at 5 — all other slots were R1+ and a confirmed R3 cross-sell was available for slide-L.
+**Carousel:** 9 slots, C-1 through C-5 R1-R3 same-dir, C-6 through C-9 R4 same-dir.
 
 ---
 
 ## Unused Files in Dir
 
-None. All 11 embroidery/ files are referenced by the blade. No same-dir file is available to fill slide-L — a cross-sell from another dir is required.
+None. All 15 embroidery/ files are referenced by the blade (11 original + 4 R4). No unused same-dir files remain.
 
 ---
 
@@ -81,8 +85,12 @@ None. All 11 embroidery/ files are referenced by the blade. No same-dir file is 
 | top5pct-embroidery-beanies.jpg | embroidery/ | 334K | R2 | card-detailed image1 only |
 | top5pct-custom-embroidery-shops-near-me-joliet.jpg | embroidery/ | 28K | Initial | unused (replaced Jun 25) |
 | top5pct-embroidered-caps-old.jpg | embroidery/ | 637K | R1 | slide-R only |
+| top5pct-embroidery-caps-joliet.jpg | embroidery/ | — | R4 | C-6 only |
+| top5pct-embroidered-patch-joliet.jpg | embroidery/ | — | R4 | C-7 only |
+| top5pct-embroidered-towels-joliet.jpg | embroidery/ | — | R4 | C-8 only |
+| top5pct-stitched-polo-shirts-joliet.jpg | embroidery/ | — | R4 | C-9 only |
 
-Every slot has a unique file. No file is used in more than one slot.
+Every slot has a unique file. No file is used in more than one slot. No unused R1-R4 embroidery/ files remain.
 
 ---
 
@@ -127,4 +135,5 @@ Carousel stayed at 5 — all other slots were R1+ and a confirmed R3 cross-sell 
 - `top5pct-embroidered-caps-old.jpg` (R1, May 11, 637K) has "old" in the filename. It is the largest file in the embroidery/ dir and is accepted at slide-R. A rename to remove "old" would be low priority and would require a blade update.
 - slide-L title "Custom Embroidery, The Professional Standard" is same-page CTA language and does not reflect the cross-sell content of the image. A title update is a separate content task.
 - vinyl/ dir contains files from May 18 (not a named round). Those files are not used in cross-sell suggestions here. The two Jun 8 R3 files in vinyl/ (`top5pct-vinyl-shirts.jpg` and `top5pct-vinyl-t-shirt-maker.jpg`) are valid alternatives to the screen-printing/ recommendation.
-- R4 audit deferred until suggestion 1 is applied.
+- R4 placements made Jun 25: C-6 through C-9 added to carousel using 4 R4 same-dir files. Carousel now at 9 slots. 15 of 15 slots R1-R4.
+- slide-R (`top5pct-embroidered-caps-old.jpg`, same-dir R1) remains a technical cross-sell rule violation. Flagged for a future pass when a confirmed cross-sell image from another dir is available.

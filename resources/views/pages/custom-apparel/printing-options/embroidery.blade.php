@@ -61,6 +61,10 @@
             ['src' => '/images/embroidery/top5pct-embroidery-in-joliet.jpg',        'alt' => 'Custom embroidered uniforms and branded apparel in Joliet Illinois'],
             ['src' => '/images/embroidery/top5pct-embroidered-stitched-caps.jpg',                  'alt' => 'Custom embroidery for businesses and organizations in Joliet, Will and DuPage County Illinois'],
             ['src' => '/images/embroidery/top5pct-embroidered-cap-embroidered-beanies-joliet.jpg', 'alt' => 'Custom embroidered caps and beanies printed in Joliet Illinois'],
+            ['src' => '/images/embroidery/top5pct-embroidery-caps-joliet.jpg',                      'alt' => 'Custom embroidery caps and hats for businesses in Joliet Illinois'],
+            ['src' => '/images/embroidery/top5pct-embroidered-patch-joliet.jpg',                    'alt' => 'Custom embroidered patches made in Joliet Illinois'],
+            ['src' => '/images/embroidery/top5pct-embroidered-towels-joliet.jpg',                   'alt' => 'Custom embroidered towels and promotional items in Joliet Illinois'],
+            ['src' => '/images/embroidery/top5pct-stitched-polo-shirts-joliet.jpg',                 'alt' => 'Custom stitched polo shirts and embroidered uniforms in Joliet Illinois'],
         ]"
         visible=2
     />
