@@ -96,8 +96,8 @@
 
     <x-sections.card-detailed-info
         heading="How Wall Graphics Transform Your Business Environment Into a Brand Statement"
-        image1="/images/wall-signs/top5pct-wall-signs-joliet.jpg"
-        alt1="Custom wall signs and wall graphics for businesses in Joliet Illinois"
+        image1="/images/wall-signs/top5pct-wall-signs-plainfield.jpg"
+        alt1="Custom wall signs and wall graphics for businesses in Plainfield Illinois"
     >
         <x-slot name="intro">
             <p class="mb-4">The walls of your business are a blank canvas that most business owners never fully use. Wall graphics turn empty wall space into powerful brand communication that works on every person who walks through your door, much like the <a href="/signs/business-signs/window-signs" class="link-notification">window signs</a> we produce for storefronts throughout Will and DuPage County that work on everyone who walks or drives past. A professionally designed and installed wall graphic in your lobby, showroom, or workspace immediately elevates the perceived quality of your business and creates an environment that feels intentional, polished, and professional.</p>
@@ -125,10 +125,10 @@
         name="Jerry E Olson"
     />
     <x-ui.card-banner-slide-in
-        image="/images/window-signs/top5pct-window-signs-joliet.jpg"
-        alt="Custom wall graphics and wall decals installed by Top 5 Percent in Joliet Illinois"
+        image="/images/window-signs/top5pct-window-signs-company-crest-hill.jpg"
+        alt="Custom window signs for companies in Crest Hill and Joliet Illinois"
         title="Turn Your Walls Into a Brand Statement"
-        href="/contact"
+        href="/signs/business-signs/window-signs"
         direction="right"
     />
     <x-ui.card-banner-slide-in
