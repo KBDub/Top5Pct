@@ -56,7 +56,7 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/vinyl/custom-vinyl-shirts.jpg',   'alt' => 'Custom vinyl shirts made with heat press in Joliet Illinois'],
+            ['src' => '/images/vinyl/top5pct-vinyl-shirts-joliet.jpg', 'alt' => 'Custom vinyl shirts printed in Joliet Illinois'],
             ['src' => '/images/vinyl/vinyl-hoodie.jpg',         'alt' => 'Custom vinyl hoodies pressed in Joliet and Shorewood Illinois'],
             ['src' => '/images/vinyl/vinyl-caps.jpg',           'alt' => 'Custom vinyl hats and caps in Joliet, Will and DuPage County Illinois'],
             ['src' => '/images/vinyl/vinyl-zip-up-hoodies.jpg', 'alt' => 'Vinyl zip-up hoodies custom pressed in Joliet Illinois'],
@@ -157,10 +157,10 @@
         direction="left"
     />
     <x-ui.card-banner-slide-in
-        image="/images/vinyl/vinyl-caps.jpg"
-        alt="Custom vinyl hats and caps from Top 5 Percent in Joliet Illinois"
-        title="Shirts, Hoodies, Hats, and More, All in One Shop"
-        href="/contact"
+        image="/images/banners/top5pct-retractable-banner.jpg"
+        alt="Custom vinyl banners and retractable banner stands from Top 5 Percent in Joliet Illinois"
+        title="Add a Custom Vinyl Banner to Match Your Apparel Order"
+        href="/signs/business-signs/banners"
         direction="right"
     />
 

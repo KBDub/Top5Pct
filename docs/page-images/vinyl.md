@@ -58,31 +58,31 @@ Slots in blade order. Banner is first, carousel next, then body, then slides.
 | slot | component | image | dir | date | round | size | status |
 |---|---|---|---|---|---|---|---|
 | hero | category-hero | top5pct-vinyl-shirts.jpg | vinyl/ | Jun 8 | R3 | 388K | good |
-| C-1 | carousel-rotating-images | custom-vinyl-shirts.jpg | vinyl/ | May 18 | unconfirmed | 403K | round unconfirmed; duplicate of card-1 |
+| C-1 | carousel-rotating-images | top5pct-vinyl-shirts-joliet.jpg | vinyl/ | Jun 20 | R4 | — | good — R4 same-dir; was unconfirmed May 18; C-1/card-1 duplicate resolved |
 | C-2 | carousel-rotating-images | vinyl-hoodie.jpg | vinyl/ | May 18 | unconfirmed | 570K | round unconfirmed |
-| C-3 | carousel-rotating-images | vinyl-caps.jpg | vinyl/ | May 18 | unconfirmed | 566K | round unconfirmed; duplicate of slide-R |
+| C-3 | carousel-rotating-images | vinyl-caps.jpg | vinyl/ | May 18 | unconfirmed | 566K | round unconfirmed; slide-R duplicate resolved Jun 25 |
 | C-4 | carousel-rotating-images | vinyl-zip-up-hoodies.jpg | vinyl/ | May 18 | unconfirmed | 423K | round unconfirmed; duplicate of card-3 |
-| card-1 | card-image-with-text | custom-vinyl-shirts.jpg | vinyl/ | May 18 | unconfirmed | 403K | round unconfirmed; duplicate of C-1 |
+| card-1 | card-image-with-text | custom-vinyl-shirts.jpg | vinyl/ | May 18 | unconfirmed | 403K | round unconfirmed; C-1 duplicate resolved Jun 25 (C-1 now uses R4 file) |
 | card-2 | card-image-with-text (imagePosition right) | custom-vinyl-hoodies.jpg | vinyl/ | May 18 | unconfirmed | 304K | round unconfirmed; duplicate of slide-L |
 | card-2image image1 | card-2image-with-text | custom-caps-vinyl.jpg | vinyl/ | May 18 | unconfirmed | 281K | round unconfirmed |
 | card-2image image2 | card-2image-with-text | neon-vinyl-shirts.jpg | vinyl/ | May 18 | unconfirmed | 295K | round unconfirmed |
 | card-3 | card-image-with-text | vinyl-zip-up-hoodies.jpg | vinyl/ | May 18 | unconfirmed | 423K | round unconfirmed; duplicate of C-4 |
 | card-detailed image1 | card-detailed-info | top5pct-vinyl-t-shirt-maker.jpg | vinyl/ | Jun 8 | R3 | 386K | good |
 | slide-L | card-banner-slide-in (direction left) | custom-vinyl-hoodies.jpg | vinyl/ | May 18 | unconfirmed | 304K | round unconfirmed; same-category allowed for slide-L; duplicate of card-2 |
-| slide-R | card-banner-slide-in (direction right) | vinyl-caps.jpg | vinyl/ | May 18 | unconfirmed | 566K | rule violation: same-category in cross-sell position; duplicate of C-3 |
+| slide-R | card-banner-slide-in (direction right) | top5pct-retractable-banner.jpg | banners/ | May 11 | R1 | 234K | good — cross-sell to banners/; violation resolved Jun 25; C-3/slide-R duplicate resolved |
 
 ---
 
 ## R1-R3 Placement Summary
 
 **Total image slots with an image path referenced:** 13
-**Confirmed R1-R3 by round:** 2 (hero R3, card-detailed R3)
-**Unconfirmed round (May 18):** 11 — cannot receive R1-R3 credit until round is confirmed
-**Rule violations:** 1 (slide-R: same-category, not a cross-sell)
+**Confirmed R1-R4:** 4 (hero R3, C-1 R4, card-detailed R3, slide-R R1)
+**Unconfirmed round (May 18):** 9 — cannot receive R1-R3 credit until round is confirmed
+**Rule violations:** 0 — slide-R violation resolved Jun 25
 
-**R1-R3 slots remaining to fill:** 11 (all May 18 slots, pending confirmation or replacement)
+**R1-R3 slots remaining to fill:** 9 (all remaining May 18 slots, pending confirmation or replacement)
 
-If the user confirms May 18 as an approved round, the count changes to 12 of 13 confirmed, with only the slide-R rule violation remaining. This document proceeds on the assumption that May 18 is unconfirmed.
+If the user confirms May 18 as an approved round, the count changes to 13 of 13 confirmed. This document proceeds on the assumption that May 18 is unconfirmed.
 
 ---
 
@@ -105,45 +105,34 @@ If the user confirms May 18 as an approved round, the count changes to 12 of 13 
 | slide-L | custom-vinyl-hoodies.jpg | May 18 | unconfirmed | unconfirmed; same-category allowed |
 | slide-R | vinyl-caps.jpg | May 18 | unconfirmed | rule violation |
 
-Over-target condition is not met: all non-carousel body and slide slots (except hero and card-detailed) are May 18 unconfirmed. Carousel stays at 4.
+Over-target condition is not met: 9 non-carousel slots remain May 18 unconfirmed. Carousel stays at 4. C-1 upgraded to R4 Jun 25.
 
-**Carousel round improvement — no same-dir R3 files available:**
-
-Unlike digital-vinyl/ which had 3 unused R3 files for immediate carousel swap, vinyl/ has both R3 files already placed (hero and card-detailed). No unused R3 same-dir files exist. Carousel improvement requires one of:
-1. User confirms May 18 as a valid round — all 4 carousel slots immediately become valid
-2. R4 supplies new vinyl/ images with proper round dates
-
-The 3 unused May 18 files (custom-hoodies.jpg, vinyl-shirts.jpg, vinyl-t-shirt-maker.jpg) are available for body card assignments if May 18 is confirmed, which could also help reduce duplicates.
+C-1 now uses confirmed R4 file. C-2/C-3/C-4 remain May 18 unconfirmed. No unused confirmed same-dir files remain for further carousel improvement without May 18 confirmation or additional R4 images.
 
 ---
 
 ## Rule Violations
 
-### slide-R — same-category image in cross-sell position
+### slide-R — resolved Jun 25, 2026
 
-The blade uses `vinyl-caps.jpg` (vinyl/, May 18, 566K) for slide-R. Two issues:
+slide-R previously used `vinyl-caps.jpg` (vinyl/, May 18, unconfirmed, 566K). Two violations: same-category and round unconfirmed.
 
-1. **Same-category** — slide-R must always be a cross-sell from a different category dir. This image is from the page's own dir (vinyl/).
-2. **Round unconfirmed** — the May 18 date is unconfirmed as R1-R3. The slide-R rule requires an R1-R3 cross-sell image.
-
-The slide-R title is "Shirts, Hoodies, Hats, and More, All in One Shop" with href="/contact". This describes the current page's product range rather than a companion, confirming no cross-sell intent was built into the original slot. Both the image and the title need to change.
-
-Additionally, vinyl-caps.jpg is already used in C-3 — two total uses of this file.
+**Fix applied Jun 25, 2026:** slide-R replaced with `top5pct-retractable-banner.jpg` (banners/, R1, May 11, 234K). Title updated to "Add a Custom Vinyl Banner to Match Your Apparel Order." href updated to `/signs/business-signs/banners`. Both violations resolved. C-3/slide-R duplicate also resolved.
 
 ---
 
 ## Duplicate Image Usage
 
-Four files are used in multiple blade slots:
+Two files remain used in multiple blade slots (2 resolved Jun 25):
 
-| file | date | round | slot 1 | slot 2 |
-|---|---|---|---|---|
-| custom-vinyl-shirts.jpg | May 18 | unconfirmed | C-1 | card-1 |
-| vinyl-zip-up-hoodies.jpg | May 18 | unconfirmed | C-4 | card-3 |
-| vinyl-caps.jpg | May 18 | unconfirmed | C-3 | slide-R (rule violation) |
-| custom-vinyl-hoodies.jpg | May 18 | unconfirmed | card-2 | slide-L |
+| file | date | round | slot 1 | slot 2 | status |
+|---|---|---|---|---|---|
+| custom-vinyl-shirts.jpg | May 18 | unconfirmed | C-1 | card-1 | resolved Jun 25 — C-1 now uses R4 file |
+| vinyl-caps.jpg | May 18 | unconfirmed | C-3 | slide-R | resolved Jun 25 — slide-R now uses banners/ R1 |
+| vinyl-zip-up-hoodies.jpg | May 18 | unconfirmed | C-4 | card-3 | duplicate remains — needs May 18 confirmation |
+| custom-vinyl-hoodies.jpg | May 18 | unconfirmed | card-2 | slide-L | duplicate remains — slide-L same-category allowed; needs May 18 confirmation |
 
-All duplicates stem from a thin usable inventory: only 10 May 18 files are vinyl/apparel content (2 are misplaced yard-sign files), and both R3 files are already used. With 13 image slots and 10 May 18 plus 2 R3 files, reuse was unavoidable. The 3 unused May 18 files (custom-hoodies.jpg, vinyl-shirts.jpg, vinyl-t-shirt-maker.jpg) could reduce card-level duplicates if May 18 is confirmed.
+2 of 4 duplicates resolved Jun 25. 2 remain — can only be fixed once May 18 round is confirmed.
 
 ---
 
@@ -152,69 +141,23 @@ All duplicates stem from a thin usable inventory: only 10 May 18 files are vinyl
 | slot | direction | image | dir | date | round | rule | status |
 |---|---|---|---|---|---|---|---|
 | slide-L | left | custom-vinyl-hoodies.jpg | vinyl/ | May 18 | unconfirmed | may be cross-sell; if cross-sell must be R1-R3 | same-category (allowed for slide-L); round unconfirmed; duplicate of card-2 |
-| slide-R | right | vinyl-caps.jpg | vinyl/ | May 18 | unconfirmed | must be cross-sell R1-R3 from another category | violation: same-category; round unconfirmed; duplicate of C-3 |
+| slide-R | right | top5pct-retractable-banner.jpg | banners/ | May 11 | R1 | must be cross-sell R1-R3 from another category | good — cross-sell to banners/; violation resolved Jun 25 |
 
 ---
 
 ## Immediate Suggestions
 
-### Action 1 — confirm or classify the May 18 date (same as digital-vinyl/)
+### Resolved Jun 25, 2026
 
-This is the same round classification question as digital-vinyl/. Since vinyl/ and digital-vinyl/ share the identical May 18 batch, confirmation of the May 18 round for digital-vinyl/ automatically applies here. If May 18 is confirmed, 11 of 13 slots become valid, leaving only the slide-R rule violation outstanding.
+- **C-1 upgraded:** Replaced unconfirmed May 18 `custom-vinyl-shirts.jpg` with R4 `top5pct-vinyl-shirts-joliet.jpg`. C-1/card-1 duplicate resolved.
+- **slide-R fixed:** Replaced same-category `vinyl-caps.jpg` (violation) with banners/ R1 cross-sell `top5pct-retractable-banner.jpg`. C-3/slide-R duplicate resolved.
 
-### Action 2 — replace slide-R with a confirmed R1-R3 cross-sell from another category
+### Remaining actions (pending May 18 confirmation)
 
-The blade body references these companion categories most frequently:
-
-| companion | references in blade | link |
-|---|---|---|
-| DTF transfers | 3 | /custom-apparel/printing-options/dtf-transfers |
-| custom apparel (general) | 3 | /custom-apparel |
-| corporate wear | 2 | /custom-apparel/group-wear/corporate-wear-shirts |
-| dye sublimation | 2 | /custom-apparel/printing-options/dye-sublimation-printing |
-| embroidery | 2 | /custom-apparel/printing-options/embroidery |
-| screen printing | 2 | /custom-apparel/printing-options/screen-printing |
-| banners | 2 | /signs/business-signs/banners |
-| logo design | 2 | /design-services/logo-design |
-| spirit wear | 1 | /custom-apparel/group-wear/spirit-wear-shirts |
-| reunion shirts | 1 | /custom-apparel/group-wear/reunion-shirts |
-| rhinestone apparel | 1 | /custom-apparel/specialty-materials/rhinestone-apparel |
-
-Two strong candidates stand out:
-
-**Option A — banners/ (recommended):** The blade references banners twice with strong vinyl ties: "pairs well with a coordinating vinyl banner for your next event or storefront display" and "coordinate your apparel with a matching banner or signage package for an event." The word "vinyl" connects both products directly. banners/ has confirmed R1-R3 inventory from prior audits. Title suggestion: "Add a Custom Vinyl Banner to Match Your Apparel Order."
-
-**Option B — glitter-shirts/:** The blade mentions glitter vinyl specifically: "We carry holographic, glitter, and other effect vinyls as well." glitter-shirts/ has confirmed R1, R2, and R3 files from prior sessions. This is a natural companion since glitter is a vinyl specialty. Title suggestion: "Upgrade to Glitter or Specialty Vinyl for a Premium Finish."
-
-Priority recommendation: Option A (banners/) for its stronger direct reference in the blade body with vinyl-specific language. If banners/ files are not available when this fix is implemented, Option B (glitter-shirts/) is the backup.
-
-### Action 3 — resolve duplicates using unused May 18 files (if round confirmed)
-
-If May 18 is confirmed as a valid round, three unused May 18 files can replace duplicated body card slots:
-
-| duplicate to resolve | current file | replace with | notes |
-|---|---|---|---|
-| card-1 (duplicate of C-1) | custom-vinyl-shirts.jpg | vinyl-shirts.jpg (May 18, 388K) | shirts for shirts, same subject |
-| card-3 (duplicate of C-4) | vinyl-zip-up-hoodies.jpg | custom-hoodies.jpg (May 18, 294K) | hoodies for hoodies |
-| slide-L (duplicate of card-2) | custom-vinyl-hoodies.jpg | vinyl-t-shirt-maker.jpg (May 18, 386K) | or hold for later; slide-L same-category is allowed but duplicate is avoidable |
-
-After these swaps: no blade slot would use the same file twice, assuming May 18 is confirmed.
-
-### Action 4 — carousel improvement (R4 dependency)
-
-No unused R3 files exist in vinyl/ — both are placed. Carousel improvement can only happen when:
-1. May 18 is confirmed (carousel stays at 4 but rounds become valid)
-2. R4 supplies new vinyl/ images with top5pct- naming and R4 dates
-
-R4 should target at minimum 4 carousel-quality vinyl/ images in branded naming convention.
-
-### Action 5 — move misplaced yard-sign files out of vinyl/
-
-Same two files as found in digital-vinyl/ are duplicated here:
-- top5pct-article-yard-signs-buy.jpg (47K, May 18)
-- top5pct-banner-yard-signs-joliet-shorewood-crest-hill.jpg (96K, May 18)
-
-These are yard-sign assets. They are not referenced in this blade. They should be moved to the yard-signs dir during R4 cleanup. Same action applies to the digital-vinyl/ copies.
+- **Confirm May 18 round:** Same question as digital-vinyl/. If confirmed, 9 remaining May 18 slots become valid (13 of 13 total).
+- **Resolve C-4/card-3 duplicate:** Replace card-3 `vinyl-zip-up-hoodies.jpg` with unused `custom-hoodies.jpg` (May 18, 294K) once round confirmed.
+- **Resolve card-2/slide-L duplicate:** Replace slide-L `custom-vinyl-hoodies.jpg` with unused `vinyl-t-shirt-maker.jpg` (May 18, 386K) once round confirmed.
+- **Move misplaced yard-sign files:** `top5pct-article-yard-signs-buy.jpg` and `top5pct-banner-yard-signs-joliet-shorewood-crest-hill.jpg` are not referenced in the blade and belong in the yard-signs dir.
 
 ---
 
@@ -224,13 +167,15 @@ These are yard-sign assets. They are not referenced in this blade. They should b
 |---|---|---|---|---|---|
 | top5pct-vinyl-shirts.jpg | vinyl/ | 388K | Jun 8 | R3 | hero only |
 | top5pct-vinyl-t-shirt-maker.jpg | vinyl/ | 386K | Jun 8 | R3 | card-detailed image1 only |
-| custom-vinyl-shirts.jpg | vinyl/ | 403K | May 18 | unconfirmed | C-1 and card-1 (duplicate) |
+| custom-vinyl-shirts.jpg | vinyl/ | 403K | May 18 | unconfirmed | card-1 only (C-1 duplicate resolved Jun 25) |
 | vinyl-hoodie.jpg | vinyl/ | 570K | May 18 | unconfirmed | C-2 only |
-| vinyl-caps.jpg | vinyl/ | 566K | May 18 | unconfirmed | C-3 and slide-R (slide-R is a violation) |
+| vinyl-caps.jpg | vinyl/ | 566K | May 18 | unconfirmed | C-3 only (slide-R duplicate resolved Jun 25) |
 | vinyl-zip-up-hoodies.jpg | vinyl/ | 423K | May 18 | unconfirmed | C-4 and card-3 (duplicate) |
 | custom-vinyl-hoodies.jpg | vinyl/ | 304K | May 18 | unconfirmed | card-2 and slide-L (duplicate) |
 | custom-caps-vinyl.jpg | vinyl/ | 281K | May 18 | unconfirmed | card-2image image1 only |
 | neon-vinyl-shirts.jpg | vinyl/ | 295K | May 18 | unconfirmed | card-2image image2 only |
+| top5pct-vinyl-shirts-joliet.jpg | vinyl/ | — | Jun 20 | R4 | C-1 only |
+| top5pct-retractable-banner.jpg | banners/ | 234K | May 11 | R1 | slide-R only |
 | custom-hoodies.jpg | vinyl/ | 294K | May 18 | unconfirmed | unused — available if May 18 confirmed |
 | vinyl-shirts.jpg | vinyl/ | 388K | May 18 | unconfirmed | unused — available if May 18 confirmed |
 | vinyl-t-shirt-maker.jpg | vinyl/ | 386K | May 18 | unconfirmed | unused — available if May 18 confirmed |
@@ -241,11 +186,10 @@ These are yard-sign assets. They are not referenced in this blade. They should b
 
 ## Notes
 
-- 2 of 13 referenced image slots are confirmed R1-R3 (hero R3, card-detailed R3) as of Jun 25, 2026.
-- 11 of 13 slots use May 18 files whose round is unconfirmed — same classification question as digital-vinyl/.
-- Both R3 files are already placed. No unused R3 same-dir files exist. This page cannot improve its carousel without May 18 confirmation or new R4 images, unlike digital-vinyl/ which had 3 spare R3 files.
-- 1 rule violation: slide-R — same-category, not a cross-sell. Must be replaced regardless of May 18 classification.
-- 4 files are used in 2 slots each (duplicates) due to thin inventory. 3 unused May 18 files can resolve 3 of 4 duplicates if round is confirmed.
-- 2 misplaced yard-sign files present — identical to those in digital-vinyl/; same cleanup applies to both dirs.
-- The May 18 batch in vinyl/ is byte-for-byte identical to the May 18 batch in digital-vinyl/. Round confirmation for one applies to both.
-- R4 priorities: (1) user confirmation of May 18 round status (applies to both vinyl/ and digital-vinyl/), (2) slide-R cross-sell replacement with banners/ or glitter-shirts/ R1-R3 file, (3) new vinyl/ carousel images with branded top5pct- naming, (4) duplicate resolution using unused May 18 files once confirmed, (5) misplaced file cleanup.
+- 4 of 13 slots confirmed R1-R4 as of Jun 25, 2026 (hero R3, C-1 R4, card-detailed R3, slide-R R1).
+- 2 changes made Jun 25: C-1 upgraded to R4; slide-R rule violation resolved with banners/ R1 cross-sell.
+- 2 of 4 duplicates resolved Jun 25 (C-1/card-1, C-3/slide-R). 2 remain (C-4/card-3, card-2/slide-L).
+- 9 slots remain May 18 unconfirmed — same classification question as digital-vinyl/. Confirmation applies to both dirs.
+- 0 rule violations.
+- 2 misplaced yard-sign files in dir — not referenced in blade; cleanup deferred.
+- Remaining actions require May 18 confirmation: duplicate resolution (card-3, slide-L) and full round validation of 9 slots.
