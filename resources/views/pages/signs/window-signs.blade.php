@@ -47,7 +47,7 @@
         primaryButtonHref="#all-products"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/window-signs/top5pct-window-signage.jpg"
+        image="/images/window-signs/top5pct-window-signs-rockdale.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />
@@ -56,7 +56,7 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/window-signs/top5pct-business-window-signs.jpg',     'alt' => 'Custom window signs and door graphics for businesses in Joliet Illinois'],
+            ['src' => '/images/window-signs/top5pct-window-graphic-signs-joliet.jpg', 'alt' => 'Custom window graphic signs for businesses in Joliet Illinois'],
             ['src' => '/images/window-signs/top5pct-custom-window-signs.jpg','alt' => 'Custom window decals and window graphics in Joliet, Shorewood, and Crest Hill Illinois'],
             ['src' => '/images/window-signs/top5pct-window-door-signs.jpg',     'alt' => 'Window clings and perforated vinyl for businesses in Joliet and Shorewood Illinois'],
             ['src' => '/images/window-signs/top5pct-window-signs-joliet-slammers.jpg',     'alt' => 'Custom window decals installed in Joliet, Shorewood, and Rockdale Illinois'],
@@ -76,8 +76,8 @@
     />
 
     <x-sections.card-image-with-text
-        image="/images/window-signs/top5pct-window-signs-joliet.jpg"
-        alt="Custom window decals and window graphics for businesses in Joliet, Shorewood, and Crest Hill Illinois"
+        image="/images/window-signs/top5pct-window-signs-for-companies-joliet.jpg"
+        alt="Custom window signs for companies and businesses in Joliet Illinois"
         title="Turn Your Windows Into Advertising Space"
     >
         <p class="mb-4">Your storefront windows are some of the most visible real estate your business has. Every person who walks or drives past your location sees your windows, and a professionally designed window graphic turns that daily exposure into a consistent advertising impression, similar to how our <a href="/signs/business-signs/banners" class="link-notification">outdoor banners</a> work on your building facade. We produce custom window signs for businesses throughout Joliet, Shorewood, Crest Hill, and Will and DuPage County, and many clients pair window graphics with matching <a href="/signs/ground-signs/yard-signs" class="link-notification">yard signs</a> near the street to create brand consistency from curb to storefront.</p>
@@ -86,8 +86,8 @@
     </x-sections.card-image-with-text>
 
     <x-sections.card-image-with-text
-        image="/images/window-signs/top5pct-joliet-slammers-window-signs-joliet.jpg"
-        alt="Custom window signs at Joliet Slammers stadium in Joliet Illinois"
+        image="/images/window-signs/top5pct-window-signs-plainfield.jpg"
+        alt="Custom window signs for businesses in Plainfield Illinois"
         title="Perforated Vinyl and Window Clings"
         imagePosition="right"
     >
