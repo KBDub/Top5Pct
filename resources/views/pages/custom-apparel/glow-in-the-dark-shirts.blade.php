@@ -59,7 +59,7 @@
             ['src' => '/images/glow-shirts/top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg',            'alt' => 'Custom glow in the dark shirts caps and hoodies in Joliet Illinois'],
             ['src' => '/images/glow-shirts/top5pct-glowing-halloween-bat-shirt.jpg',                      'alt' => 'Custom glowing Halloween bat shirt in Joliet Illinois'],
             ['src' => '/images/glow-shirts/top5pct-halloween-pumpkin-glow-shirt.jpg',                     'alt' => 'Custom Halloween pumpkin glow shirt in Joliet Illinois'],
-            ['src' => '/images/custom-shirts/top5pct-custom-vinyl-shirts.jpg',                                     'alt' => 'Custom glow in the dark shirts made in Joliet, Will and DuPage County Illinois'],
+            ['src' => '/images/glow-shirts/top5pct-glowing-hoodies-joliet.jpg',                                   'alt' => 'Custom glow in the dark hoodies in Joliet Illinois'],
         ]"
         visible=2
     />
@@ -70,8 +70,8 @@
     />
 
     <x-sections.card-image-with-text
-        image="/images/glow-shirts/top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg"
-        alt="Custom glow in the dark shirts for events and nightlife in Joliet Illinois"
+        image="/images/glow-shirts/top5pct-glow-in-the-dark-hats-joliet.jpg"
+        alt="Custom glow in the dark hats and apparel in Joliet Illinois"
         title="Shirts That Transform When the Lights Go Out"
     >
         <p class="mb-4">Glow-in-the-dark shirts use photoluminescent vinyl that charges in natural or artificial light and then releases that stored energy as a visible green glow when the lights go out. In a darkened room, your design becomes a glowing beacon that is visible across the space and turns your shirt into the most talked-about item at any nighttime event. The glow effect works on any design that can be cut from vinyl, logos, text, shapes, and graphics all translate into glowing designs that look completely distinctive in the dark.</p>
@@ -80,8 +80,8 @@
     </x-sections.card-image-with-text>
 
     <x-sections.card-image-with-text
-        image="/images/glow-shirts/top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg"
-        alt="Custom glow in the dark shirts for Halloween events and nighttime activities in Joliet Illinois"
+        image="/images/glow-shirts/top5pct-glow-shirts-channahon.jpg"
+        alt="Custom glow in the dark shirts for events in Channahon and Joliet Illinois"
         title="Every Event Under the Stars"
         imagePosition="right"
     >
@@ -97,8 +97,8 @@
 
     <x-sections.card-detailed-info
         heading="Why Glow-in-the-Dark Shirts Create Unforgettable Event Moments"
-        image1="/images/glow-shirts/top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg"
-        alt1="Custom glow in the dark shirts for events and nighttime activities in Joliet, Will and DuPage County Illinois"
+        image1="/images/glow-shirts/top5pct-glow-polo-shirts-joliet.jpg"
+        alt1="Custom glow in the dark polo shirts and apparel in Joliet Illinois"
     >
         <x-slot name="intro">
             <p class="mb-4">Event experiences are made or broken by the moments that participants remember afterward. A well-chosen glow shirt moment, the instant when the room lights dim and a group of matching glow shirts lights up simultaneously, is one of the most viscerally exciting moments that custom apparel can create. The surprise and delight of that reveal is the kind of thing that guests photograph, share on social media, and talk about when describing the event to people who were not there. That level of organic, enthusiastic sharing is exactly what event organizers and celebration planners want to create.</p>
@@ -126,17 +126,17 @@
         name="Jonathan Young"
     />
     <x-ui.card-banner-slide-in
-        image="/images/glow-shirts/top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg"
-        alt="Custom glow in the dark shirts by Top 5 Percent in Joliet Illinois"
-        title="Custom Glow Shirts, Light Up Your Next Event"
-        href="/contact"
+        image="/images/glitter-shirts/top5pct-glitter-sweatshirts-joliet.jpg"
+        alt="Custom glitter sweatshirts and specialty apparel from Top 5 Percent in Joliet Illinois"
+        title="Also Make Custom Glitter Shirts for Any Event"
+        href="/custom-apparel/specialty-materials/glitter-shirts"
         direction="right"
     />
     <x-ui.card-banner-slide-in
-        image="/images/custom-shirts/top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg"
-        alt="Custom holographic color-shifting shirts from Top 5 Percent in Joliet Illinois"
-        title="Pair Glow-in-the-Dark With Holographic for a Bold Look"
-        href="/contact"
+        image="/images/foil-shirts/top5pct-foil-shirts.jpg"
+        alt="Custom foil shirts and metallic finish apparel from Top 5 Percent in Joliet Illinois"
+        title="Try Foil Shirts for a Bold Metallic Finish"
+        href="/custom-apparel/specialty-materials/foil-shirts"
         direction="left"
     />
 

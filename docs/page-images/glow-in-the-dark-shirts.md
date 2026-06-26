@@ -44,25 +44,25 @@ Dir summary: 0 Initial, 0 R1, 0 R2, 4 R3, 4 R4. 8 image files total.
 | slot | component | image | dir | round | date | size | status |
 |---|---|---|---|---|---|---|---|
 | hero | category-hero | top5pct-glow-in-the-dark-caps.jpg | glow-shirts/ | R3 | Jun 8 | 305K | good |
-| C-1 | carousel-rotating-images | top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg | glow-shirts/ | R3 | Jun 8 | 28K | R3; small file; same image in 5 slots |
+| C-1 | carousel-rotating-images | top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg | glow-shirts/ | R3 | Jun 8 | 28K | R3; small file; no replacement available at R1-R3 stage |
 | C-2 | carousel-rotating-images | top5pct-glowing-halloween-bat-shirt.jpg | glow-shirts/ | R3 | Jun 8 | 257K | good |
 | C-3 | carousel-rotating-images | top5pct-halloween-pumpkin-glow-shirt.jpg | glow-shirts/ | R3 | Jun 8 | 360K | good |
-| C-4 | carousel-rotating-images | top5pct-custom-vinyl-shirts.jpg | custom-shirts/ | — | — | — | VIOLATION: broken path (file exists at digital-vinyl/ not custom-shirts/); wrong category for carousel |
-| card-1 | card-image-with-text | top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg | glow-shirts/ | R3 | Jun 8 | 28K | R3; small file; same image in 5 slots |
-| card-2 | card-image-with-text (imagePosition right) | top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg | glow-shirts/ | R3 | Jun 8 | 28K | R3; small file; same image in 5 slots |
-| card-detailed image1 | card-detailed-info | top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg | glow-shirts/ | R3 | Jun 8 | 28K | R3; small file; same image in 5 slots |
-| slide-R | card-banner-slide-in (direction right) | top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg | glow-shirts/ | R3 | Jun 8 | 28K | VIOLATION: slide-R must be cross-sell; same-dir used; same image in 5 slots |
-| slide-L | card-banner-slide-in (direction left) | top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg | custom-shirts/ | Initial | Mar 16 | 27K | VIOLATION: Initial file; below R1-R3 minimum |
+| C-4 | carousel-rotating-images | top5pct-glowing-hoodies-joliet.jpg | glow-shirts/ | R4 | Jun 20 | 290K | good — replaced broken ref Jun 26 |
+| card-1 | card-image-with-text | top5pct-glow-in-the-dark-hats-joliet.jpg | glow-shirts/ | R4 | Jun 20 | 302K | good — replaced duplicate Jun 26 |
+| card-2 | card-image-with-text (imagePosition right) | top5pct-glow-shirts-channahon.jpg | glow-shirts/ | R4 | Jun 20 | 286K | good — replaced duplicate Jun 26 |
+| card-detailed image1 | card-detailed-info | top5pct-glow-polo-shirts-joliet.jpg | glow-shirts/ | R4 | Jun 20 | 265K | good — replaced duplicate Jun 26 |
+| slide-R | card-banner-slide-in (direction right) | top5pct-glitter-sweatshirts-joliet.jpg | glitter-shirts/ | R3 | Jun 8 | 375K | good — cross-sell, fixed Jun 26 |
+| slide-L | card-banner-slide-in (direction left) | top5pct-foil-shirts.jpg | foil-shirts/ | R3 | Jun 8 | 306K | good — cross-sell, replaced Initial Jun 26 |
 
 ---
 
 ## R1-R3 Placement Summary
 
 **Total blade image slots:** 10
-**Round-compliant (R1-R3+):** 9 — hero, C-1, C-2, C-3, card-1, card-2, card-detailed image1, slide-R are all R3. C-4 is unresolvable (broken path).
-**Initial violations:** 1 — slide-L
-**Rule violations (independent of round):** 2 — C-4 broken path + wrong category; slide-R not a cross-sell
-**Remaining to properly fill:** 5 slots need action (see Immediate Suggestions)
+**Round-compliant (R1-R4):** 10 — all slots now R3 or R4.
+**Initial violations:** 0 — resolved Jun 26
+**Rule violations:** 0 — resolved Jun 26
+**Remaining:** C-1 still uses 28K R3 file; no replacement available until R4 supplies another glow-shirts/ file
 
 ---
 
@@ -76,13 +76,13 @@ Dir summary: 0 Initial, 0 R1, 0 R2, 4 R3, 4 R4. 8 image files total.
 | slot | image | round | status |
 |---|---|---|---|
 | hero | top5pct-glow-in-the-dark-caps.jpg | R3 | good |
-| card-1 | top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg | R3 | good (duplicate issue) |
-| card-2 | top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg | R3 | good (duplicate issue) |
-| card-detailed image1 | top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg | R3 | good (duplicate issue) |
-| slide-R | top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg | R3 | VIOLATION (not cross-sell) |
-| slide-L | top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg | Initial | VIOLATION |
+| card-1 | top5pct-glow-in-the-dark-hats-joliet.jpg | R4 | good — placed Jun 26 |
+| card-2 | top5pct-glow-shirts-channahon.jpg | R4 | good — placed Jun 26 |
+| card-detailed image1 | top5pct-glow-polo-shirts-joliet.jpg | R4 | good — placed Jun 26 |
+| slide-R | top5pct-glitter-sweatshirts-joliet.jpg | R3 | good, cross-sell — fixed Jun 26 |
+| slide-L | top5pct-foil-shirts.jpg | R3 | good, cross-sell — fixed Jun 26 |
 
-All 4 current carousel slots are glow-shirts/ same-dir. C-4 is a broken reference and wrong category — must be removed. Carousel should drop to 3 until a 4th R1-R3+ glow-shirts/ file is available. Carousel expansion beyond 4 is not yet permitted because slide-R and slide-L violations are unresolved.
+All 4 carousel slots are glow-shirts/ same-dir, R3-R4. C-4 broken reference replaced with top5pct-glowing-hoodies-joliet.jpg (R4, Jun 26). Carousel is at exactly 4. All non-carousel slots are R3-R4 — carousel expansion beyond 4 is permitted if additional glow-shirts/ files become available.
 
 ---
 
@@ -90,18 +90,18 @@ All 4 current carousel slots are glow-shirts/ same-dir. C-4 is a broken referenc
 
 | slot | direction | image | dir | round | rule | status |
 |---|---|---|---|---|---|---|
-| slide-R | right | top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg | glow-shirts/ | R3 | must be cross-sell R1-R3 | VIOLATION — same-dir, not a cross-sell |
-| slide-L | left | top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg | custom-shirts/ | Initial | cross-sell must be R1-R3 | VIOLATION — Initial file |
+| slide-R | right | top5pct-glitter-sweatshirts-joliet.jpg | glitter-shirts/ | R3 | must be cross-sell R1-R3 | good, cross-sell, R3 — fixed Jun 26 |
+| slide-L | left | top5pct-foil-shirts.jpg | foil-shirts/ | R3 | cross-sell must be R1-R3 | good, cross-sell, R3 — fixed Jun 26 |
 
-slide-R is using a glow-shirts/ same-dir image. The cross-sell rule requires it to come from a different category. A related specialty material dir (glitter-shirts/, foil-shirts/, or reflective-shirts/) is the natural cross-sell for this page.
+slide-R cross-sells to glitter-shirts/ — adjacent specialty vinyl material, natural pairing with glow. Title: "Also Make Custom Glitter Shirts for Any Event." href: /custom-apparel/specialty-materials/glitter-shirts.
 
-slide-L cross-sells to custom-shirts/ holographic, which is thematically appropriate ("Pair Glow-in-the-Dark With Holographic for a Bold Look"). However the file is Initial. The custom-shirts/ dir has several R1-R2 files. Alternatively, another specialty material dir could supply the cross-sell image.
+slide-L cross-sells to foil-shirts/ — metallic finish vinyl, thematically adjacent to glow specialty effects. Title: "Try Foil Shirts for a Bold Metallic Finish." href: /custom-apparel/specialty-materials/foil-shirts.
 
 ---
 
 ## Duplicate File Usage
 
-`top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg` (glow-shirts/, R3, 28K) appears in **5 slots**: C-1, card-1, card-2, card-detailed image1, and slide-R. This is the most extreme duplication found in this audit series. The file is also very small at 28K, making it a weak image for high-visibility slots like card-1, card-2, and card-detailed.
+`top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg` (glow-shirts/, R3, 28K) previously appeared in 5 slots. Jun 26 fixes eliminated 4 of those 5 uses. It now appears in C-1 only. No other duplicates remain across any blade slots.
 
 ---
 
@@ -110,51 +110,44 @@ slide-L cross-sells to custom-shirts/ holographic, which is thematically appropr
 | file | dir | size | round | used in |
 |---|---|---|---|---|
 | top5pct-glow-in-the-dark-caps.jpg | glow-shirts/ | 305K | R3 | hero only |
-| top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg | glow-shirts/ | 28K | R3 | C-1, card-1, card-2, card-detailed image1, slide-R (5 slots — duplicate) |
+| top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg | glow-shirts/ | 28K | R3 | C-1 only (was 5 slots — reduced Jun 26) |
 | top5pct-glowing-halloween-bat-shirt.jpg | glow-shirts/ | 257K | R3 | C-2 only |
 | top5pct-halloween-pumpkin-glow-shirt.jpg | glow-shirts/ | 360K | R3 | C-3 only |
-| top5pct-custom-vinyl-shirts.jpg | custom-shirts/ (broken — file at digital-vinyl/) | — | — | C-4 only — broken reference |
-| top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg | custom-shirts/ | 27K | Initial | slide-L only — Initial violation |
-| top5pct-glowing-hoodies-joliet.jpg | glow-shirts/ | 290K | R4 | unused |
-| top5pct-glow-polo-shirts-joliet.jpg | glow-shirts/ | 265K | R4 | unused |
-| top5pct-glow-in-the-dark-hats-joliet.jpg | glow-shirts/ | 302K | R4 | unused |
-| top5pct-glow-shirts-channahon.jpg | glow-shirts/ | 286K | R4 | unused |
+| top5pct-glowing-hoodies-joliet.jpg | glow-shirts/ | 290K | R4 | C-4 only (placed Jun 26 — replaced broken ref) |
+| top5pct-glow-in-the-dark-hats-joliet.jpg | glow-shirts/ | 302K | R4 | card-1 only (placed Jun 26) |
+| top5pct-glow-shirts-channahon.jpg | glow-shirts/ | 286K | R4 | card-2 only (placed Jun 26) |
+| top5pct-glow-polo-shirts-joliet.jpg | glow-shirts/ | 265K | R4 | card-detailed image1 only (placed Jun 26) |
+| top5pct-glitter-sweatshirts-joliet.jpg | glitter-shirts/ | 375K | R3 | slide-R only (placed Jun 26) |
+| top5pct-foil-shirts.jpg | foil-shirts/ | 306K | R3 | slide-L only (placed Jun 26) |
+| top5pct-custom-vinyl-shirts.jpg | digital-vinyl/ (broken ref removed) | — | — | unused — broken path removed from C-4 Jun 26 |
+| top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg | custom-shirts/ | 27K | Initial | unused — Initial file removed from slide-L Jun 26 |
 
 ---
 
 ## Immediate Suggestions
 
-### Fix 1 — C-4: remove from carousel (broken path + wrong category)
+### Completed Jun 26, 2026
 
-C-4 references `/images/custom-shirts/top5pct-custom-vinyl-shirts.jpg`. This file does not exist in custom-shirts/ — it lives in digital-vinyl/. Even if the path were corrected, custom-shirts/ (or digital-vinyl/) is the wrong category for the carousel; all carousel slots must be glow-shirts/ same-dir images.
+All 10 blade image slots use distinct files. No duplicate use. 0 rule violations. 0 Initial files.
 
-**Action:** Remove C-4 from the carousel array. Carousel drops to 3 slots (C-1, C-2, C-3). No 4th glow-shirts/ R1-R3 file is available to fill a 4th slot at this stage; that waits for R4.
+- **C-4:** Broken path (custom-shirts/) replaced with `top5pct-glowing-hoodies-joliet.jpg` (glow-shirts/, R4). Carousel restored to 4 proper same-dir slots.
+- **card-1:** 28K duplicate replaced with `top5pct-glow-in-the-dark-hats-joliet.jpg` (glow-shirts/, R4, 302K).
+- **card-2:** 28K duplicate replaced with `top5pct-glow-shirts-channahon.jpg` (glow-shirts/, R4, 286K).
+- **card-detailed image1:** 28K duplicate replaced with `top5pct-glow-polo-shirts-joliet.jpg` (glow-shirts/, R4, 265K).
+- **slide-R:** Same-dir violation fixed. Now `top5pct-glitter-sweatshirts-joliet.jpg` (glitter-shirts/, R3, 375K). href → /custom-apparel/specialty-materials/glitter-shirts.
+- **slide-L:** Initial violation fixed. Now `top5pct-foil-shirts.jpg` (foil-shirts/, R3, 306K). href → /custom-apparel/specialty-materials/foil-shirts.
 
-### Fix 2 — slide-R: replace with R1-R3 cross-sell from related specialty dir
+### Remaining
 
-slide-R must be a cross-sell image from a different category. Natural cross-sells for glow shirts are adjacent specialty vinyl materials: glitter-shirts/, foil-shirts/, or reflective-shirts/. All three are confirmed to have R1-R3 files.
-
-**Action:** Select an R1-R3 image from glitter-shirts/, foil-shirts/, or reflective-shirts/ and place it in slide-R. Update the slide title and href to reflect the cross-sell destination.
-
-### Fix 3 — slide-L: replace with R1-R3 cross-sell image
-
-slide-L currently uses `top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg` (custom-shirts/, Initial, 27K). Initial files may not be used in any blade slot. The holographic theme ("Pair Glow-in-the-Dark With Holographic for a Bold Look") is thematically strong and worth preserving if an R1-R3 holographic image can be sourced. If no holographic R1-R3 image is available, substitute with an R1-R3 image from another specialty material dir (glitter-shirts/, foil-shirts/, or reflective-shirts/).
-
-**Action:** Replace slide-L image with an R1-R3 cross-sell from a related specialty dir. Confirm the title and href match the chosen cross-sell destination.
-
-### Not fixable at R1-R3 stage — card-1, card-2, card-detailed image1
-
-All three currently use `top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg` (28K, R3). All four glow-shirts/ R3 files are already assigned (hero, C-1, C-2, C-3). No additional glow-shirts/ R1-R3 files are available to de-duplicate these slots. They remain with the tiny duplicate image until R4 supplies new glow-shirts/ files.
-
-**These 3 slots are the primary R4 targets for this page.**
+C-1 still uses `top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg` (28K, R3). All other glow-shirts/ R3 and R4 files are now placed. No replacement available for C-1 until new glow-shirts/ images arrive.
 
 ---
 
 ## Notes
 
+- 10 of 10 slots R3-R4. 0 violations. 0 duplicates. Jun 26.
 - glow-shirts/ dir has no Initial, R1, or R2 files — all content is R3 or R4.
-- `top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg` (28K) is the most over-used image in the audit series: 5 slots on a single page, all with the same tiny file.
-- The 4 R4 glow-shirts/ files (Jun 20) are all unused. They are the primary resource for filling card-1, card-2, card-detailed image1, and expanding the carousel to 4 at the R4 stage.
-- C-4 broken path must be fixed regardless of round — it is a dead image reference.
-- slide-L holographic cross-sell theme is worth preserving in the next round if an R1-R3 holographic image can be found.
-- R1-R3 fixes needed before R4: Fix 1 (C-4 remove), Fix 2 (slide-R cross-sell), Fix 3 (slide-L cross-sell). Three fixes total.
+- All 4 R4 glow-shirts/ files placed Jun 26: C-4, card-1, card-2, card-detailed image1.
+- `top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg` (28K) went from 5 slots to 1 (C-1 only). No other glow-shirts/ file available to replace it.
+- slide-R cross-sells glitter-shirts/; slide-L cross-sells foil-shirts/ — both natural specialty vinyl pairings.
+- Prior broken ref (`custom-shirts/top5pct-custom-vinyl-shirts.jpg`) and Initial file (`custom-shirts/top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg`) both removed.
