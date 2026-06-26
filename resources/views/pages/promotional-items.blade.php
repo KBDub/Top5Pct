@@ -72,13 +72,13 @@
         id="promo-categories"
         :banners="[
         [
-            'image' => '/images/mugs/top5pct-custom-coffee-mugs-in-joliet.jpg',
+            'image' => '/images/mugs/top5pct-mugs-custom-plainfield.jpg',
             'alt'   => 'Custom branded mugs and drinkware for businesses in Joliet Illinois',
             'title' => 'Custom Mugs',
             'href'  => '/promotional-items/mugs',
         ],
         [
-            'image' => '/images/can-koozies/top5pct-can-koozies.jpg',
+            'image' => '/images/can-koozies/top5pct-koozie-can-joliet.jpg',
             'alt'   => 'Custom branded can koozies and drink holders for events in Joliet Illinois',
             'title' => 'Can Koozies',
             'href'  => '/promotional-items/can-koozies',
@@ -124,16 +124,16 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/mugs/top5pct-printed-mugs-old.jpg',                                           'alt' => 'Custom printed mugs and branded drinkware for businesses in Joliet Illinois'],
+            ['src' => '/images/mugs/top5pct-printed-mugs-and-tees.jpg',                                      'alt' => 'Custom printed mugs and branded drinkware for businesses in Joliet Illinois'],
             ['src' => '/images/custom-shirts/top5pct-long-lasting-graphic-shirts.jpg',                                   'alt' => 'Long-lasting custom graphic shirts and branded apparel in Joliet Illinois'],
-            ['src' => '/images/custom-shirts/top5pct-custom-flock-t-shirt-printing.jpg',                                 'alt' => 'Custom flock t-shirt printing for businesses and events in Joliet Illinois'],
-            ['src' => '/images/custom-shirts/top5pct-flock-hoodie-printing.jpg',                                         'alt' => 'Custom flock hoodie printing for events and corporate orders in Joliet Illinois'],
+            ['src' => '/images/flock-shirts/top5pct-custom-flock-t-shirt-printing.jpg',                                  'alt' => 'Custom flock t-shirt printing for businesses and events in Joliet Illinois'],
+            ['src' => '/images/flock-shirts/top5pct-flock-hoodie-printing.jpg',                                          'alt' => 'Custom flock hoodie printing for events and corporate orders in Joliet Illinois'],
         ]"
         visible=2
     />
 
     <x-ui.card-banner-slide-in
-        image="/images/custom-shirts/top5pct-flock-shirt-vinyl.jpg"
+        image="/images/flock-shirts/top5pct-flock-shirt-vinyl.jpg"
         alt="Custom branded promotional products at Top 5 Percent in Joliet Illinois"
         title="Branded Products Your Clients Will Keep"
         href="/contact"

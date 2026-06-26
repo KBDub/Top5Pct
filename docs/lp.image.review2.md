@@ -202,3 +202,53 @@ Two carousel slots were also broken — same cause (files migrated to dedicated 
 
 - No violations found. This LP was clean from the v1 audit and remains clean.
 - All three sub-category dirs (automobile-graphics/, vehicle-magnets/, dot-decals/) are well represented across all slot types.
+
+---
+
+### `/promotional-items` LP
+
+**File:** `resources/views/pages/promotional-items.blade.php`
+**Reviewed:** Jun 26, 2026
+**Status:** 6 fixes applied. 2 Rule 5 violations corrected. 4 broken images fixed (1 gone file replaced, 3 dir path updates custom-shirts/ → flock-shirts/). 4 unfixable Rule 5 deviations noted (sub-pages have no hero image set).
+
+#### Fixes applied
+
+| Slot | Component | Old | New | Reason |
+|---|---|---|---|---|
+| 6 | LP banner "Custom Mugs" | mugs/top5pct-custom-coffee-mugs-in-joliet.jpg | mugs/top5pct-mugs-custom-plainfield.jpg | Rule 5: sub-page hero is plainfield file |
+| 7 | LP banner "Can Koozies" | can-koozies/top5pct-can-koozies.jpg | can-koozies/top5pct-koozie-can-joliet.jpg | Rule 5: sub-page hero is joliet file |
+| 13 | C2 slot 1 | mugs/top5pct-printed-mugs-old.jpg | mugs/top5pct-printed-mugs-and-tees.jpg | Broken: file gone from disk, replaced with unused mugs/ file |
+| 15 | C2 slot 3 | custom-shirts/top5pct-custom-flock-t-shirt-printing.jpg | flock-shirts/top5pct-custom-flock-t-shirt-printing.jpg | Broken: file migrated to flock-shirts/ dir |
+| 16 | C2 slot 4 | custom-shirts/top5pct-flock-hoodie-printing.jpg | flock-shirts/top5pct-flock-hoodie-printing.jpg | Broken: file migrated to flock-shirts/ dir |
+| 17 | slide-in left | custom-shirts/top5pct-flock-shirt-vinyl.jpg | flock-shirts/top5pct-flock-shirt-vinyl.jpg | Broken: file migrated to flock-shirts/ dir |
+
+#### Final slot map (all 18 slots, post-fix)
+
+| # | Component | File | Dir | Rule 5 | On disk |
+|---|---|---|---|---|---|
+| 1 | category-hero | top5pct-custom-mugs.jpg | mugs/ | n/a | ✓ |
+| 2 | C1 slot 1 | top5pct-koozies-joliet.jpg | can-koozies/ | n/a | ✓ |
+| 3 | C1 slot 2 | top5pct-custom-printed-mugs.jpg | mugs/ | n/a | ✓ |
+| 4 | C1 slot 3 | top5pct-personalized-koozies-joliet.jpg | can-koozies/ | n/a | ✓ |
+| 5 | C1 slot 4 | top5pct-picture-on-mugs.jpg | mugs/ | n/a | ✓ |
+| 6 | LP banner "Custom Mugs" | top5pct-mugs-custom-plainfield.jpg | mugs/ | sub-page hero | ✓ |
+| 7 | LP banner "Can Koozies" | top5pct-koozie-can-joliet.jpg | can-koozies/ | sub-page hero | ✓ |
+| 8 | LP banner "Custom Towels" | top5pct-custom-coffee-mugs.jpg | mugs/ | deviation — no sub-page hero set | ✓ |
+| 9 | LP banner "Drink Coasters" | top5pct-custom-koozies.jpg | can-koozies/ | deviation — no sub-page hero set | ✓ |
+| 10 | LP banner "Tote Bags" | top5pct-custom-mugs-near-me.jpg | mugs/ | deviation — no sub-page hero set | ✓ |
+| 11 | LP banner "Mouse Pads" | top5pct-custom-can-koozies.jpg | can-koozies/ | deviation — no sub-page hero set | ✓ |
+| 12 | card-image-with-text | top5pct-printed-mugs.jpg | mugs/ | n/a | ✓ |
+| 13 | C2 slot 1 | top5pct-printed-mugs-and-tees.jpg | mugs/ | n/a | ✓ |
+| 14 | C2 slot 2 | top5pct-long-lasting-graphic-shirts.jpg | custom-shirts/ | n/a | ✓ |
+| 15 | C2 slot 3 | top5pct-custom-flock-t-shirt-printing.jpg | flock-shirts/ | n/a | ✓ |
+| 16 | C2 slot 4 | top5pct-flock-hoodie-printing.jpg | flock-shirts/ | n/a | ✓ |
+| 17 | slide-in left | top5pct-flock-shirt-vinyl.jpg | flock-shirts/ | n/a | ✓ |
+| 18 | slide-in right | top5pct-custom-flock-shirt-hoodie-cap-joliet.jpg | custom-shirts/ | n/a | ✓ |
+
+*All 18 files distinct. 0 broken images post-fix. Rules 1–4 satisfied. Rule 5 satisfied for 2 of 6 LP banners (mugs, can-koozies). 4 LP banners (towels, drink-coasters, tote-bags, mouse-pads) remain as acceptable deviations pending sub-page hero image setup.*
+
+#### Notes
+
+- Flock migration pattern (established in custom-apparel audit) hit here too — 3 flock files that once lived in custom-shirts/ are now in flock-shirts/. Any future blade referencing custom-shirts/ for flock content is likely broken.
+- Towels, Drink Coasters, Tote Bags, Mouse Pads sub-pages exist as blades but have no hero image set on their category-hero component. Their LP banners use mugs/koozies placeholders, which is the best available option until dedicated promo-items imagery is imported for those categories.
+- C2 slots 14–18 (cross-category flock/apparel) are Rule 2 exempt as cross-sell content.
