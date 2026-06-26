@@ -227,7 +227,7 @@
     <url>
         <loc>https://www.top5pct.com/custom-apparel/printing-options/embroidery</loc>
         <image:image>
-            <image:loc>https://www.top5pct.com/images/custom-shirts/top5pct-custom-embroidery-shops-near-me-joliet.jpg</image:loc>
+            <image:loc>https://www.top5pct.com/images/embroidery/top5pct-custom-embroidery-shops-near-me-joliet.jpg</image:loc>
             <image:title>Custom Embroidery in Joliet, IL</image:title>
             <image:caption>Custom embroidery for shirts, caps, and hoodies near Joliet, IL.</image:caption>
         </image:image>
@@ -283,7 +283,7 @@
     <url>
         <loc>https://www.top5pct.com/stickers</loc>
         <image:image>
-            <image:loc>https://www.top5pct.com/images/stickers-decals/top5pct-stickers-decals-joliet-ocean-viewz.jpg</image:loc>
+            <image:loc>https://www.top5pct.com/images/custom-shaped-stickers-decals/top5pct-stickers-decals-joliet-ocean-viewz.jpg</image:loc>
             <image:title>Custom Stickers &amp; Decals in Joliet, IL</image:title>
             <image:caption>Custom stickers and decals for businesses and events in Joliet and Will County, IL.</image:caption>
         </image:image>
@@ -292,7 +292,7 @@
     <url>
         <loc>https://www.top5pct.com/stickers/custom-shaped-stickers-decals</loc>
         <image:image>
-            <image:loc>https://www.top5pct.com/images/stickers-decals/top5pct-diecut-stickers.jpg</image:loc>
+            <image:loc>https://www.top5pct.com/images/standard-stickers-decals/top5pct-diecut-stickers.jpg</image:loc>
             <image:title>Custom Shaped Stickers in Joliet, IL</image:title>
             <image:caption>Die-cut custom shaped stickers and decals for businesses in Joliet, IL.</image:caption>
         </image:image>
@@ -301,7 +301,7 @@
     <url>
         <loc>https://www.top5pct.com/stickers/standard-stickers-decals</loc>
         <image:image>
-            <image:loc>https://www.top5pct.com/images/stickers-decals/top5pct-stickers-decals-joliet-beer-brewery.jpg</image:loc>
+            <image:loc>https://www.top5pct.com/images/custom-shaped-stickers-decals/top5pct-stickers-decals-joliet-beer-brewery.jpg</image:loc>
             <image:title>Standard Stickers &amp; Decals in Joliet, IL</image:title>
             <image:caption>Standard stickers and decals for businesses and events in Joliet, IL.</image:caption>
         </image:image>

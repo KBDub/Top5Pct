@@ -37,7 +37,7 @@
     />
 
     <x-sections.card-image-with-text
-        image="/images/custom-shirts/top5pct-foil-gold-t-shirt.jpg"
+        image="/images/foil-shirts/top5pct-foil-gold-t-shirt.jpg"
         alt="Premium foil print shirts and apparel from Top 5 Percent in Joliet Illinois"
         title="Wear the 5% Standard"
     >
@@ -52,7 +52,7 @@
         :images="[
             ['src' => '/images/custom-shirts/top5pct-custom-rhinestone-shirt-cap-hoodie-joliet.jpg', 'alt' => 'Premium rhinestone apparel from Top 5 Percent in Joliet Illinois'],
             ['src' => '/images/custom-shirts/top5pct-custom-glitter-shirt-cap-hoodie-joliet.jpg',    'alt' => 'Premium glitter print merchandise from Top 5 Percent in Joliet Illinois'],
-            ['src' => '/images/custom-shirts/top5pct-custom-embroidery-shops-near-me-joliet.jpg',    'alt' => 'Premium embroidered merchandise from Top 5 Percent in Joliet Illinois'],
+            ['src' => '/images/embroidery/top5pct-custom-embroidery-shops-near-me-joliet.jpg',    'alt' => 'Premium embroidered merchandise from Top 5 Percent in Joliet Illinois'],
             ['src' => '/images/custom-shirts/top5pct-t-shirt-maker-article-pic2.jpg',               'alt' => 'Top 5 Percent branded merchandise made in Joliet Illinois'],
         ]"
         visible=2

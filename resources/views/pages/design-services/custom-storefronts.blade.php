@@ -148,7 +148,7 @@
     </section>
 
     <x-sections.card-image-with-text
-        image="/images/custom-shirts/top5pct-custom-embroidery-shops-near-me-joliet.jpg"
+        image="/images/embroidery/top5pct-custom-embroidery-shops-near-me-joliet.jpg"
         alt="Custom storefront features showing countdown timer and event calendar for school stores in Joliet Illinois"
         title="Built-In Features for Schools and Events"
         imagePosition="right"

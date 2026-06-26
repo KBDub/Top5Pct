@@ -105,7 +105,7 @@
         :images="[
             ['src' => '/images/business-signs/top5pct-business-signs-joliet-shorewood-crest-hill.jpg', 'alt' => 'Professionally designed business signs in Joliet, Shorewood, and Crest Hill Illinois'],
             ['src' => '/images/custom-shirts/top5pct-custom-vinyl-shirts-caps-hoodies.jpg',            'alt' => 'Professionally designed custom vinyl shirts in Joliet Illinois'],
-            ['src' => '/images/stickers-decals/top5pct-stickers-decals-joliet-beer-brewery.jpg',       'alt' => 'Professionally designed stickers and labels for a brewery in Joliet Illinois'],
+            ['src' => '/images/custom-shaped-stickers-decals/top5pct-stickers-decals-joliet-beer-brewery.jpg',       'alt' => 'Professionally designed stickers and labels for a brewery in Joliet Illinois'],
             ['src' => '/images/banners/top5pct-team-banners-joliet-shorewood-crest-hill.jpg',          'alt' => 'Professionally designed team banners for organizations in Joliet, Shorewood, and Crest Hill'],
         ]"
         visible=2

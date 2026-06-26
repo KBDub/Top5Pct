@@ -56,7 +56,7 @@
     <x-ui.carousel-rotating-images
         :images="[
             ['src' => '/images/custom-shirts/top5pct-banner-custom-apparel-custom-shirts-custom-hoodies-custom-caps.jpg', 'alt' => 'Custom branded promotional products and drink coasters in Joliet Illinois'],
-            ['src' => '/images/custom-shirts/top5pct-custom-embroidery-shops-near-me-joliet.jpg',                         'alt' => 'Custom branded coasters and promotional gifts for businesses in Joliet Illinois'],
+            ['src' => '/images/embroidery/top5pct-custom-embroidery-shops-near-me-joliet.jpg',                         'alt' => 'Custom branded coasters and promotional gifts for businesses in Joliet Illinois'],
             ['src' => '/images/custom-shirts/top5pct-t-shirt-maker-article-pic2.jpg',                                     'alt' => 'Custom promotional products and branded merchandise in Joliet, Will and DuPage County Illinois'],
             ['src' => '/images/custom-shirts/top5pct-t-shirt-maker-article-pic1.jpg',                                     'alt' => 'Branded promotional gifts and custom coasters in Joliet Illinois'],
         ]"
@@ -79,7 +79,7 @@
     </x-sections.card-image-with-text>
 
     <x-sections.card-image-with-text
-        image="/images/custom-shirts/top5pct-custom-embroidery-shops-near-me-joliet.jpg"
+        image="/images/embroidery/top5pct-custom-embroidery-shops-near-me-joliet.jpg"
         alt="Custom coaster materials and branded drinkware accessories for businesses in Joliet Illinois"
         title="Ceramic, Neoprene, and Hardboard Options"
         imagePosition="right"
@@ -124,7 +124,7 @@
         name="Chewy Orkwiszewski"
     />
     <x-ui.card-banner-slide-in
-        image="/images/custom-shirts/top5pct-custom-embroidery-shops-near-me-joliet.jpg"
+        image="/images/embroidery/top5pct-custom-embroidery-shops-near-me-joliet.jpg"
         alt="Custom branded drink coasters from Top 5 Percent in Joliet Illinois"
         title="Custom Coasters, Your Brand on Every Table"
         href="/contact"

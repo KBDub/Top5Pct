@@ -37,7 +37,7 @@
                 </a>
                 <a href="/blog/buy-stickers-decals-joliet" class="group block bg-linen hover:bg-linen-dark transition-colors">
                     <div class="overflow-hidden">
-                        <img src="/images/stickers-decals/top5pct-article-buy-stickers-decals-joliet.jpg" alt="Where to buy custom stickers in Joliet Illinois" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
+                        <img src="/images/standard-stickers-decals/top5pct-article-buy-stickers-decals-joliet.jpg" alt="Where to buy custom stickers in Joliet Illinois" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
                     </div>
                     <div class="p-6">
                         <h3 class="text-h3 font-bold text-charcoal mb-2">Where to Buy Custom Stickers in Joliet</h3>

@@ -48,7 +48,7 @@
     "@type": "ImageObject",
     "name": "Custom Stickers & Decals, Top 5 Percent Portfolio",
     "description": "Custom stickers, die-cut decals, and product labels printed by Top 5 Percent in Joliet, IL for businesses and brands in Will and DuPage County and the greater Chicagoland area.",
-    "contentUrl": "https://www.top5pct.com/images/stickers-decals/top5pct-banner-stickers-decals-joliet.jpg",
+    "contentUrl": "https://www.top5pct.com/images/custom-shaped-stickers-decals/top5pct-banner-stickers-decals-joliet.jpg",
     "url": "https://www.top5pct.com/portfolio",
     "license": "https://www.top5pct.com",
     "acquireLicensePage": "https://www.top5pct.com/contact",

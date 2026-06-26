@@ -269,7 +269,7 @@
                                 </div>
                             </div>
                             <x-layout.mega-menu-ad
-                                image="/images/stickers-decals/top5pct-stickers-decals-joliet-labels.jpg"
+                                image="/images/custom-shaped-stickers-decals/top5pct-stickers-decals-joliet-labels.jpg"
                                 alt="Custom stickers and decals"
                                 tag="No Minimums"
                                 title="Stickers & Decals"
@@ -368,7 +368,7 @@
                                 </div>
                             </div>
                             <x-layout.mega-menu-ad
-                                image="/images/stickers-decals/top5pct-stickers-decals-joliet-labels.jpg"
+                                image="/images/custom-shaped-stickers-decals/top5pct-stickers-decals-joliet-labels.jpg"
                                 alt="Promo items same day"
                                 tag="In Stock & Ready"
                                 title="Promo Products"
@@ -422,7 +422,7 @@
                                 </div>
                             </div>
                             <x-layout.mega-menu-ad
-                                image="/images/custom-shirts/top5pct-custom-embroidery-shops-near-me-joliet.jpg"
+                                image="/images/embroidery/top5pct-custom-embroidery-shops-near-me-joliet.jpg"
                                 alt="Professional design services"
                                 tag="Print-Ready Files"
                                 title="Pro Design Team"

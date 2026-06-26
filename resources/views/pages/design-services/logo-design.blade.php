@@ -56,7 +56,7 @@
     <x-ui.carousel-rotating-images
         :images="[
             ['src' => '/images/business-signs/top5pct-banner-business-signs-joliet-plainfield-shorewood.jpg', 'alt' => 'Professional logo design and brand identity services in Joliet Illinois'],
-            ['src' => '/images/custom-shirts/top5pct-custom-embroidery-shops-near-me-joliet.jpg',             'alt' => 'Custom logo design applied to embroidery and apparel in Joliet Illinois'],
+            ['src' => '/images/embroidery/top5pct-custom-embroidery-shops-near-me-joliet.jpg',             'alt' => 'Custom logo design applied to embroidery and apparel in Joliet Illinois'],
             ['src' => '/images/custom-shirts/top5pct-banner-custom-apparel-custom-shirts-custom-hoodies-custom-caps.jpg', 'alt' => 'Custom logo design for businesses and organizations in Joliet, Will and DuPage County Illinois'],
             ['src' => '/images/banners/top5pct-banner-business-banners-joliet-shorewood-crest-hill.jpg',       'alt' => 'Professional logo design for signage and print applications in Joliet Illinois'],
         ]"
@@ -80,7 +80,7 @@
     </x-sections.card-image-with-text>
 
     <x-sections.card-image-with-text
-        image="/images/custom-shirts/top5pct-custom-embroidery-shops-near-me-joliet.jpg"
+        image="/images/embroidery/top5pct-custom-embroidery-shops-near-me-joliet.jpg"
         alt="Custom brand identity and logo design in Joliet Illinois"
         title="Designed for Every Application"
         imagePosition="right"
