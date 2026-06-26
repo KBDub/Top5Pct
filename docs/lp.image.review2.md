@@ -8,13 +8,13 @@ Extract every image reference from the blade file (excluding og-tags). Map each 
 Step 2 — Check LP Rules
 Apply the four LP rules from docs/new-images.md:
 
-#	Rule
-1	Images always reference sub-category image dirs. No dedicated LP-level dir is created.
-2	Cross-category referencing is allowed (e.g. an LP can reference both custom-shaped-stickers-decals/ and standard-stickers-decals/).
-3	Never modify an image filename. Only reference existing files as-is.
-4	Use distinct images. Each image file should appear no more than once per page across all slots. Repeats are a last resort only.
-5	Each LP category banner image must be the hero image of the sub-category page it links to. For example, the "DTF Transfers" banner on /custom-apparel links to /custom-apparel/printing-options/dtf-printing, so its image must be dtf-transfers/top5pct-dtf-t-shirt-printing.jpg — the exact category-hero image on that sub-page. A visually matching fallback is only acceptable when the sub-category has no dedicated dir yet, and must be replaced once that sub-page migration is complete.
-6	All non-banner image slots on an LP must use images from an import round — meaning any file that exists in a sub-category dir under public/images/. R1 and R2 files (the most recent import rounds, confirmed by their presence in public/new-images/) are preferred where available. R1/R2/R3 refers to Round 1, Round 2, Round 3 of image importing — not to rules. LP category banners are exempt (Rule 5).
+#       Rule
+1       Images always reference sub-category image dirs. No dedicated LP-level dir is created.
+2       Cross-category referencing is allowed (e.g. an LP can reference both custom-shaped-stickers-decals/ and standard-stickers-decals/).
+3       Never modify an image filename. Only reference existing files as-is.
+4       Use distinct images. Each image file should appear no more than once per page across all slots. Repeats are a last resort only.
+5       Each LP category banner image must be the hero image of the sub-category page it links to. For example, the "DTF Transfers" banner on /custom-apparel links to /custom-apparel/printing-options/dtf-printing, so its image must be dtf-transfers/top5pct-dtf-t-shirt-printing.jpg — the exact category-hero image on that sub-page. A visually matching fallback is only acceptable when the sub-category has no dedicated dir yet, and must be replaced once that sub-page migration is complete.
+6       All non-banner image slots on an LP must use images from an import round — meaning any file that exists in a sub-category dir under public/images/. R1 and R2 files (the most recent import rounds, confirmed by their presence in public/new-images/) are preferred where available. R1/R2/R3 refers to Round 1, Round 2, Round 3 of image importing — not to rules. LP category banners are exempt (Rule 5).
 Step 3 — Identify violations
 For each rule, list the exact slots and filenames that violate it. Group repeats by filename and list every slot where the repeat occurs.
 
@@ -42,3 +42,65 @@ Step 7 — Document the instance
 Add an entry to this file under "Review Instances" with the full slot table, violations found, and fixes applied.
 
 Review Instances
+
+---
+
+### `/custom-apparel` LP
+
+**File:** `resources/views/pages/custom-apparel/index.blade.php`
+**Reviewed:** Jun 26, 2026
+**Status:** Complete. All 29 slots clean. Rules 1–6 satisfied. All 29 files distinct. All 16 LP banners use the correct sub-page hero image.
+
+**Context:** This LP was previously audited in `lp.image.review.md` (v1) and passed at that time. Four Rule 5 violations were introduced between v1 and this review because four sub-pages received dedicated image dirs after the v1 audit ran. The banners still pointed to `custom-shirts/` — the filenames were correct but the dirs were stale. Fixed Jun 26.
+
+#### Final slot map (all 29 slots)
+
+| # | Component | File | Dir | Rule 5 | R1/R2/R3 |
+|---|---|---|---|---|---|
+| 1 | category-hero | top5pct-custom-dtf-shirts.jpg | dtf-transfers/ | n/a | R1 |
+| 2 | C1 slot 1 | top5pct-dye-sublimation-shirts.jpg | sublimation/ | n/a | R1 |
+| 3 | C1 slot 2 | top5pct-brick-vinyl-cresthill.jpg | custom-shirts/ | n/a | R1 |
+| 4 | C1 slot 3 | top5pct-spirit-wear-clothing.jpg | spirit-wear/ | n/a | R1 |
+| 5 | C1 slot 4 | top5pct-volleyball-team-uniforms-joliet.jpg | spirit-wear/ | n/a | R1 |
+| 6 | C1 slot 5 | top5pct-custom-company-apparel.jpg | corporate-wear/ | n/a | R1 |
+| 7 | LP banner "DTF Transfers" | top5pct-dtf-t-shirt-printing.jpg | dtf-transfers/ | sub-page hero | exempt |
+| 8 | LP banner "Dye Sublimation" | top5pct-dye-sublimation-custom-shirt-joliet.jpg | sublimation/ | sub-page hero | exempt |
+| 9 | LP banner "Screen Printing" | top5pct-screenprinted-shirts-joliet.jpg | custom-shirts/ | sub-page hero | exempt |
+| 10 | LP banner "Embroidery" | top5pct-stitched-embroidered-shirts.jpg | embroidery/ | sub-page hero | exempt |
+| 11 | LP banner "Rhinestone Shirts" | top5pct-rhinestone-hoodies-joliet.jpg | rhinestone-apparel/ | sub-page hero, fixed Jun 26 | exempt |
+| 12 | LP banner "Glitter Shirts" | top5pct-glitter-t-shirts.jpg | glitter-shirts/ | sub-page hero | exempt |
+| 13 | LP banner "Puff Print Shirts" | top5pct-custom-puff-shirts.jpg | puff-shirts/ | sub-page hero, fixed Jun 26 | exempt |
+| 14 | LP banner "Glow In The Dark" | top5pct-glow-in-the-dark-caps.jpg | glow-shirts/ | sub-page hero | exempt |
+| 15 | LP banner "Flock Shirts" | top5pct-custom-flock-t-shirt-printing.jpg | flock-shirts/ | sub-page hero | exempt |
+| 16 | LP banner "Brick Shirts" | top5pct-brick-vinyl-hoodies.jpg | brick-shirts/ | sub-page hero, fixed Jun 26 | exempt |
+| 17 | LP banner "Holographic Shirts" | top5pct-holographic-vinyl-hoodie-foil.jpg | holographic-shirts/ | sub-page hero | exempt |
+| 18 | LP banner "Foil Shirts" | top5pct-foil-gold-t-shirt.jpg | foil-shirts/ | sub-page hero, fixed Jun 26 | exempt |
+| 19 | LP banner "Reflective Shirts" | top5pct-reflective-shirts-gold.jpg | reflective-shirts/ | sub-page hero | exempt |
+| 20 | LP banner "Reunion Shirts" | top5pct-family-reunion-shirts-joliet.jpg | reunion-shirts/ | sub-page hero | exempt |
+| 21 | LP banner "Spirit Wear" | top5pct-spirit-wear-joliet.jpg | spirit-wear/ | sub-page hero | exempt |
+| 22 | LP banner "Corporate Wear" | top5pct-custom-business-shirts.jpg | corporate-wear/ | sub-page hero | exempt |
+| 23 | card-image-with-text | top5pct-embroidered-caps.jpg | embroidery/ | n/a | R1 |
+| 24 | C2 slot 1 | top5pct-glitter-lips-custom-t-shirt.jpg | glitter-shirts/ | n/a | R1 |
+| 25 | C2 slot 2 | top5pct-flock-hoodie-printing.jpg | flock-shirts/ | n/a | R1 |
+| 26 | C2 slot 3 | top5pct-rhinestone-bling-joliet.jpg | custom-shirts/ | n/a | R1 |
+| 27 | C2 slot 4 | top5pct-reflective-shirts.jpg | reflective-shirts/ | n/a | R1 |
+| 28 | slide-in left | top5pct-custom-t-shirts-dtf.jpg | dtf-transfers/ | n/a | R1 |
+| 29 | slide-in right | top5pct-embroidery-beanies.jpg | embroidery/ | n/a | R1 |
+
+*All 29 files distinct. All 13 non-banner slots use R1 import-round sub-category images. All 16 LP banners use the correct sub-page hero including exact dir.*
+
+#### Violations found and fixed
+
+| Banner | Was | Now | Reason |
+|---|---|---|---|
+| Rhinestone Shirts | custom-shirts/ | rhinestone-apparel/ | Sub-page got dedicated dir after v1 audit |
+| Puff Print Shirts | custom-shirts/ | puff-shirts/ | Sub-page got dedicated dir after v1 audit |
+| Brick Shirts | custom-shirts/ | brick-shirts/ | Sub-page got dedicated dir after v1 audit |
+| Foil Shirts | custom-shirts/ | foil-shirts/ | Sub-page got dedicated dir after v1 audit |
+
+All four filenames were already correct. Only the directory prefix needed updating.
+
+#### Notes
+
+- Rules 1, 2, 3, 4, 6 were all clean at time of review. No non-banner slot issues, no duplicates.
+- The v1 "Puff Print Shirts fallback" note is now resolved — puff-shirts/ dir exists and is in use.

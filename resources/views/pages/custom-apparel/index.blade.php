@@ -99,7 +99,7 @@
             'href'  => '/custom-apparel/printing-options/embroidery',
         ],
         [
-            'image' => '/images/custom-shirts/top5pct-rhinestone-hoodies-joliet.jpg',
+            'image' => '/images/rhinestone-apparel/top5pct-rhinestone-hoodies-joliet.jpg',
             'alt'   => 'Custom rhinestone shirts and bling apparel in Joliet Illinois',
             'title' => 'Rhinestone Shirts',
             'href'  => '/custom-apparel/printing-options/rhinestone-apparel',
@@ -111,7 +111,7 @@
             'href'  => '/custom-apparel/specialty-materials/glitter-shirts',
         ],
         [
-            'image' => '/images/custom-shirts/top5pct-custom-puff-shirts.jpg',
+            'image' => '/images/puff-shirts/top5pct-custom-puff-shirts.jpg',
             'alt'   => 'Custom puff print shirts with 3D raised texture in Joliet Illinois',
             'title' => 'Puff Print Shirts',
             'href'  => '/custom-apparel/specialty-materials/puff-shirts',
@@ -129,7 +129,7 @@
             'href'  => '/custom-apparel/specialty-materials/flock-shirts',
         ],
         [
-            'image' => '/images/custom-shirts/top5pct-brick-vinyl-hoodies.jpg',
+            'image' => '/images/brick-shirts/top5pct-brick-vinyl-hoodies.jpg',
             'alt'   => 'Custom 3D brick textured shirts and hoodies in Joliet Illinois',
             'title' => 'Brick Shirts',
             'href'  => '/custom-apparel/specialty-materials/brick-shirts',
@@ -141,7 +141,7 @@
             'href'  => '/custom-apparel/specialty-materials/holographic-shirts',
         ],
         [
-            'image' => '/images/custom-shirts/top5pct-foil-gold-t-shirt.jpg',
+            'image' => '/images/foil-shirts/top5pct-foil-gold-t-shirt.jpg',
             'alt'   => 'Custom foil print shirts and metallic apparel in Joliet Illinois',
             'title' => 'Foil Shirts',
             'href'  => '/custom-apparel/specialty-materials/foil-shirts',
