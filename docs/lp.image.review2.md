@@ -167,3 +167,38 @@ Two carousel slots were also broken — same cause (files migrated to dedicated 
 - "business-signs" sub-page exists but has no LP banner on this page — not a violation.
 - Floor Signs LP banner correctly uses wall-signs/ dir (floor-signs sub-page has no dedicated dir; it shares wall-signs/).
 - Window Signs mismatch introduced by R4 sub-page hero update. Pattern: any sub-page hero update must be followed by an LP banner check.
+
+---
+
+### `/vehicle-graphics` LP
+
+**File:** `resources/views/pages/vehicle-graphics/index.blade.php`
+**Reviewed:** Jun 26, 2026
+**Status:** Pass. All 15 slots clean. Rules 1–6 satisfied. All 15 files distinct. 0 broken images. All 3 LP banners match sub-page heroes exactly. No fixes needed.
+
+#### Final slot map (all 15 slots)
+
+| # | Component | File | Dir | Rule 5 | R-round |
+|---|---|---|---|---|---|
+| 1 | category-hero | top5pct-vehicle-graphics.jpg | automobile-graphics/ | n/a | import-round |
+| 2 | C1 slot 1 | top5pct-joliet-car-magnets.jpg | vehicle-magnets/ | n/a | R1 |
+| 3 | C1 slot 2 | top5pct-custom-dot-decals-for-trucks-in-joliet.jpg | dot-decals/ | n/a | R1 |
+| 4 | C1 slot 3 | top5pct-dot-decals-semi-truck.jpg | dot-decals/ | n/a | R1 |
+| 5 | C1 slot 4 | top5pct-car-decals-white-oaks-library.jpg | vehicle-magnets/ | n/a | R1 |
+| 6 | LP banner "Automobile Graphics" | top5pct-auto-window-wraps.jpg | automobile-graphics/ | sub-page hero | exempt |
+| 7 | LP banner "Vehicle Magnets" | top5pct-magnet-vehicle-signs-joliet.jpg | vehicle-magnets/ | sub-page hero | exempt |
+| 8 | LP banner "DOT Decals" | top5pct-truck-lettering-joliet-shorewood-rockdale.jpg | dot-decals/ | sub-page hero | exempt |
+| 9 | card-image-with-text | top5pct-vehicle-window-graphics-in-joliet.jpg | automobile-graphics/ | n/a | import-round |
+| 10 | C2 slot 1 | top5pct-truck-sign-magnets-joliet.jpg | vehicle-magnets/ | n/a | import-round |
+| 11 | C2 slot 2 | top5pct-dot-truck-decals-joliet.jpg | dot-decals/ | n/a | import-round |
+| 12 | C2 slot 3 | top5pct-vehicle-window-graphics-joliet.jpg | automobile-graphics/ | n/a | import-round |
+| 13 | C2 slot 4 | top5pct-vehicle-magnets-joliet.jpg | vehicle-magnets/ | n/a | import-round |
+| 14 | slide-in left | top5pct-trucking-dot-decals-in-joliet.jpg | dot-decals/ | n/a | R1 |
+| 15 | slide-in right | top5pct-vehicle-magnets.jpg | vehicle-magnets/ | n/a | import-round |
+
+*All 15 files distinct. 0 broken images. All 3 LP banners use exact sub-page hero including dir. No fixes needed.*
+
+#### Notes
+
+- No violations found. This LP was clean from the v1 audit and remains clean.
+- All three sub-category dirs (automobile-graphics/, vehicle-magnets/, dot-decals/) are well represented across all slot types.
