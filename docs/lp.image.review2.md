@@ -252,3 +252,39 @@ Two carousel slots were also broken — same cause (files migrated to dedicated 
 - Flock migration pattern (established in custom-apparel audit) hit here too — 3 flock files that once lived in custom-shirts/ are now in flock-shirts/. Any future blade referencing custom-shirts/ for flock content is likely broken.
 - Towels, Drink Coasters, Tote Bags, Mouse Pads sub-pages exist as blades but have no hero image set on their category-hero component. Their LP banners use mugs/koozies placeholders, which is the best available option until dedicated promo-items imagery is imported for those categories.
 - C2 slots 14–18 (cross-category flock/apparel) are Rule 2 exempt as cross-sell content.
+
+---
+
+### `/stickers` LP
+
+**File:** `resources/views/pages/stickers/index.blade.php`
+**Reviewed:** Jun 26, 2026
+**Status:** Pass. All 15 slots clean. Rules 1–6 satisfied. All 15 files distinct. 0 broken images. Both LP banners match sub-page heroes exactly. No fixes needed.
+
+#### Final slot map (all 15 slots)
+
+| # | Component | File | Dir | Rule 5 | On disk |
+|---|---|---|---|---|---|
+| 1 | category-hero | top5pct-custom-shaped-stickers-cresthill.jpg | custom-shaped-stickers-decals/ | n/a | ✓ |
+| 2 | C1 slot 1 | top5pct-die-cut-stickers-shorewood.jpg | custom-shaped-stickers-decals/ | n/a | ✓ |
+| 3 | C1 slot 2 | top5pct-custom-stickers.jpg | custom-shaped-stickers-decals/ | n/a | ✓ |
+| 4 | C1 slot 3 | top5pct-stickers-in-joliet.jpg | custom-shaped-stickers-decals/ | n/a | ✓ |
+| 5 | C1 slot 4 | top5pct-die-cut-stickers-joliet-r3.jpg | custom-shaped-stickers-decals/ | n/a | ✓ |
+| 6 | C1 slot 5 | top5pct-stickers-decals-joliet-labels.jpg | custom-shaped-stickers-decals/ | n/a | ✓ |
+| 7 | LP banner "Standard Stickers" | top5pct-custom-stickers-cresthill.jpg | custom-shaped-stickers-decals/ | sub-page hero | ✓ |
+| 8 | LP banner "Custom Shaped Stickers" | top5pct-die-cut-stickers-joliet.jpg | custom-shaped-stickers-decals/ | sub-page hero | ✓ |
+| 9 | card-image-with-text | top5pct-stickers-decals-joliet-ocean-viewz.jpg | custom-shaped-stickers-decals/ | n/a | ✓ |
+| 10 | C2 slot 1 | top5pct-custom-glossy-stickers-in-joliet.jpg | custom-shaped-stickers-decals/ | n/a | ✓ |
+| 11 | C2 slot 2 | top5pct-article-buy-stickers-decals-joliet.jpg | standard-stickers-decals/ | n/a | ✓ |
+| 12 | C2 slot 3 | top5pct-custom-label-stickers.jpg | custom-shaped-stickers-decals/ | n/a | ✓ |
+| 13 | C2 slot 4 | top5pct-stickers-decals-joliet-boxing-sports.jpg | custom-shaped-stickers-decals/ | n/a | ✓ |
+| 14 | slide-in right | top5pct-diecut-stickers.jpg | standard-stickers-decals/ | n/a | ✓ |
+| 15 | slide-in left | top5pct-custom-shaped-stickers.jpg | custom-shaped-stickers-decals/ | n/a | ✓ |
+
+*All 15 files distinct. 0 broken images. Both LP banners use exact sub-page hero including dir. No fixes needed.*
+
+#### Notes
+
+- Both sub-category dirs well represented: custom-shaped-stickers-decals/ (13 slots) and standard-stickers-decals/ (2 slots, C2 + slide-in).
+- Sub-page blade filenames (standard-stickers.blade.php, custom-shaped-stickers.blade.php) don't include the "-decals" suffix but the LP banner hrefs route to /stickers/standard-stickers-decals and /stickers/custom-shaped-stickers-decals. Routing concern only, no image impact.
+- This LP was clean in v1 and remains clean in v2.
