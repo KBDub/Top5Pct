@@ -57,14 +57,14 @@ Slots in blade order. Banner is first, carousel next, then body, then slides.
 | C-1 | carousel-rotating-images | top5pct-vinyl-shirts-joliet.jpg | vinyl/ | Jun 20 | R4 | — | good — R4 same-dir; was unconfirmed May 18; C-1/card-1 duplicate resolved |
 | C-2 | carousel-rotating-images | vinyl-hoodie.jpg | vinyl/ | May 18 | R2 | 570K | good |
 | C-3 | carousel-rotating-images | vinyl-caps.jpg | vinyl/ | May 18 | R2 | 566K | good; slide-R duplicate resolved Jun 25 |
-| C-4 | carousel-rotating-images | vinyl-zip-up-hoodies.jpg | vinyl/ | May 18 | R2 | 423K | R2; duplicate of card-3 — pending fix |
+| C-4 | carousel-rotating-images | vinyl-zip-up-hoodies.jpg | vinyl/ | May 18 | R2 | 423K | good |
 | card-1 | card-image-with-text | custom-vinyl-shirts.jpg | vinyl/ | May 18 | R2 | 403K | good; C-1 duplicate resolved Jun 25 |
-| card-2 | card-image-with-text (imagePosition right) | custom-vinyl-hoodies.jpg | vinyl/ | May 18 | R2 | 304K | R2; duplicate of slide-L — pending fix |
+| card-2 | card-image-with-text (imagePosition right) | custom-vinyl-hoodies.jpg | vinyl/ | May 18 | R2 | 304K | good |
 | card-2image image1 | card-2image-with-text | custom-caps-vinyl.jpg | vinyl/ | May 18 | R2 | 281K | good |
 | card-2image image2 | card-2image-with-text | neon-vinyl-shirts.jpg | vinyl/ | May 18 | R2 | 295K | good |
-| card-3 | card-image-with-text | vinyl-zip-up-hoodies.jpg | vinyl/ | May 18 | R2 | 423K | R2; duplicate of C-4 — pending fix |
+| card-3 | card-image-with-text | custom-hoodies.jpg | vinyl/ | May 18 | R2 | 294K | good — duplicate resolved Jun 26 |
 | card-detailed image1 | card-detailed-info | top5pct-vinyl-t-shirt-maker.jpg | vinyl/ | Jun 8 | R3 | 386K | good |
-| slide-L | card-banner-slide-in (direction left) | custom-vinyl-hoodies.jpg | vinyl/ | May 18 | R2 | 304K | R2; same-category allowed; duplicate of card-2 — pending fix |
+| slide-L | card-banner-slide-in (direction left) | vinyl-t-shirt-maker.jpg | vinyl/ | May 18 | R2 | 386K | good — duplicate resolved Jun 26 |
 | slide-R | card-banner-slide-in (direction right) | top5pct-retractable-banner.jpg | banners/ | May 11 | R1 | 234K | good — cross-sell to banners/; violation resolved Jun 25; C-3/slide-R duplicate resolved |
 
 ---
@@ -119,10 +119,10 @@ Two files remain used in multiple blade slots (2 resolved Jun 25):
 |---|---|---|---|---|---|
 | custom-vinyl-shirts.jpg | May 18 | R2 | C-1 | card-1 | resolved Jun 25 — C-1 now uses R4 file |
 | vinyl-caps.jpg | May 18 | R2 | C-3 | slide-R | resolved Jun 25 — slide-R now uses banners/ R1 |
-| vinyl-zip-up-hoodies.jpg | May 18 | R2 | C-4 | card-3 | duplicate remains — pending blade fix |
-| custom-vinyl-hoodies.jpg | May 18 | R2 | card-2 | slide-L | duplicate remains — slide-L same-category allowed; pending blade fix |
+| vinyl-zip-up-hoodies.jpg | May 18 | R2 | C-4 | card-3 | resolved Jun 26 — card-3 now uses custom-hoodies.jpg |
+| custom-vinyl-hoodies.jpg | May 18 | R2 | card-2 | slide-L | resolved Jun 26 — slide-L now uses vinyl-t-shirt-maker.jpg |
 
-2 of 4 duplicates resolved Jun 25. 2 remain — fixable now that May 18 = R2.
+All 4 duplicates resolved. 0 duplicates remain.
 
 ---
 
@@ -130,7 +130,7 @@ Two files remain used in multiple blade slots (2 resolved Jun 25):
 
 | slot | direction | image | dir | date | round | rule | status |
 |---|---|---|---|---|---|---|---|
-| slide-L | left | custom-vinyl-hoodies.jpg | vinyl/ | May 18 | R2 | same-category allowed (direction left) | R2; same-category allowed; duplicate of card-2 — pending fix |
+| slide-L | left | vinyl-t-shirt-maker.jpg | vinyl/ | May 18 | R2 | same-category allowed (direction left) | good — duplicate resolved Jun 26 |
 | slide-R | right | top5pct-retractable-banner.jpg | banners/ | May 11 | R1 | must be cross-sell R1-R3 from another category | good — cross-sell to banners/; violation resolved Jun 25 |
 
 ---
@@ -144,8 +144,8 @@ Two files remain used in multiple blade slots (2 resolved Jun 25):
 
 ### Pending blade edits (May 18 = R2 confirmed Jun 25)
 
-- **Resolve C-4/card-3 duplicate:** Replace card-3 `vinyl-zip-up-hoodies.jpg` with unused R2 `custom-hoodies.jpg` (294K).
-- **Resolve card-2/slide-L duplicate:** Replace slide-L `custom-vinyl-hoodies.jpg` with unused R2 `vinyl-t-shirt-maker.jpg` (386K).
+- **C-4/card-3 duplicate resolved Jun 26:** card-3 now uses `custom-hoodies.jpg` (R2, 294K).
+- **card-2/slide-L duplicate resolved Jun 26:** slide-L now uses `vinyl-t-shirt-maker.jpg` (R2, 386K).
 - **Move misplaced yard-sign files:** `top5pct-article-yard-signs-buy.jpg` and `top5pct-banner-yard-signs-joliet-shorewood-crest-hill.jpg` are not referenced in the blade and belong in the yard-signs dir.
 
 ---
@@ -159,15 +159,15 @@ Two files remain used in multiple blade slots (2 resolved Jun 25):
 | custom-vinyl-shirts.jpg | vinyl/ | 403K | May 18 | R2 | card-1 only (C-1 duplicate resolved Jun 25) |
 | vinyl-hoodie.jpg | vinyl/ | 570K | May 18 | R2 | C-2 only |
 | vinyl-caps.jpg | vinyl/ | 566K | May 18 | R2 | C-3 only (slide-R duplicate resolved Jun 25) |
-| vinyl-zip-up-hoodies.jpg | vinyl/ | 423K | May 18 | R2 | C-4 and card-3 (duplicate — pending fix) |
-| custom-vinyl-hoodies.jpg | vinyl/ | 304K | May 18 | R2 | card-2 and slide-L (duplicate — pending fix) |
+| vinyl-zip-up-hoodies.jpg | vinyl/ | 423K | May 18 | R2 | C-4 only (card-3 duplicate resolved Jun 26) |
+| custom-vinyl-hoodies.jpg | vinyl/ | 304K | May 18 | R2 | card-2 only (slide-L duplicate resolved Jun 26) |
 | custom-caps-vinyl.jpg | vinyl/ | 281K | May 18 | R2 | card-2image image1 only |
 | neon-vinyl-shirts.jpg | vinyl/ | 295K | May 18 | R2 | card-2image image2 only |
 | top5pct-vinyl-shirts-joliet.jpg | vinyl/ | — | Jun 20 | R4 | C-1 only |
 | top5pct-retractable-banner.jpg | banners/ | 234K | May 11 | R1 | slide-R only |
-| custom-hoodies.jpg | vinyl/ | 294K | May 18 | R2 | unused — available for card-3 fix |
+| custom-hoodies.jpg | vinyl/ | 294K | May 18 | R2 | card-3 only (placed Jun 26) |
 | vinyl-shirts.jpg | vinyl/ | 388K | May 18 | R2 | unused |
-| vinyl-t-shirt-maker.jpg | vinyl/ | 386K | May 18 | R2 | unused — available for slide-L fix |
+| vinyl-t-shirt-maker.jpg | vinyl/ | 386K | May 18 | R2 | slide-L only (placed Jun 26) |
 | top5pct-article-yard-signs-buy.jpg | vinyl/ | 47K | May 18 | — | unused — misplaced yard-sign file |
 | top5pct-banner-yard-signs-joliet-shorewood-crest-hill.jpg | vinyl/ | 96K | May 18 | — | unused — misplaced yard-sign file |
 
@@ -175,9 +175,8 @@ Two files remain used in multiple blade slots (2 resolved Jun 25):
 
 ## Notes
 
-- 13 of 13 slots R1-R4 as of Jun 25, 2026. May 18 confirmed as R2 Jun 25.
-- 2 changes made Jun 25: C-1 upgraded to R4; slide-R violation resolved with banners/ R1 cross-sell.
-- 2 of 4 duplicates resolved Jun 25 (C-1/card-1, C-3/slide-R). 2 remain: C-4/card-3 (vinyl-zip-up-hoodies.jpg) and card-2/slide-L (custom-vinyl-hoodies.jpg).
-- Pending: card-3 → custom-hoodies.jpg (R2, 294K); slide-L → vinyl-t-shirt-maker.jpg (R2, 386K).
-- 0 rule violations. Over-target condition met.
+- 13 of 13 slots R1-R4. 0 rule violations. 0 duplicates.
+- Jun 25: C-1 upgraded to R4; slide-R violation resolved (banners/ R1 cross-sell); May 18 confirmed as R2.
+- Jun 26: card-3 → custom-hoodies.jpg (R2); slide-L → vinyl-t-shirt-maker.jpg (R2). All 4 duplicates resolved.
+- Over-target condition met. Carousel stays at 4.
 - 2 misplaced yard-sign files in dir — not referenced in blade; cleanup deferred.

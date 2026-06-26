@@ -106,8 +106,8 @@
     </x-sections.card-2image-with-text>
 
     <x-sections.card-image-with-text
-        image="/images/vinyl/vinyl-zip-up-hoodies.jpg"
-        alt="Custom vinyl zip-up hoodies and branded apparel in Joliet Illinois"
+        image="/images/vinyl/custom-hoodies.jpg"
+        alt="Custom vinyl hoodies and branded apparel in Joliet Illinois"
         title="Business and Group Vinyl Apparel"
     >
         <p class="mb-4">Businesses throughout Joliet, Shorewood, and Will and DuPage County use vinyl apparel for employee uniforms, customer giveaways, event merchandise, and branded team wear. Vinyl is a cost effective way to put your logo or business name on apparel without the setup fees and minimum order requirements that come with <a href="/custom-apparel/printing-options/screen-printing" class="link-notification">screen printing</a>. For small runs of ten shirts or fewer, vinyl is often the most practical and affordable option, and for photo-quality artwork on the same order our <a href="/custom-apparel/printing-options/dtf-transfers" class="link-notification">DTF transfers</a> give you full-color results at the same low minimum.</p>
@@ -150,8 +150,8 @@
         name="Marcus T."
     />
     <x-ui.card-banner-slide-in
-        image="/images/vinyl/custom-vinyl-hoodies.jpg"
-        alt="Custom vinyl hoodies and apparel from Top 5 Percent in Joliet Illinois"
+        image="/images/vinyl/vinyl-t-shirt-maker.jpg"
+        alt="Custom vinyl t-shirt maker and apparel printing in Joliet Illinois"
         title="Custom Vinyl Apparel for Any Occasion"
         href="/contact"
         direction="left"
