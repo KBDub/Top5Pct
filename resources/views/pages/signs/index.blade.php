@@ -99,13 +99,13 @@
             'href'  => '/signs/business-signs/posters',
         ],
         [
-            'image' => '/images/table-runners/top5pct-table-runner-joliet.jpg',
+            'image' => '/images/table-runners/top5pct-custom-table-cloth-business.jpg',
             'alt'   => 'Custom table runners and table cloths for events in Joliet Illinois',
             'title' => 'Table Runners',
             'href'  => '/signs/table-signs/table-runners',
         ],
         [
-            'image' => '/images/window-signs/top5pct-window-signage.jpg',
+            'image' => '/images/window-signs/top5pct-window-signs-rockdale.jpg',
             'alt'   => 'Custom window signs and window decals for businesses in Joliet, Shorewood, and Crest Hill',
             'title' => 'Window Signs',
             'href'  => '/signs/business-signs/window-signs',

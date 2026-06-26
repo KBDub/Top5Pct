@@ -115,3 +115,55 @@ Two carousel slots were also broken — same cause (files migrated to dedicated 
 - Rules 1, 2, 3, 4, 6 were all clean at time of review. No duplicates.
 - The v1 "Puff Print Shirts fallback" note is now resolved — puff-shirts/ dir exists and is in use.
 - Pattern to watch: any slot that previously used custom-shirts/ as a catch-all may be broken if that file has since moved to a dedicated dir.
+
+---
+
+### `/signs` LP
+
+**File:** `resources/views/pages/signs/index.blade.php`
+**Reviewed:** Jun 26, 2026
+**Status:** Complete. All 24 slots clean. Rules 1–6 satisfied. All 24 files distinct. 0 broken images. 9 of 11 LP banners were already correct; 2 fixed Jun 26.
+
+#### Final slot map (all 24 slots)
+
+| # | Component | File | Dir | Rule 5 | R-round |
+|---|---|---|---|---|---|
+| 1 | category-hero | top5pct-outdoor-sign-joliet.jpg | outdoor-signs/ | n/a | import-round |
+| 2 | C1 slot 1 | top5pct-banners-for-trade-shows.jpg | banners/ | n/a | R1 |
+| 3 | C1 slot 2 | top5pct-yard-sign-joliet.jpg | yard-signs/ | n/a | import-round |
+| 4 | C1 slot 3 | top5pct-sidewalk-signs-joliet.jpg | sidewalk-signs/ | n/a | R1 |
+| 5 | C1 slot 4 | top5pct-business-signs-joliet-plainfield-romeoville.jpg | business-signs/ | n/a | import-round |
+| 6 | C1 slot 5 | top5pct-custom-posters.jpg | posters/ | n/a | import-round |
+| 7 | LP banner "Yard Signs" | top5pct-custom-yard-signs-joliet.jpg | yard-signs/ | sub-page hero | exempt |
+| 8 | LP banner "Sidewalk Signs" | top5pct-sidewalk-signage.jpg | sidewalk-signs/ | sub-page hero | exempt |
+| 9 | LP banner "Banners" | top5pct-sports-banners.jpg | banners/ | sub-page hero | exempt |
+| 10 | LP banner "Posters" | top5pct-posters-printed-joliet.jpg | posters/ | sub-page hero | exempt |
+| 11 | LP banner "Table Runners" | top5pct-custom-table-cloth-business.jpg | table-runners/ | sub-page hero, fixed Jun 26 | exempt |
+| 12 | LP banner "Window Signs" | top5pct-window-signs-rockdale.jpg | window-signs/ | sub-page hero, fixed Jun 26 | exempt |
+| 13 | LP banner "Wall Signs" | top5pct-wall-signs.jpg | wall-signs/ | sub-page hero | exempt |
+| 14 | LP banner "Floor Signs" | top5pct-wall-signs-for-businesses.jpg | wall-signs/ | sub-page hero | exempt |
+| 15 | LP banner "Door Signs" | top5pct-door-signage.jpg | door-signs/ | sub-page hero | exempt |
+| 16 | LP banner "Table Cloths" | top5pct-custom-table-cloth.jpg | table-cloths/ | sub-page hero | exempt |
+| 17 | LP banner "Parking Signs" | top5pct-a-frame-sidewalk-signs.jpg | sidewalk-signs/ | sub-page hero | exempt |
+| 18 | card-image-with-text | top5pct-backlit-display-signs-joliet.jpg | backlit-signs/ | n/a | import-round |
+| 19 | C2 slot 1 | top5pct-banners-near-me.jpg | banners/ | n/a | import-round |
+| 20 | C2 slot 2 | top5pct-custom-table-runners.jpg | table-runners/ | n/a | import-round |
+| 21 | C2 slot 3 | top5pct-business-signs-joliet-shorewood-channahon.jpg | business-signs/ | n/a | import-round |
+| 22 | C2 slot 4 | top5pct-poster-board-joliet.jpg | posters/ | n/a | import-round |
+| 23 | slide-in right | top5pct-backlit-company-signs.jpg | backlit-signs/ | n/a | import-round |
+| 24 | slide-in left | top5pct-outdoor-banner-signs-joliet.jpg | outdoor-signs/ | n/a | R1 |
+
+*All 24 files distinct. 0 broken images. All 13 non-banner slots use valid sub-category dirs.*
+
+#### Violations found and fixed
+
+| Banner | Was | Now | Reason |
+|---|---|---|---|
+| Table Runners | top5pct-table-runner-joliet.jpg | top5pct-custom-table-cloth-business.jpg | Sub-page hero had changed |
+| Window Signs | top5pct-window-signage.jpg | top5pct-window-signs-rockdale.jpg | Sub-page hero updated during R4 work |
+
+#### Notes
+
+- "business-signs" sub-page exists but has no LP banner on this page — not a violation.
+- Floor Signs LP banner correctly uses wall-signs/ dir (floor-signs sub-page has no dedicated dir; it shares wall-signs/).
+- Window Signs mismatch introduced by R4 sub-page hero update. Pattern: any sub-page hero update must be followed by an LP banner check.
