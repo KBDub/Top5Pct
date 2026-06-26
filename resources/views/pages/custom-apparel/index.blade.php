@@ -58,7 +58,7 @@
     <x-ui.carousel-rotating-images
         :images="[
             ['src' => '/images/sublimation/top5pct-dye-sublimation-shirts.jpg',                     'alt' => 'Custom dye sublimation shirts and apparel in Joliet Illinois'],
-            ['src' => '/images/custom-shirts/top5pct-brick-vinyl-cresthill.jpg',                   'alt' => 'Custom brick vinyl shirts and hoodies in Crest Hill Illinois'],
+            ['src' => '/images/brick-shirts/top5pct-brick-vinyl-cresthill.jpg',                    'alt' => 'Custom brick vinyl shirts and hoodies in Crest Hill Illinois'],
             ['src' => '/images/spirit-wear/top5pct-spirit-wear-clothing.jpg',                      'alt' => 'Custom spirit wear clothing for schools and teams in Joliet Illinois'],
             ['src' => '/images/spirit-wear/top5pct-volleyball-team-uniforms-joliet.jpg',           'alt' => 'Custom volleyball team uniforms and spirit wear in Joliet Illinois'],
             ['src' => '/images/corporate-wear/top5pct-custom-company-apparel.jpg',                 'alt' => 'Custom company apparel and corporate shirts in Joliet Illinois'],
@@ -189,7 +189,7 @@
         :images="[
             ['src' => '/images/glitter-shirts/top5pct-glitter-lips-custom-t-shirt.jpg',    'alt' => 'Custom glitter lips design on a t-shirt in Joliet Illinois'],
             ['src' => '/images/flock-shirts/top5pct-flock-hoodie-printing.jpg',            'alt' => 'Custom flock print hoodie in Joliet Illinois'],
-            ['src' => '/images/custom-shirts/top5pct-rhinestone-bling-joliet.jpg',         'alt' => 'Custom rhinestone bling shirts in Joliet Illinois'],
+            ['src' => '/images/rhinestone-apparel/top5pct-rhinestone-bling-joliet.jpg',     'alt' => 'Custom rhinestone bling shirts in Joliet Illinois'],
             ['src' => '/images/reflective-shirts/top5pct-reflective-shirts.jpg',           'alt' => 'Custom reflective shirts and apparel in Joliet Illinois'],
         ]"
         visible=2

@@ -59,7 +59,7 @@ Review Instances
 |---|---|---|---|---|---|
 | 1 | category-hero | top5pct-custom-dtf-shirts.jpg | dtf-transfers/ | n/a | R1 |
 | 2 | C1 slot 1 | top5pct-dye-sublimation-shirts.jpg | sublimation/ | n/a | R1 |
-| 3 | C1 slot 2 | top5pct-brick-vinyl-cresthill.jpg | custom-shirts/ | n/a | R1 |
+| 3 | C1 slot 2 | top5pct-brick-vinyl-cresthill.jpg | brick-shirts/ | n/a | R1 |
 | 4 | C1 slot 3 | top5pct-spirit-wear-clothing.jpg | spirit-wear/ | n/a | R1 |
 | 5 | C1 slot 4 | top5pct-volleyball-team-uniforms-joliet.jpg | spirit-wear/ | n/a | R1 |
 | 6 | C1 slot 5 | top5pct-custom-company-apparel.jpg | corporate-wear/ | n/a | R1 |
@@ -82,7 +82,7 @@ Review Instances
 | 23 | card-image-with-text | top5pct-embroidered-caps.jpg | embroidery/ | n/a | R1 |
 | 24 | C2 slot 1 | top5pct-glitter-lips-custom-t-shirt.jpg | glitter-shirts/ | n/a | R1 |
 | 25 | C2 slot 2 | top5pct-flock-hoodie-printing.jpg | flock-shirts/ | n/a | R1 |
-| 26 | C2 slot 3 | top5pct-rhinestone-bling-joliet.jpg | custom-shirts/ | n/a | R1 |
+| 26 | C2 slot 3 | top5pct-rhinestone-bling-joliet.jpg | rhinestone-apparel/ | n/a | R1 |
 | 27 | C2 slot 4 | top5pct-reflective-shirts.jpg | reflective-shirts/ | n/a | R1 |
 | 28 | slide-in left | top5pct-custom-t-shirts-dtf.jpg | dtf-transfers/ | n/a | R1 |
 | 29 | slide-in right | top5pct-embroidery-beanies.jpg | embroidery/ | n/a | R1 |
@@ -100,7 +100,18 @@ Review Instances
 
 All four filenames were already correct. Only the directory prefix needed updating.
 
+#### Carousel broken images — found and fixed post-audit
+
+Two carousel slots were also broken — same cause (files migrated to dedicated dirs after v1):
+
+| Carousel | Slot | Was | Now |
+|---|---|---|---|
+| C1 slot 2 | Brick vinyl | custom-shirts/ | brick-shirts/ |
+| C2 slot 3 | Rhinestone | custom-shirts/ | rhinestone-apparel/ |
+
 #### Notes
 
-- Rules 1, 2, 3, 4, 6 were all clean at time of review. No non-banner slot issues, no duplicates.
+- Six total fixes on this LP — 4 LP banners, 2 carousel slots. All were dir-prefix-only changes; no filenames changed.
+- Rules 1, 2, 3, 4, 6 were all clean at time of review. No duplicates.
 - The v1 "Puff Print Shirts fallback" note is now resolved — puff-shirts/ dir exists and is in use.
+- Pattern to watch: any slot that previously used custom-shirts/ as a catch-all may be broken if that file has since moved to a dedicated dir.
