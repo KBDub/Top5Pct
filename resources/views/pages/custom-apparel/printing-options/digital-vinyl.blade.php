@@ -56,9 +56,9 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/digital-vinyl/vinyl-shirts.jpg',         'alt' => 'Custom digital vinyl shirts with full color printing in Joliet Illinois'],
-            ['src' => '/images/digital-vinyl/vinyl-hoodie.jpg',         'alt' => 'Digital vinyl hoodies with photo quality artwork in Joliet and Shorewood Illinois'],
-            ['src' => '/images/digital-vinyl/vinyl-caps.jpg',           'alt' => 'Custom digital vinyl hats and caps in Joliet, Will and DuPage County Illinois'],
+            ['src' => '/images/digital-vinyl/top5pct-digital-vinyl-shirts.jpg',            'alt' => 'Custom digital vinyl shirts with full color printing in Joliet Illinois'],
+            ['src' => '/images/digital-vinyl/top5pct-digital-vinyl-hoodie.jpg',            'alt' => 'Digital vinyl hoodies with photo quality artwork in Joliet and Shorewood Illinois'],
+            ['src' => '/images/digital-vinyl/top5pct-digital-vinyl-hoodies-in-joliet.jpg', 'alt' => 'Custom digital vinyl hoodies and apparel in Joliet Illinois'],
             ['src' => '/images/digital-vinyl/custom-vinyl-hoodies.jpg', 'alt' => 'Custom digital vinyl hoodies pressed in Joliet Illinois'],
         ]"
         visible=2
@@ -157,10 +157,10 @@
         direction="left"
     />
     <x-ui.card-banner-slide-in
-        image="/images/digital-vinyl/vinyl-caps.jpg"
-        alt="Custom digital vinyl hats and caps from Top 5 Percent in Joliet Illinois"
-        title="Digital Vinyl Shirts, Hoodies, Hats, and More"
-        href="/contact"
+        image="/images/glitter-shirts/top5pct-glitter-sweatshirts-joliet.jpg"
+        alt="Custom glitter sweatshirts and specialty vinyl apparel from Top 5 Percent in Joliet Illinois"
+        title="Add Glitter or Rhinestone Accents to Your Digital Vinyl Order"
+        href="/custom-apparel/specialty-materials/glitter-shirts"
         direction="right"
     />
 
