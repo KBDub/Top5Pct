@@ -6,7 +6,7 @@
     'trustNote'          => '',
     'seoQualifier'       => 'Best',
     'seoCity'            => '',
-    'showServiceArea'    => true,
+    'showServiceArea'    => false,
 ])
 
 @php
