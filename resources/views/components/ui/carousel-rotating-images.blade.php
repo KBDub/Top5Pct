@@ -9,6 +9,10 @@
     Center slot: width:600px, aspect-ratio:4/3, max-width:100% (or 50%-gap for vis=2).
     Side slots (vis=3): width:300px, aspect-ratio:4/3, max-width:100%.
     On mobile (< 768px): always collapses to vis=1 regardless of prop.
+
+    All N images are rendered into the DOM on mount with static src values.
+    Rotation only changes which items are visible via CSS — no src attribute
+    ever changes, so the browser caches each image once and never re-fetches.
 --}}
 
 <div
@@ -19,12 +23,43 @@
         fading: false,
         timer: null,
 
-        get n()    { return this.images.length; },
-        get li()   { return (this.current - 1 + this.n) % this.n; },
-        get ri()   { return (this.current + 1) % this.n; },
-        get lImg() { return this.images[this.li]; },
-        get cImg() { return this.images[this.current]; },
-        get rImg() { return this.images[this.ri]; },
+        get n()  { return this.images.length; },
+        get li() { return (this.current - 1 + this.n) % this.n; },
+        get ri() { return (this.current + 1) % this.n; },
+
+        role(idx) {
+            if (idx === this.current) return 'center';
+            if (this.vis >= 3 && idx === this.li) return 'left';
+            if (this.vis >= 2 && idx === this.ri) return 'right';
+            return 'hidden';
+        },
+
+        slotStyle(idx) {
+            const r = this.role(idx);
+            if (r === 'center') {
+                return this.vis === 2
+                    ? 'order:2; width:600px; aspect-ratio:4/3; max-width:calc(50% - 6px);'
+                    : 'order:2; width:600px; aspect-ratio:4/3; max-width:100%;';
+            }
+            if (r === 'left') {
+                return 'order:1; width:300px; aspect-ratio:4/3; max-width:100%;';
+            }
+            if (r === 'right') {
+                return this.vis === 2
+                    ? 'order:3; width:600px; aspect-ratio:4/3; max-width:calc(50% - 6px);'
+                    : 'order:3; width:300px; aspect-ratio:4/3; max-width:100%;';
+            }
+            return 'display:none;';
+        },
+
+        slotClass(idx) {
+            const r = this.role(idx);
+            const base = 'flex-none overflow-hidden bg-linen transition-all duration-300 ease-out relative';
+            if (r === 'center') return base + (this.fading ? ' opacity-0' : ' opacity-100');
+            if (r === 'left')   return base + (this.fading ? ' opacity-0' : ' opacity-60');
+            if (r === 'right')  return base + (this.fading ? ' opacity-0' : (this.vis >= 3 ? ' opacity-60' : ' opacity-100'));
+            return '';
+        },
 
         go(dir) {
             if (this.fading) return;
@@ -49,11 +84,7 @@
             if (this.timer) { clearInterval(this.timer); this.timer = null; }
         },
         applyResponsive() {
-            if (window.innerWidth < 768) {
-                this.vis = 1;
-            } else {
-                this.vis = {{ (int) $visible }};
-            }
+            this.vis = window.innerWidth < 768 ? 1 : {{ (int) $visible }};
         }
     }"
     x-init="applyResponsive(); startTimer(); window.addEventListener('resize', () => applyResponsive())"
@@ -64,58 +95,25 @@
 
             <div class="relative overflow-hidden">
 
-                {{-- Image track --}}
+                {{-- Image track: all images live in the DOM with fixed src values.
+                     Rotation shows/hides via CSS only — no src changes, no re-fetches. --}}
                 <div class="flex items-center justify-center gap-3">
-
-                    {{-- Left slot, visible=3 only --}}
-                    <template x-if="vis >= 3">
+                    <template x-for="(img, idx) in images" :key="img.src">
                         <div
-                            class="flex-none overflow-hidden bg-linen transition-all duration-300 ease-out"
-                            style="width:300px; aspect-ratio:4/3; max-width:100%;"
-                            :class="fading ? 'opacity-0' : 'opacity-60'"
+                            :style="slotStyle(idx)"
+                            :class="slotClass(idx)"
                         >
+                            {{-- Sunburst ring on center slot when vis=3 --}}
+                            <template x-if="vis >= 3 && idx === current">
+                                <div class="absolute inset-0 ring-2 ring-sunburst shadow-gold-xl pointer-events-none z-10"></div>
+                            </template>
                             <img
-                                :src="lImg.src"
-                                :alt="lImg.alt"
+                                :src="img.src"
+                                :alt="img.alt"
                                 class="w-full h-full object-cover"
-                                loading="lazy"
                             >
                         </div>
                     </template>
-
-                    {{-- Center slot --}}
-                    <div
-                        class="flex-none overflow-hidden bg-linen transition-all duration-300 ease-out relative"
-                        :class="fading ? 'opacity-0' : 'opacity-100'"
-                        :style="vis === 2 ? 'width:600px; aspect-ratio:4/3; max-width:calc(50% - 6px);' : 'width:600px; aspect-ratio:4/3; max-width:100%;'"
-                    >
-                        <template x-if="vis >= 3">
-                            <div class="absolute inset-0 ring-2 ring-sunburst shadow-gold-xl pointer-events-none z-10"></div>
-                        </template>
-                        <img
-                            :src="cImg.src"
-                            :alt="cImg.alt"
-                            class="w-full h-full object-cover"
-                            loading="lazy"
-                        >
-                    </div>
-
-                    {{-- Right slot, visible >= 2 --}}
-                    <template x-if="vis >= 2">
-                        <div
-                            class="flex-none overflow-hidden bg-linen transition-all duration-300 ease-out"
-                            :class="fading ? 'opacity-0' : vis >= 3 ? 'opacity-60' : 'opacity-100'"
-                            :style="vis === 2 ? 'width:600px; aspect-ratio:4/3; max-width:calc(50% - 6px);' : 'width:300px; aspect-ratio:4/3; max-width:100%;'"
-                        >
-                            <img
-                                :src="rImg.src"
-                                :alt="rImg.alt"
-                                class="w-full h-full object-cover"
-                                loading="lazy"
-                            >
-                        </div>
-                    </template>
-
                 </div>
 
                 {{-- Prev / Next arrows --}}
