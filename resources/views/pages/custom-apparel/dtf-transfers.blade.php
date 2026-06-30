@@ -52,7 +52,14 @@
     />
     <x-ui.banner-medium-sunburst />
 
-    <x-sections.page-intro displayServiceType="DTF Transfers" />
+    <x-sections.top5pct-same-day-service
+        displayServiceType="DTF Transfers"
+        productIntro='Direct-to-film printing puts full-color, photographic-quality prints on any fabric with no cracking, no peeling, and no minimum order. We print every transfer in-house on our own DTF equipment in Joliet, so quality is consistent whether you order one shirt or five hundred. Businesses use DTF for branded apparel, teams use it for spirit wear with photo-quality logos, and families use it for personalized gifts and reunion gear.'
+        crossSell='Combine your DTF shirts with a matching <a href="/signs/banners" class="link-inline">vinyl banner</a> for a complete event package, or add <a href="/custom-apparel/printing-options/embroidery" class="link-inline">embroidery</a> to the same order for a layered, professional finish.'
+        ctaText="Shop DTF Transfers"
+        ctaHref="#all-products"
+        trustNote="Same day DTF service is available on most orders — call us and we will confirm your turnaround before you come in."
+    />
 
     <x-ui.carousel-rotating-images
         :images="[

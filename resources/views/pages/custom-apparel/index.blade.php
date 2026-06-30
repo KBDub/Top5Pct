@@ -53,7 +53,13 @@
     />
     <x-ui.banner-medium-sunburst />
 
-    <x-sections.page-intro displayServiceType="Custom Apparel" />
+    <x-sections.top5pct-same-day-service
+        displayServiceType="Custom Apparel"
+        productIntro='We print, press, and embroider custom apparel in-house using DTF transfers, screen printing, embroidery, heat press vinyl, dye sublimation, and specialty finishes including rhinestone, foil, glitter, and more. No minimums on any decoration method, same day service available on most orders, and our in-house design team handles your artwork from concept to production-ready file. Businesses order branded uniforms and corporate wear, teams order spirit wear and group shirts, and individuals order personalized gifts and custom pieces — all produced right here in Joliet.'
+        crossSell='Round out your order with <a href="/signs" class="link-inline">custom signs</a>, <a href="/vehicle-graphics" class="link-inline">vehicle graphics</a>, or <a href="/promotional-items" class="link-inline">promotional items</a> — we handle everything in the same shop.'
+        ctaText="Browse Custom Apparel"
+        ctaHref="/custom-apparel"
+    />
 
     <x-ui.carousel-rotating-images
         :images="[

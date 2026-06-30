@@ -52,7 +52,13 @@
     />
     <x-ui.banner-medium-sunburst />
 
-    <x-sections.page-intro displayServiceType="Floor Signs" />
+    <x-sections.top5pct-same-day-service
+        displayServiceType="Floor Signs"
+        productIntro='Custom floor signs and floor decals communicate direction, branding, safety messages, and promotions right at ground level — where people actually look. We print floor graphics in-house in Joliet on durable, non-slip laminated vinyl stock that holds up in high-traffic commercial spaces. Retail stores, warehouses, event venues, and health care facilities order floor signs for wayfinding, branded zone markers, and promotional messaging. No minimums, same day floor sign production available on most jobs.'
+        crossSell='Pair floor signs with <a href="/signs/wall-signs" class="link-inline">wall signs</a> and <a href="/signs/door-signs" class="link-inline">door signs</a> for a fully cohesive branded environment throughout your space.'
+        ctaText="Get a Floor Sign Quote"
+        ctaHref="#all-products"
+    />
 
     <x-ui.carousel-rotating-images
         :images="[

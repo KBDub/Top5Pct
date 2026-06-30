@@ -535,10 +535,31 @@ Every page already calling `x-sections.top5pct-same-day-service` keeps that call
 
 ---
 
+## Excluded Pages (not part of the 54-page migration)
+
+Two pages call `x-sections.page-intro` (or the legacy component) but are **excluded** from this migration:
+
+| Page file | Reason |
+|---|---|
+| `collection.blade.php` | Generic Lunar collection template — `$collectionName` is dynamic at runtime; no meaningful `productIntro` can be written at the page level. Remove the component call or replace with a simple trust block in a separate task. |
+| `service-areas/show.blade.php` | City-specific service area template — the component H2 formula ("Service — Same Day") is wrong for a city landing page, and a per-city `productIntro` is not practical at template level. Handle in a separate city-page redesign task. |
+
+Additional non-product pages also using the call (handle separately):
+
+| Page file | Recommendation |
+|---|---|
+| `about.blade.php` | Use generic `productIntro` or remove — not a product page |
+| `contact.blade.php` | Use generic `productIntro` or remove — not a product page |
+| `portfolio.blade.php` | Use generic `productIntro` or remove — not a product page |
+| `product.blade.php` | Generic single-product template — use generic `productIntro` |
+| `top5pct-merchandise.blade.php` | Merch page — use generic `productIntro` |
+
+---
+
 ## Build Order
 
 1. Confirm `App\Data\PrimaryLocations` and `App\Data\BusinessIdentity` are populated and accessible
-2. Rebuild `x-sections.top5pct-same-day-service` — swap bullet lists to paragraph form, add new props, wire App\Data\
+2. Rebuild `x-sections.top5pct-same-day-service` — swap bullet lists to paragraph form, add new props, wire App\Data\ ✓ Done
 3. Review and approve the `productIntro` copy drafts in this document
 4. Update all 54 page files — remove `serviceType` prop, add `productIntro` and optional `crossSell`/`ctaText`/`ctaHref`/`trustNote`
 

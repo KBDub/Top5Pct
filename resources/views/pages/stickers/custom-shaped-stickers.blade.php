@@ -52,7 +52,13 @@
     />
     <x-ui.banner-medium-sunburst />
 
-    <x-sections.page-intro displayServiceType="Custom Shaped Stickers" />
+    <x-sections.top5pct-same-day-service
+        displayServiceType="Custom Shaped Stickers"
+        productIntro='Custom shaped stickers are die-cut to follow the exact outline of your design — no white border, no square background — producing a clean, professional sticker that looks designed rather than printed. We produce custom shaped stickers in-house in Joliet on durable, weatherproof vinyl with full-color printing and UV coating for outdoor use. Businesses order custom shaped stickers for product packaging, branding, and promotional giveaways, and individuals order them for personal projects, gifts, and events. No minimums.'
+        crossSell='Pair custom shaped stickers with <a href="/stickers/standard-stickers" class="link-inline">standard stickers</a> for a complete sticker lineup, or combine with <a href="/promotional-items" class="link-inline">branded promotional items</a> for a full event giveaway package.'
+        ctaText="Get a Custom Sticker Quote"
+        ctaHref="#all-products"
+    />
 
     <x-ui.carousel-rotating-images
         :images="[

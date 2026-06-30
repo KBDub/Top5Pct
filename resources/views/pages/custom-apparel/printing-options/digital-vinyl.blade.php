@@ -52,7 +52,13 @@
     />
     <x-ui.banner-medium-sunburst />
 
-    <x-sections.page-intro displayServiceType="Digital Vinyl Shirts" />
+    <x-sections.top5pct-same-day-service
+        displayServiceType="Digital Vinyl Shirts"
+        productIntro='Digital vinyl printing applies full-color, photographic-quality graphics to heat transfer film that is then pressed onto your garment for a smooth, vibrant finish. We cut and press digital vinyl in-house in Joliet with no minimums, making it a great option for photo-realistic logos, multi-color designs, and small-run custom apparel that needs full-color detail. Same day digital vinyl shirts are available on most jobs.'
+        crossSell='Digital vinyl pairs well with <a href="/custom-apparel/printing-options/dtf-printing" class="link-inline">DTF transfers</a> for mixed-method runs, or combine your shirts with a <a href="/signs/banners" class="link-inline">custom banner</a> for a complete branded event setup.'
+        ctaText="Get a Digital Vinyl Quote"
+        ctaHref="#all-products"
+    />
 
     <x-ui.carousel-rotating-images
         :images="[

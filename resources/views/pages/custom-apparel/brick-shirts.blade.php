@@ -52,7 +52,13 @@
     />
     <x-ui.banner-medium-sunburst />
 
-    <x-sections.page-intro displayServiceType="Brick Shirts" />
+    <x-sections.top5pct-same-day-service
+        displayServiceType="Brick Shirts"
+        productIntro='Brick print applies a textured, dimensional pattern to apparel that creates a bold, graphic look with a raised surface feel similar to embossed printing. We produce brick shirts in-house in Joliet with the same quality controls as all our specialty apparel, pressing each piece individually for consistent texture and clean design edges. No minimums — call us to discuss your design and we will confirm turnaround before you come in.'
+        crossSell='Brick print pairs well with <a href="/custom-apparel/specialty-materials/vinyl-shirts" class="link-inline">vinyl shirts</a> or <a href="/custom-apparel/printing-options/dtf-printing" class="link-inline">DTF transfers</a> for a mixed-specialty run that covers every apparel need in a single order.'
+        ctaText="Get a Brick Shirt Quote"
+        ctaHref="#all-products"
+    />
 
     <x-ui.carousel-rotating-images
         :images="[

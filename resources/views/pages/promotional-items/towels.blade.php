@@ -51,7 +51,13 @@
     />
     <x-ui.banner-medium-sunburst />
 
-    <x-sections.page-intro displayServiceType="Custom Towels" />
+    <x-sections.top5pct-same-day-service
+        displayServiceType="Custom Towels"
+        productIntro='Custom printed towels make a practical and memorable branded giveaway for gyms, spas, sports teams, resorts, and corporate events — we produce custom towels in-house in Joliet with dye sublimation printing on polyester microfiber for a full-color, edge-to-edge result that does not fade. Sports teams, fitness studios, hospitality businesses, and event organizers order custom towels for team gear, promotional merchandise, and corporate gifts. No minimums.'
+        crossSell='Pair custom towels with <a href="/custom-apparel/dye-sublimation" class="link-inline">sublimated jerseys or performance shirts</a> for a complete team kit, or combine with <a href="/promotional-items/tote-bags" class="link-inline">branded tote bags</a> for a polished event giveaway set.'
+        ctaText="Get a Towel Quote"
+        ctaHref="#all-products"
+    />
 
     <x-ui.carousel-rotating-images
         :images="[

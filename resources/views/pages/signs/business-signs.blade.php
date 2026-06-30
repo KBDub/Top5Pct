@@ -52,7 +52,13 @@
     />
     <x-ui.banner-medium-sunburst />
 
-    <x-sections.page-intro displayServiceType="Business Signs" />
+    <x-sections.top5pct-same-day-service
+        displayServiceType="Business Signs"
+        productIntro='We design and produce custom business signs in-house in Joliet, covering interior and exterior signage for storefronts, offices, restaurants, retail locations, and professional spaces throughout Will and DuPage County. Every sign is produced on our own equipment with no outsourcing — wall signs, window graphics, door signs, floor decals, and specialty signage are all handled start to finish at 121 Springfield Avenue. Same day business sign production is available on most standard formats.'
+        crossSell='Pair your business signage with <a href="/signs/window-signs" class="link-inline">window graphics</a> for full storefront coverage, or add <a href="/custom-apparel" class="link-inline">branded staff apparel</a> for a unified brand presence inside and out.'
+        ctaText="Get a Business Sign Quote"
+        ctaHref="#all-products"
+    />
 
     <x-ui.banner-testimonial
         quote="Professional business man. I am so pleased with the banners and signs he made for my church and I will definitely continue to support his business."

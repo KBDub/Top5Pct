@@ -52,7 +52,13 @@
     />
     <x-ui.banner-medium-sunburst />
 
-    <x-sections.page-intro displayServiceType="Door Signs" />
+    <x-sections.top5pct-same-day-service
+        displayServiceType="Door Signs"
+        productIntro='Custom door signs give your business a professional first impression at every entrance — we produce door signs in-house in Joliet in a range of materials and formats including vinyl decals, printed aluminum, acrylic, and specialty substrates for any commercial application. No minimums, fast turnaround, and full-color printing with precise sizing to fit standard and non-standard door configurations. Offices, restaurants, retail locations, and service businesses throughout Will and DuPage County order door signs from us for suite identification, hours of operation, and branded entry graphics.'
+        crossSell='Pair door signs with <a href="/signs/window-signs" class="link-inline">window graphics</a> for a complete entry presence, or add <a href="/signs/wall-signs" class="link-inline">wall signs</a> to carry your brand through the interior.'
+        ctaText="Get a Door Sign Quote"
+        ctaHref="#all-products"
+    />
 
     <x-ui.carousel-rotating-images
         :images="[

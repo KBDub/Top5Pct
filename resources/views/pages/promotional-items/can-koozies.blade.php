@@ -52,7 +52,13 @@
     />
     <x-ui.banner-medium-sunburst />
 
-    <x-sections.page-intro displayServiceType="Custom Can Koozies" />
+    <x-sections.top5pct-same-day-service
+        displayServiceType="Custom Can Koozies"
+        productIntro='Custom can koozies are a popular giveaway for events, fundraisers, bar openings, sports games, and corporate outings — we print custom koozies in-house in Joliet with full-color printing on neoprene foam that keeps drinks cold and your brand visible all day. No minimums, fast turnaround, and durable printing that holds up through repeated use. Businesses, event planners, and organizations throughout Chicagoland order custom koozies for parties, trade shows, and branded merchandise.'
+        crossSell='Pair can koozies with <a href="/promotional-items/mugs" class="link-inline">custom mugs</a> or <a href="/promotional-items/tote-bags" class="link-inline">tote bags</a> for a complete drinkware and carry bundle, or add <a href="/custom-apparel" class="link-inline">matching branded shirts</a> for a full event merchandise set.'
+        ctaText="Get a Koozie Quote"
+        ctaHref="#all-products"
+    />
 
     <x-ui.carousel-rotating-images
         :images="[

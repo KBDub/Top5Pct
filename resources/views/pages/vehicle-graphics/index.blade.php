@@ -53,7 +53,13 @@
     />
     <x-ui.banner-medium-sunburst />
 
-    <x-sections.page-intro displayServiceType="Vehicle Graphics" />
+    <x-sections.top5pct-same-day-service
+        displayServiceType="Vehicle Graphics"
+        productIntro='We design and install custom vehicle graphics in-house, from full wraps and partial wraps to vinyl lettering, car magnets, DOT decals, and fleet graphics for businesses throughout the Chicagoland area. Every graphic is produced and installed at our Joliet location, so we control quality from design file to finished vehicle. Contractors, fleet operators, and local businesses use our vehicle graphics to turn every truck and van into a professional mobile billboard. Rush installation is available on most vehicle graphics jobs.'
+        crossSell='Pair your vehicle graphics with <a href="/signs/business-signs" class="link-inline">custom business signage</a> to match your brand from the road to the storefront, or add <a href="/custom-apparel" class="link-inline">branded apparel</a> so your team looks as sharp as your vehicles.'
+        ctaText="Browse Vehicle Graphics"
+        ctaHref="/vehicle-graphics"
+    />
 
     <x-ui.carousel-rotating-images
         :images="[

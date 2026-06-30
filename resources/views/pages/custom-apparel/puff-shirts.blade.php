@@ -52,7 +52,13 @@
     />
     <x-ui.banner-medium-sunburst />
 
-    <x-sections.page-intro displayServiceType="Puff Print Shirts" />
+    <x-sections.top5pct-same-day-service
+        displayServiceType="Puff Print Shirts"
+        productIntro='Puff print uses a heat-activated additive in the ink that raises the design off the surface of the garment for a three-dimensional, textured effect that you can feel as well as see. We apply puff prints in-house in Joliet and press each garment individually for consistent lift and clean edges across the full design. No minimums — we can press a single puff print shirt or a full run for a team or business.'
+        crossSell='Puff print pairs well with <a href="/custom-apparel/specialty-materials/vinyl-shirts" class="link-inline">heat press vinyl</a> for a mixed-texture run, or combine with a <a href="/signs/banners" class="link-inline">custom banner</a> for a complete branded event package.'
+        ctaText="Get a Puff Print Quote"
+        ctaHref="#all-products"
+    />
 
     <x-ui.carousel-rotating-images
         :images="[

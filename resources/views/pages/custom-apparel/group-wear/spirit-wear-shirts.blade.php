@@ -48,7 +48,14 @@
     />
     <x-ui.banner-medium-sunburst />
 
-    <x-sections.page-intro displayServiceType="Spirit Wear" />
+    <x-sections.top5pct-same-day-service
+        displayServiceType="Spirit Wear"
+        productIntro='Spirit wear keeps teams, schools, clubs, and communities looking unified and proud — we produce custom spirit wear in-house in Joliet using DTF transfers, screen printing, embroidery, and vinyl depending on the design and the garment. School teams, youth sports leagues, booster clubs, and neighborhood organizations throughout Will and DuPage County order spirit wear from us regularly, and our no-minimum policy means small groups can order without meeting a quota. Same day spirit wear is available on most jobs.'
+        crossSell='Combine spirit wear with a <a href="/signs/banners" class="link-inline">custom banner</a> for game day, or add <a href="/promotional-items/can-koozies" class="link-inline">custom can koozies</a> or <a href="/promotional-items/tote-bags" class="link-inline">tote bags</a> for a complete booster club merchandise package.'
+        ctaText="Get a Spirit Wear Quote"
+        ctaHref="#all-products"
+        trustNote="Same day spirit wear is available on most orders — call us and we will confirm your turnaround before you come in."
+    />
 
     <x-ui.carousel-rotating-images
         :images="[

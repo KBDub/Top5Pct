@@ -52,7 +52,13 @@
     />
     <x-ui.banner-medium-sunburst />
 
-    <x-sections.page-intro displayServiceType="Automobile Graphics" />
+    <x-sections.top5pct-same-day-service
+        displayServiceType="Automobile Graphics"
+        productIntro='We design and install custom vehicle graphics in-house in Joliet, including partial wraps, full wraps, vinyl lettering, logo graphics, and decorative vehicle graphics for cars, trucks, vans, SUVs, and specialty vehicles. Every graphic is produced and installed at 121 Springfield Avenue for consistent quality — no outsourcing to third-party installers. Businesses use automobile graphics to brand their service vehicles and company cars, and individuals order custom vehicle graphics for personal style and specialty builds.'
+        crossSell='Pair automobile graphics with <a href="/vehicle-graphics/vehicle-magnets" class="link-inline">vehicle magnets</a> for a removable branding option on personal vehicles, or add <a href="/vehicle-graphics/dot-decals" class="link-inline">DOT decals</a> for full commercial fleet compliance.'
+        ctaText="Get a Vehicle Graphic Quote"
+        ctaHref="#all-products"
+    />
 
     <x-ui.carousel-rotating-images
         :images="[

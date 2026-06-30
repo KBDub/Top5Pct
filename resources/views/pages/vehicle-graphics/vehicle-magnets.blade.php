@@ -52,7 +52,13 @@
     />
     <x-ui.banner-medium-sunburst />
 
-    <x-sections.page-intro displayServiceType="Vehicle Magnets" />
+    <x-sections.top5pct-same-day-service
+        displayServiceType="Vehicle Magnets"
+        productIntro='Custom vehicle magnets give businesses a flexible, removable way to brand their personal and work vehicles without permanent adhesive — we produce vehicle magnets in-house in Joliet with full-color printing on heavy-duty magnetic material that holds securely at highway speeds and resists weather. Contractors, real estate agents, delivery drivers, and service businesses throughout Will and DuPage County use vehicle magnets to turn personal vehicles into professional marketing tools. No minimums.'
+        crossSell='Pair vehicle magnets with <a href="/vehicle-graphics/automobile-graphics" class="link-inline">permanent vehicle graphics</a> for fleet vehicles, or add <a href="/vehicle-graphics/dot-decals" class="link-inline">DOT decals</a> to keep commercial vehicles fully compliant.'
+        ctaText="Get a Vehicle Magnet Quote"
+        ctaHref="#all-products"
+    />
 
     <x-ui.carousel-rotating-images
         :images="[

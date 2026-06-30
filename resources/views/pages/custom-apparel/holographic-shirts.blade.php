@@ -52,7 +52,13 @@
     />
     <x-ui.banner-medium-sunburst />
 
-    <x-sections.page-intro displayServiceType="Holographic Shirts" />
+    <x-sections.top5pct-same-day-service
+        displayServiceType="Holographic Shirts"
+        productIntro='Holographic vinyl creates a mirror-like, color-shifting effect on shirts and apparel that produces a dramatic, premium look at any event or occasion. We cut and press holographic heat transfer vinyl in-house in Joliet with the same precision as standard vinyl, and the effect holds up through washing when pressed at the correct temperature and pressure. No minimums — order one holographic shirt or a full team set.'
+        crossSell='Holographic pairs naturally with <a href="/custom-apparel/specialty-materials/foil-shirts" class="link-inline">foil shirts</a> or <a href="/custom-apparel/specialty-materials/glitter-shirts" class="link-inline">glitter shirts</a> for a complete high-impact event or performance apparel lineup.'
+        ctaText="Get a Holographic Shirt Quote"
+        ctaHref="#all-products"
+    />
 
     <x-ui.carousel-rotating-images
         :images="[

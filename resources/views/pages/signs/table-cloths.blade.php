@@ -52,7 +52,13 @@
     />
     <x-ui.banner-medium-sunburst />
 
-    <x-sections.page-intro displayServiceType="Custom Table Cloths" />
+    <x-sections.top5pct-same-day-service
+        displayServiceType="Custom Table Cloths"
+        productIntro='Custom printed table cloths transform any trade show table, event display, or retail setup into a polished, branded presentation — we produce custom table cloths in-house in Joliet with full-color dye sublimation printing on wrinkle-resistant polyester fabric. Standard 6-foot and 8-foot sizes available, as well as custom dimensions. Businesses, nonprofits, and event organizers throughout Chicagoland order custom table cloths for trade shows, conferences, farmers markets, and branded display setups.'
+        crossSell='Pair your table cloth with a <a href="/signs/table-runners" class="link-inline">matching table runner</a> and a <a href="/signs/banners" class="link-inline">retractable banner</a> for a complete trade show booth setup produced in the same shop.'
+        ctaText="Get a Table Cloth Quote"
+        ctaHref="#all-products"
+    />
 
     <x-ui.carousel-rotating-images
         :images="[

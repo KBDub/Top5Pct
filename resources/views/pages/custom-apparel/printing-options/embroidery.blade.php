@@ -52,7 +52,13 @@
     />
     <x-ui.banner-medium-sunburst />
 
-    <x-sections.page-intro displayServiceType="Embroidery" />
+    <x-sections.top5pct-same-day-service
+        displayServiceType="Embroidery"
+        productIntro='Embroidery stitches your logo or artwork directly into the fabric of shirts, polos, hats, jackets, and bags for a premium, textured finish that communicates professionalism on every piece. We embroider in-house in Joliet using commercial-grade machines, and we digitize your artwork ourselves so the stitch count and quality are optimized before production begins. No minimums — we can embroider a single piece or a run of hundreds.'
+        crossSell='Combine embroidery with <a href="/custom-apparel/printing-options/dtf-printing" class="link-inline">DTF transfers</a> on the same garment for a layered look, or add <a href="/promotional-items" class="link-inline">branded promotional items</a> to complete a corporate gift or welcome kit.'
+        ctaText="Get an Embroidery Quote"
+        ctaHref="#all-products"
+    />
 
     <x-ui.carousel-rotating-images
         :images="[

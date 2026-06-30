@@ -52,7 +52,13 @@
     />
     <x-ui.banner-medium-sunburst />
 
-    <x-sections.page-intro displayServiceType="Custom Mugs" />
+    <x-sections.top5pct-same-day-service
+        displayServiceType="Custom Mugs"
+        productIntro='Custom mugs are one of the most-used promotional products in any office or home — we produce custom printed mugs in-house in Joliet with dye sublimation printing that wraps your design around the full surface of the mug for a professional, full-color result that does not scratch or peel with normal washing. Businesses order branded mugs for corporate gifts, employee appreciation, trade show giveaways, and hospitality. No minimums.'
+        crossSell='Pair custom mugs with <a href="/promotional-items/drink-coasters" class="link-inline">branded drink coasters</a> or <a href="/promotional-items/mouse-pads" class="link-inline">mouse pads</a> for a polished desk gift set, or combine with <a href="/custom-apparel" class="link-inline">branded apparel</a> for a complete corporate welcome kit.'
+        ctaText="Get a Mug Quote"
+        ctaHref="#all-products"
+    />
 
     <x-ui.carousel-rotating-images
         :images="[

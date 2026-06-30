@@ -52,7 +52,13 @@
     />
     <x-ui.banner-medium-sunburst />
 
-    <x-sections.page-intro displayServiceType="Sidewalk Signs" />
+    <x-sections.top5pct-same-day-service
+        displayServiceType="A-Frame Signs"
+        productIntro='A-frame signs are one of the simplest and most effective ways to stop foot traffic and draw customers into your location — we produce custom A-frame sign inserts in-house in Joliet with full-color printing and weather-resistant materials for outdoor use. Restaurants, boutiques, service businesses, and event organizers use A-frames for daily specials, menus, directional signs, and promotions that need to be visible from the sidewalk. No minimums, fast turnaround, same day production available on most A-frame formats.'
+        crossSell='Pair your A-frame with a <a href="/signs/banners" class="link-inline">custom banner</a> or <a href="/signs/yard-signs" class="link-inline">yard signs</a> for a complete outdoor marketing setup that covers foot traffic from every angle.'
+        ctaText="Get an A-Frame Sign Quote"
+        ctaHref="#all-products"
+    />
 
     <x-ui.carousel-rotating-images
         :images="[

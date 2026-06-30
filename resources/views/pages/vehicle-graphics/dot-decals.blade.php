@@ -52,7 +52,14 @@
     />
     <x-ui.banner-medium-sunburst />
 
-    <x-sections.page-intro displayServiceType="DOT Decals" />
+    <x-sections.top5pct-same-day-service
+        displayServiceType="DOT Decals"
+        productIntro='We produce DOT-compliant decals and regulatory vehicle stickers in-house in Joliet for commercial trucks, trailers, and fleet vehicles operating throughout Illinois and across state lines. Our DOT decals are printed on durable, weather-resistant vinyl that meets federal marking requirements for motor carriers, and we can produce USDOT number decals, fuel permits, and fleet identification graphics at any quantity with fast turnaround. Same day DOT decal production is available on most standard formats.'
+        crossSell='Pair DOT decals with <a href="/vehicle-graphics/automobile-graphics" class="link-inline">vehicle graphics</a> for full fleet branding, or add <a href="/vehicle-graphics/vehicle-magnets" class="link-inline">vehicle magnets</a> for flexible branding on personal or leased vehicles.'
+        ctaText="Get a DOT Decal Quote"
+        ctaHref="#all-products"
+        trustNote="Same day DOT decal production is available on most standard formats — call us to confirm."
+    />
 
     <x-ui.carousel-rotating-images
         :images="[

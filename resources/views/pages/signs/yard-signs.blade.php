@@ -52,7 +52,14 @@
     />
     <x-ui.banner-medium-sunburst />
 
-    <x-sections.page-intro displayServiceType="Yard Signs" />
+    <x-sections.top5pct-same-day-service
+        displayServiceType="Yard Signs"
+        productIntro='We print corrugated plastic yard signs in full color using UV-resistant inks that hold up through Illinois weather without fading or peeling — single sided and double sided printing, optional metal H-stakes, and bulk pricing available on larger orders. Every yard sign is printed in-house in Joliet on our own wide-format equipment. Real estate agents, political campaigns, contractors, event organizers, and local businesses throughout Will and DuPage County order yard signs from us regularly. Same day yard sign printing is available on standard sizes.'
+        crossSell='Pair yard signs with <a href="/signs/banners" class="link-inline">custom banners</a> for maximum outdoor event coverage, or add <a href="/signs/window-signs" class="link-inline">window graphics</a> to bring the same branded message indoors.'
+        ctaText="Get a Yard Sign Quote"
+        ctaHref="#all-products"
+        trustNote="Same day yard sign printing is available on standard sizes — rush orders are welcome."
+    />
 
     <x-ui.carousel-rotating-images
         :images="[
