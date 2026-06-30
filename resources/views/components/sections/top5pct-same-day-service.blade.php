@@ -2,12 +2,11 @@
     'displayServiceType' => 'Custom Signage & Apparel',
     'productIntro'       => '',
     'crossSell'          => '',
-    'ctaText'            => 'Get a Free Quote',
-    'ctaHref'            => '',
     'reviewCount'        => '200+',
     'trustNote'          => '',
     'seoQualifier'       => 'Best',
     'seoCity'            => '',
+    'showServiceArea'    => true,
 ])
 
 @php
@@ -30,7 +29,7 @@
 
         <div class="grid lg:grid-cols-2 gap-8">
 
-            {{-- Left card: brand trust and cross-sell --}}
+            {{-- Left card: cross-sell first, trust second --}}
             <div class="border-t-4 border-sunburst bg-white shadow-md p-8">
 
                 <div class="inline-block mb-6">
@@ -41,18 +40,6 @@
                 </div>
 
                 <p class="text-body-sm text-charcoal leading-relaxed mb-4">
-                    We carry a <a href="/reviews" class="link-inline">five-star rating on Google</a>,
-                    backed by {{ $reviewCount }} reviews from businesses and residents across the Chicagoland area.
-                    Top 5 Percent is <a href="/about" class="link-inline">veteran-owned</a>,
-                    and has operated out of Joliet since {{ $year }}.
-                    We produce every order in-house from start to finish, no outsourcing, no middlemen,
-                    and no surprises on price.
-                    @if($trustNote)
-                        {{ $trustNote }}
-                    @endif
-                </p>
-
-                <p class="text-body-sm text-charcoal leading-relaxed">
                     We handle <a href="/custom-apparel" class="link-inline">custom apparel</a>, including
                     <a href="/custom-apparel/printing-options/dtf-printing" class="link-inline">DTF transfers</a>,
                     <a href="/custom-apparel/printing-options/screen-printing" class="link-inline">screen printing</a>,
@@ -68,6 +55,18 @@
                     <a href="/promotional-items" class="link-inline">promotional items</a>,
                     and <a href="/design-services" class="link-inline">in-house design services</a>,
                     all from a single shop at 121 Springfield Avenue in Joliet.
+                </p>
+
+                <p class="text-body-sm text-charcoal leading-relaxed">
+                    We carry a <a href="/reviews" class="link-inline">five-star rating on Google</a>,
+                    backed by {{ $reviewCount }} reviews from businesses and residents across the Chicagoland area.
+                    Top 5 Percent is <a href="/about" class="link-inline">veteran-owned</a>,
+                    and has operated out of Joliet since {{ $year }}.
+                    We produce every order in-house from start to finish, no outsourcing, no middlemen,
+                    and no surprises on price.
+                    @if($trustNote)
+                        {{ $trustNote }}
+                    @endif
                 </p>
 
             </div>
@@ -87,39 +86,26 @@
                 @endif
 
                 @if($crossSell)
-                    <p class="text-body-sm text-charcoal leading-relaxed mb-4">{!! $crossSell !!}</p>
+                    <p class="text-body-sm text-charcoal leading-relaxed">{!! $crossSell !!}</p>
                 @endif
-
-                <div class="flex flex-col md:flex-row md:justify-end mt-6">
-                    @if($ctaHref)
-                        <x-ui.button-gold-gradient :href="$ctaHref" class="w-full md:w-auto">
-                            {{ $ctaText }}
-                        </x-ui.button-gold-gradient>
-                    @else
-                        <x-ui.button-gold-gradient
-                            onclick="window.dispatchEvent(new CustomEvent('open-contact-modal'))"
-                            class="w-full md:w-auto"
-                        >
-                            {{ $ctaText }}
-                        </x-ui.button-gold-gradient>
-                    @endif
-                </div>
 
             </div>
 
         </div>
 
         {{-- Full-width service area row --}}
-        <div class="mt-6 text-center">
-            <p class="text-sm text-charcoal-light leading-relaxed">
-                Serving
-                @foreach($allCities as $city)
-                    <a href="/service-areas/{{ Str::slug($city . '-IL') }}" class="link-inline">{{ $city }}</a>@if(!$loop->last), @endif
-                @endforeach
-                and the greater Chicagoland area.
-                Call us at <a href="tel:{{ $phoneRaw }}" class="link-notification">{{ $phone }}</a>.
-            </p>
-        </div>
+        @if($showServiceArea)
+            <div class="mt-6 text-center">
+                <p class="text-sm text-charcoal-light leading-relaxed">
+                    Serving
+                    @foreach($allCities as $city)
+                        <a href="/service-areas/{{ Str::slug($city . '-IL') }}" class="link-inline">{{ $city }}</a>@if(!$loop->last), @endif
+                    @endforeach
+                    and the greater Chicagoland area.
+                    Call us at <a href="tel:{{ $phoneRaw }}" class="link-notification">{{ $phone }}</a>.
+                </p>
+            </div>
+        @endif
 
     </div>
 </section>
