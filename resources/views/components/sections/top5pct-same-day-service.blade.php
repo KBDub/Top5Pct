@@ -6,20 +6,28 @@
     'ctaHref'            => '',
     'reviewCount'        => '200+',
     'trustNote'          => '',
+    'seoQualifier'       => 'Best',
+    'seoCity'            => '',
 ])
 
 @php
     use App\Data\PrimaryLocations;
     use App\Data\BusinessIdentity;
+    use Illuminate\Support\Str;
 
-    $serviceAreaLine = PrimaryLocations::serviceAreaLine();
     $phone           = BusinessIdentity::PHONE;
     $phoneRaw        = BusinessIdentity::PHONE_RAW;
     $year            = BusinessIdentity::YEAR_INCORPORATED;
+    $hqCity          = PrimaryLocations::HQ['city'];
+    $primaryCities   = PrimaryLocations::primaryCityNames();
+    $secondaryCities = PrimaryLocations::secondaryCityNames();
+    $allCities       = array_merge([$hqCity], $primaryCities, $secondaryCities);
+    $titleCity       = $seoCity ?: $hqCity;
 @endphp
 
 <section class="py-10 bg-white">
     <div class="max-w-7xl mx-auto px-6">
+
         <div class="grid lg:grid-cols-2 gap-8">
 
             {{-- Left card: brand trust and cross-sell --}}
@@ -35,9 +43,9 @@
                 <p class="text-body-sm text-charcoal leading-relaxed mb-4">
                     We carry a <a href="/reviews" class="link-inline">five-star rating on Google</a>,
                     backed by {{ $reviewCount }} reviews from businesses and residents across the Chicagoland area.
-                    Top 5 Percent is <a href="/about" class="link-inline">veteran-owned and Black-owned</a>,
+                    Top 5 Percent is <a href="/about" class="link-inline">veteran-owned</a>,
                     and has operated out of Joliet since {{ $year }}.
-                    We produce every order in-house from start to finish — no outsourcing, no middlemen,
+                    We produce every order in-house from start to finish, no outsourcing, no middlemen,
                     and no surprises on price.
                     @if($trustNote)
                         {{ $trustNote }}
@@ -45,15 +53,15 @@
                 </p>
 
                 <p class="text-body-sm text-charcoal leading-relaxed">
-                    We handle <a href="/custom-apparel" class="link-inline">custom apparel</a> —
+                    We handle <a href="/custom-apparel" class="link-inline">custom apparel</a>, including
                     <a href="/custom-apparel/printing-options/dtf-printing" class="link-inline">DTF transfers</a>,
                     <a href="/custom-apparel/printing-options/screen-printing" class="link-inline">screen printing</a>,
                     <a href="/custom-apparel/printing-options/embroidery" class="link-inline">embroidery</a>,
-                    <a href="/custom-apparel/specialty-materials/vinyl" class="link-inline">vinyl</a>,
+                    <a href="/custom-apparel/specialty-materials/vinyl-shirts" class="link-inline">vinyl</a>,
                     <a href="/custom-apparel/specialty-materials/glitter-shirts" class="link-inline">glitter</a>,
                     <a href="/custom-apparel/specialty-materials/foil-shirts" class="link-inline">foil</a>,
                     <a href="/custom-apparel/printing-options/rhinestone-apparel" class="link-inline">rhinestone</a>,
-                    and more — alongside
+                    and more, alongside
                     <a href="/signs" class="link-inline">custom signs</a>,
                     <a href="/vehicle-graphics" class="link-inline">vehicle graphics</a>,
                     <a href="/stickers" class="link-inline">custom stickers</a>,
@@ -69,7 +77,7 @@
 
                 <div class="inline-block mb-6">
                     <h2 class="text-h2 font-bold text-charcoal mb-2">
-                        <span class="text-sunburst">{{ $displayServiceType }}</span> — Same Day
+                        {{ $seoQualifier }} <span class="text-sunburst">{{ $displayServiceType }}</span> in {{ $titleCity }}, Same Day
                     </h2>
                     <div class="h-1 bg-sunburst"></div>
                 </div>
@@ -82,13 +90,7 @@
                     <p class="text-body-sm text-charcoal leading-relaxed mb-4">{!! $crossSell !!}</p>
                 @endif
 
-                <p class="text-sm text-charcoal-light leading-relaxed mt-4 mb-6">
-                    {{ $serviceAreaLine }}
-                    Call us at
-                    <a href="tel:{{ $phoneRaw }}" class="link-notification">{{ $phone }}</a>.
-                </p>
-
-                <div class="flex flex-col md:flex-row md:justify-end">
+                <div class="flex flex-col md:flex-row md:justify-end mt-6">
                     @if($ctaHref)
                         <x-ui.button-gold-gradient :href="$ctaHref" class="w-full md:w-auto">
                             {{ $ctaText }}
@@ -106,5 +108,18 @@
             </div>
 
         </div>
+
+        {{-- Full-width service area row --}}
+        <div class="mt-6 text-center">
+            <p class="text-sm text-charcoal-light leading-relaxed">
+                Serving
+                @foreach($allCities as $city)
+                    <a href="/service-areas/{{ Str::slug($city . '-IL') }}" class="link-inline">{{ $city }}</a>@if(!$loop->last), @endif
+                @endforeach
+                and the greater Chicagoland area.
+                Call us at <a href="tel:{{ $phoneRaw }}" class="link-notification">{{ $phone }}</a>.
+            </p>
+        </div>
+
     </div>
 </section>

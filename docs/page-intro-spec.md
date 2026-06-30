@@ -759,7 +759,7 @@ Replace the service area line output (in the new full-width third row) with:
 <p class="text-sm text-charcoal-light leading-relaxed">
     Serving
     @foreach($allCities as $city)
-        <a href="/service-areas/{{ Str::slug($city . '-IL') }}" class="link-city text-sm">{{ $city }}</a>@if(!$loop->last),@endif
+        <a href="/service-areas/{{ Str::slug($city . '-IL') }}" class="link-inline">{{ $city }}</a>@if(!$loop->last),@endif
     @endforeach
     and the greater Chicagoland area.
     Call us at <a href="tel:{{ $phoneRaw }}" class="link-notification">{{ $phone }}</a>.
@@ -769,7 +769,7 @@ Replace the service area line output (in the new full-width third row) with:
 **Key details matched from map-section:**
 - Data sources: `primaryCityNames()`, `secondaryCityNames()`, `HQ['city']` — not `allCityNames()` or `serviceAreaLine()`
 - Slug formula: `Str::slug($city . '-IL')` — e.g., "Aurora" becomes `aurora-il`
-- CSS class: `link-city text-sm` — same as map-section, not `link-inline`
+- CSS class: `link-inline` — overrides map-section's `link-city text-sm` for this component
 - Order: HQ (Joliet) first, then primary cities sorted A-Z, then secondary cities sorted A-Z
 
 **Drop `serviceAreaLine()` from the `@php` block** — it is no longer used once the foreach is in place.
