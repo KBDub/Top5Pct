@@ -1,166 +1,215 @@
 # Service Area Data — Architecture Decision
 
-## Answer: Do We Need config/client-service-areas.php?
+## Final Architecture
 
-**No. The config file is not needed.**
+| What | Where | Notes |
+|---|---|---|
+| City data (HQ, PRIMARY, SECONDARY, ZIPS, helpers) | `App\Data\PrimaryLocations` | Single source of truth — never duplicated |
+| Prose string methods (service area sentences) | `App\Data\PrimaryLocations` | Generated from city arrays — no hardcoding |
+| Business identity (name, phone, address, logo, colors, flags) | `App\Data\BusinessIdentity` | Replaces `config/client.php` entirely |
+| `config/client.php` | **Deleted** | All consumers updated to use `App\Data\` |
 
-The codebase already has an established pattern: blade components import `App\Data\PrimaryLocations`
-directly via a `@php` block and call its static methods. Three existing components already do this:
-
-| File | Uses |
-|---|---|
-| `resources/views/components/sections/map-section.blade.php` | `PrimaryLocations::forMap()`, `primaryCityNames()`, `secondaryCityNames()`, `HQ['city']`, `zips()` |
-| `resources/views/pages/service-areas.blade.php` | `PrimaryLocations::HQ`, `PRIMARY`, `SECONDARY` |
-| `resources/views/sitemaps/sitemap.blade.php` | `PrimaryLocations::all()` |
-
-New components, including `x-sections.page-intro`, follow the same pattern.
+No config file. No intermediate wrapper. No separate prose class.
 
 ---
 
 ## CRITICAL: Source of Truth Rules
 
-**`App\Data\PrimaryLocations` is the one and only source of truth for city data.**
-**`config/client.php` is for business identity only (name, phone, address, logo, colors).**
-**Never store city lists, priority tiers, lat/lng, slugs, or zip codes anywhere else.**
+**`App\Data\PrimaryLocations` is the one and only source of truth for city and service area data.**
+**`App\Data\BusinessIdentity` is the one and only source of truth for business identity data.**
+**`config/client.php` is deleted — never recreate it or reference it.**
 
 If a city needs to be added, changed, or reclassified, the only file to touch is
-`App\Data\PrimaryLocations`. Every blade component that reads from it updates automatically.
+`App\Data\PrimaryLocations`. If a phone number, address, or brand color changes, the only
+file to touch is `App\Data\BusinessIdentity`.
 
 ---
 
-## The Established Blade Pattern
+## App\Data\PrimaryLocations — Additions Required
 
-```blade
-@php
-    use App\Data\PrimaryLocations;
-
-    $primaryCities   = PrimaryLocations::primaryCityNames();
-    $secondaryCities = PrimaryLocations::secondaryCityNames();
-    $hqCity          = PrimaryLocations::HQ['city'];
-    $allCities       = PrimaryLocations::allCityNames();
-    $zips            = PrimaryLocations::zips();
-@endphp
-```
-
-No `config()` calls. No imports of city data from anywhere else.
-
----
-
-## What PrimaryLocations Already Provides
-
-| Method / Constant | Returns | Used by |
-|---|---|---|
-| `PrimaryLocations::HQ` | Array — Joliet, lat, lng, `main: true` | `map-section`, `service-areas` |
-| `PrimaryLocations::PRIMARY` | Array of 20 primary city arrays | `service-areas` |
-| `PrimaryLocations::SECONDARY` | Array of 20 secondary city arrays | `service-areas` |
-| `PrimaryLocations::ZIPS` | Array of all served zip codes | `map-section` |
-| `::all()` | HQ + PRIMARY + SECONDARY sorted | `sitemap` |
-| `::forMap()` | All cities with slug added | `map-section` |
-| `::primaryCityNames()` | Sorted array of PRIMARY city name strings | `map-section` |
-| `::secondaryCityNames()` | Sorted array of SECONDARY city name strings | `map-section` |
-| `::allCityNames()` | HQ + all city names sorted | Available, no blade consumer yet |
-| `::zips()` | All served zip codes | `map-section` |
-
----
-
-## The One Gap: Prose Strings
-
-`PrimaryLocations` covers all city data but has no prose strings — the one-line service area
-sentence, the short description, and the compact city list that components like `page-intro`
-need to render inline. Two options:
-
-### Option A — Add static methods to PrimaryLocations
+The existing class already has `HQ`, `PRIMARY`, `SECONDARY`, `ZIPS`, and helpers.
+The following static methods need to be added — all generated from the existing city arrays,
+no hardcoded city names:
 
 ```php
-// App\Data\PrimaryLocations
-
+/**
+ * Full service area sentence for use in page intros, footers, and SEO copy.
+ * Lists HQ first, then all primary and secondary cities alphabetically.
+ * Generated from city arrays — never hardcode city names.
+ */
 public static function serviceAreaLine(): string
 {
-    return 'Serving Joliet, Shorewood, Plainfield, Bolingbrook, Romeoville, Lockport, ' .
-           'Channahon, Crest Hill, Naperville, Aurora, and the greater Chicagoland area.';
+    $cities = self::allCityNames(); // already sorted, HQ first
+    $last   = array_pop($cities);
+    return 'Serving ' . implode(', ', $cities) . ', and ' . $last . ', IL.';
 }
 
+/**
+ * Two-sentence description for about pages, service area index, and JSON-LD.
+ */
 public static function serviceAreaDescription(): string
 {
-    return 'Top 5 Percent serves businesses and residents throughout the greater Joliet ' .
-           'and Chicagoland area, including Will County, DuPage County, Kane County, and ' .
-           'the surrounding region. We ship and deliver across Illinois.';
+    $count = count(self::PRIMARY) + count(self::SECONDARY) + 1; // +1 for HQ
+    return 'Top 5 Percent serves businesses and residents across ' . $count . ' cities in the '
+         . 'greater Joliet and Chicagoland area, including Will County, DuPage County, '
+         . 'Kane County, and the surrounding region. We ship and deliver across Illinois.';
 }
 
+/**
+ * Compact comma list for SEO meta descriptions.
+ * HQ + first 8 primary cities + "and more".
+ */
 public static function serviceAreaCompact(): string
 {
-    return 'Joliet, Shorewood, Plainfield, Bolingbrook, Romeoville, Lockport, Channahon, ' .
-           'Crest Hill, Naperville, and Aurora, IL';
+    $primary = self::primaryCityNames();
+    $sample  = array_slice($primary, 0, 8);
+    return self::HQ['city'] . ', ' . implode(', ', $sample) . ', and more throughout Illinois';
 }
 ```
 
-Blade usage:
+These methods read from `self::PRIMARY`, `self::SECONDARY`, `self::HQ`, and `self::allCityNames()`.
+No city name appears twice in the class.
 
-```blade
-{{ App\Data\PrimaryLocations::serviceAreaLine() }}
-```
+---
 
-Simpler — one class, one place to edit. Slightly mixes "data" with "copy."
+## App\Data\BusinessIdentity — New Class Spec
 
-### Option B — New App\Data\ServiceAreaCopy class
+Replaces all keys in `config/client.php`. Same constant-and-method pattern as `PrimaryLocations`.
 
 ```php
-// App\Data\ServiceAreaCopy
+<?php
 
 namespace App\Data;
 
-class ServiceAreaCopy
+class BusinessIdentity
 {
-    public static function line(): string
-    {
-        return 'Serving Joliet, Shorewood, Plainfield, Bolingbrook, Romeoville, Lockport, ' .
-               'Channahon, Crest Hill, Naperville, Aurora, and the greater Chicagoland area.';
-    }
+    const NAME             = 'Top 5 Percent, LLC';
+    const TAGLINE          = 'Exceptional Service, Exceptional Customer Satisfaction';
 
-    public static function description(): string { ... }
+    const PHONE            = '(815) 349-8600';
+    const PHONE_ALT        = '(815) 349-TOP5';
+    const PHONE_RAW        = '+18153498600';
+    const EMAIL            = '';
 
-    public static function compact(): string { ... }
+    const ADDRESS = [
+        'street'     => '121 Springfield Avenue',
+        'street2'    => 'Unit 110',
+        'city'       => 'Joliet',
+        'state'      => 'Illinois',
+        'state_abbr' => 'IL',
+        'zip'        => '60435',
+    ];
+
+    const YEAR_INCORPORATED = 2017;
+
+    const LOGO = [
+        'url'    => '/images/logos/top5-logo.gif',
+        'alt'    => 'Top 5 Percent',
+        'width'  => 300,
+        'height' => 50,
+    ];
+
+    const OPERATING_HOURS = [
+        'Monday'    => '',
+        'Tuesday'   => '',
+        'Wednesday' => '',
+        'Thursday'  => '',
+        'Friday'    => '',
+        'Saturday'  => '',
+        'Sunday'    => '',
+    ];
+
+    const PRODUCT_GRID_ENABLED = false;
+
+    const PRIMARY_COLOR   = '#FFC20E';
+    const SECONDARY_COLOR = '#3273DC';
+
+    const COLOR_PALETTE = [
+        'olive'         => '#A39822',
+        'sunburst_gold' => '#FFC20E',
+        'azure_blue'    => '#3273DC',
+        'soft_linen'    => '#F2F0E6',
+        'charcoal'      => '#2C2C2C',
+        'white'         => '#FFFFFF',
+    ];
+
+    const CERTIFICATIONS        = [];
+    const ASSOCIATIONS          = [];
+    const CHAMBER_ASSOCIATIONS  = [];
+    const LICENSE_NUMBER        = '';
+    const LICENSE_DISPLAY       = false;
 }
 ```
 
-Blade usage:
+---
+
+## The Established Blade Pattern (Updated)
 
 ```blade
 @php
     use App\Data\PrimaryLocations;
-    use App\Data\ServiceAreaCopy;
+    use App\Data\BusinessIdentity;
 
     $hqCity          = PrimaryLocations::HQ['city'];
-    $serviceAreaLine = ServiceAreaCopy::line();
+    $allCities       = PrimaryLocations::allCityNames();
+    $serviceAreaLine = PrimaryLocations::serviceAreaLine();
+
+    $phone    = BusinessIdentity::PHONE;
+    $phoneRaw = BusinessIdentity::PHONE_RAW;
+    $year     = BusinessIdentity::YEAR_INCORPORATED;
 @endphp
 ```
 
-Cleaner separation of concerns. One extra file.
-
 ---
 
-## Recommendation
+## config/client.php Migration Map
 
-**Option B** if `PrimaryLocations` should stay a pure data class.
-**Option A** if simplicity matters more than strict separation — it is what already works in this codebase.
+Every `config('client.*')` call in the codebase is replaced as follows:
 
-Either way, no config file is needed.
+| Old key | New reference |
+|---|---|
+| `config('client.business_name')` | `BusinessIdentity::NAME` |
+| `config('client.tagline')` | `BusinessIdentity::TAGLINE` |
+| `config('client.phone')` | `BusinessIdentity::PHONE` |
+| `config('client.phone_alt')` | `BusinessIdentity::PHONE_ALT` |
+| `config('client.phone_raw')` | `BusinessIdentity::PHONE_RAW` |
+| `config('client.email')` | `BusinessIdentity::EMAIL` |
+| `config('client.address')` | `BusinessIdentity::ADDRESS` |
+| `config('client.address.city')` | `BusinessIdentity::ADDRESS['city']` |
+| `config('client.year_incorporated')` | `BusinessIdentity::YEAR_INCORPORATED` |
+| `config('client.logo')` | `BusinessIdentity::LOGO` |
+| `config('client.logo.url')` | `BusinessIdentity::LOGO['url']` |
+| `config('client.product_grid_enabled')` | `BusinessIdentity::PRODUCT_GRID_ENABLED` |
+| `config('client.primary_color')` | `BusinessIdentity::PRIMARY_COLOR` |
+| `config('client.color_palette')` | `BusinessIdentity::COLOR_PALETTE` |
+| `config('client.service_areas')` | `PrimaryLocations::allCityNames()` |
+| `config('client.priority_service_areas')` | `PrimaryLocations::primaryCityNames()` |
+| `config('client.service_areas_description')` | `PrimaryLocations::serviceAreaDescription()` |
+| `config('client.service_area_slugs')` | Derived from `PrimaryLocations::all()` |
 
 ---
 
 ## Files That Currently Hardcode City Names (Migration Backlog)
 
-21 components hardcode "Joliet" or a city list inline. These are a separate migration task.
-After the prose methods exist on `App\Data\PrimaryLocations` (or `ServiceAreaCopy`), each
-component replaces its hardcoded string with a static method call.
+These are a separate task from the `config/client.php` removal.
 
-| Component | Hardcoded value | Replacement call |
+| Component | Hardcoded value | Replacement |
 |---|---|---|
 | `x-components.layout.footer` | "Joliet, IL" | `PrimaryLocations::HQ['city']` |
-| `x-sections.map-section` | city names | already uses PrimaryLocations |
 | `x-sections.cta-ready-to-get-started` | "Joliet" | `PrimaryLocations::HQ['city']` |
 | `x-sections.category-hero` | "Joliet, IL" | `PrimaryLocations::HQ['city']` |
-| `x-sections.represent-yourself` | city list sentence | `ServiceAreaCopy::line()` |
+| `x-sections.represent-yourself` | city list sentence | `PrimaryLocations::serviceAreaLine()` |
 | `x-sections.about-preview` | "Joliet, IL" | `PrimaryLocations::HQ['city']` |
-| JSON-LD structured data | address | `PrimaryLocations::HQ['city']` |
-| (+ 14 more) | various | per component |
+| JSON-LD structured data | address | `PrimaryLocations::HQ['city']`, `BusinessIdentity::ADDRESS` |
+| (+ others) | various | per component audit |
+
+---
+
+## Build Order
+
+1. Add `serviceAreaLine()`, `serviceAreaDescription()`, `serviceAreaCompact()` to `App\Data\PrimaryLocations`
+2. Create `App\Data\BusinessIdentity` with all constants from `config/client.php`
+3. Find and replace all `config('client.*')` usages — use the migration map above
+4. Delete `config/client.php`
+5. Build `x-sections.page-intro` (reads `PrimaryLocations` and `BusinessIdentity` directly)
+6. (Separate task) Migrate the hardcoded-city components listed above

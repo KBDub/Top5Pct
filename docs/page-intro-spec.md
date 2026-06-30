@@ -20,12 +20,12 @@ See `docs/client-service-areas-config-spec.md` for the full architecture decisio
 The data chain is:
 
 ```
-App\Data\PrimaryLocations        ← city data (HQ, PRIMARY, SECONDARY, ZIPS, helpers)
-App\Data\ServiceAreaCopy         ← prose strings (service area line, description, compact)
+App\Data\PrimaryLocations   ← city data AND prose string methods (serviceAreaLine, etc.)
+App\Data\BusinessIdentity   ← business identity (phone, address, logo, year) — replaces config/client.php
         ↓
-@php use App\Data\PrimaryLocations; use App\Data\ServiceAreaCopy; @endphp
+@php use App\Data\PrimaryLocations; use App\Data\BusinessIdentity; @endphp
         ↓
-x-sections.page-intro            ← reads App\Data\ directly, no config() for city data
+x-sections.page-intro       ← reads App\Data\ directly. No config(). No hardcoded values.
 ```
 
 The component reads:
@@ -33,20 +33,17 @@ The component reads:
 ```blade
 @php
     use App\Data\PrimaryLocations;
-    use App\Data\ServiceAreaCopy;   {{-- or PrimaryLocations::serviceAreaLine() if Option A chosen --}}
+    use App\Data\BusinessIdentity;
 
-    $hqCity          = PrimaryLocations::HQ['city'];    {{-- city data --}}
-    $serviceAreaLine = ServiceAreaCopy::line();          {{-- prose string --}}
+    $serviceAreaLine = PrimaryLocations::serviceAreaLine();  {{-- generated from city arrays --}}
+    $phone           = BusinessIdentity::PHONE;
+    $phoneRaw        = BusinessIdentity::PHONE_RAW;
+    $year            = BusinessIdentity::YEAR_INCORPORATED;
 @endphp
-
-{{-- Business identity (phone, year) still comes from config/client.php --}}
-config('client.phone')
-config('client.phone_raw')
-config('client.year_incorporated')
 ```
 
-No city names or service area prose are hardcoded in this component.
-No city data comes from `config/client.php`.
+No city names, phone numbers, or addresses are hardcoded in this component.
+`config/client.php` is deleted — never reference it.
 
 ---
 
