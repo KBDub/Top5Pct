@@ -8,15 +8,29 @@ The old component was a two-column bullet-list card. The new component is a warm
 
 ---
 
-## Config Dependency
+## Data Authority — Read This First
 
-Service area data comes from `config/client-service-areas.php` (see `docs/client-service-areas-config-spec.md`). Business identity data (phone, address, year) comes from `config/client.php`. The component reads:
+**`App\Data\PrimaryLocations` is the one and only source of truth for city and service area data.**
+**`config/client.php` is for business identity only: name, phone, address, logo, colors.**
+**Never read city lists or service area copy from `config/client.php`.**
+
+The data chain is:
+
+```
+App\Data\PrimaryLocations   ← only place cities are added or changed
+        ↓
+config/client-service-areas.php   ← thin blade-layer wrapper (see docs/client-service-areas-config-spec.md)
+        ↓
+x-sections.page-intro   ← reads config(), never imports App\Data directly
+```
+
+The component reads these config keys — nothing more:
 
 ```blade
-config('client-service-areas.service_area_line')
-config('client.phone')
-config('client.phone_raw')
-config('client.year_incorporated')
+config('client-service-areas.service_area_line')   {{-- from App\Data\PrimaryLocations via wrapper --}}
+config('client.phone')                             {{-- business identity only --}}
+config('client.phone_raw')                         {{-- business identity only --}}
+config('client.year_incorporated')                 {{-- business identity only --}}
 ```
 
 No city names, phone numbers, or addresses are hardcoded in this component.

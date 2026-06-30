@@ -1,14 +1,26 @@
 # config/client-service-areas.php — Specification
 
+## CRITICAL: Source of Truth Rules
+
+**`App\Data\PrimaryLocations` is the one and only source of truth for city data.**
+**`config/client.php` is for business identity only (name, phone, address, logo, colors).**
+**`config/client-service-areas.php` is a blade-layer read-only wrapper — it never duplicates data.**
+
+City lists, priority tiers, lat/lng, slugs, and zip codes all live in `App\Data\PrimaryLocations`. The config file wraps that class so blade components can read from `config()` without importing a PHP class directly. If a city needs to be added, changed, or reclassified, the change goes into `App\Data\PrimaryLocations` only — it flows automatically into the config and every component.
+
+---
+
 ## Purpose
 
-A single Laravel config file that serves as the **blade-layer source of truth** for all service area data used in components, page intros, footers, and SEO copy. It is the config equivalent of `App\Data\PrimaryLocations`, which remains the authoritative data class for route-level and map-level logic.
+A thin Laravel config wrapper that exposes `App\Data\PrimaryLocations` data to blade components via `config()` calls, along with static prose strings (service area sentences) that components render directly. It is NOT an independent data store — it is a read-only projection of `App\Data\PrimaryLocations`.
 
 ---
 
 ## Relationship to App\Data\PrimaryLocations
 
-`PrimaryLocations` already defines the canonical city data in three tiers:
+`App\Data\PrimaryLocations` is the canonical data class. Nothing overrides it. `config/client-service-areas.php` reads from it at config-load time and re-exposes the data in a blade-friendly shape. `config/client.php` plays no role in city or service area data — it covers business identity only.
+
+`PrimaryLocations` defines the canonical city data in three tiers:
 
 | Tier | Count | Used for |
 |---|---|---|
