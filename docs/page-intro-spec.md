@@ -567,8 +567,219 @@ Additional non-product pages also using the call (handle separately):
 
 ## Open Questions
 
-1. **Right card H2 formula:** "{ displayServiceType } — Same Day" confirmed, or different phrasing?
-2. **Left card cross-sell paragraph:** The draft above covers all core categories. Any services to add or remove?
-3. **Review count:** Hardcode "200+" or read from `BusinessIdentity`?
-4. **`productIntro` copy:** Review the drafts — approve as written, or revise before build?
-5. **`crossSell` per page:** To be written per page during build, or drafted in this doc first?
+1. **Left card cross-sell paragraph:** The draft above covers all core categories. Any services to add or remove?
+2. **Review count:** Hardcode "200+" or read from `BusinessIdentity`?
+3. **`productIntro` copy:** Review the drafts — approve as written, or revise before build?
+4. **`crossSell` per page:** To be written per page during build, or drafted in this doc first?
+
+---
+
+## Pending Changes (approved, not yet built)
+
+Six changes approved from visual review. All require edits to the component blade file and `PrimaryLocations.php`. Page files do not need touching unless `seoQualifier` or `seoCity` props need per-page values.
+
+---
+
+### 1. Service area row — move to full-width third row
+
+**Current behavior:** Service area line sits inside the right card, above the CTA button.
+
+**New behavior:** Remove the service area line from the right card entirely. Add a new full-width row below the two-card grid, spanning both columns, center-justified.
+
+Layout after change:
+
+```
+┌──────────────────────────────┐  ┌──────────────────────────────┐
+│  Left card (sunburst)        │  │  Right card (azure)          │
+│  Trust paragraph             │  │  productIntro paragraph      │
+│  Cross-sell paragraph        │  │  crossSell paragraph         │
+│                              │  │  [ CTA Button ]              │
+└──────────────────────────────┘  └──────────────────────────────┘
+┌──────────────────────────────────────────────────────────────────┐
+│  Service area line — full width, text-center, text-sm            │
+│  Serving [linked cities] ... Call us at (815) 349-8600.          │
+└──────────────────────────────────────────────────────────────────┘
+```
+
+Blade structure for the new row:
+
+```blade
+{{-- Full-width service area row --}}
+<div class="mt-6 text-center">
+    <p class="text-sm text-charcoal-light leading-relaxed">
+        {!! $serviceAreaLinkedLine !!}
+        Call us at <a href="tel:{{ $phoneRaw }}" class="link-notification">{{ $phone }}</a>.
+    </p>
+</div>
+```
+
+The CTA button stays inside the right card, at the bottom of that card.
+
+---
+
+### 2. Remove "Black-owned" from trust paragraph
+
+**Current text (left card trust paragraph):**
+> Top 5 Percent is veteran-owned and Black-owned, and has operated out of Joliet since 2017.
+
+**New text:**
+> Top 5 Percent is <a href="/about" class="link-inline">veteran-owned</a>, and has operated out of Joliet since {year}.
+
+"and Black-owned" is removed entirely. The "veteran-owned" link to `/about` is preserved. No replacement phrase is needed.
+
+---
+
+### 3. No em-dashes anywhere in the component
+
+**Rule:** Replace all em-dashes (—) in the component's rendered text with commas and natural language. This applies to:
+- Left card cross-sell paragraph
+- Right card H2 (see change 4)
+- Any inline copy inside the component blade file itself
+
+**Current left card cross-sell paragraph (excerpt):**
+> We handle custom apparel — DTF transfers, screen printing, embroidery, vinyl, glitter, foil, rhinestone, and more — alongside custom signs...
+
+**New version (em-dashes replaced with commas):**
+> We handle <a href="/custom-apparel" class="link-inline">custom apparel</a>, including <a href="..." class="link-inline">DTF transfers</a>, <a href="..." class="link-inline">screen printing</a>, <a href="..." class="link-inline">embroidery</a>, <a href="..." class="link-inline">vinyl</a>, <a href="..." class="link-inline">glitter</a>, <a href="..." class="link-inline">foil</a>, <a href="..." class="link-inline">rhinestone</a>, and more, alongside <a href="/signs" class="link-inline">custom signs</a>, <a href="/vehicle-graphics" class="link-inline">vehicle graphics</a>, <a href="/stickers" class="link-inline">custom stickers</a>, <a href="/promotional-items" class="link-inline">promotional items</a>, and <a href="/design-services" class="link-inline">in-house design services</a>, all from a single shop at 121 Springfield Avenue in Joliet.
+
+Note: the `productIntro` and `crossSell` props are passed from page files. Those page-level strings also contain em-dashes and will need a follow-up sweep across the 54 page files (separate task from this component build).
+
+---
+
+### 4. Right card H2 — SEO-rich formula, no em-dash
+
+**Current formula:** `{displayServiceType} — Same Day`
+e.g., "Glitter Shirts — Same Day"
+
+**New formula:** `{seoQualifier} {displayServiceType} in {seoCity}, Same Day`
+e.g., "Best Glitter Shirts in Joliet, Same Day"
+
+**New props to add:**
+
+```blade
+'seoQualifier' => 'Best',
+// SEO quality term in the right card H2.
+// Suggested values: 'Best', 'Great', 'Top-Notch', 'Unique', 'Affordable', 'Professional', 'Custom', 'Fast'
+// Set per page to vary across the 54 pages for SEO diversity.
+
+'seoCity' => '',
+// City name for the right card H2. Empty string defaults to BusinessIdentity::ADDRESS['city'] (Joliet).
+// Use for pages targeting a secondary city: 'Plainfield', 'Bolingbrook', etc.
+```
+
+**New H2 blade:**
+
+```blade
+@php
+    $hqCity    = BusinessIdentity::ADDRESS['city'];
+    $titleCity = $seoCity ?: $hqCity;
+@endphp
+<div class="inline-block mb-6">
+    <h2 class="text-h2 font-bold text-charcoal mb-2">
+        {{ $seoQualifier }}
+        <span class="text-sunburst">{{ $displayServiceType }}</span>
+        in {{ $titleCity }}, Same Day
+    </h2>
+    <div class="h-1 bg-sunburst"></div>
+</div>
+```
+
+**Suggested `seoQualifier` values per page group (set at the page level):**
+
+| Pages | Suggested seoQualifier |
+|---|---|
+| DTF Transfers, Screen Printing, Embroidery, Digital Vinyl | `Best` |
+| Rhinestone, Glitter, Foil, Holographic | `Unique` |
+| Vinyl, Reflective, Glow In The Dark, Puff, Brick, Flock | `Great` |
+| Dye Sublimation, Corporate Wear, Spirit Wear, Reunion | `Professional` |
+| Signs LP, Business Signs, Banners, Yard Signs | `Best` |
+| Wall, Window, Door, Floor, Sidewalk, A-Frame signs | `Top-Notch` |
+| Vehicle Graphics LP, Automobile, Magnets, DOT | `Best` |
+| Stickers, Promo Items, Design Services | `Affordable` |
+| Category LPs (Apparel LP, Signs LP, etc.) | `Best` |
+
+---
+
+### 5. More links in the right card productIntro
+
+The right card first paragraph (productIntro) currently has 2 links on most pages. It needs more.
+
+**Rule:** Every `productIntro` paragraph must contain at least 3 inline links. Recommended targets per page type:
+
+- **Apparel specialty pages** (glitter, foil, vinyl, etc.): Link to the technique used (DTF, vinyl, etc.), the group wear category (reunion shirts, spirit wear), and the related specialty (e.g., foil links to rhinestone).
+- **Signs pages**: Link to the specific sign format produced, a related sign format, and custom apparel or vehicle graphics.
+- **Vehicle graphics pages**: Link to the specific graphic type, related vehicle services, and business signs.
+- **Sticker and promo pages**: Link to related promo items, custom apparel, and stickers.
+
+**Glitter shirts example (current: 2 links, new: 4+ links):**
+
+> Glitter heat transfer vinyl applies a sparkle finish to shirts and hoodies that catches light and turns heads at any event. We cut and press every glitter design in-house in Joliet on our own <a href="/custom-apparel/specialty-materials/vinyl-shirts" class="link-inline">vinyl equipment</a>, so quality and placement are consistent from the first shirt to the last. Glitter shirts are popular for <a href="/custom-apparel/group-wear/reunion-shirts" class="link-inline">reunion groups</a>, <a href="/custom-apparel/group-wear/spirit-wear-shirts" class="link-inline">spirit wear squads</a>, bachelorette parties, birthday parties, and anyone who wants a shirt that makes an impression before they say a word. No minimums, same day available on most <a href="/custom-apparel" class="link-inline">custom apparel</a> orders.
+
+A follow-up sweep of all 54 `productIntro` strings (in the page files) is a separate task. This change is noted so it is applied when `productIntro` copy is revised.
+
+---
+
+### 6. City names in service area line — linked to /service-areas/
+
+**Current:** `PrimaryLocations::serviceAreaLine()` returns plain text.
+Example: `Serving Aurora, Bloomington, Bolingbrook, ...`
+
+**New:** A new method `PrimaryLocations::serviceAreaLinkedLine()` returns HTML where every city name is wrapped in an anchor tag linking to `/service-areas/{slug}`.
+
+The slug pattern already exists in `PrimaryLocations::forMap()`:
+```php
+Str::slug($city . '-IL')  // e.g., "Aurora" → "aurora-il"
+```
+
+**New method to add to `PrimaryLocations.php`:**
+
+```php
+/**
+ * Full service area sentence with each city linked to its /service-areas/ page.
+ * Returns HTML — use {!! !!} in Blade, never {{ }}.
+ */
+public static function serviceAreaLinkedLine(): string
+{
+    $hqCity  = self::HQ['city'];
+    $hqSlug  = Str::slug($hqCity . '-IL');
+    $hqLink  = '<a href="/service-areas/' . $hqSlug . '" class="link-inline">' . $hqCity . '</a>';
+
+    $cities  = array_merge(self::PRIMARY, self::SECONDARY);
+    usort($cities, fn ($a, $b) => strcmp($a['city'], $b['city']));
+
+    $links = [];
+    foreach ($cities as $loc) {
+        $slug    = Str::slug($loc['city'] . '-IL');
+        $links[] = '<a href="/service-areas/' . $slug . '" class="link-inline">' . $loc['city'] . '</a>';
+    }
+
+    $last  = array_pop($links);
+
+    return 'Serving ' . $hqLink . ', ' . implode(', ', $links) . ', and ' . $last . '.';
+}
+```
+
+**In the component**, replace `$serviceAreaLine = PrimaryLocations::serviceAreaLine()` with:
+```php
+$serviceAreaLinkedLine = PrimaryLocations::serviceAreaLinkedLine();
+```
+
+And render with `{!! $serviceAreaLinkedLine !!}` (not `{{ }}`).
+
+**Note:** The `/service-areas/{slug}` routes must exist for all cities. Verify the route exists before building. If any city slug does not have a corresponding route, the link will 404. Cities without a `/service-areas/` page should be rendered as plain text in the method — add a `$validSlugs` set or skip linking for those.
+
+---
+
+### Build order for pending changes
+
+1. Add `serviceAreaLinkedLine()` to `App\Data\PrimaryLocations`
+2. Verify `/service-areas/{slug}` routes exist for all 40 cities
+3. Update `x-sections.top5pct-same-day-service` blade:
+   a. Remove "and Black-owned" from trust paragraph
+   b. Replace em-dashes in left card copy with commas
+   c. Move service area line to a new full-width row below the grid
+   d. Add `seoQualifier` and `seoCity` props
+   e. Update right card H2 to new formula
+   f. Swap `serviceAreaLine` for `serviceAreaLinkedLine`
+4. Update all 54 page files to add `seoQualifier` per the suggested table above
+5. (Separate task) Sweep all 54 `productIntro` strings for more inline links and em-dash removal
