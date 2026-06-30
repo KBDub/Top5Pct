@@ -67,6 +67,19 @@
         visible=2
     />
 
+    <x-ui.carousel-rotating-images
+        :images="[
+            ['src' => '/images/glitter-shirts-compressed/glitter-lips-custom-t-shirt-600x450.jpg',  'alt' => 'Custom glitter lips design on a shirt in Joliet Illinois'],
+            ['src' => '/images/glitter-shirts-compressed/glitter-t-shirts-cresthill-600x450.jpg',   'alt' => 'Custom glitter t-shirts in Crest Hill Illinois'],
+            ['src' => '/images/glitter-shirts-compressed/glitter-shirts-crest-hill-600x450.jpg',    'alt' => 'Custom glitter shirts in Crest Hill Illinois'],
+            ['src' => '/images/glitter-shirts-compressed/glitter-shirt-crest-hill-600x450.jpg',     'alt' => 'Custom glitter shirt design in Crest Hill Illinois'],
+            ['src' => '/images/glitter-shirts-compressed/gitter-birthday-shirt-600x450.jpg',        'alt' => 'Custom glitter birthday shirt in Joliet Illinois'],
+            ['src' => '/images/glitter-shirts-compressed/glitter-sweatshirts-joliet-600x450.jpg',   'alt' => 'Custom glitter sweatshirts in Joliet Illinois'],
+            ['src' => '/images/glitter-shirts-compressed/glitter-hoodies-plainfield-600x450.jpg',   'alt' => 'Custom glitter hoodies in Plainfield Illinois'],
+        ]"
+        visible=3
+    />
+
     <x-ui.banner-testimonial
         quote="Great quality work, professional and efficient. If you're looking for custom apparel, from shirts to hoodies to hats they do it all. Ezra and his team are awesome! 5 stars, reach out to them today!"
         name="Gerardo Munoz Jr"
@@ -123,19 +136,6 @@
             <p>Call us at <a href="tel:+18153498600" class="link-notification">(815) 349-8600</a> to discuss your glitter shirt order today. We can also combine glitter with <a href="/custom-apparel/specialty-materials/holographic-shirts" class="link-notification">holographic shirts</a> in the same group order for a multi-texture sparkle lineup.</p>
         </x-slot>
     </x-sections.card-detailed-info>
-
-    <x-ui.carousel-rotating-images
-        :images="[
-            ['src' => '/images/glitter-shirts-compressed/glitter-lips-custom-t-shirt-600x450.jpg',  'alt' => 'Custom glitter lips design on a shirt in Joliet Illinois'],
-            ['src' => '/images/glitter-shirts-compressed/glitter-t-shirts-cresthill-600x450.jpg',   'alt' => 'Custom glitter t-shirts in Crest Hill Illinois'],
-            ['src' => '/images/glitter-shirts-compressed/glitter-shirts-crest-hill-600x450.jpg',    'alt' => 'Custom glitter shirts in Crest Hill Illinois'],
-            ['src' => '/images/glitter-shirts-compressed/glitter-shirt-crest-hill-600x450.jpg',     'alt' => 'Custom glitter shirt design in Crest Hill Illinois'],
-            ['src' => '/images/glitter-shirts-compressed/gitter-birthday-shirt-600x450.jpg',        'alt' => 'Custom glitter birthday shirt in Joliet Illinois'],
-            ['src' => '/images/glitter-shirts-compressed/glitter-sweatshirts-joliet-600x450.jpg',   'alt' => 'Custom glitter sweatshirts in Joliet Illinois'],
-            ['src' => '/images/glitter-shirts-compressed/glitter-hoodies-plainfield-600x450.jpg',   'alt' => 'Custom glitter hoodies in Plainfield Illinois'],
-        ]"
-        visible=3
-    />
 
     <x-ui.banner-testimonial
         quote="Great service, good customer service, excellent work. Very satisfied."
