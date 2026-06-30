@@ -52,7 +52,13 @@
     />
     <x-ui.banner-medium-sunburst />
 
-    <x-sections.page-intro displayServiceType="Glitter Shirts" />
+    <x-sections.top5pct-same-day-service
+        displayServiceType="Glitter Shirts"
+        productIntro='Glitter heat transfer vinyl applies a sparkle finish to shirts and hoodies that catches light and turns heads at any event. We cut and press every glitter design in-house in Joliet on our own equipment, so quality and placement are consistent from the first shirt to the last. Glitter shirts are popular for <a href="/custom-apparel/group-wear/reunion-shirts" class="link-inline">reunion groups</a>, <a href="/custom-apparel/group-wear/spirit-wear-shirts" class="link-inline">spirit wear squads</a>, bachelorette parties, birthday parties, and anyone who wants a shirt that makes an impression before they say a word. No minimums, same day available on most glitter orders.'
+        crossSell='Pair glitter with <a href="/custom-apparel/specialty-materials/foil-shirts" class="link-inline">foil shirts</a> or <a href="/custom-apparel/printing-options/rhinestone-apparel" class="link-inline">rhinestone apparel</a> in the same group order for a layered sparkle lineup, or combine your glitter shirts with a matching <a href="/signs/business-signs/banners" class="link-inline">custom banner</a> for a complete event package.'
+        ctaText="Get a Glitter Shirt Quote"
+        trustNote="Same day glitter shirt production is available on most orders — call us and we will confirm your turnaround before you come in."
+    />
 
     <x-ui.carousel-rotating-images
         :images="[

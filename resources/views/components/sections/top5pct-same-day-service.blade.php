@@ -1,99 +1,108 @@
 @props([
-    'serviceType' => 'custom-signage-apparel',
     'displayServiceType' => 'Custom Signage & Apparel',
+    'productIntro'       => '',
+    'crossSell'          => '',
+    'ctaText'            => 'Get a Free Quote',
+    'ctaHref'            => '',
+    'reviewCount'        => '200+',
+    'trustNote'          => '',
 ])
+
+@php
+    use App\Data\PrimaryLocations;
+    use App\Data\BusinessIdentity;
+
+    $serviceAreaLine = PrimaryLocations::serviceAreaLine();
+    $phone           = BusinessIdentity::PHONE;
+    $phoneRaw        = BusinessIdentity::PHONE_RAW;
+    $year            = BusinessIdentity::YEAR_INCORPORATED;
+@endphp
 
 <section class="py-10 bg-white">
     <div class="max-w-7xl mx-auto px-6">
         <div class="grid lg:grid-cols-2 gap-8">
 
-            {{-- Left card: brand differentiators --}}
-            <div class="border-t-4 border-sunburst bg-white shadow-md p-8 overflow-hidden">
-                <h2 class="text-h2 font-bold text-charcoal mb-3">
-                    The <span class="text-sunburst">Top 5 Percent</span> Difference
-                </h2>
-                <p class="text-body-sm text-charcoal-light mb-6">
-                    In-house manufacturing, experienced and professional.
-                    Here is why businesses and residents across Chicagoland choose us:
+            {{-- Left card: brand trust and cross-sell --}}
+            <div class="border-t-4 border-sunburst bg-white shadow-md p-8">
+
+                <div class="inline-block mb-6">
+                    <h2 class="text-h2 font-bold text-charcoal mb-2">
+                        The <span class="text-sunburst">Top 5 Percent</span> Difference
+                    </h2>
+                    <div class="h-1 bg-sunburst"></div>
+                </div>
+
+                <p class="text-body-sm text-charcoal leading-relaxed mb-4">
+                    We carry a <a href="/reviews" class="link-inline">five-star rating on Google</a>,
+                    backed by {{ $reviewCount }} reviews from businesses and residents across the Chicagoland area.
+                    Top 5 Percent is <a href="/about" class="link-inline">veteran-owned and Black-owned</a>,
+                    and has operated out of Joliet since {{ $year }}.
+                    We produce every order in-house from start to finish — no outsourcing, no middlemen,
+                    and no surprises on price.
+                    @if($trustNote)
+                        {{ $trustNote }}
+                    @endif
                 </p>
 
-                <div class="flex flex-col gap-y-1.5">
-                    @php
-                        $benefits = [
-                            'We carry a <a href="/reviews" class="link-notification"><strong>five star rating</strong></a> on Google',
-                            'We offer <strong>same day service</strong> on most orders',
-                            'Our pricing is <strong>always transparent</strong> and upfront',
-                            'We have <strong>no minimums</strong> on <a href="/custom-apparel" class="link-notification">custom shirts</a>',
-                            'Our <a href="/design-services" class="link-notification"><strong>in-house design team</strong></a> handles your artwork',
-                            'We use <strong>top quality materials</strong> and premium inks',
-                            'We produce every order <strong>in-house</strong> from start to finish',
-                            'Our team brings <strong>40+ years</strong> of combined experience',
-                            'We welcome <a href="/contact" class="link-notification"><strong>rush orders</strong></a> with fast turnaround',
-                        ];
-                    @endphp
-                    @foreach($benefits as $benefit)
-                        @if($loop->even)
-                            <div class="flex items-center justify-end gap-2 whitespace-nowrap">
-                                <span class="text-body-sm text-charcoal">{!! $benefit !!}</span>
-                                <div class="w-1 h-5 bg-sunburst shrink-0"></div>
-                            </div>
-                        @else
-                            <div class="flex items-center gap-2 whitespace-nowrap">
-                                <div class="w-1 h-5 bg-sunburst shrink-0"></div>
-                                <span class="text-body-sm text-charcoal">{!! $benefit !!}</span>
-                            </div>
-                        @endif
-                    @endforeach
-                </div>
+                <p class="text-body-sm text-charcoal leading-relaxed">
+                    We handle <a href="/custom-apparel" class="link-inline">custom apparel</a> —
+                    <a href="/custom-apparel/printing-options/dtf-printing" class="link-inline">DTF transfers</a>,
+                    <a href="/custom-apparel/printing-options/screen-printing" class="link-inline">screen printing</a>,
+                    <a href="/custom-apparel/printing-options/embroidery" class="link-inline">embroidery</a>,
+                    <a href="/custom-apparel/specialty-materials/vinyl" class="link-inline">vinyl</a>,
+                    <a href="/custom-apparel/specialty-materials/glitter-shirts" class="link-inline">glitter</a>,
+                    <a href="/custom-apparel/specialty-materials/foil-shirts" class="link-inline">foil</a>,
+                    <a href="/custom-apparel/printing-options/rhinestone-apparel" class="link-inline">rhinestone</a>,
+                    and more — alongside
+                    <a href="/signs" class="link-inline">custom signs</a>,
+                    <a href="/vehicle-graphics" class="link-inline">vehicle graphics</a>,
+                    <a href="/stickers" class="link-inline">custom stickers</a>,
+                    <a href="/promotional-items" class="link-inline">promotional items</a>,
+                    and <a href="/design-services" class="link-inline">in-house design services</a>,
+                    all from a single shop at 121 Springfield Avenue in Joliet.
+                </p>
+
             </div>
 
-            {{-- Right card: services overview --}}
-            <div class="border-t-4 border-azure bg-linen-light shadow-md p-8 overflow-hidden">
-                <h2 class="text-h2 font-bold text-charcoal mb-5">
-                    <span class="text-sunburst">Top 5 Percent</span> Will Handle Your {{ $displayServiceType }} Needs, Same Day
-                </h2>
+            {{-- Right card: page-specific product detail --}}
+            <div class="border-t-4 border-azure bg-linen-light shadow-md p-8">
 
-                <h4 class="text-h4 font-semibold text-charcoal mb-3">Overview of Services:</h4>
-
-                <div class="flex flex-col gap-y-1.5 mb-6">
-                    @php
-                        $services = [
-                            '<a href="/custom-apparel" class="link-notification">Custom shirts</a> using <a href="/custom-apparel/printing-options/dtf-printing" class="link-notification">DTF</a>, <a href="/custom-apparel/printing-options/screen-printing" class="link-notification">screen print</a>, <a href="/custom-apparel/printing-options/embroidery" class="link-notification">embroidery</a>, and <a href="/custom-apparel/specialty-materials/vinyl" class="link-notification">vinyl</a>',
-                            'Same day turnaround available on most orders',
-                            '<a href="/signs" class="link-notification">Business signage</a>, <a href="/signs/ground-signs/yard-signs" class="link-notification">yard signs</a>, and <a href="/signs/business-signs/banners" class="link-notification">banners</a> made in-house',
-                            '<a href="/vehicle-graphics/automobile-graphics" class="link-notification">Wraps</a>, <a href="/vehicle-graphics/automobile-graphics" class="link-notification">lettering</a>, <a href="/vehicle-graphics/vehicle-magnets" class="link-notification">magnets</a>, and <a href="/vehicle-graphics/dot-decals" class="link-notification">DOT decals</a>',
-                            'Quality workmanship and satisfaction guaranteed on every order',
-                        ];
-                    @endphp
-                    @foreach($services as $service)
-                        @if($loop->even)
-                            <div class="flex items-center justify-end gap-2 whitespace-nowrap">
-                                <span class="text-body-sm text-charcoal">{!! $service !!}</span>
-                                <div class="w-1 h-5 bg-azure shrink-0"></div>
-                            </div>
-                        @else
-                            <div class="flex items-center gap-2 whitespace-nowrap">
-                                <div class="w-1 h-5 bg-azure shrink-0"></div>
-                                <span class="text-body-sm text-charcoal">{!! $service !!}</span>
-                            </div>
-                        @endif
-                    @endforeach
+                <div class="inline-block mb-6">
+                    <h2 class="text-h2 font-bold text-charcoal mb-2">
+                        <span class="text-sunburst">{{ $displayServiceType }}</span> — Same Day
+                    </h2>
+                    <div class="h-1 bg-sunburst"></div>
                 </div>
 
-                <p class="text-xs text-charcoal-light leading-relaxed text-center mb-6">
-                    Founded in 2017, Top 5 Percent - Serving Joliet, Plainfield, Romeoville,
-                    Bolingbrook, Lockport, Shorewood, Channahon, Minooka, New Lenox, Mokena,
-                    Frankfort, Homer Glen, Lemont, Naperville, Aurora, Oswego, Yorkville,
-                    Crest Hill, and the greater Chicagoland area.
-                    Friendly, reliable service.
-                    <a href="tel:+18153498600" class="text-azure hover:text-azure-dark transition-colors font-medium">(815) 349-8600</a>
+                @if($productIntro)
+                    <p class="text-body-sm text-charcoal leading-relaxed mb-4">{!! $productIntro !!}</p>
+                @endif
+
+                @if($crossSell)
+                    <p class="text-body-sm text-charcoal leading-relaxed mb-4">{!! $crossSell !!}</p>
+                @endif
+
+                <p class="text-sm text-charcoal-light leading-relaxed mt-4 mb-6">
+                    {{ $serviceAreaLine }}
+                    Call us at
+                    <a href="tel:{{ $phoneRaw }}" class="link-notification">{{ $phone }}</a>.
                 </p>
 
-                <div class="text-center">
-                    <x-ui.button-gold-gradient onclick="window.dispatchEvent(new CustomEvent('open-contact-modal'))">
-                        Schedule Same Day Service
-                    </x-ui.button-gold-gradient>
+                <div class="flex flex-col md:flex-row md:justify-end">
+                    @if($ctaHref)
+                        <x-ui.button-gold-gradient :href="$ctaHref" class="w-full md:w-auto">
+                            {{ $ctaText }}
+                        </x-ui.button-gold-gradient>
+                    @else
+                        <x-ui.button-gold-gradient
+                            onclick="window.dispatchEvent(new CustomEvent('open-contact-modal'))"
+                            class="w-full md:w-auto"
+                        >
+                            {{ $ctaText }}
+                        </x-ui.button-gold-gradient>
+                    @endif
                 </div>
+
             </div>
 
         </div>
