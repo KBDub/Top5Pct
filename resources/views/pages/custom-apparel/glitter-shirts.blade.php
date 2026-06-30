@@ -47,7 +47,7 @@
         primaryButtonHref="/contact"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/glitter-shirts/top5pct-glitter-t-shirts.jpg"
+        image="/images/glitter-shirts-compressed/glitter-shirt-crest-hill-1920x1080.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />
@@ -56,13 +56,13 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/glitter-shirts/top5pct-custom-glitter-clothing.jpg',        'alt' => 'Custom glitter shirts and sparkle apparel in Joliet Illinois'],
-            ['src' => '/images/glitter-shirts/top5pct-glitter-blue-jean-jacket.jpg',        'alt' => 'Custom glitter blue jean jacket in Joliet Illinois'],
-            ['src' => '/images/glitter-shirts/top5pct-glitter-sportswear-shirts.jpg',       'alt' => 'Custom glitter sportswear shirts for teams and events in Joliet Illinois'],
-            ['src' => '/images/glitter-shirts/top5pct-glitter-sweatshirts-joliet.jpg',      'alt' => 'Custom glitter sweatshirts printed in Joliet Illinois'],
-            ['src' => '/images/glitter-shirts/top5pct-glitter-hoodies-plainfield.jpg',     'alt' => 'Custom glitter hoodies printed in Plainfield and Joliet Illinois'],
-            ['src' => '/images/glitter-shirts/top5pct-custom-glitter-birthday-shirts-joliet.jpg', 'alt' => 'Custom glitter birthday shirts printed in Joliet Illinois'],
-            ['src' => '/images/glitter-shirts/top5pct-custom-glitter-sweatshirts.jpg',     'alt' => 'Custom glitter sweatshirts and apparel in Joliet Illinois'],
+            ['src' => '/images/glitter-shirts-compressed/glitter-shirts-crest-hill-600x450.jpg',       'alt' => 'Custom glitter shirts and sparkle apparel in Joliet Illinois'],
+            ['src' => '/images/glitter-shirts-compressed/glitter-blue-jean-jacket-600x450.jpg',       'alt' => 'Custom glitter blue jean jacket in Joliet Illinois'],
+            ['src' => '/images/glitter-shirts-compressed/glitter-sweatshirts-rockdale-600x450.jpg',   'alt' => 'Custom glitter sportswear shirts for teams and events in Joliet Illinois'],
+            ['src' => '/images/glitter-shirts-compressed/glitter-sweatshirts-joliet-600x450.jpg',     'alt' => 'Custom glitter sweatshirts printed in Joliet Illinois'],
+            ['src' => '/images/glitter-shirts-compressed/glitter-hoodies-plainfield-600x450.jpg',     'alt' => 'Custom glitter hoodies printed in Plainfield and Joliet Illinois'],
+            ['src' => '/images/glitter-shirts-compressed/gitter-birthday-shirt-600x450.jpg',          'alt' => 'Custom glitter birthday shirts printed in Joliet Illinois'],
+            ['src' => '/images/glitter-shirts-compressed/glitter-shirt-crest-hill-600x450.jpg',       'alt' => 'Custom glitter sweatshirts and apparel in Joliet Illinois'],
         ]"
         visible=2
     />
@@ -73,7 +73,7 @@
     />
 
     <x-sections.card-image-with-text
-        image="/images/glitter-shirts/top5pct-glitter-lips-custom-t-shirt.jpg"
+        image="/images/glitter-shirts-compressed/glitter-lips-custom-t-shirt-600x450.jpg"
         alt="Custom glitter lips design on a t-shirt in Joliet Illinois"
         title="Shirts That Catch Every Light in the Room"
     >
@@ -83,7 +83,7 @@
     </x-sections.card-image-with-text>
 
     <x-sections.card-image-with-text
-        image="/images/glitter-shirts/top5pct-glitter-t-shirts-cresthill.jpg"
+        image="/images/glitter-shirts-compressed/glitter-t-shirts-cresthill-600x450.jpg"
         alt="Custom glitter shirts in Cresthill Illinois"
         title="Perfect for Celebrations of Every Kind"
         imagePosition="right"
@@ -100,7 +100,7 @@
 
     <x-sections.card-detailed-info
         heading="Why Glitter Shirts Are the Signature Look for Celebrations in Joliet, Will and DuPage County"
-        image1="/images/glitter-shirts/top5pct-gitter-birthday-shirt.jpg"
+        image1="/images/glitter-shirts-compressed/gitter-birthday-shirt-400x300.jpg"
         alt1="Custom glitter birthday shirts in Joliet Illinois"
     >
         <x-slot name="intro">
@@ -129,7 +129,7 @@
         name="Arleen Van Hook"
     />
     <x-ui.card-banner-slide-in
-        image="/images/glitter-shirts/top5pct-custom-wedding-glitter-shirts.jpg"
+        image="/images/glitter-shirts-compressed/glitter-shirt-crest-hill-800x1200.webp"
         alt="Custom wedding and celebration glitter shirts from Top 5 Percent in Joliet Illinois"
         title="Glitter Shirts for Your Next Celebration"
         href="/contact"

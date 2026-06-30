@@ -6,6 +6,32 @@ Use this as the reference when swapping originals for compressed versions in the
 
 ---
 
+## Active Temp Swap Status (load-speed test)
+
+All images on the glitter-shirts page have been swapped to compressed versions for a page and image load-speed test. Six slots have direct compressed matches. Four carousel slots and the slide-in had no direct match and are using the closest available compressed image as a temporary stand-in. These must be replaced once the correct compressed files are produced.
+
+### Temp substitutions in the blade right now
+
+| Blade slot | Original image | Temp compressed image used | Reason |
+|---|---|---|---|
+| `category-hero` | `top5pct-glitter-t-shirts.jpg` | `glitter-shirt-crest-hill-1920x1080.jpg` | No hero-scale compressed version of the original; different subject |
+| Carousel slot 1 | `top5pct-custom-glitter-clothing.jpg` | `glitter-shirts-crest-hill-600x450.jpg` | No compressed version exists for the original |
+| Carousel slot 3 | `top5pct-glitter-sportswear-shirts.jpg` | `glitter-sweatshirts-rockdale-600x450.jpg` | No compressed version exists for the original |
+| Carousel slot 6 | `top5pct-custom-glitter-birthday-shirts-joliet.jpg` | `gitter-birthday-shirt-600x450.jpg` | No compressed version of this specific file; same subject, different photo |
+| Carousel slot 7 | `top5pct-custom-glitter-sweatshirts.jpg` | `glitter-shirt-crest-hill-600x450.jpg` | No compressed version exists for the original |
+| `card-banner-slide-in` #1 | `top5pct-custom-wedding-glitter-shirts.jpg` | `glitter-shirt-crest-hill-800x1200.webp` | No compressed version exists; 800x1200 portrait will crop inside the 16:7 container |
+
+### Duplicate placements created by temp swaps
+
+| Compressed file | Used in slot(s) | Note |
+|---|---|---|
+| `glitter-shirt-crest-hill-1920x1080.jpg` | `category-hero` | Temp only, different subject from original |
+| `glitter-shirt-crest-hill-600x450.jpg` | Carousel slot 7 | Temp only |
+| `gitter-birthday-shirt-600x450.jpg` | Carousel slot 6 | Same subject as `gitter-birthday-shirt-400x300.jpg` used in `card-detailed-info`, different size key, not a concern |
+| `glitter-shirt-crest-hill-800x1200.webp` | `card-banner-slide-in` #1 | Temp, wrong ratio for the 16:7 container |
+
+---
+
 ## Standard Dimension Keys
 
 The compressed folder uses a naming convention of `<subject>-<width>x<height>.ext`. The site uses four standard sizes:
