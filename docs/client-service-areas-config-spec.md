@@ -1,223 +1,166 @@
-# config/client-service-areas.php — Specification
+# Service Area Data — Architecture Decision
+
+## Answer: Do We Need config/client-service-areas.php?
+
+**No. The config file is not needed.**
+
+The codebase already has an established pattern: blade components import `App\Data\PrimaryLocations`
+directly via a `@php` block and call its static methods. Three existing components already do this:
+
+| File | Uses |
+|---|---|
+| `resources/views/components/sections/map-section.blade.php` | `PrimaryLocations::forMap()`, `primaryCityNames()`, `secondaryCityNames()`, `HQ['city']`, `zips()` |
+| `resources/views/pages/service-areas.blade.php` | `PrimaryLocations::HQ`, `PRIMARY`, `SECONDARY` |
+| `resources/views/sitemaps/sitemap.blade.php` | `PrimaryLocations::all()` |
+
+New components, including `x-sections.page-intro`, follow the same pattern.
+
+---
 
 ## CRITICAL: Source of Truth Rules
 
 **`App\Data\PrimaryLocations` is the one and only source of truth for city data.**
 **`config/client.php` is for business identity only (name, phone, address, logo, colors).**
-**`config/client-service-areas.php` is a blade-layer read-only wrapper — it never duplicates data.**
+**Never store city lists, priority tiers, lat/lng, slugs, or zip codes anywhere else.**
 
-City lists, priority tiers, lat/lng, slugs, and zip codes all live in `App\Data\PrimaryLocations`. The config file wraps that class so blade components can read from `config()` without importing a PHP class directly. If a city needs to be added, changed, or reclassified, the change goes into `App\Data\PrimaryLocations` only — it flows automatically into the config and every component.
-
----
-
-## Purpose
-
-A thin Laravel config wrapper that exposes `App\Data\PrimaryLocations` data to blade components via `config()` calls, along with static prose strings (service area sentences) that components render directly. It is NOT an independent data store — it is a read-only projection of `App\Data\PrimaryLocations`.
+If a city needs to be added, changed, or reclassified, the only file to touch is
+`App\Data\PrimaryLocations`. Every blade component that reads from it updates automatically.
 
 ---
 
-## Relationship to App\Data\PrimaryLocations
-
-`App\Data\PrimaryLocations` is the canonical data class. Nothing overrides it. `config/client-service-areas.php` reads from it at config-load time and re-exposes the data in a blade-friendly shape. `config/client.php` plays no role in city or service area data — it covers business identity only.
-
-`PrimaryLocations` defines the canonical city data in three tiers:
-
-| Tier | Count | Used for |
-|---|---|---|
-| `HQ` | 1 (Joliet) | Headquarters marker, map pin, address |
-| `PRIMARY` | 20 cities | High-priority service area pages, map primary ring |
-| `SECONDARY` | 20 cities | Extended reach pages, map secondary ring |
-
-The new `config/client-service-areas.php` **wraps** `PrimaryLocations` rather than duplicating it. It adds:
-- A unified flat list with a `priority` field per city
-- Prose strings for components to render directly
-- Short display lists for inline use in headings and copy
-
----
-
-## Answer: Does Priority Differentiation Already Exist?
-
-**Yes.** `App\Data\PrimaryLocations` already has a clean three-tier split:
-
-- `PrimaryLocations::HQ` — Joliet headquarters
-- `PrimaryLocations::PRIMARY` — 20 primary service cities
-- `PrimaryLocations::SECONDARY` — 20 secondary service cities
-
-Helper methods already built: `primaryCityNames()`, `secondaryCityNames()`, `allCityNames()`, `forMap()`, `all()`, `zips()`.
-
-The config file consolidates this into a format that blade components can consume without importing a PHP class directly.
-
----
-
-## Proposed Config Structure
-
-```php
-<?php
-// config/client-service-areas.php
-
-use App\Data\PrimaryLocations;
-
-$hq = array_merge(PrimaryLocations::HQ, [
-    'priority' => 'hq',
-    'slug'     => 'joliet-il',
-]);
-
-$primary = array_map(fn ($c) => array_merge($c, [
-    'priority' => 'primary',
-    'slug'     => \Illuminate\Support\Str::slug($c['city'] . '-il'),
-]), PrimaryLocations::PRIMARY);
-
-$secondary = array_map(fn ($c) => array_merge($c, [
-    'priority' => 'secondary',
-    'slug'     => \Illuminate\Support\Str::slug($c['city'] . '-il'),
-]), PrimaryLocations::SECONDARY);
-
-// Sorted combined list (HQ always first)
-$all = array_merge([$hq], $primary, $secondary);
-
-return [
-
-    /*
-    |--------------------------------------------------------------------------
-    | Full City List (unified, with priority flag)
-    |--------------------------------------------------------------------------
-    | Each entry: city, state, lat, lng, priority ('hq'|'primary'|'secondary'), slug
-    |
-    */
-    'cities' => $all,
-
-    /*
-    |--------------------------------------------------------------------------
-    | HQ City
-    |--------------------------------------------------------------------------
-    */
-    'hq_city'       => 'Joliet',
-    'hq_state'      => 'IL',
-    'hq_zip'        => '60435',
-
-    /*
-    |--------------------------------------------------------------------------
-    | Short Display Lists (for inline copy and headings)
-    |--------------------------------------------------------------------------
-    | priority_cities  — HQ + PRIMARY names, alphabetical (used in headings)
-    | all_city_names   — full sorted list (used in footer, SEO copy)
-    |
-    */
-    'priority_city_names' => array_merge(
-        ['Joliet'],
-        \Illuminate\Support\Collection::make(PrimaryLocations::PRIMARY)
-            ->pluck('city')->sort()->values()->all()
-    ),
-
-    'all_city_names' => \Illuminate\Support\Collection::make(
-        array_merge(PrimaryLocations::PRIMARY, PrimaryLocations::SECONDARY)
-    )->pluck('city')->sort()->prepend('Joliet')->values()->all(),
-
-    /*
-    |--------------------------------------------------------------------------
-    | Prose Strings for Components
-    |--------------------------------------------------------------------------
-    | Used in: page-intro service area line, footer, SEO meta, etc.
-    |
-    */
-
-    // One-line — used in page-intro and footer compact areas
-    'service_area_line' =>
-        'Serving Joliet, Shorewood, Plainfield, Bolingbrook, Romeoville, Lockport, ' .
-        'Channahon, Crest Hill, Naperville, Aurora, and the greater Chicagoland area.',
-
-    // Two-line — used in about, service area index page, and JSON-LD
-    'service_area_description' =>
-        'Top 5 Percent serves businesses and residents throughout the greater Joliet ' .
-        'and Chicagoland area, including Will County, DuPage County, Kane County, and ' .
-        'the surrounding region. We ship and deliver across Illinois.',
-
-    // Compact comma list — used in SEO meta descriptions
-    'service_area_compact' =>
-        'Joliet, Shorewood, Plainfield, Bolingbrook, Romeoville, Lockport, Channahon, ' .
-        'Crest Hill, Naperville, and Aurora, IL',
-
-    /*
-    |--------------------------------------------------------------------------
-    | Zip Codes
-    |--------------------------------------------------------------------------
-    */
-    'zips' => PrimaryLocations::ZIPS,
-
-];
-```
-
----
-
-## Each City Entry Shape
-
-```php
-[
-    'city'     => 'Shorewood',
-    'state'    => 'IL',
-    'lat'      => 41.5209,
-    'lng'      => -88.2017,
-    'priority' => 'secondary',   // 'hq' | 'primary' | 'secondary'
-    'slug'     => 'shorewood-il',
-]
-```
-
----
-
-## How Components Read It
+## The Established Blade Pattern
 
 ```blade
-{{-- Service area line in page-intro --}}
-{{ config('client-service-areas.service_area_line') }}
-
-{{-- Phone (from config/client.php) --}}
-<a href="tel:{{ config('client.phone_raw') }}" class="link-notification">
-    {{ config('client.phone') }}
-</a>
-
-{{-- Checking if a city is priority --}}
 @php
-    $cities = collect(config('client-service-areas.cities'));
-    $primaryCities = $cities->where('priority', 'primary')->pluck('city');
-@endphp
+    use App\Data\PrimaryLocations;
 
-{{-- Comma list for footer or heading copy --}}
-{{ implode(', ', config('client-service-areas.priority_city_names')) }}
+    $primaryCities   = PrimaryLocations::primaryCityNames();
+    $secondaryCities = PrimaryLocations::secondaryCityNames();
+    $hqCity          = PrimaryLocations::HQ['city'];
+    $allCities       = PrimaryLocations::allCityNames();
+    $zips            = PrimaryLocations::zips();
+@endphp
 ```
 
----
-
-## Why Not Duplicate the Data?
-
-`PrimaryLocations` is already used by:
-- `/service-areas/{slug}` route (resolves city by slug)
-- The map section (lat/lng for Google Maps pins)
-- `primaryCityNames()` and `secondaryCityNames()` helpers
-
-Duplicating the city list in config creates two sources of truth. Wrapping it in config means a city added to `PrimaryLocations::PRIMARY` automatically appears in all component outputs with no other changes.
+No `config()` calls. No imports of city data from anywhere else.
 
 ---
 
-## Build Notes
+## What PrimaryLocations Already Provides
 
-1. This file belongs at `config/client-service-areas.php`.
-2. Laravel's config system supports importing PHP classes at config load time — no issues with autoloading order.
-3. The file uses `Str::slug()` so `use Illuminate\Support\Str;` must be at the top, or use the full class path inside the closures.
-4. `config('client-service-areas.cities')` returns the full array — use `collect()` to filter by priority in blade.
-5. The prose strings (`service_area_line`, `service_area_description`, `service_area_compact`) are static — update them here when service area footprint changes. Do not hardcode them anywhere else.
-
----
-
-## Files That Should Read From This Config After Build
-
-| Component | Current state | Prop/key to use |
+| Method / Constant | Returns | Used by |
 |---|---|---|
-| `x-sections.page-intro` | New component | `service_area_line` |
-| `x-sections.top5pct-same-day-service` | Being replaced | n/a |
-| `x-components.layout.footer` | Hardcodes "Joliet, IL" | `service_area_line` or `hq_city` |
-| `x-sections.map-section` | Hardcodes city name | `hq_city` |
-| `x-sections.cta-ready-to-get-started` | Hardcodes "Joliet" | `hq_city` |
-| `x-sections.category-hero` | Hardcodes "Joliet, IL" | `hq_city`, `hq_state` |
-| `x-sections.represent-yourself` | Hardcodes city list | `service_area_line` |
-| `x-sections.about-preview` | Hardcodes "Joliet, IL" | `hq_city` |
-| JSON-LD structured data | Hardcodes address | `hq_city`, `hq_zip` |
+| `PrimaryLocations::HQ` | Array — Joliet, lat, lng, `main: true` | `map-section`, `service-areas` |
+| `PrimaryLocations::PRIMARY` | Array of 20 primary city arrays | `service-areas` |
+| `PrimaryLocations::SECONDARY` | Array of 20 secondary city arrays | `service-areas` |
+| `PrimaryLocations::ZIPS` | Array of all served zip codes | `map-section` |
+| `::all()` | HQ + PRIMARY + SECONDARY sorted | `sitemap` |
+| `::forMap()` | All cities with slug added | `map-section` |
+| `::primaryCityNames()` | Sorted array of PRIMARY city name strings | `map-section` |
+| `::secondaryCityNames()` | Sorted array of SECONDARY city name strings | `map-section` |
+| `::allCityNames()` | HQ + all city names sorted | Available, no blade consumer yet |
+| `::zips()` | All served zip codes | `map-section` |
+
+---
+
+## The One Gap: Prose Strings
+
+`PrimaryLocations` covers all city data but has no prose strings — the one-line service area
+sentence, the short description, and the compact city list that components like `page-intro`
+need to render inline. Two options:
+
+### Option A — Add static methods to PrimaryLocations
+
+```php
+// App\Data\PrimaryLocations
+
+public static function serviceAreaLine(): string
+{
+    return 'Serving Joliet, Shorewood, Plainfield, Bolingbrook, Romeoville, Lockport, ' .
+           'Channahon, Crest Hill, Naperville, Aurora, and the greater Chicagoland area.';
+}
+
+public static function serviceAreaDescription(): string
+{
+    return 'Top 5 Percent serves businesses and residents throughout the greater Joliet ' .
+           'and Chicagoland area, including Will County, DuPage County, Kane County, and ' .
+           'the surrounding region. We ship and deliver across Illinois.';
+}
+
+public static function serviceAreaCompact(): string
+{
+    return 'Joliet, Shorewood, Plainfield, Bolingbrook, Romeoville, Lockport, Channahon, ' .
+           'Crest Hill, Naperville, and Aurora, IL';
+}
+```
+
+Blade usage:
+
+```blade
+{{ App\Data\PrimaryLocations::serviceAreaLine() }}
+```
+
+Simpler — one class, one place to edit. Slightly mixes "data" with "copy."
+
+### Option B — New App\Data\ServiceAreaCopy class
+
+```php
+// App\Data\ServiceAreaCopy
+
+namespace App\Data;
+
+class ServiceAreaCopy
+{
+    public static function line(): string
+    {
+        return 'Serving Joliet, Shorewood, Plainfield, Bolingbrook, Romeoville, Lockport, ' .
+               'Channahon, Crest Hill, Naperville, Aurora, and the greater Chicagoland area.';
+    }
+
+    public static function description(): string { ... }
+
+    public static function compact(): string { ... }
+}
+```
+
+Blade usage:
+
+```blade
+@php
+    use App\Data\PrimaryLocations;
+    use App\Data\ServiceAreaCopy;
+
+    $hqCity          = PrimaryLocations::HQ['city'];
+    $serviceAreaLine = ServiceAreaCopy::line();
+@endphp
+```
+
+Cleaner separation of concerns. One extra file.
+
+---
+
+## Recommendation
+
+**Option B** if `PrimaryLocations` should stay a pure data class.
+**Option A** if simplicity matters more than strict separation — it is what already works in this codebase.
+
+Either way, no config file is needed.
+
+---
+
+## Files That Currently Hardcode City Names (Migration Backlog)
+
+21 components hardcode "Joliet" or a city list inline. These are a separate migration task.
+After the prose methods exist on `App\Data\PrimaryLocations` (or `ServiceAreaCopy`), each
+component replaces its hardcoded string with a static method call.
+
+| Component | Hardcoded value | Replacement call |
+|---|---|---|
+| `x-components.layout.footer` | "Joliet, IL" | `PrimaryLocations::HQ['city']` |
+| `x-sections.map-section` | city names | already uses PrimaryLocations |
+| `x-sections.cta-ready-to-get-started` | "Joliet" | `PrimaryLocations::HQ['city']` |
+| `x-sections.category-hero` | "Joliet, IL" | `PrimaryLocations::HQ['city']` |
+| `x-sections.represent-yourself` | city list sentence | `ServiceAreaCopy::line()` |
+| `x-sections.about-preview` | "Joliet, IL" | `PrimaryLocations::HQ['city']` |
+| JSON-LD structured data | address | `PrimaryLocations::HQ['city']` |
+| (+ 14 more) | various | per component |

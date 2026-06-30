@@ -12,28 +12,41 @@ The old component was a two-column bullet-list card. The new component is a warm
 
 **`App\Data\PrimaryLocations` is the one and only source of truth for city and service area data.**
 **`config/client.php` is for business identity only: name, phone, address, logo, colors.**
-**Never read city lists or service area copy from `config/client.php`.**
+**No config wrapper is needed. Use `App\Data\` files directly — that is the established pattern.**
+
+Three blade components already do this today (`map-section`, `service-areas`, `sitemap`).
+See `docs/client-service-areas-config-spec.md` for the full architecture decision.
 
 The data chain is:
 
 ```
-App\Data\PrimaryLocations   ← only place cities are added or changed
+App\Data\PrimaryLocations        ← city data (HQ, PRIMARY, SECONDARY, ZIPS, helpers)
+App\Data\ServiceAreaCopy         ← prose strings (service area line, description, compact)
         ↓
-config/client-service-areas.php   ← thin blade-layer wrapper (see docs/client-service-areas-config-spec.md)
+@php use App\Data\PrimaryLocations; use App\Data\ServiceAreaCopy; @endphp
         ↓
-x-sections.page-intro   ← reads config(), never imports App\Data directly
+x-sections.page-intro            ← reads App\Data\ directly, no config() for city data
 ```
 
-The component reads these config keys — nothing more:
+The component reads:
 
 ```blade
-config('client-service-areas.service_area_line')   {{-- from App\Data\PrimaryLocations via wrapper --}}
-config('client.phone')                             {{-- business identity only --}}
-config('client.phone_raw')                         {{-- business identity only --}}
-config('client.year_incorporated')                 {{-- business identity only --}}
+@php
+    use App\Data\PrimaryLocations;
+    use App\Data\ServiceAreaCopy;   {{-- or PrimaryLocations::serviceAreaLine() if Option A chosen --}}
+
+    $hqCity          = PrimaryLocations::HQ['city'];    {{-- city data --}}
+    $serviceAreaLine = ServiceAreaCopy::line();          {{-- prose string --}}
+@endphp
+
+{{-- Business identity (phone, year) still comes from config/client.php --}}
+config('client.phone')
+config('client.phone_raw')
+config('client.year_incorporated')
 ```
 
-No city names, phone numbers, or addresses are hardcoded in this component.
+No city names or service area prose are hardcoded in this component.
+No city data comes from `config/client.php`.
 
 ---
 
