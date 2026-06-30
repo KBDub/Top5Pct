@@ -124,6 +124,19 @@
         </x-slot>
     </x-sections.card-detailed-info>
 
+    <x-ui.carousel-rotating-images
+        :images="[
+            ['src' => '/images/glitter-shirts-compressed/glitter-lips-custom-t-shirt-600x450.jpg',  'alt' => 'Custom glitter lips design on a shirt in Joliet Illinois'],
+            ['src' => '/images/glitter-shirts-compressed/glitter-t-shirts-cresthill-600x450.jpg',   'alt' => 'Custom glitter t-shirts in Crest Hill Illinois'],
+            ['src' => '/images/glitter-shirts-compressed/glitter-shirts-crest-hill-600x450.jpg',    'alt' => 'Custom glitter shirts in Crest Hill Illinois'],
+            ['src' => '/images/glitter-shirts-compressed/glitter-shirt-crest-hill-600x450.jpg',     'alt' => 'Custom glitter shirt design in Crest Hill Illinois'],
+            ['src' => '/images/glitter-shirts-compressed/gitter-birthday-shirt-600x450.jpg',        'alt' => 'Custom glitter birthday shirt in Joliet Illinois'],
+            ['src' => '/images/glitter-shirts-compressed/glitter-sweatshirts-joliet-600x450.jpg',   'alt' => 'Custom glitter sweatshirts in Joliet Illinois'],
+            ['src' => '/images/glitter-shirts-compressed/glitter-hoodies-plainfield-600x450.jpg',   'alt' => 'Custom glitter hoodies in Plainfield Illinois'],
+        ]"
+        visible=3
+    />
+
     <x-ui.banner-testimonial
         quote="Great service, good customer service, excellent work. Very satisfied."
         name="Arleen Van Hook"
