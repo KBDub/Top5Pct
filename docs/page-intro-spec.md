@@ -724,49 +724,57 @@ A follow-up sweep of all 54 `productIntro` strings (in the page files) is a sepa
 **Current:** `PrimaryLocations::serviceAreaLine()` returns plain text.
 Example: `Serving Aurora, Bloomington, Bolingbrook, ...`
 
-**New:** A new method `PrimaryLocations::serviceAreaLinkedLine()` returns HTML where every city name is wrapped in an anchor tag linking to `/service-areas/{slug}`.
+**New:** City names are linked inline in the component blade using `@foreach`, matching the exact pattern already used in `x-sections.map-section`. No new PHP method is needed on `PrimaryLocations`.
 
-The slug pattern already exists in `PrimaryLocations::forMap()`:
-```php
-Str::slug($city . '-IL')  // e.g., "Aurora" → "aurora-il"
-```
-
-**New method to add to `PrimaryLocations.php`:**
+**How map-section does it (the pattern to copy):**
 
 ```php
-/**
- * Full service area sentence with each city linked to its /service-areas/ page.
- * Returns HTML — use {!! !!} in Blade, never {{ }}.
- */
-public static function serviceAreaLinkedLine(): string
-{
-    $hqCity  = self::HQ['city'];
-    $hqSlug  = Str::slug($hqCity . '-IL');
-    $hqLink  = '<a href="/service-areas/' . $hqSlug . '" class="link-inline">' . $hqCity . '</a>';
+{{-- @php block at top of map-section.blade.php --}}
+$primaryCities   = PrimaryLocations::primaryCityNames();
+$secondaryCities = PrimaryLocations::secondaryCityNames();
+$hqCity          = PrimaryLocations::HQ['city'];
 
-    $cities  = array_merge(self::PRIMARY, self::SECONDARY);
-    usort($cities, fn ($a, $b) => strcmp($a['city'], $b['city']));
-
-    $links = [];
-    foreach ($cities as $loc) {
-        $slug    = Str::slug($loc['city'] . '-IL');
-        $links[] = '<a href="/service-areas/' . $slug . '" class="link-inline">' . $loc['city'] . '</a>';
-    }
-
-    $last  = array_pop($links);
-
-    return 'Serving ' . $hqLink . ', ' . implode(', ', $links) . ', and ' . $last . '.';
-}
+$allCities = array_merge([$hqCity], $primaryCities, $secondaryCities);
 ```
 
-**In the component**, replace `$serviceAreaLine = PrimaryLocations::serviceAreaLine()` with:
+```blade
+@foreach($allCities as $city)
+    <a href="/service-areas/{{ Str::slug($city . '-IL') }}" class="link-city text-sm">{{ $city }}</a>,
+@endforeach
+```
+
+**Apply the same pattern in `top5pct-same-day-service.blade.php`:**
+
+Add to the `@php` block at the top:
 ```php
-$serviceAreaLinkedLine = PrimaryLocations::serviceAreaLinkedLine();
+use Illuminate\Support\Str;
+$primaryCities   = PrimaryLocations::primaryCityNames();
+$secondaryCities = PrimaryLocations::secondaryCityNames();
+$hqCity          = PrimaryLocations::HQ['city'];
+$allCities       = array_merge([$hqCity], $primaryCities, $secondaryCities);
 ```
 
-And render with `{!! $serviceAreaLinkedLine !!}` (not `{{ }}`).
+Replace the service area line output (in the new full-width third row) with:
+```blade
+<p class="text-sm text-charcoal-light leading-relaxed">
+    Serving
+    @foreach($allCities as $city)
+        <a href="/service-areas/{{ Str::slug($city . '-IL') }}" class="link-city text-sm">{{ $city }}</a>@if(!$loop->last),@endif
+    @endforeach
+    and the greater Chicagoland area.
+    Call us at <a href="tel:{{ $phoneRaw }}" class="link-notification">{{ $phone }}</a>.
+</p>
+```
 
-**Note:** The `/service-areas/{slug}` routes must exist for all cities. Verify the route exists before building. If any city slug does not have a corresponding route, the link will 404. Cities without a `/service-areas/` page should be rendered as plain text in the method — add a `$validSlugs` set or skip linking for those.
+**Key details matched from map-section:**
+- Data sources: `primaryCityNames()`, `secondaryCityNames()`, `HQ['city']` — not `allCityNames()` or `serviceAreaLine()`
+- Slug formula: `Str::slug($city . '-IL')` — e.g., "Aurora" becomes `aurora-il`
+- CSS class: `link-city text-sm` — same as map-section, not `link-inline`
+- Order: HQ (Joliet) first, then primary cities sorted A-Z, then secondary cities sorted A-Z
+
+**Drop `serviceAreaLine()` from the `@php` block** — it is no longer used once the foreach is in place.
+
+**Note:** The `/service-areas/{slug}` routes must exist for all cities. The map-section already links to these same URLs, so if the map-section is working without 404s, the same routes will work here.
 
 ---
 
