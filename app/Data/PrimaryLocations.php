@@ -135,4 +135,39 @@ class PrimaryLocations
     {
         return self::ZIPS;
     }
+
+    /**
+     * Full service area sentence for page intros, footers, and SEO copy.
+     * Generated from city arrays — never hardcode city names.
+     */
+    public static function serviceAreaLine(): string
+    {
+        $cities = self::allCityNames();
+        $last   = array_pop($cities);
+
+        return 'Serving ' . implode(', ', $cities) . ', and ' . $last . '.';
+    }
+
+    /**
+     * Two-sentence description for about pages, service area index, and JSON-LD.
+     */
+    public static function serviceAreaDescription(): string
+    {
+        $count = count(self::PRIMARY) + count(self::SECONDARY) + 1;
+
+        return 'Top 5 Percent serves businesses and residents across ' . $count . ' cities in the '
+             . 'greater Joliet and Chicagoland area, including Will County, DuPage County, '
+             . 'Kane County, and the surrounding region. We ship and deliver across Illinois.';
+    }
+
+    /**
+     * Compact city list for SEO meta descriptions.
+     * HQ + first 8 primary cities alphabetically + "and more."
+     */
+    public static function serviceAreaCompact(): string
+    {
+        $sample = array_slice(self::primaryCityNames(), 0, 8);
+
+        return self::HQ['city'] . ', ' . implode(', ', $sample) . ', and more throughout Illinois';
+    }
 }
