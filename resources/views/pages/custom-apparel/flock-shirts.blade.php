@@ -52,7 +52,7 @@
     />
     <x-ui.banner-medium-sunburst />
 
-    <x-sections.top5pct-same-day-service serviceType="flock-shirts" displayServiceType="Flock Shirts" />
+    <x-sections.page-intro displayServiceType="Flock Shirts" />
 
     <x-ui.carousel-rotating-images
         :images="[

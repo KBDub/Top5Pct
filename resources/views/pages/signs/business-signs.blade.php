@@ -52,7 +52,7 @@
     />
     <x-ui.banner-medium-sunburst />
 
-    <x-sections.top5pct-same-day-service serviceType="business-signs" displayServiceType="Business Signs" />
+    <x-sections.page-intro displayServiceType="Business Signs" />
 
     <x-ui.banner-testimonial
         quote="Professional business man. I am so pleased with the banners and signs he made for my church and I will definitely continue to support his business."

@@ -52,7 +52,7 @@
     />
     <x-ui.banner-medium-sunburst />
 
-    <x-sections.top5pct-same-day-service serviceType="reflective-shirts" displayServiceType="Reflective Shirts" />
+    <x-sections.page-intro displayServiceType="Reflective Shirts" />
 
     <x-ui.carousel-rotating-images
         :images="[

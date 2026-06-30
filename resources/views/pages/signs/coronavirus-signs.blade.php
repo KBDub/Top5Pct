@@ -52,7 +52,7 @@
     />
     <x-ui.banner-medium-sunburst />
 
-    <x-sections.top5pct-same-day-service serviceType="coronavirus-signs" displayServiceType="Safety Signs" />
+    <x-sections.page-intro displayServiceType="Safety Signs" />
 
     <x-ui.banner-testimonial
         quote="Professional business man. I am so pleased with the banners and signs he made for my church and I will definitely continue to support his business."

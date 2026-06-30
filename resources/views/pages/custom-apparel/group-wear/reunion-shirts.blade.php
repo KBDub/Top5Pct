@@ -48,7 +48,7 @@
     />
     <x-ui.banner-medium-sunburst />
 
-    <x-sections.top5pct-same-day-service serviceType="reunion-shirts" displayServiceType="Reunion Shirts" />
+    <x-sections.page-intro displayServiceType="Reunion Shirts" />
 
     <x-ui.carousel-rotating-images
         :images="[

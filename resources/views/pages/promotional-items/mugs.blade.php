@@ -52,7 +52,7 @@
     />
     <x-ui.banner-medium-sunburst />
 
-    <x-sections.top5pct-same-day-service serviceType="promotional-items" displayServiceType="Custom Mugs" />
+    <x-sections.page-intro displayServiceType="Custom Mugs" />
 
     <x-ui.carousel-rotating-images
         :images="[

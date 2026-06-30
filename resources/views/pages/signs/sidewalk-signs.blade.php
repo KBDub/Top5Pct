@@ -52,7 +52,7 @@
     />
     <x-ui.banner-medium-sunburst />
 
-    <x-sections.top5pct-same-day-service serviceType="sidewalk-signs" displayServiceType="Sidewalk Signs" />
+    <x-sections.page-intro displayServiceType="Sidewalk Signs" />
 
     <x-ui.carousel-rotating-images
         :images="[

@@ -52,7 +52,7 @@
     />
     <x-ui.banner-medium-sunburst />
 
-    <x-sections.top5pct-same-day-service serviceType="brick-shirts" displayServiceType="Brick Shirts" />
+    <x-sections.page-intro displayServiceType="Brick Shirts" />
 
     <x-ui.carousel-rotating-images
         :images="[

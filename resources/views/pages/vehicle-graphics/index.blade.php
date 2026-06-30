@@ -53,7 +53,7 @@
     />
     <x-ui.banner-medium-sunburst />
 
-    <x-sections.top5pct-same-day-service serviceType="vehicle-graphics" displayServiceType="Vehicle Graphics" />
+    <x-sections.page-intro displayServiceType="Vehicle Graphics" />
 
     <x-ui.carousel-rotating-images
         :images="[

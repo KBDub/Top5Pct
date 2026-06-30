@@ -52,7 +52,7 @@
     />
     <x-ui.banner-medium-sunburst />
 
-    <x-sections.top5pct-same-day-service serviceType="puff-shirts" displayServiceType="Puff Print Shirts" />
+    <x-sections.page-intro displayServiceType="Puff Print Shirts" />
 
     <x-ui.carousel-rotating-images
         :images="[

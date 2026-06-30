@@ -52,7 +52,7 @@
     />
     <x-ui.banner-medium-sunburst />
 
-    <x-sections.top5pct-same-day-service serviceType="holographic-shirts" displayServiceType="Holographic Shirts" />
+    <x-sections.page-intro displayServiceType="Holographic Shirts" />
 
     <x-ui.carousel-rotating-images
         :images="[

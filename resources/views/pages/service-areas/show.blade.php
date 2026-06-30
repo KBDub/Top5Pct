@@ -160,10 +160,7 @@
     @endif
 
     {{-- All services overview --}}
-    <x-sections.top5pct-same-day-service
-        serviceType="custom-signage-apparel"
-        displayServiceType="Custom Signage & Apparel in {{ $cityName }}"
-    />
+    <x-sections.page-intro displayServiceType="Custom Signage & Apparel in {{ $cityName }}" />
 
     @if($content && !empty($content['faqs']))
         {{-- City FAQ with JSON-LD injection --}}

@@ -52,7 +52,7 @@
     />
     <x-ui.banner-medium-sunburst />
 
-    <x-sections.top5pct-same-day-service serviceType="table-cloths" displayServiceType="Custom Table Cloths" />
+    <x-sections.page-intro displayServiceType="Custom Table Cloths" />
 
     <x-ui.carousel-rotating-images
         :images="[

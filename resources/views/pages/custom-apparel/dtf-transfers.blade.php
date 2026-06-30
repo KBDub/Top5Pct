@@ -52,7 +52,7 @@
     />
     <x-ui.banner-medium-sunburst />
 
-    <x-sections.top5pct-same-day-service serviceType="dtf-transfers" displayServiceType="DTF Transfers" />
+    <x-sections.page-intro displayServiceType="DTF Transfers" />
 
     <x-ui.carousel-rotating-images
         :images="[

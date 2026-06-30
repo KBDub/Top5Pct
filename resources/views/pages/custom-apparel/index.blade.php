@@ -53,7 +53,7 @@
     />
     <x-ui.banner-medium-sunburst />
 
-    <x-sections.top5pct-same-day-service serviceType="custom-apparel" displayServiceType="Custom Apparel" />
+    <x-sections.page-intro displayServiceType="Custom Apparel" />
 
     <x-ui.carousel-rotating-images
         :images="[

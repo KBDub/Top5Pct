@@ -52,7 +52,7 @@
     />
     <x-ui.banner-medium-sunburst />
 
-    <x-sections.top5pct-same-day-service serviceType="yard-signs" displayServiceType="Yard Signs" />
+    <x-sections.page-intro displayServiceType="Yard Signs" />
 
     <x-ui.carousel-rotating-images
         :images="[

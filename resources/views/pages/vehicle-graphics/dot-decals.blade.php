@@ -52,7 +52,7 @@
     />
     <x-ui.banner-medium-sunburst />
 
-    <x-sections.top5pct-same-day-service serviceType="dot-decals" displayServiceType="DOT Decals" />
+    <x-sections.page-intro displayServiceType="DOT Decals" />
 
     <x-ui.carousel-rotating-images
         :images="[

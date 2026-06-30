@@ -17,7 +17,7 @@
     />
     <x-ui.banner-medium-sunburst />
 
-    <x-sections.top5pct-same-day-service serviceType="merchandise" displayServiceType="Merchandise" />
+    <x-sections.page-intro displayServiceType="Merchandise" />
 
     <x-ui.banner-testimonial
         quote="Amazing service and quality! Will definitely be doing more business in the future."

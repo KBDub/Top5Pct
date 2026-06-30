@@ -52,7 +52,7 @@
     />
     <x-ui.banner-medium-sunburst />
 
-    <x-sections.top5pct-same-day-service serviceType="dye-sublimation" displayServiceType="Dye Sublimation" />
+    <x-sections.page-intro displayServiceType="Dye Sublimation" />
 
     <x-ui.carousel-rotating-images
         :images="[

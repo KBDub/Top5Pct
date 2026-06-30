@@ -48,10 +48,7 @@
     />
     <x-ui.banner-medium-sunburst />
 
-    <x-sections.top5pct-same-day-service
-        serviceType="spirit-wear-shirts"
-        displayServiceType="Spirit Wear"
-    />
+    <x-sections.page-intro displayServiceType="Spirit Wear" />
 
     <x-ui.carousel-rotating-images
         :images="[

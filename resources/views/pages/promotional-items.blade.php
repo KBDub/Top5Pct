@@ -51,7 +51,7 @@
     />
     <x-ui.banner-medium-sunburst />
 
-    <x-sections.top5pct-same-day-service serviceType="promotional-items" displayServiceType="Promotional Items" />
+    <x-sections.page-intro displayServiceType="Promotional Items" />
 
     <x-ui.carousel-rotating-images
         :images="[

@@ -52,7 +52,7 @@
     />
     <x-ui.banner-medium-sunburst />
 
-    <x-sections.top5pct-same-day-service serviceType="digital-vinyl-shirts" displayServiceType="Digital Vinyl Shirts" />
+    <x-sections.page-intro displayServiceType="Digital Vinyl Shirts" />
 
     <x-ui.carousel-rotating-images
         :images="[

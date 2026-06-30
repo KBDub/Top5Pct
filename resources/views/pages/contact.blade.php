@@ -12,7 +12,7 @@
     />
     <x-ui.banner-medium-sunburst />
 
-    <x-sections.top5pct-same-day-service serviceType="contact" displayServiceType="Custom Signage & Apparel" />
+    <x-sections.page-intro displayServiceType="Custom Signage & Apparel" />
     <x-sections.cta-quadruple-button-banner />
 
     <x-sections.card-image-with-text

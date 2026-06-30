@@ -52,7 +52,7 @@
     />
     <x-ui.banner-medium-sunburst />
 
-    <x-sections.top5pct-same-day-service serviceType="stickers" displayServiceType="Custom Stickers" />
+    <x-sections.page-intro displayServiceType="Custom Stickers" />
 
     <x-ui.carousel-rotating-images
         :images="[

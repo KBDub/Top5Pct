@@ -52,7 +52,7 @@
     />
     <x-ui.banner-medium-sunburst />
 
-    <x-sections.top5pct-same-day-service serviceType="glitter-shirts" displayServiceType="Glitter Shirts" />
+    <x-sections.page-intro displayServiceType="Glitter Shirts" />
 
     <x-ui.carousel-rotating-images
         :images="[

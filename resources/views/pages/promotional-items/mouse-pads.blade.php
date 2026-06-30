@@ -51,7 +51,7 @@
     />
     <x-ui.banner-medium-sunburst />
 
-    <x-sections.top5pct-same-day-service serviceType="promotional-items" displayServiceType="Custom Mouse Pads" />
+    <x-sections.page-intro displayServiceType="Custom Mouse Pads" />
 
     <x-ui.carousel-rotating-images
         :images="[

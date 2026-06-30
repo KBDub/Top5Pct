@@ -52,7 +52,7 @@
     />
     <x-ui.banner-medium-sunburst />
 
-    <x-sections.top5pct-same-day-service serviceType="screen-printing" displayServiceType="Screen Printing" />
+    <x-sections.page-intro displayServiceType="Screen Printing" />
 
     <x-ui.carousel-rotating-images
         :images="[

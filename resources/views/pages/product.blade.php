@@ -41,7 +41,7 @@
 
     <x-ui.banner-medium-sunburst />
 
-    <x-sections.top5pct-same-day-service />
+    <x-sections.page-intro />
 
     <x-sections.cta-quadruple-button-banner />
 

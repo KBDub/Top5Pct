@@ -53,7 +53,7 @@
     />
     <x-ui.banner-medium-sunburst />
 
-    <x-sections.top5pct-same-day-service serviceType="design-services" displayServiceType="Design Services" />
+    <x-sections.page-intro displayServiceType="Design Services" />
 
     <x-ui.carousel-rotating-images
         :images="[

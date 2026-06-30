@@ -52,7 +52,7 @@
     />
     <x-ui.banner-medium-sunburst />
 
-    <x-sections.top5pct-same-day-service serviceType="table-runners" displayServiceType="Table Runners" />
+    <x-sections.page-intro displayServiceType="Table Runners" />
 
     <x-ui.carousel-rotating-images
         :images="[

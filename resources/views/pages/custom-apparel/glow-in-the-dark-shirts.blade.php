@@ -52,7 +52,7 @@
     />
     <x-ui.banner-medium-sunburst />
 
-    <x-sections.top5pct-same-day-service serviceType="glow-in-the-dark-shirts" displayServiceType="Glow In The Dark Shirts" />
+    <x-sections.page-intro displayServiceType="Glow In The Dark Shirts" />
 
     <x-ui.carousel-rotating-images
         :images="[

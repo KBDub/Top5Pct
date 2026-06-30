@@ -52,7 +52,7 @@
     />
     <x-ui.banner-medium-sunburst />
 
-    <x-sections.top5pct-same-day-service serviceType="window-signs" displayServiceType="Window Signs" />
+    <x-sections.page-intro displayServiceType="Window Signs" />
 
     <x-ui.carousel-rotating-images
         :images="[

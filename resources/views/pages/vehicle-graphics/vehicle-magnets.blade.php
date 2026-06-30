@@ -52,7 +52,7 @@
     />
     <x-ui.banner-medium-sunburst />
 
-    <x-sections.top5pct-same-day-service serviceType="vehicle-magnets" displayServiceType="Vehicle Magnets" />
+    <x-sections.page-intro displayServiceType="Vehicle Magnets" />
 
     <x-ui.carousel-rotating-images
         :images="[

@@ -52,7 +52,7 @@
     />
     <x-ui.banner-medium-sunburst />
 
-    <x-sections.top5pct-same-day-service serviceType="embroidery" displayServiceType="Embroidery" />
+    <x-sections.page-intro displayServiceType="Embroidery" />
 
     <x-ui.carousel-rotating-images
         :images="[

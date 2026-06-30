@@ -52,7 +52,7 @@
     />
     <x-ui.banner-medium-sunburst />
 
-    <x-sections.top5pct-same-day-service serviceType="floor-signs" displayServiceType="Floor Signs" />
+    <x-sections.page-intro displayServiceType="Floor Signs" />
 
     <x-ui.carousel-rotating-images
         :images="[

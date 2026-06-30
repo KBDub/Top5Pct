@@ -52,7 +52,7 @@
     />
     <x-ui.banner-medium-sunburst />
 
-    <x-sections.top5pct-same-day-service serviceType="posters" displayServiceType="Custom Posters" />
+    <x-sections.page-intro displayServiceType="Custom Posters" />
 
     <x-ui.carousel-rotating-images
         :images="[

@@ -52,7 +52,7 @@
     />
     <x-ui.banner-medium-sunburst />
 
-    <x-sections.top5pct-same-day-service serviceType="foil-shirts" displayServiceType="Foil Shirts" />
+    <x-sections.page-intro displayServiceType="Foil Shirts" />
 
     <x-ui.carousel-rotating-images
         :images="[

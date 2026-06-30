@@ -48,7 +48,7 @@
     />
     <x-ui.banner-medium-sunburst />
 
-    <x-sections.top5pct-same-day-service serviceType="corporate-wear-shirts" displayServiceType="Corporate Wear" />
+    <x-sections.page-intro displayServiceType="Corporate Wear" />
 
     <x-ui.carousel-rotating-images
         :images="[

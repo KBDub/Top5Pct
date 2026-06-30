@@ -53,7 +53,7 @@
     />
     <x-ui.banner-medium-sunburst />
 
-    <x-sections.top5pct-same-day-service serviceType="signs" displayServiceType="Custom Signs" />
+    <x-sections.page-intro displayServiceType="Custom Signs" />
 
     <x-ui.carousel-rotating-images
         :images="[

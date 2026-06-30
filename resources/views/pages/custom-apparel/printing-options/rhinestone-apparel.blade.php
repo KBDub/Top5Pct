@@ -52,7 +52,7 @@
     />
     <x-ui.banner-medium-sunburst />
 
-    <x-sections.top5pct-same-day-service serviceType="rhinestone-shirts" displayServiceType="Rhinestone Shirts" />
+    <x-sections.page-intro displayServiceType="Rhinestone Shirts" />
 
     <x-ui.carousel-rotating-images
         :images="[

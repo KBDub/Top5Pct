@@ -51,7 +51,7 @@
     />
     <x-ui.banner-medium-sunburst />
 
-    <x-sections.top5pct-same-day-service serviceType="promotional-items" displayServiceType="Custom Drink Coasters" />
+    <x-sections.page-intro displayServiceType="Custom Drink Coasters" />
 
     <x-ui.carousel-rotating-images
         :images="[
