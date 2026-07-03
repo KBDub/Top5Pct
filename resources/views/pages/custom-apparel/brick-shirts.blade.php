@@ -47,7 +47,7 @@
         primaryButtonHref="/contact"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/brick-shirts/top5pct-brick-vinyl-hoodies.jpg"
+        image="/images/brick-shirts/top5pct-brick-vinyl-hoodies-r5.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />
@@ -62,10 +62,10 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/brick-shirts/top5pct-brick-vinyl-custom-t-shirt.jpg',          'alt' => 'Custom brick vinyl t-shirt in Joliet Illinois'],
-            ['src' => '/images/brick-shirts/top5pct-customized-brick-vinyl-shirts.jpg',        'alt' => 'Customized brick vinyl shirts in Joliet Illinois'],
-            ['src' => '/images/brick-shirts/top5pct-brick-vinyl-custom-shirts-joliet.jpg',      'alt' => 'Custom brick vinyl shirts in Joliet, Shorewood, and Crest Hill Illinois'],
-            ['src' => '/images/brick-shirts/top5pct-brick-vinyl-shorewood.jpg',                 'alt' => 'Custom brick vinyl shirt printing in Shorewood Illinois'],
+            ['src' => '/images/brick-shirts/top5pct-brick-vinyl-custom-t-shirt-r5.jpg',          'alt' => 'Custom brick vinyl t-shirt in Joliet Illinois'],
+            ['src' => '/images/brick-shirts/top5pct-customized-brick-vinyl-shirts-r5.jpg',        'alt' => 'Customized brick vinyl shirts in Joliet Illinois'],
+            ['src' => '/images/brick-shirts/top5pct-brick-vinyl-custom-shirts-joliet-r5.jpg',      'alt' => 'Custom brick vinyl shirts in Joliet, Shorewood, and Crest Hill Illinois'],
+            ['src' => '/images/brick-shirts/top5pct-brick-vinyl-shorewood-r5.jpg',                 'alt' => 'Custom brick vinyl shirt printing in Shorewood Illinois'],
         ]"
         visible=2
     />
@@ -76,7 +76,7 @@
     />
 
     <x-sections.card-image-with-text
-        image="/images/brick-shirts/top5pct-brick-vinyl-jackets-joliet.jpg"
+        image="/images/brick-shirts/top5pct-brick-vinyl-jackets-joliet-r5.jpg"
         alt="Custom brick vinyl jackets and shirts with 3D raised texture in Joliet Illinois"
         title="Shirts That Stand Out, Literally"
     >
@@ -86,7 +86,7 @@
     </x-sections.card-image-with-text>
 
     <x-sections.card-image-with-text
-        image="/images/brick-shirts/top5pct-brick-vinyl-cresthill.jpg"
+        image="/images/brick-shirts/top5pct-brick-vinyl-cresthill-r5.jpg"
         alt="Custom brick vinyl shirts for brands in Joliet and Crest Hill Illinois"
         title="Bold Designs Made for This Technique"
         imagePosition="right"

@@ -47,7 +47,7 @@
         primaryButtonHref="#all-products"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/wall-signs/top5pct-wall-signs.jpg"
+        image="/images/wall-signs/top5pct-wall-signs-r5.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />
@@ -63,9 +63,9 @@
     <x-ui.carousel-rotating-images
         :images="[
             ['src' => '/images/wall-signs/top5pct-wall-signs-mishas-gaming-lounge.jpg', 'alt' => 'Custom wall signs and wall graphics for businesses in Joliet Illinois'],
-            ['src' => '/images/wall-signs/top5pct-wall-wraps.jpg',                      'alt' => 'Custom wall wraps for businesses in Joliet Illinois'],
-            ['src' => '/images/wall-signs/top5pct-wall-decals-bedroom.jpg',              'alt' => 'Office murals and lobby wall graphics in Joliet, Will and DuPage County Illinois'],
-            ['src' => '/images/wall-signs/top5pct-wall-sign-for-businesses.jpg',         'alt' => 'Wall decals and door signs for businesses in Joliet Illinois'],
+            ['src' => '/images/wall-signs/top5pct-wall-wraps-r5.jpg',                      'alt' => 'Custom wall wraps for businesses in Joliet Illinois'],
+            ['src' => '/images/wall-signs/top5pct-wall-decals-bedroom-r5.jpg',              'alt' => 'Office murals and lobby wall graphics in Joliet, Will and DuPage County Illinois'],
+            ['src' => '/images/wall-signs/top5pct-wall-sign-for-businesses-r5.jpg',         'alt' => 'Wall decals and door signs for businesses in Joliet Illinois'],
         ]"
         visible=2
     />
@@ -86,7 +86,7 @@
     </x-sections.card-image-with-text>
 
     <x-sections.card-image-with-text
-        image="/images/wall-signs/top5pct-wall-signs-for-businesses.jpg"
+        image="/images/wall-signs/top5pct-wall-signs-for-businesses-r5.jpg"
         alt="Office murals and lobby wall graphics installed in Joliet, Will and DuPage County Illinois"
         title="Office Murals and Lobby Graphics"
         imagePosition="right"
@@ -102,7 +102,7 @@
 
     <x-sections.card-detailed-info
         heading="How Wall Graphics Transform Your Business Environment Into a Brand Statement"
-        image1="/images/wall-signs/top5pct-wall-signs-plainfield.jpg"
+        image1="/images/wall-signs/top5pct-wall-signs-plainfield-r5.jpg"
         alt1="Custom wall signs and wall graphics for businesses in Plainfield Illinois"
     >
         <x-slot name="intro">

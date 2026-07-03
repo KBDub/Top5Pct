@@ -113,9 +113,9 @@
         </x-sections.card-2image-with-text>
 
         <x-sections.card-2image-with-text
-            image1="/images/standard-stickers-decals/top5pct-diecut-stickers.jpg"
+            image1="/images/standard-stickers-decals/top5pct-diecut-stickers-r5.jpg"
             alt1="Custom die cut stickers printed by Top 5 Percent in Joliet Illinois"
-            image2="/images/standard-stickers-decals/top5pct-stickers-morris.jpg"
+            image2="/images/standard-stickers-decals/top5pct-stickers-morris-r5.jpg"
             alt2="Custom stickers and decals printed in Morris Illinois"
             title="Die Cut Stickers for Any Group"
         >
@@ -161,7 +161,7 @@
         name="Chewy Orkwiszewski"
     />
     <x-ui.card-banner-slide-in
-        image="/images/standard-stickers-decals/top5pct-stickers-plainfield.jpg"
+        image="/images/standard-stickers-decals/top5pct-stickers-plainfield-r5.jpg"
         alt="Custom stickers and decals printed in Plainfield Illinois"
         title="Custom Stickers in Any Shape or Size"
         href="/contact"

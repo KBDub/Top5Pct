@@ -47,7 +47,7 @@
         primaryButtonHref="#all-products"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/can-koozies/top5pct-koozie-can-joliet.jpg"
+        image="/images/can-koozies/top5pct-koozie-can-joliet-r5.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />
@@ -62,10 +62,12 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/can-koozies/top5pct-can-koozies.jpg', 'alt' => 'Custom branded promotional products and event giveaways in Joliet Illinois'],
-            ['src' => '/images/can-koozies/top5pct-custom-koozies.jpg',                      'alt' => 'Custom promotional items and branded event merchandise in Joliet Illinois'],
-            ['src' => '/images/can-koozies/top5pct-custom-can-koozies.jpg',                  'alt' => 'Custom can koozies in Joliet Illinois'],
-            ['src' => '/images/can-koozies/top5pct-koozies-joliet.jpg',                     'alt' => 'Custom koozies in Joliet Illinois'],
+            ['src' => '/images/can-koozies/top5pct-can-koozies-r5.jpg', 'alt' => 'Custom branded promotional products and event giveaways in Joliet Illinois'],
+            ['src' => '/images/can-koozies/top5pct-custom-koozies-r5.jpg',                      'alt' => 'Custom promotional items and branded event merchandise in Joliet Illinois'],
+            ['src' => '/images/can-koozies/top5pct-custom-can-koozies-r5.jpg',                  'alt' => 'Custom can koozies in Joliet Illinois'],
+            ['src' => '/images/can-koozies/top5pct-koozies-joliet-r5.jpg',                  'alt' => 'Custom koozies in Joliet Illinois'],
+            ['src' => '/images/can-koozies/top5pct-koozies-custom-channahon.jpg',                'alt' => 'Custom koozies in Channahon Illinois'],
+            ['src' => '/images/can-koozies/top5pct-koozies-custom-romeoville.jpg',               'alt' => 'Custom koozies in Romeoville Illinois'],
         ]"
         visible=2
     />
@@ -76,7 +78,7 @@
     />
 
     <x-sections.card-image-with-text
-        image="/images/can-koozies/top5pct-personalized-koozies-joliet.jpg"
+        image="/images/can-koozies/top5pct-personalized-koozies-joliet-r5.jpg"
         alt="Custom personalized koozies in Joliet Illinois"
         title="The Perfect Event Giveaway"
     >
@@ -86,7 +88,7 @@
     </x-sections.card-image-with-text>
 
     <x-sections.card-image-with-text
-        image="/images/can-koozies/top5pct-koozies-channahon.jpg"
+        image="/images/can-koozies/top5pct-koozies-channahon-r5.jpg"
         alt="Custom can koozies in foam and neoprene for events in Joliet Illinois"
         title="Foam, Neoprene, and Custom Colors"
         imagePosition="right"
@@ -102,7 +104,7 @@
 
     <x-sections.card-detailed-info
         heading="Why Custom Can Koozies Are the Perfect Promotional Giveaway for Any Event"
-        image1="/images/can-koozies/top5pct-koozies-joliet.jpg"
+        image1="/images/can-koozies/top5pct-koozie-custom-naperville.jpg"
         alt1="Custom branded can koozies and drink holders for events in Joliet, Will and DuPage County Illinois"
     >
         <x-slot name="intro">
