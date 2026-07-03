@@ -3,6 +3,10 @@
  * R5 Image Review Generator
  * Generates docs/r5.image.review.md and docs/r5.image.review.csv
  * MNC: no application files modified.
+ *
+ * Fix (v2): Unplaced dup detection — if an unplaced file's byte size matches
+ * any placed file on the same page, it is flagged as a content-dup of that
+ * placed file, not a truly unique unplaced image.
  */
 
 $pagesRoot  = __DIR__ . '/../resources/views/pages';
@@ -170,13 +174,45 @@ function primaryDir(array $slots): string {
 }
 
 // ── Unplaced: images in primary dir not used on this page ─────────────────
-function getUnplaced(array $slots, string $primDir, string $imagesRoot): array {
+// v2: cross-check unplaced file sizes against placed file sizes.
+// If byte sizes match, the unplaced file is a content-dup of an already-placed
+// image (different filename, identical pixels). Flag it — do NOT treat it as
+// a unique available image.
+function getUnplaced(array $slots, string $primDir, string $imagesRoot, array $lookup): array {
     $dir = $imagesRoot . '/' . $primDir;
-    if (!is_dir($dir)) return ['total' => 0, 'unplaced' => 0, 'files' => []];
+    if (!is_dir($dir)) return ['total' => 0, 'unplaced' => 0, 'unique' => 0, 'files' => []];
+
     $all    = array_map('basename', glob($dir . '/*.jpg') ?: []);
     $placed = array_map(fn($p) => strtolower(basename($p)), array_values($slots));
-    $out    = array_filter($all, fn($f) => !in_array(strtolower($f), $placed));
-    return ['total' => count($all), 'unplaced' => count($out), 'files' => array_values($out)];
+    $unplacedNames = array_filter($all, fn($f) => !in_array(strtolower($f), $placed));
+
+    // Build size => placed-filename map for all slots on this page
+    // (slots can reference files from any dir — cross-sells included)
+    $placedSizeMap = [];
+    foreach (array_values($slots) as $imgPath) {
+        $fn     = basename($imgPath);
+        $imgDir = preg_match('#^/images/([^/]+)/#', $imgPath, $dm) ? $dm[1] : $primDir;
+        $key    = strtolower($imgDir . '/' . $fn);
+        $sz     = $lookup[$key]['size'] ?? 0;
+        if ($sz > 0) $placedSizeMap[$sz] = $fn;
+    }
+
+    $files       = [];
+    $uniqueCount = 0;
+    foreach (array_values($unplacedNames) as $f) {
+        $key   = strtolower($primDir . '/' . $f);
+        $sz    = $lookup[$key]['size'] ?? 0;
+        $dupOf = ($sz > 0 && isset($placedSizeMap[$sz])) ? $placedSizeMap[$sz] : null;
+        if ($dupOf === null) $uniqueCount++;
+        $files[] = ['file' => $f, 'dup_of' => $dupOf];
+    }
+
+    return [
+        'total'    => count($all),
+        'unplaced' => count($files),
+        'unique'   => $uniqueCount,
+        'files'    => $files,
+    ];
 }
 
 // ── Exclude list ───────────────────────────────────────────────────────────
@@ -210,12 +246,14 @@ $sum = [
     'cross_sell' => 0,
     'carousel_base' => 0, 'carousel_overage' => 0,
     'pages_all_r5' => 0, 'pages_zero_r5' => 0,
-    'total_unplaced' => 0,
+    'total_unplaced'        => 0,
+    'total_unplaced_unique' => 0,
+    'total_unplaced_dups'   => 0,
 ];
 
 // ── Markdown header ────────────────────────────────────────────────────────
 $md  = "# R5 Image Review\n\n";
-$md .= "**Generated:** Jul 3, 2026  |  Post-R5 placement audit\n\n";
+$md .= "**Generated:** Jul 3, 2026  |  Post-R5 placement audit  |  Generator v2 (dup-aware)\n\n";
 $md .= "**Goal:** Every active slot should hold an R4 or R5 image. Slots showing R1-R3 or Initial are candidates for the next refresh.\n\n";
 $md .= "**Round windows:**\n";
 $md .= "- **Initial** — before May 11, 2026 AND file under 400 KB\n";
@@ -229,11 +267,12 @@ $md .= "**New?** = Yes means the slot holds an R5 image.  ";
 $md .= "**Cross-sell** = image is from a different category dir than this page.  ";
 $md .= "**[dup]** = same-size intentional R5 duplicate (not a conflict).  ";
 $md .= "**[collision]** = same base name, different file size.  ";
-$md .= "**Unplaced** = files in the primary dir not referenced on this page, available for future carousel fill.\n\n";
+$md .= "**Unplaced** = files in the primary dir not referenced on this page.  ";
+$md .= "**content-dup** = unplaced file whose byte size matches a file already placed on this page (same image, different filename — do not add to page).\n\n";
 $md .= "Dates sourced from `public/image.dates.txt`.\n\n---\n\n";
 
 // ── CSV header ─────────────────────────────────────────────────────────────
-$csvLines = ["Page,File,URL,Primary Dir,Slot,Filename,Image Dir,Round,Date,New?,Cross-sell,Collision-Dup,Unplaced Count"];
+$csvLines = ["Page,File,URL,Primary Dir,Slot,Filename,Image Dir,Round,Date,New?,Cross-sell,Collision-Dup,Unplaced Total,Unplaced Unique"];
 
 // ── Per-page processing ────────────────────────────────────────────────────
 foreach ($pageFiles as $pagePath) {
@@ -246,19 +285,22 @@ foreach ($pageFiles as $pagePath) {
     if (empty($slots)) continue;
 
     $primDir  = primaryDir($slots);
-    $unplaced = getUnplaced($slots, $primDir, $imagesRoot);
+    $unplaced = getUnplaced($slots, $primDir, $imagesRoot, $fileLookup);
 
     $carouselCount = count(array_filter(array_keys($slots), fn($k) => strpos($k, 'carousel-') === 0));
     $pageCapacity  = count($slots);
     $pageR5        = 0;
     $sum['pages']++;
-    $sum['total_unplaced'] += $unplaced['unplaced'];
+    $sum['total_unplaced']        += $unplaced['unplaced'];
+    $sum['total_unplaced_unique'] += $unplaced['unique'];
+    $sum['total_unplaced_dups']   += ($unplaced['unplaced'] - $unplaced['unique']);
 
     $title = ucwords(str_replace(['-', '_'], ' ', $pageName));
     $md .= "## {$title}\n\n";
     $md .= "**File:** `{$relative}`  |  **URL:** `{$pageUrl}`  \n";
     $md .= "**Page capacity:** {$pageCapacity} slots";
-    $md .= "  |  **Dir total:** {$unplaced['total']}  |  **Unplaced:** {$unplaced['unplaced']}  \n";
+    $md .= "  |  **Dir total:** {$unplaced['total']}";
+    $md .= "  |  **Unplaced:** {$unplaced['unplaced']} ({$unplaced['unique']} unique, " . ($unplaced['unplaced'] - $unplaced['unique']) . " content-dups)  \n";
     $md .= "**Primary dir:** `public/images/{$primDir}/`  |  ";
     $md .= "**Carousel:** {$carouselCount} slot" . ($carouselCount !== 1 ? 's' : '');
     if ($carouselCount > 4) $md .= " (4 base + " . ($carouselCount - 4) . " overage)";
@@ -293,7 +335,8 @@ foreach ($pageFiles as $pagePath) {
         $md .= "| {$slotLbl} | `{$filename}` | {$dir} | {$round} | {$date} | {$isNew} | {$isXS} | {$collStr} |\n";
 
         $row = [$pageName, $relative, $pageUrl, $primDir, $slotLbl,
-                $filename, $dir, $round, $date, $isNew, $isXS, $collStr, $unplaced['unplaced']];
+                $filename, $dir, $round, $date, $isNew, $isXS, $collStr,
+                $unplaced['unplaced'], $unplaced['unique']];
         $esc = array_map(function($c) {
             $c = str_replace('"', '""', (string)$c);
             return (str_contains($c, ',') || str_contains($c, '"')) ? '"'.$c.'"' : $c;
@@ -301,12 +344,24 @@ foreach ($pageFiles as $pagePath) {
         $csvLines[] = implode(',', $esc);
     }
 
-    // Unplaced files
+    // Unplaced files — separated into unique vs content-dup
     if (!empty($unplaced['files'])) {
-        $md .= "\n**Unplaced in `{$primDir}/` ({$unplaced['unplaced']} files):**  \n";
-        foreach ($unplaced['files'] as $f) {
-            $fi  = getFileInfo($primDir, $f, $fileLookup);
-            $md .= "- `{$f}` — {$fi['round']}  ({$fi['date']})\n";
+        $uniqueFiles = array_filter($unplaced['files'], fn($r) => $r['dup_of'] === null);
+        $dupFiles    = array_filter($unplaced['files'], fn($r) => $r['dup_of'] !== null);
+
+        if (!empty($uniqueFiles)) {
+            $md .= "\n**Unplaced unique in `{$primDir}/` (" . count($uniqueFiles) . " files — available for carousel fill):**  \n";
+            foreach ($uniqueFiles as $r) {
+                $fi  = getFileInfo($primDir, $r['file'], $fileLookup);
+                $md .= "- `{$r['file']}` — {$fi['round']}  ({$fi['date']})\n";
+            }
+        }
+        if (!empty($dupFiles)) {
+            $md .= "\n**Unplaced content-dups in `{$primDir}/` (" . count($dupFiles) . " files — already shown via placed twin):**  \n";
+            foreach ($dupFiles as $r) {
+                $fi  = getFileInfo($primDir, $r['file'], $fileLookup);
+                $md .= "- `{$r['file']}` — {$fi['round']}  ({$fi['date']})  [content-dup of placed `{$r['dup_of']}`]\n";
+            }
         }
     }
 
@@ -336,7 +391,10 @@ $md .= "| Carousel overage slots (pos 5+) | {$sum['carousel_overage']} |\n";
 $md .= "| &nbsp; | &nbsp; |\n";
 $md .= "| Pages where ALL slots are R5 | {$sum['pages_all_r5']} |\n";
 $md .= "| Pages with ZERO R5 slots | {$sum['pages_zero_r5']} |\n";
+$md .= "| &nbsp; | &nbsp; |\n";
 $md .= "| Total unplaced files (all primary dirs) | {$sum['total_unplaced']} |\n";
+$md .= "| Unplaced — unique (truly available) | {$sum['total_unplaced_unique']} |\n";
+$md .= "| Unplaced — content-dups (already shown via placed twin) | {$sum['total_unplaced_dups']} |\n";
 
 // ── Write ──────────────────────────────────────────────────────────────────
 file_put_contents($docsRoot . '/r5.image.review.md', $md);
@@ -349,3 +407,4 @@ echo "Pages: {$sum['pages']}  Slots: {$sum['slots']}\n";
 echo "R5={$sum['R5']}  R4={$sum['R4']}  R3={$sum['R3']}  R2={$sum['R2']}  R1={$sum['R1']}  Initial={$sum['Initial']}  ?={$sum['?']}\n";
 echo "New(R5): {$sum['new_yes']}  Not new: {$sum['new_no']}  Cross-sell: {$sum['cross_sell']}\n";
 echo "All-R5 pages: {$sum['pages_all_r5']}  Zero-R5 pages: {$sum['pages_zero_r5']}\n";
+echo "Unplaced total: {$sum['total_unplaced']}  Unique: {$sum['total_unplaced_unique']}  Content-dups: {$sum['total_unplaced_dups']}\n";
