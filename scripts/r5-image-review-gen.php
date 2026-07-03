@@ -1,9 +1,8 @@
 <?php
 /**
- * R5 Image Review Generator — MNC
- * Scans all non-index product pages, extracts every image slot,
- * detects round, cross-sell, and collision files.
- * Writes docs/r5.image.review.md and docs/r5.image.review.csv
+ * R5 Image Review Generator
+ * Generates docs/r5.image.review.md and docs/r5.image.review.csv
+ * MNC: no application files modified.
  */
 
 $pagesRoot  = __DIR__ . '/../resources/views/pages';
@@ -11,110 +10,92 @@ $imagesRoot = __DIR__ . '/../public/images';
 $docsRoot   = __DIR__ . '/../docs';
 $datesFile  = __DIR__ . '/../public/image.dates.txt';
 
-// ── Parse image.dates.txt into filename => date string lookup ──────────────
-// Format: `./dirname:` header lines, then `-rwxr-xr-x ... Mon DD HH:MM filename`
+// ── Parse image.dates.txt — returns ['dir/filename' => [date, ts, size]] ──
 function parseDatesFile(string $path): array {
-    $lookup  = [];
-    $lines   = file($path, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
-    $curDir  = '';
-    $months  = ['Jan'=>'Jan','Feb'=>'Feb','Mar'=>'Mar','Apr'=>'Apr','May'=>'May',
-                 'Jun'=>'Jun','Jul'=>'Jul','Aug'=>'Aug','Sep'=>'Sep','Oct'=>'Oct',
-                 'Nov'=>'Nov','Dec'=>'Dec'];
+    $lookup = [];
+    $lines  = file($path, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+    $curDir = '';
 
     foreach ($lines as $line) {
-        // Directory header: ./dirname:
         if (preg_match('#^\./([^:]*):$#', $line, $m)) {
             $curDir = $m[1];
             continue;
         }
-        // File line: permissions links owner group size Mon DD HH:MM filename
-        if (preg_match('/^-\S+\s+\d+\s+\S+\s+\S+\s+\d+\s+(\w{3})\s+(\d+)\s+([\d:]+)\s+(.+)$/', $line, $m)) {
-            $mon      = $m[1];
-            $day      = (int)$m[2];
-            $timeOrYr = $m[3];
-            $filename = trim($m[4]);
-
-            // Determine year: if time (HH:MM) use 2026, if year use that year
-            if (strpos($timeOrYr, ':') !== false) {
-                $year = 2026;
-            } else {
-                $year = (int)$timeOrYr;
-            }
-
-            $dateStr = $mon . ' ' . $day . ', ' . $year;
-            $key     = ($curDir !== '' ? $curDir . '/' : '') . $filename;
-            $lookup[strtolower($key)] = $dateStr;
-        }
+        // -perms links owner group SIZE MON DAY TIME/YEAR filename
+        if (!preg_match('/^-\S+\s+\d+\s+\S+\s+\S+\s+(\d+)\s+(\w{3})\s+(\d+)\s+([\d:]+)\s+(.+)$/', $line, $m)) continue;
+        $size     = (int)$m[1];
+        $mon      = $m[2];
+        $day      = (int)$m[3];
+        $timeOrYr = $m[4];
+        $filename = trim($m[5]);
+        $year     = (strpos($timeOrYr, ':') !== false) ? 2026 : (int)$timeOrYr;
+        $dateStr  = $mon . ' ' . $day . ', ' . $year;
+        $ts       = (int)strtotime($mon . ' ' . $day . ' ' . $year);
+        $key      = strtolower(($curDir !== '' ? $curDir . '/' : '') . $filename);
+        $lookup[$key] = ['date' => $dateStr, 'ts' => $ts, 'size' => $size];
     }
     return $lookup;
 }
 
-$fileDates = parseDatesFile($datesFile);
+// ── Round detection: suffix wins; fall back to date + size ─────────────────
+// -r5 / -r4 / -r3 suffix = authoritative round (prepped ahead of placement).
+// Unsuffixed files: date + size determine the round.
+//   Initial = pre-May 11 file under 400 KB
+//   R1      = May 11-17, 2026 OR pre-May 11 file >= 400 KB
+//   R2      = May 18 - Jun 3, 2026
+//   R3      = Jun 4-24, 2026
+//   R4      = Jun 25, 2026
+//   R5      = Jun 26+, 2026
+function roundFromDateSize(int $ts, int $size): string {
+    $may18 = mktime(0, 0, 0, 5, 18, 2026);
+    $jun04 = mktime(0, 0, 0, 6,  4, 2026);
+    $jun25 = mktime(0, 0, 0, 6, 25, 2026);
+    $jun26 = mktime(0, 0, 0, 6, 26, 2026);
 
-// ── Non-product pages to skip ──────────────────────────────────────────────
-$exclude = [
-    'index.blade.php',              // all index/landing pages
-    'about.blade.php',
-    'cart.blade.php',
-    'checkout.blade.php',
-    'collection.blade.php',
-    'contact.blade.php',
-    'demo.blade.php',
-    'demo-premium.blade.php',
-    'home.blade.php',
-    'order-confirmation.blade.php',
-    'page-management.blade.php',
-    'portfolio.blade.php',
-    'privacy-policy.blade.php',
-    'product.blade.php',
-    'promotional-items.blade.php',  // category landing
-    'reviews.blade.php',
-    'service-areas.blade.php',
-    'terms-of-use.blade.php',
-    'top5pct-merchandise.blade.php',
-    'articles.blade.php',
-    'resources.blade.php',
-    'show.blade.php',
-    'modals.blade.php',
-];
-
-// ── Round detection — suffix only, real date comes from $fileDates lookup ──
-function detectRound(string $filename): string {
-    if (preg_match('/-r5\.jpg$/i', $filename)) return 'R5';
-    if (preg_match('/-r4\.jpg$/i', $filename)) return 'R4';
-    if (preg_match('/-r3\.jpg$/i', $filename)) return 'R3';
-    return '≤R2';
+    if ($ts < $may18) return ($size >= 400000) ? 'R1' : 'Initial';
+    if ($ts < $jun04) return 'R2';
+    if ($ts < $jun25) return 'R3';
+    if ($ts < $jun26) return 'R4';
+    return 'R5';
 }
 
-// ── Real file date from parsed dates lookup ────────────────────────────────
-// $dir is the image subdirectory name (e.g. "brick-shirts"), $filename is basename
-function fileDate(string $dir, string $filename, array $fileDates): string {
+// ── Lookup file info from parsed table ────────────────────────────────────
+function getFileInfo(string $dir, string $filename, array $lookup): array {
     $key = strtolower(($dir !== '' ? $dir . '/' : '') . $filename);
-    return $fileDates[$key] ?? '?';
+    if (!isset($lookup[$key])) return ['date' => '?', 'round' => '?', 'size' => 0];
+    $e = $lookup[$key];
+
+    // Suffix is authoritative — check it first
+    if (preg_match('/-r5\.jpg$/i', $filename)) $round = 'R5';
+    elseif (preg_match('/-r4\.jpg$/i', $filename)) $round = 'R4';
+    elseif (preg_match('/-r3\.jpg$/i', $filename)) $round = 'R3';
+    else $round = roundFromDateSize($e['ts'], $e['size']);
+
+    return ['date' => $e['date'], 'round' => $round, 'size' => $e['size']];
 }
 
-// ── Collision detection ────────────────────────────────────────────────────
-// Returns array of collision filenames that exist on disk
-function detectCollisions(string $imgDir, string $filename): array {
+// ── Collision / intentional-dup detection ─────────────────────────────────
+// Same size = intentional-dup [dup]; different size = true conflict [collision]
+function detectCollisions(string $imgDir, string $dirName, string $filename, array $lookup): string {
     $base = preg_replace('/-r[345]\.jpg$/i', '.jpg', $filename);
     $stem = preg_replace('/\.jpg$/i', '', $base);
-    $candidates = [
-        $stem . '.jpg',
-        $stem . '-r3.jpg',
-        $stem . '-r4.jpg',
-        $stem . '-r5.jpg',
-    ];
-    $collisions = [];
-    foreach ($candidates as $c) {
-        if (strtolower($c) !== strtolower($filename) && file_exists($imgDir . '/' . $c)) {
-            $collisions[] = $c;
-        }
+
+    $thisKey  = strtolower($dirName . '/' . $filename);
+    $thisSize = $lookup[$thisKey]['size'] ?? 0;
+    $results  = [];
+
+    foreach ([$stem.'.jpg', $stem.'-r3.jpg', $stem.'-r4.jpg', $stem.'-r5.jpg'] as $c) {
+        if (strtolower($c) === strtolower($filename)) continue;
+        if (!file_exists($imgDir . '/' . $c)) continue;
+        $otherSize = $lookup[strtolower($dirName . '/' . $c)]['size'] ?? 0;
+        $tag       = ($thisSize > 0 && $otherSize > 0 && $thisSize === $otherSize) ? '[dup]' : '[collision]';
+        $results[] = $c . ' ' . $tag;
     }
-    return $collisions;
+    return empty($results) ? 'none' : implode(', ', $results);
 }
 
-// ── Parse a blade file into slot => images map ─────────────────────────────
-function parsePage(string $content, string $primaryDir): array {
+// ── Parse blade file into ordered slot => image-path map ──────────────────
+function parsePage(string $content): array {
     $slots       = [];
     $lines       = explode("\n", $content);
     $component   = null;
@@ -123,270 +104,243 @@ function parsePage(string $content, string $primaryDir): array {
     $carouselIdx = 0;
 
     foreach ($lines as $line) {
+        if      (preg_match('/<x-(?:sections\.category-hero|sections\.hero-banner)\b/', $line)) { $component = 'banner'; }
+        elseif  (preg_match('/<x-ui\.carousel-rotating-images\b/', $line))                      { $component = 'carousel'; $carouselIdx = 0; }
+        elseif  (preg_match('/<x-sections\.card-image-with-text\b/', $line))                    { $cardIndex++; $component = 'card-' . $cardIndex; }
+        elseif  (preg_match('/<x-sections\.card-detailed-info\b/', $line))                      { $component = 'detailed-info'; }
+        elseif  (preg_match('/<x-sections\.card-2image-with-text\b/', $line))                   { $component = '2image'; }
+        elseif  (preg_match('/<x-ui\.card-banner-slide-in\b/', $line))                          { $slideIndex++; $component = ($slideIndex % 2 === 1) ? 'slide-L' : 'slide-R'; }
 
-        // ── Detect component openings ──────────────────────────────────────
-        if (preg_match('/<x-(?:sections\.category-hero|sections\.hero-banner)\b/', $line)) {
-            $component = 'banner';
-
-        } elseif (preg_match('/<x-ui\.carousel-rotating-images\b/', $line)) {
-            $component   = 'carousel';
-            $carouselIdx = 0;
-
-        } elseif (preg_match('/<x-sections\.card-image-with-text\b/', $line)) {
-            $cardIndex++;
-            $component = 'card-' . $cardIndex;
-
-        } elseif (preg_match('/<x-sections\.card-detailed-info\b/', $line)) {
-            $component = 'detailed-info';
-
-        } elseif (preg_match('/<x-sections\.card-2image-with-text\b/', $line)) {
-            $component = '2image';
-
-        } elseif (preg_match('/<x-ui\.card-banner-slide-in\b/', $line)) {
-            $slideIndex++;
-            $component = ($slideIndex % 2 === 1) ? 'slide-L' : 'slide-R';
-        }
-
-        // ── Detect component closings ──────────────────────────────────────
-        if (preg_match('/<\/x-sections\.card-image-with-text>/', $line) ||
-            preg_match('/<\/x-sections\.card-detailed-info>/', $line) ||
-            preg_match('/<\/x-sections\.card-2image-with-text>/', $line)) {
-            // component closed — keep $component set until next open
-        }
-
-        // ── Extract image paths ────────────────────────────────────────────
         if ($component === null) continue;
 
-        // Carousel: 'src' => '/images/dir/file.jpg'
-        if ($component === 'carousel') {
-            if (preg_match("#'src'\s*=>\s*'(/images/[^']+\.jpg)'#", $line, $m)) {
-                $carouselIdx++;
-                $slots['carousel-' . $carouselIdx] = $m[1];
-            }
+        if ($component === 'carousel' && preg_match("#'src'\s*=>\s*'(/images/[^']+\.jpg)'#", $line, $m)) {
+            $carouselIdx++;
+            $slots['carousel-' . $carouselIdx] = $m[1];
         }
-
-        // image="..." attribute
         if (preg_match('/\bimage="(\/images\/[^"]+\.jpg)"/', $line, $m)) {
-            if ($component === 'banner') {
-                $slots['banner'] = $m[1];
-            } elseif (strpos($component, 'card-') === 0) {
-                $slots[$component] = $m[1];
-            } elseif ($component === 'slide-L') {
-                $slots['slide-L'] = $m[1];
-            } elseif ($component === 'slide-R') {
-                $slots['slide-R'] = $m[1];
-            }
+            if      ($component === 'banner')                $slots['banner']   = $m[1];
+            elseif  (strpos($component, 'card-') === 0)     $slots[$component] = $m[1];
+            elseif  ($component === 'slide-L')               $slots['slide-L']  = $m[1];
+            elseif  ($component === 'slide-R')               $slots['slide-R']  = $m[1];
         }
-
-        // image1="..." and image2="..."
         if (preg_match('/\bimage1="(\/images\/[^"]+\.jpg)"/', $line, $m)) {
-            if ($component === 'detailed-info') {
-                $slots['detailed-info-1'] = $m[1];
-            } elseif ($component === '2image') {
-                $slots['2image-1'] = $m[1];
-            }
+            if      ($component === 'detailed-info') $slots['detailed-info-1'] = $m[1];
+            elseif  ($component === '2image')        $slots['2image-1']        = $m[1];
         }
         if (preg_match('/\bimage2="(\/images\/[^"]+\.jpg)"/', $line, $m)) {
-            if ($component === 'detailed-info') {
-                $slots['detailed-info-2'] = $m[1];
-            } elseif ($component === '2image') {
-                $slots['2image-2'] = $m[1];
-            }
+            if      ($component === 'detailed-info') $slots['detailed-info-2'] = $m[1];
+            elseif  ($component === '2image')        $slots['2image-2']        = $m[1];
         }
     }
-
     return $slots;
 }
 
-// ── Build label for each slot ──────────────────────────────────────────────
+// ── Slot label — carousel gets (base) or (overage) suffix ─────────────────
 function slotLabel(string $key): string {
     $map = [
-        'banner'         => 'Banner',
-        'detailed-info-1'=> 'Detailed-info 1',
-        'detailed-info-2'=> 'Detailed-info 2',
-        '2image-1'       => '2-image card 1',
-        '2image-2'       => '2-image card 2',
-        'slide-L'        => 'Slide-L',
-        'slide-R'        => 'Slide-R',
+        'banner'          => 'Banner',
+        'detailed-info-1' => 'Detailed-info 1',
+        'detailed-info-2' => 'Detailed-info 2',
+        '2image-1'        => '2-image 1',
+        '2image-2'        => '2-image 2',
+        'slide-L'         => 'Slide-L',
+        'slide-R'         => 'Slide-R',
     ];
     if (isset($map[$key])) return $map[$key];
-    if (preg_match('/^carousel-(\d+)$/', $key, $m)) return 'Carousel ' . $m[1];
-    if (preg_match('/^card-(\d+)$/', $key, $m))     return 'Card ' . $m[1];
+    if (preg_match('/^carousel-(\d+)$/', $key, $m)) {
+        $n = (int)$m[1];
+        return 'Carousel ' . $n . ($n <= 4 ? ' (base)' : ' (overage)');
+    }
+    if (preg_match('/^card-(\d+)$/', $key, $m)) return 'Card ' . $m[1];
     return ucfirst($key);
 }
 
-// ── Detect primary category dir from slot list ─────────────────────────────
+// ── Primary dir = banner dir, fallback = most frequent ────────────────────
 function primaryDir(array $slots): string {
-    $dirCount = [];
+    if (isset($slots['banner']) && preg_match('#^/images/([^/]+)/#', $slots['banner'], $m)) return $m[1];
+    $c = [];
     foreach ($slots as $path) {
-        if (preg_match('#^/images/([^/]+)/#', $path, $m)) {
-            $dirCount[$m[1]] = ($dirCount[$m[1]] ?? 0) + 1;
-        }
+        if (preg_match('#^/images/([^/]+)/#', $path, $m)) $c[$m[1]] = ($c[$m[1]] ?? 0) + 1;
     }
-    if (empty($dirCount)) return '';
-    if (isset($dirCount[array_key_first($slots)])) {
-        // Use banner dir if it exists
-    }
-    // Banner wins if present
-    if (isset($slots['banner']) && preg_match('#^/images/([^/]+)/#', $slots['banner'], $m)) {
-        return $m[1];
-    }
-    arsort($dirCount);
-    return array_key_first($dirCount);
+    if (empty($c)) return '';
+    arsort($c);
+    return array_key_first($c);
 }
 
-// ── Determine cross-sell status ────────────────────────────────────────────
-function isCrossSell(string $path, string $primaryDir): bool {
-    if (preg_match('#^/images/([^/]+)/#', $path, $m)) {
-        return $m[1] !== $primaryDir;
-    }
-    return false;
+// ── Unplaced: images in primary dir not used on this page ─────────────────
+function getUnplaced(array $slots, string $primDir, string $imagesRoot): array {
+    $dir = $imagesRoot . '/' . $primDir;
+    if (!is_dir($dir)) return ['total' => 0, 'unplaced' => 0, 'files' => []];
+    $all    = array_map('basename', glob($dir . '/*.jpg') ?: []);
+    $placed = array_map(fn($p) => strtolower(basename($p)), array_values($slots));
+    $out    = array_filter($all, fn($f) => !in_array(strtolower($f), $placed));
+    return ['total' => count($all), 'unplaced' => count($out), 'files' => array_values($out)];
 }
 
-// ── Count not-placed images ────────────────────────────────────────────────
-function countNotPlaced(array $slots, string $primaryDir, string $imagesRoot): array {
-    $dir = $imagesRoot . '/' . $primaryDir;
-    if (!is_dir($dir)) return ['total' => 0, 'placed' => 0, 'not_placed' => 0, 'not_placed_files' => []];
+// ── Exclude list ───────────────────────────────────────────────────────────
+$exclude = [
+    'index.blade.php', 'about.blade.php', 'cart.blade.php', 'checkout.blade.php',
+    'collection.blade.php', 'contact.blade.php', 'demo.blade.php', 'demo-premium.blade.php',
+    'home.blade.php', 'order-confirmation.blade.php', 'page-management.blade.php',
+    'portfolio.blade.php', 'privacy-policy.blade.php', 'product.blade.php',
+    'promotional-items.blade.php', 'reviews.blade.php', 'service-areas.blade.php',
+    'terms-of-use.blade.php', 'top5pct-merchandise.blade.php',
+    'articles.blade.php', 'resources.blade.php', 'show.blade.php', 'modals.blade.php',
+];
 
-    $allFiles   = glob($dir . '/*.jpg') ?: [];
-    $placedFiles = [];
-    foreach ($slots as $path) {
-        $placedFiles[] = strtolower(basename($path));
-    }
+// ── Boot ───────────────────────────────────────────────────────────────────
+$fileLookup = parseDatesFile($datesFile);
 
-    $notPlaced = [];
-    foreach ($allFiles as $f) {
-        if (!in_array(strtolower(basename($f)), $placedFiles)) {
-            $notPlaced[] = basename($f);
-        }
-    }
-
-    return [
-        'total'           => count($allFiles),
-        'placed'          => count($placedFiles) - count(array_filter($placedFiles, fn($f) => !in_array($f, array_map('strtolower', array_map('basename', $allFiles))))),
-        'not_placed'      => count($notPlaced),
-        'not_placed_files'=> $notPlaced,
-    ];
-}
-
-// ── Collect all blade files ────────────────────────────────────────────────
-$iterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($pagesRoot));
+$iter = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($pagesRoot));
 $pageFiles = [];
-foreach ($iterator as $file) {
+foreach ($iter as $file) {
     if (!$file->isFile() || $file->getExtension() !== 'php') continue;
-    $basename = $file->getFilename();
-    if (in_array($basename, $exclude)) continue;
+    if (in_array($file->getFilename(), $exclude)) continue;
     $pageFiles[] = $file->getPathname();
 }
 sort($pageFiles);
 
-// ── Process each page ──────────────────────────────────────────────────────
-$allRows = []; // for CSV
+// ── Summary counters ───────────────────────────────────────────────────────
+$sum = [
+    'pages' => 0, 'slots' => 0,
+    'Initial' => 0, 'R1' => 0, 'R2' => 0, 'R3' => 0, 'R4' => 0, 'R5' => 0, '?' => 0,
+    'new_yes' => 0, 'new_no' => 0,
+    'cross_sell' => 0,
+    'carousel_base' => 0, 'carousel_overage' => 0,
+    'pages_all_r5' => 0, 'pages_zero_r5' => 0,
+    'total_unplaced' => 0,
+];
 
+// ── Markdown header ────────────────────────────────────────────────────────
 $md  = "# R5 Image Review\n\n";
-$md .= "**Generated:** Jun 30, 2026 | **Status:** Post-R5 placement audit\n";
-$md .= "Category landing pages excluded. Collision file = alternate version of same base name.\n\n";
-$md .= "**Round key:**  ≤R2 = Mar-Jun 3 2026 (no round suffix) | R3 = Jun 4-9 | R4 = Jun 25 | R5 = Jun 30\n\n";
-$md .= "> **Note:** File dates are sourced from public/image.dates.txt (ls -lR long listing). ";
-$md .= "Round is detected from filename suffix (-r3/-r4/-r5); files with no suffix show as ≤R2 by name convention. ";
-$md .= "Cross-reference with docs/r5.mig.md for full round context.\n\n";
-$md .= "---\n\n";
+$md .= "**Generated:** Jul 3, 2026  |  Post-R5 placement audit\n\n";
+$md .= "**Goal:** Every active slot should hold an R4 or R5 image. Slots showing R1-R3 or Initial are candidates for the next refresh.\n\n";
+$md .= "**Round windows:**\n";
+$md .= "- **Initial** — Mar 16-17, 2026 (or pre-May 11 file under 400 KB)\n";
+$md .= "- **R1** — May 11-17, 2026 (or pre-May 11 file 400 KB or larger)\n";
+$md .= "- **R2** — May 18 - Jun 3, 2026\n";
+$md .= "- **R3** — Jun 4-24, 2026\n";
+$md .= "- **R4** — Jun 25, 2026\n";
+$md .= "- **R5** — Jun 26+, 2026\n\n";
+$md .= "**Column notes:**  ";
+$md .= "**New?** = Yes means the slot holds an R5 image.  ";
+$md .= "**Cross-sell** = image is from a different category dir than this page.  ";
+$md .= "**[dup]** = same-size intentional R5 duplicate (not a conflict).  ";
+$md .= "**[collision]** = same base name, different file size.  ";
+$md .= "**Unplaced** = files in the primary dir not referenced on this page, available for future carousel fill.\n\n";
+$md .= "Dates sourced from `public/image.dates.txt`.\n\n---\n\n";
 
-$csv  = "Page Name,Blade File,Page URL,Primary Dir,Slot,Filename,Image Dir,Round,Date,Cross-sell,Collision File(s),";
-$csv .= "Carousel Count,Not-placed Count,Not-placed Files\n";
+// ── CSV header ─────────────────────────────────────────────────────────────
+$csvLines = ["Page,File,URL,Primary Dir,Slot,Filename,Image Dir,Round,Date,New?,Cross-sell,Collision-Dup,Unplaced Count"];
 
+// ── Per-page processing ────────────────────────────────────────────────────
 foreach ($pageFiles as $pagePath) {
-    $relative  = str_replace($pagesRoot . '/', '', $pagePath);
-    $pageName  = str_replace('.blade.php', '', basename($pagePath));
-    $pageUrl   = '/' . str_replace(['resources/views/pages/', '.blade.php'], '', str_replace($pagesRoot . '/', '', $pagePath));
-    $content   = file_get_contents($pagePath);
+    $relative = str_replace($pagesRoot . '/', '', $pagePath);
+    $pageName = str_replace('.blade.php', '', basename($pagePath));
+    $pageUrl  = '/' . str_replace('.blade.php', '', $relative);
+    $content  = file_get_contents($pagePath);
 
-    $slots     = parsePage($content, '');
-    if (empty($slots)) continue; // skip pages with no images
+    $slots = parsePage($content);
+    if (empty($slots)) continue;
 
-    $primDir   = primaryDir($slots);
-    $npData    = countNotPlaced($slots, $primDir, $imagesRoot);
+    $primDir  = primaryDir($slots);
+    $unplaced = getUnplaced($slots, $primDir, $imagesRoot);
 
-    // Carousel count
-    $carouselCount = 0;
-    foreach ($slots as $key => $val) {
-        if (strpos($key, 'carousel-') === 0) $carouselCount++;
-    }
+    $carouselCount = count(array_filter(array_keys($slots), fn($k) => strpos($k, 'carousel-') === 0));
+    $pageR5        = 0;
+    $sum['pages']++;
+    $sum['total_unplaced'] += $unplaced['unplaced'];
 
-    $md .= "## " . ucwords(str_replace(['-', '_'], ' ', $pageName)) . "\n\n";
-    $md .= "**File:** `{$relative}`  \n";
-    $md .= "**URL:** `{$pageUrl}`  \n";
-    $md .= "**Primary dir:** `public/images/{$primDir}/` | **Dir total:** {$npData['total']} | **Not placed:** {$npData['not_placed']}  \n";
-    $md .= "**Carousel slots:** {$carouselCount}";
-    if ($carouselCount > 4) $md .= " (" . ($carouselCount - 4) . " over base-4)";
+    $title = ucwords(str_replace(['-', '_'], ' ', $pageName));
+    $md .= "## {$title}\n\n";
+    $md .= "**File:** `{$relative}`  |  **URL:** `{$pageUrl}`  \n";
+    $md .= "**Primary dir:** `public/images/{$primDir}/`  |  **Dir total:** {$unplaced['total']}  |  **Unplaced:** {$unplaced['unplaced']}  \n";
+    $md .= "**Carousel:** {$carouselCount} slot" . ($carouselCount !== 1 ? 's' : '');
+    if ($carouselCount > 4) $md .= "  (4 base + " . ($carouselCount - 4) . " overage)";
     $md .= "\n\n";
 
-    $md .= "| Slot | Filename | Dir | XS | Round | Date | Collision file(s) |\n";
-    $md .= "|---|---|---|---|---|---|---|\n";
+    $md .= "| Slot | Filename | Dir | Round | Date | New? | Cross-sell | Collision / Dup |\n";
+    $md .= "|---|---|---|---|---|---|---|---|\n";
 
     foreach ($slots as $slotKey => $imgPath) {
-        $filename    = basename($imgPath);
-        $dir         = preg_match('#^/images/([^/]+)/#', $imgPath, $dm) ? $dm[1] : '?';
-        $round       = detectRound($filename);
-        $date        = fileDate($dir, $filename, $fileDates);
-        $xs          = isCrossSell($imgPath, $primDir) ? 'Yes' : 'No';
-        $dirPath     = $imagesRoot . '/' . $dir;
-        $collisions  = file_exists($dirPath . '/' . $filename) ? detectCollisions($dirPath, $filename) : [];
-        $collStr     = empty($collisions) ? 'none' : implode(', ', $collisions);
-        $slotLbl     = slotLabel($slotKey);
+        $filename = basename($imgPath);
+        $dir      = preg_match('#^/images/([^/]+)/#', $imgPath, $dm) ? $dm[1] : '?';
+        $info     = getFileInfo($dir, $filename, $fileLookup);
+        $round    = $info['round'];
+        $date     = $info['date'];
+        $isNew    = ($round === 'R5') ? 'Yes' : 'No';
+        $isXS     = ($dir !== $primDir && $dir !== '?') ? 'Yes' : 'No';
+        $dirPath  = $imagesRoot . '/' . $dir;
+        $collStr  = file_exists($dirPath . '/' . $filename)
+                    ? detectCollisions($dirPath, $dir, $filename, $fileLookup)
+                    : 'file-missing';
+        $slotLbl  = slotLabel($slotKey);
 
-        $md .= "| {$slotLbl} | `{$filename}` | {$dir} | {$xs} | {$round} | {$date} | {$collStr} |\n";
+        // Summary
+        $sum['slots']++;
+        $sum[isset($sum[$round]) ? $round : '?']++;
+        if ($isNew === 'Yes') { $sum['new_yes']++; $pageR5++; } else $sum['new_no']++;
+        if ($isXS === 'Yes')  $sum['cross_sell']++;
+        if (preg_match('/^carousel-(\d+)$/', $slotKey, $cm)) {
+            ((int)$cm[1] <= 4) ? $sum['carousel_base']++ : $sum['carousel_overage']++;
+        }
 
-        // CSV row
-        $allRows[] = [
-            $pageName,
-            $relative,
-            $pageUrl,
-            $primDir,
-            $slotLbl,
-            $filename,
-            $dir,
-            $round,
-            $date,
-            $xs,
-            $collStr,
-            $carouselCount,
-            $npData['not_placed'],
-            implode(' | ', $npData['not_placed_files']),
-        ];
+        $md .= "| {$slotLbl} | `{$filename}` | {$dir} | {$round} | {$date} | {$isNew} | {$isXS} | {$collStr} |\n";
+
+        $row = [$pageName, $relative, $pageUrl, $primDir, $slotLbl,
+                $filename, $dir, $round, $date, $isNew, $isXS, $collStr, $unplaced['unplaced']];
+        $esc = array_map(function($c) {
+            $c = str_replace('"', '""', (string)$c);
+            return (str_contains($c, ',') || str_contains($c, '"')) ? '"'.$c.'"' : $c;
+        }, $row);
+        $csvLines[] = implode(',', $esc);
     }
 
-    if (!empty($npData['not_placed_files'])) {
-        $md .= "\n**Not-placed files in `{$primDir}/`:**  \n";
-        foreach ($npData['not_placed_files'] as $f) {
-            $rnd  = detectRound($f);
-            $fdt  = fileDate($primDir, $f, $fileDates);
-            $md  .= "- `{$f}` ({$rnd}, {$fdt})\n";
+    // Unplaced files
+    if (!empty($unplaced['files'])) {
+        $md .= "\n**Unplaced in `{$primDir}/` ({$unplaced['unplaced']} files):**  \n";
+        foreach ($unplaced['files'] as $f) {
+            $fi  = getFileInfo($primDir, $f, $fileLookup);
+            $md .= "- `{$f}` — {$fi['round']}  ({$fi['date']})\n";
         }
     }
+
+    if ($pageR5 === count($slots)) $sum['pages_all_r5']++;
+    if ($pageR5 === 0)             $sum['pages_zero_r5']++;
 
     $md .= "\n---\n\n";
 }
 
-// ── Write files ────────────────────────────────────────────────────────────
+// ── Net summary ────────────────────────────────────────────────────────────
+$md .= "## Net Summary\n\n";
+$md .= "| Metric | Count |\n|---|---|\n";
+$md .= "| Pages scanned | {$sum['pages']} |\n";
+$md .= "| Total image slots | {$sum['slots']} |\n";
+$md .= "| &nbsp; | &nbsp; |\n";
+$md .= "| Slots — R5 (New = Yes) | {$sum['R5']} |\n";
+$md .= "| Slots — R4 | {$sum['R4']} |\n";
+$md .= "| Slots — R3 | {$sum['R3']} |\n";
+$md .= "| Slots — R2 | {$sum['R2']} |\n";
+$md .= "| Slots — R1 | {$sum['R1']} |\n";
+$md .= "| Slots — Initial | {$sum['Initial']} |\n";
+$md .= "| Slots — Unknown date | {$sum['?']} |\n";
+$md .= "| &nbsp; | &nbsp; |\n";
+$md .= "| Cross-sell slots | {$sum['cross_sell']} |\n";
+$md .= "| Carousel base slots (pos 1-4) | {$sum['carousel_base']} |\n";
+$md .= "| Carousel overage slots (pos 5+) | {$sum['carousel_overage']} |\n";
+$md .= "| &nbsp; | &nbsp; |\n";
+$md .= "| Pages where ALL slots are R5 | {$sum['pages_all_r5']} |\n";
+$md .= "| Pages with ZERO R5 slots | {$sum['pages_zero_r5']} |\n";
+$md .= "| Total unplaced files (all primary dirs) | {$sum['total_unplaced']} |\n";
+
+// ── Write ──────────────────────────────────────────────────────────────────
 file_put_contents($docsRoot . '/r5.image.review.md', $md);
 echo "Wrote docs/r5.image.review.md\n";
 
-// Build CSV with proper quoting
-$csvLines = [rtrim($csv, "\n")];
-foreach ($allRows as $row) {
-    $escaped = array_map(function($cell) {
-        $cell = str_replace('"', '""', $cell);
-        if (str_contains($cell, ',') || str_contains($cell, '"') || str_contains($cell, "\n")) {
-            $cell = '"' . $cell . '"';
-        }
-        return $cell;
-    }, $row);
-    $csvLines[] = implode(',', $escaped);
-}
 file_put_contents($docsRoot . '/r5.image.review.csv', implode("\n", $csvLines) . "\n");
 echo "Wrote docs/r5.image.review.csv\n";
 
-$pageCount = count(array_unique(array_column($allRows, 0)));
-$rowCount  = count($allRows);
-echo "Total: {$pageCount} pages, {$rowCount} image slots documented.\n";
+echo "Pages: {$sum['pages']}  Slots: {$sum['slots']}\n";
+echo "R5={$sum['R5']}  R4={$sum['R4']}  R3={$sum['R3']}  R2={$sum['R2']}  R1={$sum['R1']}  Initial={$sum['Initial']}  ?={$sum['?']}\n";
+echo "New(R5): {$sum['new_yes']}  Not new: {$sum['new_no']}  Cross-sell: {$sum['cross_sell']}\n";
+echo "All-R5 pages: {$sum['pages_all_r5']}  Zero-R5 pages: {$sum['pages_zero_r5']}\n";
