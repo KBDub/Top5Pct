@@ -9,6 +9,47 @@
 $pagesRoot  = __DIR__ . '/../resources/views/pages';
 $imagesRoot = __DIR__ . '/../public/images';
 $docsRoot   = __DIR__ . '/../docs';
+$datesFile  = __DIR__ . '/../public/image.dates.txt';
+
+// ── Parse image.dates.txt into filename => date string lookup ──────────────
+// Format: `./dirname:` header lines, then `-rwxr-xr-x ... Mon DD HH:MM filename`
+function parseDatesFile(string $path): array {
+    $lookup  = [];
+    $lines   = file($path, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+    $curDir  = '';
+    $months  = ['Jan'=>'Jan','Feb'=>'Feb','Mar'=>'Mar','Apr'=>'Apr','May'=>'May',
+                 'Jun'=>'Jun','Jul'=>'Jul','Aug'=>'Aug','Sep'=>'Sep','Oct'=>'Oct',
+                 'Nov'=>'Nov','Dec'=>'Dec'];
+
+    foreach ($lines as $line) {
+        // Directory header: ./dirname:
+        if (preg_match('#^\./([^:]*):$#', $line, $m)) {
+            $curDir = $m[1];
+            continue;
+        }
+        // File line: permissions links owner group size Mon DD HH:MM filename
+        if (preg_match('/^-\S+\s+\d+\s+\S+\s+\S+\s+\d+\s+(\w{3})\s+(\d+)\s+([\d:]+)\s+(.+)$/', $line, $m)) {
+            $mon      = $m[1];
+            $day      = (int)$m[2];
+            $timeOrYr = $m[3];
+            $filename = trim($m[4]);
+
+            // Determine year: if time (HH:MM) use 2026, if year use that year
+            if (strpos($timeOrYr, ':') !== false) {
+                $year = 2026;
+            } else {
+                $year = (int)$timeOrYr;
+            }
+
+            $dateStr = $mon . ' ' . $day . ', ' . $year;
+            $key     = ($curDir !== '' ? $curDir . '/' : '') . $filename;
+            $lookup[strtolower($key)] = $dateStr;
+        }
+    }
+    return $lookup;
+}
+
+$fileDates = parseDatesFile($datesFile);
 
 // ── Non-product pages to skip ──────────────────────────────────────────────
 $exclude = [
@@ -37,12 +78,19 @@ $exclude = [
     'modals.blade.php',
 ];
 
-// ── Round detection ────────────────────────────────────────────────────────
-function detectRound(string $filename): array {
-    if (preg_match('/-r5\.jpg$/i', $filename)) return ['R5', 'Jun 30, 2026'];
-    if (preg_match('/-r4\.jpg$/i', $filename)) return ['R4', 'Jun 25, 2026'];
-    if (preg_match('/-r3\.jpg$/i', $filename)) return ['R3', 'Jun 4-9, 2026'];
-    return ['≤R2', '≤Jun 3, 2026'];
+// ── Round detection — suffix only, real date comes from $fileDates lookup ──
+function detectRound(string $filename): string {
+    if (preg_match('/-r5\.jpg$/i', $filename)) return 'R5';
+    if (preg_match('/-r4\.jpg$/i', $filename)) return 'R4';
+    if (preg_match('/-r3\.jpg$/i', $filename)) return 'R3';
+    return '≤R2';
+}
+
+// ── Real file date from parsed dates lookup ────────────────────────────────
+// $dir is the image subdirectory name (e.g. "brick-shirts"), $filename is basename
+function fileDate(string $dir, string $filename, array $fileDates): string {
+    $key = strtolower(($dir !== '' ? $dir . '/' : '') . $filename);
+    return $fileDates[$key] ?? '?';
 }
 
 // ── Collision detection ────────────────────────────────────────────────────
@@ -239,8 +287,9 @@ $md  = "# R5 Image Review\n\n";
 $md .= "**Generated:** Jun 30, 2026 | **Status:** Post-R5 placement audit\n";
 $md .= "Category landing pages excluded. Collision file = alternate version of same base name.\n\n";
 $md .= "**Round key:**  ≤R2 = Mar-Jun 3 2026 (no round suffix) | R3 = Jun 4-9 | R4 = Jun 25 | R5 = Jun 30\n\n";
-$md .= "> **Note:** R5 images placed without a naming conflict have no version suffix and therefore show as ≤R2 here. ";
-$md .= "Cross-reference with docs/r5.mig.md to confirm their actual round.\n\n";
+$md .= "> **Note:** File dates are sourced from public/image.dates.txt (ls -lR long listing). ";
+$md .= "Round is detected from filename suffix (-r3/-r4/-r5); files with no suffix show as ≤R2 by name convention. ";
+$md .= "Cross-reference with docs/r5.mig.md for full round context.\n\n";
 $md .= "---\n\n";
 
 $csv  = "Page Name,Blade File,Page URL,Primary Dir,Slot,Filename,Image Dir,Round,Date,Cross-sell,Collision File(s),";
@@ -278,7 +327,8 @@ foreach ($pageFiles as $pagePath) {
     foreach ($slots as $slotKey => $imgPath) {
         $filename    = basename($imgPath);
         $dir         = preg_match('#^/images/([^/]+)/#', $imgPath, $dm) ? $dm[1] : '?';
-        [$round, $date] = detectRound($filename);
+        $round       = detectRound($filename);
+        $date        = fileDate($dir, $filename, $fileDates);
         $xs          = isCrossSell($imgPath, $primDir) ? 'Yes' : 'No';
         $dirPath     = $imagesRoot . '/' . $dir;
         $collisions  = file_exists($dirPath . '/' . $filename) ? detectCollisions($dirPath, $filename) : [];
@@ -287,7 +337,7 @@ foreach ($pageFiles as $pagePath) {
 
         $md .= "| {$slotLbl} | `{$filename}` | {$dir} | {$xs} | {$round} | {$date} | {$collStr} |\n";
 
-        // CSV row — not-placed data only on first slot row for the page
+        // CSV row
         $allRows[] = [
             $pageName,
             $relative,
@@ -309,8 +359,9 @@ foreach ($pageFiles as $pagePath) {
     if (!empty($npData['not_placed_files'])) {
         $md .= "\n**Not-placed files in `{$primDir}/`:**  \n";
         foreach ($npData['not_placed_files'] as $f) {
-            [$rnd] = detectRound($f);
-            $md   .= "- `{$f}` ({$rnd})\n";
+            $rnd  = detectRound($f);
+            $fdt  = fileDate($primDir, $f, $fileDates);
+            $md  .= "- `{$f}` ({$rnd}, {$fdt})\n";
         }
     }
 
