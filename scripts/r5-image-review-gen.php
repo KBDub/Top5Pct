@@ -40,19 +40,21 @@ function parseDatesFile(string $path): array {
 // ── Round detection: suffix wins; fall back to date + size ─────────────────
 // -r5 / -r4 / -r3 suffix = authoritative round (prepped ahead of placement).
 // Unsuffixed files: date + size determine the round.
-//   Initial = pre-May 11 file under 400 KB
-//   R1      = May 11-17, 2026 OR pre-May 11 file >= 400 KB
+//   Initial = before May 11, 2026 AND file under 400 KB
+//   R1      = May 11-17, 2026 (any size)  OR  before May 11 file >= 400 KB
 //   R2      = May 18 - Jun 3, 2026
-//   R3      = Jun 4-24, 2026
+//   R3      = Jun 4 - Jun 24, 2026
 //   R4      = Jun 25, 2026
 //   R5      = Jun 26+, 2026
 function roundFromDateSize(int $ts, int $size): string {
+    $may11 = mktime(0, 0, 0, 5, 11, 2026);
     $may18 = mktime(0, 0, 0, 5, 18, 2026);
     $jun04 = mktime(0, 0, 0, 6,  4, 2026);
     $jun25 = mktime(0, 0, 0, 6, 25, 2026);
     $jun26 = mktime(0, 0, 0, 6, 26, 2026);
 
-    if ($ts < $may18) return ($size >= 400000) ? 'R1' : 'Initial';
+    if ($ts < $may11) return ($size >= 400000) ? 'R1' : 'Initial';
+    if ($ts < $may18) return 'R1';   // May 11-17 = R1 regardless of size
     if ($ts < $jun04) return 'R2';
     if ($ts < $jun25) return 'R3';
     if ($ts < $jun26) return 'R4';
@@ -216,8 +218,8 @@ $md  = "# R5 Image Review\n\n";
 $md .= "**Generated:** Jul 3, 2026  |  Post-R5 placement audit\n\n";
 $md .= "**Goal:** Every active slot should hold an R4 or R5 image. Slots showing R1-R3 or Initial are candidates for the next refresh.\n\n";
 $md .= "**Round windows:**\n";
-$md .= "- **Initial** — Mar 16-17, 2026 (or pre-May 11 file under 400 KB)\n";
-$md .= "- **R1** — May 11-17, 2026 (or pre-May 11 file 400 KB or larger)\n";
+$md .= "- **Initial** — before May 11, 2026 AND file under 400 KB\n";
+$md .= "- **R1** — May 11-17, 2026 any size, OR before May 11 file 400 KB or larger\n";
 $md .= "- **R2** — May 18 - Jun 3, 2026\n";
 $md .= "- **R3** — Jun 4-24, 2026\n";
 $md .= "- **R4** — Jun 25, 2026\n";
@@ -247,6 +249,7 @@ foreach ($pageFiles as $pagePath) {
     $unplaced = getUnplaced($slots, $primDir, $imagesRoot);
 
     $carouselCount = count(array_filter(array_keys($slots), fn($k) => strpos($k, 'carousel-') === 0));
+    $pageCapacity  = count($slots);
     $pageR5        = 0;
     $sum['pages']++;
     $sum['total_unplaced'] += $unplaced['unplaced'];
@@ -254,9 +257,11 @@ foreach ($pageFiles as $pagePath) {
     $title = ucwords(str_replace(['-', '_'], ' ', $pageName));
     $md .= "## {$title}\n\n";
     $md .= "**File:** `{$relative}`  |  **URL:** `{$pageUrl}`  \n";
-    $md .= "**Primary dir:** `public/images/{$primDir}/`  |  **Dir total:** {$unplaced['total']}  |  **Unplaced:** {$unplaced['unplaced']}  \n";
+    $md .= "**Page capacity:** {$pageCapacity} slots";
+    $md .= "  |  **Dir total:** {$unplaced['total']}  |  **Unplaced:** {$unplaced['unplaced']}  \n";
+    $md .= "**Primary dir:** `public/images/{$primDir}/`  |  ";
     $md .= "**Carousel:** {$carouselCount} slot" . ($carouselCount !== 1 ? 's' : '');
-    if ($carouselCount > 4) $md .= "  (4 base + " . ($carouselCount - 4) . " overage)";
+    if ($carouselCount > 4) $md .= " (4 base + " . ($carouselCount - 4) . " overage)";
     $md .= "\n\n";
 
     $md .= "| Slot | Filename | Dir | Round | Date | New? | Cross-sell | Collision / Dup |\n";
