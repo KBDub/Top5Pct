@@ -47,6 +47,7 @@
         primaryButtonHref="#all-products"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
+        image="/images/mugs/top5pct-custom-coffee-mugs-in-joliet.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />

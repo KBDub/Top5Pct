@@ -47,6 +47,7 @@
         primaryButtonHref="#all-products"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
+        image="/images/sublimation/top5pct-custom-sublimated-towels.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />

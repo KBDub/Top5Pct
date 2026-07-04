@@ -47,6 +47,7 @@
         primaryButtonHref="#all-products"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
+        image="/images/screen-printing/top5pct-screenprinting-joliet.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />
