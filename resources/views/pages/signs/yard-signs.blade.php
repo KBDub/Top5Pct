@@ -67,7 +67,7 @@
             ['src' => '/images/yard-signs/top5pct-yard-signs-plainfield.jpg',   'alt' => 'Custom yard signs printed for businesses and events in Plainfield Illinois'],
             ['src' => '/images/yard-signs/top5pct-yard-signs-rockdale.jpg',     'alt' => 'Custom yard signs and lawn signs printed in Rockdale Illinois'],
             ['src' => '/images/yard-signs/top5pct-yard-signs-shorewood.jpg',    'alt' => 'Yard signs and campaign signs printed for Shorewood Illinois businesses'],
-            ['src' => '/images/yard-signs/top5pct-yard-signs-joliet-illinois.jpg', 'alt' => 'Custom yard signs in Joliet Illinois'],
+            ['src' => '/images/yard-signs/top5pct-custom-yard-signs-joliet.jpg', 'alt' => 'Custom yard signs printed in Joliet Illinois'],
             ['src' => '/images/yard-signs/top5pct-yard-signs-near-me.jpg',      'alt' => 'Yard signs near me in Joliet, Shorewood, and Plainfield Illinois'],
         ]"
         visible=2
@@ -118,7 +118,7 @@
 
             <x-sections.card-detailed-info
                 heading="How to Effectively Use Yard Signs to Promote Your Business"
-                image1="/images/yard-signs/top5pct-yard-signs-joliet-illinois.jpg"
+                image1="/images/yard-signs/top5pct-yard-signs-shorewood.jpg"
                 alt1="Custom yard signs printed for businesses and real estate agents in Joliet Illinois"
             >
                 <x-slot name="intro">
