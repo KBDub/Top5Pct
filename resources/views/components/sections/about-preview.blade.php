@@ -48,7 +48,7 @@
                 </div>
                 <a href="/signs/business-signs/banners" class="block overflow-hidden shadow-lg group">
                     <img
-                        src="/images/custom-shirts/top5pct-custom-t-shirts-main.jpg"
+                        src="/images/custom-shirts/top5pct-custom-shirt-chameleon.jpg"
                         alt="Custom t-shirts and apparel printed in Joliet, Illinois"
                         class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300"
                         loading="lazy"
