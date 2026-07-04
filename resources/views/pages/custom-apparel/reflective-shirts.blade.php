@@ -106,8 +106,8 @@
 
     <x-sections.card-detailed-info
         heading="Why Reflective Branded Apparel Is the Smart Investment for Businesses With Outdoor Workers"
-        image1="/images/reflective-shirts/top5pct-custom-reflective-shirts-hoodies-caps-joliet.jpg"
-        alt1="Custom reflective shirts hoodies and caps for safety and events in Joliet Illinois"
+        image1="/images/reflective-shirts/top5pct-reflective-apparel-joliet.jpg"
+        alt1="Custom reflective apparel and safety shirts for businesses in Joliet Illinois"
     >
         <x-slot name="intro">
             <p class="mb-4">Businesses that operate in outdoor environments, construction, landscaping, utility services, road crews, event management, and similar industries, face a genuine workplace safety requirement to keep their workers visible in and around vehicle traffic and low-light conditions. The standard solution is high-visibility safety vests worn over street clothes, but custom reflective branded apparel offers a superior alternative that combines safety compliance with professional brand presentation. When your crew arrives at a job site in matching reflective branded shirts rather than anonymous safety vests, the impression on clients and the public is immediately more professional.</p>
