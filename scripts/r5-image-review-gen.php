@@ -224,10 +224,24 @@ $exclude = [
     'promotional-items.blade.php', 'reviews.blade.php', 'service-areas.blade.php',
     'terms-of-use.blade.php', 'top5pct-merchandise.blade.php',
     'articles.blade.php', 'resources.blade.php', 'show.blade.php', 'modals.blade.php',
+    'glitter-shirts.blade.php',
 ];
 
 // ── Boot ───────────────────────────────────────────────────────────────────
 $fileLookup = parseDatesFile($datesFile);
+
+// ── Parse out.200k.txt — set of basenames that are under 200 KB ────────────
+// Files under 200 KB are old/low-quality images. If they appear placed on a
+// page with a round of R1/R2/R3 (date-based), they are mislabeled — their
+// timestamp was updated during copying but the image itself is old.
+$smallFiles = [];
+if (file_exists(__DIR__ . '/../public/images/out.200k.txt')) {
+    foreach (file(__DIR__ . '/../public/images/out.200k.txt', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES) as $line) {
+        if (preg_match('/\s+(\S+\.(?:jpg|jpeg|png|gif|avif))$/i', $line, $m)) {
+            $smallFiles[strtolower(basename($m[1]))] = true;
+        }
+    }
+}
 
 $iter = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($pagesRoot));
 $pageFiles = [];
@@ -306,8 +320,8 @@ foreach ($pageFiles as $pagePath) {
     if ($carouselCount > 4) $md .= " (4 base + " . ($carouselCount - 4) . " overage)";
     $md .= "\n\n";
 
-    $md .= "| Slot | Filename | Dir | Round | Date | New? | Cross-sell | Collision / Dup |\n";
-    $md .= "|---|---|---|---|---|---|---|---|\n";
+    $md .= "| Slot | Filename | Dir | Round | Date | New? | Small? | Cross-sell | Collision / Dup |\n";
+    $md .= "|---|---|---|---|---|---|---|---|---|\n";
 
     foreach ($slots as $slotKey => $imgPath) {
         $filename = basename($imgPath);
@@ -316,6 +330,7 @@ foreach ($pageFiles as $pagePath) {
         $round    = $info['round'];
         $date     = $info['date'];
         $isNew    = ($round === 'R5') ? 'Yes' : 'No';
+        $isSmall  = isset($smallFiles[strtolower($filename)]) ? '⚠ Yes' : 'No';
         $isXS     = ($dir !== $primDir && $dir !== '?') ? 'Yes' : 'No';
         $dirPath  = $imagesRoot . '/' . $dir;
         $collStr  = file_exists($dirPath . '/' . $filename)
@@ -332,7 +347,7 @@ foreach ($pageFiles as $pagePath) {
             ((int)$cm[1] <= 4) ? $sum['carousel_base']++ : $sum['carousel_overage']++;
         }
 
-        $md .= "| {$slotLbl} | `{$filename}` | {$dir} | {$round} | {$date} | {$isNew} | {$isXS} | {$collStr} |\n";
+        $md .= "| {$slotLbl} | `{$filename}` | {$dir} | {$round} | {$date} | {$isNew} | {$isSmall} | {$isXS} | {$collStr} |\n";
 
         $row = [$pageName, $relative, $pageUrl, $primDir, $slotLbl,
                 $filename, $dir, $round, $date, $isNew, $isXS, $collStr,
@@ -352,15 +367,17 @@ foreach ($pageFiles as $pagePath) {
         if (!empty($uniqueFiles)) {
             $md .= "\n**Unplaced unique in `{$primDir}/` (" . count($uniqueFiles) . " files — available for carousel fill):**  \n";
             foreach ($uniqueFiles as $r) {
-                $fi  = getFileInfo($primDir, $r['file'], $fileLookup);
-                $md .= "- `{$r['file']}` — {$fi['round']}  ({$fi['date']})\n";
+                $fi    = getFileInfo($primDir, $r['file'], $fileLookup);
+                $small = isset($smallFiles[strtolower($r['file'])]) ? '  ⚠ small/old (<200k)' : '';
+                $md .= "- `{$r['file']}` — {$fi['round']}  ({$fi['date']}){$small}\n";
             }
         }
         if (!empty($dupFiles)) {
             $md .= "\n**Unplaced content-dups in `{$primDir}/` (" . count($dupFiles) . " files — already shown via placed twin):**  \n";
             foreach ($dupFiles as $r) {
-                $fi  = getFileInfo($primDir, $r['file'], $fileLookup);
-                $md .= "- `{$r['file']}` — {$fi['round']}  ({$fi['date']})  [content-dup of placed `{$r['dup_of']}`]\n";
+                $fi    = getFileInfo($primDir, $r['file'], $fileLookup);
+                $small = isset($smallFiles[strtolower($r['file'])]) ? '  ⚠ small/old (<200k)' : '';
+                $md .= "- `{$r['file']}` — {$fi['round']}  ({$fi['date']})  [content-dup of placed `{$r['dup_of']}`]{$small}\n";
             }
         }
     }
