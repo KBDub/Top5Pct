@@ -47,7 +47,7 @@
         primaryButtonHref="#all-products"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/sidewalk-signs/top5pct-a-frame-sidewalk-signs-r5.jpg"
+        image="/images/sidewalk-signs/top5pct-a-frame-sidewalk-signs.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />
@@ -62,10 +62,10 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/sidewalk-signs/top5pct-sidewalk-signs-plainfield-r5.jpg',                          'alt' => 'Custom a-frame sidewalk signs printed for businesses in Plainfield Illinois'],
-            ['src' => '/images/sidewalk-signs/top5pct-custom-a-frame-sidewalk-signs-joliet-r5.jpg',               'alt' => 'Custom a-frame sidewalk signs in Joliet Illinois'],
-            ['src' => '/images/sidewalk-signs/top5pct-sidewalk-sign-r5.jpg',                                      'alt' => 'Custom sidewalk sign printed by Top 5 Percent in Joliet Illinois'],
-            ['src' => '/images/sidewalk-signs/top5pct-sidewalk-signs-joliet-r5.jpg',                          'alt' => 'Custom sidewalk signs for businesses in Joliet Illinois'],
+            ['src' => '/images/sidewalk-signs/top5pct-sidewalk-signs-plainfield.jpg',                          'alt' => 'Custom a-frame sidewalk signs printed for businesses in Plainfield Illinois'],
+            ['src' => '/images/sidewalk-signs/top5pct-custom-a-frame-sidewalk-signs-joliet.jpg',               'alt' => 'Custom a-frame sidewalk signs in Joliet Illinois'],
+            ['src' => '/images/sidewalk-signs/top5pct-sidewalk-sign.jpg',                                      'alt' => 'Custom sidewalk sign printed by Top 5 Percent in Joliet Illinois'],
+            ['src' => '/images/sidewalk-signs/top5pct-sidewalk-signs-joliet.jpg',                          'alt' => 'Custom sidewalk signs for businesses in Joliet Illinois'],
             ['src' => '/images/sidewalk-signs/top5pct-sidewalk-signs-shorewood.jpg',                              'alt' => 'Custom a-frame sidewalk signs for businesses in Shorewood Illinois'],
         ]"
         visible=2
@@ -77,7 +77,7 @@
     />
 
     <x-sections.card-image-with-text
-        image="/images/sidewalk-signs/top5pct-sidewalk-sign-a-frame-cresthill-r5.jpg"
+        image="/images/sidewalk-signs/top5pct-sidewalk-sign-a-frame-cresthill.jpg"
         alt="Custom a-frame sidewalk sign for a business in Crest Hill and Joliet Illinois"
         title="Keep Your Parking Lot Organized"
     >
@@ -87,7 +87,7 @@
     </x-sections.card-image-with-text>
 
     <x-sections.card-image-with-text
-        image="/images/sidewalk-signs/top5pct-sidewalk-signage-r5.jpg"
+        image="/images/sidewalk-signs/top5pct-sidewalk-signage.jpg"
         alt="Custom sidewalk signage for businesses in Joliet Illinois"
         title="Custom Designs to Fit Your Property"
         imagePosition="right"
@@ -103,7 +103,7 @@
 
     <x-sections.card-detailed-info
         heading="Why Custom Parking Signs Are Worth the Investment for Your Property"
-        image1="/images/sidewalk-signs/top5pct-a-frame-sign-r5.jpg"
+        image1="/images/sidewalk-signs/top5pct-a-frame-sign.jpg"
         alt1="Custom a-frame sign for businesses in Joliet Illinois"
     >
         <x-slot name="intro">

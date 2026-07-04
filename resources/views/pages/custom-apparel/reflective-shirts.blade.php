@@ -47,7 +47,7 @@
         primaryButtonHref="/contact"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/reflective-shirts/top5pct-reflective-shirts-gold-r5.jpg"
+        image="/images/reflective-shirts/top5pct-reflective-shirts-gold.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />
@@ -62,12 +62,12 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/reflective-shirts/top5pct-custom-reflective-hoodies-r5.jpg',       'alt' => 'Custom reflective hoodies for safety in Joliet Illinois'],
-            ['src' => '/images/reflective-shirts/top5pct-reflective-shirts-r5.jpg',               'alt' => 'Custom reflective shirts in Joliet Illinois'],
-            ['src' => '/images/reflective-shirts/top5pct-reflective-shirts-shorewood-r5.jpg',     'alt' => 'Custom reflective shirts in Shorewood Illinois'],
-            ['src' => '/images/reflective-shirts/top5pct-reflective-vinyl-shirts-plainfield-r5.jpg', 'alt' => 'Custom reflective vinyl shirts in Plainfield Illinois'],
-            ['src' => '/images/reflective-shirts/top5pct-reflective-hoodies-joliet-r5.jpg',          'alt' => 'Custom reflective hoodies printed in Joliet Illinois'],
-            ['src' => '/images/reflective-shirts/top5pct-reflective-safety-vests-joliet-r5.jpg',  'alt' => 'Custom reflective safety vests printed in Joliet Illinois'],
+            ['src' => '/images/reflective-shirts/top5pct-custom-reflective-hoodies.jpg',       'alt' => 'Custom reflective hoodies for safety in Joliet Illinois'],
+            ['src' => '/images/reflective-shirts/top5pct-reflective-shirts.jpg',               'alt' => 'Custom reflective shirts in Joliet Illinois'],
+            ['src' => '/images/reflective-shirts/top5pct-reflective-shirts-shorewood.jpg',     'alt' => 'Custom reflective shirts in Shorewood Illinois'],
+            ['src' => '/images/reflective-shirts/top5pct-reflective-vinyl-shirts-plainfield.jpg', 'alt' => 'Custom reflective vinyl shirts in Plainfield Illinois'],
+            ['src' => '/images/reflective-shirts/top5pct-reflective-hoodies-joliet.jpg',          'alt' => 'Custom reflective hoodies printed in Joliet Illinois'],
+            ['src' => '/images/reflective-shirts/top5pct-reflective-safety-vests-joliet.jpg',  'alt' => 'Custom reflective safety vests printed in Joliet Illinois'],
             ['src' => '/images/reflective-shirts/top5pct-reflective-shirts-customized-joliet.jpg',    'alt' => 'Custom reflective shirts printed in Joliet Illinois'],
         ]"
         visible=2
@@ -79,7 +79,7 @@
     />
 
     <x-sections.card-image-with-text
-        image="/images/reflective-shirts/top5pct-reflective-apparel-joliet-r5.jpg"
+        image="/images/reflective-shirts/top5pct-reflective-apparel-joliet.jpg"
         alt="Custom reflective apparel printed in Joliet Illinois"
         title="Visibility That Could Save a Life"
     >
@@ -89,7 +89,7 @@
     </x-sections.card-image-with-text>
 
     <x-sections.card-image-with-text
-        image="/images/reflective-shirts/top5pct-reflective-custom-shirts-joliet-r5.jpg"
+        image="/images/reflective-shirts/top5pct-reflective-custom-shirts-joliet.jpg"
         alt="Custom reflective shirts for sports teams, runners, and night events in Joliet Illinois"
         title="Style Meets Safety for Athletes and Events"
         imagePosition="right"
