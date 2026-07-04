@@ -102,8 +102,8 @@
         <x-sections.card-2image-with-text
             image1="/images/corporate-wear/top5pct-safety-work-gear-joliet.jpg"
             alt1="Custom corporate t shirts printed for businesses in Joliet and Shorewood Illinois"
-            image2="/images/corporate-wear/top5pct-banner-corporate-shirts-uniforms-joliet-shorewood.jpg"
-            alt2="Custom corporate shirts and uniforms banner in Joliet and Shorewood Illinois"
+            image2="/images/corporate-wear/top5pct-corporate-custom-polo-shirts-joliet.jpg"
+            alt2="Custom corporate polo shirts for businesses in Joliet and Shorewood Illinois"
             title="Corporate Wear Builds Your Brand"
         >
             <p class="mb-4">We know how important corporate apparel is for your business, and our full <a href="/custom-apparel" class="link-notification">custom apparel</a> shop in Joliet is here to outfit your team from head to toe. When your employees wear branded clothing, they become walking advertisements for your company. Customers can spot your team from across the room, and pairing your uniforms with branded <a href="/promotional-items" class="link-notification">promotional items</a> like mugs and tote bags amplifies that brand presence even further.</p>
@@ -130,8 +130,8 @@
                 heading="The Importance of Corporate Wear for Your Business"
                 image1="/images/corporate-wear/top5pct-custom-corporate-t-shirts-joliet-shorewood.jpg"
                 alt1="Custom corporate t-shirts printed for businesses in Joliet and Shorewood Illinois"
-                image2="/images/corporate-wear/top5pct-custom-hoodie-pullover-joliet-shorewood.jpg"
-                alt2="Custom branded hoodies and pullovers for businesses in Joliet and Shorewood Illinois"
+                image2="/images/corporate-wear/top5pct-corporate-custom-work-shirts-joliet.jpg"
+                alt2="Custom corporate work shirts for businesses in Joliet and Shorewood Illinois"
             >
                 <x-slot name="intro">
                     <p class="mb-4">The way your team looks at work says a lot about your business. Custom <a href="/custom-apparel/group-wear/corporate-wear-shirts" class="link-notification">corporate wear</a> is one of the most effective tools a business owner in Joliet, Shorewood, Plainfield, or anywhere in the Chicagoland area can use to build a strong and professional brand image. We have been helping local businesses design and produce corporate apparel since 2017 and we have seen firsthand how the right clothing can change the way customers perceive a company. Here is why corporate wear matters more than most business owners realize, and how we help Will and DuPage County businesses make a stronger impression every single day.</p>

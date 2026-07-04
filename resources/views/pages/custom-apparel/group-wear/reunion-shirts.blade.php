@@ -142,10 +142,10 @@
 
             <x-sections.card-detailed-info
                 heading="How Reunion T-Shirts Make Your Reunion Special"
-                image1="/images/reunion-shirts/top5pct-article-family-reunion-pic1.jpg"
-                alt1="Custom family reunion shirts printed in Joliet, Will and DuPage County Illinois"
-                image2="/images/reunion-shirts/top5pct-article-family-reunion-pic2.jpg"
-                alt2="Group reunion shirts for families and classes in the Chicagoland area"
+                image1="/images/reunion-shirts/top5pct-family-reunion-shirts-joliet-crest-hill.jpg"
+                alt1="Custom family reunion shirts printed in Joliet and Crest Hill Illinois"
+                image2="/images/reunion-shirts/top5pct-family-reunion-shirts-joliet-romeoville.jpg"
+                alt2="Group reunion shirts for families and classes in Joliet and Romeoville Illinois"
             >
                 <x-slot name="intro">
                     <p class="mb-4">Reunion shirts are one of the best ways to bring a group together and make a special occasion feel truly unforgettable. Whether you are planning a family reunion in a Joliet park, a class reunion at a local venue, or a group gathering for any special occasion in the Chicagoland area, matching <a href="/custom-apparel" class="link-notification">custom apparel</a> helps everyone feel like they belong. We have helped hundreds of reunion groups across Will and DuPage County create shirts that made their event feel memorable and meaningful. Here is how the right shirt can take your reunion from good to something your group talks about for years.</p>

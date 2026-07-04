@@ -62,7 +62,7 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/flock-shirts/top5pct-custom-flock-shirt-hoodie-cap-joliet.jpg',              'alt' => 'Custom flock shirts hoodies and caps in Joliet Illinois'],
+            ['src' => '/images/flock-shirts/top5pct-custom-flock-t-shirt-printing.jpg',                    'alt' => 'Custom flock t-shirt printing in Joliet Illinois'],
             ['src' => '/images/flock-shirts/top5pct-flock-hoodie-printing.jpg',                             'alt' => 'Custom flock hoodie printing in Joliet Illinois'],
             ['src' => '/images/flock-shirts/top5pct-flock-shirt-vinyl.jpg',                                'alt' => 'Custom flock shirt vinyl in Joliet Illinois'],
             ['src' => '/images/flock-shirts/top5pct-flock-t-shirts-joliet.jpg',                                    'alt' => 'Custom flock t-shirts printed in Joliet Illinois'],
@@ -139,9 +139,9 @@
         direction="left"
     />
     <x-ui.card-banner-slide-in
-        image="/images/custom-shirts/top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg"
-        alt="Custom holographic and specialty shirts from Top 5 Percent in Joliet Illinois"
-        title="Mix Flock With Holographic or Glitter for Custom Shirts"
+        image="/images/glitter-shirts-compressed/glitter-shirts-crest-hill-600x450.jpg"
+        alt="Custom glitter shirts for events and celebrations from Top 5 Percent in Joliet Illinois"
+        title="Mix Flock With Glitter for Bold Custom Shirts"
         href="/contact"
         direction="right"
     />

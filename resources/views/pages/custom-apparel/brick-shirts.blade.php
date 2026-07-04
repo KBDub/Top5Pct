@@ -103,8 +103,8 @@
 
     <x-sections.card-detailed-info
         heading="Why Brick Print Sets Your Custom Apparel Apart in a Crowded Market"
-        image1="/images/custom-shirts/top5pct-custom-brick-shirts-hoodies-cap-joliet.jpg"
-        alt1="Custom brick print shirts with 3D dimensional texture made by Top 5 Percent in Joliet Illinois"
+        image1="/images/brick-shirts/top5pct-brick-vinyl-custom-shirts-joliet.jpg"
+        alt1="Custom brick vinyl shirts with 3D dimensional texture made by Top 5 Percent in Joliet Illinois"
     >
         <x-slot name="intro">
             <p class="mb-4">The custom apparel market is saturated with flat-printed shirts that all look fundamentally similar regardless of the quality of the design. When everything has the same surface and the same depth, even a great design can get lost in the noise. Brick printing creates an immediate visual and tactile distinction that separates your shirts from everything else in the market, a distinction your customers feel the moment they pick up your product.</p>

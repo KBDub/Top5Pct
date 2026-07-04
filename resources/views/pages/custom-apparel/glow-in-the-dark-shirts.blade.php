@@ -62,7 +62,7 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/glow-shirts/top5pct-custom-glow-shirts-caps-hoodies-joliet.jpg',            'alt' => 'Custom glow in the dark shirts caps and hoodies in Joliet Illinois'],
+            ['src' => '/images/glow-shirts/top5pct-glow-in-the-dark-caps.jpg',                            'alt' => 'Custom glow in the dark caps and hats in Joliet Illinois'],
             ['src' => '/images/glow-shirts/top5pct-glowing-halloween-bat-shirt.jpg',                      'alt' => 'Custom glowing Halloween bat shirt in Joliet Illinois'],
             ['src' => '/images/glow-shirts/top5pct-halloween-pumpkin-glow-shirt.jpg',                     'alt' => 'Custom Halloween pumpkin glow shirt in Joliet Illinois'],
             ['src' => '/images/glow-shirts/top5pct-glowing-hoodies-joliet.jpg',                                   'alt' => 'Custom glow in the dark hoodies in Joliet Illinois'],

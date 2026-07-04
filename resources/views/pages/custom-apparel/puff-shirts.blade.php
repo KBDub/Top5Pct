@@ -62,7 +62,7 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/custom-shirts/top5pct-banner-custom-apparel-custom-shirts-custom-hoodies-custom-caps.jpg', 'alt' => 'Custom puff print shirts and apparel in Joliet Illinois'],
+            ['src' => '/images/puff-shirts/top5pct-custom-puff-shirts.jpg',                                            'alt' => 'Custom puff print shirts and apparel in Joliet Illinois'],
             ['src' => '/images/puff-shirts/top5pct-puff-shirts-joliet.jpg',                                            'alt' => 'Custom puff shirts in Joliet Illinois'],
             ['src' => '/images/puff-shirts/top5pct-puff-shirts.jpg',                                                   'alt' => 'Custom puff print apparel in Joliet Illinois'],
             ['src' => '/images/digital-vinyl/top5pct-custom-vinyl-shirts.jpg',                                    'alt' => 'Custom apparel and puff print shirts made in Joliet Illinois'],
@@ -76,7 +76,7 @@
     />
 
     <x-sections.card-image-with-text
-        image="/images/custom-shirts/top5pct-custom-brick-shirts-hoodies-cap-joliet.jpg"
+        image="/images/puff-shirts/top5pct-puff-shirts-joliet.jpg"
         alt="Custom puff print shirts with 3D raised texture in Joliet Illinois"
         title="3D Texture That Gets Noticed"
     >
@@ -86,7 +86,7 @@
     </x-sections.card-image-with-text>
 
     <x-sections.card-image-with-text
-        image="/images/custom-shirts/top5pct-custom-pattern-shirts-caps-hoodies-joliet.jpg"
+        image="/images/puff-shirts/top5pct-puff-shirts.jpg"
         alt="Premium custom puff shirts for brands and organizations in Joliet Illinois"
         title="Premium Appeal for Your Brand"
         imagePosition="right"
@@ -103,7 +103,7 @@
 
     <x-sections.card-detailed-info
         heading="Why Puff Print Makes Your Custom Shirts Stand Out From the Rest"
-        image1="/images/custom-shirts/top5pct-custom-brick-shirts-hoodies-cap-joliet.jpg"
+        image1="/images/puff-shirts/top5pct-custom-puff-shirts.jpg"
         alt1="Custom puff print shirts and 3D raised apparel in Joliet Illinois"
     >
         <x-slot name="intro">
@@ -132,7 +132,7 @@
         name="Gerardo Munoz Jr"
     />
     <x-ui.card-banner-slide-in
-        image="/images/custom-shirts/top5pct-custom-brick-shirts-hoodies-cap-joliet.jpg"
+        image="/images/puff-shirts/top5pct-puff-shirts-joliet.jpg"
         alt="Custom puff print shirts with 3D raised texture printed by Top 5 Percent in Joliet Illinois"
         title="3D Puff Print Shirts With No Minimums"
         href="/contact"
