@@ -210,8 +210,10 @@ foreach ($pageFiles as $pagePath) {
     $primDir = $primaryDirOverride[basename($pagePath)] ?? primaryDir($slots);
     $title   = ucwords(str_replace(['-','_'], ' ', $pageName));
 
-    $actions    = []; // priority => [rows]
-    $p0 = $p1 = $p2 = 0;
+    $actions       = [];
+    $dups          = [];
+    $seenFilenames = []; // strtolower(filename) => first slot label
+    $p0 = $p1 = 0;
 
     foreach ($slots as $slotKey => $imgPath) {
         $filename = basename($imgPath);
@@ -220,8 +222,23 @@ foreach ($pageFiles as $pagePath) {
         $round    = $info['round'];
         $isSmall  = isset($smallFiles[strtolower($filename)]);
         $isXS     = ($dir !== $primDir && $dir !== '?');
-        $pri      = priority($round, $isSmall);
+        $slotLbl  = slotLabel($slotKey);
 
+        // Same-filename dup detection — tracked separately from P0/P1
+        $fnKey = strtolower($filename);
+        if (isset($seenFilenames[$fnKey])) {
+            $dups[] = [
+                'slot'     => $slotLbl,
+                'file'     => $filename,
+                'round'    => $round,
+                'first_in' => $seenFilenames[$fnKey],
+            ];
+            continue; // still check P0/P1 below via fall-through
+        } else {
+            $seenFilenames[$fnKey] = $slotLbl;
+        }
+
+        $pri = priority($round, $isSmall);
         if ($pri === 'OK') continue;
 
         $smallTag = $isSmall ? ' ⚠small' : '';
@@ -229,7 +246,7 @@ foreach ($pageFiles as $pagePath) {
 
         $actions[] = [
             'priority' => $pri,
-            'slot'     => slotLabel($slotKey),
+            'slot'     => $slotLbl,
             'file'     => $filename,
             'round'    => $round . $smallTag,
             'xs'       => $xsTag,
@@ -252,49 +269,57 @@ foreach ($pageFiles as $pagePath) {
         'url'      => $pageUrl,
         'primDir'  => $primDir,
         'actions'  => $actions,
+        'dups'     => $dups,
         'fills'    => $fills,
         'p0'       => $p0,
         'p1'       => $p1,
-        'p2'       => $p2,
+        'dupCount' => count($dups),
         'fillCount'=> $fillCount,
     ];
 }
 
-// Sort pages: most urgent first (P0+P1 desc), then name
+// Sort pages: most urgent first (P0+P1+Dup desc), then name
 usort($pages, function($a, $b) {
-    $urgA = $a['p0'] * 100 + $a['p1'];
-    $urgB = $b['p0'] * 100 + $b['p1'];
+    $urgA = $a['p0'] * 100 + $a['p1'] + $a['dupCount'];
+    $urgB = $b['p0'] * 100 + $b['p1'] + $b['dupCount'];
     if ($urgA !== $urgB) return $urgB - $urgA;
     return strcmp($a['title'], $b['title']);
 });
 
 // ── Totals ─────────────────────────────────────────────────────────────────
-$totP0 = $totP1 = $totFill = 0;
-foreach ($pages as $p) { $totP0 += $p['p0']; $totP1 += $p['p1']; $totFill += $p['fillCount']; }
+$totP0 = $totP1 = $totDup = $totFill = 0;
+foreach ($pages as $p) {
+    $totP0   += $p['p0'];
+    $totP1   += $p['p1'];
+    $totDup  += $p['dupCount'];
+    $totFill += $p['fillCount'];
+}
 
 // ── Build markdown ─────────────────────────────────────────────────────────
 $md  = "# R5 Image Action Set\n\n";
-$md .= "**Generated:** Jul 4, 2026  |  Based on `docs/r5.image.review.md`\n\n";
+$md .= "**Generated:** " . date('M j, Y') . "  |  Based on `docs/r5.image.review.md`\n\n";
 $md .= "## Priority Guide\n\n";
 $md .= "| Code | Meaning | Action |\n|---|---|---|\n";
-$md .= "| **P0** | Slot holds an Initial image (pre-migration, smallest/oldest) | Replace with new photo — highest urgency |\n";
-$md .= "| **P1** | Slot holds a small/old image (<200k) mislabeled as R1/R2/R3 (copy timestamp) | Replace with new photo — same urgency as P0 |\n";
+$md .= "| **P0** | Slot holds an Initial image (pre-migration, oldest) | Replace with new photo — highest urgency |\n";
+$md .= "| **P1** | Slot holds a small/old image (<200k) mislabeled as R1/R2/R3 | Replace with new photo — same urgency as P0 |\n";
+$md .= "| **Dup** | Same filename already used in an earlier slot on this page | Swap for a different image — separate from P0/P1 |\n";
 $md .= "| **Fill** | Unplaced unique file in the primary dir | Add to carousel — no new photo needed |\n\n";
-$md .= "> **R1 through R5 are all acceptable.** Only Initial and small/old (<200k) mislabeled slots require replacement.\n\n";
-$md .= "> **Cross-sell slots** (image borrowed from another category dir) are included and flagged. ";
-$md .= "Replacement depends on the source page, not this one.\n\n";
+$md .= "> **R1 through R5 are all acceptable.** Only Initial and small/old (<200k) mislabeled slots require replacement.\n";
+$md .= "> **Dup is tracked separately from P0/P1.** A duplicated slot appears only in the Dup section — its Round column tells you if it is also old/small.\n";
+$md .= "> **Cross-sell slots** (image borrowed from another category dir) are included and flagged.\n\n";
 $md .= "## Totals\n\n";
 $md .= "| Priority | Count |\n|---|---|\n";
 $md .= "| P0 — Replace (Initial) | {$totP0} |\n";
 $md .= "| P1 — Replace (small/old mislabeled) | {$totP1} |\n";
+$md .= "| Dup — Same file in multiple slots | {$totDup} |\n";
 $md .= "| Fill — Carousel add (unplaced unique) | {$totFill} |\n\n";
 $md .= "---\n\n";
 
 foreach ($pages as $p) {
-    $hasWork = !empty($p['actions']) || !empty($p['fills']);
+    $hasWork = !empty($p['actions']) || !empty($p['dups']) || !empty($p['fills']);
     if (!$hasWork) continue;
 
-    $urgLine = "P0: {$p['p0']}  |  P1: {$p['p1']}  |  Fill: {$p['fillCount']}";
+    $urgLine = "P0: {$p['p0']}  |  P1: {$p['p1']}  |  Dup: {$p['dupCount']}  |  Fill: {$p['fillCount']}";
     $md .= "## {$p['title']}\n\n";
     $md .= "**File:** `{$p['relative']}`  |  **URL:** `{$p['url']}`  \n";
     $md .= "**Primary dir:** `public/images/{$p['primDir']}/`  |  {$urgLine}\n\n";
@@ -304,6 +329,16 @@ foreach ($pages as $p) {
         $md .= "|---|---|---|---|---|\n";
         foreach ($p['actions'] as $row) {
             $md .= "| {$row['priority']} | {$row['slot']} | `{$row['file']}` | {$row['round']} | {$row['xs']} |\n";
+        }
+        $md .= "\n";
+    }
+
+    if (!empty($p['dups'])) {
+        $md .= "**Dup — same file used in multiple slots (swap one for a different image):**  \n";
+        $md .= "| Slot | Filename | Round | First used in |\n";
+        $md .= "|---|---|---|---|\n";
+        foreach ($p['dups'] as $d) {
+            $md .= "| {$d['slot']} | `{$d['file']}` | {$d['round']} | {$d['first_in']} |\n";
         }
         $md .= "\n";
     }
@@ -322,17 +357,18 @@ foreach ($pages as $p) {
 }
 
 // ── Pages with no action needed ────────────────────────────────────────────
-$clean = array_filter($pages, fn($p) => empty($p['actions']) && empty($p['fills']));
+$clean = array_filter($pages, fn($p) => empty($p['actions']) && empty($p['dups']) && empty($p['fills']));
 if (!empty($clean)) {
     $md .= "## Pages With No Action Needed\n\n";
     foreach ($clean as $p) {
-        $md .= "- `{$p['relative']}` — all slots R4/R5, no unplaced unique files\n";
+        $md .= "- `{$p['relative']}` — all slots R4/R5, no dups, no unplaced unique files\n";
     }
     $md .= "\n";
 }
 
 file_put_contents($docsRoot . '/r5.img.actionset.md', $md);
 echo "Wrote docs/r5.img.actionset.md\n";
-echo "P0={$totP0}  P1={$totP1}  Fill={$totFill}\n";
-echo "Pages with work: " . count(array_filter($pages, fn($p) => !empty($p['actions']) || !empty($p['fills']))) . "\n";
+echo "P0={$totP0}  P1={$totP1}  Dup={$totDup}  Fill={$totFill}\n";
+$withWork = count(array_filter($pages, fn($p) => !empty($p['actions']) || !empty($p['dups']) || !empty($p['fills'])));
+echo "Pages with work: {$withWork}\n";
 echo "Pages clean: " . count($clean) . "\n";

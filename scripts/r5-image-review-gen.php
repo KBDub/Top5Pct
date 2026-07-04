@@ -338,6 +338,8 @@ foreach ($pageFiles as $pagePath) {
     $md .= "| Slot | Filename | Dir | Round | Date | New? | Small? | Cross-sell | Collision / Dup |\n";
     $md .= "|---|---|---|---|---|---|---|---|---|\n";
 
+    $seenFilenames = []; // strtolower(filename) => first slot label
+
     foreach ($slots as $slotKey => $imgPath) {
         $filename = basename($imgPath);
         $dir      = preg_match('#^/images/([^/]+)/#', $imgPath, $dm) ? $dm[1] : '?';
@@ -352,6 +354,15 @@ foreach ($pageFiles as $pagePath) {
                     ? detectCollisions($dirPath, $dir, $filename, $fileLookup)
                     : 'file-missing';
         $slotLbl  = slotLabel($slotKey);
+
+        // Same-filename dup detection across slots on this page
+        $fnKey = strtolower($filename);
+        if (isset($seenFilenames[$fnKey])) {
+            $dupNote = '[page-dup: first in ' . $seenFilenames[$fnKey] . ']';
+            $collStr = ($collStr === 'none') ? $dupNote : $collStr . ', ' . $dupNote;
+        } else {
+            $seenFilenames[$fnKey] = $slotLbl;
+        }
 
         // Summary
         $sum['slots']++;
