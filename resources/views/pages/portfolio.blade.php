@@ -6,7 +6,7 @@
     "@type": "ImageObject",
     "name": "Custom T-Shirts & Apparel, Top 5 Percent Portfolio",
     "description": "Custom printed t-shirts, hoodies, and caps produced by Top 5 Percent in Joliet, IL for businesses, teams, and events across Will and DuPage County and the greater Chicagoland area.",
-    "contentUrl": "https://www.top5pct.com/images/custom-shirts/top5pct-banner-custom-apparel-custom-shirts-custom-hoodies-custom-caps.jpg",
+    "contentUrl": "https://www.top5pct.com/images/custom-shirts/top5pct-custom-shirt-pictures.jpg",
     "url": "https://www.top5pct.com/portfolio",
     "license": "https://www.top5pct.com",
     "acquireLicensePage": "https://www.top5pct.com/contact",
@@ -20,7 +20,7 @@
     "@type": "ImageObject",
     "name": "Custom Signs & Banners, Top 5 Percent Portfolio",
     "description": "Custom vinyl banners, business signs, and storefront graphics produced by Top 5 Percent in Joliet, IL for businesses throughout Will and DuPage County and the greater Chicagoland area.",
-    "contentUrl": "https://www.top5pct.com/images/banners/top5pct-banner-business-banners-joliet-shorewood-crest-hill.jpg",
+    "contentUrl": "https://www.top5pct.com/images/banners/top5pct-banners-and-signs.jpg",
     "url": "https://www.top5pct.com/portfolio",
     "license": "https://www.top5pct.com",
     "acquireLicensePage": "https://www.top5pct.com/contact",
@@ -34,7 +34,7 @@
     "@type": "ImageObject",
     "name": "Vehicle Graphics & Wraps, Top 5 Percent Portfolio",
     "description": "Custom vehicle graphics, car wraps, and vinyl lettering installed by Top 5 Percent in Joliet and Shorewood, IL for local businesses.",
-    "contentUrl": "https://www.top5pct.com/images/automobile-graphics/top5pct-car-wraps-vinyl-lettering-joliet-shorewood.jpg",
+    "contentUrl": "https://www.top5pct.com/images/automobile-graphics/top5pct-car-wraps.jpg",
     "url": "https://www.top5pct.com/portfolio",
     "license": "https://www.top5pct.com",
     "acquireLicensePage": "https://www.top5pct.com/contact",
@@ -48,7 +48,7 @@
     "@type": "ImageObject",
     "name": "Custom Stickers & Decals, Top 5 Percent Portfolio",
     "description": "Custom stickers, die-cut decals, and product labels printed by Top 5 Percent in Joliet, IL for businesses and brands in Will and DuPage County and the greater Chicagoland area.",
-    "contentUrl": "https://www.top5pct.com/images/custom-shaped-stickers-decals/top5pct-banner-stickers-decals-joliet.jpg",
+    "contentUrl": "https://www.top5pct.com/images/custom-shaped-stickers-decals/top5pct-custom-stickers.jpg",
     "url": "https://www.top5pct.com/portfolio",
     "license": "https://www.top5pct.com",
     "acquireLicensePage": "https://www.top5pct.com/contact",
@@ -102,6 +102,7 @@
         primaryButtonHref="/contact"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
+        image="/images/banners/top5pct-banners-and-signs.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />

@@ -12,7 +12,7 @@
         primaryButtonHref="/contact"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/top5pct-t-shirt-maker-7-tips.jpg"
+        image="/images/screen-printing/top5pct-screenprinting-joliet.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />
@@ -28,7 +28,7 @@
             <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="block bg-linen">
                     <div class="overflow-hidden">
-                        <img src="/images/top5pct-t-shirt-maker-7-tips.jpg" alt="7 tips for ordering custom t-shirts from Top 5 Percent in Joliet Illinois" class="w-full h-48 object-cover" loading="lazy" />
+                        <img src="/images/screen-printing/top5pct-screenprinting-joliet.jpg" alt="7 tips for ordering custom t-shirts from Top 5 Percent in Joliet Illinois" class="w-full h-48 object-cover" loading="lazy" />
                     </div>
                     <div class="p-6">
                         <h3 class="text-h3 font-bold text-charcoal mb-2">7 Tips for Ordering Custom T-Shirts</h3>
@@ -37,7 +37,7 @@
                 </div>
                 <div class="block bg-linen">
                     <div class="overflow-hidden">
-                        <img src="/images/standard-stickers-decals/top5pct-article-buy-stickers-decals-joliet.jpg" alt="Where to buy custom stickers in Joliet Illinois" class="w-full h-48 object-cover" loading="lazy" />
+                        <img src="/images/custom-shaped-stickers-decals/top5pct-custom-stickers.jpg" alt="Where to buy custom stickers in Joliet Illinois" class="w-full h-48 object-cover" loading="lazy" />
                     </div>
                     <div class="p-6">
                         <h3 class="text-h3 font-bold text-charcoal mb-2">Where to Buy Custom Stickers in Joliet</h3>
@@ -46,7 +46,7 @@
                 </div>
                 <div class="block bg-linen">
                     <div class="overflow-hidden">
-                        <img src="/images/wall-signs/top5pct-article-window-wall-signs.jpg" alt="Window and wall sign tips for businesses in Joliet Illinois" class="w-full h-48 object-cover" loading="lazy" />
+                        <img src="/images/wall-signs/top5pct-wall-signs-mishas-gaming-lounge.jpg" alt="Window and wall sign tips for businesses in Joliet Illinois" class="w-full h-48 object-cover" loading="lazy" />
                     </div>
                     <div class="p-6">
                         <h3 class="text-h3 font-bold text-charcoal mb-2">How to Use Window & Wall Signs</h3>
@@ -55,7 +55,7 @@
                 </div>
                 <div class="block bg-linen">
                     <div class="overflow-hidden">
-                        <img src="/images/automobile-graphics/top5pct-article-car-wraps-vinyl-lettering.jpg" alt="Car wraps and vinyl lettering for vehicles in Joliet Illinois" class="w-full h-48 object-cover" loading="lazy" />
+                        <img src="/images/automobile-graphics/top5pct-car-wraps.jpg" alt="Car wraps and vinyl lettering for vehicles in Joliet Illinois" class="w-full h-48 object-cover" loading="lazy" />
                     </div>
                     <div class="p-6">
                         <h3 class="text-h3 font-bold text-charcoal mb-2">Car Wraps vs. Vinyl Lettering</h3>
@@ -64,7 +64,7 @@
                 </div>
                 <div class="block bg-linen">
                     <div class="overflow-hidden">
-                        <img src="/images/corporate-wear/toptpct-article-corporate-wear-pic1.jpg" alt="Corporate wear and branded uniforms for businesses in Joliet Illinois" class="w-full h-48 object-cover" loading="lazy" />
+                        <img src="/images/corporate-wear/top5pct-custom-business-shirts.jpg" alt="Corporate wear and branded uniforms for businesses in Joliet Illinois" class="w-full h-48 object-cover" loading="lazy" />
                     </div>
                     <div class="p-6">
                         <h3 class="text-h3 font-bold text-charcoal mb-2">Outfitting Your Team with Corporate Wear</h3>
@@ -73,7 +73,7 @@
                 </div>
                 <div class="block bg-linen">
                     <div class="overflow-hidden">
-                        <img src="/images/spirit-wear/top5pct-article-spirit-wear-pic1.jpg" alt="Spirit wear and fan apparel for schools and sports teams in Joliet Illinois" class="w-full h-48 object-cover" loading="lazy" />
+                        <img src="/images/spirit-wear/top5pct-spirit-wear-shirts.jpg" alt="Spirit wear and fan apparel for schools and sports teams in Joliet Illinois" class="w-full h-48 object-cover" loading="lazy" />
                     </div>
                     <div class="p-6">
                         <h3 class="text-h3 font-bold text-charcoal mb-2">Spirit Wear for Schools & Sports Teams</h3>

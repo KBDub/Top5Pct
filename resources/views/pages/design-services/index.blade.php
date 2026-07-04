@@ -48,7 +48,7 @@
         primaryButtonHref="#design-categories"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/banners/top5pct-banner-business-banners-joliet-shorewood-crest-hill.jpg"
+        image="/images/banners/top5pct-banners-and-signs.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />
@@ -62,10 +62,10 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/banners/top5pct-banner-business-banners-joliet-shorewood-crest-hill.jpg',          'alt' => 'Custom designed and printed banners for businesses in Joliet, Shorewood, and Crest Hill Illinois'],
-            ['src' => '/images/custom-shirts/top5pct-banner-custom-apparel-custom-shirts-custom-hoodies-custom-caps.jpg', 'alt' => 'Custom designed shirts and apparel printed in Joliet Illinois'],
-            ['src' => '/images/business-signs/top5pct-banner-business-signs-joliet-plainfield-shorewood.jpg',     'alt' => 'Custom designed business signs in Joliet, Plainfield, and Shorewood Illinois'],
-            ['src' => '/images/vehicle-magnets/top5pct-banner-car-magnets-joliet-shorewood-crest-hill.jpg',       'alt' => 'Custom designed vehicle magnets in Joliet, Shorewood, and Crest Hill Illinois'],
+            ['src' => '/images/banners/top5pct-custom-vinyl-banners.jpg',                                         'alt' => 'Custom designed and printed banners for businesses in Joliet, Shorewood, and Crest Hill Illinois'],
+            ['src' => '/images/posters/top5pct-posters-printed-joliet.jpg',                                       'alt' => 'Custom designed print products and professional layouts in Joliet Illinois'],
+            ['src' => '/images/banners/top5pct-banners-for-trade-shows.jpg',                                      'alt' => 'Custom designed banners for trade shows and businesses in Joliet Illinois'],
+            ['src' => '/images/banners/top5pct-graduation-banners.jpg',                                           'alt' => 'Custom designed graduation banners and celebration prints in Joliet Illinois'],
         ]"
         visible=3
     />
@@ -79,13 +79,13 @@
         id="design-categories"
         :banners="[
         [
-            'image' => '/images/banners/top5pct-banner-business-banners-joliet-shorewood-crest-hill.jpg',
+            'image' => '/images/banners/top5pct-big-banners.jpg',
             'alt'   => 'Professional logo design services for businesses in Joliet Illinois',
             'title' => 'Logo Design',
             'href'  => '/design-services/logo-design',
         ],
         [
-            'image' => '/images/business-signs/top5pct-banner-business-signs-joliet-plainfield-shorewood.jpg',
+            'image' => '/images/posters/top5pct-posters-customized-joliet.jpg',
             'alt'   => 'Professional graphic design and layout services for print in Joliet Illinois',
             'title' => 'Graphic Design',
             'href'  => '/design-services/graphic-design',
@@ -93,7 +93,7 @@
     ]" />
 
     <x-sections.card-image-with-text
-        image="/images/banners/top5pct-banner-joliet-romeoville-rockdale-plainfield.jpg"
+        image="/images/posters/top5pct-big-posters-joliet.jpg"
         alt="Professional design services for custom print products in Joliet Illinois"
         title="From Concept to Print, We Handle the Design"
     >
@@ -108,24 +108,24 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/business-signs/top5pct-business-signs-joliet-shorewood-crest-hill.jpg', 'alt' => 'Professionally designed business signs in Joliet, Shorewood, and Crest Hill Illinois'],
-            ['src' => '/images/custom-shirts/top5pct-custom-vinyl-shirts-caps-hoodies.jpg',            'alt' => 'Professionally designed custom vinyl shirts in Joliet Illinois'],
-            ['src' => '/images/custom-shaped-stickers-decals/top5pct-stickers-decals-joliet-beer-brewery.jpg',       'alt' => 'Professionally designed stickers and labels for a brewery in Joliet Illinois'],
-            ['src' => '/images/banners/top5pct-team-banners-joliet-shorewood-crest-hill.jpg',          'alt' => 'Professionally designed team banners for organizations in Joliet, Shorewood, and Crest Hill'],
+            ['src' => '/images/banners/top5pct-sports-banners.jpg',                                    'alt' => 'Professionally designed sports banners and custom print projects in Joliet Illinois'],
+            ['src' => '/images/banners/top5pct-portable-banners.jpg',                                  'alt' => 'Professionally designed portable banners and print products in Joliet Illinois'],
+            ['src' => '/images/banners/top5pct-retractable-banners-plainfield.jpg',                    'alt' => 'Professionally designed retractable banners and print products in Joliet Illinois'],
+            ['src' => '/images/posters/top5pct-posters-joliet.jpg',                                    'alt' => 'Professionally designed posters and print products for businesses in Joliet Illinois'],
         ]"
         visible=2
     />
 
     <x-ui.card-banner-slide-in
-        image="/images/banners/top5pct-banner-joliet-romeoville-rockdale-plainfield.jpg"
+        image="/images/banners/top5pct-mesh-construction-banner.jpg"
         alt="Free design help for every custom print order at Top 5 Percent in Joliet Illinois"
         title="Free Design Help for Every Order"
         href="/contact"
         direction="left"
     />
     <x-ui.card-banner-slide-in
-        image="/images/business-signs/top5pct-banner-business-signs-joliet-plainfield-shorewood.jpg"
-        alt="Custom business signs and print design services from Top 5 Percent in Joliet Illinois"
+        image="/images/banners/top5pct-banners-near-me.jpg"
+        alt="Custom banners and print design services from Top 5 Percent in Joliet Illinois"
         title="From Logo to Finished Product, All Under One Roof"
         href="/contact"
         direction="right"

@@ -47,6 +47,7 @@
         primaryButtonHref="/contact"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
+        image="/images/posters/top5pct-big-posters-joliet.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />
@@ -60,10 +61,10 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/business-signs/top5pct-banner-business-signs-joliet-plainfield-shorewood.jpg', 'alt' => 'Professional graphic design and layout services for print in Joliet Illinois'],
-            ['src' => '/images/banners/top5pct-banner-business-banners-joliet-shorewood-crest-hill.jpg',       'alt' => 'Custom banner design and large format print layout in Joliet Illinois'],
-            ['src' => '/images/custom-shirts/top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg',          'alt' => 'Apparel graphic design and print-ready art preparation in Joliet Illinois'],
-            ['src' => '/images/custom-shirts/top5pct-banner-custom-apparel-custom-shirts-custom-hoodies-custom-caps.jpg', 'alt' => 'Graphic design services for custom apparel and promotional products in Joliet Illinois'],
+            ['src' => '/images/banners/top5pct-banners-near-me.jpg',                                          'alt' => 'Professional graphic design and layout services for print in Joliet Illinois'],
+            ['src' => '/images/banners/top5pct-custom-retractable-banners-joliet.jpg',                         'alt' => 'Custom banner design and large format print layout in Joliet Illinois'],
+            ['src' => '/images/posters/top5pct-posters-customized-joliet.jpg',                                 'alt' => 'Apparel graphic design and print-ready art preparation in Joliet Illinois'],
+            ['src' => '/images/banners/top5pct-retractable-banners-plainfield.jpg',                            'alt' => 'Graphic design services for custom print products in Joliet Illinois'],
         ]"
         visible=2
     />
@@ -74,7 +75,7 @@
     />
 
     <x-sections.card-image-with-text
-        image="/images/business-signs/top5pct-banner-business-signs-joliet-plainfield-shorewood.jpg"
+        image="/images/banners/top5pct-sports-banners.jpg"
         alt="Professional graphic design and layout services for print in Joliet Illinois"
         title="Design That Is Ready for Production"
     >
@@ -85,7 +86,7 @@
     </x-sections.card-image-with-text>
 
     <x-sections.card-image-with-text
-        image="/images/custom-shirts/top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg"
+        image="/images/posters/top5pct-posters-printed-joliet.jpg"
         alt="Apparel and promotional product graphic design in Joliet Illinois"
         title="From Concept to Finished Product"
         imagePosition="right"
@@ -101,7 +102,7 @@
 
     <x-sections.card-detailed-info
         heading="How Working With a Print-Focused Designer Saves You Time, Money, and Frustration"
-        image1="/images/business-signs/top5pct-banner-business-signs-joliet-plainfield-shorewood.jpg"
+        image1="/images/banners/top5pct-graduation-banners.jpg"
         alt1="Print-ready graphic design services for signs, apparel, and promotional products in Joliet Illinois"
     >
         <x-slot name="intro">
@@ -130,15 +131,15 @@
         name="Gerardo Munoz Jr"
     />
     <x-ui.card-banner-slide-in
-        image="/images/banners/top5pct-banner-business-banners-joliet-shorewood-crest-hill.jpg"
+        image="/images/banners/top5pct-portable-banners.jpg"
         alt="Professional graphic design and print layout services from Top 5 Percent in Joliet Illinois"
         title="Print-Ready Design From Concept to Finished Product"
         href="/contact"
         direction="right"
     />
     <x-ui.card-banner-slide-in
-        image="/images/business-signs/top5pct-banner-business-signs-joliet-plainfield-shorewood.jpg"
-        alt="Custom business signs and print design services from Top 5 Percent in Joliet Illinois"
+        image="/images/banners/top5pct-mesh-construction-banner.jpg"
+        alt="Custom print design services from Top 5 Percent in Joliet Illinois"
         title="Design-to-Print Workflow, Fast Turnaround, No Hassle"
         href="/contact"
         direction="left"

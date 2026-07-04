@@ -62,6 +62,7 @@
         primaryButtonHref="/contact"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
+        image="/images/banners/top5pct-banners-and-signs.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />
@@ -105,7 +106,7 @@
     </section>
 
     <x-sections.card-image-with-text
-        image="/images/business-signs/top5pct-banner-business-signs-joliet-plainfield-shorewood.jpg"
+        image="/images/banners/top5pct-custom-vinyl-banners.jpg"
         alt="Custom signage and apparel produced by Top 5 Percent in Joliet Illinois"
         title="See Our Work and Hear From Our Customers"
     >

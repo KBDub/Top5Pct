@@ -47,6 +47,7 @@
         primaryButtonHref="/contact"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
+        image="/images/banners/top5pct-banners-and-signs.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />
@@ -60,10 +61,10 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/business-signs/top5pct-banner-business-signs-joliet-plainfield-shorewood.jpg', 'alt' => 'Professional logo design and brand identity services in Joliet Illinois'],
-            ['src' => '/images/embroidery/top5pct-custom-embroidery-shops-near-me-joliet.jpg',             'alt' => 'Custom logo design applied to embroidery and apparel in Joliet Illinois'],
-            ['src' => '/images/custom-shirts/top5pct-banner-custom-apparel-custom-shirts-custom-hoodies-custom-caps.jpg', 'alt' => 'Custom logo design for businesses and organizations in Joliet, Will and DuPage County Illinois'],
-            ['src' => '/images/banners/top5pct-banner-business-banners-joliet-shorewood-crest-hill.jpg',       'alt' => 'Professional logo design for signage and print applications in Joliet Illinois'],
+            ['src' => '/images/banners/top5pct-custom-retractable-banners-joliet.jpg',                        'alt' => 'Professional logo design and brand identity services in Joliet Illinois'],
+            ['src' => '/images/posters/top5pct-posters-joliet.jpg',                                        'alt' => 'Custom logo design applied to print products and apparel in Joliet Illinois'],
+            ['src' => '/images/banners/top5pct-graduation-banners.jpg',                                   'alt' => 'Custom logo design for businesses and organizations in Joliet, Will and DuPage County Illinois'],
+            ['src' => '/images/banners/top5pct-portable-banners.jpg',                                         'alt' => 'Professional logo design for signage and print applications in Joliet Illinois'],
         ]"
         visible=2
     />
@@ -74,7 +75,7 @@
     />
 
     <x-sections.card-image-with-text
-        image="/images/custom-shirts/top5pct-banner-custom-apparel-custom-shirts-custom-hoodies-custom-caps.jpg"
+        image="/images/banners/top5pct-big-banners.jpg"
         alt="Professional logo design services for businesses in Joliet Illinois"
         title="Your Logo Is Your First Impression"
     >
@@ -85,7 +86,7 @@
     </x-sections.card-image-with-text>
 
     <x-sections.card-image-with-text
-        image="/images/embroidery/top5pct-custom-embroidery-shops-near-me-joliet.jpg"
+        image="/images/posters/top5pct-posters-printed-joliet.jpg"
         alt="Custom brand identity and logo design in Joliet Illinois"
         title="Designed for Every Application"
         imagePosition="right"
@@ -101,7 +102,7 @@
 
     <x-sections.card-detailed-info
         heading="What Makes a Logo Great, and Why It Matters for Your Business"
-        image1="/images/business-signs/top5pct-banner-business-signs-joliet-plainfield-shorewood.jpg"
+        image1="/images/banners/top5pct-sports-banners.jpg"
         alt1="Professional logo design for businesses and signage applications in Joliet, Will and DuPage County Illinois"
     >
         <x-slot name="intro">
@@ -130,14 +131,14 @@
         name="Brittany Harvey"
     />
     <x-ui.card-banner-slide-in
-        image="/images/business-signs/top5pct-banner-business-signs-joliet-plainfield-shorewood.jpg"
+        image="/images/banners/top5pct-custom-vinyl-banners.jpg"
         alt="Professional logo design services from Top 5 Percent in Joliet Illinois"
         title="Professional Logo Design Built for Every Application"
         href="/contact"
         direction="left"
     />
     <x-ui.card-banner-slide-in
-        image="/images/banners/top5pct-banner-business-banners-joliet-shorewood-crest-hill.jpg"
+        image="/images/banners/top5pct-banners-for-trade-shows.jpg"
         alt="Custom banners and printed products designed by Top 5 Percent in Joliet Illinois"
         title="Your Logo on Everything, Shirts, Signs, Banners, and More"
         href="/contact"
