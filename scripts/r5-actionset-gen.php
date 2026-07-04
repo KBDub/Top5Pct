@@ -142,11 +142,11 @@ function getUnplacedUnique(array $slots, string $primDir, string $imagesRoot, ar
 }
 
 // ── Priority classifier ────────────────────────────────────────────────────
+// R1-R5 are all acceptable. Only Initial and small/old mislabeled need action.
 function priority(string $round, bool $isSmall): string {
-    if ($round === 'Initial')          return 'P0';
-    if ($isSmall)                      return 'P1';
-    if (in_array($round, ['R1','R2','R3','?'])) return 'P2';
-    return 'OK'; // R4 or R5
+    if ($round === 'Initial') return 'P0';
+    if ($isSmall)             return 'P1';
+    return 'OK';
 }
 
 // ── Exclude list (same as review generator) ────────────────────────────────
@@ -158,7 +158,7 @@ $exclude = [
     'promotional-items.blade.php','reviews.blade.php','service-areas.blade.php',
     'terms-of-use.blade.php','top5pct-merchandise.blade.php',
     'articles.blade.php','resources.blade.php','show.blade.php','modals.blade.php',
-    'glitter-shirts.blade.php',
+    'glitter-shirts.blade.php','custom-storefronts.blade.php','coronavirus-signs.blade.php',
 ];
 
 // ── Boot ───────────────────────────────────────────────────────────────────
@@ -222,7 +222,6 @@ foreach ($pageFiles as $pagePath) {
 
         if ($pri === 'P0') $p0++;
         elseif ($pri === 'P1') $p1++;
-        elseif ($pri === 'P2') $p2++;
     }
 
     // Unplaced unique files
@@ -255,8 +254,8 @@ usort($pages, function($a, $b) {
 });
 
 // ── Totals ─────────────────────────────────────────────────────────────────
-$totP0 = $totP1 = $totP2 = $totFill = 0;
-foreach ($pages as $p) { $totP0 += $p['p0']; $totP1 += $p['p1']; $totP2 += $p['p2']; $totFill += $p['fillCount']; }
+$totP0 = $totP1 = $totFill = 0;
+foreach ($pages as $p) { $totP0 += $p['p0']; $totP1 += $p['p1']; $totFill += $p['fillCount']; }
 
 // ── Build markdown ─────────────────────────────────────────────────────────
 $md  = "# R5 Image Action Set\n\n";
@@ -264,16 +263,15 @@ $md .= "**Generated:** Jul 4, 2026  |  Based on `docs/r5.image.review.md`\n\n";
 $md .= "## Priority Guide\n\n";
 $md .= "| Code | Meaning | Action |\n|---|---|---|\n";
 $md .= "| **P0** | Slot holds an Initial image (pre-migration, smallest/oldest) | Replace with new photo — highest urgency |\n";
-$md .= "| **P1** | Slot holds a small/old image (<200k) mislabeled as R1/R2/R3 (copy timestamp) | Replace with new photo — treat same urgency as P0 |\n";
-$md .= "| **P2** | Slot holds R1, R2, or R3 — acceptable quality but not new | Refresh with newer upload when possible |\n";
+$md .= "| **P1** | Slot holds a small/old image (<200k) mislabeled as R1/R2/R3 (copy timestamp) | Replace with new photo — same urgency as P0 |\n";
 $md .= "| **Fill** | Unplaced unique file in the primary dir | Add to carousel — no new photo needed |\n\n";
+$md .= "> **R1 through R5 are all acceptable.** Only Initial and small/old (<200k) mislabeled slots require replacement.\n\n";
 $md .= "> **Cross-sell slots** (image borrowed from another category dir) are included and flagged. ";
 $md .= "Replacement depends on the source page, not this one.\n\n";
 $md .= "## Totals\n\n";
 $md .= "| Priority | Count |\n|---|---|\n";
 $md .= "| P0 — Replace (Initial) | {$totP0} |\n";
 $md .= "| P1 — Replace (small/old mislabeled) | {$totP1} |\n";
-$md .= "| P2 — Refresh (R1/R2/R3) | {$totP2} |\n";
 $md .= "| Fill — Carousel add (unplaced unique) | {$totFill} |\n\n";
 $md .= "---\n\n";
 
@@ -281,7 +279,7 @@ foreach ($pages as $p) {
     $hasWork = !empty($p['actions']) || !empty($p['fills']);
     if (!$hasWork) continue;
 
-    $urgLine = "P0: {$p['p0']}  |  P1: {$p['p1']}  |  P2: {$p['p2']}  |  Fill: {$p['fillCount']}";
+    $urgLine = "P0: {$p['p0']}  |  P1: {$p['p1']}  |  Fill: {$p['fillCount']}";
     $md .= "## {$p['title']}\n\n";
     $md .= "**File:** `{$p['relative']}`  |  **URL:** `{$p['url']}`  \n";
     $md .= "**Primary dir:** `public/images/{$p['primDir']}/`  |  {$urgLine}\n\n";
@@ -320,6 +318,6 @@ if (!empty($clean)) {
 
 file_put_contents($docsRoot . '/r5.img.actionset.md', $md);
 echo "Wrote docs/r5.img.actionset.md\n";
-echo "P0={$totP0}  P1={$totP1}  P2={$totP2}  Fill={$totFill}\n";
+echo "P0={$totP0}  P1={$totP1}  Fill={$totFill}\n";
 echo "Pages with work: " . count(array_filter($pages, fn($p) => !empty($p['actions']) || !empty($p['fills']))) . "\n";
 echo "Pages clean: " . count($clean) . "\n";

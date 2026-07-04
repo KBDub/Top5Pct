@@ -224,7 +224,7 @@ $exclude = [
     'promotional-items.blade.php', 'reviews.blade.php', 'service-areas.blade.php',
     'terms-of-use.blade.php', 'top5pct-merchandise.blade.php',
     'articles.blade.php', 'resources.blade.php', 'show.blade.php', 'modals.blade.php',
-    'glitter-shirts.blade.php',
+    'glitter-shirts.blade.php', 'custom-storefronts.blade.php', 'coronavirus-signs.blade.php',
 ];
 
 // ── Boot ───────────────────────────────────────────────────────────────────
