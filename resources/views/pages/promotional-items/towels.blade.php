@@ -102,8 +102,8 @@
 
     <x-sections.card-detailed-info
         heading="Why Custom Branded Towels Stand Out as a Premium Promotional Product"
-        image1="/images/sublimation/top5pct-sublimation-shirt.jpg"
-        alt1="Custom sublimation printing for branded towels and promotional textiles in Joliet Illinois"
+        image1="/images/mugs/top5pct-custom-mugs-near-me.jpg"
+        alt1="Custom branded towels and promotional textiles for events and businesses in Joliet Illinois"
     >
         <x-slot name="intro">
             <p class="mb-4">In a world full of pens, keychains, and foam cups, a custom branded towel immediately signals that a business takes its promotional materials seriously. Towels are perceived as a premium giveaway because they are genuinely useful, visually distinctive, and associated with active, healthy lifestyles. A well-designed custom towel communicates that your brand values quality and practicality, and that message sticks with the recipient long after the event or gift occasion that brought it to them, and for a complete premium branded kit our <a href="/promotional-items/tote-bags" class="link-notification">custom tote bags</a> pair with towels for a full outdoor set that covers bags and active use accessories.</p>

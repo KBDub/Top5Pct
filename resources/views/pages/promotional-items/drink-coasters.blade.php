@@ -64,8 +64,8 @@
         :images="[
             ['src' => '/images/mugs/top5pct-custom-coffee-mugs-in-joliet.jpg',                                            'alt' => 'Custom branded promotional products and drink coasters in Joliet Illinois'],
             ['src' => '/images/can-koozies/top5pct-custom-can-koozies.jpg',                                               'alt' => 'Custom branded coasters and promotional gifts for businesses in Joliet Illinois'],
-            ['src' => '/images/sublimation/top5pct-dye-sublimation-tees.jpg',                                             'alt' => 'Custom promotional products and branded merchandise in Joliet, Will and DuPage County Illinois'],
-            ['src' => '/images/screen-printing/top5pct-screenprinting-joliet.jpg',                                        'alt' => 'Branded promotional gifts and custom coasters in Joliet Illinois'],
+            ['src' => '/images/mugs/top5pct-custom-mugs-near-me.jpg',                                                     'alt' => 'Custom promotional products and branded merchandise in Joliet, Will and DuPage County Illinois'],
+            ['src' => '/images/can-koozies/top5pct-custom-koozies.jpg',                                                   'alt' => 'Branded promotional gifts and custom coasters in Joliet Illinois'],
         ]"
         visible=2
     />
@@ -102,7 +102,7 @@
 
     <x-sections.card-detailed-info
         heading="Why Custom Coasters Are an Underrated Branding Tool for Restaurants and Businesses"
-        image1="/images/sublimation/top5pct-custom-sublimation-shirts.jpg"
+        image1="/images/mugs/top5pct-picture-on-mugs.jpg"
         alt1="Custom branded drink coasters for restaurants, bars, and businesses in Joliet, Will and DuPage County Illinois"
     >
         <x-slot name="intro">

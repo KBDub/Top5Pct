@@ -63,8 +63,8 @@
     <x-ui.carousel-rotating-images
         :images="[
             ['src' => '/images/mugs/top5pct-custom-printed-mugs.jpg',                                                     'alt' => 'Custom branded desk accessories and promotional products in Joliet Illinois'],
-            ['src' => '/images/screen-printing/top5pct-screenprinting-company-shirts.jpg',                                'alt' => 'Custom branded promotional products and corporate gifts in Joliet Illinois'],
-            ['src' => '/images/sublimation/top5pct-sublimation-tees.jpg',                                                 'alt' => 'Custom mouse pads and branded desk accessories in Joliet, Will and DuPage County Illinois'],
+            ['src' => '/images/can-koozies/top5pct-can-koozies.jpg',                                                      'alt' => 'Custom branded promotional products and corporate gifts in Joliet Illinois'],
+            ['src' => '/images/mugs/top5pct-custom-mugs-near-me.jpg',                                                     'alt' => 'Custom mouse pads and branded desk accessories in Joliet, Will and DuPage County Illinois'],
             ['src' => '/images/can-koozies/top5pct-personalized-koozies-joliet.jpg',                                      'alt' => 'Custom corporate gifts and branded promotional items in Joliet Illinois'],
         ]"
         visible=2
@@ -86,7 +86,7 @@
     </x-sections.card-image-with-text>
 
     <x-sections.card-image-with-text
-        image="/images/sublimation/top5pct-dye-sublimation-custom-shirt-joliet.jpg"
+        image="/images/can-koozies/top5pct-custom-koozies.jpg"
         alt="Custom branded mouse pad design and corporate gift options in Joliet Illinois"
         title="Full-Color Design Across the Entire Surface"
         imagePosition="right"
@@ -138,8 +138,8 @@
         direction="right"
     />
     <x-ui.card-banner-slide-in
-        image="/images/screen-printing/top5pct-screenprinting-t-shirts-joliet.jpg"
-        alt="Custom screen printed apparel and branded products from Top 5 Percent in Joliet Illinois"
+        image="/images/can-koozies/top5pct-koozies-custom-channahon.jpg"
+        alt="Custom can koozies and branded drinkware from Top 5 Percent in Joliet Illinois"
         title="Bundle Mouse Pads With Other Branded Desk Items"
         href="/contact"
         direction="left"

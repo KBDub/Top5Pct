@@ -47,7 +47,7 @@
         primaryButtonHref="#all-products"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/screen-printing/top5pct-screenprinting-joliet.jpg"
+        image="/images/mugs/top5pct-custom-coffee-mugs.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />
@@ -62,8 +62,8 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/sublimation/top5pct-sublimation-shirts.jpg',                                               'alt' => 'Custom sublimation printed tote bags and branded promotional products in Joliet Illinois'],
-            ['src' => '/images/screen-printing/top5pct-screenprinting-joliet.jpg',                                        'alt' => 'Custom screen printed bags and branded merchandise for businesses in Joliet Illinois'],
+            ['src' => '/images/can-koozies/top5pct-can-koozies.jpg',                                                      'alt' => 'Custom branded tote bags and promotional products in Joliet Illinois'],
+            ['src' => '/images/mugs/top5pct-custom-mugs-near-me.jpg',                                                     'alt' => 'Custom branded merchandise for businesses in Joliet Illinois'],
             ['src' => '/images/mugs/top5pct-custom-coffee-mugs-in-joliet.jpg',                                            'alt' => 'Custom promotional mugs and branded merchandise in Joliet, Will and DuPage County Illinois'],
             ['src' => '/images/can-koozies/top5pct-custom-can-koozies.jpg',                                               'alt' => 'Custom branded totes and event merchandise in Joliet Illinois'],
         ]"
@@ -76,7 +76,7 @@
     />
 
     <x-sections.card-image-with-text
-        image="/images/sublimation/top5pct-sublimation-team-shirts.jpg"
+        image="/images/can-koozies/top5pct-custom-koozies.jpg"
         alt="Custom branded tote bags and drawstring bags for businesses and events in Joliet Illinois"
         title="Walking Billboards for Your Brand"
     >
@@ -87,7 +87,7 @@
     </x-sections.card-image-with-text>
 
     <x-sections.card-image-with-text
-        image="/images/screen-printing/top5pct-screenprinting-company-shirts.jpg"
+        image="/images/mugs/top5pct-picture-on-mugs.jpg"
         alt="Custom canvas tote bags and polyester drawstring bags for businesses and events in Joliet Illinois"
         title="Canvas Totes and Polyester Drawstring Bags"
         imagePosition="right"
@@ -103,7 +103,7 @@
 
     <x-sections.card-detailed-info
         heading="Why Custom Branded Bags Deliver More Visibility Than Almost Any Other Promotional Product"
-        image1="/images/sublimation/top5pct-dye-sublimation-tees.jpg"
+        image1="/images/can-koozies/top5pct-koozies-custom-channahon.jpg"
         alt1="Custom branded tote bags and drawstring bags for businesses in Joliet, Will and DuPage County Illinois"
     >
         <x-slot name="intro">
