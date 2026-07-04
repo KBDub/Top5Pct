@@ -61,10 +61,10 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/custom-shirts/top5pct-banner-custom-apparel-custom-shirts-custom-hoodies-custom-caps.jpg', 'alt' => 'Custom branded textiles and promotional towels in Joliet Illinois'],
-            ['src' => '/images/custom-shirts/top5pct-custom-glitter-shirt-cap-hoodie-joliet.jpg',                         'alt' => 'Custom branded merchandise and promotional products in Joliet Illinois'],
-            ['src' => '/images/custom-shirts/top5pct-t-shirt-maker-article-pic1.jpg',                                     'alt' => 'Custom promotional products and branded towels in Joliet, Will and DuPage County Illinois'],
-            ['src' => '/images/custom-shirts/top5pct-custom-holographic-shirt-hoodie-cap-joliet.jpg',                     'alt' => 'Custom branded merchandise and event giveaways in Joliet Illinois'],
+            ['src' => '/images/sublimation/top5pct-custom-sublimated-towels.jpg',                                         'alt' => 'Custom sublimated branded towels and promotional textiles in Joliet Illinois'],
+            ['src' => '/images/embroidery/top5pct-embroidered-towels-joliet.jpg',                                         'alt' => 'Custom embroidered towels for sports teams and businesses in Joliet Illinois'],
+            ['src' => '/images/mugs/top5pct-custom-coffee-mugs-in-joliet.jpg',                                            'alt' => 'Custom branded mugs and promotional drinkware for events in Joliet Illinois'],
+            ['src' => '/images/can-koozies/top5pct-koozies-joliet.jpg',                                                   'alt' => 'Custom can koozies and branded event drinkware in Joliet Illinois'],
         ]"
         visible=2
     />
@@ -75,8 +75,8 @@
     />
 
     <x-sections.card-image-with-text
-        image="/images/custom-shirts/top5pct-banner-custom-apparel-custom-shirts-custom-hoodies-custom-caps.jpg"
-        alt="Custom branded towels for sports teams and events in Joliet Illinois"
+        image="/images/sublimation/top5pct-custom-sublimated-towels.jpg"
+        alt="Custom sublimated branded towels for sports teams and events in Joliet Illinois"
         title="Full-Color Branded Towels"
     >
         <p class="mb-4">Custom branded towels are a high-quality promotional product that combines everyday functionality with prominent logo visibility. We produce custom towels using dye sublimation printing that covers the entire towel surface with your full-color design, edge to edge, without any block-out area or print boundary, using the same full-coverage dye sublimation process we apply to our <a href="/promotional-items/tote-bags" class="link-notification">custom tote bags</a> for all-over vibrant color. The result is a towel that looks like a premium branded product rather than a standard towel with a logo applied to it, and for complete team or event branding that pairs with branded towels our <a href="/custom-apparel/group-wear/spirit-wear-shirts" class="link-notification">spirit wear</a> shop produces coordinating shirts and hoodies in the same order.</p>
@@ -85,8 +85,8 @@
     </x-sections.card-image-with-text>
 
     <x-sections.card-image-with-text
-        image="/images/custom-shirts/top5pct-custom-glitter-shirt-cap-hoodie-joliet.jpg"
-        alt="Custom rally towels and sport towels for sports teams and events in Joliet Illinois"
+        image="/images/embroidery/top5pct-embroidered-towels-joliet.jpg"
+        alt="Custom embroidered rally towels and sport towels for sports teams in Joliet Illinois"
         title="Rally Towels, Sport Towels, and Beach Towels"
         imagePosition="right"
     >
@@ -101,8 +101,8 @@
 
     <x-sections.card-detailed-info
         heading="Why Custom Branded Towels Stand Out as a Premium Promotional Product"
-        image1="/images/custom-shirts/top5pct-banner-custom-apparel-custom-shirts-custom-hoodies-custom-caps.jpg"
-        alt1="Custom branded towels and promotional textiles for events and businesses in Joliet Illinois"
+        image1="/images/sublimation/top5pct-sublimation-shirt.jpg"
+        alt1="Custom sublimation printing for branded towels and promotional textiles in Joliet Illinois"
     >
         <x-slot name="intro">
             <p class="mb-4">In a world full of pens, keychains, and foam cups, a custom branded towel immediately signals that a business takes its promotional materials seriously. Towels are perceived as a premium giveaway because they are genuinely useful, visually distinctive, and associated with active, healthy lifestyles. A well-designed custom towel communicates that your brand values quality and practicality, and that message sticks with the recipient long after the event or gift occasion that brought it to them, and for a complete premium branded kit our <a href="/promotional-items/tote-bags" class="link-notification">custom tote bags</a> pair with towels for a full outdoor set that covers bags and active use accessories.</p>
@@ -130,15 +130,15 @@
         name="Chewy Orkwiszewski"
     />
     <x-ui.card-banner-slide-in
-        image="/images/custom-shirts/top5pct-custom-glitter-shirt-cap-hoodie-joliet.jpg"
-        alt="Custom branded towels and rally towels printed by Top 5 Percent in Joliet Illinois"
+        image="/images/mugs/top5pct-printed-mugs.jpg"
+        alt="Custom branded mugs and promotional drinkware from Top 5 Percent in Joliet Illinois"
         title="Custom Branded Towels, Edge-to-Edge Full Color"
         href="/contact"
         direction="left"
     />
     <x-ui.card-banner-slide-in
-        image="/images/custom-shirts/top5pct-custom-reflective-shirts-hoodies-caps-joliet.jpg"
-        alt="Custom branded apparel and promotional products from Top 5 Percent in Joliet Illinois"
+        image="/images/can-koozies/top5pct-custom-can-koozies.jpg"
+        alt="Custom can koozies and branded drinkware from Top 5 Percent in Joliet Illinois"
         title="Pair Your Towels With Branded Shirts or Apparel"
         href="/contact"
         direction="right"

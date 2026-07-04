@@ -61,10 +61,10 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/custom-shirts/top5pct-banner-custom-apparel-custom-shirts-custom-hoodies-custom-caps.jpg', 'alt' => 'Custom branded desk accessories and promotional products in Joliet Illinois'],
-            ['src' => '/images/custom-shirts/top5pct-custom-vinyl-shirts-caps-hoodies.jpg',                               'alt' => 'Custom branded promotional products and corporate gifts in Joliet Illinois'],
-            ['src' => '/images/custom-shirts/top5pct-t-shirt-maker-article-pic2.jpg',                                     'alt' => 'Custom mouse pads and branded desk accessories in Joliet, Will and DuPage County Illinois'],
-            ['src' => '/images/custom-shirts/top5pct-t-shirt-maker-article-pic1.jpg',                                     'alt' => 'Custom corporate gifts and branded promotional items in Joliet Illinois'],
+            ['src' => '/images/mugs/top5pct-custom-printed-mugs.jpg',                                                     'alt' => 'Custom branded desk accessories and promotional products in Joliet Illinois'],
+            ['src' => '/images/screen-printing/top5pct-screenprinting-company-shirts.jpg',                                'alt' => 'Custom branded promotional products and corporate gifts in Joliet Illinois'],
+            ['src' => '/images/sublimation/top5pct-sublimation-tees.jpg',                                                 'alt' => 'Custom mouse pads and branded desk accessories in Joliet, Will and DuPage County Illinois'],
+            ['src' => '/images/can-koozies/top5pct-personalized-koozies-joliet.jpg',                                      'alt' => 'Custom corporate gifts and branded promotional items in Joliet Illinois'],
         ]"
         visible=2
     />
@@ -75,7 +75,7 @@
     />
 
     <x-sections.card-image-with-text
-        image="/images/custom-shirts/top5pct-banner-custom-apparel-custom-shirts-custom-hoodies-custom-caps.jpg"
+        image="/images/mugs/top5pct-custom-coffee-mugs-in-joliet.jpg"
         alt="Custom branded mouse pads for businesses and corporate gifts in Joliet Illinois"
         title="Your Brand at Every Workstation"
     >
@@ -85,7 +85,7 @@
     </x-sections.card-image-with-text>
 
     <x-sections.card-image-with-text
-        image="/images/custom-shirts/top5pct-custom-vinyl-shirts-caps-hoodies.jpg"
+        image="/images/sublimation/top5pct-dye-sublimation-custom-shirt-joliet.jpg"
         alt="Custom branded mouse pad design and corporate gift options in Joliet Illinois"
         title="Full-Color Design Across the Entire Surface"
         imagePosition="right"
@@ -101,7 +101,7 @@
 
     <x-sections.card-detailed-info
         heading="Why Custom Mouse Pads Are One of the Best Long-Term Branding Investments Available"
-        image1="/images/custom-shirts/top5pct-banner-custom-apparel-custom-shirts-custom-hoodies-custom-caps.jpg"
+        image1="/images/mugs/top5pct-picture-on-mugs.jpg"
         alt1="Custom branded mouse pads and desk accessories for businesses in Joliet, Will and DuPage County Illinois"
     >
         <x-slot name="intro">
@@ -130,15 +130,15 @@
         name="Chewy Orkwiszewski"
     />
     <x-ui.card-banner-slide-in
-        image="/images/custom-shirts/top5pct-custom-vinyl-shirts-caps-hoodies.jpg"
-        alt="Custom branded mouse pads from Top 5 Percent in Joliet Illinois"
+        image="/images/mugs/top5pct-custom-mugs.jpg"
+        alt="Custom branded mugs and promotional drinkware from Top 5 Percent in Joliet Illinois"
         title="Custom Mouse Pads, Full Color, No Minimums"
         href="/contact"
         direction="right"
     />
     <x-ui.card-banner-slide-in
-        image="/images/embroidery/top5pct-custom-embroidery-shops-near-me-joliet.jpg"
-        alt="Custom embroidered apparel and branded products from Top 5 Percent in Joliet Illinois"
+        image="/images/screen-printing/top5pct-screenprinting-t-shirts-joliet.jpg"
+        alt="Custom screen printed apparel and branded products from Top 5 Percent in Joliet Illinois"
         title="Bundle Mouse Pads With Other Branded Desk Items"
         href="/contact"
         direction="left"

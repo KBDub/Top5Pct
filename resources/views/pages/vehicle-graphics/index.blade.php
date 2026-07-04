@@ -92,7 +92,7 @@
             'href'  => '/vehicle-graphics/vehicle-magnets',
         ],
         [
-            'image' => '/images/dot-decals/top5pct-truck-lettering-joliet-shorewood-rockdale.jpg',
+            'image' => '/images/dot-decals/top5pct-dot-decals-joliet.jpg',
             'alt'   => 'DOT stickers and USDOT compliance decals for trucks in Joliet, Shorewood, and Channahon Illinois',
             'title' => 'DOT Decals',
             'href'  => '/vehicle-graphics/dot-decals',

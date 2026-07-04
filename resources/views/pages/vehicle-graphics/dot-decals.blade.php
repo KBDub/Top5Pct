@@ -47,7 +47,7 @@
         primaryButtonHref="#all-products"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/dot-decals/top5pct-truck-lettering-joliet-shorewood-rockdale.jpg"
+        image="/images/dot-decals/top5pct-custom-dot-decals-for-trucks-in-joliet.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />

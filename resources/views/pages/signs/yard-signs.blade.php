@@ -118,8 +118,8 @@
 
             <x-sections.card-detailed-info
                 heading="How to Effectively Use Yard Signs to Promote Your Business"
-                image1="/images/yard-signs/top5pct-article-yard-signs-buy.jpg"
-                alt1="Custom yard signs printed for businesses and campaigns in Joliet, Will and DuPage County Illinois"
+                image1="/images/yard-signs/top5pct-yard-signs-joliet-illinois.jpg"
+                alt1="Custom yard signs printed for businesses and real estate agents in Joliet Illinois"
             >
                 <x-slot name="intro">
                     <p class="mb-4">Yard signs are one of the most direct and affordable ways to get your message in front of local customers in Joliet, Plainfield, Shorewood, Romeoville, and throughout the greater Chicagoland area. A well placed yard sign on a busy corner or in front of a property where work is being done can generate dozens of new inquiries without any ongoing cost once the sign is in the ground. We print custom yard signs for businesses, real estate agents, political campaigns, contractors, event organizers, and community groups all across Will and DuPage County, and many of those clients also order matching <a href="/signs/business-signs/banners" class="link-notification">banners</a> to anchor their event signage package. Here is how to get the most out of your yard sign investment.</p>

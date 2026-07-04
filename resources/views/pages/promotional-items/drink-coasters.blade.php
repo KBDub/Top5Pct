@@ -61,10 +61,10 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/custom-shirts/top5pct-banner-custom-apparel-custom-shirts-custom-hoodies-custom-caps.jpg', 'alt' => 'Custom branded promotional products and drink coasters in Joliet Illinois'],
-            ['src' => '/images/embroidery/top5pct-custom-embroidery-shops-near-me-joliet.jpg',                         'alt' => 'Custom branded coasters and promotional gifts for businesses in Joliet Illinois'],
-            ['src' => '/images/custom-shirts/top5pct-t-shirt-maker-article-pic2.jpg',                                     'alt' => 'Custom promotional products and branded merchandise in Joliet, Will and DuPage County Illinois'],
-            ['src' => '/images/custom-shirts/top5pct-t-shirt-maker-article-pic1.jpg',                                     'alt' => 'Branded promotional gifts and custom coasters in Joliet Illinois'],
+            ['src' => '/images/mugs/top5pct-custom-coffee-mugs-in-joliet.jpg',                                            'alt' => 'Custom branded promotional products and drink coasters in Joliet Illinois'],
+            ['src' => '/images/can-koozies/top5pct-custom-can-koozies.jpg',                                               'alt' => 'Custom branded coasters and promotional gifts for businesses in Joliet Illinois'],
+            ['src' => '/images/sublimation/top5pct-dye-sublimation-tees.jpg',                                             'alt' => 'Custom promotional products and branded merchandise in Joliet, Will and DuPage County Illinois'],
+            ['src' => '/images/screen-printing/top5pct-screenprinting-joliet.jpg',                                        'alt' => 'Branded promotional gifts and custom coasters in Joliet Illinois'],
         ]"
         visible=2
     />
@@ -75,7 +75,7 @@
     />
 
     <x-sections.card-image-with-text
-        image="/images/custom-shirts/top5pct-banner-custom-apparel-custom-shirts-custom-hoodies-custom-caps.jpg"
+        image="/images/mugs/top5pct-printed-mugs.jpg"
         alt="Custom branded drink coasters for restaurants and businesses in Joliet Illinois"
         title="Your Brand on Every Table"
     >
@@ -85,7 +85,7 @@
     </x-sections.card-image-with-text>
 
     <x-sections.card-image-with-text
-        image="/images/embroidery/top5pct-custom-embroidery-shops-near-me-joliet.jpg"
+        image="/images/can-koozies/top5pct-koozies-joliet.jpg"
         alt="Custom coaster materials and branded drinkware accessories for businesses in Joliet Illinois"
         title="Ceramic, Neoprene, and Hardboard Options"
         imagePosition="right"
@@ -101,7 +101,7 @@
 
     <x-sections.card-detailed-info
         heading="Why Custom Coasters Are an Underrated Branding Tool for Restaurants and Businesses"
-        image1="/images/custom-shirts/top5pct-banner-custom-apparel-custom-shirts-custom-hoodies-custom-caps.jpg"
+        image1="/images/sublimation/top5pct-custom-sublimation-shirts.jpg"
         alt1="Custom branded drink coasters for restaurants, bars, and businesses in Joliet, Will and DuPage County Illinois"
     >
         <x-slot name="intro">
@@ -130,15 +130,15 @@
         name="Chewy Orkwiszewski"
     />
     <x-ui.card-banner-slide-in
-        image="/images/embroidery/top5pct-custom-embroidery-shops-near-me-joliet.jpg"
-        alt="Custom branded drink coasters from Top 5 Percent in Joliet Illinois"
+        image="/images/mugs/top5pct-custom-coffee-mugs.jpg"
+        alt="Custom branded mugs and promotional drinkware from Top 5 Percent in Joliet Illinois"
         title="Custom Coasters, Your Brand on Every Table"
         href="/contact"
         direction="right"
     />
     <x-ui.card-banner-slide-in
-        image="/images/custom-shirts/top5pct-custom-glitter-shirt-cap-hoodie-joliet.jpg"
-        alt="Custom branded shirts and event apparel from Top 5 Percent in Joliet Illinois"
+        image="/images/can-koozies/top5pct-personalized-koozies-joliet.jpg"
+        alt="Custom can koozies and branded drinkware from Top 5 Percent in Joliet Illinois"
         title="Bundle Coasters With Custom Shirts for Any Occasion"
         href="/contact"
         direction="left"

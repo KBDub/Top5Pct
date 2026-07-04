@@ -61,10 +61,10 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/custom-shirts/top5pct-banner-custom-apparel-custom-shirts-custom-hoodies-custom-caps.jpg', 'alt' => 'Custom branded tote bags and promotional products in Joliet Illinois'],
-            ['src' => '/images/custom-shirts/top5pct-custom-reflective-shirts-hoodies-caps-joliet.jpg',                   'alt' => 'Custom branded bags and merchandise for businesses in Joliet Illinois'],
-            ['src' => '/images/custom-shirts/top5pct-t-shirt-maker-article-pic1.jpg',                                     'alt' => 'Custom promotional bags and branded merchandise in Joliet, Will and DuPage County Illinois'],
-            ['src' => '/images/custom-shirts/top5pct-t-shirt-maker-article-pic2.jpg',                                     'alt' => 'Custom branded totes and drawstring bags in Joliet Illinois'],
+            ['src' => '/images/sublimation/top5pct-sublimation-shirts.jpg',                                               'alt' => 'Custom sublimation printed tote bags and branded promotional products in Joliet Illinois'],
+            ['src' => '/images/screen-printing/top5pct-screenprinting-joliet.jpg',                                        'alt' => 'Custom screen printed bags and branded merchandise for businesses in Joliet Illinois'],
+            ['src' => '/images/mugs/top5pct-custom-coffee-mugs-in-joliet.jpg',                                            'alt' => 'Custom promotional mugs and branded merchandise in Joliet, Will and DuPage County Illinois'],
+            ['src' => '/images/can-koozies/top5pct-custom-can-koozies.jpg',                                               'alt' => 'Custom branded totes and event merchandise in Joliet Illinois'],
         ]"
         visible=2
     />
@@ -75,7 +75,7 @@
     />
 
     <x-sections.card-image-with-text
-        image="/images/custom-shirts/top5pct-banner-custom-apparel-custom-shirts-custom-hoodies-custom-caps.jpg"
+        image="/images/sublimation/top5pct-sublimation-team-shirts.jpg"
         alt="Custom branded tote bags and drawstring bags for businesses and events in Joliet Illinois"
         title="Walking Billboards for Your Brand"
     >
@@ -86,7 +86,7 @@
     </x-sections.card-image-with-text>
 
     <x-sections.card-image-with-text
-        image="/images/custom-shirts/top5pct-custom-reflective-shirts-hoodies-caps-joliet.jpg"
+        image="/images/screen-printing/top5pct-screenprinting-company-shirts.jpg"
         alt="Custom canvas tote bags and polyester drawstring bags for businesses and events in Joliet Illinois"
         title="Canvas Totes and Polyester Drawstring Bags"
         imagePosition="right"
@@ -102,7 +102,7 @@
 
     <x-sections.card-detailed-info
         heading="Why Custom Branded Bags Deliver More Visibility Than Almost Any Other Promotional Product"
-        image1="/images/custom-shirts/top5pct-banner-custom-apparel-custom-shirts-custom-hoodies-custom-caps.jpg"
+        image1="/images/sublimation/top5pct-dye-sublimation-tees.jpg"
         alt1="Custom branded tote bags and drawstring bags for businesses in Joliet, Will and DuPage County Illinois"
     >
         <x-slot name="intro">
@@ -131,15 +131,15 @@
         name="Chewy Orkwiszewski"
     />
     <x-ui.card-banner-slide-in
-        image="/images/custom-shirts/top5pct-custom-reflective-shirts-hoodies-caps-joliet.jpg"
-        alt="Custom branded tote bags and drawstring bags from Top 5 Percent in Joliet Illinois"
+        image="/images/mugs/top5pct-printed-mugs.jpg"
+        alt="Custom branded mugs and promotional drinkware from Top 5 Percent in Joliet Illinois"
         title="Custom Branded Bags That Go Everywhere"
         href="/contact"
         direction="left"
     />
     <x-ui.card-banner-slide-in
-        image="/images/custom-shirts/top5pct-custom-vinyl-shirts-caps-hoodies.jpg"
-        alt="Custom branded shirts and promotional apparel from Top 5 Percent in Joliet Illinois"
+        image="/images/can-koozies/top5pct-koozies-joliet.jpg"
+        alt="Custom can koozies and branded event merchandise from Top 5 Percent in Joliet Illinois"
         title="Customize Tote Bags With Your Logo or Design"
         href="/contact"
         direction="right"
