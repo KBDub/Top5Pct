@@ -62,11 +62,13 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/sidewalk-signs/top5pct-sidewalk-signs-plainfield.jpg',                          'alt' => 'Custom a-frame sidewalk signs printed for businesses in Plainfield Illinois'],
-            ['src' => '/images/sidewalk-signs/top5pct-custom-a-frame-sidewalk-signs-joliet.jpg',               'alt' => 'Custom a-frame sidewalk signs in Joliet Illinois'],
-            ['src' => '/images/sidewalk-signs/top5pct-sidewalk-sign.jpg',                                      'alt' => 'Custom sidewalk sign printed by Top 5 Percent in Joliet Illinois'],
-            ['src' => '/images/sidewalk-signs/top5pct-sidewalk-signs-joliet.jpg',                          'alt' => 'Custom sidewalk signs for businesses in Joliet Illinois'],
-            ['src' => '/images/sidewalk-signs/top5pct-sidewalk-signs-shorewood.jpg',                              'alt' => 'Custom a-frame sidewalk signs for businesses in Shorewood Illinois'],
+            ['src' => '/images/sidewalk-signs/top5pct-sidewalk-signs-plainfield.jpg',              'alt' => 'Custom a-frame sidewalk signs printed for businesses in Plainfield Illinois'],
+            ['src' => '/images/sidewalk-signs/top5pct-custom-a-frame-sidewalk-signs-joliet.jpg',   'alt' => 'Custom a-frame sidewalk signs in Joliet Illinois'],
+            ['src' => '/images/sidewalk-signs/top5pct-sidewalk-sign.jpg',                          'alt' => 'Custom sidewalk sign printed by Top 5 Percent in Joliet Illinois'],
+            ['src' => '/images/sidewalk-signs/top5pct-sidewalk-signs-joliet.jpg',                  'alt' => 'Custom sidewalk signs for businesses in Joliet Illinois'],
+            ['src' => '/images/sidewalk-signs/top5pct-sidewalk-signs-shorewood.jpg',               'alt' => 'Custom a-frame sidewalk signs for businesses in Shorewood Illinois'],
+            ['src' => '/images/sidewalk-signs/top5pct-sidewalk-signs-joliet-illinois.jpg', 'alt' => 'Custom sidewalk signs and a-frame signs in Joliet Illinois'],
+            ['src' => '/images/sidewalk-signs/top5pct-a-frame-signs-joliet.jpg',          'alt' => 'Custom a-frame sidewalk signs near Joliet and Shorewood Illinois'],
         ]"
         visible=2
     />

@@ -63,9 +63,11 @@
     <x-ui.carousel-rotating-images
         :images="[
             ['src' => '/images/custom-shaped-stickers-decals/top5pct-custom-stickers.jpg',               'alt' => 'Custom stickers in Crest Hill Illinois'],
-            ['src' => '/images/custom-shaped-stickers-decals/top5pct-stickers-in-joliet.jpg',    'alt' => 'Custom business stickers and decals printed for a brewery in Joliet Illinois'],
+            ['src' => '/images/custom-shaped-stickers-decals/top5pct-stickers-in-joliet.jpg',            'alt' => 'Custom business stickers and decals printed for a brewery in Joliet Illinois'],
             ['src' => '/images/custom-shaped-stickers-decals/top5pct-die-cut-stickers-joliet-r3.jpg',   'alt' => 'Custom sports stickers and decals for a boxing gym in Joliet Illinois'],
-            ['src' => '/images/custom-shaped-stickers-decals/top5pct-custom-glossy-stickers-in-joliet.jpg',          'alt' => 'Custom product labels and branded stickers printed in Joliet Illinois'],
+            ['src' => '/images/custom-shaped-stickers-decals/top5pct-custom-glossy-stickers-in-joliet.jpg', 'alt' => 'Custom product labels and branded stickers printed in Joliet Illinois'],
+            ['src' => '/images/standard-stickers-decals/top5pct-stickers-bumpers-joliet.jpg',           'alt' => 'Custom bumper stickers and standard decals in Joliet Illinois'],
+            ['src' => '/images/standard-stickers-decals/top5pct-stickers-custom-morris.jpg',            'alt' => 'Custom standard stickers in Morris Illinois'],
         ]"
         visible=2
     />

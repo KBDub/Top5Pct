@@ -67,6 +67,7 @@
             ['src' => '/images/foil-shirts/top5pct-foil-custom-apparel-shirts-joliet.jpg', 'alt' => 'Custom foil apparel and shirts in Joliet Illinois'],
             ['src' => '/images/foil-shirts/top5pct-foil-shirts-cresthill.jpg',             'alt' => 'Custom foil shirts for businesses and events in Crest Hill Illinois'],
             ['src' => '/images/foil-shirts/top5pct-foil-custom-shirts.jpg',                'alt' => 'Custom foil shirts printed by Top 5 Percent in Joliet Illinois'],
+            ['src' => '/images/foil-shirts/top5pct-custom-foil-polo.jpg',                  'alt' => 'Custom foil polo shirts in Joliet Illinois'],
         ]"
         visible=2
     />

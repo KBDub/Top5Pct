@@ -63,10 +63,12 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/banners/top5pct-banners-and-signs.jpg', 'alt' => 'Custom vinyl banners for businesses in Joliet, Shorewood, and Crest Hill Illinois'],
-            ['src' => '/images/banners/top5pct-banners-near-me.jpg',        'alt' => 'Custom banners printed in Joliet, Romeoville, Rockdale, and Plainfield Illinois'],
-            ['src' => '/images/banners/top5pct-big-banners.jpg',        'alt' => 'Custom birthday banners in Joliet, Shorewood, and Plainfield Illinois'],
-            ['src' => '/images/banners/top5pct-custom-retractable-banners-joliet.jpg',           'alt' => 'Custom family reunion banners in Joliet and Crest Hill Illinois'],
+            ['src' => '/images/banners/top5pct-banners-and-signs.jpg',                  'alt' => 'Custom vinyl banners for businesses in Joliet, Shorewood, and Crest Hill Illinois'],
+            ['src' => '/images/banners/top5pct-banners-near-me.jpg',                    'alt' => 'Custom banners printed in Joliet, Romeoville, Rockdale, and Plainfield Illinois'],
+            ['src' => '/images/banners/top5pct-big-banners.jpg',                        'alt' => 'Custom birthday banners in Joliet, Shorewood, and Plainfield Illinois'],
+            ['src' => '/images/banners/top5pct-custom-retractable-banners-joliet.jpg',  'alt' => 'Custom family reunion banners in Joliet and Crest Hill Illinois'],
+            ['src' => '/images/banners/top5pct-banners-for-trade-shows.jpg',            'alt' => 'Custom trade show banners printed in Joliet Illinois'],
+            ['src' => '/images/banners/top5pct-retractable-banner.jpg',                 'alt' => 'Custom retractable banners in Joliet, Shorewood, and Plainfield Illinois'],
         ]"
         visible=2
     />

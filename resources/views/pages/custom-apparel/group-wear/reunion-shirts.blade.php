@@ -58,10 +58,12 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/reunion-shirts/top5pct-class-reunion-shirt.jpg',             'alt' => 'Custom family and class reunion shirts in Joliet and Shorewood Illinois'],
+            ['src' => '/images/reunion-shirts/top5pct-class-reunion-shirt.jpg',              'alt' => 'Custom family and class reunion shirts in Joliet and Shorewood Illinois'],
             ['src' => '/images/reunion-shirts/top5pct-family-reunion-tshirts-in-joliet.jpg', 'alt' => 'Custom family reunion shirts in Joliet and Plainfield Illinois'],
             ['src' => '/images/reunion-shirts/top5pct-group-shirts.jpg',                    'alt' => 'Custom group shirts for reunions and events in Joliet Illinois'],
             ['src' => '/images/reunion-shirts/top5pct-family-reunion-tees.jpg',             'alt' => 'Custom family reunion tees for groups in Joliet, Shorewood, and Crest Hill Illinois'],
+            ['src' => '/images/reunion-shirts/top5pct-reunion-shirts-caps-banner-joliet.jpg', 'alt' => 'Custom reunion shirts, caps, and banners in Joliet Illinois'],
+            ['src' => '/images/reunion-shirts/top5pct-reunion-spirit-wear-apparel-joliet.jpg', 'alt' => 'Custom reunion spirit wear and apparel in Joliet Illinois'],
         ]"
         visible=2
     />

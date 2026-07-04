@@ -62,14 +62,16 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/custom-shaped-stickers-decals/top5pct-custom-stickers.jpg',      'alt' => 'Custom shaped stickers and branded decals printed in Joliet Illinois'],
-            ['src' => '/images/custom-shaped-stickers-decals/top5pct-custom-glossy-stickers-in-joliet.jpg',    'alt' => 'Custom die cut stickers for a sports organization in Joliet Illinois'],
-            ['src' => '/images/custom-shaped-stickers-decals/top5pct-custom-label-stickers.jpg',  'alt' => 'Custom die cut stickers for a restaurant in Joliet Illinois'],
+            ['src' => '/images/custom-shaped-stickers-decals/top5pct-custom-stickers.jpg',                  'alt' => 'Custom shaped stickers and branded decals printed in Joliet Illinois'],
+            ['src' => '/images/custom-shaped-stickers-decals/top5pct-custom-glossy-stickers-in-joliet.jpg', 'alt' => 'Custom die cut stickers for a sports organization in Joliet Illinois'],
+            ['src' => '/images/custom-shaped-stickers-decals/top5pct-custom-label-stickers.jpg',            'alt' => 'Custom die cut stickers for a restaurant in Joliet Illinois'],
             ['src' => '/images/custom-shaped-stickers-decals/top5pct-custom-shaped-stickers.jpg',           'alt' => 'Custom shaped product labels and die cut stickers in Joliet Illinois'],
-            ['src' => '/images/custom-shaped-stickers-decals/top5pct-custom-stickers-cresthill.jpg',         'alt' => 'Custom stickers and branded decals printed in Crest Hill and Joliet Illinois'],
-            ['src' => '/images/custom-shaped-stickers-decals/top5pct-die-cut-stickers-joliet-r3.jpg',        'alt' => 'Custom die cut stickers and vinyl decals in Joliet Illinois'],
-            ['src' => '/images/custom-shaped-stickers-decals/top5pct-die-cut-stickers-naperville.jpg',           'alt' => 'Custom die cut stickers in Naperville Illinois'],
-            ['src' => '/images/custom-shaped-stickers-decals/top5pct-die-cut-stickers-aurora.jpg',               'alt' => 'Custom die cut stickers in Aurora Illinois'],
+            ['src' => '/images/custom-shaped-stickers-decals/top5pct-custom-stickers-cresthill.jpg',        'alt' => 'Custom stickers and branded decals printed in Crest Hill and Joliet Illinois'],
+            ['src' => '/images/custom-shaped-stickers-decals/top5pct-die-cut-stickers-joliet-r3.jpg',       'alt' => 'Custom die cut stickers and vinyl decals in Joliet Illinois'],
+            ['src' => '/images/custom-shaped-stickers-decals/top5pct-die-cut-stickers-naperville.jpg',      'alt' => 'Custom die cut stickers in Naperville Illinois'],
+            ['src' => '/images/custom-shaped-stickers-decals/top5pct-die-cut-stickers-aurora.jpg',          'alt' => 'Custom die cut stickers in Aurora Illinois'],
+            ['src' => '/images/custom-shaped-stickers-decals/top5pct-die-cut-stickers-crest-hill.jpg',      'alt' => 'Custom die cut stickers in Crest Hill Illinois'],
+            ['src' => '/images/custom-shaped-stickers-decals/top5pct-stickers-custom-shaped-morris.jpg',    'alt' => 'Custom shaped stickers in Morris Illinois'],
         ]"
         visible=2
     />

@@ -62,10 +62,21 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/digital-vinyl/top5pct-digital-vinyl-shirts.jpg',            'alt' => 'Custom digital vinyl shirts with full color printing in Joliet Illinois'],
-            ['src' => '/images/digital-vinyl/top5pct-digital-vinyl-hoodie.jpg',            'alt' => 'Digital vinyl hoodies with photo quality artwork in Joliet and Shorewood Illinois'],
-            ['src' => '/images/digital-vinyl/top5pct-digital-vinyl-hoodies-in-joliet.jpg', 'alt' => 'Custom digital vinyl hoodies and apparel in Joliet Illinois'],
-            ['src' => '/images/digital-vinyl/custom-vinyl-hoodies.jpg', 'alt' => 'Custom digital vinyl hoodies pressed in Joliet Illinois'],
+            ['src' => '/images/digital-vinyl/top5pct-digital-vinyl-shirts.jpg',             'alt' => 'Custom digital vinyl shirts with full color printing in Joliet Illinois'],
+            ['src' => '/images/digital-vinyl/top5pct-digital-vinyl-hoodie.jpg',             'alt' => 'Digital vinyl hoodies with photo quality artwork in Joliet and Shorewood Illinois'],
+            ['src' => '/images/digital-vinyl/top5pct-digital-vinyl-hoodies-in-joliet.jpg',  'alt' => 'Custom digital vinyl hoodies and apparel in Joliet Illinois'],
+            ['src' => '/images/digital-vinyl/custom-caps-vinyl.jpg',                        'alt' => 'Custom digital vinyl caps and hats in Joliet Illinois'],
+            ['src' => '/images/digital-vinyl/custom-hoodies.jpg',                           'alt' => 'Custom digital vinyl hoodies in Joliet Illinois'],
+            ['src' => '/images/digital-vinyl/top5pct-custom-caps-vinyl.jpg',                'alt' => 'Custom vinyl printed caps in Joliet and Shorewood Illinois'],
+            ['src' => '/images/digital-vinyl/top5pct-custom-printed-vinyl-shirts.jpg',      'alt' => 'Custom printed digital vinyl shirts in Joliet Illinois'],
+            ['src' => '/images/digital-vinyl/top5pct-custom-vinyl-hoodies-2.jpg',           'alt' => 'Custom digital vinyl hoodies and sweatshirts in Joliet Illinois'],
+            ['src' => '/images/digital-vinyl/top5pct-vinyl-hoodie.jpg',                     'alt' => 'Digital vinyl hoodie with full color design in Joliet Illinois'],
+            ['src' => '/images/digital-vinyl/top5pct-vinyl-printed-shirts.jpg',             'alt' => 'Vinyl printed shirts with full color artwork in Joliet Illinois'],
+            ['src' => '/images/digital-vinyl/top5pct-vinyl-shirts.jpg',                     'alt' => 'Custom vinyl shirts in Joliet, Shorewood, and Crest Hill Illinois'],
+            ['src' => '/images/digital-vinyl/top5pct-vinyl-t-shirt-maker.jpg',              'alt' => 'Custom vinyl t-shirt maker in Joliet Illinois'],
+            ['src' => '/images/digital-vinyl/vinyl-hoodie.jpg',                             'alt' => 'Digital vinyl hoodie printed in Joliet Illinois'],
+            ['src' => '/images/digital-vinyl/vinyl-shirts.jpg',                             'alt' => 'Custom vinyl shirts printed in Joliet Illinois'],
+            ['src' => '/images/digital-vinyl/vinyl-t-shirt-maker.jpg',                      'alt' => 'Custom vinyl t-shirt printing in Joliet Illinois'],
         ]"
         visible=2
     />
@@ -86,7 +97,7 @@
     </x-sections.card-image-with-text>
 
     <x-sections.card-image-with-text
-        image="/images/digital-vinyl/custom-vinyl-hoodies.jpg"
+        image="/images/digital-vinyl/top5pct-custom-vinyl-hoodies-2.jpg"
         alt="Custom digital vinyl hoodies with full color artwork in Joliet and Shorewood Illinois"
         title="Digital Vinyl Hoodies and Sweatshirts"
         imagePosition="right"
@@ -125,7 +136,7 @@
 
     <x-sections.card-detailed-info
         heading="5 Reasons to Choose Digital Vinyl for Your Apparel"
-        image1="/images/digital-vinyl/custom-vinyl-shirts.jpg"
+        image1="/images/digital-vinyl/top5pct-vinyl-printed-shirts.jpg"
         alt1="Full color digital vinyl shirts and apparel made in Joliet, Will and DuPage County Illinois"
     >
         <x-slot name="intro">
@@ -156,7 +167,7 @@
         name="Priya K."
     />
     <x-ui.card-banner-slide-in
-        image="/images/digital-vinyl/custom-vinyl-hoodies.jpg"
+        image="/images/digital-vinyl/vinyl-hoodie.jpg"
         alt="Custom digital vinyl hoodies and apparel from Top 5 Percent in Joliet Illinois"
         title="Full Color Designs on Any Garment"
         href="/contact"

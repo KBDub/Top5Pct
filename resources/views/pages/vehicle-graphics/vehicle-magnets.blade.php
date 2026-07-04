@@ -63,9 +63,11 @@
     <x-ui.carousel-rotating-images
         :images="[
             ['src' => '/images/vehicle-magnets/top5pct-automobile-magnets-joliet.jpg', 'alt' => 'Custom vehicle magnets and car door magnetic signs in Joliet, Shorewood, and Crest Hill Illinois'],
-            ['src' => '/images/vehicle-magnets/top5pct-car-magnets-joliet.jpg',               'alt' => 'Custom car magnets and truck magnetic signs printed in Joliet Illinois'],
-            ['src' => '/images/vehicle-magnets/top5pct-car-magnets.jpg',             'alt' => 'Full color vehicle magnets and removable car door signs in Joliet Illinois'],
-            ['src' => '/images/vehicle-magnets/top5pct-car-sign-magnets-joliet.jpg',            'alt' => 'Custom business car magnets and magnetic vehicle signs printed in Joliet Illinois'],
+            ['src' => '/images/vehicle-magnets/top5pct-car-magnets-joliet.jpg',        'alt' => 'Custom car magnets and truck magnetic signs printed in Joliet Illinois'],
+            ['src' => '/images/vehicle-magnets/top5pct-car-magnets.jpg',               'alt' => 'Full color vehicle magnets and removable car door signs in Joliet Illinois'],
+            ['src' => '/images/vehicle-magnets/top5pct-car-sign-magnets-joliet.jpg',   'alt' => 'Custom business car magnets and magnetic vehicle signs printed in Joliet Illinois'],
+            ['src' => '/images/vehicle-magnets/top5pct-truck-sign-magnets-joliet.jpg', 'alt' => 'Custom truck sign magnets and vehicle door signs in Joliet Illinois'],
+            ['src' => '/images/vehicle-magnets/top5pct-vehicle-magnets-joliet.jpg',    'alt' => 'Custom vehicle magnets for businesses in Joliet Illinois'],
         ]"
         visible=2
     />

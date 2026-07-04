@@ -62,16 +62,21 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/window-signs/top5pct-window-graphic-signs-joliet.jpg', 'alt' => 'Custom window graphic signs for businesses in Joliet Illinois'],
-            ['src' => '/images/window-signs/top5pct-custom-window-signs.jpg','alt' => 'Custom window decals and window graphics in Joliet, Shorewood, and Crest Hill Illinois'],
-            ['src' => '/images/window-signs/top5pct-window-door-signs.jpg',     'alt' => 'Window clings and perforated vinyl for businesses in Joliet and Shorewood Illinois'],
-            ['src' => '/images/window-signs/top5pct-window-signs-joliet-slammers.jpg',     'alt' => 'Custom window decals installed in Joliet, Shorewood, and Rockdale Illinois'],
-            ['src' => '/images/window-signs/top5pct-window-business-signs.jpg',            'alt' => 'Window business signs for storefronts and offices in Joliet Illinois'],
-            ['src' => '/images/window-signs/top5pct-window-graphics-joliet.jpg',           'alt' => 'Custom window graphics for businesses in Joliet, Shorewood, and Crest Hill Illinois'],
-            ['src' => '/images/window-signs/top5pct-window-sign-installers-joliet.jpg',    'alt' => 'Professional window sign installers in Joliet and Will County Illinois'],
-            ['src' => '/images/window-signs/top5pct-window-signs-cresthill.jpg',           'alt' => 'Custom window signs for businesses in Crest Hill Illinois'],
-            ['src' => '/images/window-signs/top5pct-window-signs.jpg',                     'alt' => 'Custom window signs and window graphics in Joliet, Will and DuPage County Illinois'],
-            ['src' => '/images/window-signs/top5pct-window-vinyl-sign-installers.jpg',     'alt' => 'Vinyl window sign installation for businesses in Joliet Illinois'],
+            ['src' => '/images/window-signs/top5pct-window-graphic-signs-joliet.jpg',   'alt' => 'Custom window graphic signs for businesses in Joliet Illinois'],
+            ['src' => '/images/window-signs/top5pct-custom-window-signs.jpg',            'alt' => 'Custom window decals and window graphics in Joliet, Shorewood, and Crest Hill Illinois'],
+            ['src' => '/images/window-signs/top5pct-window-door-signs.jpg',              'alt' => 'Window clings and perforated vinyl for businesses in Joliet and Shorewood Illinois'],
+            ['src' => '/images/window-signs/top5pct-window-signs-joliet-slammers.jpg',  'alt' => 'Custom window decals installed in Joliet, Shorewood, and Rockdale Illinois'],
+            ['src' => '/images/window-signs/top5pct-window-business-signs.jpg',         'alt' => 'Window business signs for storefronts and offices in Joliet Illinois'],
+            ['src' => '/images/window-signs/top5pct-window-graphics-joliet.jpg',        'alt' => 'Custom window graphics for businesses in Joliet, Shorewood, and Crest Hill Illinois'],
+            ['src' => '/images/window-signs/top5pct-window-sign-installers-joliet.jpg', 'alt' => 'Professional window sign installers in Joliet and Will County Illinois'],
+            ['src' => '/images/window-signs/top5pct-window-signs-cresthill.jpg',        'alt' => 'Custom window signs for businesses in Crest Hill Illinois'],
+            ['src' => '/images/window-signs/top5pct-window-signs.jpg',                  'alt' => 'Custom window signs and window graphics in Joliet, Will and DuPage County Illinois'],
+            ['src' => '/images/window-signs/top5pct-window-vinyl-sign-installers.jpg',  'alt' => 'Vinyl window sign installation for businesses in Joliet Illinois'],
+            ['src' => '/images/window-signs/top5pct-window-signs-plainfield.jpg',       'alt' => 'Custom window signs for businesses in Plainfield Illinois'],
+            ['src' => '/images/window-signs/top5pct-window-signs-for-companies-joliet.jpg', 'alt' => 'Custom window signs for companies and businesses in Joliet Illinois'],
+            ['src' => '/images/window-signs/top5pct-window-signs-joliet-business-signage.jpg', 'alt' => 'Custom window business signage in Joliet Illinois'],
+            ['src' => '/images/window-signs/top5pct-window-signs-for-businesses-joliet.jpg',   'alt' => 'Custom window signs for businesses in Joliet Illinois'],
+            ['src' => '/images/window-signs/top5pct-window-signs-rockdale.jpg',         'alt' => 'Custom window signs in Rockdale Illinois'],
         ]"
         visible=2
     />

@@ -63,10 +63,21 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/custom-shirts/top5pct-custom-caps-vinyl.jpg',                               'alt' => 'Custom vinyl heat press shirts in Joliet Illinois'],
-            ['src' => '/images/custom-shirts/top5pct-custom-hoodies.jpg', 'alt' => 'Custom heat press apparel and vinyl shirts in Joliet Illinois'],
-            ['src' => '/images/custom-shirts/top5pct-custom-vinyl-hoodies.jpg',                                           'alt' => 'Custom vinyl cut shirts and apparel in Joliet Illinois'],
-            ['src' => '/images/custom-shirts/top5pct-custom-vinyl-shirts.jpg',                                     'alt' => 'Custom heat press vinyl shirts made in Joliet, Will and DuPage County Illinois'],
+            ['src' => '/images/digital-vinyl/top5pct-custom-caps-vinyl.jpg',   'alt' => 'Custom vinyl heat press shirts in Joliet Illinois'],
+            ['src' => '/images/digital-vinyl/top5pct-custom-vinyl-hoodies.jpg', 'alt' => 'Custom vinyl cut shirts and apparel in Joliet Illinois'],
+            ['src' => '/images/digital-vinyl/top5pct-custom-vinyl-shirts.jpg',  'alt' => 'Custom heat press vinyl shirts made in Joliet, Will and DuPage County Illinois'],
+            ['src' => '/images/vinyl/custom-caps-vinyl.jpg',                    'alt' => 'Custom vinyl caps and hats printed in Joliet Illinois'],
+            ['src' => '/images/vinyl/custom-hoodies.jpg',                       'alt' => 'Custom vinyl hoodies in Joliet Illinois'],
+            ['src' => '/images/vinyl/custom-vinyl-hoodies.jpg',                 'alt' => 'Custom vinyl printed hoodies in Joliet Illinois'],
+            ['src' => '/images/vinyl/custom-vinyl-shirts.jpg',                  'alt' => 'Custom vinyl shirts in Joliet Illinois'],
+            ['src' => '/images/vinyl/neon-vinyl-shirts.jpg',                    'alt' => 'Custom neon vinyl shirts in Joliet Illinois'],
+            ['src' => '/images/vinyl/top5pct-vinyl-shirts-joliet.jpg',          'alt' => 'Custom vinyl shirts in Joliet, Shorewood, and Crest Hill Illinois'],
+            ['src' => '/images/vinyl/top5pct-vinyl-shirts.jpg',                 'alt' => 'Custom vinyl shirts by Top 5 Percent in Joliet Illinois'],
+            ['src' => '/images/vinyl/top5pct-vinyl-t-shirt-maker.jpg',          'alt' => 'Custom vinyl t-shirt maker in Joliet Illinois'],
+            ['src' => '/images/vinyl/vinyl-caps.jpg',                           'alt' => 'Custom vinyl caps and hats in Joliet Illinois'],
+            ['src' => '/images/vinyl/vinyl-hoodie.jpg',                         'alt' => 'Custom vinyl hoodie in Joliet Illinois'],
+            ['src' => '/images/vinyl/vinyl-shirts.jpg',                         'alt' => 'Custom vinyl shirts printed in Joliet Illinois'],
+            ['src' => '/images/vinyl/vinyl-t-shirt-maker.jpg',                  'alt' => 'Custom vinyl t-shirt printing in Joliet Illinois'],
         ]"
         visible=2
     />
@@ -133,7 +144,7 @@
         name="Jonathan Young"
     />
     <x-ui.card-banner-slide-in
-        image="/images/custom-shirts/top5pct-custom-vinyl-shirts-caps-hoodies.jpg"
+        image="/images/vinyl/top5pct-vinyl-shirts-joliet.jpg"
         alt="Custom vinyl heat press shirts by Top 5 Percent in Joliet Illinois"
         title="Custom Vinyl Shirts, Same Day Available, No Minimums"
         href="/contact"
