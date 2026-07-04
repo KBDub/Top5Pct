@@ -62,28 +62,16 @@
 
     <x-ui.carousel-rotating-images
         :images="[
-            ['src' => '/images/glitter-shirts-compressed/glitter-shirts-crest-hill-600x450.jpg',       'alt' => 'Custom glitter shirts and sparkle apparel in Joliet Illinois'],
-            ['src' => '/images/glitter-shirts-compressed/glitter-blue-jean-jacket-600x450.jpg',       'alt' => 'Custom glitter blue jean jacket in Joliet Illinois'],
-            ['src' => '/images/glitter-shirts-compressed/glitter-sweatshirts-rockdale-600x450.jpg',   'alt' => 'Custom glitter sportswear shirts for teams and events in Joliet Illinois'],
-            ['src' => '/images/glitter-shirts-compressed/glitter-sweatshirts-joliet-600x450.jpg',     'alt' => 'Custom glitter sweatshirts printed in Joliet Illinois'],
-            ['src' => '/images/glitter-shirts-compressed/glitter-hoodies-plainfield-600x450.jpg',     'alt' => 'Custom glitter hoodies printed in Plainfield and Joliet Illinois'],
-            ['src' => '/images/glitter-shirts-compressed/gitter-birthday-shirt-600x450.jpg',          'alt' => 'Custom glitter birthday shirts printed in Joliet Illinois'],
-            ['src' => '/images/glitter-shirts-compressed/glitter-shirt-crest-hill-600x450.jpg',       'alt' => 'Custom glitter sweatshirts and apparel in Joliet Illinois'],
+            ['src' => '/images/glitter-shirts-compressed/glitter-shirts-crest-hill-600x450.jpg',           'alt' => 'Custom glitter shirts and sparkle apparel in Joliet Illinois'],
+            ['src' => '/images/glitter-shirts-compressed/glitter-blue-jean-jacket-600x450.jpg',            'alt' => 'Custom glitter blue jean jacket in Joliet Illinois'],
+            ['src' => '/images/glitter-shirts-compressed/glitter-sweatshirts-rockdale-600x450.jpg',        'alt' => 'Custom glitter sportswear shirts for teams and events in Joliet Illinois'],
+            ['src' => '/images/glitter-shirts-compressed/glitter-sweatshirts-joliet-600x450.jpg',          'alt' => 'Custom glitter sweatshirts printed in Joliet Illinois'],
+            ['src' => '/images/glitter-shirts-compressed/glitter-hoodies-plainfield-600x450.jpg',          'alt' => 'Custom glitter hoodies printed in Plainfield and Joliet Illinois'],
+            ['src' => '/images/glitter-shirts-compressed/gitter-birthday-shirt-600x450.jpg',               'alt' => 'Custom glitter birthday shirts printed in Joliet Illinois'],
+            ['src' => '/images/glitter-shirts-compressed/glitter-shirt-crest-hill-600x450.jpg',            'alt' => 'Custom glitter sweatshirts and apparel in Joliet Illinois'],
+            ['src' => '/images/glitter-shirts-compressed/glitter-shirtt-joliet-spurs-basketball-600x450.jpg', 'alt' => 'Custom glitter shirts for sports teams in Joliet Illinois'],
         ]"
         visible=2
-    />
-
-    <x-ui.carousel-rotating-images
-        :images="[
-            ['src' => '/images/glitter-shirts-compressed/glitter-lips-custom-t-shirt-600x450.jpg',  'alt' => 'Custom glitter lips design on a shirt in Joliet Illinois'],
-            ['src' => '/images/glitter-shirts-compressed/glitter-t-shirts-cresthill-600x450.jpg',   'alt' => 'Custom glitter t-shirts in Crest Hill Illinois'],
-            ['src' => '/images/glitter-shirts-compressed/glitter-shirts-crest-hill-600x450.jpg',    'alt' => 'Custom glitter shirts in Crest Hill Illinois'],
-            ['src' => '/images/glitter-shirts-compressed/glitter-shirt-crest-hill-600x450.jpg',     'alt' => 'Custom glitter shirt design in Crest Hill Illinois'],
-            ['src' => '/images/glitter-shirts-compressed/gitter-birthday-shirt-600x450.jpg',        'alt' => 'Custom glitter birthday shirt in Joliet Illinois'],
-            ['src' => '/images/glitter-shirts-compressed/glitter-sweatshirts-joliet-600x450.jpg',   'alt' => 'Custom glitter sweatshirts in Joliet Illinois'],
-            ['src' => '/images/glitter-shirts-compressed/glitter-hoodies-plainfield-600x450.jpg',   'alt' => 'Custom glitter hoodies in Plainfield Illinois'],
-        ]"
-        visible=3
     />
 
     <x-ui.banner-testimonial
