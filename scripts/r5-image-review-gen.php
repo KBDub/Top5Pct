@@ -227,6 +227,15 @@ $exclude = [
     'glitter-shirts.blade.php', 'custom-storefronts.blade.php', 'coronavirus-signs.blade.php',
 ];
 
+// ── Primary dir overrides ──────────────────────────────────────────────────
+// Some pages use a shared/generic dir for their banner but have a dedicated
+// dir that should be treated as primary for unplaced/fill calculations.
+// Key = blade filename, value = correct primary dir name.
+$primaryDirOverride = [
+    'vinyl-shirts.blade.php'      => 'vinyl',
+    'standard-stickers.blade.php' => 'standard-stickers-decals',
+];
+
 // ── Boot ───────────────────────────────────────────────────────────────────
 $fileLookup = parseDatesFile($datesFile);
 
@@ -283,7 +292,13 @@ $md .= "**[dup]** = same-size intentional R5 duplicate (not a conflict).  ";
 $md .= "**[collision]** = same base name, different file size.  ";
 $md .= "**Unplaced** = files in the primary dir not referenced on this page.  ";
 $md .= "**content-dup** = unplaced file whose byte size matches a file already placed on this page (same image, different filename — do not add to page).\n\n";
-$md .= "Dates sourced from `public/image.dates.txt`.\n\n---\n\n";
+$md .= "Dates sourced from `public/image.dates.txt`.\n\n";
+$md .= "**Primary dir overrides (blade banner dir differs from correct content dir):**\n";
+$md .= "- `vinyl-shirts.blade.php` — primary dir forced to `vinyl/` (banner is in `custom-shirts/` but vinyl images live in `vinyl/`)\n";
+$md .= "- `standard-stickers.blade.php` — primary dir forced to `standard-stickers-decals/` (blade borrows from `custom-shaped-stickers-decals/` but standard sticker images live in `standard-stickers-decals/`)\n";
+$md .= "- `digital-vinyl.blade.php` — primary dir correctly `digital-vinyl/` (separate dir from `vinyl/`)\n";
+$md .= "- `custom-shaped-stickers.blade.php` — primary dir correctly `custom-shaped-stickers-decals/`\n\n";
+$md .= "---\n\n";
 
 // ── CSV header ─────────────────────────────────────────────────────────────
 $csvLines = ["Page,File,URL,Primary Dir,Slot,Filename,Image Dir,Round,Date,New?,Cross-sell,Collision-Dup,Unplaced Total,Unplaced Unique"];
@@ -298,7 +313,7 @@ foreach ($pageFiles as $pagePath) {
     $slots = parsePage($content);
     if (empty($slots)) continue;
 
-    $primDir  = primaryDir($slots);
+    $primDir  = $primaryDirOverride[basename($pagePath)] ?? primaryDir($slots);
     $unplaced = getUnplaced($slots, $primDir, $imagesRoot, $fileLookup);
 
     $carouselCount = count(array_filter(array_keys($slots), fn($k) => strpos($k, 'carousel-') === 0));

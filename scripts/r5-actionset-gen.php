@@ -161,6 +161,15 @@ $exclude = [
     'glitter-shirts.blade.php','custom-storefronts.blade.php','coronavirus-signs.blade.php',
 ];
 
+// ── Primary dir overrides ──────────────────────────────────────────────────
+// Some pages use a shared/generic dir for their banner but have a dedicated
+// dir that should be treated as primary for unplaced/fill calculations.
+// Key = blade filename, value = correct primary dir name.
+$primaryDirOverride = [
+    'vinyl-shirts.blade.php'      => 'vinyl',
+    'standard-stickers.blade.php' => 'standard-stickers-decals',
+];
+
 // ── Shared catch-all dirs — suppress Fill suggestions ─────────────────────
 // These dirs are used by multiple pages and contain generic/mixed content.
 // Unplaced files in these dirs are not page-specific and should not be
@@ -198,7 +207,7 @@ foreach ($pageFiles as $pagePath) {
     $slots    = parsePage($content);
     if (empty($slots)) continue;
 
-    $primDir = primaryDir($slots);
+    $primDir = $primaryDirOverride[basename($pagePath)] ?? primaryDir($slots);
     $title   = ucwords(str_replace(['-','_'], ' ', $pageName));
 
     $actions    = []; // priority => [rows]
