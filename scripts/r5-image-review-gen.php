@@ -391,11 +391,29 @@ foreach ($pageFiles as $pagePath) {
         $dupFiles    = array_filter($unplaced['files'], fn($r) => $r['dup_of'] !== null);
 
         if (!empty($uniqueFiles)) {
-            $md .= "\n**Unplaced unique in `{$primDir}/` (" . count($uniqueFiles) . " files — available for carousel fill):**  \n";
-            foreach ($uniqueFiles as $r) {
-                $fi    = getFileInfo($primDir, $r['file'], $fileLookup);
-                $small = isset($smallFiles[strtolower($r['file'])]) ? '  ⚠ small/old (<200k)' : '';
-                $md .= "- `{$r['file']}` — {$fi['round']}  ({$fi['date']}){$small}\n";
+            $safeFills = array_filter($uniqueFiles, function($r) use ($primDir, $fileLookup, $smallFiles) {
+                $fi = getFileInfo($primDir, $r['file'], $fileLookup);
+                return $fi['round'] !== 'Initial' && !isset($smallFiles[strtolower($r['file'])]);
+            });
+            $oldFills = array_filter($uniqueFiles, function($r) use ($primDir, $fileLookup, $smallFiles) {
+                $fi = getFileInfo($primDir, $r['file'], $fileLookup);
+                return $fi['round'] === 'Initial' || isset($smallFiles[strtolower($r['file'])]);
+            });
+
+            if (!empty($safeFills)) {
+                $md .= "\n**Unplaced unique in `{$primDir}/` (" . count($safeFills) . " safe to add — R1 or better, not small):**  \n";
+                foreach ($safeFills as $r) {
+                    $fi = getFileInfo($primDir, $r['file'], $fileLookup);
+                    $md .= "- `{$r['file']}` — {$fi['round']}  ({$fi['date']})\n";
+                }
+            }
+            if (!empty($oldFills)) {
+                $md .= "\n**Unplaced old/small in `{$primDir}/` (" . count($oldFills) . " files — available in dir, do not add to active display):**  \n";
+                foreach ($oldFills as $r) {
+                    $fi    = getFileInfo($primDir, $r['file'], $fileLookup);
+                    $small = isset($smallFiles[strtolower($r['file'])]) ? '  ⚠ small/old (<200k)' : '';
+                    $md .= "- `{$r['file']}` — {$fi['round']}  ({$fi['date']}){$small}\n";
+                }
             }
         }
         if (!empty($dupFiles)) {
