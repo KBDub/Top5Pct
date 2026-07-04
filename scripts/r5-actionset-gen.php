@@ -161,6 +161,12 @@ $exclude = [
     'glitter-shirts.blade.php','custom-storefronts.blade.php','coronavirus-signs.blade.php',
 ];
 
+// ── Shared catch-all dirs — suppress Fill suggestions ─────────────────────
+// These dirs are used by multiple pages and contain generic/mixed content.
+// Unplaced files in these dirs are not page-specific and should not be
+// suggested as carousel fills.
+$noFillDirs = ['custom-shirts'];
+
 // ── Boot ───────────────────────────────────────────────────────────────────
 $fileLookup = parseDatesFile($datesFile);
 
@@ -224,8 +230,8 @@ foreach ($pageFiles as $pagePath) {
         elseif ($pri === 'P1') $p1++;
     }
 
-    // Unplaced unique files
-    $fills = getUnplacedUnique($slots, $primDir, $imagesRoot, $fileLookup);
+    // Unplaced unique files — suppressed for shared catch-all dirs
+    $fills     = in_array($primDir, $noFillDirs) ? [] : getUnplacedUnique($slots, $primDir, $imagesRoot, $fileLookup);
     $fillCount = count($fills);
 
     // Sort actions: P0 first, P1, P2
