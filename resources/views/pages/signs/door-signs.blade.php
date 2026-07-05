@@ -47,7 +47,7 @@
         primaryButtonHref="#all-products"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/door-signs/top5pct-door-lettering-vinyl.jpg"
+        image="/images/door-signs/top5pct-business-door-signs.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />
@@ -107,7 +107,7 @@
 
     <x-sections.card-detailed-info
         heading="What Your Door Signage Communicates Before You Say a Word"
-        image1="/images/door-signs/top5pct-door-signs-crest-hill.jpg"
+        image1="/images/door-signs/top5pct-business-door-signs.jpg"
         alt1="Custom door signs and door graphics installed for businesses in Crest Hill and Joliet Illinois"
     >
         <x-slot name="intro">
