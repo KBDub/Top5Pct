@@ -32,14 +32,16 @@
 
         <div class="border-t-4 border-sunburst bg-white shadow-md p-8">
 
-            <div class="inline-block mb-6">
-                <h2 class="text-h2 font-bold text-charcoal mb-1">
-                    {{ $seoQualifier }} <span class="text-sunburst">{{ $displayServiceType }}</span> in {{ $titleCity }} and surrounding areas
-                </h2>
-                <p class="text-h3 font-semibold text-charcoal mb-2">
-                    Same Day Service, The <span class="text-sunburst">Top 5 Percent</span> Difference
-                </p>
-                <div class="h-1 bg-sunburst"></div>
+            <div class="text-center mb-6">
+                <div class="inline-block">
+                    <h2 class="text-h2 font-bold text-charcoal mb-1">
+                        {{ $seoQualifier }} <span class="text-sunburst">{{ $displayServiceType }}</span> in {{ $titleCity }} and surrounding areas
+                    </h2>
+                    <p class="text-h3 font-semibold text-charcoal mb-2">
+                        Same Day Service, The <span class="text-sunburst">Top 5 Percent</span> Difference
+                    </p>
+                    <div class="h-1 bg-sunburst"></div>
+                </div>
             </div>
 
             @if($introText)
