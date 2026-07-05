@@ -153,7 +153,7 @@
             </div>
 
             {{-- Dot indicators --}}
-            <div class="flex justify-center gap-2 mt-4">
+            <div class="flex justify-center gap-2 mt-4 mb-6">
                 <template x-for="(img, idx) in images" :key="idx">
                     <button
                         x-on:click="jumpTo(idx)"
