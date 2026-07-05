@@ -34,14 +34,14 @@
 
             <div class="text-center mb-6">
                 <div class="inline-block">
-                    <h2 class="text-h2 font-bold text-charcoal mb-1">
+                    <h2 class="text-h2 font-bold text-charcoal mb-2">
                         {{ $seoQualifier }} <span class="text-sunburst">{{ $displayServiceType }}</span> in {{ $titleCity }} and surrounding areas
                     </h2>
-                    <p class="text-h3 font-semibold text-charcoal mb-2">
-                        Same Day Service, The <span class="text-sunburst">Top 5 Percent</span> Difference
-                    </p>
-                    <div class="h-1 bg-sunburst"></div>
+                    <div class="h-1 bg-sunburst mb-2"></div>
                 </div>
+                <p class="text-h3 font-semibold text-charcoal mt-1">
+                    Same Day Service, The <span class="text-sunburst">Top 5 Percent</span> Difference
+                </p>
             </div>
 
             @if($introText)
