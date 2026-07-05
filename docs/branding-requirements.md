@@ -1517,7 +1517,7 @@ Do not use the CSS `text-transform: uppercase` property or the Tailwind `upperca
 
 ### Writing Standards (MANDATORY)
 
-- **No em dashes:** Never use the `—` character anywhere on the site. Rewrite the sentence, use a comma, or break it into two shorter sentences instead.
+- **No dashes of any kind:** Never use an en-dash (–), em-dash (—), or double hyphen (--) anywhere on the site, in any copy, prop text, data file, or blade template. Rewrite the sentence using a comma, or break it into two natural sentences instead. This applies to all content including `productIntro`, `crossSell`, headings, paragraphs, and structured data.
 - **Reading level:** Write at a 7th grade reading level. Use short sentences and common everyday words. If a simpler word works, use it.
 - **Laymen's terms:** Avoid industry jargon and technical terms. Write as if explaining to a customer who has never ordered a custom shirt or sign before. If a technical term is necessary, follow it with a plain-language explanation.
 - **No all caps:** Never use uppercase text anywhere on the site (see also: Text Transform Rules).
