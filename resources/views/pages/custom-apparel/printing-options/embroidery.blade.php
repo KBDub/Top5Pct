@@ -47,7 +47,7 @@
         primaryButtonHref="/contact"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/embroidery/top5pct-embroidered-bag.jpg"
+        image="/images/embroidery/top5pct-stitched-embroidered-shirts.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />

@@ -47,7 +47,7 @@
         primaryButtonHref="#all-products"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/dtf-transfers/top5pct-dtf-hoodies-joliet.jpg"
+        image="/images/dtf-transfers/top5pct-dtf-t-shirt-printing.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />

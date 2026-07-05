@@ -47,7 +47,7 @@
         primaryButtonHref="/contact"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/brick-shirts/top5pct-brick-vinyl-custom-t-shirt.jpg"
+        image="/images/brick-shirts/top5pct-brick-vinyl-hoodies.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />
