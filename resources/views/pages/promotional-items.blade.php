@@ -78,13 +78,13 @@
         id="promo-categories"
         :banners="[
         [
-            'image' => '/images/mugs/top5pct-mugs-custom-plainfield.jpg',
+            'image' => '/images/mugs/top5pct-custom-printed-mugs.jpg',
             'alt'   => 'Custom branded mugs and drinkware for businesses in Joliet Illinois',
             'title' => 'Custom Mugs',
             'href'  => '/promotional-items/mugs',
         ],
         [
-            'image' => '/images/can-koozies/top5pct-koozie-can-joliet.jpg',
+            'image' => '/images/can-koozies/top5pct-koozies-joliet.jpg',
             'alt'   => 'Custom branded can koozies and drink holders for events in Joliet Illinois',
             'title' => 'Can Koozies',
             'href'  => '/promotional-items/can-koozies',
