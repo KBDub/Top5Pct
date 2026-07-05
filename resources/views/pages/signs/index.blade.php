@@ -81,49 +81,49 @@
         id="sign-categories"
         :banners="[
         [
-            'image' => '/images/yard-signs/top5pct-custom-yard-signs-joliet.jpg',
+            'image' => '/images/yard-signs/top5pct-yard-signs.jpg',
             'alt'   => 'Custom yard signs and lawn signs in Joliet, Shorewood, and Crest Hill Illinois',
             'title' => 'Yard Signs',
             'href'  => '/signs/ground-signs/yard-signs',
         ],
         [
-            'image' => '/images/banners/top5pct-sports-banners.jpg',
+            'image' => '/images/banners/top5pct-custom-vinyl-banners.jpg',
             'alt'   => 'Custom vinyl banners for businesses in Joliet, Shorewood, and Crest Hill Illinois',
             'title' => 'Banners',
             'href'  => '/signs/business-signs/banners',
         ],
         [
-            'image' => '/images/posters/top5pct-posters-printed-joliet.jpg',
+            'image' => '/images/posters/top5pct-banner-poster-maker-joliet-romeoville-shorewood.jpg',
             'alt'   => 'Poster printing services in Joliet, Shorewood, and Romeoville Illinois',
             'title' => 'Posters',
             'href'  => '/signs/business-signs/posters',
         ],
         [
-            'image' => '/images/table-runners/top5pct-custom-table-cloth-business.jpg',
+            'image' => '/images/table-runners/top5pct-custom-table-runners.jpg',
             'alt'   => 'Custom table runners and table cloths for events in Joliet Illinois',
             'title' => 'Table Runners',
             'href'  => '/signs/table-signs/table-runners',
         ],
         [
-            'image' => '/images/window-signs/top5pct-window-signs-rockdale.jpg',
+            'image' => '/images/window-signs/top5pct-window-sign-installers-joliet.jpg',
             'alt'   => 'Custom window signs and window decals for businesses in Joliet, Shorewood, and Crest Hill',
             'title' => 'Window Signs',
             'href'  => '/signs/business-signs/window-signs',
         ],
         [
-            'image' => '/images/wall-signs/top5pct-wall-signs.jpg',
+            'image' => '/images/wall-signs/top5pct-wall-signs-plainfield.jpg',
             'alt'   => 'Custom wall signs and wall graphics for businesses in Joliet Illinois',
             'title' => 'Wall Signs',
             'href'  => '/signs/business-signs/wall-signs',
         ],
         [
-            'image' => '/images/door-signs/top5pct-door-signage.jpg',
+            'image' => '/images/door-signs/top5pct-door-lettering-vinyl.jpg',
             'alt'   => 'Custom door signs and door graphics for businesses in Joliet, Shorewood, and Crest Hill',
             'title' => 'Door Signs',
             'href'  => '/signs/business-signs/door-signs',
         ],
         [
-            'image' => '/images/table-cloths/top5pct-custom-table-cloth.jpg',
+            'image' => '/images/table-cloths/top5pct-table-cloth-customized.jpg',
             'alt'   => 'Custom branded table cloths and table covers for events in Joliet and Crest Hill Illinois',
             'title' => 'Table Cloths',
             'href'  => '/signs/table-signs/table-cloths',

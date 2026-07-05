@@ -47,7 +47,7 @@
         primaryButtonHref="/contact"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/puff-shirts/top5pct-custom-puff-shirts.jpg"
+        image="/images/puff-shirts/top5pct-puff-shirts.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />
