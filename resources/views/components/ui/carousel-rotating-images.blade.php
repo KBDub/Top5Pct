@@ -18,7 +18,7 @@
 <div
     x-data="{
         images: @js($images),
-        vis: {{ (int) $visible }},
+        vis: 3,
         current: 0,
         fading: false,
         timer: null,
