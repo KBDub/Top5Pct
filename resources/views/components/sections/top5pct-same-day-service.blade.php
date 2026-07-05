@@ -39,7 +39,7 @@
                     </h2>
                     <div class="h-1 bg-sunburst mb-2"></div>
                 </div>
-                <p class="text-h3 font-semibold text-charcoal mt-1">
+                <p class="text-2xl font-semibold text-charcoal mt-1">
                     Same Day Service, The <span class="text-sunburst">Top 5 Percent</span> Difference
                 </p>
             </div>
