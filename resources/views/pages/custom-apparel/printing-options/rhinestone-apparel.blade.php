@@ -47,7 +47,7 @@
         primaryButtonHref="/contact"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/rhinestone-apparel/top5pct-rhinestone-hoodies-joliet.jpg"
+        image="/images/rhinestone-apparel/top5pct-rhinestone-tshirts-joliet.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />

@@ -47,7 +47,7 @@
         primaryButtonHref="#all-products"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/window-signs/top5pct-window-signs-rockdale.jpg"
+        image="/images/window-signs/top5pct-window-sign-installers-joliet.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />

@@ -43,7 +43,7 @@
         primaryButtonHref="#all-products"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/reunion-shirts/top5pct-family-reunion-shirts-joliet.jpg"
+        image="/images/reunion-shirts/top5pct-family-reunion-shirts-joliet-crest-hill.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />

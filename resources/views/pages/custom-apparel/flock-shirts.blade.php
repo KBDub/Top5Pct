@@ -47,7 +47,7 @@
         primaryButtonHref="/contact"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/flock-shirts/top5pct-custom-flock-t-shirt-printing.jpg"
+        image="/images/flock-shirts/top5pct-flock-shirts-plainfield.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />

@@ -47,7 +47,7 @@
         primaryButtonHref="#all-products"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/custom-shaped-stickers-decals/top5pct-custom-stickers-cresthill.jpg"
+        image="/images/standard-stickers-decals/top5pct-diecut-stickers.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />

@@ -47,7 +47,7 @@
         primaryButtonHref="#all-products"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/door-signs/top5pct-door-signage.jpg"
+        image="/images/door-signs/top5pct-door-lettering-vinyl.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />

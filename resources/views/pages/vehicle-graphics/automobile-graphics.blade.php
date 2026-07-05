@@ -47,7 +47,7 @@
         primaryButtonHref="#all-products"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/automobile-graphics/top5pct-auto-window-wraps.jpg"
+        image="/images/automobile-graphics/top5pct-decals-for-work-trucks.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />

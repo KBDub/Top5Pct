@@ -47,7 +47,7 @@
         primaryButtonHref="#all-products"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/yard-signs/top5pct-custom-yard-signs-joliet.jpg"
+        image="/images/yard-signs/top5pct-yard-signs.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />

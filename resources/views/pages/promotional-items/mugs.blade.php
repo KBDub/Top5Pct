@@ -47,7 +47,7 @@
         primaryButtonHref="#all-products"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/mugs/top5pct-mugs-custom-plainfield.jpg"
+        image="/images/mugs/top5pct-custom-printed-mugs.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />

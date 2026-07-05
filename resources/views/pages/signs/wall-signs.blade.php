@@ -47,7 +47,7 @@
         primaryButtonHref="#all-products"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/wall-signs/top5pct-wall-signs.jpg"
+        image="/images/wall-signs/top5pct-wall-signs-plainfield.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />

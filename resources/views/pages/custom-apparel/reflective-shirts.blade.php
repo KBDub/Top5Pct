@@ -47,7 +47,7 @@
         primaryButtonHref="/contact"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/reflective-shirts/top5pct-reflective-shirts-gold.jpg"
+        image="/images/reflective-shirts/top5pct-reflective-vinyl-shirts-plainfield.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />

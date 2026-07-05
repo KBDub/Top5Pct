@@ -43,7 +43,7 @@
         primaryButtonHref="#all-products"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/spirit-wear/top5pct-spirit-wear-joliet.jpg"
+        image="/images/spirit-wear/top5pct-spirit-wear-gear-joliet.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />

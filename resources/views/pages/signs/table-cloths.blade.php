@@ -47,7 +47,7 @@
         primaryButtonHref="#all-products"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/table-cloths/top5pct-custom-table-cloth.jpg"
+        image="/images/table-cloths/top5pct-table-cloth-customized.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />

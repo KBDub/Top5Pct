@@ -43,7 +43,7 @@
         primaryButtonHref="#all-products"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/corporate-wear/top5pct-custom-business-shirts.jpg"
+        image="/images/corporate-wear/top5pct-landscaping-clothing-joliet.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />

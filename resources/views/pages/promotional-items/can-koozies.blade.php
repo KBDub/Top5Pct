@@ -47,7 +47,7 @@
         primaryButtonHref="#all-products"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/can-koozies/top5pct-koozie-can-joliet.jpg"
+        image="/images/can-koozies/top5pct-koozies-joliet.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />

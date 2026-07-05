@@ -47,7 +47,7 @@
         primaryButtonHref="#all-products"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/custom-shaped-stickers-decals/top5pct-die-cut-stickers-joliet.jpg"
+        image="/images/custom-shaped-stickers-decals/top5pct-custom-shaped-stickers.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />

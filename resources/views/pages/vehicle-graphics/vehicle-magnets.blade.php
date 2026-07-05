@@ -47,7 +47,7 @@
         primaryButtonHref="#all-products"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/vehicle-magnets/top5pct-magnet-vehicle-signs-joliet.jpg"
+        image="/images/vehicle-magnets/top5pct-joliet-car-magnets.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />

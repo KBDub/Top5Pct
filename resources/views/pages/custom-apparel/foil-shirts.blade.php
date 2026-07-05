@@ -47,7 +47,7 @@
         primaryButtonHref="/contact"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/foil-shirts/top5pct-foil-gold-t-shirt.jpg"
+        image="/images/foil-shirts/top5pct-custom-wedding-foil-shirts.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />

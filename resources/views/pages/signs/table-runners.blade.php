@@ -47,7 +47,7 @@
         primaryButtonHref="#all-products"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/table-runners/top5pct-custom-table-cloth-business.jpg"
+        image="/images/table-runners/top5pct-custom-table-runners.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />

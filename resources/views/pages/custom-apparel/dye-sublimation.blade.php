@@ -47,7 +47,7 @@
         primaryButtonHref="/contact"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/sublimation/top5pct-dye-sublimation-custom-shirt-joliet.jpg"
+        image="/images/sublimation/top5pct-sublimation-team-shirts.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />

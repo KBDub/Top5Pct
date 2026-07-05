@@ -47,7 +47,7 @@
         primaryButtonHref="#all-products"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/vinyl/top5pct-vinyl-shirts.jpg"
+        image="/images/vinyl/custom-hoodies.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />

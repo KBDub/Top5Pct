@@ -47,7 +47,7 @@
         primaryButtonHref="/contact"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/glow-shirts/top5pct-glow-in-the-dark-caps.jpg"
+        image="/images/glow-shirts/top5pct-glow-polo-shirts-joliet.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />

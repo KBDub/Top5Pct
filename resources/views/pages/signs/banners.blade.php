@@ -47,7 +47,7 @@
         primaryButtonHref="#all-products"
         secondaryButtonText="Call Us Today"
         secondaryButtonHref="tel:+18153498600"
-        image="/images/banners/top5pct-sports-banners.jpg"
+        image="/images/banners/top5pct-custom-vinyl-banners.jpg"
     :compactButtons="true"
     />
     <x-ui.banner-medium-sunburst />
