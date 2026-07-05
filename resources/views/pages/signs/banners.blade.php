@@ -54,7 +54,7 @@
 
     <x-sections.top5pct-same-day-service
         displayServiceType="Custom Banners"
-        productIntro='We print custom vinyl banners, fabric banners, and retractable banners in full color on our in-house wide-format printer, with no setup fees and no minimum order. Every banner is produced at 121 Springfield Avenue in Joliet, so we control quality from file to finished product. Businesses use our banners for grand openings, storefronts, and trade show displays, and families order them for graduation parties, birthdays, and reunions. Same day banner printing is available on standard sizes.'
+        pageKey="banners"
         crossSell='Coordinate your banner with <a href="/signs/yard-signs" class="link-inline">yard signs</a> for outdoor coverage, or add <a href="/custom-apparel/printing-options/dtf-printing" class="link-inline">DTF transfer shirts</a> to the same order for a complete branded event look.'
         ctaText="Get a Banner Quote"
         ctaHref="#all-products"

@@ -54,7 +54,7 @@
 
     <x-sections.top5pct-same-day-service
         displayServiceType="Graphic Design"
-        productIntro='Our in-house graphic design team creates print-ready artwork for any custom apparel, sign, vehicle graphic, sticker, or promotional item order — whether you need a full design from scratch, a logo refined for print, or an existing file prepared for a specific production method. We have designed artwork for businesses, nonprofits, schools, sports teams, and events throughout Chicagoland since 2017, and our files are built for production from day one. Graphic design is available as a standalone service or as part of a larger print or apparel order.'
+        pageKey="graphic-design"
         crossSell='Pair graphic design with <a href="/design-services/logo-design" class="link-inline">logo design</a> for a complete brand identity, then bring it to life with <a href="/custom-apparel" class="link-inline">custom apparel</a>, <a href="/signs" class="link-inline">signage</a>, or <a href="/vehicle-graphics" class="link-inline">vehicle graphics</a> — all produced in-house.'
         ctaText="Start a Design Project"
     />

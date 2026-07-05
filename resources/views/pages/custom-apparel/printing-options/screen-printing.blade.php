@@ -54,7 +54,7 @@
 
     <x-sections.top5pct-same-day-service
         displayServiceType="Screen Printing"
-        productIntro='Screen printing delivers bold, durable, ink-on-fabric prints with vibrant color that bonds into the weave for a professional finish that holds up through hundreds of washes. We screen print in-house in Joliet on our own equipment, with consistent color matching across the full run. Businesses, sports leagues, and schools order screen printed shirts for high-volume runs where cost-per-shirt drops significantly with quantity.'
+        pageKey="screen-printing"
         crossSell='Pair screen printed shirts with <a href="/custom-apparel/printing-options/embroidery" class="link-inline">embroidery</a> for a premium mixed-method look, or add a <a href="/signs/banners" class="link-inline">custom banner</a> to complete your event or team order.'
         ctaText="Get a Screen Printing Quote"
         ctaHref="#all-products"

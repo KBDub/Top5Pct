@@ -50,7 +50,7 @@
 
     <x-sections.top5pct-same-day-service
         displayServiceType="Corporate Wear"
-        productIntro='We produce custom corporate apparel in-house in Joliet, including embroidered polos, branded jackets, screen printed staff shirts, and DTF-transferred uniforms for businesses throughout Will and DuPage County. Our in-house production means consistent quality across every piece in a corporate order, whether you need ten polos for a small team or hundreds of uniforms for a large staff rollout. We work directly with business owners and office managers to match brand colors, digitize logos for embroidery, and deliver on time. No minimums on most corporate apparel methods.'
+        pageKey="corporate-wear"
         crossSell='Pair corporate apparel with <a href="/promotional-items" class="link-inline">branded promotional items</a> for a complete employee welcome kit, or add <a href="/signs/business-signs" class="link-inline">custom business signage</a> to bring your brand identity from the shirt to the wall.'
         ctaText="Get a Corporate Wear Quote"
         ctaHref="#all-products"

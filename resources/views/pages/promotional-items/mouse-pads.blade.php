@@ -54,7 +54,7 @@
 
     <x-sections.top5pct-same-day-service
         displayServiceType="Custom Mouse Pads"
-        productIntro='Custom mouse pads combine everyday desktop utility with a full-color branded surface that keeps your logo in front of clients, employees, and partners every time they sit at a desk. We produce custom mouse pads in-house in Joliet with dye sublimation printing on smooth fabric over a non-slip rubber base, in standard and custom sizes. Businesses order branded mouse pads for corporate gifts, employee welcome kits, and trade show giveaways. No minimums, fast turnaround.'
+        pageKey="mouse-pads"
         crossSell='Pair custom mouse pads with <a href="/promotional-items/mugs" class="link-inline">branded mugs</a> or <a href="/promotional-items/tote-bags" class="link-inline">tote bags</a> for a complete desk or welcome kit, or combine with <a href="/custom-apparel/group-wear/corporate-wear-shirts" class="link-inline">corporate apparel</a> for a full branded onboarding package.'
         ctaText="Get a Mouse Pad Quote"
         ctaHref="#all-products"

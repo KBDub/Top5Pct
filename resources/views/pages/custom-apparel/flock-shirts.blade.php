@@ -54,7 +54,7 @@
 
     <x-sections.top5pct-same-day-service
         displayServiceType="Flock Shirts"
-        productIntro='Flock print applies fine fibers to the surface of heat transfer material that, when pressed onto a garment, creates a soft, velvet-like texture that looks and feels premium. We cut and apply flock vinyl in-house in Joliet with precision, and the finish holds up well through washing when pressed at the correct specifications. No minimums on flock shirt orders.'
+        pageKey="flock-shirts"
         crossSell='Flock pairs naturally with <a href="/custom-apparel/printing-options/embroidery" class="link-inline">embroidery</a> for a premium mixed-texture look, or combine flock shirts with a <a href="/promotional-items" class="link-inline">branded promotional item</a> for a complete corporate gift set.'
         ctaText="Get a Flock Shirt Quote"
         ctaHref="#all-products"

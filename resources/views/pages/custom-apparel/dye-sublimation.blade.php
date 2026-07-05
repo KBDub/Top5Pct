@@ -54,7 +54,7 @@
 
     <x-sections.top5pct-same-day-service
         displayServiceType="Dye Sublimation"
-        productIntro='Dye sublimation printing infuses ink directly into polyester fabric at the molecular level, producing all-over, edge-to-edge color that does not crack, peel, or fade over time. We sublimate in-house in Joliet on our own equipment, and the process works on any polyester or polyester-blend garment including performance shirts, athletic wear, jerseys, and hoodies. No minimums on sublimation orders.'
+        pageKey="dye-sublimation"
         crossSell='Sublimation pairs well with <a href="/custom-apparel/printing-options/screen-printing" class="link-inline">screen printing</a> for mixed-fabric team orders, or add a <a href="/signs/banners" class="link-inline">custom banner</a> for a complete team or event setup.'
         ctaText="Get a Sublimation Quote"
         ctaHref="#all-products"

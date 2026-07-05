@@ -54,7 +54,7 @@
 
     <x-sections.top5pct-same-day-service
         displayServiceType="Table Runners"
-        productIntro='Custom table runners add a polished branded layer to any event table, display case, or retail setup — we produce custom table runners in-house in Joliet with full-color dye sublimation printing on wrinkle-resistant polyester in standard and custom lengths. Businesses, event planners, and organizations order custom table runners for trade shows, product launches, banquets, and brand activations where every surface needs to communicate the brand. Fast turnaround and no minimums.'
+        pageKey="table-runners"
         crossSell='Pair your table runner with a <a href="/signs/table-cloths" class="link-inline">custom table cloth</a> and a <a href="/signs/banners" class="link-inline">retractable banner</a> for a complete, professional trade show or event display.'
         ctaText="Get a Table Runner Quote"
         ctaHref="#all-products"

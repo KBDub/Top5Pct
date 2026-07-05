@@ -55,7 +55,7 @@
 
     <x-sections.top5pct-same-day-service
         displayServiceType="Design Services"
-        productIntro='Our in-house design team handles custom logo design, graphic design, and artwork preparation for any printing or signage project — whether you have a rough sketch, a concept in your head, or need us to build something from scratch. We have produced artwork for businesses, nonprofits, sports teams, and events throughout Chicagoland since 2017, and our design work is built for production from day one with no back-and-forth file conversion issues. Logo design, layout work, and print-ready file prep are all available as standalone services or as part of a larger apparel or signage order.'
+        pageKey="design-services"
         crossSell='Combine design services with <a href="/custom-apparel" class="link-inline">custom apparel</a>, <a href="/signs" class="link-inline">signage</a>, or <a href="/vehicle-graphics" class="link-inline">vehicle graphics</a> — we handle the artwork and the production in the same shop so nothing gets lost in translation.'
         ctaText="Start Your Design Project"
     />

@@ -54,7 +54,7 @@
 
     <x-sections.top5pct-same-day-service
         displayServiceType="Glow In The Dark Shirts"
-        productIntro='Glow in the dark heat transfer vinyl charges under any light source and emits a visible glow in darkness, making it a popular choice for event apparel, Halloween costumes, safety gear, and anyone who wants a shirt that works in the dark. We cut and press glow in the dark vinyl in-house in Joliet with the same quality controls as our standard vinyl work, and the glow effect holds up through washing when pressed correctly. No minimums.'
+        pageKey="glow-shirts"
         crossSell='Glow in the dark pairs well with <a href="/custom-apparel/specialty-materials/vinyl-shirts" class="link-inline">standard vinyl shirts</a> for a mixed event run, or combine with a <a href="/signs/banners" class="link-inline">custom banner</a> for a complete event or party package.'
         ctaText="Get a Glow Shirt Quote"
         ctaHref="#all-products"

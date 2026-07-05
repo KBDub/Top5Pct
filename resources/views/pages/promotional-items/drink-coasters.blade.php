@@ -54,7 +54,7 @@
 
     <x-sections.top5pct-same-day-service
         displayServiceType="Custom Drink Coasters"
-        productIntro='Custom printed drink coasters add a branded, professional touch to any bar, restaurant, event table, or corporate hospitality setup — we produce custom coasters in-house in Joliet with full-color printing on neoprene or hardboard substrates with a non-slip base and liquid-resistant surface. Restaurants, bars, corporate event planners, and hospitality businesses order custom coasters for tabletop branding and event giveaways. No minimums, fast turnaround.'
+        pageKey="drink-coasters"
         crossSell='Pair custom coasters with <a href="/promotional-items/mugs" class="link-inline">custom mugs</a> or <a href="/promotional-items/can-koozies" class="link-inline">can koozies</a> for a complete branded drinkware set, or add a <a href="/signs/table-cloths" class="link-inline">custom table cloth</a> for a polished full-table brand presentation.'
         ctaText="Get a Coaster Quote"
         ctaHref="#all-products"

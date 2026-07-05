@@ -54,7 +54,7 @@
 
     <x-sections.top5pct-same-day-service
         displayServiceType="Foil Shirts"
-        productIntro='Foil heat transfer applies a shiny, metallic finish to shirts and apparel in gold, silver, rose gold, holographic, and other specialty finishes that produce a high-fashion, eye-catching result. We cut and press foil transfers in-house in Joliet with precision alignment and correct temperature control for a finish that bonds cleanly and does not crack or lift at edges. No minimums — we can foil one shirt or a full run.'
+        pageKey="foil-shirts"
         crossSell='Foil pairs beautifully with <a href="/custom-apparel/printing-options/rhinestone-apparel" class="link-inline">rhinestone shirts</a> or <a href="/custom-apparel/specialty-materials/glitter-shirts" class="link-inline">glitter shirts</a> in the same group order for a full metallic and sparkle lineup.'
         ctaText="Get a Foil Shirt Quote"
         ctaHref="#all-products"

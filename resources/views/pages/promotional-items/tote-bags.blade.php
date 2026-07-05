@@ -54,7 +54,7 @@
 
     <x-sections.top5pct-same-day-service
         displayServiceType="Custom Tote Bags"
-        productIntro='Custom tote bags are a practical, reusable promotional product that keeps your brand visible long after an event ends — we produce custom tote bags in-house in Joliet with screen printing, DTF transfers, or heat press vinyl depending on the design and fabric, in a range of bag styles and sizes. Businesses, nonprofits, schools, and event organizers throughout Chicagoland order custom tote bags for trade shows, corporate giveaways, retail merchandise, and fundraiser items. No minimums, fast turnaround.'
+        pageKey="tote-bags"
         crossSell='Fill your tote bags with <a href="/promotional-items/mugs" class="link-inline">branded mugs</a>, <a href="/promotional-items/can-koozies" class="link-inline">can koozies</a>, or <a href="/stickers" class="link-inline">custom stickers</a> for a complete event giveaway kit produced entirely in our Joliet shop.'
         ctaText="Get a Tote Bag Quote"
         ctaHref="#all-products"

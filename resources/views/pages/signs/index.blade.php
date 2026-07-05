@@ -55,7 +55,7 @@
 
     <x-sections.top5pct-same-day-service
         displayServiceType="Custom Signs"
-        productIntro='We design and print custom signs in-house in Joliet, covering everything from yard signs and banners to wall graphics, window decals, floor signs, sidewalk signs, and specialty signage for any business or event. Every sign is produced on our own equipment with no outsourcing, so quality and turnaround stay fully in our control. Businesses across Will and DuPage County order signage for storefronts, events, trade shows, and job sites, and same day printing is available on most standard sign products.'
+        pageKey="signs"
         crossSell='Pair your signage order with <a href="/custom-apparel" class="link-inline">custom apparel</a> or <a href="/vehicle-graphics" class="link-inline">vehicle graphics</a> for a complete branded identity, all produced in the same shop.'
         ctaText="Browse Custom Signs"
         ctaHref="/signs"

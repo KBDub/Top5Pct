@@ -54,7 +54,7 @@
 
     <x-sections.top5pct-same-day-service
         displayServiceType="Logo Design"
-        productIntro='A strong logo is the foundation of every sign, shirt, decal, and printed piece your business produces — our in-house design team creates custom logos for businesses throughout Will and DuPage County and the greater Chicagoland area, built from the ground up to work across every medium from business cards to vehicle wraps. We produce logo files in all standard formats including vector files suitable for embroidery digitizing, large-format printing, and web use. Logo design is available as a standalone service with a straightforward flat-rate quote.'
+        pageKey="logo-design"
         crossSell='Pair your new logo with <a href="/design-services/graphic-design" class="link-inline">graphic design</a> for a complete brand package, then put it on <a href="/custom-apparel" class="link-inline">custom apparel</a>, <a href="/signs" class="link-inline">signage</a>, and <a href="/vehicle-graphics" class="link-inline">vehicle graphics</a> — we handle all of it in the same shop.'
         ctaText="Start a Logo Project"
     />

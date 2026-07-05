@@ -53,7 +53,7 @@
 
     <x-sections.top5pct-same-day-service
         displayServiceType="Promotional Items"
-        productIntro='We produce custom promotional items in-house, including mugs, tote bags, mouse pads, can koozies, towels, drink coasters, and more — all printed or pressed with your logo, artwork, or custom design. No minimum orders, fast turnaround, and full control over print quality since everything is produced at our Joliet location. Businesses use promotional items for corporate giveaways, trade show swag, and customer appreciation gifts, and organizations order branded merchandise for fundraisers and events.'
+        pageKey="promotional-items"
         crossSell='Pair promotional items with <a href="/custom-apparel" class="link-inline">branded apparel</a> or <a href="/stickers" class="link-inline">custom stickers</a> for a complete branded merchandise package, all from the same shop.'
         ctaText="Browse Promotional Items"
         ctaHref="/promotional-items"

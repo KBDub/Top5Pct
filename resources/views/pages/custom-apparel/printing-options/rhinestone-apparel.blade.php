@@ -54,7 +54,7 @@
 
     <x-sections.top5pct-same-day-service
         displayServiceType="Rhinestone Shirts"
-        productIntro='Rhinestone apparel uses heat-set crystals applied in precise patterns to create a sparkling, premium finish that catches light and turns heads — popular for events, teams, boutique fashion, and anyone who wants a piece that truly stands out. We apply rhinestones in-house in Joliet, building each design with precision and pressing every stone at the right temperature and pressure for a hold that lasts through washing. No minimum order, and our design team can help you lay out your pattern before we start.'
+        pageKey="rhinestone-apparel"
         crossSell='Pair rhinestone shirts with <a href="/custom-apparel/specialty-materials/glitter-shirts" class="link-inline">glitter shirts</a> or <a href="/custom-apparel/specialty-materials/foil-shirts" class="link-inline">foil shirts</a> in the same group order for a full sparkle lineup.'
         ctaText="Get a Rhinestone Quote"
         ctaHref="#all-products"

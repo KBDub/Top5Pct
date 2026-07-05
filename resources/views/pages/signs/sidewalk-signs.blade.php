@@ -54,7 +54,7 @@
 
     <x-sections.top5pct-same-day-service
         displayServiceType="Sidewalk Signs"
-        productIntro='Sidewalk signs and A-frame signs put your message right in front of foot traffic, making them one of the most direct ways to capture attention from pedestrians and passing drivers. We produce custom sidewalk signs and A-frame sign inserts in-house in Joliet with full-color printing on durable substrates that hold up outdoors. Restaurants, retail stores, salons, and service businesses throughout Will and DuPage County use sidewalk signs for daily specials, promotions, and directional messaging. No minimums, same day production available on most formats.'
+        pageKey="sidewalk-signs"
         crossSell='Pair sidewalk signs with a <a href="/signs/banners" class="link-inline">custom banner</a> for maximum outdoor presence, or add <a href="/signs/yard-signs" class="link-inline">yard signs</a> to extend your visibility further down the block.'
         ctaText="Get a Sidewalk Sign Quote"
         ctaHref="#all-products"

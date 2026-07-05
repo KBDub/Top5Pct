@@ -54,7 +54,7 @@
 
     <x-sections.top5pct-same-day-service
         displayServiceType="Safety Signs"
-        productIntro='We produce custom safety and compliance signs in-house in Joliet including health and safety signs, social distancing floor graphics, occupancy limit signs, PPE requirement signs, and general workplace safety signage for businesses, schools, and facilities throughout Will and DuPage County. Full-color printing on durable substrates, no minimums, and fast turnaround for urgent compliance needs. Call us to discuss your safety sign requirements and we will confirm materials, sizing, and turnaround before you place your order.'
+        pageKey="coronavirus-signs"
         crossSell='Pair safety signs with <a href="/signs/floor-signs" class="link-inline">floor decals</a> for ground-level guidance, or add <a href="/signs/wall-signs" class="link-inline">wall signs</a> to cover compliance messaging throughout your facility.'
         ctaText="Get a Safety Sign Quote"
         ctaHref="#all-products"

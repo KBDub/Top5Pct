@@ -55,7 +55,7 @@
 
     <x-sections.top5pct-same-day-service
         displayServiceType="Custom Stickers"
-        productIntro='We print custom stickers and decals in-house at our Joliet shop, covering standard stickers, custom-shaped stickers, die-cut decals, and specialty finishes for businesses, events, and personal use. No minimum order, fast turnaround, and full-color printing on durable vinyl stock that holds up outdoors and in the elements. Businesses order logo stickers for packaging and branding, event organizers order custom decals for giveaways and merchandise, and individuals order personalized stickers for gifts and keepsakes.'
+        pageKey="stickers"
         crossSell='Pair custom stickers with <a href="/custom-apparel" class="link-inline">branded apparel</a> or <a href="/promotional-items" class="link-inline">promotional items</a> for a complete merchandise package that covers every surface and giveaway in a single order.'
         ctaText="Browse Custom Stickers"
         ctaHref="/stickers"

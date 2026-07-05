@@ -54,7 +54,7 @@
 
     <x-sections.top5pct-same-day-service
         displayServiceType="Window Signs"
-        productIntro='Window signs and graphics let you use your storefront glass as prime marketing real estate — we produce custom window decals, perforated vinyl, frosted graphics, and cut vinyl lettering in-house in Joliet for retail stores, restaurants, offices, and any business with street-facing windows. Full-color printing, no minimums, and fast turnaround make window signs one of the most cost-effective ways to attract attention from foot traffic. Same day window sign production is available on most standard formats.'
+        pageKey="window-signs"
         crossSell='Pair window graphics with <a href="/signs/door-signs" class="link-inline">door signs</a> and <a href="/signs/wall-signs" class="link-inline">wall signs</a> for complete interior and exterior branding coverage from a single shop.'
         ctaText="Get a Window Sign Quote"
         ctaHref="#all-products"

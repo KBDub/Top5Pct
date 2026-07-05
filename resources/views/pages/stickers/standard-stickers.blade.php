@@ -54,7 +54,7 @@
 
     <x-sections.top5pct-same-day-service
         displayServiceType="Custom Stickers"
-        productIntro='Standard custom stickers deliver full-color, professional-quality prints on square or rectangular cut vinyl — a cost-effective choice for high-volume branding, product labels, event giveaways, and promotional use. We produce standard stickers in-house in Joliet with durable vinyl stock and UV lamination for outdoor durability, and fast turnaround for both small and large runs. Businesses, organizations, and event planners throughout Will and DuPage County order custom stickers from us for packaging inserts, logo stickers, and brand activation. No minimums.'
+        pageKey="standard-stickers"
         crossSell='Pair standard stickers with <a href="/stickers/custom-shaped-stickers" class="link-inline">custom shaped stickers</a> for die-cut variety, or add <a href="/promotional-items" class="link-inline">branded promotional items</a> for a complete giveaway package.'
         ctaText="Get a Sticker Quote"
         ctaHref="#all-products"

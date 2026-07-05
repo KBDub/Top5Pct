@@ -54,7 +54,7 @@
 
     <x-sections.top5pct-same-day-service
         displayServiceType="Wall Signs"
-        productIntro='Custom wall signs transform interior and exterior walls into branded, professional surfaces — we produce wall signs in-house in Joliet using adhesive vinyl, rigid print substrates, and specialty materials that work on painted drywall, concrete, brick, and glass. Businesses order wall signs for lobby branding, directional signage, office identification, and large-format wall graphics that make a strong visual statement. No minimums, full-color printing, and our design team can help you plan the layout before production begins.'
+        pageKey="wall-signs"
         crossSell='Pair wall signs with <a href="/signs/window-signs" class="link-inline">window graphics</a> or <a href="/signs/floor-signs" class="link-inline">floor signs</a> for a fully branded interior environment that guides and impresses every visitor.'
         ctaText="Get a Wall Sign Quote"
         ctaHref="#all-products"

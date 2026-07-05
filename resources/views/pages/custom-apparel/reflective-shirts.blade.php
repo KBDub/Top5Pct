@@ -54,7 +54,7 @@
 
     <x-sections.top5pct-same-day-service
         displayServiceType="Reflective Shirts"
-        productIntro='Reflective heat press vinyl applies a high-visibility material to shirts and apparel that returns light to its source, making the design clearly visible in low light and at night — popular for safety apparel, cycling gear, running wear, and any application where visibility matters. We cut and apply reflective vinyl in-house in Joliet with the same precision as our standard vinyl work. No minimums on reflective shirt orders, and same day production is available on most jobs.'
+        pageKey="reflective-shirts"
         crossSell='Reflective shirts pair well with <a href="/custom-apparel/specialty-materials/vinyl-shirts" class="link-inline">standard vinyl shirts</a> for mixed-run orders, or combine with a <a href="/signs/yard-signs" class="link-inline">high-visibility yard sign</a> for a complete safety or event package.'
         ctaText="Get a Reflective Shirt Quote"
         ctaHref="#all-products"

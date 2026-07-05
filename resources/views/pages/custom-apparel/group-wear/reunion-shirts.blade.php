@@ -50,7 +50,7 @@
 
     <x-sections.top5pct-same-day-service
         displayServiceType="Reunion Shirts"
-        productIntro='Custom reunion shirts bring groups together with a shared design that everyone is proud to wear — we produce reunion shirts in-house in Joliet using DTF transfers, screen printing, vinyl, and embroidery depending on what the design calls for. Our in-house design team can build your reunion artwork from scratch if you arrive with a concept and no finished file, and we specialize in personalization across large groups where each shirt needs a different name or year. No minimums on most reunion shirt methods — order exactly what your group needs.'
+        pageKey="reunion-shirts"
         crossSell='Pair reunion shirts with <a href="/custom-apparel/specialty-materials/glitter-shirts" class="link-inline">glitter shirts</a> for the VIPs in your group, or add a <a href="/signs/banners" class="link-inline">custom reunion banner</a> to complete the event setup.'
         ctaText="Get a Reunion Shirt Quote"
         ctaHref="#all-products"

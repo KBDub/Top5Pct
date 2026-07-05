@@ -54,7 +54,7 @@
 
     <x-sections.top5pct-same-day-service
         displayServiceType="Custom Posters"
-        productIntro='Custom posters deliver full-color, large-format visual impact for retail displays, event promotion, office interiors, and any application where a bold printed graphic needs to fill wall space. We print custom posters in-house in Joliet on a range of paper and rigid substrates, with no minimums and fast turnaround for both standard and non-standard sizes. Event organizers, retail stores, restaurants, schools, and businesses throughout Will and DuPage County order custom posters from us for promotional campaigns and interior décor.'
+        pageKey="posters"
         crossSell='Pair posters with <a href="/signs/banners" class="link-inline">custom banners</a> for large-format outdoor coverage, or add <a href="/signs/wall-signs" class="link-inline">wall graphics</a> to extend the same design across your full interior.'
         ctaText="Get a Poster Quote"
         ctaHref="#all-products"

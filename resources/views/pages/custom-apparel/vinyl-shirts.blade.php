@@ -54,7 +54,7 @@
 
     <x-sections.top5pct-same-day-service
         displayServiceType="Vinyl Shirts"
-        productIntro='Heat press vinyl delivers bold, clean designs with sharp edges and durable color on t-shirts, hoodies, hats, and virtually any garment you can bring in. We cut every design in-house in Joliet on our own vinyl cutters and press each piece individually for accurate placement and solid adhesion. No minimums, and same day vinyl shirts are available on most orders.'
+        pageKey="vinyl-shirts"
         crossSell='Vinyl pairs well with <a href="/custom-apparel/printing-options/dtf-printing" class="link-inline">DTF transfers</a> for photo-quality detail, or add <a href="/custom-apparel/printing-options/embroidery" class="link-inline">embroidery</a> to the same order for a layered, premium finish.'
         ctaText="Get a Vinyl Shirt Quote"
         ctaHref="#all-products"
