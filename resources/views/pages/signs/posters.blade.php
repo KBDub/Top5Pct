@@ -127,7 +127,7 @@
 
             <x-sections.card-detailed-info
                 heading="How to Use Posters to Advertise and Promote Your Business or Event"
-                image1="/images/posters/top5pct-article-posters-joliet-pic1.jpg"
+                image1="/images/posters/top5pct-posters-joliet.jpg"
                 alt1="Custom posters printed for businesses and events in Joliet Illinois and Will and DuPage County"
             >
                 <x-slot name="intro">
