@@ -114,14 +114,6 @@
         </image:image>
     </url>
 
-    <url>
-        <loc>https://www.top5pct.com/signs/ground-signs/sidewalk-signs</loc>
-        <image:image>
-            <image:loc>https://www.top5pct.com/images/sidewalk-signs/top5pct-a-frame-sidewalk-sign-joliet.jpg</image:loc>
-            <image:title>Sidewalk Signs &amp; A-Frame Signs in Joliet, IL</image:title>
-            <image:caption>Custom a-frame and sidewalk signs for businesses in Joliet and Shorewood, IL.</image:caption>
-        </image:image>
-    </url>
 
     <url>
         <loc>https://www.top5pct.com/signs/table-signs/table-cloths</loc>

@@ -209,9 +209,6 @@ Route::get('/signs/business-signs/wall-signs', function () {
     return view('pages.signs.wall-signs');
 })->name('signs.wall-signs');
 
-Route::get('/signs/business-signs/floor-signs', function () {
-    return view('pages.signs.floor-signs');
-})->name('signs.floor-signs');
 
 Route::get('/signs/business-signs/door-signs', function () {
     return view('pages.signs.door-signs');
@@ -226,9 +223,6 @@ Route::get('/signs/ground-signs/yard-signs', function () {
     return view('pages.signs.yard-signs');
 })->name('signs.yard-signs');
 
-Route::get('/signs/ground-signs/sidewalk-signs', function () {
-    return view('pages.signs.sidewalk-signs');
-})->name('signs.sidewalk-signs');
 
 Route::get('/signs/ground-signs/sidewalk-signs-a-frame-signs', function () {
     return view('pages.signs.sidewalk-signs-a-frame-signs');
@@ -248,12 +242,10 @@ Route::get('/signs/table-signs/table-runners', function () {
 Route::redirect('/signs/banners',        '/signs/business-signs/banners',    302);
 Route::redirect('/signs/window-signs',   '/signs/business-signs/window-signs', 302);
 Route::redirect('/signs/wall-signs',     '/signs/business-signs/wall-signs', 302);
-Route::redirect('/signs/floor-signs',    '/signs/business-signs/floor-signs', 302);
 Route::redirect('/signs/door-signs',     '/signs/business-signs/door-signs', 302);
 Route::redirect('/signs/posters',        '/signs/business-signs/posters',    302);
 Route::redirect('/signs/business-signs', '/signs',                           302);
 Route::redirect('/signs/yard-signs',     '/signs/ground-signs/yard-signs',   302);
-Route::redirect('/signs/sidewalk-signs', '/signs/ground-signs/sidewalk-signs', 302);
 Route::redirect('/signs/parking-signs',  '/signs/ground-signs/sidewalk-signs-a-frame-signs', 302);
 Route::redirect('/signs/table-cloths',   '/signs/table-signs/table-cloths',  302);
 Route::redirect('/signs/table-runners',  '/signs/table-signs/table-runners', 302);

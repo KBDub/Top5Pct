@@ -87,12 +87,6 @@
             'href'  => '/signs/ground-signs/yard-signs',
         ],
         [
-            'image' => '/images/sidewalk-signs/top5pct-sidewalk-signage.jpg',
-            'alt'   => 'A frame sidewalk signs for businesses in Joliet and Romeoville Illinois',
-            'title' => 'Sidewalk Signs',
-            'href'  => '/signs/ground-signs/sidewalk-signs',
-        ],
-        [
             'image' => '/images/banners/top5pct-sports-banners.jpg',
             'alt'   => 'Custom vinyl banners for businesses in Joliet, Shorewood, and Crest Hill Illinois',
             'title' => 'Banners',
@@ -121,12 +115,6 @@
             'alt'   => 'Custom wall signs and wall graphics for businesses in Joliet Illinois',
             'title' => 'Wall Signs',
             'href'  => '/signs/business-signs/wall-signs',
-        ],
-        [
-            'image' => '/images/wall-signs/top5pct-wall-signs-for-businesses.jpg',
-            'alt'   => 'Custom floor signs and outdoor signs for businesses in Joliet, Shorewood, and Crest Hill',
-            'title' => 'Floor Signs',
-            'href'  => '/signs/business-signs/floor-signs',
         ],
         [
             'image' => '/images/door-signs/top5pct-door-signage.jpg',

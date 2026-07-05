@@ -104,12 +104,10 @@
                         <li><a href="/signs/business-signs/window-signs"  class="link-notification">Window Signs</a></li>
                         <li><a href="/signs/business-signs/wall-signs"    class="link-notification">Wall Signs</a></li>
                         <li><a href="/signs/business-signs/door-signs"    class="link-notification">Door Signs</a></li>
-                        <li><a href="/signs/business-signs/floor-signs"   class="link-notification">Floor Signs</a></li>
                         <li><a href="/signs/business-signs/posters"       class="link-notification">Posters</a></li>
                         <li><a href="/signs/table-signs/table-cloths"     class="link-notification">Table Cloths</a></li>
                         <li><a href="/signs/table-signs/table-runners"    class="link-notification">Table Runners</a></li>
-                        <li><a href="/signs/ground-signs/sidewalk-signs"  class="link-notification">Sidewalk Signs</a></li>
-                        <li><a href="/signs/ground-signs/sidewalk-signs-a-frame-signs"   class="link-notification">A-Frame Signs</a></li>
+                        <li><a href="/signs/ground-signs/sidewalk-signs-a-frame-signs"   class="link-notification">A-Frame &amp; Sidewalk Signs</a></li>
                     </ul>
 
                     {{-- Vehicle Graphics --}}

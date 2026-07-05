@@ -208,12 +208,7 @@
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
-    <url>
-        <loc>https://www.top5pct.com/signs/ground-signs/sidewalk-signs</loc>
-        <lastmod>2026-05-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
+
     <url>
         <loc>https://www.top5pct.com/signs/ground-signs/yard-signs</loc>
         <lastmod>2026-05-01</lastmod>
@@ -232,12 +227,7 @@
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
-    <url>
-        <loc>https://www.top5pct.com/signs/business-signs/floor-signs</loc>
-        <lastmod>2026-05-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
+
     <url>
         <loc>https://www.top5pct.com/signs/business-signs/door-signs</loc>
         <lastmod>2026-05-01</lastmod>
